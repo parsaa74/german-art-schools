@@ -9,10 +9,10 @@
       "static/chunks/node_modules_mediapipe_tasks-vision_vision_bundle_mjs.js"
     ]
   },
-  "pages/index.tsx -> @/components/Map/GermanyGlobe": {
-    "id": "pages/index.tsx -> @/components/Map/GermanyGlobe",
+  "pages/index.tsx -> @/components/Map/GermanyMap": {
+    "id": "pages/index.tsx -> @/components/Map/GermanyMap",
     "files": [
-      "static/chunks/src_components_Map_GermanyGlobe_tsx.js"
+      "static/chunks/src_components_Map_GermanyMap_tsx.js"
     ]
   }
 }
