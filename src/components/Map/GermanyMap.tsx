@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useMemo, useState, Suspense } from 'react';
-import { Line, Sphere, Text, Html } from '@react-three/drei';
+import { Line, Sphere, Text, Html, OrbitControls } from '@react-three/drei';
 import { useThree, useLoader } from '@react-three/fiber';
 import { useSpring, animated } from '@react-spring/three';
 import * as THREE from 'three';
@@ -129,6 +129,40 @@ interface Coordinate {
   lat: number;
   lng: number;
 }
+
+interface BillboardTextProps {
+  text: string;
+  color: string;
+  fontSize: number;
+  outlineWidth: number;
+  outlineColor: string;
+}
+
+const BillboardText: React.FC<BillboardTextProps> = ({ 
+  text, 
+  color, 
+  fontSize, 
+  outlineWidth, 
+  outlineColor 
+}) => {
+  return (
+    <Html
+      center
+      style={{
+        color: color,
+        fontSize: `${fontSize}em`,
+        fontWeight: 'bold',
+        textShadow: `${outlineWidth}px ${outlineWidth}px ${outlineColor}`,
+        whiteSpace: 'nowrap',
+        pointerEvents: 'none',
+        userSelect: 'none',
+        transform: 'scale(0.5)',
+      }}
+    >
+      {text}
+    </Html>
+  );
+};
 
 const AnimatedState: React.FC<{
   feature: Feature;
@@ -345,8 +379,25 @@ const GermanyMap: React.FC<GermanyMapProps> = ({
     EARTH_SPECULAR_MAP_URL
   ]);
 
+  // Update camera settings
+  useEffect(() => {
+    if (camera) {
+      camera.near = 0.001;  // Much closer near plane
+      camera.far = 1000;
+      camera.updateProjectionMatrix();
+    }
+  }, [camera]);
+
   return (
     <group>
+      <OrbitControls 
+        minDistance={0.1}  // Allow much closer zoom
+        maxDistance={10}
+        enableDamping
+        dampingFactor={0.05}
+        rotateSpeed={0.5}
+        zoomSpeed={0.8}
+      />
       <Suspense fallback={null}>
         {/* Earth base with textures */}
         <group>
@@ -376,9 +427,10 @@ const GermanyMap: React.FC<GermanyMapProps> = ({
         {/* Add school particles */}
         {schools.map((school) => (
           <SchoolParticle
-            key={school.name}
+            key={school.id}
             position={latLongToVector3(school.lat, school.lng, 1.02)}
             type={school.type}
+            school={school}
           />
         ))}
 
@@ -390,31 +442,24 @@ const GermanyMap: React.FC<GermanyMapProps> = ({
         <directionalLight position={[5, 3, 5]} intensity={1} castShadow />
         <pointLight position={[-5, -3, -5]} intensity={0.5} />
 
-        {/* State labels */}
-        <Html>
-          {features.map(feature => {
-            const [x, y] = projection(feature.properties.center) || [0, 0];
-            return (
-              <div
-                key={feature.properties.name}
-                style={{
-                  position: 'absolute',
-                  transform: `translate(${x}px, ${y}px)`,
-                  color: hoveredState === feature.properties.name ? '#ffffff' : '#cccccc',
-                  fontSize: '12px',
-                  fontWeight: 'bold',
-                  textShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-                  pointerEvents: 'none',
-                  transition: 'color 0.3s ease',
-                  textAlign: 'center',
-                  marginTop: '-0.5em'
-                }}
-              >
-                {feature.properties.name}
-              </div>
-            );
-          })}
-        </Html>
+        {/* Updated state labels with better visibility */}
+        {features.map((feature) => {
+          const center = feature.properties.center;
+          if (!center) return null;
+          
+          const position = latLongToVector3(center[1], center[0], 1.02);
+          return (
+            <group key={feature.properties.name} position={position}>
+              <BillboardText 
+                text={feature.properties.name}
+                color={hoveredState === feature.properties.name ? '#ffffff' : '#cccccc'}
+                fontSize={0.8}
+                outlineWidth={1}
+                outlineColor="#000000"
+              />
+            </group>
+          );
+        })}
 
         {/* Major cities */}
         {MAJOR_CITIES.map(city => (

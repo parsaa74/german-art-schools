@@ -1,0 +1,45 @@
+# Kunsthochschulen, Kunstakademien und Hochschulen für Künste in Deutschland
+
+- Bauhaus-Universität Weimar
+- Burg Giebichenstein Kunsthochschule Halle
+- Hochschule für Bildende Künste Braunschweig
+- Hochschule für Bildende Künste Dresden
+- Hochschule für Bildende Künste Hamburg
+- Hochschule für Bildende Künste Saar
+- Hochschule für Gestaltung Offenbach am Main
+- Hochschule für Gestaltung Schwäbisch Gmünd
+- Hochschule für Grafik und Buchkunst Leipzig
+- Hochschule für Künste Bremen
+- Hochschule für Künste im Sozialen Ottersberg
+- Kunstakademie Düsseldorf
+- Kunstakademie Münster
+- Kunsthochschule Berlin-Weißensee
+- Kunsthochschule für Medien Köln
+- Kunsthochschule Kassel
+- Kunsthochschule Mainz
+- Muthesius Kunsthochschule Kiel
+- Staatliche Akademie der Bildenden Künste Karlsruhe
+- Staatliche Akademie der Bildenden Künste Stuttgart
+- Staatliche Hochschule für Bildende Künste – Städelschule Frankfurt
+- Universität der Künste Berlin
+- Bard College Berlin
+- Folkwang Universität der Künste
+- Alanus University of Arts and Social Sciences
+- Staatliche Akademie der Bildenden Künste München
+- Akademie der Bildenden Künste Nürnberg
+- Technische Universität Berlin
+- Hochschule für Bildende Künste Essen
+- Offenbach University of Art and Design
+- Muthesius Kunsthochschule Kiel
+- Staatliche Hochschule für Gestaltung Karlsruhe
+- Academy of Visual Arts Frankfurt
+- Fachhochschule Potsdam
+- Hochschule Darmstadt
+- Hochschule Rhein-Waal
+- Technische Universität Chemnitz
+- Hochschule Anhalt
+- Universität Trier
+- Universität Siegen
+- Technische Hochschule Ingolstadt
+- Hochschule Fulda 
+- IU Internationale Hochschule 
