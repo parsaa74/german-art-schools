@@ -154,6 +154,17 @@ module.exports = import("@react-spring/three");;
 
 /***/ }),
 
+/***/ "class-variance-authority":
+/*!*******************************************!*\
+  !*** external "class-variance-authority" ***!
+  \*******************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("class-variance-authority");;
+
+/***/ }),
+
 /***/ "clsx":
 /*!***********************!*\
   !*** external "clsx" ***!
