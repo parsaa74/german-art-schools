@@ -1,6 +1,5 @@
 import { SchoolID } from '../types/common';
 import { StudentProfile } from '../types/StudentProfile';
-import { schools } from '@/data/schools';
 
 export interface SearchFilters {
   location: {
