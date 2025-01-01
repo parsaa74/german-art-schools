@@ -53,7 +53,7 @@ export const GermanStateComponent: React.FC<Props> = ({ state }) => {
           color={state.color}
           lineWidth={2}
           transparent
-          opacity={opacity}
+          opacity={opacity.get()}
         />
         <mesh position={labelPosition}>
           <sphereGeometry args={[0.005, 16, 16]} />
