@@ -3,7 +3,6 @@ import { Line, Sphere, Text, Html, OrbitControls } from '@react-three/drei';
 import { useThree, useLoader } from '@react-three/fiber';
 import { useSpring, animated } from '@react-spring/three';
 import * as THREE from 'three';
-import { geoOrthographic } from 'd3-geo';
 import gsap from 'gsap';
 import { SchoolParticle } from './effects/SchoolParticles';
 import { ConnectionLines } from './effects/ConnectionLines';
