@@ -1,5 +1,6 @@
 import { SchoolID } from '../types/common';
 import { StudentProfile } from '../types/StudentProfile';
+import { schools } from '@/data/schools';
 
 export interface SearchFilters {
   location: {
@@ -54,7 +55,14 @@ export class SearchService {
     totalPages: number;
   }> {
     const query = this.buildSearchQuery(filters);
-    return await this.executeSearch(query, page, limit);
+    const result = await this.executeSearch(query, page, limit);
+    
+    return {
+      students: result.data as StudentProfile[],
+      total: result.total,
+      page: result.page,
+      totalPages: Math.ceil(result.total / limit)
+    };
   }
   
   private buildSearchQuery(filters: SearchFilters): Record<string, any> {
@@ -72,12 +80,16 @@ export class SearchService {
   }
 
   private async executeSearch(query: Record<string, any>, page: number, limit: number) {
-    // Since this is a placeholder implementation, we can either:
-    // 1. Use the query parameter
-    const filteredSchools = schools.filter(school => {
+    // Implement a proper mock data response
+    const mockStudents: StudentProfile[] = [
+      // Add some mock student data here if needed
+    ];
+
+    const filteredStudents = mockStudents.filter(student => {
       return Object.entries(query).every(([key, value]) => {
         if (!value) return true;
-        return school[key as keyof typeof school]?.toString().toLowerCase()
+        const studentValue = key.split('.').reduce((obj: any, key) => obj?.[key], student);
+        return studentValue?.toString().toLowerCase()
           .includes(value.toString().toLowerCase());
       });
     });
@@ -86,20 +98,10 @@ export class SearchService {
     const end = start + limit;
     
     return {
-      data: filteredSchools.slice(start, end),
-      total: filteredSchools.length,
+      data: filteredStudents.slice(start, end),
+      total: filteredStudents.length,
       page,
       limit
     };
-
-    // OR 2. Remove the unused parameter if it's truly not needed:
-    // private async executeSearch(page: number, limit: number) {
-    //   return {
-    //     data: schools.slice((page - 1) * limit, page * limit),
-    //     total: schools.length,
-    //     page,
-    //     limit
-    //   };
-    // }
   }
 }
