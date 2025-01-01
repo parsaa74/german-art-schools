@@ -19,6 +19,9 @@ const latLongToVector3 = (lat: number, lng: number, radius: number = 1) => {
   );
 };
 
+// Create an animated version of the Line component
+const AnimatedLine = animated(Line);
+
 export const GermanStateComponent: React.FC<Props> = ({ state }) => {
   const [hovered, setHovered] = useState(false);
   
@@ -48,12 +51,12 @@ export const GermanStateComponent: React.FC<Props> = ({ state }) => {
       onPointerOut={() => setHovered(false)}
     >
       <animated.group scale={scale}>
-        <Line
+        <AnimatedLine
           points={points}
           color={state.color}
           lineWidth={2}
           transparent
-          opacity={opacity.get()}
+          opacity={opacity}
         />
         <mesh position={labelPosition}>
           <sphereGeometry args={[0.005, 16, 16]} />
