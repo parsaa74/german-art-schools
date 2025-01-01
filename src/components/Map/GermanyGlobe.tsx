@@ -1,116 +1,106 @@
-import React, { Suspense, useState, useEffect, useRef } from 'react';
-import { Canvas, useThree, useFrame } from '@react-three/fiber';
+import React, { Suspense, useState, useRef } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
-import { SchoolClusteringSystem } from './systems/SchoolClusteringSystem';
-import { schools } from '@/data/schools';
 import GermanyMap from './GermanyMap';
 
-const LoadingFallback: React.FC = () => (
-  <mesh>
-    <sphereGeometry args={[1, 32, 32]} />
-    <meshStandardMaterial color="#444444" wireframe />
-  </mesh>
-);
+const LineArtGlobe: React.FC = () => {
+  const [isRotating, setIsRotating] = useState(true);
+  const groupRef = useRef<THREE.Group>(null);
 
-// Create a component to handle the clustering system
-const ClusteringManager: React.FC = () => {
-  const { scene, camera, gl } = useThree();
-  const clusteringSystemRef = useRef<SchoolClusteringSystem | null>(null);
-  const clusterGroupRef = useRef<THREE.Group>(null);
-
-  useEffect(() => {
-    // Create a group for clusters
-    const clusterGroup = new THREE.Group();
-    scene.add(clusterGroup);
-    clusterGroupRef.current = clusterGroup;
-
-    // Initialize clustering system with the group
-    clusteringSystemRef.current = new SchoolClusteringSystem(clusterGroup);
-
-    // Add all schools
-    schools.forEach(school => {
-      const position = latLongToVector3(school.lat, school.lng, 1.02);
-      const markerGeometry = new THREE.SphereGeometry(0.01, 16, 16);
-      const markerMaterial = new THREE.MeshPhongMaterial({
-        color: 0xff0000,
-        emissive: 0xff0000,
-        transparent: true,
-        opacity: 0.8
-      });
-      const marker = new THREE.Mesh(markerGeometry, markerMaterial);
-      marker.position.copy(position);
-      clusterGroup.add(marker);
-      
-      clusteringSystemRef.current?.addSchool(school, marker);
-    });
-
-    return () => {
-      scene.remove(clusterGroup);
-      clusteringSystemRef.current = null;
-    };
-  }, [scene]);
-
-  // Update clustering system in animation loop
   useFrame(() => {
-    if (clusteringSystemRef.current) {
-      clusteringSystemRef.current.update(camera, gl);
+    if (isRotating && groupRef.current) {
+      groupRef.current.rotation.y += 0.001;
     }
   });
 
-  return null;
+  return (
+    <group ref={groupRef} onClick={() => setIsRotating(!isRotating)}>
+      <mesh>
+        <sphereGeometry args={[1, 16, 16]} />
+        <meshBasicMaterial 
+          color={0x333333}
+          wireframe={true}
+          opacity={0.6}
+          transparent={true}
+        />
+      </mesh>
+      <line>
+        <bufferGeometry>
+          <bufferAttribute
+            attach="attributes-position"
+            count={32}
+            array={new Float32Array(
+              Array.from({ length: 32 }, (_, i) => {
+                const angle = (i / 32) * Math.PI * 2;
+                return [Math.cos(angle), 0, Math.sin(angle)];
+              }).flat()
+            )}
+            itemSize={3}
+          />
+        </bufferGeometry>
+        <lineBasicMaterial color={0x444444} transparent opacity={0.3} />
+      </line>
+      <line>
+        <bufferGeometry>
+          <bufferAttribute
+            attach="attributes-position"
+            count={32}
+            array={new Float32Array(
+              Array.from({ length: 32 }, (_, i) => {
+                const angle = (i / 32) * Math.PI * 2;
+                return [0, Math.cos(angle), Math.sin(angle)];
+              }).flat()
+            )}
+            itemSize={3}
+          />
+        </bufferGeometry>
+        <lineBasicMaterial color={0x444444} transparent opacity={0.3} />
+      </line>
+    </group>
+  );
+};
+
+const Scene: React.FC = () => {
+  return (
+    <>
+      <LineArtGlobe />
+      <GermanyMap />
+    </>
+  );
 };
 
 export const GermanyGlobe: React.FC = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const loadComponents = async () => {
-      try {
-        await Promise.all([
-          import('@react-three/fiber'),
-          import('@react-three/drei'),
-          import('three')
-        ]);
-        setIsLoading(false);
-      } catch (error) {
-        console.error('Error loading components:', error);
-      }
-    };
-    loadComponents();
-  }, []);
-
-  if (isLoading) {
-    return <div>Loading required components...</div>;
-  }
-
   return (
     <div style={{ width: '100%', height: '100%', background: '#111111' }}>
       <Canvas
         camera={{
           position: [0, 0, 2.5],
           fov: 45,
-          near: 0.1,
+          near: 0.01,
           far: 1000
         }}
+        gl={{
+          antialias: true,
+          alpha: true,
+        }}
       >
-        <ambientLight intensity={0.5} />
-        <pointLight position={[10, 10, 10]} />
-        <Suspense fallback={<LoadingFallback />}>
-          <GermanyMap />
-          <ClusteringManager />
+        <ambientLight intensity={0.3} />
+        <pointLight position={[10, 10, 10]} intensity={0.7} />
+        <Suspense fallback={null}>
+          <Scene />
         </Suspense>
         <OrbitControls
           enableZoom={true}
           enablePan={true}
           enableRotate={true}
-          zoomSpeed={0.6}
-          panSpeed={0.5}
-          rotateSpeed={0.4}
-          minDistance={1.5}
-          maxDistance={4}
-          minPolarAngle={Math.PI / 4}
-          maxPolarAngle={Math.PI / 2}
+          zoomSpeed={1.2}
+          panSpeed={0.8}
+          rotateSpeed={0.5}
+          minDistance={0.5}
+          maxDistance={5}
+          minPolarAngle={0}
+          maxPolarAngle={Math.PI}
           autoRotate={false}
         />
       </Canvas>

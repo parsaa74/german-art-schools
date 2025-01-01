@@ -19,7 +19,8 @@ interface Cluster {
 }
 
 export class SchoolClusteringSystem {
-  private globe: THREE.Group;
+  private scene: THREE.Scene;
+  private globe: THREE.Object3D;
   private schools: Map<string, SchoolMarkerData>;
   private clusters: Map<string, { marker: THREE.Mesh; points: any[] }>;
   private index: KDBush;
@@ -30,8 +31,8 @@ export class SchoolClusteringSystem {
   private clusterGeometry: THREE.SphereGeometry;
   private clusterMaterial: THREE.MeshPhongMaterial;
 
-  constructor(globe: THREE.Group) {
-    this.globe = globe;
+  constructor(scene: THREE.Scene) {
+    this.scene = scene;
     this.schools = new Map();
     this.clusters = new Map();
     this.index = null;
@@ -47,6 +48,12 @@ export class SchoolClusteringSystem {
     
     this.lastCameraPosition = new THREE.Vector3();
     this.cameraMoved = false;
+
+    this.globe = this.createGlobe();
+    this.scene.add(this.globe);
+
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    this.scene.add(ambientLight);
   }
 
   addSchool(school: School, marker: THREE.Mesh) {
@@ -72,6 +79,10 @@ export class SchoolClusteringSystem {
   }
 
   update(camera: THREE.Camera, renderer: THREE.WebGLRenderer) {
+    if (this.globe) {
+      this.globe.rotation.y += 0.001;
+    }
+
     if (camera.position.distanceTo(this.lastCameraPosition) > 0.01) {
       this.cameraMoved = true;
       this.lastCameraPosition.copy(camera.position);
@@ -80,13 +91,16 @@ export class SchoolClusteringSystem {
     if (!this.cameraMoved) return;
     this.cameraMoved = false;
 
+    console.log('Updating clusters...');
+
     this.clusters.forEach(cluster => {
       this.globe.remove(cluster.marker);
     });
     this.clusters.clear();
 
     const clusters = this.calculateClusters(camera, renderer);
-    
+    console.log('Found clusters:', clusters.length);
+
     clusters.forEach(cluster => {
       if (cluster.points.length < 2) {
         const school = this.schools.get(cluster.points[0].id);
@@ -100,6 +114,7 @@ export class SchoolClusteringSystem {
           points: cluster.points
         });
         this.globe.add(clusterMarker);
+        console.log('Created cluster with', cluster.points.length, 'points');
         
         cluster.points.forEach(point => {
           const school = this.schools.get(point.id);
@@ -252,5 +267,92 @@ export class SchoolClusteringSystem {
     
     center.normalize().multiplyScalar(1.02); // Match our globe radius
     return center;
+  }
+
+  private createGlobe(): THREE.Object3D {
+    // Create minimal globe structure
+    const globeGeometry = new THREE.SphereGeometry(1, 16, 16);
+    const edges = new THREE.EdgesGeometry(globeGeometry);
+    const globe = new THREE.LineSegments(
+      edges,
+      new THREE.LineBasicMaterial({ color: 0x333333 })
+    );
+    
+    // Add latitude/longitude lines
+    const latitudeCount = 8;
+    const longitudeCount = 12;
+    const radius = 1;
+    
+    // Create latitude circles
+    for (let i = 0; i < latitudeCount; i++) {
+      const phi = (Math.PI * i) / latitudeCount;
+      const circleGeometry = new THREE.CircleGeometry(
+        Math.sin(phi) * radius,
+        32
+      );
+      const points = [];
+      for (let j = 1; j < circleGeometry.attributes.position.count; j++) {
+        points.push(new THREE.Vector3(
+          circleGeometry.attributes.position.getX(j),
+          circleGeometry.attributes.position.getY(j),
+          0
+        ));
+      }
+      const circlePoints = new THREE.BufferGeometry().setFromPoints(points);
+      const circle = new THREE.Line(
+        circlePoints,
+        new THREE.LineBasicMaterial({ color: 0x222222, transparent: true, opacity: 0.3 })
+      );
+      circle.rotation.x = Math.PI / 2;
+      circle.position.y = Math.cos(phi) * radius;
+      globe.add(circle);
+    }
+    
+    // Create longitude lines
+    for (let i = 0; i < longitudeCount; i++) {
+      const curve = new THREE.EllipseCurve(
+        0, 0,
+        radius, radius,
+        0, 2 * Math.PI,
+        false,
+        0
+      );
+      const points = curve.getPoints(50);
+      const geometry = new THREE.BufferGeometry().setFromPoints(points);
+      const line = new THREE.Line(
+        geometry,
+        new THREE.LineBasicMaterial({ color: 0x222222, transparent: true, opacity: 0.3 })
+      );
+      line.rotation.y = (i / longitudeCount) * Math.PI * 2;
+      globe.add(line);
+    }
+
+    return globe;
+  }
+
+  public init(): void {
+    // ... existing init code ...
+    
+    // Replace the existing globe creation with the new line art globe
+    const globe = this.createGlobe();
+    this.scene.add(globe);
+    
+    // Add ambient light for better visibility
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    this.scene.add(ambientLight);
+
+    // ... rest of init code ...
+  }
+
+  public update(): void {
+    // ... existing update code ...
+    
+    // Add slow rotation to the globe
+    const globe = this.scene.children.find(child => child instanceof THREE.LineSegments);
+    if (globe) {
+      globe.rotation.y += 0.001;
+    }
+    
+    // ... rest of update code ...
   }
 } 
