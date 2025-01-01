@@ -72,13 +72,34 @@ export class SearchService {
   }
 
   private async executeSearch(query: Record<string, any>, page: number, limit: number) {
-    // This would typically interact with your database
-    // Placeholder implementation
+    // Since this is a placeholder implementation, we can either:
+    // 1. Use the query parameter
+    const filteredSchools = schools.filter(school => {
+      return Object.entries(query).every(([key, value]) => {
+        if (!value) return true;
+        return school[key as keyof typeof school]?.toString().toLowerCase()
+          .includes(value.toString().toLowerCase());
+      });
+    });
+
+    const start = (page - 1) * limit;
+    const end = start + limit;
+    
     return {
-      students: [],
-      total: 0,
+      data: filteredSchools.slice(start, end),
+      total: filteredSchools.length,
       page,
-      totalPages: 0
+      limit
     };
+
+    // OR 2. Remove the unused parameter if it's truly not needed:
+    // private async executeSearch(page: number, limit: number) {
+    //   return {
+    //     data: schools.slice((page - 1) * limit, page * limit),
+    //     total: schools.length,
+    //     page,
+    //     limit
+    //   };
+    // }
   }
 }
