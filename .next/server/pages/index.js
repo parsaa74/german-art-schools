@@ -176,17 +176,6 @@ module.exports = import("clsx");;
 
 /***/ }),
 
-/***/ "d3-geo":
-/*!*************************!*\
-  !*** external "d3-geo" ***!
-  \*************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = import("d3-geo");;
-
-/***/ }),
-
 /***/ "tailwind-merge":
 /*!*********************************!*\
   !*** external "tailwind-merge" ***!
