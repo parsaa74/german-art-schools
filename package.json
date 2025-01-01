@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "deploy": "next build && touch out/.nojekyll"
+    "start": "next start"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.0",
@@ -48,6 +47,5 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "typescript": "^5.0.4"
-  },
-  "homepage": "https://your-username.github.io/your-repo-name"
+  }
 }
