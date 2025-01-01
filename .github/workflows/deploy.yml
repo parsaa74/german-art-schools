@@ -14,6 +14,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  NEXT_PUBLIC_BASE_PATH: /german-art-schools
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,6 +34,8 @@ jobs:
         run: npm ci
       - name: Build with Next.js
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /german-art-schools
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
