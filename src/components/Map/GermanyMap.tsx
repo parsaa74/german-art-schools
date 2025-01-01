@@ -1,5 +1,5 @@
 import React, { useEffect, useState, Suspense } from 'react';
-import { Line, Html, Text } from '@react-three/drei';
+import { Line, Text } from '@react-three/drei';
 import { useThree } from '@react-three/fiber';
 import { useSpring, animated } from '@react-spring/three';
 import * as THREE from 'three';
