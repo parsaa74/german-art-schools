@@ -1,6 +1,9 @@
-import React, { Suspense, useState, useEffect } from 'react';
-import { Canvas } from '@react-three/fiber';
+import React, { Suspense, useState, useEffect, useRef } from 'react';
+import { Canvas, useThree, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+import * as THREE from 'three';
+import { SchoolClusteringSystem } from './systems/SchoolClusteringSystem';
+import { schools } from '@/data/schools';
 import GermanyMap from './GermanyMap';
 
 const LoadingFallback: React.FC = () => (
@@ -10,11 +13,58 @@ const LoadingFallback: React.FC = () => (
   </mesh>
 );
 
-const GermanyGlobe: React.FC = () => {
+// Create a component to handle the clustering system
+const ClusteringManager: React.FC = () => {
+  const { scene, camera, gl } = useThree();
+  const clusteringSystemRef = useRef<SchoolClusteringSystem | null>(null);
+  const clusterGroupRef = useRef<THREE.Group>(null);
+
+  useEffect(() => {
+    // Create a group for clusters
+    const clusterGroup = new THREE.Group();
+    scene.add(clusterGroup);
+    clusterGroupRef.current = clusterGroup;
+
+    // Initialize clustering system with the group
+    clusteringSystemRef.current = new SchoolClusteringSystem(clusterGroup);
+
+    // Add all schools
+    schools.forEach(school => {
+      const position = latLongToVector3(school.lat, school.lng, 1.02);
+      const markerGeometry = new THREE.SphereGeometry(0.01, 16, 16);
+      const markerMaterial = new THREE.MeshPhongMaterial({
+        color: 0xff0000,
+        emissive: 0xff0000,
+        transparent: true,
+        opacity: 0.8
+      });
+      const marker = new THREE.Mesh(markerGeometry, markerMaterial);
+      marker.position.copy(position);
+      clusterGroup.add(marker);
+      
+      clusteringSystemRef.current?.addSchool(school, marker);
+    });
+
+    return () => {
+      scene.remove(clusterGroup);
+      clusteringSystemRef.current = null;
+    };
+  }, [scene]);
+
+  // Update clustering system in animation loop
+  useFrame(() => {
+    if (clusteringSystemRef.current) {
+      clusteringSystemRef.current.update(camera, gl);
+    }
+  });
+
+  return null;
+};
+
+export const GermanyGlobe: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Ensure all Three.js components are loaded
     const loadComponents = async () => {
       try {
         await Promise.all([
@@ -48,6 +98,7 @@ const GermanyGlobe: React.FC = () => {
         <pointLight position={[10, 10, 10]} />
         <Suspense fallback={<LoadingFallback />}>
           <GermanyMap />
+          <ClusteringManager />
         </Suspense>
         <OrbitControls
           enableZoom={true}
