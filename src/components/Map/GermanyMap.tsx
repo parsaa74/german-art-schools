@@ -244,13 +244,6 @@ const GermanyMap: React.FC<GermanyMapProps> = ({
     }
   };
 
-  const projection = useMemo(() => {
-    return geoOrthographic()
-      .scale(radius * 100)
-      .translate([size.width / 2, size.height / 2])
-      .clipAngle(90);
-  }, [radius, size]);
-
   useEffect(() => {
     fetch('https://raw.githubusercontent.com/isellsoap/deutschlandGeoJSON/main/2_bundeslaender/4_niedrig.geo.json')
       .then(response => response.json())
