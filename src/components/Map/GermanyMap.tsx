@@ -181,7 +181,7 @@ const GermanyMap: React.FC<GermanyMapProps> = ({
   const [hoveredState, setHoveredState] = useState<string | null>(null);
   const [features, setFeatures] = useState<Feature[]>([]);
   const borderRef = useRef<THREE.Group>(null);
-  const { camera, size } = useThree();
+  const { camera } = useThree();
 
   const getStateCentroid = (coordinates: number[][][]): Coordinate => {
     try {
