@@ -92,3 +92,11 @@ body {
   width: 100%;
   height: 100%;
 } 
+
+.cluster-label {
+  @apply bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-sm font-semibold shadow-md;
+  transform: translate3d(-50%, -100%, 0);
+  margin-top: -8px;
+  pointer-events: none;
+  white-space: nowrap;
+} 

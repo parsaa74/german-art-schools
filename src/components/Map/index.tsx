@@ -1,61 +1,50 @@
 import React, { useEffect, useRef } from 'react';
-import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
-import { useMapStore } from '@/stores/mapStore';
-import { MAPBOX_TOKEN } from '@/config';
+import { useThree } from '@react-three/fiber';
+import { SchoolClusteringSystem } from './systems/SchoolClusteringSystem';
+import { schools } from '@/data/schools';
 
-mapboxgl.accessToken = MAPBOX_TOKEN;
-
-const Map: React.FC = () => {
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const map = useRef<mapboxgl.Map | null>(null);
-  const { setMap } = useMapStore();
+export const GermanyMap: React.FC = () => {
+  const { scene, camera, gl } = useThree();
+  const clusteringSystemRef = useRef<SchoolClusteringSystem | null>(null);
+  const globeRef = useRef<THREE.Group>(null);
 
   useEffect(() => {
-    if (!mapContainer.current || !MAPBOX_TOKEN) return;
+    if (!globeRef.current) return;
 
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/light-v11',
-      center: [10.4515, 51.1657],
-      zoom: 5.5,
-      bounds: [
-        [5.866, 47.270],
-        [15.042, 55.059],
-      ],
-      maxBounds: [
-        [3.866, 45.270],
-        [17.042, 57.059],
-      ],
-    });
+    // Initialize the clustering system
+    clusteringSystemRef.current = new SchoolClusteringSystem(globeRef.current);
 
-    map.current.on('load', () => {
-      if (!map.current) return;
+    // Add all schools to the clustering system
+    schools.forEach(school => {
+      // Create a marker mesh for each school
+      const markerGeometry = new THREE.SphereGeometry(0.01, 16, 16);
+      const markerMaterial = new THREE.MeshPhongMaterial({
+        color: 0xff0000,
+        emissive: 0xff0000
+      });
+      const marker = new THREE.Mesh(markerGeometry, markerMaterial);
       
-      map.current.addSource('germany', {
-        type: 'geojson',
-        data: '/data/germany.geojson'
-      });
-
-      map.current.addLayer({
-        id: 'germany-boundary',
-        type: 'fill',
-        source: 'germany',
-        paint: {
-          'fill-color': '#f0f0f0',
-          'fill-opacity': 0.4
-        }
-      });
-
-      setMap(map.current);
+      clusteringSystemRef.current?.addSchool(school, marker);
     });
+
+    // Animation loop for clustering updates
+    const animate = () => {
+      if (clusteringSystemRef.current) {
+        clusteringSystemRef.current.update(camera, gl);
+      }
+      requestAnimationFrame(animate);
+    };
+    animate();
 
     return () => {
-      map.current?.remove();
+      // Cleanup
+      clusteringSystemRef.current = null;
     };
-  }, [setMap]);
+  }, [camera, gl]);
 
-  return <div ref={mapContainer} style={{ width: '100%', height: '100%' }} />;
-};
-
-export default Map; 
+  return (
+    <group ref={globeRef}>
+      {/* Your existing map components */}
+    </group>
+  );
+}; 

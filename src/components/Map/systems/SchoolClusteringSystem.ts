@@ -3,6 +3,8 @@ import KDBush from 'kdbush';
 import { CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer';
 import { School } from '@/types/school';
 import { latLongToVector3 } from '@/utils';
+import { createRoot } from 'react-dom/client';
+import { ClusterOverlay, ClusterContent, SchoolItem } from '../styles/cluster-overlay';
 
 interface SchoolMarkerData {
   marker: THREE.Mesh;
@@ -33,9 +35,9 @@ export class SchoolClusteringSystem {
     this.schools = new Map();
     this.clusters = new Map();
     this.index = null;
-    this.clusterRadius = 10;
+    this.clusterRadius = 30;
     
-    this.clusterGeometry = new THREE.SphereGeometry(0.08, 32, 32);
+    this.clusterGeometry = new THREE.SphereGeometry(0.02, 32, 32);
     this.clusterMaterial = new THREE.MeshPhongMaterial({
       color: 0x4285f4,
       emissive: 0x1a73e8,
@@ -70,7 +72,7 @@ export class SchoolClusteringSystem {
   }
 
   update(camera: THREE.Camera, renderer: THREE.WebGLRenderer) {
-    if (camera.position.distanceTo(this.lastCameraPosition) > 0.1) {
+    if (camera.position.distanceTo(this.lastCameraPosition) > 0.01) {
       this.cameraMoved = true;
       this.lastCameraPosition.copy(camera.position);
     }
@@ -88,7 +90,9 @@ export class SchoolClusteringSystem {
     clusters.forEach(cluster => {
       if (cluster.points.length < 2) {
         const school = this.schools.get(cluster.points[0].id);
-        school.marker.visible = true;
+        if (school) {
+          school.marker.visible = true;
+        }
       } else {
         const clusterMarker = this.createClusterMarker(cluster);
         this.clusters.set(cluster.id, {
@@ -99,7 +103,9 @@ export class SchoolClusteringSystem {
         
         cluster.points.forEach(point => {
           const school = this.schools.get(point.id);
-          school.marker.visible = false;
+          if (school) {
+            school.marker.visible = false;
+          }
         });
       }
     });
@@ -173,27 +179,51 @@ export class SchoolClusteringSystem {
 
   private handleClusterClick(cluster: Cluster) {
     const schools = cluster.points.map(point => 
-      this.schools.get(point.id).data
+      this.schools.get(point.id)?.data
+    ).filter(Boolean);
+    
+    const overlayContainer = document.createElement('div');
+    const root = createRoot(overlayContainer);
+    
+    root.render(
+      <ClusterOverlay
+        isVisible={true}
+        onClose={() => {
+          document.body.removeChild(overlayContainer);
+          root.unmount();
+        }}
+      >
+        <ClusterContent title={`${schools.length} Art Schools in this area`}>
+          <div className="divide-y">
+            {schools.map(school => (
+              <SchoolItem
+                key={school.id}
+                name={school.name}
+                programCount={school.programs?.length || 0}
+                onClick={() => {
+                  // Handle school selection
+                  // You might want to zoom to the school or show more details
+                  const schoolData = this.schools.get(school.id);
+                  if (schoolData) {
+                    // Trigger camera movement to school position
+                    // You'll need to implement this functionality
+                    this.focusOnSchool(schoolData.position);
+                  }
+                }}
+              />
+            ))}
+          </div>
+        </ClusterContent>
+      </ClusterOverlay>
     );
     
-    const overlay = document.createElement('div');
-    overlay.className = 'cluster-overlay';
-    
-    overlay.innerHTML = `
-      <div class="cluster-content">
-        <h3>${schools.length} Art Schools in this area</h3>
-        <div class="school-list">
-          ${schools.map(school => `
-            <div class="school-item" onclick="showSchoolDetails('${school.id}')">
-              <h4>${school.name}</h4>
-              <p>${school.programs?.length || 0} programs</p>
-            </div>
-          `).join('')}
-        </div>
-      </div>
-    `;
-    
-    document.body.appendChild(overlay);
+    document.body.appendChild(overlayContainer);
+  }
+
+  private focusOnSchool(position: THREE.Vector3) {
+    // You can implement camera animation here
+    // For example, using GSAP or your preferred animation library
+    // This is just a placeholder for the functionality
   }
 
   private worldToScreen(position: THREE.Vector3, camera: THREE.Camera, renderer: THREE.WebGLRenderer) {
