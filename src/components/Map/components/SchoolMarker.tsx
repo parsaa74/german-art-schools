@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Html } from '@react-three/drei';
+import { Html } from '@react-three/drei';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { School } from '@/types/school';
 import { latLongToVector3 } from '@/utils';
