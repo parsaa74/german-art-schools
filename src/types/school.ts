@@ -1,14 +1,39 @@
+export interface Program {
+  name: string;
+  degree: string;
+  applicationDeadlines: {
+    winter?: {
+      start?: string;
+      end?: string;
+    };
+    summer?: {
+      start?: string;
+      end?: string;
+    };
+  };
+  professors: Array<{
+    name: string;
+    email: string;
+    position?: string;
+  }>;
+  tuitionFees: number | 'None';
+  language: string;
+  duration: string;
+  description: string;
+  specializations?: string[];
+  requirements?: string[];
+}
+
 export interface School {
   id: string;
   name: string;
-  type: 'art' | 'music' | 'film' | 'design' | 'theater' | 'dance' | 'media';
+  type: string;
   lat: number;
   lng: number;
   state: string;
-  founded?: number;
+  founded?: string;
   website?: string;
-  programs?: string[];
-  studentCount?: number;
+  programs?: Program[];
 }
 
 export const schools: School[] = [
@@ -19,7 +44,7 @@ export const schools: School[] = [
     lat: 51.9607,
     lng: 7.6261,
     state: 'North Rhine-Westphalia',
-    founded: 1971,
+    founded: '1971',
     website: 'https://www.kunstakademie-muenster.de'
   },
   {
@@ -29,7 +54,7 @@ export const schools: School[] = [
     lat: 49.4521,
     lng: 11.0767,
     state: 'Bavaria',
-    founded: 1662,
+    founded: '1662',
     website: 'https://www.adbk-nuernberg.de'
   },
   {
@@ -48,7 +73,7 @@ export const schools: School[] = [
     lat: 52.3906,
     lng: 13.1256,
     state: 'Brandenburg',
-    founded: 1954,
+    founded: '1954',
     website: 'https://www.filmuniversitaet.de'
   },
   // Add all schools from your list...

@@ -1,17 +1,7 @@
-export interface School {
-  id: string;
-  name: string;
-  type: 'art' | 'music' | 'film' | 'design' | 'theater' | 'dance' | 'media';
-  lat: number;
-  lng: number;
-  state: string;
-  founded?: number;
-  website?: string;
-  programs?: string[];
-  studentCount?: number;
-}
+import { School } from '@/types/school';
+import { updateSchoolsWithPrograms } from './programs';
 
-export const schools: School[] = [
+export const schools: School[] = updateSchoolsWithPrograms([
   {
     id: 'bauhaus',
     name: 'Bauhaus-Universität Weimar',
@@ -232,4 +222,4 @@ export const schools: School[] = [
     founded: 1696,
     website: 'https://www.udk-berlin.de'
   }
-]; 
+]); 
