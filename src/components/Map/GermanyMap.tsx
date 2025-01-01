@@ -3,9 +3,8 @@ import { Line, Sphere, Text, Html, OrbitControls } from '@react-three/drei';
 import { useThree, useLoader } from '@react-three/fiber';
 import { useSpring, animated } from '@react-spring/three';
 import * as THREE from 'three';
-import { geoGraticule10, geoOrthographic } from 'd3-geo';
+import { geoOrthographic } from 'd3-geo';
 import gsap from 'gsap';
-import { ColorFlowMaterial } from './effects/ColorFlow';
 import { SchoolParticle } from './effects/SchoolParticles';
 import { ConnectionLines } from './effects/ConnectionLines';
 import { schools } from '@/data/schools';
@@ -19,15 +18,6 @@ const EARTH_SPECULAR_MAP_URL = 'https://raw.githubusercontent.com/mrdoob/three.j
 interface GermanyMapProps {
   radius?: number;
   color?: string;
-  width?: number;
-}
-
-interface StateDetails {
-  name: string;
-  capital: string;
-  population: number;
-  area: number;
-  description: string;
 }
 
 // Define state colors for better visualization
@@ -94,25 +84,6 @@ const MAJOR_RIVERS = [
     ]
   }
 ];
-
-// Add state details
-const STATE_DETAILS: Record<string, StateDetails> = {
-  'Bavaria': {
-    name: 'Bavaria',
-    capital: 'Munich',
-    population: 13124737,
-    area: 70550,
-    description: 'Largest German state by area, known for Oktoberfest and Alps'
-  },
-  'Berlin': {
-    name: 'Berlin',
-    capital: 'Berlin',
-    population: 3669495,
-    area: 891,
-    description: 'German capital and cultural center'
-  },
-  // Add details for other states...
-};
 
 interface Feature {
   properties: {
@@ -204,62 +175,14 @@ const AnimatedState: React.FC<{
   );
 };
 
-const Earth: React.FC<{ radius: number }> = ({ radius }) => {
-  const earthRef = useRef<THREE.Group>(null);
-  const [earthTexture, normalMap, specularMap] = useLoader(THREE.TextureLoader, [
-    EARTH_TEXTURE_URL,
-    EARTH_NORMAL_MAP_URL,
-    EARTH_SPECULAR_MAP_URL
-  ]);
-
-  // Correct Germany's center coordinates
-  const GERMANY_CENTER = {
-    lat: 51.1657,
-    lng: 10.4515
-  };
-
-  useEffect(() => {
-    if (earthRef.current) {
-      // Position Germany at the center of view
-      earthRef.current.rotation.y = -(GERMANY_CENTER.lng * Math.PI / 180);
-      earthRef.current.rotation.x = (GERMANY_CENTER.lat * Math.PI / 180);
-    }
-  }, []);
-
-  return (
-    <group ref={earthRef}>
-      <Sphere args={[radius, 64, 64]}>
-        <meshPhongMaterial
-          map={earthTexture}
-          normalMap={normalMap}
-          specularMap={specularMap}
-          shininess={5}
-          specular={new THREE.Color('#333333')}
-        />
-      </Sphere>
-    </group>
-  );
-};
-
 const GermanyMap: React.FC<GermanyMapProps> = ({
   radius = 1,
   color = '#ffffff',
-  width = 0.5,
 }) => {
   const [hoveredState, setHoveredState] = useState<string | null>(null);
-  const [selectedState, setSelectedState] = useState<string | null>(null);
-  const [showDetails, setShowDetails] = useState(false);
   const [features, setFeatures] = useState<Feature[]>([]);
   const borderRef = useRef<THREE.Group>(null);
-  const graticuleRef = useRef<THREE.Group>(null);
   const { camera, size } = useThree();
-
-  // Create graticules (latitude/longitude lines)
-  const graticulePoints = useMemo(() => {
-    return geoGraticule10().coordinates.map(coords =>
-      coords.map(([lon, lat]) => latLongToVector3(lat, lon))
-    );
-  }, [radius]);
 
   const getStateCentroid = (coordinates: number[][][]): Coordinate => {
     try {
@@ -309,28 +232,15 @@ const GermanyMap: React.FC<GermanyMapProps> = ({
     }
   };
 
-  const onStateClick = (stateName: string, coordinates: number[][][]) => {
-    setSelectedState(stateName);
-    setShowDetails(true);
-
-    try {
-      // Calculate centroid for camera focus
-      const { lat, lng } = getStateCentroid(coordinates);
-      const targetPosition = latLongToVector3(lat, lng, 0.1);
-
-      // Animate camera to focus on state
-      gsap.to(camera.position, {
-        x: targetPosition.x * 1.5,
-        y: targetPosition.y * 1.5,
-        z: targetPosition.z * 1.5,
+  const onStateClick = (coordinates: number[][][]) => {
+    const centroid = getStateCentroid(coordinates);
+    if (borderRef.current) {
+      gsap.to(borderRef.current.rotation, {
+        x: (centroid.lat * Math.PI) / 180,
+        y: -(centroid.lng * Math.PI) / 180,
         duration: 1,
         ease: 'power2.inOut',
-        onComplete: () => {
-          // Additional animations or callbacks
-        }
       });
-    } catch (error) {
-      console.error('Error handling state click:', error);
     }
   };
 
@@ -418,7 +328,7 @@ const GermanyMap: React.FC<GermanyMapProps> = ({
             key={feature.properties.name}
             feature={feature}
             color={STATE_COLORS[feature.properties.name as keyof typeof STATE_COLORS] || color}
-            onClick={() => onStateClick(feature.properties.name, feature.geometry.coordinates)}
+            onClick={() => onStateClick(feature.geometry.coordinates)}
             isHovered={hoveredState === feature.properties.name}
             onHover={(value) => setHoveredState(value ? feature.properties.name : null)}
           />
