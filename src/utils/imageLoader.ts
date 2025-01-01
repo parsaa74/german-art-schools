@@ -3,5 +3,5 @@ export default function imageLoader({ src, width, quality }: { src: string; widt
   if (src.startsWith('http')) {
     return src;
   }
-  return `${basePath}${src}`;
+  return `${basePath}${src}?w=${width}${quality ? `&q=${quality}` : ''}`;
 } 
