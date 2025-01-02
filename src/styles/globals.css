@@ -100,3 +100,86 @@ body {
   pointer-events: none;
   white-space: nowrap;
 } 
+
+@keyframes digitalDecode {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+    filter: brightness(2) contrast(2) hue-rotate(45deg);
+  }
+  20% {
+    clip-path: inset(0 80% 0 0);
+    opacity: 0.3;
+    filter: brightness(1.8) contrast(1.8) hue-rotate(30deg);
+  }
+  40% {
+    clip-path: inset(0 60% 0 0);
+    opacity: 0.5;
+    filter: brightness(1.6) contrast(1.6) hue-rotate(20deg);
+  }
+  60% {
+    clip-path: inset(0 40% 0 0);
+    opacity: 0.7;
+    filter: brightness(1.4) contrast(1.4) hue-rotate(10deg);
+  }
+  80% {
+    clip-path: inset(0 20% 0 0);
+    opacity: 0.9;
+    filter: brightness(1.2) contrast(1.2) hue-rotate(5deg);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: brightness(1) contrast(1) hue-rotate(0deg);
+  }
+}
+
+.digital-decode {
+  animation: digitalDecode 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: clip-path, opacity, transform, filter;
+}
+
+/* Add glitch effect for hover */
+.digital-decode:hover {
+  animation: glitch 0.2s ease-in-out infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+    filter: hue-rotate(0deg);
+  }
+  25% {
+    transform: translate(1px, -1px);
+    filter: hue-rotate(2deg);
+  }
+  50% {
+    transform: translate(-1px, 1px);
+    filter: hue-rotate(-2deg);
+  }
+  75% {
+    transform: translate(1px, 1px);
+    filter: hue-rotate(1deg);
+  }
+  100% {
+    transform: translate(0);
+    filter: hue-rotate(0deg);
+  }
+} 
+
+@keyframes shine {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shine {
+  animation: shine 3s ease-in-out infinite;
+  background-size: 200% 100%;
+  background-position-x: -100%;
+} 
