@@ -41,7 +41,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dynamic */ \"./node_modules/next/dynamic.js\");\n/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nconst GermanyGlobe = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(()=>__webpack_require__.e(/*! import() */ \"src_components_Map_GermanyGlobe_tsx\").then(__webpack_require__.bind(__webpack_require__, /*! @/components/Map/GermanyGlobe */ \"./src/components/Map/GermanyGlobe.tsx\")).then((mod)=>mod.GermanyGlobe), {\n    loadableGenerated: {\n        modules: [\n            \"pages/index.tsx -> \" + \"@/components/Map/GermanyGlobe\"\n        ]\n    },\n    ssr: false\n});\nfunction Home() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        style: {\n            width: '100vw',\n            height: '100vh',\n            background: '#111111'\n        },\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(GermanyGlobe, {}, void 0, false, {\n            fileName: \"/home/parsa/map-of-german-students/src/pages/index.tsx\",\n            lineNumber: 12,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"/home/parsa/map-of-german-students/src/pages/index.tsx\",\n        lineNumber: 11,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvaW5kZXgudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBQXdDO0FBQ0w7QUFFbkMsTUFBTUUsZUFBZUQsbURBQU9BLENBQzFCLElBQU0sOE1BQXVDLENBQUNFLElBQUksQ0FBQ0MsQ0FBQUEsTUFBT0EsSUFBSUYsWUFBWTs7Ozs7O0lBQ3hFRyxLQUFLOztBQUdNLFNBQVNDO0lBQ3RCLHFCQUNFLDhEQUFDQztRQUFJQyxPQUFPO1lBQUVDLE9BQU87WUFBU0MsUUFBUTtZQUFTQyxZQUFZO1FBQVU7a0JBQ25FLDRFQUFDVDs7Ozs7Ozs7OztBQUdQIiwic291cmNlcyI6WyIvaG9tZS9wYXJzYS9tYXAtb2YtZ2VybWFuLXN0dWRlbnRzL3NyYy9wYWdlcy9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IFN1c3BlbnNlIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IGR5bmFtaWMgZnJvbSAnbmV4dC9keW5hbWljJztcblxuY29uc3QgR2VybWFueUdsb2JlID0gZHluYW1pYyhcbiAgKCkgPT4gaW1wb3J0KCdAL2NvbXBvbmVudHMvTWFwL0dlcm1hbnlHbG9iZScpLnRoZW4obW9kID0+IG1vZC5HZXJtYW55R2xvYmUpLFxuICB7IHNzcjogZmFsc2UgfVxuKTtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSgpIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IHN0eWxlPXt7IHdpZHRoOiAnMTAwdncnLCBoZWlnaHQ6ICcxMDB2aCcsIGJhY2tncm91bmQ6ICcjMTExMTExJyB9fT5cbiAgICAgIDxHZXJtYW55R2xvYmUgLz5cbiAgICA8L2Rpdj5cbiAgKTtcbn0gIl0sIm5hbWVzIjpbIlJlYWN0IiwiZHluYW1pYyIsIkdlcm1hbnlHbG9iZSIsInRoZW4iLCJtb2QiLCJzc3IiLCJIb21lIiwiZGl2Iiwic3R5bGUiLCJ3aWR0aCIsImhlaWdodCIsImJhY2tncm91bmQiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/pages/index.tsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dynamic */ \"./node_modules/next/dynamic.js\");\n/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nconst GermanyGlobe = next_dynamic__WEBPACK_IMPORTED_MODULE_2___default()(()=>Promise.all(/*! import() */[__webpack_require__.e(\"vendor-chunks/next\"), __webpack_require__.e(\"vendor-chunks/@swc\"), __webpack_require__.e(\"src_components_Map_GermanyGlobe_tsx\")]).then(__webpack_require__.bind(__webpack_require__, /*! @/components/Map/GermanyGlobe */ \"./src/components/Map/GermanyGlobe.tsx\")).then((mod)=>mod.GermanyGlobe), {\n    loadableGenerated: {\n        modules: [\n            \"pages/index.tsx -> \" + \"@/components/Map/GermanyGlobe\"\n        ]\n    },\n    ssr: false\n});\nfunction Home() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        style: {\n            width: '100vw',\n            height: '100vh',\n            background: '#111111'\n        },\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(GermanyGlobe, {}, void 0, false, {\n            fileName: \"/home/parsa/map-of-german-students/src/pages/index.tsx\",\n            lineNumber: 12,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"/home/parsa/map-of-german-students/src/pages/index.tsx\",\n        lineNumber: 11,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvaW5kZXgudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBQXdDO0FBQ0w7QUFFbkMsTUFBTUUsZUFBZUQsbURBQU9BLENBQzFCLElBQU0sc1RBQXVDLENBQUNFLElBQUksQ0FBQ0MsQ0FBQUEsTUFBT0EsSUFBSUYsWUFBWTs7Ozs7O0lBQ3hFRyxLQUFLOztBQUdNLFNBQVNDO0lBQ3RCLHFCQUNFLDhEQUFDQztRQUFJQyxPQUFPO1lBQUVDLE9BQU87WUFBU0MsUUFBUTtZQUFTQyxZQUFZO1FBQVU7a0JBQ25FLDRFQUFDVDs7Ozs7Ozs7OztBQUdQIiwic291cmNlcyI6WyIvaG9tZS9wYXJzYS9tYXAtb2YtZ2VybWFuLXN0dWRlbnRzL3NyYy9wYWdlcy9pbmRleC50c3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0LCB7IFN1c3BlbnNlIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IGR5bmFtaWMgZnJvbSAnbmV4dC9keW5hbWljJztcblxuY29uc3QgR2VybWFueUdsb2JlID0gZHluYW1pYyhcbiAgKCkgPT4gaW1wb3J0KCdAL2NvbXBvbmVudHMvTWFwL0dlcm1hbnlHbG9iZScpLnRoZW4obW9kID0+IG1vZC5HZXJtYW55R2xvYmUpLFxuICB7IHNzcjogZmFsc2UgfVxuKTtcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSgpIHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2IHN0eWxlPXt7IHdpZHRoOiAnMTAwdncnLCBoZWlnaHQ6ICcxMDB2aCcsIGJhY2tncm91bmQ6ICcjMTExMTExJyB9fT5cbiAgICAgIDxHZXJtYW55R2xvYmUgLz5cbiAgICA8L2Rpdj5cbiAgKTtcbn0gIl0sIm5hbWVzIjpbIlJlYWN0IiwiZHluYW1pYyIsIkdlcm1hbnlHbG9iZSIsInRoZW4iLCJtb2QiLCJzc3IiLCJIb21lIiwiZGl2Iiwic3R5bGUiLCJ3aWR0aCIsImhlaWdodCIsImJhY2tncm91bmQiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/pages/index.tsx\n");
 
 /***/ }),
 
@@ -96,6 +96,17 @@ module.exports = require("next/dist/compiled/next-server/pages.runtime.dev.js");
 
 "use strict";
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-dom":
+/*!****************************!*\
+  !*** external "react-dom" ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-dom");
 
 /***/ }),
 
@@ -162,6 +173,17 @@ module.exports = import("class-variance-authority");;
 
 "use strict";
 module.exports = import("clsx");;
+
+/***/ }),
+
+/***/ "framer-motion":
+/*!********************************!*\
+  !*** external "framer-motion" ***!
+  \********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("framer-motion");;
 
 /***/ }),
 

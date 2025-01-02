@@ -29,8 +29,6 @@
 - Akademie der Bildenden Künste Nürnberg
 - Technische Universität Berlin
 - Hochschule für Bildende Künste Essen
-- Offenbach University of Art and Design
-- Muthesius Kunsthochschule Kiel
 - Staatliche Hochschule für Gestaltung Karlsruhe
 - Academy of Visual Arts Frankfurt
 - Fachhochschule Potsdam
@@ -42,4 +40,4 @@
 - Universität Siegen
 - Technische Hochschule Ingolstadt
 - Hochschule Fulda 
-- IU Internationale Hochschule 
+- Universität Passau
