@@ -26,17 +26,14 @@ export interface Program {
 }
 
 export interface School {
-  id: string;
   name: string;
-  type: 'university' | 'kunsthochschule' | 'hochschule';
+  type: string;
   state: string;
   lat: number;
-  lng: number;
+  long: number;
+  programs: string[];
   founded?: string;
   website?: string;
-  logo?: string;
-  description?: string;
-  programs: Program[];
 }
 
 export const schools: School[] = [
