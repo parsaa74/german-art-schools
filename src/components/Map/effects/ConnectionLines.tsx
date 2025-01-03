@@ -1,40 +1,38 @@
 import React, { useMemo } from 'react';
 import { Line } from '@react-three/drei';
-import { School } from '@/data/schools';
+import { School } from '@/types/school';
 import { latLongToVector3 } from '@/lib/utils';
 
 interface ConnectionLinesProps {
   schools: School[];
+  selectedSchool: School | null;
 }
 
-export const ConnectionLines: React.FC<ConnectionLinesProps> = ({ schools }) => {
+export const ConnectionLines: React.FC<ConnectionLinesProps> = ({ schools, selectedSchool }) => {
   const connections = useMemo(() => {
-    const lines = [];
-    for (let i = 0; i < schools.length; i++) {
-      for (let j = i + 1; j < schools.length; j++) {
-        if (schools[i].type === schools[j].type) {
-          lines.push({
-            start: latLongToVector3(schools[i].lat, schools[i].lng, 1.02),
-            end: latLongToVector3(schools[j].lat, schools[j].lng, 1.02),
-          });
-        }
-      }
-    }
-    return lines;
-  }, [schools]);
+    if (!selectedSchool) return [];
+
+    return schools
+      .filter(school => school !== selectedSchool)
+      .map(school => ({
+        start: latLongToVector3(selectedSchool.lat, selectedSchool.long),
+        end: latLongToVector3(school.lat, school.long)
+      }));
+  }, [schools, selectedSchool]);
+
+  if (!selectedSchool) return null;
 
   return (
-    <group>
+    <>
       {connections.map((connection, index) => (
         <Line
           key={index}
           points={[connection.start, connection.end]}
-          color="#ffffff"
-          lineWidth={0.5}
-          transparent
+          color="white"
+          lineWidth={0.3}
           opacity={0.2}
         />
       ))}
-    </group>
+    </>
   );
 };
