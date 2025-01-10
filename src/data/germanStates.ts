@@ -1,110 +1,161 @@
+import { GeoJSON } from 'geojson';
+
 export interface GermanState {
-  name: string;
-  color: string;
-  labelPosition: [number, number];
-  coordinates: [number, number][];
-  population: number;
-  capital: string;
+    name: string;
+    id: string;
+    color: string;
+    coordinates: [number, number][];
 }
 
-export const germanStates: GermanState[] = [
-  {
-    name: 'Bavaria',
-    color: '#4a90e2',
-    labelPosition: [48.7904, 11.4979],
-    population: 13124737,
-    capital: 'Munich',
-    coordinates: [
-      [47.2703, 10.1794],
-      [47.4162, 10.8989],
-      [47.5802, 12.1006],
-      [47.7022, 13.0084],
-      [48.7775, 13.8333],
-      [49.1166, 12.4333],
-      [50.2666, 11.9833],
-      [50.5666, 12.3666],
-      [50.3166, 11.2666],
-      [49.7916, 10.1333],
-      [49.3516, 9.5666],
-      [48.6833, 10.1666],
-      [47.2703, 10.1794]
-    ]
-  },
-  {
-    name: 'North Rhine-Westphalia',
-    color: '#50e3c2',
-    labelPosition: [51.4332, 7.6616],
-    population: 17925570,
-    capital: 'Düsseldorf',
-    coordinates: [
-      [51.8433, 6.1563],
-      [52.5283, 7.2167],
-      [52.1583, 8.4833],
-      [51.2016, 9.4166],
-      [50.3233, 7.6133],
-      [50.3633, 6.2433],
-      [51.0516, 5.9566],
-      [51.8433, 6.1563]
-    ]
-  },
-  // ... Add all 16 German states with their coordinates
-];
-
-export const majorRivers = [
-  {
-    name: 'Rhine',
-    color: '#4488ff',
-    width: 2,
-    coordinates: [
-      [47.6667, 8.6167], // Lake Constance
-      [49.0000, 8.3833], // Karlsruhe
-      [50.0667, 8.6167], // Frankfurt
-      [51.2167, 6.7667], // Düsseldorf
-      [51.9667, 6.6833]  // Netherlands border
-    ]
-  },
-  {
-    name: 'Elbe',
-    color: '#4488ff',
-    width: 2,
-    coordinates: [
-      [50.7833, 14.2333], // Czech border
-      [51.0500, 13.7333], // Dresden
-      [51.8833, 12.4333], // Dessau
-      [53.5500, 9.9833],  // Hamburg
-      [53.8833, 8.7000]   // North Sea
-    ]
-  },
-  // Add more rivers...
-];
-
-export const majorLakes = [
-  {
-    name: 'Lake Constance',
-    color: '#4488ff',
-    coordinates: [
-      [47.4833, 9.0333],
-      [47.5833, 9.4333],
-      [47.6500, 9.3333],
-      [47.7000, 8.9833],
-      [47.4833, 9.0333]
-    ]
-  },
-  // Add more lakes...
-];
-
-export const majorCities = [
-  {
-    name: 'Berlin',
-    coordinates: [52.5200, 13.4050],
-    isCapital: true,
-    population: 3669495
-  },
-  {
-    name: 'Hamburg',
-    coordinates: [53.5511, 9.9937],
-    isCapital: false,
-    population: 1841179
-  },
-  // Add more cities...
+export const GERMAN_STATES: GermanState[] = [
+    {
+        name: "Baden-Württemberg",
+        id: "bw",
+        color: "#ffffff",
+        coordinates: [
+            [9.795, 47.5858], [10.2367, 47.6742], [10.4733, 47.5808],
+            [9.8117, 48.6842], [8.6583, 49.4042], [8.3408, 49.0092],
+            [7.5108, 49.0342], [7.5958, 48.3325], [8.1142, 47.9925],
+            [9.795, 47.5858]
+        ]
+    },
+    {
+        name: "Bavaria",
+        id: "by",
+        color: "#ffffff",
+        coordinates: [
+            [10.4733, 47.5808], [12.1000, 47.7000], [13.8333, 48.7667],
+            [13.7167, 50.4333], [11.8833, 50.3667], [10.1667, 50.3667],
+            [9.8117, 48.6842], [10.4733, 47.5808]
+        ]
+    },
+    {
+        name: "Berlin",
+        id: "be",
+        color: "#ffffff",
+        coordinates: [
+            [13.0883, 52.6750], [13.7617, 52.6750], [13.7617, 52.3383],
+            [13.0883, 52.3383], [13.0883, 52.6750]
+        ]
+    },
+    {
+        name: "Brandenburg",
+        id: "bb",
+        color: "#ffffff",
+        coordinates: [
+            [11.2667, 53.3167], [14.4833, 53.3167], [14.7667, 52.0667],
+            [13.5000, 51.8500], [11.8667, 51.8500], [11.2667, 53.3167]
+        ]
+    },
+    {
+        name: "Bremen",
+        id: "hb",
+        color: "#ffffff",
+        coordinates: [
+            [8.4833, 53.2167], [8.9833, 53.2167], [8.9833, 53.0167],
+            [8.4833, 53.0167], [8.4833, 53.2167]
+        ]
+    },
+    {
+        name: "Hamburg",
+        id: "hh",
+        color: "#ffffff",
+        coordinates: [
+            [9.7333, 53.7500], [10.3250, 53.7500], [10.3250, 53.3917],
+            [9.7333, 53.3917], [9.7333, 53.7500]
+        ]
+    },
+    {
+        name: "Hesse",
+        id: "he",
+        color: "#ffffff",
+        coordinates: [
+            [8.1517, 51.5000], [10.2333, 51.5000], [10.2333, 49.3942],
+            [8.1517, 49.3942], [8.1517, 51.5000]
+        ]
+    },
+    {
+        name: "Lower Saxony",
+        id: "ni",
+        color: "#ffffff",
+        coordinates: [
+            [6.9051, 53.4822], [8.8007, 54.0208], [10.3250, 53.3917],
+            [10.9394, 54.0087], [11.9563, 54.1965], [10.9501, 54.3636],
+            [8.5721, 54.3956], [7.1004, 53.6939], [6.9051, 53.4822]
+        ]
+    },
+    {
+        name: "Mecklenburg-Vorpommern",
+        id: "mv",
+        color: "#ffffff",
+        coordinates: [
+            [10.9394, 54.0087], [12.5184, 54.4704], [14.1197, 53.7570],
+            [14.3533, 53.2482], [13.6475, 54.0755], [11.9563, 54.1965],
+            [10.9394, 54.0087]
+        ]
+    },
+    {
+        name: "North Rhine-Westphalia",
+        id: "nw",
+        color: "#ffffff",
+        coordinates: [
+            [5.9887, 51.8516], [8.8007, 54.0208], [8.5721, 54.3956],
+            [6.0431, 50.1281], [6.1567, 50.8037], [5.9887, 51.8516]
+        ]
+    },
+    {
+        name: "Rhineland-Palatinate",
+        id: "rp",
+        color: "#ffffff",
+        coordinates: [
+            [6.1567, 50.8037], [8.3408, 49.0092], [7.5108, 49.0342],
+            [6.1863, 49.4638], [6.2428, 49.9022], [6.0431, 50.1281],
+            [6.1567, 50.8037]
+        ]
+    },
+    {
+        name: "Saarland",
+        id: "sl",
+        color: "#ffffff",
+        coordinates: [
+            [6.3583, 49.6167], [7.4083, 49.6167], [7.0333, 49.2333],
+            [6.3583, 49.2333], [6.3583, 49.6167]
+        ]
+    },
+    {
+        name: "Saxony",
+        id: "sn",
+        color: "#ffffff",
+        coordinates: [
+            [12.2401, 50.2663], [14.3070, 51.1173], [15.0170, 51.1067],
+            [14.6850, 52.0899], [12.9668, 50.4841], [12.2401, 50.2663]
+        ]
+    },
+    {
+        name: "Saxony-Anhalt",
+        id: "st",
+        color: "#ffffff",
+        coordinates: [
+            [11.2667, 53.3167], [13.5000, 51.8500], [12.2401, 50.2663],
+            [11.2667, 53.3167]
+        ]
+    },
+    {
+        name: "Schleswig-Holstein",
+        id: "sh",
+        color: "#ffffff",
+        coordinates: [
+            [8.5262, 54.9627], [11.2667, 53.3167], [8.8007, 54.0208],
+            [8.5262, 54.9627]
+        ]
+    },
+    {
+        name: "Thuringia",
+        id: "th",
+        color: "#ffffff",
+        coordinates: [
+            [10.2333, 51.5000], [12.2401, 50.2663], [10.9394, 54.0087],
+            [10.2333, 51.5000]
+        ]
+    }
 ]; 
