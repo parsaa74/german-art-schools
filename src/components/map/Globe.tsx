@@ -34,17 +34,15 @@ export default function Globe({ radius = 5 }: GlobeProps) {
                 />
             </mesh>
 
-            <Suspense fallback={null}>
-                {/* University nodes */}
-                <UniversityNodes radius={radius + 0.01} color="#00ffd5" />
-            </Suspense>
+            {/* University nodes */}
+            <UniversityNodes radius={radius * 1.01} />
 
             {/* Lighting */}
-            <ambientLight intensity={0.15} />
-            <directionalLight position={[10, 10, 5]} intensity={0.6} />
-            <pointLight position={[0, 0, 10]} intensity={1} color="#ffffff" distance={20} />
-            <pointLight position={[10, 5, 0]} intensity={0.8} color="#00ffd5" distance={15} />
-            <pointLight position={[-10, -5, 0]} intensity={0.8} color="#4400ff" distance={15} />
+            <ambientLight intensity={0.5} />
+            <directionalLight position={[10, 10, 5]} intensity={1} />
+            <pointLight position={[0, 0, 10]} intensity={2} color="#ffffff" distance={20} />
+            <pointLight position={[10, 5, 0]} intensity={1.5} color="#00ffd5" distance={15} />
+            <pointLight position={[-10, -5, 0]} intensity={1.5} color="#4400ff" distance={15} />
         </group>
     );
 } 
