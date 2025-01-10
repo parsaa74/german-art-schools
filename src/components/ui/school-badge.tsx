@@ -1,7 +1,7 @@
 import React from 'react';
 import { Badge } from './badge';
 
-export type SchoolType = 'art' | 'music' | 'film' | 'design' | 'theater' | 'dance' | 'media';
+export type SchoolType = 'university' | 'academy' | 'college';
 
 interface SchoolBadgeProps {
   type: SchoolType;
@@ -9,13 +9,9 @@ interface SchoolBadgeProps {
 }
 
 const typeLabels: Record<SchoolType, string> = {
-  art: 'Art',
-  music: 'Music',
-  film: 'Film',
-  design: 'Design',
-  theater: 'Theater',
-  dance: 'Dance',
-  media: 'Media'
+  university: 'University',
+  academy: 'Academy',
+  college: 'College'
 };
 
 export const SchoolBadge = React.forwardRef<HTMLDivElement, SchoolBadgeProps>(

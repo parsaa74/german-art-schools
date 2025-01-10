@@ -13,7 +13,7 @@ import {
   CommandItem,
 } from "@/components/ui/command";
 import { SchoolBadge } from "@/components/ui/school-badge";
-import { schools } from '@/types/school';
+import { schools } from '@/data/schools';
 import { useSchoolStore } from '@/stores/schoolStore';
 
 const Sidebar = () => {
