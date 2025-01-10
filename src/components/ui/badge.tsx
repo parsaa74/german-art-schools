@@ -14,13 +14,9 @@ const badgeVariants = cva(
         destructive:
           "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
         outline: "text-foreground",
-        art: "border-transparent bg-red-500 text-white hover:bg-red-600",
-        music: "border-transparent bg-green-500 text-white hover:bg-green-600",
-        film: "border-transparent bg-blue-500 text-white hover:bg-blue-600",
-        design: "border-transparent bg-purple-500 text-white hover:bg-purple-600",
-        theater: "border-transparent bg-yellow-500 text-black hover:bg-yellow-600",
-        dance: "border-transparent bg-cyan-500 text-white hover:bg-cyan-600",
-        media: "border-transparent bg-orange-500 text-white hover:bg-orange-600",
+        university: "border-transparent bg-blue-500 text-white hover:bg-blue-600",
+        academy: "border-transparent bg-purple-500 text-white hover:bg-purple-600",
+        college: "border-transparent bg-green-500 text-white hover:bg-green-600",
       },
     },
     defaultVariants: {
@@ -32,7 +28,7 @@ const badgeVariants = cva(
 export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof badgeVariants> {
-  variant?: 'default' | 'secondary' | 'destructive' | 'outline' | 'art' | 'music' | 'film' | 'design' | 'theater' | 'dance' | 'media';
+  variant?: 'default' | 'secondary' | 'destructive' | 'outline' | 'university' | 'academy' | 'college';
 }
 
 const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
