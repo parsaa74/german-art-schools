@@ -32,7 +32,11 @@ export default function Scene() {
                     near: 0.1,
                     far: 1000
                 }}
+                gl={{ antialias: true }}
             >
+                <color attach="background" args={['#000022']} />
+                <fog attach="fog" args={['#000022', 10, 50]} />
+                
                 <Suspense fallback={null}>
                     <Background />
                     <Globe />
