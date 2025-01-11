@@ -1,28 +1,30 @@
 {
   "../../node_modules/@react-three/drei/core/VideoTexture.js -> hls.js": {
-    "id": "../../node_modules/@react-three/drei/core/VideoTexture.js -> hls.js",
+    "id": null,
     "files": []
   },
   "../../node_modules/@react-three/drei/web/FaceLandmarker.js -> @mediapipe/tasks-vision": {
-    "id": "../../node_modules/@react-three/drei/web/FaceLandmarker.js -> @mediapipe/tasks-vision",
+    "id": null,
     "files": []
   },
   "../components/map/Globe.tsx -> ./UniversityNodes": {
-    "id": "../components/map/Globe.tsx -> ./UniversityNodes",
+    "id": 74,
     "files": [
-      "static/chunks/_app-pages-browser_src_components_map_UniversityNodes_tsx.js"
+      "static/chunks/0f8af13e.edeece472c82d6cb.js",
+      "static/chunks/810.3221ea2abc862d9f.js",
+      "static/chunks/74.2ff4adfacfbfc6ad.js"
     ]
   },
   "../components/map/Scene.tsx -> ./Background": {
-    "id": "../components/map/Scene.tsx -> ./Background",
+    "id": 1651,
     "files": [
-      "static/chunks/_app-pages-browser_src_components_map_Background_tsx.js"
+      "static/chunks/651.74d4366b92a7cc1b.js"
     ]
   },
   "../components/map/Scene.tsx -> ./Globe": {
-    "id": "../components/map/Scene.tsx -> ./Globe",
+    "id": 9878,
     "files": [
-      "static/chunks/_app-pages-browser_src_components_map_Globe_tsx.js"
+      "static/chunks/878.3134c8cc1274ba45.js"
     ]
   }
 }
