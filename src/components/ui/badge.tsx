@@ -1,3 +1,5 @@
+'use client'
+
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
@@ -27,12 +29,10 @@ const badgeVariants = cva(
 
 export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof badgeVariants> {
-  variant?: 'default' | 'secondary' | 'destructive' | 'outline' | 'university' | 'academy' | 'college';
-}
+    VariantProps<typeof badgeVariants> {}
 
 const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
-  ({ className, variant, ...props }, ref) => {
+  ({ className, variant = 'default', ...props }, ref) => {
     return (
       <div
         ref={ref}

@@ -23,36 +23,53 @@ export const useGermanyMap = () => {
         setIsLoading(true);
         console.log('Fetching map data...');
         
-        // Try both possible file names
-        let response = await fetch('/germany-states.json');
-        if (!response.ok) {
-          console.log('Trying alternate file...');
-          response = await fetch('/germany.json');
+        const possibleFiles = ['/germany-states.json', '/germany.json', '/de-states.json'];
+        let response = null;
+        let loadedFile = '';
+
+        // Try all possible file names
+        for (const file of possibleFiles) {
+          try {
+            const res = await fetch(file);
+            if (res.ok) {
+              response = res;
+              loadedFile = file;
+              break;
+            }
+          } catch (e) {
+            console.warn(`Failed to load ${file}:`, e);
+          }
         }
         
-        if (!response.ok) {
-          console.error('Failed to load map data:', {
-            status: response.status,
-            statusText: response.statusText,
-            url: response.url
-          });
-          throw new Error(`Failed to load map data: ${response.statusText}`);
+        if (!response) {
+          throw new Error(`Failed to load map data. Tried: ${possibleFiles.join(', ')}`);
         }
 
+        console.log(`Successfully loaded map data from: ${loadedFile}`);
+        
         const data = await response.json();
         
         // Validate the data structure
         if (!data.type || data.type !== 'FeatureCollection' || !Array.isArray(data.features)) {
           console.error('Invalid GeoJSON format:', data);
-          throw new Error('Invalid GeoJSON format');
+          throw new Error('Invalid GeoJSON format: Missing required FeatureCollection structure');
         }
 
-        // Validate each feature
+        // Validate each feature with detailed error messages
         data.features.forEach((feature: StateFeature, index: number) => {
-          if (!feature.properties?.id || !feature.properties?.name) {
-            throw new Error(`Invalid state data at index ${index}`);
+          if (!feature.properties) {
+            throw new Error(`Missing properties for feature at index ${index}`);
           }
-          if (!feature.geometry?.coordinates || !Array.isArray(feature.geometry.coordinates[0])) {
+          if (!feature.properties.id) {
+            throw new Error(`Missing id for state at index ${index}`);
+          }
+          if (!feature.properties.name) {
+            throw new Error(`Missing name for state ${feature.properties.id}`);
+          }
+          if (!feature.geometry) {
+            throw new Error(`Missing geometry for state ${feature.properties.name}`);
+          }
+          if (!feature.geometry.coordinates || !Array.isArray(feature.geometry.coordinates[0])) {
             throw new Error(`Invalid geometry data for state ${feature.properties.name}`);
           }
         });

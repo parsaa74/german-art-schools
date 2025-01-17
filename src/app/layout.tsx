@@ -1,12 +1,15 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
+import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter'
+})
 
-export const metadata: Metadata = {
-  title: 'Germany Map',
-  description: 'Interactive map of Germany',
+export const metadata = {
+  title: 'German Art Schools',
+  description: 'Interactive visualization of German art schools',
 }
 
 export default function RootLayout({
@@ -16,7 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="min-h-screen bg-black">
+          {children}
+        </main>
+      </body>
     </html>
   )
 } 

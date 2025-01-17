@@ -1,172 +1,227 @@
 'use client'
 
-import { useRef, useMemo } from 'react';
+import { useRef, useMemo, useEffect } from 'react';
 import * as THREE from 'three';
+import { useFrame } from '@react-three/fiber';
+import { audioSystem } from '../audio/AudioSystem';
+import { SwarmBackground } from './SwarmBackground';
 
-function NetworkArt() {
-    const networkRef = useRef<THREE.Group>(null);
-    const nodesCount = 100;
-    const maxConnections = 3;
-    const sphereRadius = 8;
+// Custom shader for the nebula effect
+const NebulaShader = {
+  uniforms: {
+    time: { value: 0 },
+    resolution: { value: new THREE.Vector2() },
+    baseColor: { value: new THREE.Color('#050520') },
+    accentColor: { value: new THREE.Color('#1a0040') },
+    audioReactivity: { value: 0 },
+    lowBand: { value: 0 },
+    midBand: { value: 0 },
+    highBand: { value: 0 }
+  },
+  vertexShader: `
+    varying vec2 vUv;
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `,
+  fragmentShader: `
+    uniform float time;
+    uniform vec2 resolution;
+    uniform vec3 baseColor;
+    uniform vec3 accentColor;
+    uniform float audioReactivity;
+    uniform float lowBand;
+    uniform float midBand;
+    uniform float highBand;
+    varying vec2 vUv;
 
-    const { nodes, connections, flowPoints } = useMemo(() => {
-        const nodes: THREE.Vector3[] = [];
-        const connections: Array<[THREE.Vector3, THREE.Vector3]> = [];
-        const flowPoints: Array<{
-            start: THREE.Vector3;
-            end: THREE.Vector3;
-            speed: number;
-            progress: number;
-            length: number;
-        }> = [];
+    float noise(vec2 p) {
+      return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453);
+    }
 
-        // Create nodes in spherical formation
-        for (let i = 0; i < nodesCount; i++) {
-            const phi = Math.random() * Math.PI * 2;
-            const theta = Math.random() * Math.PI;
-            const radius = sphereRadius + (Math.random() - 0.5) * 2;
+    float fbm(vec2 p) {
+      float value = 0.0;
+      float amplitude = 0.5;
+      float frequency = 0.0;
+      for(int i = 0; i < 6; i++) {
+        value += amplitude * noise(p);
+        p *= 2.0;
+        amplitude *= 0.5;
+      }
+      return value;
+    }
 
-            const x = radius * Math.sin(theta) * Math.cos(phi);
-            const y = radius * Math.sin(theta) * Math.sin(phi);
-            const z = radius * Math.cos(theta);
+    void main() {
+      vec2 pos = vUv * 2.0 - 1.0;
+      float dist = length(pos);
+      
+      // Audio-reactive distortion
+      vec2 distortedPos = pos * (1.0 + audioReactivity * 0.2);
+      
+      vec2 q = vec2(0);
+      q.x = fbm(distortedPos + 0.1 * time);
+      q.y = fbm(distortedPos + vec2(1.0));
+      
+      vec2 r = vec2(0);
+      r.x = fbm(distortedPos + 1.0 * q + vec2(1.7, 9.2) + 0.15 * time);
+      r.y = fbm(distortedPos + 1.0 * q + vec2(8.3, 2.8) + 0.126 * time);
+      
+      float f = fbm(distortedPos + r);
+      
+      // Audio-reactive color mixing
+      vec3 color = mix(baseColor, accentColor, f * f * (1.0 + lowBand));
+      color = mix(color, accentColor * 1.5, midBand * 0.5);
+      color = mix(color, vec3(1.0), highBand * 0.2);
+      color = mix(color, vec3(0.0), smoothstep(0.0, 2.0, dist));
+      
+      gl_FragColor = vec4(color, 1.0);
+    }
+  `
+};
 
-            nodes.push(new THREE.Vector3(x, y, z));
-        }
+function GenerativeNebula() {
+  const materialRef = useRef<THREE.ShaderMaterial>(null);
+  const time = useRef(0);
 
-        // Create connections between nearby nodes
-        nodes.forEach((node, i) => {
-            const nodeConnections = [];
-            for (let j = 0; j < nodes.length && nodeConnections.length < maxConnections; j++) {
-                if (i !== j) {
-                    const distance = node.distanceTo(nodes[j]);
-                    if (distance < 4) {
-                        nodeConnections.push(j);
-                        connections.push([node, nodes[j]]);
+  useFrame((state, delta) => {
+    time.current += delta * 0.2;
+    if (materialRef.current) {
+      const bands = audioSystem.getFrequencyBands();
+      const reactivity = audioSystem.getReactivity();
+      
+      materialRef.current.uniforms.time.value = time.current;
+      materialRef.current.uniforms.audioReactivity.value = reactivity;
+      materialRef.current.uniforms.lowBand.value = bands.low;
+      materialRef.current.uniforms.midBand.value = bands.mid;
+      materialRef.current.uniforms.highBand.value = bands.high;
+    }
+  });
 
-                        // Create flow points for this connection
-                        const numFlows = 1 + Math.floor(Math.random() * 2);
-                        for (let f = 0; f < numFlows; f++) {
-                            flowPoints.push({
-                                start: node.clone(),
-                                end: nodes[j].clone(),
-                                speed: 0.2 + Math.random() * 0.3,
-                                progress: Math.random(),
-                                length: distance
-                            });
-                        }
-                    }
-                }
-            }
-        });
-
-        return { nodes, connections, flowPoints };
-    }, []);
-
-    return (
-        <group ref={networkRef}>
-            {/* Static connections */}
-            {connections.map((connection, i) => (
-                <line key={`connection-${i}`}>
-                    <bufferGeometry>
-                        <bufferAttribute
-                            attach="attributes-position"
-                            count={2}
-                            array={new Float32Array([
-                                connection[0].x, connection[0].y, connection[0].z,
-                                connection[1].x, connection[1].y, connection[1].z
-                            ])}
-                            itemSize={3}
-                        />
-                    </bufferGeometry>
-                    <lineBasicMaterial color="#00ffd5" transparent opacity={0.1} />
-                </line>
-            ))}
-
-            {/* Nodes */}
-            <points>
-                <bufferGeometry>
-                    <bufferAttribute
-                        attach="attributes-position"
-                        count={nodes.length}
-                        array={new Float32Array(nodes.flatMap(n => [n.x, n.y, n.z]))}
-                        itemSize={3}
-                    />
-                </bufferGeometry>
-                <pointsMaterial
-                    size={0.1}
-                    color="#00ffd5"
-                    transparent
-                    opacity={0.8}
-                    sizeAttenuation
-                />
-            </points>
-
-            {/* Flowing points */}
-            {flowPoints.map((flow, i) => (
-                <mesh key={`flow-${i}`}
-                    position={[
-                        flow.start.x + (flow.end.x - flow.start.x) * flow.progress,
-                        flow.start.y + (flow.end.y - flow.start.y) * flow.progress,
-                        flow.start.z + (flow.end.z - flow.start.z) * flow.progress
-                    ]}
-                >
-                    <sphereGeometry args={[0.03, 8, 8]} />
-                    <meshBasicMaterial
-                        color="#00ffd5"
-                        transparent
-                        opacity={0.8}
-                    />
-                </mesh>
-            ))}
-        </group>
-    );
+  return (
+    <mesh position={[0, 0, -50]}>
+      <planeGeometry args={[100, 100]} />
+      <shaderMaterial
+        ref={materialRef}
+        args={[NebulaShader]}
+        transparent
+      />
+    </mesh>
+  );
 }
 
-function HolographicGrid() {
-    const gridRef = useRef<THREE.Group>(null);
-    const size = 120;
-    const divisions = 30;
+function FloatingParticles() {
+  const particlesRef = useRef<THREE.Points>(null);
+  const time = useRef(0);
 
-    const gridPoints = useMemo(() => {
-        const points = [];
-        const step = size / divisions;
+  useFrame((state, delta) => {
+    time.current += delta * 0.5;
+    
+    if (particlesRef.current) {
+      const positions = particlesRef.current.geometry.attributes.position.array as Float32Array;
+      const sizes = particlesRef.current.geometry.attributes.size.array as Float32Array;
+      
+      for (let i = 0; i < positions.length; i += 3) {
+        // Organic movement
+        positions[i] += Math.sin(time.current + i * 0.1) * 0.01;
+        positions[i + 1] += Math.cos(time.current + i * 0.1) * 0.01;
+        positions[i + 2] += Math.sin(time.current * 0.5 + i * 0.1) * 0.01;
+        
+        // Audio-reactive sizes
+        const index = Math.floor(i / 3);
+        const audioIntensity = audioSystem.getAudioIntensity();
+        sizes[index] = 0.1 + audioIntensity * 0.2 * Math.sin(time.current + index);
+      }
+      
+      particlesRef.current.geometry.attributes.position.needsUpdate = true;
+      particlesRef.current.geometry.attributes.size.needsUpdate = true;
+    }
+  });
 
-        for (let i = -size/2; i <= size/2; i += step) {
-            points.push(
-                new THREE.Vector3(-size/2, i, -20 - Math.abs(i/10)),
-                new THREE.Vector3(size/2, i, -20 - Math.abs(i/10))
-            );
-            points.push(
-                new THREE.Vector3(i, -size/2, -20 - Math.abs(i/10)),
-                new THREE.Vector3(i, size/2, -20 - Math.abs(i/10))
-            );
-        }
-        return points;
-    }, []);
+  // Create particle system
+  const particleCount = 200;
+  const positions = new Float32Array(particleCount * 3);
+  const sizes = new Float32Array(particleCount);
+  const colors = new Float32Array(particleCount * 3);
+  
+  for (let i = 0; i < particleCount; i++) {
+    positions[i * 3] = (Math.random() - 0.5) * 50;
+    positions[i * 3 + 1] = (Math.random() - 0.5) * 50;
+    positions[i * 3 + 2] = (Math.random() - 0.5) * 30;
+    sizes[i] = 0.1;
+    
+    // Color gradient from deep purple to blue
+    colors[i * 3] = 0.2 + Math.random() * 0.2;     // R
+    colors[i * 3 + 1] = 0.1 + Math.random() * 0.2; // G
+    colors[i * 3 + 2] = 0.5 + Math.random() * 0.5; // B
+  }
 
-    return (
-        <group ref={gridRef}>
-            <line>
-                <bufferGeometry>
-                    <bufferAttribute
-                        attach="attributes-position"
-                        count={gridPoints.length}
-                        array={new Float32Array(gridPoints.flatMap(p => [p.x, p.y, p.z]))}
-                        itemSize={3}
-                    />
-                </bufferGeometry>
-                <lineBasicMaterial color="#4400ff" transparent opacity={0.07} />
-            </line>
-        </group>
-    );
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+  geometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+  geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+  return (
+    <points ref={particlesRef}>
+      <primitive object={geometry} attach="geometry" />
+      <pointsMaterial
+        size={1}
+        sizeAttenuation={true}
+        transparent
+        opacity={0.6}
+        vertexColors
+        blending={THREE.AdditiveBlending}
+        depthWrite={false}
+      />
+    </points>
+  );
+}
+
+function VolumetricLight() {
+  const lightRef = useRef<THREE.Mesh>(null);
+  const time = useRef(0);
+  const materialRef = useRef<THREE.ShaderMaterial>(null);
+
+  useFrame((state, delta) => {
+    time.current += delta * 0.5;
+    if (lightRef.current) {
+      // More organic movement
+      lightRef.current.rotation.z = Math.sin(time.current * 0.2) * 0.15 + Math.cos(time.current * 0.1) * 0.1;
+      lightRef.current.position.y = Math.sin(time.current * 0.3) * 3;
+      lightRef.current.position.x = Math.cos(time.current * 0.2) * 2;
+      
+      // Dynamic scale based on audio
+      const intensity = audioSystem.getAudioIntensity();
+      const scale = 1 + intensity * 0.2;
+      lightRef.current.scale.set(scale, scale, scale);
+    }
+  });
+
+  return (
+    <mesh ref={lightRef} position={[0, 0, -20]} rotation={[0, 0, Math.PI * 0.25]}>
+      <coneGeometry args={[25, 50, 128, 1, true]} />
+      <meshBasicMaterial
+        color="#090418"
+        transparent
+        opacity={0.15}
+        side={THREE.BackSide}
+        blending={THREE.AdditiveBlending}
+      />
+    </mesh>
+  );
 }
 
 export default function Background() {
-    return (
-        <group>
-            <NetworkArt />
-            <HolographicGrid />
-            <fog attach="fog" args={['#000033', 20, 90]} />
-        </group>
-    );
+  return (
+    <group>
+      <FloatingParticles />
+      <VolumetricLight />
+      
+      <fog attach="fog" args={['#000005', 35, 100]} />
+      <ambientLight intensity={0.15} />
+      <pointLight position={[10, 10, 10]} intensity={0.3} color="#4400ff" />
+      <pointLight position={[-10, -10, -10]} intensity={0.2} color="#000066" />
+      <pointLight position={[0, 0, -20]} intensity={0.1} color="#ff00ff" />
+    </group>
+  );
 } 
