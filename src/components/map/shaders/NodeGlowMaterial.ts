@@ -167,4 +167,4 @@ class NodeGlowMaterial extends THREE.ShaderMaterial {
 
 extend({ NodeGlowMaterial });
 
-export { NodeGlowMaterial }; 
+export { NodeGlowMaterial as default, type NodeGlowMaterialUniforms }; 

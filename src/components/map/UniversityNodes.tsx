@@ -4,7 +4,7 @@ import { useMemo, useRef, useState, useEffect } from 'react';
 import * as THREE from 'three';
 import { Billboard, Instance, Instances } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
-import { NodeGlowMaterial, NodeGlowMaterialUniforms } from './shaders/NodeGlowMaterial';
+import NodeGlowMaterial, { type NodeGlowMaterialUniforms } from './shaders/NodeGlowMaterial';
 import Globe from './Globe';
 import GeometricText from './GeometricText';
 import { audioSystem } from '../audio/AudioSystem';
