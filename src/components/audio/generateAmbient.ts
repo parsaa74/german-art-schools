@@ -1,4 +1,5 @@
-import { WaveFile } from 'wavefile';
+import pkg from 'wavefile';
+const { WaveFile } = pkg;
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { writeFileSync } from 'fs';
@@ -6,65 +7,48 @@ import { writeFileSync } from 'fs';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-export async function generateAmbientSound(): Promise<void> {
+export async function generateAmbientSound(): Promise<Buffer> {
   const sampleRate = 44100;
   const duration = 30; // 30 seconds
   const numSamples = duration * sampleRate;
-  
   const leftChannel = new Float32Array(numSamples);
   const rightChannel = new Float32Array(numSamples);
-
-  // Frequency ratios based on just intonation
-  const baseFreq = 110; // A2
-  const ratios = [1, 1.5, 1.667, 2, 2.5, 3, 4, 5];
-  const frequencies = ratios.map(ratio => baseFreq * ratio);
-
-  // Rich harmonic content
-  const harmonics = [1, 2, 3, 4, 5, 7, 9, 11, 13];
-  const harmonicWeights = harmonics.map(h => 1 / (h * h));
-
-  // LFO frequencies for various modulations
-  const lfoFreqs = {
-    amplitude: 0.1,  // Very slow amplitude modulation
-    filter: 0.05,    // Ultra-slow filter sweep
-    stereo: 0.2,     // Stereo movement
-    harmonic: 0.15   // Harmonic content variation
-  };
 
   // Generate ambient pad sound for both channels
   for (let channel = 0; channel < 2; channel++) {
     const channelData = channel === 0 ? leftChannel : rightChannel;
-    const channelOffset = channel * Math.PI * 0.5; // Phase offset between channels
+    
+    // Base frequencies (A2 = 110Hz, E3 = 164.81Hz, C3 = 130.81Hz)
+    const baseFreqs = [110, 164.81, 130.81];
+    
+    // Generate rich harmonics
+    const harmonics = [1, 2, 3, 4, 5, 7, 9];
+    const harmonicWeights = [1, 0.5, 0.25, 0.125, 0.0625, 0.03125, 0.015625];
     
     for (let i = 0; i < numSamples; i++) {
       const t = i / sampleRate;
       let sample = 0;
       
-      // Layer multiple frequencies with complex modulation
-      frequencies.forEach((freq, freqIndex) => {
-        // Frequency modulation
-        const freqMod = 1 + Math.sin(2 * Math.PI * lfoFreqs.filter * t + channelOffset) * 0.01;
-        
-        // Amplitude modulation per frequency
-        const ampMod = 0.5 + Math.sin(2 * Math.PI * lfoFreqs.amplitude * t + freqIndex) * 0.5;
-        
-        // Harmonic content modulation
-        harmonics.forEach((harmonic, hIndex) => {
-          const harmonicFreq = freq * harmonic * freqMod;
-          const harmonicAmp = harmonicWeights[hIndex] * 
-            (0.5 + Math.sin(2 * Math.PI * lfoFreqs.harmonic * t + hIndex) * 0.5);
-          
+      // Layer multiple base frequencies
+      baseFreqs.forEach((baseFreq, freqIndex) => {
+        // Add harmonics for each base frequency
+        harmonics.forEach((harmonic, index) => {
+          const freq = baseFreq * harmonic;
           // Add slight detuning for richness
-          const detune1 = 1 + (Math.random() * 0.001 - 0.0005);
-          const detune2 = 1 + (Math.random() * 0.001 - 0.0005);
-          
-          // Complex waveform mixing
-          const sine = Math.sin(2 * Math.PI * harmonicFreq * detune1 * t + channelOffset);
-          const triangle = Math.asin(Math.sin(2 * Math.PI * harmonicFreq * detune2 * t + channelOffset)) * 2 / Math.PI;
-          
-          sample += (sine * 0.7 + triangle * 0.3) * harmonicAmp * ampMod * (0.5 / frequencies.length);
+          const detune = 1 + (Math.random() * 0.001 - 0.0005);
+          sample += Math.sin(2 * Math.PI * freq * detune * t) * harmonicWeights[index] * (1 / baseFreqs.length);
         });
       });
+      
+      // Complex modulation
+      const slowMod = Math.sin(2 * Math.PI * 0.1 * t); // 0.1 Hz
+      const mediumMod = Math.sin(2 * Math.PI * 0.5 * t); // 0.5 Hz
+      const fastMod = Math.sin(2 * Math.PI * 2.0 * t); // 2.0 Hz
+      
+      const modulation = 1 + 
+        0.2 * slowMod + 
+        0.1 * mediumMod + 
+        0.05 * fastMod;
       
       // Apply envelope
       const attack = 2.0;
@@ -77,44 +61,20 @@ export async function generateAmbientSound(): Promise<void> {
         envelope = (duration - t) / release;
       }
       
-      // Add subtle noise texture with filter sweep
-      const noiseFreq = 0.5 + Math.sin(2 * Math.PI * lfoFreqs.filter * t) * 0.45;
-      const noise = (Math.random() * 2 - 1) * 0.02 * noiseFreq;
-      
-      // Stereo movement
-      const stereoPan = Math.sin(2 * Math.PI * lfoFreqs.stereo * t + channelOffset);
-      const stereoGain = 0.5 + stereoPan * 0.5;
+      // Add subtle noise texture
+      const noise = (Math.random() * 2 - 1) * 0.02;
       
       // Combine everything
-      channelData[i] = (sample * envelope + noise) * stereoGain * 0.4;
+      channelData[i] = (sample * modulation * envelope + noise) * 0.4;
     }
   }
-  
+
   // Create WAV file
   const wav = new WaveFile();
-  
-  // Use 32-bit float format for better quality
   wav.fromScratch(2, sampleRate, '32f', [leftChannel, rightChannel]);
   
-  try {
-    // Save both WAV and MP3 versions for better browser compatibility
-    const wavOutputPath = join(__dirname, '../../../public/ambient.wav');
-    const mp3OutputPath = join(__dirname, '../../../public/ambient.mp3');
-    
-    // Save WAV file
-    writeFileSync(wavOutputPath, wav.toBuffer());
-    
-    console.log('Successfully generated ambient sound');
-    console.log('WAV file saved to:', wavOutputPath);
-    console.log('MP3 file saved to:', mp3OutputPath);
-  } catch (error) {
-    console.error('Failed to save audio file:', error);
-    throw error;
-  }
+  // Return the buffer
+  return Buffer.from(wav.toBuffer());
 }
 
-// Add error handling for the main function
-generateAmbientSound().catch(error => {
-  console.error('Failed to generate ambient sound:', error);
-  process.exit(1);
-}); 
+generateAmbientSound().catch(console.error); 
