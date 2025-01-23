@@ -15,3 +15,6 @@ env/
 # System files
 .DS_Store
 Thumbs.db
+
+.next/
+.env.local
