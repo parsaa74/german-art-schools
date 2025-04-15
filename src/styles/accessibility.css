@@ -1,0 +1,78 @@
+/* Accessibility Styles */
+
+/* Screen reader only class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus styles for keyboard navigation */
+.focus-visible {
+  outline: 3px solid #4A7FFF !important;
+  outline-offset: 2px !important;
+}
+
+/* High contrast mode styles */
+@media (forced-colors: active) {
+  .node-highlight {
+    forced-color-adjust: none;
+    background-color: Highlight !important;
+    color: HighlightText !important;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animation-container * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Visualization container */
+.visualization-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Skip to content link for keyboard users */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.2s;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* Keyboard navigation indicators */
+[data-keyboard-focus="true"] {
+  box-shadow: 0 0 0 3px rgba(74, 127, 255, 0.6);
+}
+
+/* Tooltip for accessibility information */
+.a11y-tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 1000;
+  max-width: 300px;
+  pointer-events: none;
+}

@@ -1,4 +1,4 @@
-import { School } from '@/types/school';
+import { School } from '@/types';
 
 export const schools: School[] = [
   {

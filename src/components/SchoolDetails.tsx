@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { School, Program } from '@/types/school';
+import { useParams } from 'next/navigation';
+import { School, Program } from '@/types';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from 'framer-motion';
@@ -8,25 +9,45 @@ import { motion } from 'framer-motion';
 interface SchoolDetailsProps {
   school: School;
   onClose: () => void;
+  dict?: any; // Dictionary for translations
 }
 
-const ProgramCard: React.FC<{ program: Program }> = ({ program }) => (
+const ProgramCard: React.FC<{ program: Program, dict?: any }> = ({ program, dict }) => {
+  // Get language from URL if available, default to English
+  const params = useParams();
+  const lang = params?.lang as string || 'en';
+
+  // Use dictionary if provided, otherwise use default English text
+  const t = {
+    duration: dict?.schoolDetails?.duration || 'Duration',
+    specializations: dict?.schoolDetails?.specializations || 'Specializations',
+    professors: dict?.schoolDetails?.professors || 'Professors',
+    requirements: dict?.schoolDetails?.requirements || 'Requirements',
+    applicationDeadlines: dict?.schoolDetails?.applicationDeadlines || 'Application Deadlines',
+    winterSemester: dict?.schoolDetails?.winterSemester || 'Winter Semester',
+    summerSemester: dict?.schoolDetails?.summerSemester || 'Summer Semester',
+    start: dict?.schoolDetails?.start || 'Start',
+    end: dict?.schoolDetails?.end || 'End',
+    programDetails: dict?.schoolDetails?.programDetails || 'Program Details',
+  };
+
+  return (
   <Card className="bg-gray-900 text-white border-none">
     <CardHeader className="p-4 pb-2">
       <div className="flex justify-between items-start">
         <CardTitle className="text-lg font-bold">{program.name}</CardTitle>
         <Badge variant="secondary">{program.degree}</Badge>
       </div>
-      <div className="text-sm text-gray-400">Duration: {program.duration}</div>
+      <div className="text-sm text-gray-400">{t.duration}: {program.duration}</div>
     </CardHeader>
     <CardContent className="p-4 pt-2 space-y-4">
       {program.description && (
         <p className="text-sm text-gray-300">{program.description}</p>
       )}
-      
+
       {program.specializations && program.specializations.length > 0 && (
         <div className="space-y-2">
-          <h4 className="text-sm font-semibold">Specializations:</h4>
+          <h4 className="text-sm font-semibold">{t.specializations}:</h4>
           <div className="flex flex-wrap gap-1">
             {program.specializations.map((spec, i) => (
               <Badge key={i} variant="outline" className="text-xs">
@@ -39,7 +60,7 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => (
 
       {program.professors && program.professors.length > 0 && (
         <div className="space-y-2">
-          <h4 className="text-sm font-semibold">Professors:</h4>
+          <h4 className="text-sm font-semibold">{t.professors}:</h4>
           <div className="space-y-1">
             {program.professors.map((prof, i) => (
               <div key={i} className="text-sm">
@@ -48,7 +69,7 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => (
                   <span className="text-gray-400"> - {prof.position}</span>
                 )}
                 {prof.email && (
-                  <a 
+                  <a
                     href={`mailto:${prof.email}`}
                     className="block text-blue-400 hover:text-blue-300 text-xs mt-0.5"
                   >
@@ -63,7 +84,7 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => (
 
       {program.requirements && program.requirements.length > 0 && (
         <div className="space-y-2">
-          <h4 className="text-sm font-semibold">Requirements:</h4>
+          <h4 className="text-sm font-semibold">{t.requirements}:</h4>
           <ul className="list-disc list-inside text-sm text-gray-300 space-y-1">
             {program.requirements.map((req, i) => (
               <li key={i}>{req}</li>
@@ -74,30 +95,30 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => (
 
       {program.applicationDeadlines && (
         <div className="space-y-2">
-          <h4 className="text-sm font-semibold">Application Deadlines:</h4>
+          <h4 className="text-sm font-semibold">{t.applicationDeadlines}:</h4>
           <div className="grid grid-cols-2 gap-4 text-sm">
             {program.applicationDeadlines.winter && (
               <div>
-                <div className="font-medium">Winter Semester:</div>
+                <div className="font-medium">{t.winterSemester}:</div>
                 <div className="text-gray-300">
                   {program.applicationDeadlines.winter.start && (
-                    <div>Start: {program.applicationDeadlines.winter.start}</div>
+                    <div>{t.start}: {program.applicationDeadlines.winter.start}</div>
                   )}
                   {program.applicationDeadlines.winter.end && (
-                    <div>End: {program.applicationDeadlines.winter.end}</div>
+                    <div>{t.end}: {program.applicationDeadlines.winter.end}</div>
                   )}
                 </div>
               </div>
             )}
             {program.applicationDeadlines.summer && (
               <div>
-                <div className="font-medium">Summer Semester:</div>
+                <div className="font-medium">{t.summerSemester}:</div>
                 <div className="text-gray-300">
                   {program.applicationDeadlines.summer.start && (
-                    <div>Start: {program.applicationDeadlines.summer.start}</div>
+                    <div>{t.start}: {program.applicationDeadlines.summer.start}</div>
                   )}
                   {program.applicationDeadlines.summer.end && (
-                    <div>End: {program.applicationDeadlines.summer.end}</div>
+                    <div>{t.end}: {program.applicationDeadlines.summer.end}</div>
                   )}
                 </div>
               </div>
@@ -113,14 +134,25 @@ const ProgramCard: React.FC<{ program: Program }> = ({ program }) => (
           rel="noopener noreferrer"
           className="block text-blue-400 hover:text-blue-300 text-sm text-right"
         >
-          Program Details →
+          {t.programDetails} →
         </a>
       )}
     </CardContent>
   </Card>
-);
+);}
 
-export const SchoolDetails: React.FC<SchoolDetailsProps> = ({ school, onClose }) => {
+export const SchoolDetails: React.FC<SchoolDetailsProps> = ({ school, onClose, dict }) => {
+  // Get language from URL if available, default to English
+  const params = useParams();
+  const lang = params?.lang as string || 'en';
+
+  // Use dictionary if provided, otherwise use default English text
+  const t = {
+    backToMap: dict?.schoolDetails?.backToMap || 'Back to Map',
+    founded: dict?.schoolDetails?.founded || 'Founded',
+    visitWebsite: dict?.schoolDetails?.website || 'Visit Website',
+    programs: dict?.schoolDetails?.programs || 'Programs'
+  };
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -137,7 +169,7 @@ export const SchoolDetails: React.FC<SchoolDetailsProps> = ({ school, onClose })
               onClick={onClose}
               className="text-white hover:text-gray-300 transition-colors text-sm"
             >
-              ← Back to Map
+              ← {t.backToMap}
             </motion.button>
             <button
               onClick={onClose}
@@ -175,7 +207,7 @@ export const SchoolDetails: React.FC<SchoolDetailsProps> = ({ school, onClose })
                     <Badge variant="secondary">{school.type}</Badge>
                     <Badge variant="outline">{school.state}</Badge>
                     {school.founded && (
-                      <Badge variant="outline">Founded: {school.founded}</Badge>
+                      <Badge variant="outline">{t.founded}: {school.founded}</Badge>
                     )}
                   </div>
                   {school.description && (
@@ -190,7 +222,7 @@ export const SchoolDetails: React.FC<SchoolDetailsProps> = ({ school, onClose })
                       rel="noopener noreferrer"
                       className="inline-block mt-3 text-blue-400 hover:text-blue-300 transition-colors text-sm"
                     >
-                      Visit Website →
+                      {t.visitWebsite} →
                     </a>
                   )}
                 </div>
@@ -204,7 +236,7 @@ export const SchoolDetails: React.FC<SchoolDetailsProps> = ({ school, onClose })
             transition={{ delay: 0.2 }}
             className="mt-4 space-y-4"
           >
-            <h2 className="text-lg font-bold text-white mb-3">Programs</h2>
+            <h2 className="text-lg font-bold text-white mb-3">{t.programs}</h2>
             <div className="grid grid-cols-1 gap-4">
               {school.programs.map((program, index) => (
                 <motion.div
@@ -213,7 +245,7 @@ export const SchoolDetails: React.FC<SchoolDetailsProps> = ({ school, onClose })
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 * (index + 1) }}
                 >
-                  <ProgramCard program={program} />
+                  <ProgramCard program={program} dict={dict} />
                 </motion.div>
               ))}
             </div>
@@ -222,4 +254,4 @@ export const SchoolDetails: React.FC<SchoolDetailsProps> = ({ school, onClose })
       </div>
     </motion.div>
   );
-}; 
+};

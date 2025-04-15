@@ -1,0 +1,49 @@
+{
+  "title": "Karte der deutschen Kunsthochschulen",
+  "description": "Interaktive Karte der Kunsthochschulen in Deutschland",
+  "sidebar": {
+    "title": "Deutsche Kunsthochschulen",
+    "searchPlaceholder": "Schulen suchen...",
+    "noResults": "Keine Schulen gefunden."
+  },
+  "schoolDetails": {
+    "programs": "Studiengänge",
+    "location": "Standort",
+    "website": "Website besuchen",
+    "contact": "Kontakt",
+    "backToMap": "Zurück zur Karte",
+    "founded": "Gegründet",
+    "duration": "Dauer",
+    "specializations": "Spezialisierungen",
+    "professors": "Professoren",
+    "requirements": "Anforderungen",
+    "applicationDeadlines": "Bewerbungsfristen",
+    "winterSemester": "Wintersemester",
+    "summerSemester": "Sommersemester",
+    "start": "Beginn",
+    "end": "Ende",
+    "programDetails": "Programmdetails"
+  },
+  "languageSwitcher": {
+    "switchTo": "Auf Englisch umschalten"
+  },
+  "map": {
+    "title": "Deutsche Kunsthochschulen",
+    "subtitle": "Entdecken Sie die künstlerische Bildungslandschaft Deutschlands",
+    "initializing": "Visualisierung wird initialisiert",
+    "statistics": "Statistiken",
+    "totalSchools": "Gesamtzahl Schulen",
+    "institutions": "Einrichtungen",
+    "activeRegion": "Aktive Region",
+    "selected": "ausgewählt",
+    "schoolTypes": "Schultypen",
+    "navigation": "Navigation",
+    "dragToRotate": "Ziehen zum Drehen",
+    "scrollToZoom": "Scrollen zum Zoomen",
+    "clickForDetails": "Punkte für Details anklicken",
+    "keyboardShortcuts": "Tastaturkürzel",
+    "resetView": "Ansicht zurücksetzen",
+    "toggleRotation": "Rotation umschalten",
+    "closeDetails": "Details schließen"
+  }
+}

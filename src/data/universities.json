@@ -1,0 +1,222 @@
+[
+  {
+    "id": "hfk-bremen",
+    "name": "Hochschule für Künste Bremen",
+    "latitude": 53.0793,
+    "longitude": 8.8017,
+    "websiteUrl": "https://www.hfk-bremen.de/",
+    "state": "Bremen",
+    "founded": "1947",
+    "type": "art_academy",
+    "programTypes": ["Digital Media", "Fine Arts", "Integrated Design"]
+  },
+  {
+    "id": "udk-berlin",
+    "name": "Universität der Künste Berlin",
+    "latitude": 52.5069,
+    "longitude": 13.3331,
+    "websiteUrl": "https://www.udk-berlin.de/",
+    "state": "Berlin",
+    "founded": "1696",
+    "type": "university",
+    "programTypes": ["Art and Media", "Visual Communication", "Design"]
+  },
+  {
+    "id": "bauhaus-weimar",
+    "name": "Bauhaus-Universität Weimar",
+    "latitude": 50.9747,
+    "longitude": 11.3299,
+    "websiteUrl": "https://www.uni-weimar.de/",
+    "state": "Thüringen",
+    "founded": "1860",
+    "type": "university",
+    "programTypes": ["Architecture", "Art and Design", "Media"]
+  },
+  {
+    "id": "hfbk-hamburg",
+    "name": "Hochschule für bildende Künste Hamburg",
+    "latitude": 53.5669,
+    "longitude": 9.9841,
+    "websiteUrl": "https://www.hfbk-hamburg.de/",
+    "state": "Hamburg",
+    "founded": "1767",
+    "type": "art_academy",
+    "programTypes": ["Fine Arts", "Design", "Film"]
+  },
+  {
+    "id": "khm-cologne",
+    "name": "Kunsthochschule für Medien Köln",
+    "latitude": 50.9356,
+    "longitude": 6.9589,
+    "websiteUrl": "https://www.khm.de/",
+    "state": "Nordrhein-Westfalen",
+    "founded": "1990",
+    "type": "art_academy",
+    "programTypes": ["Media Arts", "Film", "Animation"]
+  },
+  {
+    "id": "hfg-karlsruhe",
+    "name": "Hochschule für Gestaltung Karlsruhe",
+    "latitude": 49.0019,
+    "longitude": 8.3901,
+    "websiteUrl": "https://www.hfg-karlsruhe.de/",
+    "state": "Baden-Württemberg",
+    "founded": "1992",
+    "type": "design_school",
+    "programTypes": ["Communication Design", "Product Design", "Media Art"]
+  },
+  {
+    "id": "folkwang-essen",
+    "name": "Folkwang Universität der Künste",
+    "latitude": 51.4425,
+    "longitude": 7.0031,
+    "websiteUrl": "https://www.folkwang-uni.de/",
+    "state": "Nordrhein-Westfalen",
+    "founded": "1927",
+    "type": "university",
+    "programTypes": ["Music", "Dance", "Design", "Theatre"]
+  },
+  {
+    "id": "adbk-munich",
+    "name": "Akademie der Bildenden Künste München",
+    "latitude": 48.1539,
+    "longitude": 11.5819,
+    "websiteUrl": "https://www.adbk.de/",
+    "state": "Bayern",
+    "founded": "1808",
+    "type": "art_academy",
+    "programTypes": ["Fine Arts", "Architecture", "Art Education"]
+  },
+  {
+    "id": "hfg-offenbach",
+    "name": "Hochschule für Gestaltung Offenbach am Main",
+    "latitude": 50.1069,
+    "longitude": 8.7665,
+    "websiteUrl": "https://www.hfg-offenbach.de/",
+    "state": "Hessen",
+    "founded": "1832",
+    "type": "design_school",
+    "programTypes": ["Visual Communication", "Product Design", "Media"]
+  },
+  {
+    "id": "adbk-nuremberg",
+    "name": "Akademie der Bildenden Künste Nürnberg",
+    "latitude": 49.4478,
+    "longitude": 11.0683,
+    "websiteUrl": "https://www.adbk-nuernberg.de/",
+    "state": "Bayern",
+    "founded": "1662",
+    "type": "art_academy",
+    "programTypes": ["Fine Arts", "Graphic Design", "Art Education"]
+  },
+  {
+    "id": "hmt-leipzig",
+    "name": "Hochschule für Musik und Theater Leipzig",
+    "latitude": 51.3336,
+    "longitude": 12.3681,
+    "websiteUrl": "https://www.hmt-leipzig.de/",
+    "state": "Sachsen",
+    "founded": "1843",
+    "type": "music_academy",
+    "programTypes": ["Music", "Drama", "Music Education"]
+  },
+  {
+    "id": "kunstakademie-dusseldorf",
+    "name": "Kunstakademie Düsseldorf",
+    "latitude": 51.2306,
+    "longitude": 6.7724,
+    "websiteUrl": "https://www.kunstakademie-duesseldorf.de/",
+    "state": "Nordrhein-Westfalen",
+    "founded": "1773",
+    "type": "art_academy",
+    "programTypes": ["Fine Arts", "Sculpture", "Painting"]
+  },
+  {
+    "id": "hff-munich",
+    "name": "Hochschule für Fernsehen und Film München",
+    "latitude": 48.1371,
+    "longitude": 11.5754,
+    "websiteUrl": "https://www.hff-muenchen.de/",
+    "state": "Bayern",
+    "founded": "1966",
+    "type": "film_school",
+    "programTypes": ["Film Production", "Screenwriting", "Cinematography"]
+  },
+  {
+    "id": "hmtm-hannover",
+    "name": "Hochschule für Musik, Theater und Medien Hannover",
+    "latitude": 52.3739,
+    "longitude": 9.7385,
+    "websiteUrl": "https://www.hmtm-hannover.de/",
+    "state": "Niedersachsen",
+    "founded": "1897",
+    "type": "music_academy",
+    "programTypes": ["Music", "Acting", "Media Management"]
+  },
+  {
+    "id": "hdk-halle",
+    "name": "Hochschule für Kunst und Design Halle (Burg Giebichenstein)",
+    "latitude": 51.4933,
+    "longitude": 11.9528,
+    "websiteUrl": "https://www.burg-halle.de/",
+    "state": "Sachsen-Anhalt",
+    "founded": "1915",
+    "type": "design_school",
+    "programTypes": ["Industrial Design", "Communication Design", "Fine Arts"]
+  },
+  {
+    "id": "abk-stuttgart",
+    "name": "Staatliche Akademie der Bildenden Künste Stuttgart",
+    "latitude": 48.7828,
+    "longitude": 9.1682,
+    "websiteUrl": "https://www.abk-stuttgart.de/",
+    "state": "Baden-Württemberg",
+    "founded": "1761",
+    "type": "art_academy",
+    "programTypes": ["Fine Arts", "Architecture", "Design", "Art Education"]
+  },
+  {
+    "id": "muthesius-kiel",
+    "name": "Muthesius Kunsthochschule Kiel",
+    "latitude": 54.3259,
+    "longitude": 10.1266,
+    "websiteUrl": "https://muthesius-kunsthochschule.de/",
+    "state": "Schleswig-Holstein",
+    "founded": "1907",
+    "type": "art_academy",
+    "programTypes": ["Fine Arts", "Communication Design", "Industrial Design"]
+  },
+  {
+    "id": "hgb-leipzig",
+    "name": "Hochschule für Grafik und Buchkunst Leipzig",
+    "latitude": 51.3342,
+    "longitude": 12.3762,
+    "websiteUrl": "https://www.hgb-leipzig.de/",
+    "state": "Sachsen",
+    "founded": "1764",
+    "type": "art_academy",
+    "programTypes": ["Painting/Printmaking", "Photography", "Media Art", "Book Design/Graphic Design"]
+  },
+  {
+    "id": "filmuniversitaet-babelsberg",
+    "name": "Filmuniversität Babelsberg Konrad Wolf",
+    "latitude": 52.3889,
+    "longitude": 13.1058,
+    "websiteUrl": "https://www.filmuniversitaet.de/",
+    "state": "Brandenburg",
+    "founded": "1954",
+    "type": "film_school",
+    "programTypes": ["Film Production", "Animation", "Screenwriting", "Acting"]
+  },
+  {
+    "id": "hfg-gmuend",
+    "name": "Hochschule für Gestaltung Schwäbisch Gmünd",
+    "latitude": 48.7989,
+    "longitude": 9.7992,
+    "websiteUrl": "https://www.hfg-gmuend.de/",
+    "state": "Baden-Württemberg",
+    "founded": "1776",
+    "type": "design_school",
+    "programTypes": ["Interaction Design", "Communication Design", "Product Design"]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "title": "German Art Schools Map",
+  "description": "Interactive map of art schools in Germany - Explore the rich artistic education landscape",
+  "sidebar": {
+    "title": "German Art Schools",
+    "searchPlaceholder": "Search schools..."
+  }
+}

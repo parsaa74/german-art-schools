@@ -2,185 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
- 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
- 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
- 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
- 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
- 
-    --radius: 0.5rem;
-  }
- 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
- 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
- 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
- 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
- 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
- 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
- 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
- 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-  }
+/* Import custom font declarations */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter/Inter-roman.var.woff2') format('woff2');
 }
- 
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter/Inter-italic.var.woff2') format('woff2');
+}
+
+:root {
+  /* Color palette inspired by German Expressionism and Bauhaus - with ethereal blue theme */
+  --viz-primary: 41, 121, 255;    /* Ethereal blue */
+  --viz-secondary: 232, 91, 57;   /* Warm orange-red */
+  --viz-accent: 235, 207, 57;     /* Vibrant yellow */
+  --viz-highlight: 25, 176, 152;  /* Teal accent */
+  --background-dark: 18, 24, 33;  /* Deeper navy background */
+  --background-light: 34, 43, 56; /* Lighter navy */
+  --text-primary: 242, 239, 234;  /* Warm off-white */
+  --text-secondary: 193, 189, 183;/* Muted cream */
+  --grid-color: 41, 121, 255;     /* Grid matching primary */
+
+  /* Animation timing variables */
+  --transition-snap: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-smooth: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --transition-bounce: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  --transition-reveal: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
-    @apply bg-background text-foreground;
+    @apply antialiased;
+    background: linear-gradient(135deg,
+      rgb(var(--background-dark)) 0%,
+      rgb(var(--background-light)) 100%
+    );
+    color: rgb(var(--text-primary));
   }
-} 
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#__next {
-  width: 100%;
-  height: 100%;
-} 
-
-.cluster-label {
-  @apply bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full text-sm font-semibold shadow-md;
-  transform: translate3d(-50%, -100%, 0);
-  margin-top: -8px;
-  pointer-events: none;
-  white-space: nowrap;
-} 
-
-@keyframes digitalDecode {
-  0% {
-    clip-path: inset(0 100% 0 0);
-    opacity: 0;
-    transform: scale(0.95) translateY(10px);
-    filter: brightness(2) contrast(2) hue-rotate(45deg);
-  }
-  20% {
-    clip-path: inset(0 80% 0 0);
-    opacity: 0.3;
-    filter: brightness(1.8) contrast(1.8) hue-rotate(30deg);
-  }
-  40% {
-    clip-path: inset(0 60% 0 0);
-    opacity: 0.5;
-    filter: brightness(1.6) contrast(1.6) hue-rotate(20deg);
-  }
-  60% {
-    clip-path: inset(0 40% 0 0);
-    opacity: 0.7;
-    filter: brightness(1.4) contrast(1.4) hue-rotate(10deg);
-  }
-  80% {
-    clip-path: inset(0 20% 0 0);
-    opacity: 0.9;
-    filter: brightness(1.2) contrast(1.2) hue-rotate(5deg);
-  }
-  100% {
-    clip-path: inset(0 0 0 0);
-    opacity: 1;
-    transform: scale(1) translateY(0);
-    filter: brightness(1) contrast(1) hue-rotate(0deg);
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-light tracking-tight;
+    text-shadow: 0 0 30px rgba(var(--viz-accent), 0.3),
+                 0 0 60px rgba(var(--viz-primary), 0.1);
   }
 }
 
-.digital-decode {
-  animation: digitalDecode 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  will-change: clip-path, opacity, transform, filter;
+@layer components {
+  .data-container {
+    @apply absolute inset-0 w-full h-full overflow-hidden;
+    background: radial-gradient(
+      circle at center,
+      rgba(var(--viz-primary), 0.05) 0%,
+      rgba(var(--background-dark), 0) 70%
+    );
+    z-index: 5;
+  }
+
+  .data-overlay {
+    @apply absolute z-10 p-6 backdrop-blur-md;
+    background: linear-gradient(
+      135deg,
+      rgba(var(--background-dark), 0.85) 0%,
+      rgba(var(--background-light), 0.75) 100%
+    );
+    border: 1px solid rgba(var(--viz-primary), 0.1);
+    box-shadow:
+      0 0 30px rgba(var(--viz-primary), 0.03),
+      inset 0 0 1px rgba(var(--viz-secondary), 0.1);
+    transition: all 0.5s var(--transition-snap);
+
+    &:hover {
+      border-color: rgba(var(--viz-primary), 0.2);
+      box-shadow:
+        0 10px 40px rgba(var(--viz-primary), 0.1),
+        inset 0 0 2px rgba(var(--viz-secondary), 0.2);
+    }
+  }
+
+  /* Animation classes */
+  .fade-in {
+    animation: fadeIn 0.6s var(--transition-smooth) forwards;
+  }
+
+  .pulse-glow {
+    animation: pulseGlow 3s var(--transition-smooth) infinite;
+  }
+
+  .float-animation {
+    animation: float 6s var(--transition-smooth) infinite;
+  }
 }
 
-/* Add glitch effect for hover */
-.digital-decode:hover {
-  animation: glitch 0.2s ease-in-out infinite;
-}
-
-@keyframes glitch {
-  0% {
-    transform: translate(0);
-    filter: hue-rotate(0deg);
-  }
-  25% {
-    transform: translate(1px, -1px);
-    filter: hue-rotate(2deg);
-  }
-  50% {
-    transform: translate(-1px, 1px);
-    filter: hue-rotate(-2deg);
-  }
-  75% {
-    transform: translate(1px, 1px);
-    filter: hue-rotate(1deg);
-  }
-  100% {
-    transform: translate(0);
-    filter: hue-rotate(0deg);
-  }
-} 
-
-@keyframes shine {
+/* Animations */
+@keyframes fadeIn {
   from {
-    transform: translateX(-100%);
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
   }
   to {
-    transform: translateX(100%);
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
-.animate-shine {
-  animation: shine 3s ease-in-out infinite;
-  background-size: 200% 100%;
-  background-position-x: -100%;
-} 
+html {
+  height: 100%;
+  min-height: 100%;
+}

@@ -1,6 +1,6 @@
 'use client'
 
-import { Suspense, useState, useEffect, useRef, useMemo } from 'react';
+import { Suspense, useState, useEffect, useRef, useMemo, useCallback } from 'react'; // Ensure useCallback is imported
 import { Canvas, useFrame, useThree, extend, Object3DNode } from '@react-three/fiber';
 import { OrbitControls, Line } from '@react-three/drei';
 import { LineMaterial } from 'three-stdlib';
@@ -16,11 +16,9 @@ import InfoPanel from './InfoPanel';
 import VisualizationToggle from './VisualizationToggle';
 import type { ProcessedUniversity } from '@/stores/schoolStore';
 import { useMapStore } from '@/stores/mapStore';
-// import { SchoolNodes } from './SchoolNodes'; // No longer needed here
-import { SceneContent } from './SceneContent';
+import { SceneContent } from './SceneContent'; // Renders content *inside* the Canvas
+import D3NetworkGraph from '@/components/visualization/D3NetworkGraph.fixed'; // Import the 2D graph
 
-// Dynamic import for NetworkGraph (assuming it's client-side)
-const NetworkGraph = dynamic(() => import('./NetworkGraph'), { ssr: false });
 // Dynamic import for Background (assuming it's client-side)
 const Background = dynamic(() => import('./Background'), { ssr: false });
 
@@ -30,7 +28,6 @@ extend({ LineMaterialImpl: LineMaterial });
 // Augment the R3F namespace to include the extended component
 declare module '@react-three/fiber' {
   interface ThreeElements {
-    // Define the type for our aliased component
     lineMaterialImpl: Object3DNode<LineMaterial, typeof LineMaterial>;
   }
 }
@@ -53,14 +50,14 @@ const getAudioContext = (): AudioContext | null => {
 
 const playAmbientSound = async () => {
   const ctx = getAudioContext();
-  if (!ctx || ambientSource || !ambientBuffer) return; // Don't play if already playing or buffer not loaded
+  if (!ctx || ambientSource || !ambientBuffer) return;
 
   ambientSource = ctx.createBufferSource();
   ambientSource.buffer = ambientBuffer;
   ambientSource.loop = true;
 
   ambientGainNode = ctx.createGain();
-  ambientGainNode.gain.value = 0.15; // Low volume
+  ambientGainNode.gain.value = 0.15;
 
   ambientSource.connect(ambientGainNode);
   ambientGainNode.connect(ctx.destination);
@@ -84,17 +81,17 @@ const stopAmbientSound = () => {
 
 const loadAmbientSound = async (url: string) => {
     const ctx = getAudioContext();
-    if (!ctx || ambientBuffer) return; // Don't load if already loaded
+    if (!ctx || ambientBuffer) return;
     try {
         console.log("Loading ambient sound...");
         const response = await fetch(url);
         const arrayBuffer = await response.arrayBuffer();
         ambientBuffer = await ctx.decodeAudioData(arrayBuffer);
         console.log("Ambient sound loaded.");
-        await playAmbientSound(); // Attempt to play after loading
+        await playAmbientSound();
     } catch (error) {
         console.error("Error loading ambient sound:", error);
-        ambientBuffer = null; // Ensure buffer is null on error
+        ambientBuffer = null;
     }
 };
 
@@ -114,31 +111,22 @@ const playSound = (type: 'hover' | 'select' | 'deselect') => {
 
   switch (type) {
     case 'hover':
-      frequency = 1200;
-      duration = 0.03;
-      volume = 0.05;
-      oscillator.type = 'sine';
+      frequency = 1200; duration = 0.03; volume = 0.05; oscillator.type = 'sine';
       break;
     case 'select':
-      frequency = 660;
-      duration = 0.06;
-      volume = 0.1;
-      oscillator.type = 'triangle';
+      frequency = 660; duration = 0.06; volume = 0.1; oscillator.type = 'triangle';
       gainNode.gain.setValueAtTime(volume, ctx.currentTime);
       gainNode.gain.linearRampToValueAtTime(0, ctx.currentTime + duration * 0.9);
       break;
     case 'deselect':
-      frequency = 330;
-      duration = 0.08;
-      volume = 0.08;
-      oscillator.type = 'square';
+      frequency = 330; duration = 0.08; volume = 0.08; oscillator.type = 'square';
       gainNode.gain.setValueAtTime(volume, ctx.currentTime);
       gainNode.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
       break;
   }
 
   oscillator.frequency.setValueAtTime(frequency, ctx.currentTime);
-  if (type !== 'select' && type !== 'deselect') { // Apply default envelope if not custom
+  if (type !== 'select' && type !== 'deselect') {
     gainNode.gain.setValueAtTime(volume, ctx.currentTime);
     gainNode.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
   }
@@ -160,7 +148,7 @@ interface AnimatedLineProps {
 
 function AnimatedLine({
     points,
-    startColor = '#1E90FF', // Keep default colors or make them props
+    startColor = '#1E90FF',
     endColor = '#00FFFF',
     lineWidth = 1.5,
     opacity = 0.7,
@@ -183,7 +171,6 @@ function AnimatedLine({
     });
 
     useEffect(() => {
-        // console.log("Restored AnimatedLine Mounted/Points Changed:", points);
         progress.current = 0;
         if (materialRef.current) {
              materialRef.current.dashOffset = lineLength;
@@ -263,44 +250,38 @@ function SceneEventHandler({
     const lastHoverRef = useRef<string | null>(null);
     const clickTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-    const checkIntersection = (): string | null => {
-        if (!controlsEnabled) return null; // Only check if controls are enabled
+    const checkIntersection = useCallback((): string | null => {
+        if (!controlsEnabled) return null;
 
         raycaster.setFromCamera(pointer, camera);
-        const pointsObject = scene.getObjectByName("networkNodePoints"); // Find the points object by assigned name
+        const pointsObject = scene.getObjectByName("networkNodePoints");
 
         if (pointsObject && pointsObject instanceof THREE.Points && pointsObject.geometry) {
             const geometry = pointsObject.geometry as THREE.BufferGeometry;
-            const nameMap = geometry.userData.nameMap as { [key: number]: string }; // Get the name map
+            const nameMap = geometry.userData.nameMap as { [key: number]: string };
 
-            if (!nameMap) {
-                // console.warn("SceneEventHandler: nameMap not found on Points geometry userData.");
-            return null;
-        }
+            if (!nameMap) return null;
 
             const positions = geometry.attributes.position as THREE.BufferAttribute;
             const sizes = geometry.attributes.size as THREE.BufferAttribute;
-            const threshold = 0.5; // Adjust click/hover threshold as needed
+            const threshold = 0.5;
 
-            // Iterate through points to check for intersection manually
             for (let i = 0; i < positions.count; i++) {
                 const point = new THREE.Vector3().fromBufferAttribute(positions, i);
                 const pointSize = sizes.getX(i);
                 const distanceToRay = raycaster.ray.distanceToPoint(point);
-
-                // Check if the ray intersects the 'clickable area' of the point
-                // This is a simplified check; more accurate methods might consider screen space size
                 if (distanceToRay < pointSize * threshold) {
-                    return nameMap[i]; // Return the name associated with the intersected point index
+                    return nameMap[i];
                 }
             }
         }
-        return null; // No intersection found
-    };
+        return null;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [camera, pointer, raycaster, scene, controlsEnabled]); // Dependencies for checkIntersection
 
     // Handle hover
     useEffect(() => {
-        if (!controlsEnabled) return; // Do nothing if controls are off
+        if (!controlsEnabled) return;
 
         const intersectedName = checkIntersection();
         if (intersectedName && intersectedName !== lastHoverRef.current) {
@@ -309,17 +290,17 @@ function SceneEventHandler({
                 playSound('hover');
              }
             lastHoverRef.current = intersectedName;
-            document.body.style.cursor = 'pointer'; // Change cursor on hover
+            document.body.style.cursor = 'pointer';
         } else if (!intersectedName && lastHoverRef.current) {
              setHoverUniversityName(null);
             lastHoverRef.current = null;
-            document.body.style.cursor = 'auto'; // Reset cursor
+            document.body.style.cursor = 'auto';
         }
-    }, [pointer, controlsEnabled, selectedUniversity, setHoverUniversityName, checkIntersection]); // Rerun on pointer move or selection change
+    }, [pointer, controlsEnabled, selectedUniversity, setHoverUniversityName, checkIntersection]);
 
 
     // Handle click
-    const handleClick = () => {
+    const handleClick = useCallback(() => {
         if (!controlsEnabled) return;
 
         if (clickTimeoutRef.current) {
@@ -332,25 +313,21 @@ function SceneEventHandler({
 
             if (intersectedName) {
                 if (intersectedName === selectedUniversity?.name) {
-                    // Clicked the already selected node - deselect it
                     setSelectedUniversity(null);
-                    setConnectionLines([]); // Clear lines on deselect
+                    setConnectionLines([]);
                     playSound('deselect');
                 } else {
-                    // Clicked a new node - select it
                     const uni = universityMap.get(intersectedName);
                     if (uni) {
                         setSelectedUniversity(uni);
                         playSound('select');
-                        // Update connection lines (Example: connect to nearest N neighbors)
                         const selectedPos = nodePositions.get(intersectedName);
                         if (selectedPos) {
                             const neighbors = Array.from(nodePositions.entries())
                                 .filter(([name, pos]) => name !== intersectedName)
                                 .sort(([, posA], [, posB]) => selectedPos.distanceTo(posA) - selectedPos.distanceTo(posB))
-                                .slice(0, 5) // Connect to 5 nearest
+                                .slice(0, 5)
                                 .map(([name, pos]) => pos);
-
                             setConnectionLines(neighbors.map(neighborPos => [selectedPos, neighborPos]));
                         } else {
                             setConnectionLines([]);
@@ -358,16 +335,14 @@ function SceneEventHandler({
                     }
             }
         } else {
-                // Clicked outside any node - deselect if one is selected
                 if (selectedUniversity) {
                  setSelectedUniversity(null);
                     setConnectionLines([]);
-                    // playSound('deselect'); // Optional: sound on background click deselect
                 }
             }
             clickTimeoutRef.current = null;
-        }, 50); // Short delay to prevent interference with drag
-    };
+        }, 50);
+    }, [controlsEnabled, selectedUniversity, setSelectedUniversity, setConnectionLines, universityMap, nodePositions, checkIntersection]);
 
     useEffect(() => {
         window.addEventListener('click', handleClick);
@@ -376,11 +351,11 @@ function SceneEventHandler({
              if (clickTimeoutRef.current) {
                 clearTimeout(clickTimeoutRef.current);
             }
-            document.body.style.cursor = 'auto'; // Ensure cursor reset on unmount
+            document.body.style.cursor = 'auto';
         };
-    }, [handleClick, controlsEnabled]); // Re-bind if handleClick or controlsEnabled changes
+    }, [handleClick, controlsEnabled]);
 
-    return null; // This component doesn't render anything itself
+    return null;
 }
 
 // --- START: Scene Component ---
@@ -388,6 +363,10 @@ interface SceneProps {
     lang?: string;
     dict?: any; // Dictionary for translations
 }
+
+// Define default dimensions (can be adjusted)
+const DEFAULT_WIDTH = 800;
+const DEFAULT_HEIGHT = 600;
 
 export function Scene({ lang, dict }: SceneProps) {
     const params = useParams();
@@ -397,27 +376,25 @@ export function Scene({ lang, dict }: SceneProps) {
     const {
         selectedUniversity,
         setSelectedUniversity,
-        // Get filter state and setters from school store
         activeStateFilter,
         setActiveStateFilter,
         activeProgramFilter,
         setActiveProgramFilter,
         uniqueStates,
         uniqueProgramTypes,
-        visualizationMode
+        visualizationMode // Get the current visualization mode
     } = useSchoolStore();
 
     const { activePanel, setActivePanel } = useMapStore();
 
     const [isClient, setIsClient] = useState(false);
-    const initializeSchoolStore = useSchoolStore((state) => state.initializeStore); // Get initializer action
+    const initializeSchoolStore = useSchoolStore((state) => state.initializeStore);
 
     // Client-side check & Store Initialization
     useEffect(() => {
         setIsClient(true);
-        // Initialize the store when the component mounts client-side
         initializeSchoolStore();
-    }, [initializeSchoolStore]); // Add initializer to dependency array
+    }, [initializeSchoolStore]);
 
     // Handlers for UI OUTSIDE the canvas
     const handleClosePanel = () => {
@@ -425,7 +402,7 @@ export function Scene({ lang, dict }: SceneProps) {
         setSelectedUniversity(null);
     };
 
-    // Toggle panel function (defined here as it controls UI outside canvas)
+    // Toggle panel function
     const togglePanel = (panelId: string) => {
       if (activePanel === panelId) {
         setActivePanel(null);
@@ -451,93 +428,113 @@ export function Scene({ lang, dict }: SceneProps) {
         <div className="fixed inset-0 w-full h-full bg-gradient-to-br from-[#101820] to-[#18212B] visualization-container" onClick={handleClickForAudio}>
             {/* Skip to content link for accessibility */}
             <a href="#info-panel" className="skip-to-content">Skip to school information</a>
-            <Canvas
-                gl={{
-                    antialias: true,
-                    alpha: true,
-                    preserveDrawingBuffer: true,
-                    powerPreference: 'high-performance'
-                }}
-                dpr={[1, 2]} // Limit pixel ratio for better performance
-                frameloop="demand" // Only render when needed to reduce flickering
-                className="absolute inset-0 w-full h-full z-0"
-            >
-                <SceneContent lang={currentLang} dict={dict} />
-            </Canvas>
 
-            {/* UI Elements outside the Canvas */}
+            {/* --- Visualization Area (Conditional Rendering) --- */}
+            <div className="absolute inset-0 w-full h-full z-0"> {/* Container for visualization */}
+                {visualizationMode === 'd3-force' ? (
+                    <div className="w-full h-full flex items-center justify-center p-4"> {/* Keep parent background */}
+                        {/* Render 2D D3 Graph */}
+                        <D3NetworkGraph
+                            width={isClient ? window.innerWidth * 0.8 : DEFAULT_WIDTH} // Use window size or default
+                            height={isClient ? window.innerHeight * 0.8 : DEFAULT_HEIGHT}
+                            className="bg-white rounded-lg shadow-lg" // Style the SVG container
+                        />
+                    </div>
+                ) : (
+                    // Render 3D Canvas for 'network' or 'custom-force' modes
+                    <Canvas
+                        gl={{
+                            antialias: true,
+                            alpha: true, // Keep alpha as background is handled by parent div
+                            preserveDrawingBuffer: true,
+                            powerPreference: 'high-performance'
+                        }}
+                        dpr={[1, 2]}
+                        frameloop="demand"
+                        className="w-full h-full" // Canvas takes full space of its container
+                        key={visualizationMode} // Force re-mount canvas on mode change
+                    >
+                        <SceneContent lang={currentLang} dict={dict} />
+                    </Canvas>
+                )}
+            </div>
+
+            {/* --- UI Overlays (Positioned above the visualization) --- */}
+            {/* Filter Button */}
             <button
                 onClick={() => togglePanel('filter')}
-                className="absolute top-4 left-4 z-10 p-2 bg-white/10 backdrop-blur-sm rounded text-white hover:bg-white/20 transition-colors pointer-events-auto"
+                className="absolute top-4 left-4 z-20 p-2 bg-white/10 backdrop-blur-sm rounded text-white hover:bg-white/20 transition-colors pointer-events-auto"
                 aria-label="Toggle Filters"
             >
                 Filters
             </button>
 
+            {/* Filter Panel */}
             {activePanel === 'filter' && (
-                <div className="absolute top-16 left-4 z-10 bg-gray-900/90 backdrop-blur-sm p-4 rounded shadow-lg text-white">
-                    <h3 className="font-bold mb-1 text-cyan-300">Filter Options</h3>
-                    <div>
+                <div className="absolute top-16 left-4 z-20 bg-gray-900/90 backdrop-blur-sm p-4 rounded shadow-lg text-white max-w-xs pointer-events-auto">
+                    <h3 className="font-bold mb-2 text-cyan-300">Filter Options</h3>
+                    {/* State Filter */}
+                    <div className="mb-3">
                         <label htmlFor="state-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">State</label>
                          <select
                             id="state-filter-scene"
                             value={activeStateFilter || ''}
                             onChange={(e) => { setActiveStateFilter(e.target.value || null); }}
-                            className="w-full bg-gray-900/80 border border-cyan-700/60 text-gray-100 text-sm rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                            className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-sm rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
                          >
                              <option value="">All States</option>
                              {Array.isArray(uniqueStates) && uniqueStates.map((state: string) => <option key={state} value={state}>{state}</option>)}
                          </select>
                     </div>
-                    <div className="mt-2">
+                    {/* Program Filter */}
+                    <div className="mb-3">
                         <label htmlFor="program-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Program Type</label>
                         <select
                             id="program-filter-scene"
                             value={activeProgramFilter || ''}
                             onChange={(e) => { setActiveProgramFilter(e.target.value || null); }}
-                            className="w-full bg-gray-900/80 border border-cyan-700/60 text-gray-100 text-sm rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                            className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-sm rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
                         >
                             <option value="">All Programs</option>
-                            {Array.isArray(uniqueProgramTypes) && uniqueProgramTypes.map((type: string) => <option key={type} value={type}>{type}</option>)}
+                            {Array.isArray(uniqueProgramTypes) && uniqueProgramTypes.map((program: string) => <option key={program} value={program}>{program}</option>)}
                         </select>
                     </div>
+                     {/* Visualization Toggle - Moved inside filter panel */}
+                     {/* <div className="mt-4 pt-3 border-t border-cyan-700/40">
+                         <h4 className="text-xs font-medium text-cyan-200 mb-1.5">View Mode</h4>
+                         <VisualizationToggle />
+                     </div> */}
                 </div>
             )}
 
-            {/* Use the InfoPanel component directly with enhanced visibility */}
-            {console.log('Scene rendering InfoPanel with:', {
-              selectedUniversity,
-              isOpen: !!selectedUniversity,
-              selectedUniversityName: selectedUniversity?.name,
-              selectedUniversityType: selectedUniversity?.type,
-              visualizationMode
-            })}
-            <InfoPanel
-                school={selectedUniversity}
-                isOpen={!!selectedUniversity}
-                onClose={handleClosePanel}
-            />
+            {/* Visualization Toggle - Positioned independently */}
+            <div className="absolute bottom-4 right-4 z-20 pointer-events-auto">
+                <VisualizationToggle />
+            </div>
 
-            {/* Add a debug message when a university is selected */}
+            {/* Info Panel */}
             {selectedUniversity && (
-              <div className="fixed bottom-20 left-1/2 transform -translate-x-1/2 z-[9998] bg-black/50 backdrop-blur-md rounded-full px-4 py-2 text-white text-sm pointer-events-none">
-                Selected: {selectedUniversity.name}
-              </div>
+                 <InfoPanel
+                    school={selectedUniversity} // Correct prop name: school
+                    isOpen={!!selectedUniversity} // Pass boolean based on selection
+                    onClose={handleClosePanel}
+                    // lang={currentLang} // lang and dict might not be needed if InfoPanel doesn't use them
+                    // dict={dict}
+                    // className="z-20 pointer-events-auto" // className is handled internally by InfoPanel
+                />
             )}
-
-            {/* Visualization mode toggle */}
-            <VisualizationToggle />
         </div>
     );
 }
 
-// Helper component to invalidate frames only when controls are disabled
+// Helper component to invalidate frame loop when controls are disabled
 function FrameInvalidator({ controlsEnabled }: { controlsEnabled: boolean }) {
     const { invalidate } = useThree();
     useEffect(() => {
         if (!controlsEnabled) {
-            // Invalidate once when controls get disabled to ensure the frame is rendered
-            invalidate();
+            // Invalidate a few times after controls are disabled to ensure final render state
+            setTimeout(invalidate, 50);
+            setTimeout(invalidate, 150);
         }
     }, [controlsEnabled, invalidate]);
     return null;

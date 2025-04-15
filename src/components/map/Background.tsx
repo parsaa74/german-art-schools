@@ -1,172 +1,133 @@
 'use client'
 
-import { useRef, useMemo } from 'react';
-import * as THREE from 'three';
+import { useRef, useMemo, useEffect } from 'react' // Added useEffect import
+import * as THREE from 'three'
+import { useFrame, useThree } from '@react-three/fiber'
 
-function NetworkArt() {
-    const networkRef = useRef<THREE.Group>(null);
-    const nodesCount = 100;
-    const maxConnections = 3;
-    const sphereRadius = 8;
+// --- START: Shaders for Background Quad ---
+const backgroundVertexShader = /* glsl */`
+  varying vec2 vUv;
+  void main() {
+    vUv = uv;
+    // Position the quad to fill the screen, respecting camera perspective
+    gl_Position = vec4(position.xy * 2.0, 0.0, 1.0); 
+  }
+`;
 
-    const { nodes, connections, flowPoints } = useMemo(() => {
-        const nodes: THREE.Vector3[] = [];
-        const connections: Array<[THREE.Vector3, THREE.Vector3]> = [];
-        const flowPoints: Array<{
-            start: THREE.Vector3;
-            end: THREE.Vector3;
-            speed: number;
-            progress: number;
-            length: number;
-        }> = [];
+const backgroundFragmentShader = /* glsl */`
+  uniform float time;
+  uniform vec2 resolution;
+  varying vec2 vUv;
 
-        // Create nodes in spherical formation
-        for (let i = 0; i < nodesCount; i++) {
-            const phi = Math.random() * Math.PI * 2;
-            const theta = Math.random() * Math.PI;
-            const radius = sphereRadius + (Math.random() - 0.5) * 2;
+  // Noise function (e.g., Simplex or Perlin - using a simple one here for brevity)
+  // Source: https://thebookofshaders.com/11/
+  float random (vec2 st) {
+      return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123);
+  }
 
-            const x = radius * Math.sin(theta) * Math.cos(phi);
-            const y = radius * Math.sin(theta) * Math.sin(phi);
-            const z = radius * Math.cos(theta);
+  // 2D Noise based on Morgan McGuire @morgan3d
+  // https://www.shadertoy.com/view/4dS3Wd
+  float noise (vec2 st) {
+      vec2 i = floor(st);
+      vec2 f = fract(st);
 
-            nodes.push(new THREE.Vector3(x, y, z));
-        }
+      // Four corners in 2D of a tile
+      float a = random(i);
+      float b = random(i + vec2(1.0, 0.0));
+      float c = random(i + vec2(0.0, 1.0));
+      float d = random(i + vec2(1.0, 1.0));
 
-        // Create connections between nearby nodes
-        nodes.forEach((node, i) => {
-            const nodeConnections = [];
-            for (let j = 0; j < nodes.length && nodeConnections.length < maxConnections; j++) {
-                if (i !== j) {
-                    const distance = node.distanceTo(nodes[j]);
-                    if (distance < 4) {
-                        nodeConnections.push(j);
-                        connections.push([node, nodes[j]]);
+      // Smooth Interpolation
+      vec2 u = f*f*(3.0-2.0*f);
+      // u = smoothstep(0.,1.,f); // Alternative interpolation
 
-                        // Create flow points for this connection
-                        const numFlows = 1 + Math.floor(Math.random() * 2);
-                        for (let f = 0; f < numFlows; f++) {
-                            flowPoints.push({
-                                start: node.clone(),
-                                end: nodes[j].clone(),
-                                speed: 0.2 + Math.random() * 0.3,
-                                progress: Math.random(),
-                                length: distance
-                            });
-                        }
-                    }
-                }
-            }
-        });
+      // Mix 4 corners percentages
+      return mix(a, b, u.x) +
+              (c - a)* u.y * (1.0 - u.x) +
+              (d - b) * u.x * u.y;
+  }
 
-        return { nodes, connections, flowPoints };
-    }, []);
+  // FBM (Fractal Brownian Motion) for more complex patterns
+  float fbm (vec2 st) {
+      float value = 0.0;
+      float amplitude = .5;
+      float frequency = 0.;
+      // Loop of octaves
+      for (int i = 0; i < 5; i++) { // Fewer octaves for performance
+          value += amplitude * noise(st);
+          st *= 2.;
+          amplitude *= .5;
+      }
+      return value;
+  }
 
-    return (
-        <group ref={networkRef}>
-            {/* Static connections */}
-            {connections.map((connection, i) => (
-                <line key={`connection-${i}`}>
-                    <bufferGeometry>
-                        <bufferAttribute
-                            attach="attributes-position"
-                            count={2}
-                            array={new Float32Array([
-                                connection[0].x, connection[0].y, connection[0].z,
-                                connection[1].x, connection[1].y, connection[1].z
-                            ])}
-                            itemSize={3}
-                        />
-                    </bufferGeometry>
-                    <lineBasicMaterial color="#00ffd5" transparent opacity={0.1} />
-                </line>
-            ))}
+  void main() {
+    // Adjust UVs based on resolution to avoid stretching
+    vec2 uv = vUv; // Use vUv directly for screen space
+    vec2 aspectCorrectedUv = uv * vec2(resolution.x / resolution.y, 1.0);
 
-            {/* Nodes */}
-            <points>
-                <bufferGeometry>
-                    <bufferAttribute
-                        attach="attributes-position"
-                        count={nodes.length}
-                        array={new Float32Array(nodes.flatMap(n => [n.x, n.y, n.z]))}
-                        itemSize={3}
-                    />
-                </bufferGeometry>
-                <pointsMaterial
-                    size={0.1}
-                    color="#00ffd5"
-                    transparent
-                    opacity={0.8}
-                    sizeAttenuation
-                />
-            </points>
+    // Evolving noise pattern
+    float noisePattern = fbm(aspectCorrectedUv * 2.5 + time * 0.05); // Slower evolution, adjust scale
 
-            {/* Flowing points */}
-            {flowPoints.map((flow, i) => (
-                <mesh key={`flow-${i}`}
-                    position={[
-                        flow.start.x + (flow.end.x - flow.start.x) * flow.progress,
-                        flow.start.y + (flow.end.y - flow.start.y) * flow.progress,
-                        flow.start.z + (flow.end.z - flow.start.z) * flow.progress
-                    ]}
-                >
-                    <sphereGeometry args={[0.03, 8, 8]} />
-                    <meshBasicMaterial
-                        color="#00ffd5"
-                        transparent
-                        opacity={0.8}
-                    />
-                </mesh>
-            ))}
-        </group>
-    );
-}
+    // Add another layer of slower, larger noise for variation
+    float slowNoise = fbm(aspectCorrectedUv * 0.8 + time * 0.02);
 
-function HolographicGrid() {
-    const gridRef = useRef<THREE.Group>(null);
-    const size = 120;
-    const divisions = 30;
+    // Color mapping - create a dark, ethereal look
+    vec3 color1 = vec3(0.01, 0.02, 0.05); // Deep blue/purple
+    vec3 color2 = vec3(0.05, 0.1, 0.2);  // Slightly lighter blue
+    vec3 color3 = vec3(0.1, 0.05, 0.15); // Hint of magenta/purple
 
-    const gridPoints = useMemo(() => {
-        const points = [];
-        const step = size / divisions;
+    // --- FIX: Define combinedNoise before use ---
+    float combinedNoise = noisePattern * 0.7 + slowNoise * 0.3; // Combine noise patterns
 
-        for (let i = -size/2; i <= size/2; i += step) {
-            points.push(
-                new THREE.Vector3(-size/2, i, -20 - Math.abs(i/10)),
-                new THREE.Vector3(size/2, i, -20 - Math.abs(i/10))
-            );
-            points.push(
-                new THREE.Vector3(i, -size/2, -20 - Math.abs(i/10)),
-                new THREE.Vector3(i, size/2, -20 - Math.abs(i/10))
-            );
-        }
-        return points;
-    }, []);
+    vec3 finalColor = mix(color1, color2, smoothstep(0.3, 0.6, combinedNoise));
+    finalColor = mix(finalColor, color3, smoothstep(0.5, 0.8, slowNoise * 0.5 + noisePattern * 0.5));
 
-    return (
-        <group ref={gridRef}>
-            <line>
-                <bufferGeometry>
-                    <bufferAttribute
-                        attach="attributes-position"
-                        count={gridPoints.length}
-                        array={new Float32Array(gridPoints.flatMap(p => [p.x, p.y, p.z]))}
-                        itemSize={3}
-                    />
-                </bufferGeometry>
-                <lineBasicMaterial color="#4400ff" transparent opacity={0.07} />
-            </line>
-        </group>
-    );
-}
+    // Add subtle vignette
+    float vignette = smoothstep(0.8, 0.3, length(uv - 0.5)); // Inward vignette
+    finalColor *= vignette * 1.2; // Apply vignette and slightly boost brightness
+
+    // Add subtle grain (optional)
+    // finalColor += (random(uv + time * 0.1) - 0.5) * 0.03;
+
+    gl_FragColor = vec4(finalColor, 1.0);
+  }
+`;
+// --- END: Shaders for Background Quad ---
+
 
 export default function Background() {
-    return (
-        <group>
-            <NetworkArt />
-            <HolographicGrid />
-            <fog attach="fog" args={['#000033', 20, 90]} />
-        </group>
-    );
-} 
+  const materialRef = useRef<THREE.ShaderMaterial>(null);
+  const { size } = useThree(); // Get viewport size for resolution uniform
+
+  const uniforms = useMemo(() => ({
+      time: { value: 0.0 },
+      resolution: { value: new THREE.Vector2(size.width * window.devicePixelRatio, size.height * window.devicePixelRatio) }
+  }), [size]);
+
+  // Update resolution uniform if size changes
+  useEffect(() => {
+      uniforms.resolution.value.set(size.width * window.devicePixelRatio, size.height * window.devicePixelRatio);
+  }, [size, uniforms]);
+
+  useFrame(({ clock }) => {
+    if (materialRef.current) {
+      materialRef.current.uniforms.time.value = clock.getElapsedTime();
+    }
+  });
+
+  return (
+    // Fullscreen Quad
+    <mesh renderOrder={-1}> {/* Render behind everything else */}
+      <planeGeometry args={[2, 2]} /> {/* Simple plane covering the viewport */}
+      <shaderMaterial
+        ref={materialRef}
+        vertexShader={backgroundVertexShader}
+        fragmentShader={backgroundFragmentShader}
+         uniforms={uniforms}
+         depthWrite={false} // No need to write to depth buffer
+         depthTest={false} // Prevent interference with objects behind
+       />
+     </mesh>
+  );
+}

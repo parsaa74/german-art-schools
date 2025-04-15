@@ -1,0 +1,304 @@
+[
+  {
+    "id": "kunstakademie-munster",
+    "name": "Kunstakademie Münster",
+    "latitude": 51.9607,
+    "longitude": 7.6261,
+    "websiteUrl": "https://www.kunstakademie-muenster.de",
+    "state": "North Rhine-Westphalia",
+    "programTypes": [
+      "Fine Arts",
+      "Art Education"
+    ]
+  },
+  {
+    "id": "hochschule-fur-kunste-bremen",
+    "name": "Hochschule für Künste Bremen",
+    "latitude": 53.075,
+    "longitude": 8.826,
+    "websiteUrl": "https://www.hfk-bremen.de/",
+    "state": "Bremen",
+    "programTypes": [
+      "Digitale Medien",
+      "Freie Kunst",
+      "Integriertes Design",
+      "Musik",
+      "Promotionsprogramm (PhD)"
+    ]
+  },
+  {
+    "id": "technische-hochschule-ingolstadt",
+    "name": "Technische Hochschule Ingolstadt",
+    "latitude": 48.7666,
+    "longitude": 11.4282,
+    "websiteUrl": "https://www.thi.de/",
+    "state": "Bavaria",
+    "programTypes": [
+      "User Experience Design"
+    ]
+  },
+  {
+    "id": "universitat-wurzburg",
+    "name": "Universität Würzburg",
+    "latitude": 49.7913,
+    "longitude": 9.9534,
+    "websiteUrl": "https://www.uni-wuerzburg.de/",
+    "state": "Bavaria",
+    "programTypes": [
+      "Human-Computer Interaction"
+    ]
+  },
+  {
+    "id": "technische-universitat-chemnitz",
+    "name": "Technische Universität Chemnitz",
+    "latitude": 50.8381,
+    "longitude": 12.9222,
+    "websiteUrl": "https://www.tu-chemnitz.de/",
+    "state": "Saxony",
+    "programTypes": [
+      "Human-Computer Interaction"
+    ]
+  },
+  {
+    "id": "universitat-passau",
+    "name": "Universität Passau",
+    "latitude": 48.5732,
+    "longitude": 13.4522,
+    "websiteUrl": "https://www.uni-passau.de/",
+    "state": "Bavaria",
+    "programTypes": [
+      "Computer Science with specialization in Human-Computer Interaction"
+    ]
+  },
+  {
+    "id": "rwth-aachen-university",
+    "name": "RWTH Aachen University",
+    "latitude": 50.7766,
+    "longitude": 6.0834,
+    "websiteUrl": "https://www.rwth-aachen.de/",
+    "state": "North Rhine-Westphalia",
+    "programTypes": [
+      "Human-Technology Interaction and Communication"
+    ]
+  },
+  {
+    "id": "technische-hochschule-augsburg",
+    "name": "Technische Hochschule Augsburg",
+    "latitude": 48.3715,
+    "longitude": 10.8985,
+    "websiteUrl": "https://www.th-augsburg.de/",
+    "state": "Bavaria",
+    "programTypes": [
+      "Interactive Media Systems"
+    ]
+  },
+  {
+    "id": "hochschule-darmstadt",
+    "name": "Hochschule Darmstadt",
+    "latitude": 49.8654,
+    "longitude": 8.6633,
+    "websiteUrl": "https://www.h-da.de/",
+    "state": "Hesse",
+    "programTypes": [
+      "Digital Media"
+    ]
+  },
+  {
+    "id": "burg-giebichenstein-kunsthochschule-halle",
+    "name": "Burg Giebichenstein Kunsthochschule Halle",
+    "latitude": 51.4828,
+    "longitude": 11.9694,
+    "websiteUrl": "https://www.burg-halle.de",
+    "state": "Saxony-Anhalt",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "hochschule-fur-bildende-kunste-braunschweig",
+    "name": "Hochschule für Bildende Künste Braunschweig",
+    "latitude": 52.2689,
+    "longitude": 10.5267,
+    "websiteUrl": "https://www.hbk-bs.de",
+    "state": "Lower Saxony",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "hochschule-fur-bildende-kunste-dresden",
+    "name": "Hochschule für Bildende Künste Dresden",
+    "latitude": 51.0504,
+    "longitude": 13.7373,
+    "websiteUrl": "https://www.hfbk-dresden.de",
+    "state": "Saxony",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "hochschule-fur-bildende-kunste-hamburg",
+    "name": "Hochschule für Bildende Künste Hamburg",
+    "latitude": 53.5511,
+    "longitude": 9.9937,
+    "websiteUrl": "https://www.hfbk-hamburg.de",
+    "state": "Hamburg",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "hochschule-fur-bildende-kunste-saar",
+    "name": "Hochschule für Bildende Künste Saar",
+    "latitude": 49.2402,
+    "longitude": 6.9969,
+    "websiteUrl": "https://www.hbksaar.de",
+    "state": "Saarland",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "hochschule-fur-gestaltung-schwabisch-gmund",
+    "name": "Hochschule für Gestaltung Schwäbisch Gmünd",
+    "latitude": 48.8006,
+    "longitude": 9.7981,
+    "websiteUrl": "https://www.hfg-gmuend.de",
+    "state": "Baden-Württemberg",
+    "programTypes": [
+      "Communication Design"
+    ]
+  },
+  {
+    "id": "hochschule-fur-grafik-und-buchkunst-leipzig",
+    "name": "Hochschule für Grafik und Buchkunst Leipzig",
+    "latitude": 51.3397,
+    "longitude": 12.3731,
+    "websiteUrl": "https://www.hgb-leipzig.de",
+    "state": "Saxony",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "kunsthochschule-berlin-weiensee",
+    "name": "Kunsthochschule Berlin-Weißensee",
+    "latitude": 52.52,
+    "longitude": 13.405,
+    "websiteUrl": "https://www.kh-berlin.de",
+    "state": "Berlin",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "kunsthochschule-fur-medien-koln",
+    "name": "Kunsthochschule für Medien Köln",
+    "latitude": 50.9375,
+    "longitude": 6.9603,
+    "websiteUrl": "https://www.khm.de",
+    "state": "North Rhine-Westphalia",
+    "programTypes": [
+      "Media Arts"
+    ]
+  },
+  {
+    "id": "kunsthochschule-kassel",
+    "name": "Kunsthochschule Kassel",
+    "latitude": 51.3128,
+    "longitude": 9.4816,
+    "websiteUrl": "https://www.kunsthochschulekassel.de",
+    "state": "Hesse",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "kunsthochschule-mainz",
+    "name": "Kunsthochschule Mainz",
+    "latitude": 49.9929,
+    "longitude": 8.2473,
+    "websiteUrl": "https://www.kunsthochschule-mainz.de",
+    "state": "Rhineland-Palatinate",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "muthesius-kunsthochschule-kiel",
+    "name": "Muthesius Kunsthochschule Kiel",
+    "latitude": 54.3233,
+    "longitude": 10.1228,
+    "websiteUrl": "https://www.muthesius.de",
+    "state": "Schleswig-Holstein",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "staatliche-hochschule-fur-bildende-kunste-stadelschule-frankfurt",
+    "name": "Staatliche Hochschule für Bildende Künste – Städelschule Frankfurt",
+    "latitude": 50.1109,
+    "longitude": 8.6821,
+    "websiteUrl": "https://www.staedelschule.de",
+    "state": "Hesse",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "universitat-der-kunste-berlin",
+    "name": "Universität der Künste Berlin",
+    "latitude": 52.5167,
+    "longitude": 13.3833,
+    "websiteUrl": "https://www.udk-berlin.de",
+    "state": "Berlin",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "folkwang-universitat-der-kunste",
+    "name": "Folkwang Universität der Künste",
+    "latitude": 51.4333,
+    "longitude": 7.0167,
+    "websiteUrl": "https://www.folkwang-uni.de",
+    "state": "North Rhine-Westphalia",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "hochschule-fur-bildende-kunste-essen",
+    "name": "Hochschule für Bildende Künste Essen",
+    "latitude": 51.4566,
+    "longitude": 7.0123,
+    "websiteUrl": "https://www.hbk-essen.de",
+    "state": "North Rhine-Westphalia",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+    "name": "Staatliche Hochschule für Gestaltung Karlsruhe",
+    "latitude": 49.0069,
+    "longitude": 8.4037,
+    "websiteUrl": "https://www.hfg-karlsruhe.de",
+    "state": "Baden-Württemberg",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  },
+  {
+    "id": "academy-of-visual-arts-frankfurt",
+    "name": "Academy of Visual Arts Frankfurt",
+    "latitude": 50.1109,
+    "longitude": 8.6821,
+    "websiteUrl": "https://www.akademie-der-bildenden-kuenste.de",
+    "state": "Hesse",
+    "programTypes": [
+      "Fine Arts"
+    ]
+  }
+]

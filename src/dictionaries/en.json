@@ -1,0 +1,49 @@
+{
+  "title": "German Art Schools Map",
+  "description": "Interactive map of art schools in Germany",
+  "sidebar": {
+    "title": "German Art Schools",
+    "searchPlaceholder": "Search schools...",
+    "noResults": "No schools found."
+  },
+  "schoolDetails": {
+    "programs": "Programs",
+    "location": "Location",
+    "website": "Visit Website",
+    "contact": "Contact",
+    "backToMap": "Back to Map",
+    "founded": "Founded",
+    "duration": "Duration",
+    "specializations": "Specializations",
+    "professors": "Professors",
+    "requirements": "Requirements",
+    "applicationDeadlines": "Application Deadlines",
+    "winterSemester": "Winter Semester",
+    "summerSemester": "Summer Semester",
+    "start": "Start",
+    "end": "End",
+    "programDetails": "Program Details"
+  },
+  "languageSwitcher": {
+    "switchTo": "Switch to German"
+  },
+  "map": {
+    "title": "German Art Schools",
+    "subtitle": "Explore Germany's artistic education landscape",
+    "initializing": "Initializing Visualization",
+    "statistics": "Statistics",
+    "totalSchools": "Total Schools",
+    "institutions": "institutions",
+    "activeRegion": "Active Region",
+    "selected": "selected",
+    "schoolTypes": "School Types",
+    "navigation": "Navigation",
+    "dragToRotate": "Drag to rotate",
+    "scrollToZoom": "Scroll to zoom",
+    "clickForDetails": "Click points for details",
+    "keyboardShortcuts": "Keyboard Shortcuts",
+    "resetView": "Reset view",
+    "toggleRotation": "Toggle rotation",
+    "closeDetails": "Close details"
+  }
+}

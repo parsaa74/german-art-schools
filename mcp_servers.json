@@ -1,0 +1,16 @@
+{
+  "servers": [
+    {
+      "name": "blender-mcp",
+      "command": "PYTHONPATH=blender-mcp/src python blender-mcp/main.py",
+      "cwd": ".",
+      "description": "Local MCP server for Blender integration"
+    },
+    {
+      "name": "github.com/ahujasid/blender-mcp",
+      "command": "uvx blender-mcp",
+      "cwd": ".",
+      "description": "Blender MCP server via uvx"
+    }
+  ]
+}

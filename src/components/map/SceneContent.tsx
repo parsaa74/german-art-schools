@@ -15,7 +15,7 @@ import type { ProcessedUniversity } from '@/stores/schoolStore';
 import NetworkGraph from './NetworkGraph';
 import Background from './Background';
 import ConnectionLines from './ConnectionLines';
-import D3ForceGraph from './D3ForceGraph';
+import CustomForceGraph from './CustomForceGraph';
 
 // Post-processing
 import PostProcessing from './PostProcessing';
@@ -565,7 +565,7 @@ export function SceneContent(_props: SceneContentProps) {
             {/* Render visualization based on mode */}
             {filteredUniversities.length > 0 ? (
                 visualizationMode === 'd3-force' ? (
-                    <D3ForceGraph
+                    <CustomForceGraph
                         scale={1.5}
                         position={[0, 0, 0]}
                     />
