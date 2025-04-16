@@ -9,7 +9,7 @@ export function useTranslation() {
   const { locale } = router;
   const t = (key: string) => {
     const keys = key.split('.');
-    return keys.reduce((obj, k) => obj?.[k], translations[locale as keyof typeof translations] || translations.en) as string;
+    return keys.reduce((obj: any, k: string) => obj?.[k], translations[locale as keyof typeof translations] || translations.en);
   };
 
   return { t, locale };
