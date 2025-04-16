@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "./card";
-import { Program } from '@/types';
+import { Program } from '@/types/index';
 
 interface ProgramDetailsProps {
   program: Program;
