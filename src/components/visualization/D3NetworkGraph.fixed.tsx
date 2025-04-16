@@ -32,6 +32,7 @@ interface D3NetworkGraphProps {
   width?: number
   height?: number
   className?: string
+  timelineFilter?: [number, number] | null
 }
 
 // --- Constants ---
@@ -67,7 +68,7 @@ const getNodeRadius = (node: D3Node): number => {
 export default function D3NetworkGraph({
   width = DEFAULT_WIDTH,
   height = DEFAULT_HEIGHT,
-  className = ''
+  className = '',
 }: D3NetworkGraphProps) {
   const svgRef = useRef<SVGSVGElement>(null)
   const simulationRef = useRef<d3.Simulation<D3Node, D3Link> | null>(null)
