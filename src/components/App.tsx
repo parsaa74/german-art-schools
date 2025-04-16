@@ -1,5 +1,5 @@
 import React from 'react';
-import Scene from './map/Scene';
+import { Scene } from './map/Scene';
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
