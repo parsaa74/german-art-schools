@@ -1,4 +1,4 @@
-import { Program, School } from '@/types';
+import { Program, School } from '@/types/index';
 
 export const programsData: Record<string, Program[]> = {
   'Bauhaus-Universität Weimar': [
