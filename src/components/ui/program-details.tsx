@@ -14,26 +14,30 @@ export const ProgramDetails: React.FC<ProgramDetailsProps> = ({ program }) => {
         <p className="text-sm text-gray-600">{program.degree}</p>
       </CardHeader>
       <CardContent className="p-4 space-y-4">
-        <div>
-          <h3 className="font-semibold">Application Deadlines</h3>
-          {program.applicationDeadlines.winter && (
-            <p>Winter Semester: {program.applicationDeadlines.winter.start} - {program.applicationDeadlines.winter.end}</p>
-          )}
-          {program.applicationDeadlines.summer && (
-            <p>Summer Semester: {program.applicationDeadlines.summer.start} - {program.applicationDeadlines.summer.end}</p>
-          )}
-        </div>
+        {program.applicationDeadlines && (
+          <div>
+            <h3 className="font-semibold">Application Deadlines</h3>
+            {program.applicationDeadlines.winter && (
+              <p>Winter Semester: {program.applicationDeadlines.winter.start} - {program.applicationDeadlines.winter.end}</p>
+            )}
+            {program.applicationDeadlines.summer && (
+              <p>Summer Semester: {program.applicationDeadlines.summer.start} - {program.applicationDeadlines.summer.end}</p>
+            )}
+          </div>
+        )}
         
-        <div>
-          <h3 className="font-semibold">Professors</h3>
-          <ul className="list-disc pl-4">
-            {program.professors.map((professor, index) => (
-              <li key={index}>
-                {professor.name} - <a href={`mailto:${professor.email}`} className="text-blue-600 hover:underline">{professor.email}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
+        {program.professors && program.professors.length > 0 && (
+          <div>
+            <h3 className="font-semibold">Professors</h3>
+            <ul className="list-disc pl-4">
+              {program.professors.map((professor, index) => (
+                <li key={index}>
+                  {professor.name} - <a href={`mailto:${professor.email}`} className="text-blue-600 hover:underline">{professor.email}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         <div>
           <h3 className="font-semibold">Program Details</h3>
