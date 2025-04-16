@@ -6,9 +6,6 @@ const nextConfig = {
     unoptimized: true,
   },
   trailingSlash: true,
-  experimental: {
-    optimizeFonts: false,
-  },
   assetPrefix: process.env.NODE_ENV === 'development' ? '' : '/german-art-schools',
   // Add a publicRuntimeConfig to make basePath available to client components
   publicRuntimeConfig: {
