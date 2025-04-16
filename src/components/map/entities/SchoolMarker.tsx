@@ -1,5 +1,5 @@
 import { Billboard, Text } from '@react-three/drei';
-import { School } from '@/types';
+import { School } from '@/types/index';
 import { MAP_CONFIG, COLORS, MATERIALS } from '@/lib/geo';
 import { latLngToVector3 } from '@/lib/geo';
 import { FONTS } from '@/utils/fonts';
