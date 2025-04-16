@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import type { Map as MapboxMap } from 'mapbox-gl';
-import { School } from '@/types';
+import { School } from '@/types/index';
 import * as THREE from 'three';
 
 interface MapStore {
