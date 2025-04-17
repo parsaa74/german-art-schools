@@ -6,7 +6,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   // IMPORTANT: Replace <your-repo-name> with your actual GitHub repository name
-  base: '/<your-repo-name>/',
+  base: '/german-art-schools/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
