@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export', // Add this line
   basePath: process.env.NODE_ENV === 'development' ? '' : '/german-art-schools',
   images: {
     unoptimized: true,

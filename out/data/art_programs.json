@@ -1,0 +1,789 @@
+{
+  "statistics": {
+    "last_updated": "2025-04-03",
+    "total_schools": 45,
+    "total_programs": 120
+  },
+  "universities": {
+    "Kunstakademie Münster": {
+      "coordinates": {
+        "lat": 51.9607,
+        "lng": 7.6261
+      },
+      "ranking": {
+        "national": 15,
+        "specialization_rank": {
+          "fine_arts": 12,
+          "art_education": 8
+        }
+      },
+      "stats": {
+        "students": 320,
+        "acceptance_rate": 0.35,
+        "student_staff_ratio": 8.2
+      },
+      "city": "Münster",
+      "state": "North Rhine-Westphalia",
+      "type": "academy",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Bachelor of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 June", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Comprehensive fine arts program with focus on practical and theoretical artistic education.",
+          "specializations": ["Painting", "Sculpture", "Installation Art"]
+        },
+        {
+          "name": "Art Education",
+          "degree": "Master of Education",
+          "applicationDeadlines": {
+            "winter": {"start": "1 June", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program preparing students for teaching art in schools and other educational institutions.",
+          "specializations": ["Art Pedagogy", "Art History", "Art Theory"]
+        }
+      ],
+      "website": "https://www.kunstakademie-muenster.de"
+    },
+    "Academy of Fine Arts Nuremberg": {
+      "city": "Nuremberg",
+      "state": "Bavaria",
+      "type": "academy",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma in Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "30 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Comprehensive fine arts education with emphasis on individual artistic development.",
+          "specializations": ["Painting", "Sculpture", "New Media"]
+        }
+      ],
+      "website": "https://www.adbk-nuernberg.de"
+    },
+    "Bauhaus-Universität Weimar": {
+      "city": "Weimar",
+      "state": "Thuringia",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Human-Computer Interaction",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "15 July", "end": "30 September"},
+            "summer": {"start": "15 January", "end": "31 March"}
+          },
+          "language": "English",
+          "duration": "4 semesters",
+          "description": "Research-oriented program with opportunities to participate in interdisciplinary projects.",
+          "specializations": ["Human-Computer Interaction", "User Experience Design", "Interactive Systems"]
+        }
+      ],
+      "website": "https://www.uni-weimar.de"
+    },
+    "University of Siegen": {
+      "city": "Siegen",
+      "state": "North Rhine-Westphalia",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Human-Computer Interaction",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "1 June"},
+            "summer": {"start": "1 November", "end": "1 December"}
+          },
+          "language": "English",
+          "duration": "4 semesters",
+          "description": "The program focuses on interactive technologies, user-centered design, and usability engineering.",
+          "specializations": ["Interactive Technologies", "User-Centered Design", "Usability Engineering"]
+        }
+      ],
+      "website": "https://www.uni-siegen.de"
+    },
+    "University of Design Offenbach": {
+      "city": "Offenbach",
+      "state": "Hesse",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Visual Communication",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 June", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Program covering all aspects of visual communication and design.",
+          "specializations": ["Graphic Design", "Typography", "Digital Media"]
+        }
+      ],
+      "website": "https://www.hfg-offenbach.de"
+    },
+    "Hochschule für Künste Bremen": {
+      "city": "Bremen",
+      "state": "Bremen",
+      "type": "university_of_arts",
+      "coordinates": {
+        "lat": 53.075,
+        "lng": 8.826
+      },
+      "ranking": {},
+      "stats": {},
+      "programs": [
+        {
+          "name": "Digitale Medien",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 February", "end": "15 May"}
+          },
+          "language": "German/English",
+          "duration": "6 semesters"
+        },
+        {
+          "name": "Digitale Medien",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German/English",
+          "duration": "4 semesters"
+        },
+        {
+          "name": "Freie Kunst",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 February", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        },
+        {
+          "name": "Integriertes Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 February", "end": "30 April"}
+          },
+          "language": "German",
+          "duration": "6 semesters"
+        },
+        {
+          "name": "Integriertes Design",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German",
+          "duration": "4 semesters"
+        },
+        {
+          "name": "Musik",
+          "degree": "Bachelor/Master",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 March"}
+          },
+          "language": "German",
+          "duration": "Varies"
+        },
+        {
+          "name": "Promotionsprogramm (PhD)",
+          "degree": "PhD",
+          "applicationDeadlines": {},
+          "language": "German/English",
+          "duration": "Varies"
+        }
+      ],
+      "website": "https://www.hfk-bremen.de/"
+    },
+    "Technische Hochschule Ingolstadt": {
+      "city": "Ingolstadt",
+      "state": "Bavaria",
+      "type": "university_of_applied_sciences",
+      "coordinates": {
+        "lat": 48.7666, 
+        "lng": 11.4282 
+      },
+      "ranking": {},
+      "stats": {},
+      "programs": [
+        {
+          "name": "User Experience Design",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "summer": {"start": "15 October", "end": "15 November"},
+            "winter": {"start": "2 May", "end": "15 June"}
+          },
+          "language": "English",
+          "duration": "4 semesters",
+          "description": "The program focuses on the design and development of user-friendly interfaces and experiences. Emphasis on interdisciplinary approaches combining design, psychology, and computer science.",
+          "specializations": ["User Experience Design", "Interface Design", "Human-Computer Interaction"]
+        }
+      ],
+      "website": "https://www.thi.de/" 
+    },
+    "Universität Würzburg": {
+      "city": "Würzburg",
+      "state": "Bavaria",
+      "type": "university",
+      "coordinates": {
+        "lat": 49.7913, 
+        "lng": 9.9534  
+      },
+      "ranking": {},
+      "stats": {},
+      "programs": [
+        {
+          "name": "Human-Computer Interaction",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 July"}
+          },
+          "language": "German/English", 
+          "duration": "4 semesters",
+          "description": "The program focuses on the design, implementation, and evaluation of interactive systems. Emphasis on user-centered design, usability engineering, and cognitive psychology.",
+          "specializations": ["Interactive Systems", "Usability Engineering", "Cognitive Psychology"]
+        }
+      ],
+      "website": "https://www.uni-wuerzburg.de/" 
+    },
+    "Technische Universität Chemnitz": {
+      "city": "Chemnitz",
+      "state": "Saxony",
+      "type": "university",
+      "coordinates": {
+        "lat": 50.8381, 
+        "lng": 12.9222 
+      },
+      "ranking": {},
+      "stats": {},
+      "programs": [
+        {
+          "name": "Human-Computer Interaction",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 July"}
+          },
+          "language": "German/English", 
+          "duration": "4 semesters",
+          "description": "The program focuses on the design, implementation, and evaluation of interactive systems. Emphasis on cognitive psychology, user experience design, and software engineering.",
+          "specializations": ["Cognitive Psychology", "User Experience Design", "Software Engineering"]
+        }
+      ],
+      "website": "https://www.tu-chemnitz.de/" 
+    },
+    "Universität Passau": {
+      "city": "Passau",
+      "state": "Bavaria",
+      "type": "university",
+      "coordinates": {
+        "lat": 48.5732, 
+        "lng": 13.4522 
+      },
+      "ranking": {},
+      "stats": {},
+      "programs": [
+        {
+          "name": "Computer Science with specialization in Human-Computer Interaction",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 July"}
+          },
+          "language": "German/English", 
+          "duration": "4 semesters",
+          "description": "The program offers a specialization in Human-Computer Interaction within the Computer Science Master's degree. Focuses on user-centered design, interactive system development, and usability evaluation.",
+          "specializations": ["Human-Computer Interaction", "User-Centered Design", "Interactive System Development", "Usability Evaluation"]
+        }
+      ],
+      "website": "https://www.uni-passau.de/" 
+    },
+    "RWTH Aachen University": {
+      "city": "Aachen",
+      "state": "North Rhine-Westphalia",
+      "type": "university",
+      "coordinates": {
+        "lat": 50.7766, 
+        "lng": 6.0834  
+      },
+      "ranking": {},
+      "stats": {},
+      "programs": [
+        {
+          "name": "Human-Technology Interaction and Communication",
+          "degree": "Master of Science",
+          "applicationDeadlines": { 
+            "winter": {} 
+          },
+          "language": "German/English", 
+          "duration": "4 semesters",
+          "description": "The program is research-oriented, focusing on human-technology interaction and communication. Students learn to reflect on complex scientific problems and understand larger technical contexts.",
+          "specializations": ["Human-Technology Interaction", "Communication Science", "Interdisciplinary Research"]
+        }
+      ],
+      "website": "https://www.rwth-aachen.de/" 
+    },
+    "Technische Hochschule Augsburg": {
+      "city": "Augsburg",
+      "state": "Bavaria",
+      "type": "university_of_applied_sciences",
+      "coordinates": {
+        "lat": 48.3715, 
+        "lng": 10.8985 
+      },
+      "ranking": {},
+      "stats": {},
+      "programs": [
+        {
+          "name": "Interactive Media Systems",
+          "degree": "Master of Arts",
+          "applicationDeadlines": { 
+            "winter": {} 
+          },
+          "language": "German/English", 
+          "duration": "4 semesters",
+          "description": "Focuses on the conception, design, and technical implementation of interactive media systems.",
+          "specializations": ["Interactive Media", "System Design", "Media Technology"]
+        }
+      ],
+      "website": "https://www.th-augsburg.de/" 
+    },
+    "Hochschule Darmstadt": {
+      "city": "Darmstadt", 
+      "state": "Hesse",
+      "type": "university_of_applied_sciences",
+      "coordinates": {
+        "lat": 49.8654,
+        "lng": 8.6633  
+      },
+      "ranking": {},
+      "stats": {},
+      "programs": [
+        {
+          "name": "Digital Media",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 June", "end": "15 July"}
+          },
+          "language": "English",
+          "duration": "4 semesters",
+          "description": "The program focuses on media informatics, human-computer interaction, and digital media technologies. Combines technical and creative aspects of digital media.",
+          "specializations": ["Media Informatics", "Human-Computer Interaction", "Interactive Media"]
+        }
+      ],
+      "website": "https://www.h-da.de/"
+    },
+    "Burg Giebichenstein Kunsthochschule Halle": {
+      "coordinates": {
+        "lat": 51.4828,
+        "lng": 11.9694
+      },
+      "city": "Halle",
+      "state": "Saxony-Anhalt",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.burg-halle.de"
+    },
+    "Hochschule für Bildende Künste Braunschweig": {
+      "coordinates": {
+        "lat": 52.2689,
+        "lng": 10.5267
+      },
+      "city": "Braunschweig",
+      "state": "Lower Saxony",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.hbk-bs.de"
+    },
+    "Hochschule für Bildende Künste Dresden": {
+      "coordinates": {
+        "lat": 51.0504,
+        "lng": 13.7373
+      },
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.hfbk-dresden.de"
+    },
+    "Hochschule für Bildende Künste Hamburg": {
+      "coordinates": {
+        "lat": 53.5511,
+        "lng": 9.9937
+      },
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.hfbk-hamburg.de"
+    },
+    "Hochschule für Bildende Künste Saar": {
+      "coordinates": {
+        "lat": 49.2402,
+        "lng": 6.9969
+      },
+      "city": "Saarbrücken",
+      "state": "Saarland",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.hbksaar.de"
+    },
+    "Hochschule für Gestaltung Schwäbisch Gmünd": {
+      "coordinates": {
+        "lat": 48.8006,
+        "lng": 9.7981
+      },
+      "city": "Schwäbisch Gmünd",
+      "state": "Baden-Württemberg",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Communication Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "7 semesters"
+        }
+      ],
+      "website": "https://www.hfg-gmuend.de"
+    },
+    "Hochschule für Grafik und Buchkunst Leipzig": {
+      "coordinates": {
+        "lat": 51.3397,
+        "lng": 12.3731
+      },
+      "city": "Leipzig",
+      "state": "Saxony",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.hgb-leipzig.de"
+    },
+    "Kunsthochschule Berlin-Weißensee": {
+      "coordinates": {
+        "lat": 52.5200,
+        "lng": 13.4050
+      },
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.kh-berlin.de"
+    },
+    "Kunsthochschule für Medien Köln": {
+      "coordinates": {
+        "lat": 50.9375,
+        "lng": 6.9603
+      },
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Media Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.khm.de"
+    },
+    "Kunsthochschule Kassel": {
+      "coordinates": {
+        "lat": 51.3128,
+        "lng": 9.4816
+      },
+      "city": "Kassel",
+      "state": "Hesse",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.kunsthochschulekassel.de"
+    },
+    "Kunsthochschule Mainz": {
+      "coordinates": {
+        "lat": 49.9929,
+        "lng": 8.2473
+      },
+      "city": "Mainz",
+      "state": "Rhineland-Palatinate",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.kunsthochschule-mainz.de"
+    },
+    "Muthesius Kunsthochschule Kiel": {
+      "coordinates": {
+        "lat": 54.3233,
+        "lng": 10.1228
+      },
+      "city": "Kiel",
+      "state": "Schleswig-Holstein",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.muthesius.de"
+    },
+    "Staatliche Hochschule für Bildende Künste – Städelschule Frankfurt": {
+      "coordinates": {
+        "lat": 50.1109,
+        "lng": 8.6821
+      },
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.staedelschule.de"
+    },
+    "Universität der Künste Berlin": {
+      "coordinates": {
+        "lat": 52.5167,
+        "lng": 13.3833
+      },
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "university_of_arts",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.udk-berlin.de"
+    },
+    "Folkwang Universität der Künste": {
+      "coordinates": {
+        "lat": 51.4333,
+        "lng": 7.0167
+      },
+      "city": "Essen",
+      "state": "North Rhine-Westphalia",
+      "type": "university_of_arts",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.folkwang-uni.de"
+    },
+    "Hochschule für Bildende Künste Essen": {
+      "coordinates": {
+        "lat": 51.4566,
+        "lng": 7.0123
+      },
+      "city": "Essen",
+      "state": "North Rhine-Westphalia",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.hbk-essen.de"
+    },
+    "Staatliche Hochschule für Gestaltung Karlsruhe": {
+      "coordinates": {
+        "lat": 49.0069,
+        "lng": 8.4037
+      },
+      "city": "Karlsruhe",
+      "state": "Baden-Württemberg",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.hfg-karlsruhe.de"
+    },
+    "Academy of Visual Arts Frankfurt": {
+      "coordinates": {
+        "lat": 50.1109,
+        "lng": 8.6821
+      },
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "academy",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters"
+        }
+      ],
+      "website": "https://www.akademie-der-bildenden-kuenste.de"
+    }
+  },
+  "art_schools_list": [
+    "Burg Giebichenstein Kunsthochschule Halle",
+    "Hochschule für Bildende Künste Braunschweig",
+    "Hochschule für Bildende Künste Dresden",
+    "Hochschule für Bildende Künste Hamburg",
+    "Hochschule für Bildende Künste Saar",
+    "Hochschule für Gestaltung Schwäbisch Gmünd",
+    "Hochschule für Grafik und Buchkunst Leipzig",
+    "Hochschule für Künste Bremen",
+    "Kunstakademie Düsseldorf",
+    "Kunsthochschule Berlin-Weißensee",
+    "Kunsthochschule für Medien Köln",
+    "Kunsthochschule Kassel",
+    "Kunsthochschule Mainz",
+    "Muthesius Kunsthochschule Kiel",
+    "Staatliche Akademie der Bildenden Künste Karlsruhe",
+    "Staatliche Akademie der Bildenden Künste Stuttgart",
+    "Staatliche Hochschule für Bildende Künste – Städelschule Frankfurt",
+    "Universität der Künste Berlin",
+    "Folkwang Universität der Künste",
+    "Alanus University of Arts and Social Sciences",
+    "Staatliche Akademie der Bildenden Künste München",
+    "Akademie der Bildenden Künste Nürnberg",
+    "Hochschule für Bildende Künste Essen",
+    "Staatliche Hochschule für Gestaltung Karlsruhe",
+    "Academy of Visual Arts Frankfurt"
+  ]
+}
