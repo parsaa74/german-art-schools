@@ -1,9 +1,9 @@
 1:HL["/german-art-schools/_next/static/media/a34f9d1faa5f3315-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-2:HL["/german-art-schools/_next/static/css/2d4a09603dd23212.css","style",{"crossOrigin":""}]
-0:["a33UW_A5fX2jsuBzmIeAM",[[["",{"children":["test",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/german-art-schools/_next/static/css/2d4a09603dd23212.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
+2:HL["/german-art-schools/_next/static/css/2c3064881b890354.css","style",{"crossOrigin":""}]
+0:["G3zoyYTlKGzKjfimgkCA_",[[["",{"children":["test",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/german-art-schools/_next/static/css/2c3064881b890354.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
 5:"$Sreact.suspense"
-6:I[9167,["777","static/chunks/777-45271e41bf84fdf9.js","176","static/chunks/176-8cf77dc67dc47dbc.js","185","static/chunks/app/layout-a0d91c0a9f4217c7.js"],"NoSSR"]
-7:I[6537,["777","static/chunks/777-45271e41bf84fdf9.js","176","static/chunks/176-8cf77dc67dc47dbc.js","185","static/chunks/app/layout-a0d91c0a9f4217c7.js"],""]
+6:I[9167,["777","static/chunks/777-45271e41bf84fdf9.js","176","static/chunks/176-8cf77dc67dc47dbc.js","185","static/chunks/app/layout-352cd63ad0290456.js"],"NoSSR"]
+7:I[6537,["777","static/chunks/777-45271e41bf84fdf9.js","176","static/chunks/176-8cf77dc67dc47dbc.js","185","static/chunks/app/layout-352cd63ad0290456.js"],""]
 8:I[6954,[],""]
 9:I[7264,[],""]
 b:I[8297,[],""]
