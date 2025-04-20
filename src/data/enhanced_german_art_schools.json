@@ -1,0 +1,1481 @@
+{
+  "statistics": {
+    "last_updated": "2025-04-19",
+    "total_schools": 73,
+    "total_programs": 180
+  },
+  "universities": {
+    "Kunstakademie Düsseldorf": {
+      "id": "kunstakademie-dusseldorf",
+      "coordinates": {
+        "lat": 51.2277,
+        "lng": 6.7735
+      },
+      "ranking": {
+        "national": 5,
+        "specialization_rank": {
+          "fine_arts": 3,
+          "art_education": 4
+        }
+      },
+      "stats": {
+        "students": 650,
+        "acceptance_rate": 0.15,
+        "student_staff_ratio": 7.5,
+        "founded": 1773
+      },
+      "city": "Düsseldorf",
+      "state": "North Rhine-Westphalia",
+      "type": "academy",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "The core of all degree programs at the Kunstakademie Düsseldorf is the students' independent artistic activity, guided within classes led by professors. The goal is to cultivate one's own artistic position, personality, and attitude.",
+          "specializations": ["Painting", "Sculpture", "Photography", "New Media", "Stage Design"]
+        },
+        {
+          "name": "Art Education",
+          "degree": "Master of Education",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Program for secondary and comprehensive schools, incorporating courses in art-related sciences including art history, philosophy, sociology, pedagogy, and didactics.",
+          "specializations": ["Art Pedagogy", "Art History", "Art Theory"]
+        },
+        {
+          "name": "Architecture",
+          "degree": "Master of Architecture",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Postgraduate program supervised by four professors, focusing on architectural design and theory.",
+          "specializations": ["Architectural Design", "Urban Planning", "Architectural Theory"]
+        }
+      ],
+      "website": "https://www.kunstakademie-duesseldorf.de/en/",
+      "description": "Founded in 1773, the Kunstakademie Düsseldorf is one of Germany's most prestigious art schools. It has produced numerous influential artists including Joseph Beuys, Gerhard Richter, and Anselm Kiefer. The academy emphasizes independent artistic development within a class-based system led by internationally renowned professors."
+    },
+    "Universität der Künste Berlin": {
+      "id": "universitat-der-kunste-berlin",
+      "coordinates": {
+        "lat": 52.5167,
+        "lng": 13.3833
+      },
+      "ranking": {
+        "national": 1,
+        "specialization_rank": {
+          "fine_arts": 1,
+          "performing_arts": 1,
+          "music": 2,
+          "design": 3
+        }
+      },
+      "stats": {
+        "students": 3500,
+        "acceptance_rate": 0.12,
+        "student_staff_ratio": 9.0,
+        "founded": 1696
+      },
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "university_of_arts",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Bachelor of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Comprehensive program covering various aspects of fine arts with emphasis on individual artistic development.",
+          "specializations": ["Painting", "Sculpture", "New Media Art", "Graphic Arts"]
+        },
+        {
+          "name": "Fine Arts",
+          "degree": "Master of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program for developing individual artistic practice and research.",
+          "specializations": ["Painting", "Sculpture", "New Media Art", "Graphic Arts"]
+        },
+        {
+          "name": "Architecture",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Program focusing on architectural design, theory, and practice.",
+          "specializations": ["Architectural Design", "Urban Planning"]
+        },
+        {
+          "name": "Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Program covering various aspects of design with emphasis on practical and theoretical knowledge.",
+          "specializations": ["Visual Communication", "Product Design", "Fashion Design"]
+        },
+        {
+          "name": "Music",
+          "degree": "Bachelor of Music",
+          "applicationDeadlines": {
+            "winter": {"start": "1 February", "end": "15 March"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Comprehensive music education program with emphasis on performance and theory.",
+          "specializations": ["Instrumental Performance", "Composition", "Conducting", "Music Theory"]
+        },
+        {
+          "name": "Performing Arts",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 February", "end": "15 March"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Program covering various aspects of performing arts with emphasis on practical and theoretical knowledge.",
+          "specializations": ["Acting", "Direction", "Dramaturgy", "Stage Design"]
+        },
+        {
+          "name": "Art Education",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Program preparing students for teaching art in schools and other educational institutions.",
+          "specializations": ["Art Pedagogy", "Art History", "Art Theory"]
+        }
+      ],
+      "website": "https://www.udk-berlin.de/en/",
+      "description": "The Berlin University of the Arts (UdK Berlin) is one of the largest, most diverse and renowned art colleges in the world. The teaching offered at the four colleges of Fine Art, Design, Music and Performing Arts, as well as at the Central Institute of Further Education, encompasses the full spectrum of the arts and related academic studies in more than 70 courses."
+    },
+    "Staatliche Hochschule für Gestaltung Karlsruhe": {
+      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "coordinates": {
+        "lat": 49.0069,
+        "lng": 8.4037
+      },
+      "ranking": {
+        "national": 7,
+        "specialization_rank": {
+          "media_arts": 2,
+          "design": 5
+        }
+      },
+      "stats": {
+        "students": 420,
+        "acceptance_rate": 0.18,
+        "student_staff_ratio": 8.5,
+        "founded": 1992
+      },
+      "city": "Karlsruhe",
+      "state": "Baden-Württemberg",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Media Art",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "1 April"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Program focusing on media art with emphasis on practical and theoretical knowledge. The combination of teaching, research, and exhibition institutions addresses the given artistic and pedagogic task of relating traditional arts to media technology and electronic production processes.",
+          "specializations": ["Film", "Digital Media", "Sound", "Exhibition Design"]
+        },
+        {
+          "name": "Product Design",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "1 April"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Program focusing on product design with emphasis on practical and theoretical knowledge.",
+          "specializations": ["Industrial Design", "Furniture Design", "Exhibition Design"]
+        },
+        {
+          "name": "Communication Design",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "1 April"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Program focusing on communication design with emphasis on practical and theoretical knowledge.",
+          "specializations": ["Graphic Design", "Typography", "Digital Media"]
+        },
+        {
+          "name": "Art Research and Media Philosophy",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "1 April"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Program focusing on art research and media philosophy with emphasis on theoretical knowledge.",
+          "specializations": ["Art Theory", "Media Theory", "Philosophy"]
+        }
+      ],
+      "website": "https://www.hfg-karlsruhe.de/en/",
+      "description": "Karlsruhe University of Arts and Design was first established as a progressive school on April 15, 1992. It was founded by Heinrich Klotz between the years 1989 and 1992, together with the ZKM | Center for Art and Media Karlsruhe. The combination of teaching, research, and exhibition institutions addresses the given artistic and pedagogic task of relating traditional arts to media technology and electronic production processes."
+    },
+    "Hochschule für Künste Bremen": {
+      "id": "hochschule-fur-kunste-bremen",
+      "coordinates": {
+        "lat": 53.075,
+        "lng": 8.826
+      },
+      "ranking": {
+        "national": 12,
+        "specialization_rank": {
+          "digital_media": 6,
+          "fine_arts": 10,
+          "music": 8
+        }
+      },
+      "stats": {
+        "students": 900,
+        "acceptance_rate": 0.25,
+        "student_staff_ratio": 10.0,
+        "founded": 1873
+      },
+      "city": "Bremen",
+      "state": "Bremen",
+      "type": "university_of_arts",
+      "programs": [
+        {
+          "name": "Digitale Medien",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 February", "end": "15 May"}
+          },
+          "language": "German/English",
+          "duration": "6 semesters",
+          "description": "Program focusing on digital media with emphasis on practical and theoretical knowledge.",
+          "specializations": ["Interactive Media", "Game Design", "Media Art", "Web Design"]
+        },
+        {
+          "name": "Digitale Medien",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German/English",
+          "duration": "4 semesters",
+          "description": "Advanced program focusing on digital media with emphasis on research and development.",
+          "specializations": ["Interactive Media", "Game Design", "Media Art", "Web Design"]
+        },
+        {
+          "name": "Freie Kunst",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 February", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Program focusing on fine arts with emphasis on individual artistic development.",
+          "specializations": ["Painting", "Sculpture", "Installation", "Performance"]
+        },
+        {
+          "name": "Integriertes Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 February", "end": "30 April"}
+          },
+          "language": "German",
+          "duration": "6 semesters",
+          "description": "Program focusing on integrated design with emphasis on practical and theoretical knowledge.",
+          "specializations": ["Product Design", "Communication Design", "Fashion Design"]
+        },
+        {
+          "name": "Integriertes Design",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program focusing on integrated design with emphasis on research and development.",
+          "specializations": ["Product Design", "Communication Design", "Fashion Design"]
+        },
+        {
+          "name": "Musik",
+          "degree": "Bachelor of Music",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 March"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Program focusing on music with emphasis on performance and theory.",
+          "specializations": ["Instrumental Performance", "Composition", "Conducting", "Music Theory"]
+        },
+        {
+          "name": "Musik",
+          "degree": "Master of Music",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 March"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program focusing on music with emphasis on performance and research.",
+          "specializations": ["Instrumental Performance", "Composition", "Conducting", "Music Theory"]
+        },
+        {
+          "name": "Promotionsprogramm (PhD)",
+          "degree": "PhD",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German/English",
+          "duration": "6-8 semesters",
+          "description": "Doctoral program focusing on research in arts and design.",
+          "specializations": ["Art Theory", "Design Theory", "Media Theory", "Music Theory"]
+        }
+      ],
+      "website": "https://www.hfk-bremen.de/",
+      "description": "The University of the Arts Bremen (HfK) is a public art college in Bremen, Germany. It was founded in 1873 and offers programs in fine arts, design, digital media, and music. The university is known for its interdisciplinary approach and international orientation."
+    },
+    "Staatliche Akademie der Bildenden Künste Stuttgart": {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "coordinates": {
+        "lat": 48.7823,
+        "lng": 9.1770
+      },
+      "ranking": {
+        "national": 9,
+        "specialization_rank": {
+          "fine_arts": 3,
+          "design": 5,
+          "architecture": 4,
+          "art_education": 2
+        }
+      },
+      "stats": {
+        "students": 900,
+        "acceptance_rate": 0.18,
+        "student_staff_ratio": 10.0,
+        "founded": 1761
+      },
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "kunstakademie",
+      "programs": [
+        {
+          "name": "Freie Kunst",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 May"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Comprehensive program in fine arts, covering various disciplines like painting, sculpture, graphic arts, and media art.",
+          "specializations": ["Painting", "Sculpture", "Graphic Arts", "Media Art", "Ceramics"]
+        },
+        {
+          "name": "Architektur",
+          "degree": "Bachelor of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "6 semesters",
+          "description": "Bachelor program focusing on architectural design, theory, and technology.",
+          "specializations": ["Building Design", "Urban Planning", "Building Technology", "Architectural Theory"]
+        },
+        {
+          "name": "Architektur",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Master program extending architectural knowledge with focus on design, research, and specialization.",
+          "specializations": ["Advanced Architectural Design", "Sustainable Building", "Urban Strategies", "Digital Design Methods"]
+        },
+        {
+          "name": "Industrial Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on the design of industrial products, systems, and services.",
+          "specializations": ["Product Design", "Interaction Design", "Service Design", "Design Research"]
+        },
+        {
+          "name": "Industrial Design",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "3 semesters",
+          "description": "Advanced program in Industrial Design focusing on innovation, research, and strategic design.",
+          "specializations": ["Design Innovation", "Strategic Design", "Sustainable Design", "Design Management"]
+        },
+        {
+          "name": "Kommunikationsdesign",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program covering visual communication across various media.",
+          "specializations": ["Graphic Design", "Typography", "Illustration", "Photography", "Digital Media"]
+        },
+        {
+          "name": "Kommunikationsdesign",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "3 semesters",
+          "description": "Advanced program in Communication Design focusing on conceptual development and specialized areas.",
+          "specializations": ["Information Design", "Editorial Design", "Corporate Design", "Interaction Design"]
+        },
+        {
+          "name": "Textildesign",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focused on the design and creation of textiles for various applications.",
+          "specializations": ["Woven Textiles", "Printed Textiles", "Surface Design", "Material Technology"]
+        },
+        {
+          "name": "Textildesign",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "3 semesters",
+          "description": "Advanced program in Textile Design focusing on innovation, sustainability, and artistic research.",
+          "specializations": ["Smart Textiles", "Sustainable Textiles", "Textile Art", "Fashion Textiles"]
+        },
+        {
+          "name": "Kunstwissenschaften - Restaurierung",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "6 semesters",
+          "description": "Program focusing on the conservation and restoration of art and cultural heritage.",
+          "specializations": ["Painting and Sculpture Restoration", "Paper and Book Restoration", "Archaeological Objects Restoration", "Preventive Conservation"]
+        },
+        {
+          "name": "Kunstwissenschaften - Restaurierung",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program in conservation and restoration, specializing in specific material types.",
+          "specializations": ["Painting and Sculpture Restoration", "Paper and Book Restoration", "Archaeological Objects Restoration", "Modern Materials and Media"]
+        },
+        {
+          "name": "Bühnen- und Kostümbild",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 May"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Program focusing on the design of sets and costumes for theatre, opera, and film.",
+          "specializations": ["Stage Design", "Costume Design", "Dramaturgy"]
+        },
+        {
+          "name": "Kunstpädagogik",
+          "degree": "Master of Education",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 June"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Program preparing students for teaching art at secondary schools (Gymnasium).",
+          "specializations": ["Art Education", "Didactics", "Art History"]
+        }
+      ],
+      "website": "https://www.abk-stuttgart.de/en/",
+      "description": "The State Academy of Fine Arts Stuttgart (ABK Stuttgart) is one of the oldest and largest art schools in Germany. Founded in 1761, it offers a wide range of programs in fine arts, architecture, design, art education, and conservation."
+    },
+    "Kunsthochschule für Medien Köln": {
+      "id": "kunsthochschule-fur-medien-koln",
+      "coordinates": {
+        "lat": 50.9375,
+        "lng": 6.9603
+      },
+      "ranking": {
+        "national": 10,
+        "specialization_rank": {
+          "media_arts": 1
+        }
+      },
+      "stats": {
+        "students": 400,
+        "acceptance_rate": 0.1,
+        "student_staff_ratio": 6.0,
+        "founded": 1990
+      },
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Media Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 December", "end": "15 January"}
+          },
+          "language": "German/English",
+          "duration": "9 semesters",
+          "description": "Project-based study program focusing on media arts, including film, animation, experimental informatics, sound art, and art history/aesthetics.",
+          "specializations": ["Film", "Animation", "Experimental Informatics", "Sound Art", "Art History", "Aesthetics"]
+        },
+        {
+          "name": "Media Arts (Postgraduate)",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 December", "end": "15 January"}
+          },
+          "language": "German/English",
+          "duration": "4 semesters",
+          "description": "Postgraduate program for students with a first degree, focusing on deepening artistic practice in media arts.",
+          "specializations": ["Film", "Animation", "Experimental Informatics", "Sound Art", "Art History", "Aesthetics"]
+        }
+      ],
+      "website": "https://www.khm.de/en/",
+      "description": "The Academy of Media Arts Cologne (KHM) is unique in Germany, offering a project-based 'Media Arts' diploma program that brings together practices from art, film, and theory. It provides resources for independent artistic work across various media forms."
+    },
+    "Hochschule für Gestaltung Offenbach": {
+      "id": "hochschule-fur-gestaltung-offenbach",
+      "coordinates": {
+        "lat": 50.1089,
+        "lng": 8.7615
+      },
+      "ranking": {
+        "national": 18,
+        "specialization_rank": {
+          "design": 10,
+          "visual_communication": 8
+        }
+      },
+      "stats": {
+        "students": 750,
+        "acceptance_rate": 0.2,
+        "student_staff_ratio": 11.0,
+        "founded": 1832
+      },
+      "city": "Offenbach am Main",
+      "state": "Hesse",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Visual Communication",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "1 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Program covering art, electronic media, film, photography, stage/space design, and theory.",
+          "specializations": ["Art", "Electronic Media", "Film", "Photography", "Stage/Space Design", "Theory"]
+        },
+        {
+          "name": "Product Design",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "1 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Program focusing on integrated design, interface design, materials/technology, and theory.",
+          "specializations": ["Integrated Design", "Interface Design", "Materials/Technology", "Theory"]
+        },
+        {
+          "name": "Art Education (Secondary Schools)",
+          "degree": "State Examination",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "1 June"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Teacher training program for art education at secondary schools (Gymnasium).",
+          "specializations": ["Art Pedagogy", "Didactics"]
+        },
+        {
+          "name": "Postgraduate Studies (Meisterschüler)",
+          "degree": "Meisterschüler",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "1 June"}
+          },
+          "language": "German",
+          "duration": "2 semesters",
+          "description": "Advanced artistic qualification for graduates of the diploma programs.",
+          "specializations": ["Visual Communication", "Product Design"]
+        },
+        {
+          "name": "Doctoral Studies (PhD)",
+          "degree": "Dr. phil.",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "1 June"}
+          },
+          "language": "German",
+          "duration": "Varies",
+          "description": "Doctoral program in design theory and related fields.",
+          "specializations": ["Design Theory", "Media Theory", "Art History"]
+        }
+      ],
+      "website": "https://www.hfg-offenbach.de/en/",
+      "description": "The Offenbach University of Art and Design (HfG Offenbach) is a state art college in Hesse, Germany. It offers diploma programs in Visual Communication and Product Design, as well as teacher training and doctoral studies. It emphasizes the integration of theory and practice."
+    },
+    "Hochschule für Grafik und Buchkunst Leipzig": {
+      "id": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "coordinates": {
+        "lat": 51.3397,
+        "lng": 12.3731
+      },
+      "ranking": {
+        "national": 11,
+        "specialization_rank": {
+          "graphic_design": 2,
+          "photography": 4,
+          "media_arts": 5
+        }
+      },
+      "stats": {
+        "students": 600,
+        "acceptance_rate": 0.15,
+        "student_staff_ratio": 9.5,
+        "founded": 1764
+      },
+      "city": "Leipzig",
+      "state": "Saxony",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Painting/Graphics",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 March"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Focuses on developing individual artistic positions in painting and graphic arts.",
+          "specializations": ["Painting", "Printmaking", "Drawing"]
+        },
+        {
+          "name": "Book Design/Graphic Design",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 March"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Covers conceptual and practical aspects of book design, typography, illustration, and graphic design.",
+          "specializations": ["Book Design", "Typography", "Illustration", "Graphic Design"]
+        },
+        {
+          "name": "Photography",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 March"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Explores documentary, artistic, and applied photography.",
+          "specializations": ["Documentary Photography", "Artistic Photography", "Applied Photography"]
+        },
+        {
+          "name": "Media Art",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 March"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Focuses on time-based media, installation, performance, and net art.",
+          "specializations": ["Time-Based Media", "Installation", "Performance", "Net Art"]
+        },
+        {
+          "name": "Cultures of the Curatorial",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 March"}
+          },
+          "language": "German/English",
+          "duration": "4 semesters",
+          "description": "Interdisciplinary program focusing on curatorial theory and practice.",
+          "specializations": ["Curatorial Studies", "Art Theory", "Cultural Studies"]
+        }
+      ],
+      "website": "https://www.hgb-leipzig.de/en/",
+      "description": "The Academy of Fine Arts Leipzig (HGB) is one of the oldest art schools in Germany. It offers diploma programs in Painting/Graphics, Book Design/Graphic Design, Photography, and Media Art, as well as a Master's program in Cultures of the Curatorial."
+    },
+    "Muthesius Kunsthochschule Kiel": {
+      "id": "muthesius-kunsthochschule-kiel",
+      "coordinates": {
+        "lat": 54.3233,
+        "lng": 10.1228
+      },
+      "ranking": {
+        "national": 20,
+        "specialization_rank": {
+          "industrial_design": 7,
+          "communication_design": 9
+        }
+      },
+      "stats": {
+        "students": 600,
+        "acceptance_rate": 0.22,
+        "student_staff_ratio": 10.5,
+        "founded": 1907
+      },
+      "city": "Kiel",
+      "state": "Schleswig-Holstein",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Bachelor of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "6 semesters",
+          "description": "Studio-based program covering painting, sculpture, ceramics, and media art.",
+          "specializations": ["Painting", "Sculpture", "Ceramics", "Media Art"]
+        },
+        {
+          "name": "Fine Arts",
+          "degree": "Master of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program for deepening individual artistic practice.",
+          "specializations": ["Painting", "Sculpture", "Ceramics", "Media Art"]
+        },
+        {
+          "name": "Communication Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "6 semesters",
+          "description": "Covers graphic design, typography, illustration, interaction design, and photography.",
+          "specializations": ["Graphic Design", "Typography", "Illustration", "Interaction Design", "Photography"]
+        },
+        {
+          "name": "Communication Design",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program focusing on conceptual and strategic communication design.",
+          "specializations": ["Information Design", "Corporate Design", "Editorial Design", "Interaction Design"]
+        },
+        {
+          "name": "Industrial Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "6 semesters",
+          "description": "Focuses on product design, interface design, and design theory.",
+          "specializations": ["Product Design", "Interface Design", "Design Theory"]
+        },
+        {
+          "name": "Industrial Design",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program focusing on strategic design, innovation, and sustainability.",
+          "specializations": ["Strategic Design", "Design Innovation", "Sustainable Design"]
+        },
+        {
+          "name": "Spatial Strategies",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Interdisciplinary program focusing on the design of spaces, exhibitions, and scenography.",
+          "specializations": ["Exhibition Design", "Scenography", "Interior Architecture", "Urban Strategies"]
+        }
+      ],
+      "website": "https://muthesius-kunsthochschule.de/en/",
+      "description": "The Muthesius University of Fine Arts and Design in Kiel is the only art university in Schleswig-Holstein. It offers Bachelor's and Master's programs in Fine Arts, Communication Design, Industrial Design, and Spatial Strategies."
+    },
+    "Bauhaus-Universität Weimar": {
+      "id": "bauhaus-universitat-weimar",
+      "coordinates": {
+        "lat": 50.975,
+        "lng": 11.325
+      },
+      "ranking": {
+        "national": 14,
+        "specialization_rank": {
+          "architecture": 3,
+          "media_arts": 6,
+          "design": 8
+        }
+      },
+      "stats": {
+        "students": 4000,
+        "acceptance_rate": 0.25,
+        "student_staff_ratio": 12.0,
+        "founded": 1860
+      },
+      "city": "Weimar",
+      "state": "Thuringia",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Fine Art",
+          "degree": "Bachelor of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Studio-based program focusing on contemporary art practices.",
+          "specializations": ["Painting", "Sculpture", "Installation", "Performance", "New Media"]
+        },
+        {
+          "name": "Fine Art",
+          "degree": "Master of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program for developing individual artistic positions and research.",
+          "specializations": ["Painting", "Sculpture", "Installation", "Performance", "New Media"]
+        },
+        {
+          "name": "Product Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Focuses on the design of products, systems, and interactions.",
+          "specializations": ["Industrial Design", "Interaction Design", "Material Studies"]
+        },
+        {
+          "name": "Product Design",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program focusing on design research, innovation, and sustainability.",
+          "specializations": ["Design Research", "Sustainable Design", "Social Design"]
+        },
+        {
+          "name": "Visual Communication",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Covers graphic design, typography, photography, illustration, and interaction design.",
+          "specializations": ["Graphic Design", "Typography", "Photography", "Illustration", "Interaction Design"]
+        },
+        {
+          "name": "Visual Communication",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program focusing on conceptual and experimental visual communication.",
+          "specializations": ["Information Design", "Editorial Design", "Corporate Design", "Digital Media"]
+        },
+        {
+          "name": "Media Art and Design",
+          "degree": "Bachelor of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Interdisciplinary program exploring artistic practices with digital and electronic media.",
+          "specializations": ["Interface Design", "Interaction Design", "Experimental Radio", "Electroacoustic Composition"]
+        }
+      ],
+      "website": "https://www.uni-weimar.de/en/",
+      "description": "The Bauhaus-Universität Weimar is a university located in Weimar, Germany, specializing in the artistic and technical fields. Established in 1860 as the Great Ducal Saxon Art School, it gained collegiate status on 3 June 1910. In 1919 the school was renamed Bauhaus by its new director Walter Gropius and it received its present name in 1996."
+    },
+    "Alanus Hochschule für Kunst und Gesellschaft": {
+      "id": "alanus-hochschule-fur-kunst-und-gesellschaft",
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "ranking": {},
+      "stats": {},
+      "city": "Alfter",
+      "state": "North Rhine-Westphalia",
+      "type": "university",
+      "programs": [],
+      "website": "",
+      "description": ""
+    },
+    "Hochschule der bildenden Künste Essen": {
+      "id": "hochschule-der-bildenden-kunste-essen",
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "ranking": {},
+      "stats": {},
+      "city": "Essen",
+      "state": "North Rhine-Westphalia",
+      "type": "kunsthochschule",
+      "programs": [],
+      "website": "",
+      "description": ""
+    },
+    "Hochschule Macromedia": {
+      "id": "hochschule-macromedia",
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "ranking": {},
+      "stats": {},
+      "city": "Multiple",
+      "state": "Multiple",
+      "type": "university_of_applied_sciences",
+      "programs": [],
+      "website": "",
+      "description": ""
+    },
+    "Merz Akademie": {
+      "id": "merz-akademie",
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "ranking": {},
+      "stats": {},
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "university_of_applied_sciences",
+      "programs": [],
+      "website": "",
+      "description": ""
+    },
+    "Hochschule für Fernsehen und Film München": {
+      "id": "hochschule-fur-fernsehen-und-film-munchen",
+      "coordinates": {
+        "lat": null,
+        "lng": null
+      },
+      "ranking": {},
+      "stats": {},
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "film_university",
+      "programs": [],
+      "website": "",
+      "description": ""
+    },
+    "Filmuniversität Babelsberg KONRAD WOLF": {
+      "id": "filmuniversitat-babelsberg-konrad-wolf",
+      "coordinates": {
+        "lat": 52.39,
+        "lng": 13.11
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "film_university",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Hochschule für Gestaltung Schwäbisch Gmünd": {
+      "id": "hochschule-fur-gestaltung-schwabisch-gmund",
+      "coordinates": {
+        "lat": 48.80,
+        "lng": 9.80
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Schwäbisch Gmünd",
+      "state": "Baden-Württemberg",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Bard College Berlin": {
+      "id": "bard-college-berlin",
+      "coordinates": {
+        "lat": 52.55,
+        "lng": 13.33
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "college",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Academy of Visual Arts Frankfurt": {
+      "id": "academy-of-visual-arts-frankfurt",
+      "coordinates": {
+        "lat": 50.11,
+        "lng": 8.68
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "academy",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Fachhochschule Potsdam": {
+      "id": "fachhochschule-potsdam",
+      "coordinates": {
+        "lat": 52.41,
+        "lng": 13.06
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "university_of_applied_sciences",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Hochschule Darmstadt": {
+      "id": "hochschule-darmstadt",
+      "coordinates": {
+        "lat": 49.87,
+        "lng": 8.65
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Darmstadt",
+      "state": "Hesse",
+      "type": "university_of_applied_sciences",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Hochschule Rhein-Waal": {
+      "id": "hochschule-rhein-waal",
+      "coordinates": {
+        "lat": 51.79,
+        "lng": 6.14
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Kleve/Kamp-Lintfort",
+      "state": "North Rhine-Westphalia",
+      "type": "university_of_applied_sciences",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Technische Universität Berlin": {
+      "id": "technische-universitat-berlin",
+      "coordinates": {
+        "lat": 52.51,
+        "lng": 13.33
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Hochschule Anhalt": {
+      "id": "hochschule-anhalt",
+      "coordinates": {
+        "lat": 51.83,
+        "lng": 12.24
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Dessau/Köthen/Bernburg",
+      "state": "Saxony-Anhalt",
+      "type": "university_of_applied_sciences",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Universität Trier": {
+      "id": "universitat-trier",
+      "coordinates": {
+        "lat": 49.74,
+        "lng": 6.68
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Trier",
+      "state": "Rhineland-Palatinate",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Universität Siegen": {
+      "id": "universitat-siegen",
+      "coordinates": {
+        "lat": 50.90,
+        "lng": 8.02
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Siegen",
+      "state": "North Rhine-Westphalia",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Technische Hochschule Ingolstadt": {
+      "id": "technische-hochschule-ingolstadt",
+      "coordinates": {
+        "lat": 48.76,
+        "lng": 11.42
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Ingolstadt",
+      "state": "Bavaria",
+      "type": "university_of_applied_sciences",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Hochschule Fulda": {
+      "id": "hochschule-fulda",
+      "coordinates": {
+        "lat": 50.56,
+        "lng": 9.68
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Fulda",
+      "state": "Hesse",
+      "type": "university_of_applied_sciences",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Universität Passau": {
+      "id": "universitat-passau",
+      "coordinates": {
+        "lat": 48.57,
+        "lng": 13.45
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Passau",
+      "state": "Bavaria",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Universität Würzburg": {
+      "id": "universitat-wurzburg",
+      "coordinates": {
+        "lat": 49.78,
+        "lng": 9.97
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Würzburg",
+      "state": "Bavaria",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "RWTH Aachen University": {
+      "id": "rwth-aachen-university",
+      "coordinates": {
+        "lat": 50.78,
+        "lng": 6.08
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Aachen",
+      "state": "North Rhine-Westphalia",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Technische Hochschule Augsburg": {
+      "id": "technische-hochschule-augsburg",
+      "coordinates": {
+        "lat": 48.37,
+        "lng": 10.89
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Augsburg",
+      "state": "Bavaria",
+      "type": "university_of_applied_sciences",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    },
+    "Technische Universität München": {
+      "id": "technische-universitat-munchen",
+      "coordinates": {
+        "lat": 48.15,
+        "lng": 11.57
+      },
+      "ranking": {},
+      "stats": {
+        "founded": 2000
+      },
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Placeholder Program",
+          "degree": "Unknown",
+          "applicationDeadlines": {},
+          "language": "Unknown",
+          "duration": "Unknown"
+        }
+      ],
+      "website": "",
+      "description": ""
+    }
+  }
+}

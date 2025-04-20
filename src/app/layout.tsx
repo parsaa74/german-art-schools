@@ -3,6 +3,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import dynamic from 'next/dynamic'
+import { Providers } from './providers'
 
 // Dynamically import the NavBar component to avoid SSR issues
 const NavBar = dynamic(() => import('@/components/navigation/NavBar'), {
@@ -30,8 +31,10 @@ export default function RootLayout({
     <html suppressHydrationWarning className={inter.variable}>
       <head />
       <body className="font-inter">
-        <NavBar />
-        {children}
+        <Providers>
+          <NavBar />
+          {children}
+        </Providers>
       </body>
     </html>
   )

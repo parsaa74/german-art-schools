@@ -1,0 +1,25 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+this is temporary but i want you to act as a senior fron=t-end dev and ux designer who sepcialize in creative web design and finish the following task and check if you have completed the task and if you havent completed them, ask for permission to do so:
+do the following combination of features that you suggested and i want you to implement with extreme care as a senoir front-end and ux designer:
+- Motion Language: Mimic the easing curves and durations from react-spring animations in the 3D part for D3 transitions (e.g., on data updates, hover effects). This creates a sense of rhythmic consistency.
+- Stylized Network Graphs: If visualizing connections (program similarities, geographic proximity), use D3's force-directed layouts but style nodes as glowing orbs (using SVG filters like feGaussianBlur + feColorMatrix) and links as animated Bézier curves with gradient strokes or dashed patterns suggesting energy flow.
+- 
+Flowing Streamgraphs/Area Charts: For distributions (e.g., programs per state, founding years), use D3's stack layout but render the areas with organic, flowing shapes, subtle noise textures (<feTurbulence>), and gradient fills drawn from the core palette. Make them subtly animate or shimmer.
+- Contextual Reactivity: The D3 visualization should dynamically respond to interactions in the 3D map. Clicking a school node on the globe could:
+Filter the D3 view to show only data relevant to that school (e.g., its specific programs, its connections).
+Highlight the corresponding elements in the D3 chart(s).
+Trigger an animation or transition within the D3 view focusing on that school's data.
+- Mirrored Highlighting (Optional): If both views are potentially visible (e.g., split screen), hovering over an element in the D3 chart (like a bar representing HfK Bremen) could trigger the hover effect on the corresponding SchoolMarker in the 3D scene. This requires robust shared state management (Zustand is good for this).
+- Animated Transitions: Instead of instantly replacing data, use D3 transitions combined with SVG filters or path morphing (d3-interpolate-path) to create smooth, visually interesting transitions between different data views or filter states.
+Leveraging SVG Filters for Depth & Atmosphere:
+Glows & Blurs: Apply feGaussianBlur and blending modes (<feBlend>) to create soft glows around highlighted elements, mimicking the bloom/emissive effects in the 3D scene.
+Textures & Noise: Use <feTurbulence> and <feDisplacementMap> subtly to add texture to backgrounds or shapes, moving away from flat vector graphics towards something more organic or painterly.
+Chromatic Aberration/Distortion: For a more experimental feel, subtle color channel shifts (<feColorMatrix>) or displacement effects on hover/selection could be used sparingly.
+- Leveraging SVG Filters for Depth & Atmosphere:
+Glows & Blurs: Apply feGaussianBlur and blending modes (<feBlend>) to create soft glows around highlighted elements, mimicking the bloom/emissive effects in the 3D scene.
+Textures & Noise: Use <feTurbulence> and <feDisplacementMap> subtly to add texture to backgrounds or shapes, moving away from flat vector graphics towards something more organic or painterly.
+Chromatic Aberration/Distortion: For a more experimental feel, subtle color channel shifts (<feColorMatrix>) or displacement effects on hover/selection could be used sparingly.

@@ -2,7 +2,7 @@ import * as THREE from 'three';
 
 // Constants from map.ts
 export const MAP_CONFIG = {
-  radius: 5,
+  radius: 10,
   centerLat: 51.1657,
   centerLng: 10.4515,
   origin: new THREE.Vector3(0, 0, 0),

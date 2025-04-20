@@ -27,8 +27,18 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
   
   // Set up timeline data
   useEffect(() => {
-    if (!svgRef.current || foundingYears.length === 0) return
-    
+    // == DEBUG TIMELINE: Log entry and foundingYears length ==
+    console.log(`D3Timeline DEBUG: useEffect entered. foundingYears.length: ${foundingYears.length}`);
+
+    if (!svgRef.current || foundingYears.length === 0) {
+      // == DEBUG TIMELINE: Log if exiting early ==
+      console.warn('D3Timeline DEBUG: Exiting useEffect early (no SVG ref or no founding years).');
+      return;
+    }
+
+    // == DEBUG TIMELINE: Log after check, confirming rendering logic is reached ==
+    console.log('D3Timeline DEBUG: Proceeding with timeline rendering logic...');
+
     const svg = d3.select(svgRef.current)
     svg.selectAll('*').remove() // Clear previous content
     
@@ -191,6 +201,11 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
       .attr('opacity', 0.7) // Slightly transparent
       .attr('transform', 'translate(0, 0)');
 
+    console.log('D3Timeline foundingYears:', foundingYears);
+    console.log('D3Timeline germanArtMovements:', germanArtMovements);
+    if (foundingYears.length === 0) {
+        console.warn('D3Timeline: No founding years found, timeline may not render.');
+    }
 
   }, [width, height, processedUniversities, foundingYears, activeRange, onTimelineFilter]) // Added updateActiveStyle dependency implicitly via activeRange
 

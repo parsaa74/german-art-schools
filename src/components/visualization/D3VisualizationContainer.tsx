@@ -8,10 +8,14 @@ import D3Timeline from './D3Timeline.fixed'
 import { motion } from 'framer-motion'
 
 export default function D3VisualizationContainer() {
-  const { processedUniversities, initializeStore } = useSchoolStore()
+  const { 
+    processedUniversities, 
+    initializeStore, 
+    timelineFilter,
+    setTimelineFilter
+  } = useSchoolStore()
   const [dimensions, setDimensions] = useState({ width: 800, height: 600 })
   const [isVisible, setIsVisible] = useState(false)
-  const [timelineFilter, setTimelineFilter] = useState<[number, number] | null>(null)
 
   // Initialize the store if needed
   useEffect(() => {
@@ -47,7 +51,7 @@ export default function D3VisualizationContainer() {
 
   return (
     <motion.div
-      className="d3-visualization-container p-4 rounded-xl bg-gradient-to-br from-[#101820]/90 to-[#18212B]/90 backdrop-blur-lg shadow-xl border border-blue-500/20"
+      className="d3-visualization-container p-4 rounded-xl bg-gradient-to-br from-[#101820]/90 to-[#18212B]/90 backdrop-blur-lg shadow-xl"
       initial={{ opacity: 0, y: 20 }}
       animate={{
         opacity: isVisible ? 1 : 0,
@@ -58,24 +62,23 @@ export default function D3VisualizationContainer() {
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-bold text-white">
           German Art Schools Network
-          <span className="ml-2 text-sm font-normal text-blue-300">
+          <span className="ml-2 text-sm font-normal text-cyan-300">
             Powered by D3.js
           </span>
         </h2>
-        <div className="text-sm text-blue-300">
+        <div className="text-sm text-cyan-300">
           {processedUniversities.length} institutions
         </div>
       </div>
 
-      <div className="visualization-wrapper rounded-lg overflow-hidden border border-blue-500/20">
+      <div className="visualization-wrapper rounded-lg overflow-hidden border border-cyan-500/20">
         <D3NetworkGraph
           width={dimensions.width}
           height={dimensions.height}
-          timelineFilter={timelineFilter}
         />
       </div>
 
-      <div className="mt-4 text-sm text-blue-200/70">
+      <div className="mt-4 text-sm text-cyan-200/70">
         <p>
           <span className="font-medium">Interaction: </span>
           Drag nodes to reposition • Click to select • Scroll to zoom • Drag background to pan
@@ -94,7 +97,7 @@ export default function D3VisualizationContainer() {
 
       {/* Timeline filter info */}
       {timelineFilter && (
-        <div className="mt-2 text-sm text-blue-300 text-center">
+        <div className="mt-2 text-sm text-cyan-300 text-center">
           <span className="font-medium">Filtering by period: </span>
           {timelineFilter[0]} - {timelineFilter[1]}
         </div>

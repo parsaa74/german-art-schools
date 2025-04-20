@@ -10,14 +10,21 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { useFonts } from '@/hooks/useFonts';
 import { CreativeTitle, SubText } from '@/components/typography';
-import { useSchoolStore } from '@/stores/schoolStore';
+import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore';
 import universityData from '@/../public/data/art_programs.json';
 import InfoPanel from './InfoPanel';
 import VisualizationToggle from './VisualizationToggle';
-import type { ProcessedUniversity } from '@/stores/schoolStore';
+import type { ProcessedUniversity as ProcessedUniversityType } from '@/stores/schoolStore';
 import { useMapStore } from '@/stores/mapStore';
 import { SceneContent } from './SceneContent'; // Renders content *inside* the Canvas
 import D3NetworkGraph from '@/components/visualization/D3NetworkGraph.fixed'; // Import the 2D graph
+import { FiHelpCircle, FiGithub } from 'react-icons/fi'
+import { useSpring, animated } from '@react-spring/web'
+import { CollapsibleControlPanel } from '@/components/ui/CollapsibleControlPanel';
+import { SlidersHorizontal } from 'lucide-react';
+import { ViewModeToggle } from './ViewModeToggle'; // Import the new toggle
+import { motion } from 'framer-motion'; // Import motion
+import { useAmbientMusic } from '@/hooks/useAmbientMusic';
 
 // Dynamic import for Background (assuming it's client-side)
 const Background = dynamic(() => import('./Background'), { ssr: false });
@@ -236,12 +243,12 @@ function SceneEventHandler({
     controlsEnabled,
     hoverUniversityName,
 }: {
-    processedUniversities: ProcessedUniversity[];
-    universityMap: Map<string, ProcessedUniversity>;
+    processedUniversities: ProcessedUniversityType[];
+    universityMap: Map<string, ProcessedUniversityType>;
     nodePositions: Map<string, THREE.Vector3>;
     setHoverUniversityName: (name: string | null) => void;
-    setSelectedUniversity: (university: ProcessedUniversity | null) => void;
-    selectedUniversity: ProcessedUniversity | null;
+    setSelectedUniversity: (university: ProcessedUniversityType | null) => void;
+    selectedUniversity: ProcessedUniversityType | null;
     setConnectionLines: (lines: Array<[THREE.Vector3, THREE.Vector3]>) => void;
     controlsEnabled: boolean;
     hoverUniversityName: string | null;
@@ -374,15 +381,23 @@ export function Scene({ lang, dict }: SceneProps) {
 
     // State for UI elements OUTSIDE the Canvas (e.g., Zustand stores)
     const {
+        processedUniversities,
         selectedUniversity,
         setSelectedUniversity,
+        setConnectionLines,
         activeStateFilter,
         setActiveStateFilter,
         activeProgramFilter,
         setActiveProgramFilter,
+        activeTypeFilter,
+        setActiveTypeFilter,
+        activeSemesterFilter,
+        setActiveSemesterFilter,
+        activeNcFilter,
+        setActiveNcFilter,
         uniqueStates,
         uniqueProgramTypes,
-        visualizationMode // Get the current visualization mode
+        visualizationMode
     } = useSchoolStore();
 
     const { activePanel, setActivePanel } = useMapStore();
@@ -390,11 +405,43 @@ export function Scene({ lang, dict }: SceneProps) {
     const [isClient, setIsClient] = useState(false);
     const initializeSchoolStore = useSchoolStore((state) => state.initializeStore);
 
+    // State for Help Modal visibility
+    const [showHelp, setShowHelp] = useState(false)
+
+    // Animated button springs
+    const helpButtonSpring = useSpring({
+      scale: showHelp ? 1.2 : 1,
+      rotate: showHelp ? 45 : 0,
+      config: { tension: 300, friction: 20 }
+    })
+
+    const githubButtonSpring = useSpring({
+      scale: 1,
+      from: { scale: 0 },
+      delay: 300,
+      config: { mass: 1, tension: 280, friction: 60 }
+    })
+
+    // Modal animation
+    const modalSpring = useSpring({
+      opacity: showHelp ? 1 : 0,
+      transform: showHelp ? 'translateY(0) scale(1)' : 'translateY(20px) scale(0.98)',
+      config: { mass: 1, tension: 280, friction: 30 }
+    })
+    
     // Client-side check & Store Initialization
     useEffect(() => {
         setIsClient(true);
         initializeSchoolStore();
     }, [initializeSchoolStore]);
+
+    // Clear any selected node and D3 connection lines when switching back to 3D network mode
+    useEffect(() => {
+        if (visualizationMode === 'network') {
+            setSelectedUniversity(null);
+            setConnectionLines([]);
+        }
+    }, [visualizationMode, setSelectedUniversity, setConnectionLines]);
 
     // Handlers for UI OUTSIDE the canvas
     const handleClosePanel = () => {
@@ -404,17 +451,37 @@ export function Scene({ lang, dict }: SceneProps) {
 
     // Toggle panel function
     const togglePanel = (panelId: string) => {
-      if (activePanel === panelId) {
-        setActivePanel(null);
-      } else {
-        setActivePanel(panelId);
-      }
+        console.log(`[Scene] Toggling panel: ${panelId}`);
+        setActivePanel(activePanel === panelId ? null : panelId);
     };
 
     // Define handleClickForAudio here if it needs to be attached to the outer div
     const handleClickForAudio = () => {
         console.log("Outer div clicked - potential audio trigger point");
     };
+
+    // Define animation variants for the cross-fade
+    const visVariants = {
+        hidden: { opacity: 0, transition: { duration: 0.6, ease: "easeInOut" } },
+        visible: { opacity: 1, transition: { duration: 0.6, ease: "easeInOut" } },
+    };
+
+    // Derive unique list of school types for the type filter UI
+    const uniqueTypes = useMemo<string[]>(() => {
+      if (!processedUniversities?.length) return []
+      const typeSet = new Set<string>()
+      processedUniversities.forEach((u: ProcessedUniversity) => typeSet.add(u.type))
+      return Array.from(typeSet).sort()
+    }, [processedUniversities])
+
+    const { playTrack } = useAmbientMusic()
+    const [audioEnabled, setAudioEnabled] = useState(false)
+    const unlockAudio = () => {
+      if (!audioEnabled) {
+        playTrack('pad')
+        setAudioEnabled(true)
+      }
+    }
 
     if (!isClient) {
         return (
@@ -425,102 +492,266 @@ export function Scene({ lang, dict }: SceneProps) {
     }
 
     return (
-        <div className="fixed inset-0 w-full h-full bg-gradient-to-br from-[#101820] to-[#18212B] visualization-container" onClick={handleClickForAudio}>
-            {/* Skip to content link for accessibility */}
-            <a href="#info-panel" className="skip-to-content">Skip to school information</a>
+        <div
+          onClick={unlockAudio}
+          onKeyDown={unlockAudio}
+          tabIndex={0}
+          className="relative w-screen h-screen overflow-hidden bg-gradient-to-br from-black via-indigo-950 to-black">
+          {!audioEnabled && (
+            <div className="absolute inset-0 z-50 flex items-center justify-center bg-black/70">
+              <button
+                onClick={unlockAudio}
+                className="px-4 py-2 bg-cyan-500 text-white rounded-lg">
+                ▶️ Enable Audio
+              </button>
+            </div>
+          )}
 
-            {/* --- Visualization Area (Conditional Rendering) --- */}
-            <div className="absolute inset-0 w-full h-full z-0"> {/* Container for visualization */}
-                {visualizationMode === 'd3-force' ? (
-                    <div className="w-full h-full flex items-center justify-center p-4"> {/* Keep parent background */}
-                        {/* Render 2D D3 Graph */}
-                        <D3NetworkGraph
-                            width={isClient ? window.innerWidth * 0.8 : DEFAULT_WIDTH} // Use window size or default
-                            height={isClient ? window.innerHeight * 0.8 : DEFAULT_HEIGHT}
-                            className="bg-white rounded-lg shadow-lg" // Style the SVG container
-                        />
+            {/* Help Icon Button - Bottom Left */}
+            <animated.button
+              style={helpButtonSpring}
+              onClick={() => setShowHelp(true)}
+              className="absolute top-4 right-[70px] z-30 flex items-center justify-center w-10 h-10 bg-black/50 backdrop-blur-md text-white rounded-md border border-blue-500/30 shadow-lg hover:bg-blue-600/70 hover:text-white transition-colors"
+              aria-label="Help / Info"
+            >
+              <FiHelpCircle size={20} />
+            </animated.button>
+
+            {/* GitHub Icon Link - Bottom Right */}
+            <animated.a
+              style={githubButtonSpring}
+              href="https://github.com/parsaa74/german-art-schools"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-4 right-[125px] z-30 flex items-center justify-center w-10 h-10 bg-black/50 backdrop-blur-md text-white rounded-md border border-blue-500/30 shadow-lg hover:bg-blue-600/70 hover:text-white transition-colors"
+              aria-label="View Source on GitHub"
+            >
+              <FiGithub size={20} />
+            </animated.a>
+
+            {/* Help Modal Overlay */}
+            {showHelp && (
+              <div className="fixed inset-0 z-40 flex items-center justify-center">
+                <div className="absolute inset-0 bg-gradient-to-br from-black/80 via-indigo-950/80 to-black/80 backdrop-blur-md" 
+                     onClick={() => setShowHelp(false)}></div>
+                <animated.div 
+                  style={modalSpring}
+                  className="relative max-w-md w-full mx-4 overflow-hidden"
+                >
+                  <div className="relative bg-gradient-to-br from-slate-900/90 via-blue-950/90 to-slate-900/90 rounded-lg p-6 border border-blue-500/30">
+                    {/* Decorative elements */}
+                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600/0 via-blue-400 to-cyan-400/0"></div>
+                    <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-r from-cyan-400/0 via-blue-400 to-blue-600/0"></div>
+                    <div className="absolute top-[10%] -left-20 w-40 h-40 rounded-full bg-blue-500/10 blur-3xl"></div>
+                    <div className="absolute bottom-[10%] -right-20 w-60 h-60 rounded-full bg-cyan-500/10 blur-3xl"></div>
+                    
+                    <h2 className="font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-200 to-blue-400 text-2xl mb-6">
+                      NAVIGATING THE CONSTELLATION
+                    </h2>
+                    
+                    <div className="space-y-4 relative z-10">
+                      <div className="grid grid-cols-2 gap-x-6 gap-y-4">
+                        <div className="col-span-1 flex flex-col">
+                          <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Interaction</span>
+                          <ul className="space-y-2 text-sm text-slate-200">
+                            <li className="flex items-start">
+                              <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                              <span><span className="font-medium text-white">Drag:</span> Orbit camera</span>
+                            </li>
+                            <li className="flex items-start">
+                              <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                              <span><span className="font-medium text-white">Scroll:</span> Zoom in/out</span>
+                            </li>
+                            <li className="flex items-start">
+                              <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                              <span><span className="font-medium text-white">Click:</span> Select node</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div className="col-span-1 flex flex-col">
+                          <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Node Colors</span>
+                          <ul className="space-y-2 text-sm text-slate-200">
+                            <li className="flex items-start">
+                              <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-blue-500 rounded-full"></div>
+                              <span><span className="font-medium text-blue-400">Default</span></span>
+                            </li>
+                            <li className="flex items-start">
+                              <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-white rounded-full"></div>
+                              <span><span className="font-medium text-white">Hover</span></span>
+                            </li>
+                            <li className="flex items-start">
+                              <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-blue-300 rounded-full"></div>
+                              <span><span className="font-medium text-blue-300">Selected</span></span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div className="col-span-2 mt-2 flex flex-col">
+                          <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">UI Elements</span>
+                          <ul className="space-y-2 text-sm text-slate-200">
+                            <li className="flex items-start">
+                              <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                              <span><span className="font-medium text-white">Controls Panel (Top Left):</span> Access filters</span>
+                            </li>
+                            <li className="flex items-start">
+                              <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                              <span><span className="font-medium text-white">View Toggle (Bottom Left):</span> Switch 3D/2D modes</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      <animated.button
+                        onClick={() => setShowHelp(false)}
+                        className="mt-6 w-full py-2.5 bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 font-medium rounded-sm tracking-wider text-white hover:from-blue-500 hover:via-blue-400 hover:to-cyan-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)]"
+                      >
+                        RETURN TO CONSTELLATION
+                      </animated.button>
                     </div>
-                ) : (
-                    // Render 3D Canvas for 'network' or 'custom-force' modes
+                  </div>
+                </animated.div>
+              </div>
+            )}
+
+            {/* --- Visualization Area --- */}
+            <div className="absolute inset-0 w-full h-full z-0">
+
+                {/* 2D D3 Graph Container */}
+                <motion.div
+                    className="absolute inset-0 w-full h-full"
+                    initial="hidden"
+                    animate={visualizationMode === 'd3-force' ? "visible" : "hidden"}
+                    variants={visVariants}
+                    style={{
+                        pointerEvents: visualizationMode === 'd3-force' ? 'auto' : 'none',
+                        visibility: visualizationMode === 'd3-force' ? 'visible' : 'hidden'
+                    }}
+                >
+                    {visualizationMode === 'd3-force' && (
+                      <D3NetworkGraph
+                         width={isClient ? window.innerWidth * 0.8 : DEFAULT_WIDTH}
+                         height={isClient ? window.innerHeight * 0.8 : DEFAULT_HEIGHT}
+                         className=""
+                      />
+                    )}
+                </motion.div>
+
+                {/* 3D Canvas Container */}
+                <motion.div
+                    className="absolute inset-0 w-full h-full"
+                    initial="visible" // Default view
+                    animate={visualizationMode === 'network' ? "visible" : "hidden"}
+                    variants={visVariants}
+                    style={{
+                        pointerEvents: visualizationMode === 'network' ? 'auto' : 'none',
+                        visibility: visualizationMode === 'network' ? 'visible' : 'hidden'
+                    }}
+                >
                     <Canvas
+                        key={visualizationMode}
                         gl={{
                             antialias: true,
-                            alpha: true, // Keep alpha as background is handled by parent div
+                            alpha: true,
                             preserveDrawingBuffer: true,
                             powerPreference: 'high-performance'
                         }}
                         dpr={[1, 2]}
                         frameloop="demand"
-                        className="w-full h-full" // Canvas takes full space of its container
-                        key={visualizationMode} // Force re-mount canvas on mode change
+                        className="w-full h-full"
                     >
                         <SceneContent lang={currentLang} dict={dict} />
                     </Canvas>
-                )}
+                </motion.div>
             </div>
 
-            {/* --- UI Overlays (Positioned above the visualization) --- */}
-            {/* Filter Button */}
-            <button
-                onClick={() => togglePanel('filter')}
-                className="absolute top-4 left-4 z-20 p-2 bg-white/10 backdrop-blur-sm rounded text-white hover:bg-white/20 transition-colors pointer-events-auto"
-                aria-label="Toggle Filters"
+            {/* --- UI Overlays --- */}
+            <CollapsibleControlPanel
+                position="top-left"
+                panelTitle="Filters"
+                triggerIcon={<SlidersHorizontal size={18} />}
             >
-                Filters
-            </button>
-
-            {/* Filter Panel */}
-            {activePanel === 'filter' && (
-                <div className="absolute top-16 left-4 z-20 bg-gray-900/90 backdrop-blur-sm p-4 rounded shadow-lg text-white max-w-xs pointer-events-auto">
-                    <h3 className="font-bold mb-2 text-cyan-300">Filter Options</h3>
-                    {/* State Filter */}
-                    <div className="mb-3">
-                        <label htmlFor="state-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">State</label>
-                         <select
-                            id="state-filter-scene"
-                            value={activeStateFilter || ''}
-                            onChange={(e) => { setActiveStateFilter(e.target.value || null); }}
-                            className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-sm rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
-                         >
-                             <option value="">All States</option>
-                             {Array.isArray(uniqueStates) && uniqueStates.map((state: string) => <option key={state} value={state}>{state}</option>)}
-                         </select>
-                    </div>
-                    {/* Program Filter */}
-                    <div className="mb-3">
-                        <label htmlFor="program-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Program Type</label>
-                        <select
-                            id="program-filter-scene"
-                            value={activeProgramFilter || ''}
-                            onChange={(e) => { setActiveProgramFilter(e.target.value || null); }}
-                            className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-sm rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
-                        >
-                            <option value="">All Programs</option>
-                            {Array.isArray(uniqueProgramTypes) && uniqueProgramTypes.map((program: string) => <option key={program} value={program}>{program}</option>)}
-                        </select>
-                    </div>
-                     {/* Visualization Toggle - Moved inside filter panel */}
-                     {/* <div className="mt-4 pt-3 border-t border-cyan-700/40">
-                         <h4 className="text-xs font-medium text-cyan-200 mb-1.5">View Mode</h4>
-                         <VisualizationToggle />
-                     </div> */}
+                {/* State Filter */}
+                <div className="mb-1">
+                    <label htmlFor="state-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">State</label>
+                    <select
+                        id="state-filter-scene"
+                        value={activeStateFilter || ''}
+                        onChange={(e) => { setActiveStateFilter(e.target.value || null); }}
+                        className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-xs rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                    >
+                        <option value="">All States</option>
+                        {uniqueStates.sort().map((state: string) => <option key={state} value={state}>{state}</option>)}
+                    </select>
                 </div>
-            )}
+                {/* Program Filter */}
+                <div className="mb-1">
+                    <label htmlFor="program-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Program Type</label>
+                    <select
+                        id="program-filter-scene"
+                        value={activeProgramFilter || ''}
+                        onChange={(e) => { setActiveProgramFilter(e.target.value || null); }}
+                        className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-xs rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                    >
+                        <option value="">All Programs</option>
+                        {uniqueProgramTypes.sort().map((program: string) => <option key={program} value={program}>{program}</option>)}
+                    </select>
+                </div>
+                {/* School Type Filter */}
+                <div className="mb-1">
+                    <label htmlFor="type-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">School Type</label>
+                    <select
+                        id="type-filter-scene"
+                        value={activeTypeFilter || ''}
+                        onChange={(e) => setActiveTypeFilter(e.target.value || null)}
+                        className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-xs rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                    >
+                        <option value="">All Types</option>
+                        {uniqueTypes.map((type: string) => (
+                          <option key={type} value={type}>
+                            {type.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
+                          </option>
+                        ))}
+                    </select>
+                </div>
+                {/* Semester Filter */}
+                <div className="mb-1">
+                    <label htmlFor="semester-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Semester</label>
+                    <select
+                        id="semester-filter-scene"
+                        value={activeSemesterFilter || ''}
+                        onChange={(e) => setActiveSemesterFilter(e.target.value || null)}
+                        className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-xs rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                    >
+                        <option value="">All Semesters</option>
+                        <option value="winter">Winter</option>
+                        <option value="summer">Summer</option>
+                    </select>
+                </div>
+                {/* NC-free Filter */}
+                <div className="mb-1">
+                    <label htmlFor="nc-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">NC-free</label>
+                    <select
+                        id="nc-filter-scene"
+                        value={activeNcFilter === null ? '' : (activeNcFilter ? 'yes' : 'no')}
+                        onChange={(e) => setActiveNcFilter(e.target.value === '' ? null : e.target.value === 'yes')}
+                        className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-xs rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                    >
+                        <option value="">All</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </CollapsibleControlPanel>
 
-            {/* Visualization Toggle - Positioned independently */}
-            <div className="absolute bottom-4 right-4 z-20 pointer-events-auto">
-                <VisualizationToggle />
-            </div>
+            <ViewModeToggle />
 
             {/* Info Panel */}
             {selectedUniversity && (
                  <InfoPanel
-                    school={selectedUniversity} // Correct prop name: school
-                    isOpen={!!selectedUniversity} // Pass boolean based on selection
+                    school={selectedUniversity}
+                    isOpen={!!selectedUniversity}
                     onClose={handleClosePanel}
-                    // lang={currentLang} // lang and dict might not be needed if InfoPanel doesn't use them
-                    // dict={dict}
-                    // className="z-20 pointer-events-auto" // className is handled internally by InfoPanel
                 />
             )}
         </div>

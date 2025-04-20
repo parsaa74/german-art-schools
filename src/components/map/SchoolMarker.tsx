@@ -1,204 +1,208 @@
-import React, { useState, useRef, useMemo } from 'react';
+import React, { useState, useRef, useMemo, useEffect } from 'react';
 import { useFrame, ThreeEvent } from '@react-three/fiber';
-import { Sphere } from '@react-three/drei';
+import { Sphere, Text, Line, Billboard } from '@react-three/drei';
 import * as THREE from 'three';
-import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore'; // Import store and type
+import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore';
+import { useSpring, animated } from '@react-spring/three';
+import { MAP_CONFIG } from '@/lib/geo/index';
 
-interface SchoolMarkerProps {
+// --- Removed Shader Imports ---
+// import markerVertexShader from '@/shaders/marker.vert?raw';
+// import markerFragmentShader from '@/shaders/marker.frag?raw';
+
+interface SchoolMarkerProps { 
   position: THREE.Vector3;
-  schoolData: ProcessedUniversity; // Use the correct type from the store
+  schoolData: ProcessedUniversity;
   isHovered: boolean;
   isSelected: boolean;
 }
 
-// Animation helpers
-const getGlowOpacity = (isHovered: boolean, isSelected: boolean): number => {
-  return isHovered ? 0.7 : isSelected ? 0.6 : 0.5;
-};
+const AnimatedSphere = animated(Sphere);
+const AnimatedText = animated(Text);
+const AnimatedLine = animated(Line);
 
-// Helper to safely update material property
-const updateMaterialProperty = <T extends THREE.Material>(
-  material: THREE.Material | THREE.Material[] | null,
-  property: keyof T,
-  value: any
-): void => {
-  if (!material) return;
-
-  if (Array.isArray(material)) {
-    material.forEach(mat => {
-      if (mat && property in mat) {
-        (mat as any)[property] = value;
-      }
-    });
-  } else if (property in material) {
-    (material as any)[property] = value;
+// simpleHash function (remains the same)
+function simpleHash(str: string): number { 
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash |= 0; 
   }
-};
+  return Math.abs(hash);
+ }
 
+// --- Removed getBaseColor function --- 
 
 export function SchoolMarker({ position, schoolData, isHovered, isSelected }: SchoolMarkerProps) {
-  const meshRef = useRef<THREE.Mesh>(null);
-  const glowRef = useRef<THREE.Mesh>(null);
+  const groupRef = useRef<THREE.Group>(null);
+  const meshRef = useRef<THREE.Mesh>(null); 
+  // const materialRef = useRef<THREE.ShaderMaterial>(null); // <-- Removed material ref
   const [localHover, setLocalHover] = useState(false);
-  const pulsePhase = Math.random() * Math.PI * 2; // Random starting phase
 
-  // Get setters from the store
   const { setHoverUniversityName, setSelectedUniversity, controlsEnabled } = useSchoolStore();
+  const showHoverEffect = isHovered || localHover;
 
-  // Beautiful ethereal blue colors
-  const color = useMemo(() => {
-    if (isSelected) return new THREE.Color('#4D9EFF'); // Bright ethereal blue for selected
-    if (isHovered || localHover) return new THREE.Color('#FFFFFF'); // White for hover
-    return new THREE.Color('#2979FF'); // Default ethereal blue
-  }, [isSelected, isHovered, localHover]);
+  // Wandering motion setup (remains the same)
+  const basePosition = useMemo(() => position.clone(), [position]);
+  const randomSeed = useMemo(() => simpleHash(schoolData.id || schoolData.name), [schoolData.id, schoolData.name]);
+  const timeOffsetX = useMemo(() => (randomSeed % 1000) / 1000 * Math.PI * 2, [randomSeed]);
+  const timeOffsetY = useMemo(() => ((randomSeed * 3) % 1000) / 1000 * Math.PI * 2, [randomSeed]);
+  const timeOffsetZ = useMemo(() => ((randomSeed * 7) % 1000) / 1000 * Math.PI * 2, [randomSeed]);
+  const speedFactor = useMemo(() => 0.2 + (randomSeed % 500) / 1000 * 0.3, [randomSeed]); 
+  const amplitude = MAP_CONFIG.radius * 0.008; 
 
-  // Emissive color for glow effect
-  const emissiveColor = useMemo(() => {
-    if (isSelected) return new THREE.Color('#85B8FF'); // Lighter blue glow for selected
-    if (isHovered || localHover) return new THREE.Color('#FFFFFF'); // White glow for hover
-    return new THREE.Color('#5D9DFF'); // Default ethereal blue glow
-  }, [isSelected, isHovered, localHover]);
-
-  const scale = useMemo(() => {
-    if (isSelected) return 2.2;
-    if (isHovered || localHover) return 1.8;
-    return 1.3;
-  }, [isSelected, isHovered, localHover]);
-
-  // Use state for animation values instead of directly modifying scale
-  const [currentScale, setCurrentScale] = useState(1.0);
-  const [glowOpacity, setGlowOpacity] = useState(0.5);
-
-  // Animate using state updates to avoid buffer attribute conflicts
-  useFrame(({ clock }) => {
-    // Calculate target scale based on hover/selected state
-    const targetScale = scale;
-
-    // Smooth scale transition using state
-    setCurrentScale(prev => prev + (targetScale - prev) * 0.1);
-
-    // Calculate pulse effect
-    const pulseSpeed = isSelected ? 2.0 : 1.0;
-    const pulseStrength = isSelected ? 0.08 : 0.04; // Reduced strength to avoid buffer issues
-    const pulse = Math.sin(clock.elapsedTime * pulseSpeed + pulsePhase) * pulseStrength + 1.0;
-
-    // Calculate glow opacity
-    const targetOpacity = getGlowOpacity(isHovered, isSelected);
-    setGlowOpacity(prev => prev + (targetOpacity - prev) * 0.1);
-
-    // Update material properties instead of geometry using our safe helper
-    if (meshRef.current) {
-      // Update emissive intensity for pulse effect instead of scale
-      const emissiveValue = isSelected ? 1.2 * pulse : isHovered ? 1.0 * pulse : 0.8 * pulse;
-      updateMaterialProperty<THREE.MeshStandardMaterial>(
-        meshRef.current.material,
-        'emissiveIntensity',
-        emissiveValue
-      );
-    }
-
-    if (glowRef.current) {
-      // Update opacity safely
-      updateMaterialProperty<THREE.MeshBasicMaterial>(
-        glowRef.current.material,
-        'opacity',
-        glowOpacity
-      );
-    }
+  // react-spring animations - Restore color/emissive/glow
+  const { springScale, color, emissiveColor, glowOpacity, textOpacity } = useSpring({
+    springScale: isSelected ? 1.8 : (showHoverEffect ? 1.5 : 1.0),
+    // Define target colors based on state
+    color: isSelected ? '#60A5FA' : (showHoverEffect ? '#FFFFFF' : '#3B82F6'), // Blue base, white hover, light blue selected
+    emissiveColor: isSelected ? '#93C5FD' : (showHoverEffect ? '#FFFFFF' : '#60A5FA'), // Similar logic for emissive
+    glowOpacity: isSelected ? 0.7 : (showHoverEffect ? 0.6 : 0.35), // Opacity for the separate glow mesh
+    textOpacity: showHoverEffect ? 1 : 0,
+    config: { mass: 1, tension: 280, friction: 30 } 
   });
 
-  const handlePointerOver = (event: ThreeEvent<PointerEvent>) => {
-    if (!controlsEnabled) return;
-    event.stopPropagation(); // Prevent events bubbling up if needed
-    setLocalHover(true);
-    setHoverUniversityName(schoolData.name); // Update global hover state
-    document.body.style.cursor = 'pointer';
-    if (!isSelected) { // Play hover sound only if not already selected
-        // playSound('hover'); // Uncomment if you have sound logic
-    }
-  };
+  // Removed uniforms memoization
 
-  const handlePointerOut = (event: ThreeEvent<PointerEvent>) => {
+  // Frame loop for wandering motion ONLY
+  useFrame(({ clock }) => {
+    // Wandering
+    if (groupRef.current) {
+      const elapsedTime = clock.getElapsedTime() * speedFactor;
+      const wanderX = Math.sin(elapsedTime + timeOffsetX) * amplitude;
+      const wanderY = Math.cos(elapsedTime + timeOffsetY) * amplitude;
+      const wanderZ = Math.sin(elapsedTime + timeOffsetZ) * amplitude * 0.7; 
+      
+      groupRef.current.position.set(
+        basePosition.x + wanderX,
+        basePosition.y + wanderY,
+        basePosition.z + wanderZ
+      );
+    }
+    // Removed shader uniform updates
+  });
+
+  // Event handlers (remain the same)
+  const handlePointerOver = (event: ThreeEvent<PointerEvent>) => { 
+    if (!controlsEnabled || isSelected) return;
+    event.stopPropagation();
+    setLocalHover(true);
+    if (!isSelected) {
+        setHoverUniversityName(schoolData.name);
+    }
+    document.body.style.cursor = 'pointer';
+   };
+  const handlePointerOut = (event: ThreeEvent<PointerEvent>) => { 
     if (!controlsEnabled) return;
     event.stopPropagation();
     setLocalHover(false);
-    // Only clear global hover if this marker was the one being hovered
-    if (useSchoolStore.getState().hoverUniversityName === schoolData.name) {
-        setHoverUniversityName(null);
+    if (
+        useSchoolStore.getState().hoverUniversityName === schoolData.name &&
+        !isSelected
+    ) {
+      setHoverUniversityName(null);
     }
     document.body.style.cursor = 'auto';
-  };
-
-  const handleClick = (event: ThreeEvent<MouseEvent>) => {
-    if (!controlsEnabled) return;
-    event.stopPropagation(); // Important to prevent background clicks
-
-    console.log('SchoolMarker clicked:', schoolData.name);
-
+   };
+  const handleClick = (event: ThreeEvent<MouseEvent>) => { 
+     if (!controlsEnabled) return;
+    event.stopPropagation(); 
     const currentSelected = useSchoolStore.getState().selectedUniversity;
-    if (currentSelected?.name === schoolData.name) {
-      console.log('Deselecting university:', schoolData.name);
-      setSelectedUniversity(null); // Deselect
-    } else {
-      console.log('Selecting university:', schoolData.name);
-      setSelectedUniversity(schoolData); // Select
-
-      // Verify the store was updated
-      setTimeout(() => {
-        const selected = useSchoolStore.getState().selectedUniversity;
-        console.log('Store selectedUniversity after update:', selected?.name);
-      }, 100);
+    const newlySelected = currentSelected?.name === schoolData.name ? null : schoolData;
+    setSelectedUniversity(newlySelected);
+    if (newlySelected?.name === schoolData.name) {
+        setLocalHover(false);
+        setHoverUniversityName(null);
     }
   };
 
-  // Create a beautiful ethereal node with glow effect
-  return (
-    <group position={position} scale={[currentScale, currentScale, currentScale]}>
-      {/* Outer glow sphere */}
-      <Sphere
-        ref={glowRef}
-        args={[0.35, 16, 16]} // Larger radius for glow effect
-      >
-        <meshBasicMaterial
-          color={color}
-          transparent
-          opacity={0.5}
-          depthWrite={false} // Prevents z-fighting
-          blending={THREE.AdditiveBlending} // Creates a glowing effect
-        />
-      </Sphere>
+  // Text and Line Positioning
+  const textPosition = useMemo(
+    () => new THREE.Vector3(0, MAP_CONFIG.radius * 0.04, 0),
+    []
+  );
+  const linePoints = useMemo(
+    () => [new THREE.Vector3(0, 0, 0), textPosition],
+    [textPosition]
+  );
 
-      {/* Main node sphere */}
-      <Sphere
+  // Render
+  return (
+    <group ref={groupRef} position={basePosition}> 
+      <AnimatedSphere
         ref={meshRef}
-        args={[0.2, 32, 32]} // Higher detail for main sphere
+        args={[MAP_CONFIG.radius * 0.025, 32, 32]} 
+        scale={springScale} 
         onPointerOver={handlePointerOver}
         onPointerOut={handlePointerOut}
         onClick={handleClick}
       >
-        <meshStandardMaterial // Using standard material instead of physical to avoid buffer issues
-          color={color}
-          emissive={emissiveColor}
-          emissiveIntensity={isHovered || isSelected ? 1.5 : 1.0}
-          transparent
-          opacity={0.95}
-          roughness={0.2} // More reflective
-          metalness={0.3} // Slightly metallic
+        {/* Restore animated standard material */}
+        <animated.meshStandardMaterial
+          color={color} 
+          emissive={emissiveColor} 
+          emissiveIntensity={1.5} // Keep intensity or adjust
+          metalness={0.1}
+          roughness={0.4}
+          transparent // Keep transparency
+          opacity={isSelected ? 1.0 : (showHoverEffect ? 0.95 : 0.85)} // Adjust opacity based on state
         />
-      </Sphere>
+      </AnimatedSphere>
 
-      {/* Inner core glow for extra ethereal effect */}
-      <Sphere
-        args={[0.1, 16, 16]} // Smaller inner core
+      {/* Restore separate Glow Effect Sphere */}
+      {(showHoverEffect || isSelected) && (
+        <AnimatedSphere
+          // No ref needed unless manipulating directly
+          args={[MAP_CONFIG.radius * 0.025 * 1.4, 32, 32]} // Slightly larger for glow
+          scale={springScale} // Scale glow with main sphere
+          visible={glowOpacity.to(o => o > 0.01)} // Hide if opacity is near zero
+        >
+          <animated.meshBasicMaterial
+            color={emissiveColor} // Use emissive color for glow
+            transparent
+            opacity={glowOpacity} // Animate opacity
+            depthWrite={false} 
+            side={THREE.BackSide} // Render back-face for halo effect
+            blending={THREE.AdditiveBlending} // Additive blending for bright glow
+          />
+        </AnimatedSphere>
+      )}
+
+      {/* Billboard to make text face camera */}
+      <Billboard
+        follow={true}
+        // Optionally lock axes if needed, e.g., lockZ={true} if you only want Y-axis rotation
       >
-        <meshBasicMaterial
-          color={new THREE.Color('#FFFFFF')}
-          transparent
-          opacity={0.9}
-          blending={THREE.AdditiveBlending}
-          depthWrite={false} // Prevents z-fighting and buffer issues
-        />
-      </Sphere>
+          {/* Hover Text */}
+          <AnimatedText
+            position={textPosition} // Position relative to the Billboard
+            color={isSelected ? '#FFFFFF' : '#E0E0E0'}
+            fontSize={MAP_CONFIG.radius * 0.018}
+            anchorY="bottom"
+            anchorX="center"
+            outlineWidth={0.001}
+            outlineColor="#111111"
+            material-transparent={true}
+            material-opacity={textOpacity}
+            material-depthWrite={false}
+            visible={textOpacity.to(o => o > 0.01)}
+          >
+            {schoolData.name}
+          </AnimatedText>
+
+          {/* Connecting Line */}
+          <AnimatedLine
+            points={linePoints} // Position relative to the Billboard
+            color={isSelected ? '#FFFFFF' : '#AAAAAA'}
+            lineWidth={1}
+            dashed={false}
+            transparent={true}
+            opacity={textOpacity}
+            depthWrite={false}
+            visible={textOpacity.to(o => o > 0.01)}
+          />
+      </Billboard>
     </group>
   );
 }

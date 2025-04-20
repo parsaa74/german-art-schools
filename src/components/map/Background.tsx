@@ -17,6 +17,7 @@ const backgroundVertexShader = /* glsl */`
 const backgroundFragmentShader = /* glsl */`
   uniform float time;
   uniform vec2 resolution;
+  uniform float isDarkMode;
   varying vec2 vUv;
 
   // Noise function (e.g., Simplex or Perlin - using a simple one here for brevity)
@@ -87,6 +88,10 @@ const backgroundFragmentShader = /* glsl */`
     float vignette = smoothstep(0.8, 0.3, length(uv - 0.5)); // Inward vignette
     finalColor *= vignette * 1.2; // Apply vignette and slightly boost brightness
 
+    // Blend with dark background when dark mode is active
+    vec3 darkBg = vec3(0.005, 0.005, 0.005);
+    finalColor = mix(finalColor, darkBg, isDarkMode);
+
     // Add subtle grain (optional)
     // finalColor += (random(uv + time * 0.1) - 0.5) * 0.03;
 
@@ -124,10 +129,10 @@ export default function Background() {
         ref={materialRef}
         vertexShader={backgroundVertexShader}
         fragmentShader={backgroundFragmentShader}
-         uniforms={uniforms}
-         depthWrite={false} // No need to write to depth buffer
-         depthTest={false} // Prevent interference with objects behind
-       />
-     </mesh>
+        uniforms={uniforms}
+        depthWrite={false} // No need to write to depth buffer
+        depthTest={false} // Prevent interference with objects behind
+      />
+    </mesh>
   );
 }
