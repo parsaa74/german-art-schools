@@ -21,3 +21,14 @@ Thumbs.db
 
 # Next.js build output
 .next/
+
+# AI/Cursor and Roo configuration
+.cursor/
+.cursorignore
+.roo/
+mcp_servers.json
+
+# Ignore documentation except README and LICENSE
+*.md
+!README.md
+!LICENSE
