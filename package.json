@@ -21,6 +21,7 @@
     "@radix-ui/react-dialog": "^1.1.4",
     "@radix-ui/react-slot": "^1.1.2",
     "@react-spring/three": "^9.7.3",
+    "@react-spring/web": "^9.7.5",
     "@react-three/drei": "^9.120.6",
     "@react-three/fiber": "^8.18.0",
     "@react-three/postprocessing": "^2.19.1",
