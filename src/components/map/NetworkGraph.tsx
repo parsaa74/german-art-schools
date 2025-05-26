@@ -8,7 +8,7 @@ import { type Simulation as D3Simulation } from 'd3-force';
 // No longer using shader material
 
 // Constants for node appearance - significantly increased for better visibility
-const NODE_BASE_SCALE = 1.5 // Much larger base scale for maximum visibility
+const NODE_BASE_SCALE = 1.8 // Much larger base scale for maximum visibility
 const NODE_HOVER_SCALE = 1.4 // Scale multiplier for hover state
 const NODE_SELECT_SCALE = 1.8 // Scale multiplier for selected state
 const LERP_SPEED = 8.0; // Speed for scale interpolation
@@ -335,115 +335,130 @@ export default function NetworkGraph({
     }
   });
 
-  // --- D3 Force Simulation ---
+  // Update simulation and refresh node positions
   useEffect(() => {
-    console.log('NetworkGraph: Initializing simulation for InstancedMesh.');
+    // Skip if no mesh or no universities
+    if (!meshRef.current || universities.length === 0) {
+      console.log("NetworkGraph: Cannot initialize - missing mesh or data.");
+      return;
+    }
 
-    nodesRef.current = universities.map((uni) => ({
+    // Setup simulation nodes
+    const nodes: NodeData[] = universities.map((uni) => ({
       id: uni.name,
       type: uni.type,
       programCount: uni.programTypes?.length || 0,
       originalData: uni,
+      // D3 adds x, y, etc. during simulation
     }));
 
-    const simulation = d3
-      .forceSimulation(nodesRef.current, 3)
-      .force('link', d3.forceLink().id((d: any) => d.id).strength(0.02).distance(3.0))
-      .force('charge', d3.forceManyBody().strength(-30))
-      .force('center', d3.forceCenter(0, 0, 0).strength(0.2))
-      .force('collision', d3.forceCollide().radius(1.0).strength(0.6))
-      .force('x', d3.forceX().strength(0.05))
-      .force('y', d3.forceY().strength(0.05))
-      .force('z', d3.forceZ().strength(0.05))
-      .alphaDecay(0.01) // Slightly faster decay
-      .stop();
+    nodesRef.current = nodes;
 
-    simulationRef.current = simulation;
+    // Create force simulation
+    const simulation = d3.forceSimulation(nodes)
+      .force('charge', d3.forceManyBody().strength(-50))
+      .force('center', d3.forceCenter(0, 0, 0).strength(0.5))
+      .force('collide', d3.forceCollide().radius(() => NODE_BASE_SCALE * 0.7).strength(0.2))
+      .force('x', d3.forceX(0).strength(0.05))
+      .force('y', d3.forceY(0).strength(0.05))
+      .force('z', d3.forceZ(0).strength(0.05))
+      .alphaTarget(0)
+      .alphaDecay(0.05)
+      .velocityDecay(0.6)
+      .alpha(1); // Start with high alpha to ensure a more settled layout
 
+    // Store reference to simulation
+    simulationRef.current = simulation as any;
+
+    // Initialize node matrices and scales
+    const initialMatrix = new THREE.Matrix4();
+    const initialQuaternion = new THREE.Quaternion();
+    currentScalesRef.current = new Float32Array(nodes.length).fill(NODE_BASE_SCALE);
+    targetScalesRef.current = new Float32Array(nodes.length).fill(NODE_BASE_SCALE);
+
+    // Update instance matrices based on simulation ticks
     const handleTick = () => {
-      if (!meshRef.current) return;
+      if (!meshRef.current || !simulation) return;
 
-      if (!meshRef.current.visible) {
-        meshRef.current.visible = true;
+      // First check if we're below our alpha threshold - if so, stop the simulation
+      if (simulation.alpha() < 0.05) {
+        simulation.stop();
+        console.log("Simulation converged and stopped.");
       }
 
-      const currentNodes: NodeData[] = simulationRef.current?.nodes() || [];
-      const newPositionsMap = new Map<string, THREE.Vector3>();
-      let positionsChanged = false;
-
-      let minX = Infinity, maxX = -Infinity;
-      let minY = Infinity, maxY = -Infinity;
-      let minZ = Infinity, maxZ = -Infinity;
-
-      if (meshRef.current && meshRef.current.count !== universities.length) {
-         meshRef.current.count = universities.length;
-      }
-
-      currentNodes.forEach((node: NodeData, i: number) => {
-        const x = node.x ?? 0;
-        const y = node.y ?? 0;
-        const z = node.z ?? 0;
-
-        // Update only position from simulation, keep scale/rotation from useFrame
-        const matrix = new THREE.Matrix4();
-        meshRef.current.getMatrixAt(i, matrix); // Get current matrix (with animated scale/rotation)
-        const position = new THREE.Vector3();
-        const quaternion = new THREE.Quaternion();
-        const scale = new THREE.Vector3();
-        matrix.decompose(position, quaternion, scale); // Decompose to keep scale/rotation
-
-        position.set(x, y, z); // Update position from simulation
-
-        matrix.compose(position, quaternion, scale); // Recompose with updated position
-        if (i < meshRef.current.count) {
-          meshRef.current.setMatrixAt(i, matrix);
+      // Update matrices for each node
+      nodes.forEach((node, i) => {
+        if (node.x != null && node.y != null && node.z != null) {
+          // D3 positions for node
+          const position = new THREE.Vector3(node.x, node.y, node.z);
+          
+          // Store position in map
+          positionMapRef.current.set(node.id, position.clone());
+          
+          // Set instanced mesh transform
+          initialMatrix.compose(
+            position,
+            initialQuaternion,
+            new THREE.Vector3(
+              currentScalesRef.current?.[i] || NODE_BASE_SCALE,
+              currentScalesRef.current?.[i] || NODE_BASE_SCALE,
+              currentScalesRef.current?.[i] || NODE_BASE_SCALE
+            )
+          );
+          
+          meshRef.current.setMatrixAt(i, initialMatrix);
         }
-
-        const newPos = new THREE.Vector3(x, y, z);
-        const oldPos = positionMapRef.current.get(node.id);
-        if (!oldPos || oldPos.distanceToSquared(newPos) > 0.0001) {
-          positionsChanged = true;
-        }
-        newPositionsMap.set(node.id, newPos);
-
-        if (node.x !== undefined) { minX = Math.min(minX, node.x); maxX = Math.max(maxX, node.x); }
-        if (node.y !== undefined) { minY = Math.min(minY, node.y); maxY = Math.max(maxY, node.y); }
-        if (node.z !== undefined) { minZ = Math.min(minZ, node.z); maxZ = Math.max(maxZ, node.z); }
       });
-
+      
+      // Update geometry attributes
       meshRef.current.instanceMatrix.needsUpdate = true;
-
-      if (positionsChanged || newPositionsMap.size !== positionMapRef.current.size) {
-        positionMapRef.current = newPositionsMap;
-        onLayoutUpdate(newPositionsMap);
-      }
-
-      // Optional: Log position extents less frequently
-      // if(currentNodes.length > 0 && positionsChanged && Math.random() < 0.1) {
-      //   console.log(`NetworkGraph Positions Extents: X[${minX.toFixed(2)}, ${maxX.toFixed(2)}], Y[${minY.toFixed(2)}, ${maxY.toFixed(2)}], Z[${minZ.toFixed(2)}, ${maxZ.toFixed(2)}]`);
-      // }
-
-      if (simulationRef.current && simulationRef.current.alpha() < 0.01) {
-        // console.log("NetworkGraph: Simulation cooled down."); // Reduce logging
-        simulationRef.current.stop();
-      }
+      
+      // Update position map in the parent component
+      onLayoutUpdate(positionMapRef.current);
     };
 
-    simulation.on('tick', handleTick)
-    console.log("NetworkGraph: Starting simulation heating.");
-    simulation.alpha(1).restart();
+    // Store node positions immediately before any simulation ticks
+    const nameMap: { [key: number]: string } = {};
+    nodes.forEach((node, i) => {
+      const position = new THREE.Vector3(
+        (Math.random() * 2 - 1) * 5, // Spread initial positions for better separation
+        (Math.random() * 2 - 1) * 5,
+        (Math.random() * 2 - 1) * 5
+      );
+      node.x = position.x;
+      node.y = position.y;
+      node.z = position.z;
+      nameMap[i] = node.id;
+      positionMapRef.current.set(node.id, position.clone());
+    });
 
-    return () => {
-      console.log('NetworkGraph: Stopping simulation and cleaning up.')
-      if (simulationRef.current) {
-        simulationRef.current.stop()
-        simulationRef.current.on('tick', null);
-      }
-      simulationRef.current = null
-      nodesRef.current = []
-      positionMapRef.current.clear()
+    // Populate instanceMatrix with initial positions before simulation starts
+    handleTick();
+
+    // Set name map on geometry for raycasting
+    if (meshRef.current && meshRef.current.geometry) {
+      meshRef.current.geometry.userData.nameMap = nameMap;
+      console.log("Set nameMap on geometry:", Object.keys(nameMap).length, "entries");
     }
-  }, [universities, onLayoutUpdate])
+
+    // Register simulation tick handler
+    simulation.on('tick', handleTick);
+
+    // Store positions after initial simulation settles
+    setTimeout(() => {
+      handleTick();
+      console.log("Position map after delay:", positionMapRef.current.size, "entries");
+      console.log("Sample positions:", Array.from(positionMapRef.current.entries()).slice(0, 3));
+    }, 500);
+
+    // Cleanup simulation on unmount
+    return () => {
+      simulation.stop();
+      if (meshRef.current) {
+        meshRef.current.dispose?.();
+      }
+    };
+  }, [universities, onLayoutUpdate]);
 
   if (universities.length === 0) return null
   console.log(`Rendering InstancedMesh with ${universities.length} instances.`);

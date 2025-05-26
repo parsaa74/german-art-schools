@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useEffect } from 'react';
 import { useSprings, a } from '@react-spring/three';
 import * as THREE from 'three';
 import { latLngToVector3, MAP_CONFIG } from '@/lib/geo/index';
@@ -61,7 +61,8 @@ export function SchoolNodes() {
     activeSemesterFilter,
     activeNcFilter,
     timelineFilter,
-    visualizationMode
+    visualizationMode,
+    setSelectedUniversity
   } = useSchoolStore(state => ({
     processedUniversities: state.processedUniversities,
     nodePositions: state.nodePositions,
@@ -73,7 +74,8 @@ export function SchoolNodes() {
     activeSemesterFilter: state.activeSemesterFilter,
     activeNcFilter: state.activeNcFilter,
     timelineFilter: state.timelineFilter,
-    visualizationMode: state.visualizationMode
+    visualizationMode: state.visualizationMode,
+    setSelectedUniversity: state.setSelectedUniversity
   }));
 
   const filteredUniversities = useMemo(() => {
@@ -128,6 +130,18 @@ export function SchoolNodes() {
     return result;
 
   }, [processedUniversities, nodePositions, activeStateFilter, activeProgramFilter, activeTypeFilter, activeSemesterFilter, activeNcFilter, timelineFilter]);
+
+  // Auto-select the university if it's the only one after filtering
+  useEffect(() => {
+    // If we have exactly one filtered university and no current selection,
+    // or the current selection is not in the filtered list
+    if (filteredUniversities.length === 1 && 
+        (!selectedUniversity || 
+         !filteredUniversities.some(uni => uni.name === selectedUniversity.name))) {
+      // Auto-select the only university that matches the filters
+      setSelectedUniversity(filteredUniversities[0]);
+    }
+  }, [filteredUniversities, selectedUniversity, setSelectedUniversity]);
 
   // For 3D network mode: uniform sphere distribution (Fibonacci sphere)
   const spherePositions = useMemo(() => {
@@ -335,6 +349,11 @@ export function SchoolNodes() {
   const isNetwork = visualizationMode === 'network';
   const targets = filteredUniversities.map(uni => {
     if (isNetwork) {
+      // When there's only one university after filtering, position it at the center
+      if (filteredUniversities.length === 1) {
+        return new THREE.Vector3(0, 0, 0);
+      }
+      
       return selectedUniversity
         ? relationshipPositions.get(uni.name)!
         : spherePositions.get(uni.name)!;
@@ -360,7 +379,7 @@ export function SchoolNodes() {
               position={new THREE.Vector3(0, 0, 0)}
               schoolData={uni}
               isHovered={hoverUniversityName === uni.name}
-              isSelected={selectedUniversity?.name === uni.name}
+              isSelected={selectedUniversity?.name === uni.name || filteredUniversities.length === 1}
             />
           </a.group>
         );
