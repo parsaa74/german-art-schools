@@ -32,10 +32,7 @@
 
   body {
     @apply antialiased;
-    background: linear-gradient(135deg,
-      rgb(var(--background-dark)) 0%,
-      rgb(var(--background-light)) 100%
-    );
+    background: transparent;
     color: rgb(var(--text-primary));
     /* Remove margin if Tailwind base doesn't already */
     @apply m-0;

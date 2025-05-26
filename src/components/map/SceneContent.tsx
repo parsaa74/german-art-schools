@@ -12,7 +12,7 @@ import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore';
 import Globe from './Globe';
 import { SchoolMarker } from './SchoolMarker';
 // import ConnectionLines from './ConnectionLines'; // <-- Keep commented or remove entirely
-import Background from './Background';
+// import Background from './Background'; // Remove as it's now in the parent Scene
 
 // Component imports
 // import NetworkGraph from './NetworkGraph'; // Remove old graph
@@ -123,50 +123,36 @@ export function SceneContent(_props: SceneContentProps) {
         near={0.1}
         far={1000}
       />
-            <OrbitControls
-                ref={controlsRef}
+      <OrbitControls
+        ref={controlsRef}
         enableDamping
         dampingFactor={0.05}
-        enablePan={true}
+        enablePan={!isLoading && controlsEnabled}
         minDistance={1} // Adjust min distance
         maxDistance={100} // Adjust max distance
-                enableZoom={true}
+        enableZoom={!isLoading && controlsEnabled}
         enabled={controlsEnabled}
         target={new THREE.Vector3(...cameraTarget)}
+        rotateSpeed={0.5}
+        zoomSpeed={0.8}
         makeDefault
       />
 
-      <Background />
+      {/* Remove Background component since it's already in the parent Scene */}
+      {/* <Background /> */}
 
-      {/* Conditionally render visualization based on mode */}
+      {/* Only render 3D visualization in network mode */}
       {visualizationMode === 'network' && (
         <>
           <SchoolNodes /> {/* Use the new SchoolNodes component */}
         </>
       )}
 
-      {visualizationMode === 'd3-force' && (
-         <CustomForceGraph />
-      )}
-
-      {/* Remove SceneEventHandler */}
-      {/* <SceneEventHandler
-        processedUniversities={processedUniversities}
-                universityMap={universityMap}
-                nodePositions={nodePositions}
-                setHoverUniversityName={setHoverUniversityName}
-                setSelectedUniversity={setSelectedUniversity}
-                selectedUniversity={selectedUniversity}
-                setConnectionLines={setConnectionLines}
-                controlsEnabled={controlsEnabled}
-                hoverUniversityName={hoverUniversityName}
-      /> */}
-
       {/* Post-processing effects */}
       <PostProcessing />
 
       {/* Invalidator based on controls */}
-            <FrameInvalidator controlsEnabled={controlsEnabled} />
+      <FrameInvalidator controlsEnabled={controlsEnabled} />
 
       {/* University Markers */}
       <group name="markersGroup">

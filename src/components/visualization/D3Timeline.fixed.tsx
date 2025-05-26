@@ -25,6 +25,10 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
     .map(uni => uni.founded ? parseInt(uni.founded) : null)
     .filter(year => year !== null) as number[]
   
+  // Add Bauhaus-inspired color scale
+  const bauhausColors = ["#D40000", "#F0C808", "#004699", "#00A36C", "#FFFFFF", "#000000"]
+  const colorScale = d3.scaleOrdinal<string, string>(bauhausColors)
+  
   // Set up timeline data
   useEffect(() => {
     // == DEBUG TIMELINE: Log entry and foundingYears length ==
@@ -67,8 +71,9 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
       .attr('transform', `translate(0,${innerHeight})`)
       .call(xAxis)
       .selectAll('text')
-      .attr('fill', '#A7CBFF') // Keep axis text color
-      .attr('font-size', '10px');
+        .attr('fill', '#A7CBFF')
+        .attr('font-size', '10px')
+        .style('font-family', 'Inter, sans-serif')
 
     // Apply fade-in to axis
     g.select('.x-axis')
@@ -92,7 +97,7 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
         .attr('y', 0)
         .attr('width', d => xScale(d.endYear) - xScale(d.startYear))
         .attr('height', movementHeight)
-        .attr('fill', d => d.color)
+        .attr('fill', d => colorScale(d.name))
         .attr('rx', 4)
         .attr('ry', 4)
         // Initial state for animation
@@ -152,9 +157,10 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
         .attr('y', movementHeight / 2)
         .attr('text-anchor', 'middle')
         .attr('dominant-baseline', 'middle')
-        .attr('fill', '#E0E0E0') // Slightly softer white
+        .attr('fill', '#E0E0E0')
         .attr('font-size', '9px')
-        .attr('font-weight', '500') // Medium weight
+        .attr('font-weight', '500')
+        .style('font-family', 'Inter, sans-serif')
         .attr('pointer-events', 'none')
         .text(d => d.name)
         // Initial state for animation
@@ -184,8 +190,9 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
       .attr('class', 'founding-point')
       .attr('cx', d => xScale(parseInt(d.founded!)))
       .attr('cy', innerHeight - 10)
-      .attr('r', 3.5) // Slightly smaller points
-      .attr('fill', d => getNodeColor(d)) // Use consistent color function
+      .attr('r', 3.5)
+      // Use updated color scale for points
+      .attr('fill', d => getNodeColor(d))
       .attr('stroke', 'rgba(255, 255, 255, 0.5)') // Softer stroke
       .attr('stroke-width', 0.5)
       // Initial state for animation
@@ -209,23 +216,12 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
 
   }, [width, height, processedUniversities, foundingYears, activeRange, onTimelineFilter]) // Added updateActiveStyle dependency implicitly via activeRange
 
-  // Helper function to get node color (similar to NetworkGraph)
+  // Helper function to get node color (uses Bauhaus scale)
   const getNodeColor = (uni: ProcessedUniversity, opacity = 1): string => {
-    const foundingYear = uni.founded ? parseInt(uni.founded) : null;
-    let baseHexColor = '#2979FF'; // Default blue
-
-    if (foundingYear) {
-      const movement = germanArtMovements.find(m =>
-        foundingYear >= m.startYear && foundingYear <= m.endYear
-      );
-      if (movement) {
-        baseHexColor = movement.color;
-      }
-    }
-    // Convert hex to rgba
-    const rgb = hexToRgb(baseHexColor);
-    return `rgba(${rgb}, ${opacity})`;
-  };
+    const baseColor = colorScale(uni.id)
+    const rgb = hexToRgb(baseColor)
+    return `rgba(${rgb}, ${opacity})`
+  }
 
   // Helper function to convert hex color to RGB
   const hexToRgb = (hex: string): string => {
@@ -244,7 +240,7 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
   
   return (
     <motion.div
-      className="timeline-container mt-6 p-4 rounded-lg bg-black/40 backdrop-blur-sm border border-blue-500/20"
+      className="timeline-container font-inter mt-6 p-4 rounded-lg bg-black/40 backdrop-blur-sm border border-blue-500/20"
       initial={{ opacity: 0, y: 20 }}
       animate={{
         opacity: isVisible ? 1 : 0,

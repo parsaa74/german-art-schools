@@ -119,7 +119,6 @@ export default function D3NetworkGraph({
   const nodeMapRef = useRef(new Map<string, D3Node>());
   const linkGroupRef = useRef<SVGGElement | null>(null); // Ref for link group
   const nodeGroupRef = useRef<SVGGElement | null>(null); // Ref for node group
-  const zoomRef = useRef<d3.ZoomBehavior<SVGSVGElement, unknown> | null>(null);
 
   // --- Zustand Store ---
   const {
@@ -252,22 +251,7 @@ export default function D3NetworkGraph({
             .attr('class', 'nodes')
             .node();
 
-         // --- Zoom Setup ---
-         zoomRef.current = d3.zoom<SVGSVGElement, unknown>()
-            .scaleExtent([0.1, 5]) // Adjusted scale extent
-            .on('zoom', (event) => {
-                g.attr('transform', event.transform);
-            });
-         svg.call(zoomRef.current)
-            .on("dblclick.zoom", null); // Disable double-click zoom reset
-
-         // --- Programmatic Zoom Reset ---
-         if (zoomRef.current) {
-            svg.call(zoomRef.current.transform, d3.zoomIdentity); // Reset zoom to identity
-            console.log("[D3 Graph] Zoom Reset");
-         }
-
-         // Click on background to deselect
+         // --- Click Handling ---
          svg.on('click', (event) => {
              if (event.target === svg.node() || event.target === g.node()) {
                  setSelectedUniversity(null);
@@ -542,10 +526,10 @@ export default function D3NetworkGraph({
         .attr('stroke-width', d => Math.min(2.5, LINK_BASE_WIDTH + d.value * LINK_VALUE_SCALE))
         .attr('stroke', COLOR_LINK_ACTIVE) // Start with active color during transition
         .attr('stroke-opacity', 0) // Start transparent
-        .attr('x1', d => (typeof d.source === 'string' ? nodeMapRef.current.get(d.source) : d.source as D3Node)?.x ?? 0)
-        .attr('y1', d => (typeof d.source === 'string' ? nodeMapRef.current.get(d.source) : d.source as D3Node)?.y ?? 0)
-        .attr('x2', d => (typeof d.target === 'string' ? nodeMapRef.current.get(d.target) : d.target as D3Node)?.x ?? 0)
-        .attr('y2', d => (typeof d.target === 'string' ? nodeMapRef.current.get(d.target) : d.target as D3Node)?.y ?? 0);
+        .attr('x1', d => (typeof d.source === 'string' ? nodeMapRef.current.get(d.source) : d.source as D3Node)?.initialX ?? 0)
+        .attr('y1', d => (typeof d.source === 'string' ? nodeMapRef.current.get(d.source) : d.source as D3Node)?.initialY ?? 0)
+        .attr('x2', d => (typeof d.target === 'string' ? nodeMapRef.current.get(d.target) : d.target as D3Node)?.initialX ?? 0)
+        .attr('y2', d => (typeof d.target === 'string' ? nodeMapRef.current.get(d.target) : d.target as D3Node)?.initialY ?? 0);
 
     // Update + Enter links (style update)
     linkEnter.merge(linkSelection)
@@ -569,14 +553,17 @@ export default function D3NetworkGraph({
 
 
   return (
-    <div className={`d3-network-graph-container ${className} bg-transparent w-full h-full overflow-hidden relative`}>
+    <div
+      className={`d3-network-graph-container ${className} w-full h-full overflow-hidden relative`}
+      style={{ background: 'transparent' }} // Force transparent background
+    >
       <svg
         ref={svgRef}
         width="100%"
         height="100%"
         viewBox={`0 0 ${width} ${height}`}
         preserveAspectRatio="xMinYMin meet"
-        style={{ isolation: 'isolate' }}
+        style={{ isolation: 'isolate', background: 'transparent' }} // Also force SVG background transparent
       />
     </div>
   )

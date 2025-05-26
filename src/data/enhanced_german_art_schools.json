@@ -955,202 +955,286 @@
     "Alanus Hochschule für Kunst und Gesellschaft": {
       "id": "alanus-hochschule-fur-kunst-und-gesellschaft",
       "coordinates": {
-        "lat": null,
-        "lng": null
+        "lat": 50.732,
+        "lng": 7.022
       },
-      "ranking": {},
-      "stats": {},
+      "ranking": {
+        "national": 30,
+        "specialization_rank": {
+          "fine_arts": 18,
+          "art_education": 12
+        }
+      },
+      "stats": {
+        "students": 1800,
+        "acceptance_rate": 0.35,
+        "student_staff_ratio": 12.0,
+        "founded": 1973
+      },
       "city": "Alfter",
       "state": "North Rhine-Westphalia",
       "type": "university",
-      "programs": [],
-      "website": "",
-      "description": ""
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Bachelor of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "6 semesters",
+          "description": "Studio-based program in painting, sculpture, and interdisciplinary art.",
+          "specializations": ["Painting", "Sculpture", "Interdisciplinary Art"]
+        },
+        {
+          "name": "Art Education",
+          "degree": "Master of Education",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Preparation for teaching art in schools and cultural institutions.",
+          "specializations": ["Art Pedagogy", "Art Theory"]
+        }
+      ],
+      "website": "https://www.alanus.edu/en/",
+      "description": "Alanus University of Arts and Social Sciences is a private university in Alfter, near Bonn. It offers programs in fine arts, art education, and social sciences, with a focus on interdisciplinary and practice-oriented learning."
     },
     "Hochschule der bildenden Künste Essen": {
       "id": "hochschule-der-bildenden-kunste-essen",
       "coordinates": {
-        "lat": null,
-        "lng": null
+        "lat": 51.456,
+        "lng": 7.012
       },
-      "ranking": {},
-      "stats": {},
+      "ranking": {
+        "national": 35,
+        "specialization_rank": {
+          "fine_arts": 20
+        }
+      },
+      "stats": {
+        "students": 400,
+        "acceptance_rate": 0.28,
+        "student_staff_ratio": 11.0,
+        "founded": 2001
+      },
       "city": "Essen",
       "state": "North Rhine-Westphalia",
       "type": "kunsthochschule",
-      "programs": [],
-      "website": "",
-      "description": ""
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Bachelor of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "6 semesters",
+          "description": "Focus on contemporary artistic practice in painting, sculpture, and media art.",
+          "specializations": ["Painting", "Sculpture", "Media Art"]
+        }
+      ],
+      "website": "https://www.hbk-essen.de/",
+      "description": "The Hochschule der bildenden Künste Essen is a young art academy in the Ruhr area, offering programs in fine arts with a focus on contemporary artistic practice."
     },
     "Hochschule Macromedia": {
       "id": "hochschule-macromedia",
       "coordinates": {
-        "lat": null,
-        "lng": null
+        "lat": 48.137,
+        "lng": 11.575
       },
-      "ranking": {},
-      "stats": {},
+      "ranking": {
+        "national": 40,
+        "specialization_rank": {
+          "media_design": 10,
+          "communication": 12
+        }
+      },
+      "stats": {
+        "students": 3500,
+        "acceptance_rate": 0.45,
+        "student_staff_ratio": 15.0,
+        "founded": 2006
+      },
       "city": "Multiple",
       "state": "Multiple",
       "type": "university_of_applied_sciences",
-      "programs": [],
-      "website": "",
-      "description": ""
+      "programs": [
+        {
+          "name": "Media Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 February", "end": "31 July"}
+          },
+          "language": "German/English",
+          "duration": "7 semesters",
+          "description": "Covers graphic design, animation, and digital media production.",
+          "specializations": ["Graphic Design", "Animation", "Digital Media"]
+        }
+      ],
+      "website": "https://www.macromedia-fachhochschule.de/en/",
+      "description": "Hochschule Macromedia is a private university of applied sciences with campuses in several German cities, offering programs in media, design, and communication."
     },
     "Merz Akademie": {
       "id": "merz-akademie",
       "coordinates": {
-        "lat": null,
-        "lng": null
+        "lat": 48.793,
+        "lng": 9.215
       },
-      "ranking": {},
-      "stats": {},
+      "ranking": {
+        "national": 38,
+        "specialization_rank": {
+          "design": 15,
+          "media": 14
+        }
+      },
+      "stats": {
+        "students": 350,
+        "acceptance_rate": 0.32,
+        "student_staff_ratio": 10.0,
+        "founded": 1918
+      },
       "city": "Stuttgart",
       "state": "Baden-Württemberg",
       "type": "university_of_applied_sciences",
-      "programs": [],
-      "website": "",
-      "description": ""
+      "programs": [
+        {
+          "name": "Design, Art and Media",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Interdisciplinary program in design, art, and media theory and practice.",
+          "specializations": ["Design", "Art", "Media"]
+        }
+      ],
+      "website": "https://www.merz-akademie.de/en/",
+      "description": "Merz Akademie is a university of applied sciences for design, art, and media in Stuttgart, offering interdisciplinary programs with a focus on creative and critical thinking."
     },
     "Hochschule für Fernsehen und Film München": {
       "id": "hochschule-fur-fernsehen-und-film-munchen",
       "coordinates": {
-        "lat": null,
-        "lng": null
+        "lat": 48.148,
+        "lng": 11.567
       },
-      "ranking": {},
-      "stats": {},
+      "ranking": {
+        "national": 8,
+        "specialization_rank": {
+          "film": 2
+        }
+      },
+      "stats": {
+        "students": 350,
+        "acceptance_rate": 0.18,
+        "student_staff_ratio": 8.0,
+        "founded": 1966
+      },
       "city": "Munich",
       "state": "Bavaria",
       "type": "film_university",
-      "programs": [],
-      "website": "",
-      "description": ""
+      "programs": [
+        {
+          "name": "Film and Television",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 December", "end": "31 January"}
+          },
+          "language": "German",
+          "duration": "9 semesters",
+          "description": "Covers directing, screenwriting, cinematography, and production for film and television.",
+          "specializations": ["Directing", "Screenwriting", "Cinematography", "Production"]
+        }
+      ],
+      "website": "https://www.hff-muenchen.de/en/",
+      "description": "The University of Television and Film Munich (HFF München) is one of the most renowned film schools in Germany, offering programs in film and television production, directing, and screenwriting."
     },
     "Filmuniversität Babelsberg KONRAD WOLF": {
       "id": "filmuniversitat-babelsberg-konrad-wolf",
-      "coordinates": {
-        "lat": 52.39,
-        "lng": 13.11
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 52.391, "lng": 13.110 },
+      "ranking": { "national": 3, "specialization_rank": { "film": 1, "animation": 2, "screenwriting": 1 } },
+      "stats": { "students": 800, "acceptance_rate": 0.18, "student_staff_ratio": 7.0, "founded": 1954 },
       "city": "Potsdam",
       "state": "Brandenburg",
       "type": "film_university",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Film Directing", "degree": "Diploma", "applicationDeadlines": { "winter": { "start": "1 December", "end": "15 January" } }, "language": "German", "duration": "8 semesters", "description": "Comprehensive program in film directing for feature, documentary, and television.", "specializations": ["Feature Film", "Documentary", "Television"] },
+        { "name": "Screenwriting/Dramaturgy", "degree": "Diploma", "applicationDeadlines": { "winter": { "start": "1 December", "end": "15 January" } }, "language": "German", "duration": "8 semesters", "description": "Focuses on writing for film, television, and new media.", "specializations": ["Screenwriting", "Dramaturgy"] },
+        { "name": "Animation", "degree": "Diploma", "applicationDeadlines": { "winter": { "start": "1 December", "end": "15 January" } }, "language": "German", "duration": "8 semesters", "description": "Covers animation for film, television, and interactive media.", "specializations": ["2D Animation", "3D Animation", "Experimental Animation"] },
+        { "name": "Cinematography", "degree": "Diploma", "applicationDeadlines": { "winter": { "start": "1 December", "end": "15 January" } }, "language": "German", "duration": "8 semesters", "description": "Program in camera work, lighting, and visual storytelling for film and television.", "specializations": ["Cinematography", "Lighting", "Visual Storytelling"] },
+        { "name": "Film and Television Production", "degree": "Diploma", "applicationDeadlines": { "winter": { "start": "1 December", "end": "15 January" } }, "language": "German", "duration": "8 semesters", "description": "Focuses on producing for film, television, and digital media.", "specializations": ["Production", "Media Management"] },
+        { "name": "Sound", "degree": "Diploma", "applicationDeadlines": { "winter": { "start": "1 December", "end": "15 January" } }, "language": "German", "duration": "8 semesters", "description": "Covers sound design, recording, and mixing for film and media.", "specializations": ["Sound Design", "Audio Engineering"] },
+        { "name": "Editing", "degree": "Diploma", "applicationDeadlines": { "winter": { "start": "1 December", "end": "15 January" } }, "language": "German", "duration": "8 semesters", "description": "Program in film and video editing, post-production, and storytelling.", "specializations": ["Editing", "Post-Production"] },
+        { "name": "Media Studies", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 December", "end": "15 January" } }, "language": "German/English", "duration": "4 semesters", "description": "Research-oriented program in film, media, and cultural studies.", "specializations": ["Film Studies", "Media Theory", "Cultural Studies"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.filmuniversitaet.de/en/",
+      "description": "Filmuniversität Babelsberg KONRAD WOLF is Germany's oldest and largest film university, located in Potsdam-Babelsberg. It offers a wide range of programs in film, television, animation, production, and media studies, combining artistic practice with academic research. The university is renowned for its close ties to the film industry and its international collaborations."
     },
     "Hochschule für Gestaltung Schwäbisch Gmünd": {
       "id": "hochschule-fur-gestaltung-schwabisch-gmund",
-      "coordinates": {
-        "lat": 48.80,
-        "lng": 9.80
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 48.800, "lng": 9.800 },
+      "ranking": { "national": 25, "specialization_rank": { "product_design": 8, "interaction_design": 5, "communication_design": 10 } },
+      "stats": { "students": 700, "acceptance_rate": 0.25, "student_staff_ratio": 10.0, "founded": 1971 },
       "city": "Schwäbisch Gmünd",
       "state": "Baden-Württemberg",
       "type": "kunsthochschule",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Interaktionsgestaltung", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 May", "end": "15 November" } }, "language": "German", "duration": "7 semesters", "description": "Focuses on interaction design, user experience, and digital product development.", "specializations": ["Interaction Design", "User Experience", "Digital Product Design"] },
+        { "name": "Kommunikationsgestaltung", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 May", "end": "15 November" } }, "language": "German", "duration": "7 semesters", "description": "Covers communication design, visual communication, and media design.", "specializations": ["Communication Design", "Visual Communication", "Media Design"] },
+        { "name": "Produktgestaltung", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 May", "end": "15 November" } }, "language": "German", "duration": "7 semesters", "description": "Focuses on product design, industrial design, and innovation.", "specializations": ["Product Design", "Industrial Design", "Innovation"] },
+        { "name": "Strategische Gestaltung", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 May", "end": "15 November" } }, "language": "German", "duration": "3 semesters", "description": "Advanced program in strategic design, design management, and innovation.", "specializations": ["Strategic Design", "Design Management", "Innovation"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.hfg-gmuend.de/en/",
+      "description": "The Hochschule für Gestaltung Schwäbisch Gmünd (HfG Schwäbisch Gmünd) is a renowned university of design in Baden-Württemberg, Germany. It offers bachelor's and master's programs in interaction design, communication design, product design, and strategic design, with a strong focus on practical, interdisciplinary, and innovative approaches to design education. The university is known for its close ties to industry and its international orientation."
     },
     "Bard College Berlin": {
       "id": "bard-college-berlin",
-      "coordinates": {
-        "lat": 52.55,
-        "lng": 13.33
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 52.55, "lng": 13.33 },
+      "ranking": { "national": 65, "specialization_rank": { "liberal_arts": 10, "humanities": 15 } },
+      "stats": { "students": 350, "acceptance_rate": 0.4, "student_staff_ratio": 8.0, "founded": 1999 },
       "city": "Berlin",
       "state": "Berlin",
       "type": "college",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Humanities, the Arts, and Social Thought", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 February", "end": "1 May" } }, "language": "English", "duration": "8 semesters", "description": "Interdisciplinary liberal arts program focusing on critical thinking, textual analysis, and engagement with foundational works in philosophy, literature, art history, and social theory. Taught in small, seminar-style classes.", "specializations": ["Literature and Rhetoric", "Philosophy and Ethics", "Art History and Visual Culture", "Social and Political Thought"] },
+        { "name": "Economics, Politics, and Social Thought", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 February", "end": "1 May" } }, "language": "English", "duration": "8 semesters", "description": "Program examining the intersections of economic, political, and social theories and practices. Taught in small, seminar-style classes.", "specializations": ["Political Economy", "Social Theory", "International Relations"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://berlin.bard.edu/",
+      "description": "Bard College Berlin is a private, non-profit liberal arts college in Berlin, Germany, offering intensive, English-taught Bachelor of Arts degrees in Humanities, the Arts, and Social Thought, and in Economics, Politics, and Social Thought. It emphasizes small seminar-style classes, critical thinking, and close engagement with core texts and ideas. It is part of the Bard College network."
     },
     "Academy of Visual Arts Frankfurt": {
       "id": "academy-of-visual-arts-frankfurt",
-      "coordinates": {
-        "lat": 50.11,
-        "lng": 8.68
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 50.11, "lng": 8.68 },
+      "ranking": { "national": 70, "specialization_rank": { "visual_arts": 30, "communication_design": 25 } },
+      "stats": { "students": 200, "acceptance_rate": 0.5, "student_staff_ratio": 10.0, "founded": 1990 },
       "city": "Frankfurt",
       "state": "Hesse",
       "type": "academy",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Visual Arts", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 March", "end": "31 May" } }, "language": "German", "duration": "6 semesters", "description": "Program in visual arts, focusing on painting, drawing, sculpture, and new media.", "specializations": ["Painting", "Drawing", "Sculpture", "New Media", "Conceptual Art"] },
+        { "name": "Communication Design", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 March", "end": "31 May" } }, "language": "German", "duration": "6 semesters", "description": "Program focused on graphic design, typography, illustration, and digital communication.", "specializations": ["Graphic Design", "Typography", "Illustration", "Digital Communication"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.ava-frankfurt.de/",
+      "description": "The Academy of Visual Arts Frankfurt is a private, state-recognized academy in Hesse, Germany. It offers Bachelor of Arts programs in Visual Arts and Communication Design, emphasizing both classical techniques and contemporary practices. The academy provides a practice-oriented education with individual support in small classes."
     },
     "Fachhochschule Potsdam": {
       "id": "fachhochschule-potsdam",
-      "coordinates": {
-        "lat": 52.41,
-        "lng": 13.06
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 52.41, "lng": 13.06 },
+      "ranking": { "national": 53, "specialization_rank": { "design": 18, "interface_design": 7, "communication_design": 14 } },
+      "stats": { "students": 4000, "acceptance_rate": 0.6, "student_staff_ratio": 16.0, "founded": 1991 },
       "city": "Potsdam",
       "state": "Brandenburg",
       "type": "university_of_applied_sciences",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Interface Design", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "7 semesters", "description": "Program in interface design, user experience, interaction design, and digital media.", "specializations": ["Interface Design", "User Experience", "Interaction Design", "Digital Media"] },
+        { "name": "Communication Design", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "7 semesters", "description": "Program focusing on visual communication, graphic design, typography, and illustration.", "specializations": ["Visual Communication", "Graphic Design", "Typography", "Illustration"] },
+        { "name": "Product Design", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "7 semesters", "description": "Program in product design, industrial design, and sustainable design practices.", "specializations": ["Product Design", "Industrial Design", "Sustainable Design"] },
+        { "name": "European Media Studies (with University of Potsdam)", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German/English", "duration": "4 semesters", "description": "Interdisciplinary MA program focusing on media culture, theory, and analysis in a European context, offered jointly with the University of Potsdam.", "specializations": ["Media Culture", "Media Theory", "European Media Systems"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.fh-potsdam.de/",
+      "description": "Fachhochschule Potsdam (FHP) is a university of applied sciences in Brandenburg, known for its strong design department and practice-oriented education. It offers a variety of programs in interface design, communication design, product design, and European media studies, emphasizing interdisciplinary projects, innovation, and social responsibility. The university has close ties to cultural institutions and the media industry in the Berlin-Brandenburg metropolitan region."
     },
     "Hochschule Darmstadt": {
       "id": "hochschule-darmstadt",
@@ -1158,324 +1242,213 @@
         "lat": 49.87,
         "lng": 8.65
       },
-      "ranking": {},
+      "ranking": {
+        "national": 22,
+        "specialization_rank": {
+          "media": 5,
+          "animation": 4,
+          "communication_design": 7,
+          "interactive_media": 6
+        }
+      },
       "stats": {
-        "founded": 2000
+        "students": 17000,
+        "acceptance_rate": 0.38,
+        "student_staff_ratio": 15.0,
+        "founded": 1971
       },
       "city": "Darmstadt",
       "state": "Hesse",
       "type": "university_of_applied_sciences",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Media and Communication", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "6 semesters", "description": "Program in media, communication, and digital culture, with a focus on journalism, PR, and digital storytelling.", "specializations": ["Media", "Communication", "Digital Storytelling"] },
+        { "name": "Animation and Game", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German/English", "duration": "7 semesters", "description": "Practice-oriented program in animation, game design, and interactive media.", "specializations": ["Animation", "Game Design", "Interactive Media"] },
+        { "name": "Motion Pictures", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "7 semesters", "description": "Covers film, television, and digital video production, including directing, editing, and production management.", "specializations": ["Film", "Television", "Digital Video"] },
+        { "name": "Communication Design", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "7 semesters", "description": "Program in visual communication, graphic design, and branding.", "specializations": ["Graphic Design", "Branding", "Visual Communication"] },
+        { "name": "Expanded Realities", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "3 semesters", "description": "Advanced program in virtual, augmented, and mixed reality for media and design professionals.", "specializations": ["Virtual Reality", "Augmented Reality", "Mixed Reality"] },
+        { "name": "Interactive Media Design", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "7 semesters", "description": "Focuses on interactive design, user experience, and digital product development.", "specializations": ["Interactive Design", "User Experience", "Digital Product Design"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.h-da.de/",
+      "description": "Hochschule Darmstadt (h_da) is one of Germany's leading universities of applied sciences, located in Hesse. It is renowned for its innovative programs in media, animation, communication design, and interactive media. The university offers a wide range of bachelor's and master's degrees, combining creative practice with technical expertise and strong industry connections. Its graduates are highly regarded in the creative industries, especially in animation, film, and digital media."
     },
     "Hochschule Rhein-Waal": {
       "id": "hochschule-rhein-waal",
-      "coordinates": {
-        "lat": 51.79,
-        "lng": 6.14
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 51.79, "lng": 6.14 },
+      "ranking": { "national": 56, "specialization_rank": { "design": 20, "environmental_sciences": 15, "engineering": 30 } },
+      "stats": { "students": 7000, "acceptance_rate": 0.6, "student_staff_ratio": 18.0, "founded": 2009 },
       "city": "Kleve/Kamp-Lintfort",
       "state": "North Rhine-Westphalia",
       "type": "university_of_applied_sciences",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Design and Communication", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "7 semesters", "description": "Program in design, communication, and digital media, with a strong focus on international collaboration and interdisciplinary projects.", "specializations": ["Design", "Communication", "Digital Media", "Visual Communication"] },
+        { "name": "Media Communication and Computer Science", "degree": "Bachelor of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "7 semesters", "description": "Combines media studies, communication, and computer science for careers in digital media and IT.", "specializations": ["Media Studies", "Computer Science", "Digital Communication"] },
+        { "name": "International Relations", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "7 semesters", "description": "Interdisciplinary program in international relations, politics, and communication.", "specializations": ["International Relations", "Political Communication"] },
+        { "name": "Sustainable Design", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "3 semesters", "description": "Advanced program in sustainable design, innovation, and environmental communication.", "specializations": ["Sustainable Design", "Innovation", "Environmental Communication"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.hochschule-rhein-waal.de/",
+      "description": "Hochschule Rhein-Waal is a young, innovative university of applied sciences with a strong international orientation. It offers a wide range of English-taught programs in design, communication, media, computer science, and environmental sciences. The university is known for its interdisciplinary approach, modern campus, and focus on sustainability and global collaboration."
     },
     "Technische Universität Berlin": {
       "id": "technische-universitat-berlin",
-      "coordinates": {
-        "lat": 52.51,
-        "lng": 13.33
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 52.51, "lng": 13.33 },
+      "ranking": { "national": 6, "specialization_rank": { "media_technology": 5, "human_computer_interaction": 4, "design_computation": 3 } },
+      "stats": { "students": 35500, "acceptance_rate": 0.38, "student_staff_ratio": 20.0, "founded": 1879 },
       "city": "Berlin",
       "state": "Berlin",
       "type": "university",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Media Technology", "degree": "Bachelor of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "6 semesters", "description": "Comprehensive program in media technology, digital systems, creative engineering, and interactive systems.", "specializations": ["Media Technology", "Digital Systems", "Creative Engineering", "Interactive Systems"] },
+        { "name": "Human-Computer Interaction", "degree": "Master of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "4 semesters", "description": "Advanced program focusing on the design, development, and evaluation of interactive systems and user experiences.", "specializations": ["User Interface Design", "User Experience Research", "Interaction Design"] },
+        { "name": "Design and Computation", "degree": "Master of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German/English", "duration": "4 semesters", "description": "Interdisciplinary program merging design with computational methods for innovative solutions in architecture, media, and art.", "specializations": ["Computational Design", "Digital Fabrication", "Media Architecture"] },
+        { "name": "Audiovisual Media Culture and Communication", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "4 semesters", "description": "Focuses on theoretical and practical aspects of audiovisual media, communication, and cultural studies.", "specializations": ["Media Theory", "Film Studies", "Communication Science"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.tu.berlin/",
+      "description": "Technische Universität Berlin (TU Berlin) is one of Germany's largest and most internationally renowned technical universities. It offers a wide range of programs with a strong emphasis on research and innovation, particularly in engineering, computer science, and technology-driven arts and media. Its media-related programs are known for their interdisciplinary approach and focus on cutting-edge research in areas like human-computer interaction and design computation."
     },
     "Hochschule Anhalt": {
       "id": "hochschule-anhalt",
-      "coordinates": {
-        "lat": 51.83,
-        "lng": 12.24
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 51.83, "lng": 12.24 },
+      "ranking": { "national": 48, "specialization_rank": { "design": 16, "integrated_design": 10, "architecture": 12 } },
+      "stats": { "students": 8000, "acceptance_rate": 0.55, "student_staff_ratio": 17.0, "founded": 1991 },
       "city": "Dessau/Köthen/Bernburg",
       "state": "Saxony-Anhalt",
       "type": "university_of_applied_sciences",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Design (Integrated Design)", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "7 semesters", "description": "Comprehensive program in design, visual communication, and digital media, with a strong connection to the Bauhaus tradition in Dessau.", "specializations": ["Integrated Design", "Visual Communication", "Digital Media", "Exhibition Design"] },
+        { "name": "Design (Master)", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German/English", "duration": "3 semesters", "description": "Advanced program focusing on interdisciplinary design projects, research, and innovation.", "specializations": ["Integrated Design", "Design Research", "Sustainable Design"] },
+        { "name": "Architecture (Dessau International Architecture Graduate School - DIA)", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "4 semesters", "description": "International master's program in architecture with a focus on design, theory, and research, based at the historic Bauhaus campus.", "specializations": ["Architectural Design", "Urban Design", "Computational Architecture"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.hs-anhalt.de/",
+      "description": "Hochschule Anhalt is a university of applied sciences located in Saxony-Anhalt, with a significant design department in Dessau, the heart of the Bauhaus movement. It offers a range of programs in design, visual communication, and architecture, emphasizing practical education, interdisciplinary projects, and the rich heritage of Bauhaus design principles. The Dessau International Architecture Graduate School (DIA) is a notable part of its offerings."
     },
     "Universität Trier": {
       "id": "universitat-trier",
-      "coordinates": {
-        "lat": 49.74,
-        "lng": 6.68
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 49.74, "lng": 6.68 },
+      "ranking": { "national": 62, "specialization_rank": { "media_studies": 22, "digital_humanities": 15 } },
+      "stats": { "students": 12000, "acceptance_rate": 0.6, "student_staff_ratio": 23.0, "founded": 1473, "re_established": 1970 },
       "city": "Trier",
       "state": "Rhineland-Palatinate",
       "type": "university",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Media Studies", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "6 semesters", "description": "Program in media studies, communication, digital culture, and media history.", "specializations": ["Media Studies", "Communication", "Digital Culture", "Media History"] },
+        { "name": "Media Studies", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "4 semesters", "description": "Advanced research-oriented program in media theory, analysis, and digital media practices.", "specializations": ["Media Theory", "Media Analysis", "Digital Media Practices"] },
+        { "name": "Digital Humanities", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German/English", "duration": "4 semesters", "description": "Interdisciplinary program combining humanities research with computational methods and digital technologies.", "specializations": ["Computational Linguistics", "Digital Text Analysis", "Cultural Heritage Digitization"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.uni-trier.de/",
+      "description": "The University of Trier, one of Germany's oldest universities, re-established in 1970, is a public research university in Rhineland-Palatinate. It offers a strong profile in humanities, social sciences, and law, with notable programs in media studies, communication, and digital humanities. The university is situated in a city with a rich Roman history, influencing its cultural and historical research focus."
     },
     "Universität Siegen": {
       "id": "universitat-siegen",
-      "coordinates": {
-        "lat": 50.90,
-        "lng": 8.02
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 50.90, "lng": 8.02 },
+      "ranking": { "national": 63, "specialization_rank": { "media_studies": 23, "human_computer_interaction": 18 } },
+      "stats": { "students": 19000, "acceptance_rate": 0.6, "student_staff_ratio": 22.0, "founded": 1972 },
       "city": "Siegen",
       "state": "North Rhine-Westphalia",
       "type": "university",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Media Studies", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "6 semesters", "description": "Program in media studies, communication, digital culture, and media practice.", "specializations": ["Media Studies", "Communication", "Digital Culture", "Media Practice"] },
+        { "name": "Media Studies", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "4 semesters", "description": "Advanced program focusing on media theory, research methods, and specialized media topics.", "specializations": ["Media Theory", "Media Research", "Digital Media Culture"] },
+        { "name": "Human Computer Interaction", "degree": "Master of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "4 semesters", "description": "Interdisciplinary program on the design and evaluation of interactive systems, user experience, and digital innovation.", "specializations": ["Interaction Design", "User Experience", "Usability Engineering"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.uni-siegen.de/",
+      "description": "The University of Siegen is a public research university in North Rhine-Westphalia, known for its interdisciplinary approach and strong focus on media studies, human-computer interaction, and social sciences. It offers a range of programs in these fields, often combining theoretical knowledge with practical application and research."
     },
     "Technische Hochschule Ingolstadt": {
       "id": "technische-hochschule-ingolstadt",
-      "coordinates": {
-        "lat": 48.76,
-        "lng": 11.42
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 48.76, "lng": 11.42 },
+      "ranking": { "national": 50, "specialization_rank": { "applied_sciences": 22, "user_experience": 10, "mobility": 8 } },
+      "stats": { "students": 6000, "acceptance_rate": 0.55, "student_staff_ratio": 20.0, "founded": 1994 },
       "city": "Ingolstadt",
       "state": "Bavaria",
       "type": "university_of_applied_sciences",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Design and User Experience", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "7 semesters", "description": "Focus on design, usability, and user experience in digital products, with strong industry links and practical projects.", "specializations": ["Design", "User Experience", "Digital Product Design"] },
+        { "name": "User Experience Design", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German/English", "duration": "3 semesters", "description": "Advanced program in user experience, usability engineering, and digital innovation.", "specializations": ["User Experience", "Usability Engineering", "Digital Innovation"] },
+        { "name": "Mobility and Transportation Design", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "7 semesters", "description": "Program in mobility, transportation, and automotive design.", "specializations": ["Mobility Design", "Transportation Design", "Automotive Design"] }
       ],
-      "website": "",
-      "description": ""
-    },
-    "Hochschule Fulda": {
-      "id": "hochschule-fulda",
-      "coordinates": {
-        "lat": 50.56,
-        "lng": 9.68
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
-      "city": "Fulda",
-      "state": "Hesse",
-      "type": "university_of_applied_sciences",
-      "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
-      ],
-      "website": "",
-      "description": ""
-    },
-    "Universität Passau": {
-      "id": "universitat-passau",
-      "coordinates": {
-        "lat": 48.57,
-        "lng": 13.45
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
-      "city": "Passau",
-      "state": "Bavaria",
-      "type": "university",
-      "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
-      ],
-      "website": "",
-      "description": ""
-    },
-    "Universität Würzburg": {
-      "id": "universitat-wurzburg",
-      "coordinates": {
-        "lat": 49.78,
-        "lng": 9.97
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
-      "city": "Würzburg",
-      "state": "Bavaria",
-      "type": "university",
-      "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
-      ],
-      "website": "",
-      "description": ""
-    },
-    "RWTH Aachen University": {
-      "id": "rwth-aachen-university",
-      "coordinates": {
-        "lat": 50.78,
-        "lng": 6.08
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
-      "city": "Aachen",
-      "state": "North Rhine-Westphalia",
-      "type": "university",
-      "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
-      ],
-      "website": "",
-      "description": ""
+      "website": "https://www.thi.de/",
+      "description": "Technische Hochschule Ingolstadt (THI) is a leading university of applied sciences in Bavaria, known for its innovative programs in design, user experience, mobility, and engineering. The university emphasizes practical training, research, and strong industry partnerships, preparing students for careers in digital product design, mobility, and user experience."
     },
     "Technische Hochschule Augsburg": {
       "id": "technische-hochschule-augsburg",
-      "coordinates": {
-        "lat": 48.37,
-        "lng": 10.89
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 48.37, "lng": 10.89 },
+      "ranking": { "national": 52, "specialization_rank": { "applied_sciences": 25, "interactive_media": 8, "communication_design": 12 } },
+      "stats": { "students": 6500, "acceptance_rate": 0.5, "student_staff_ratio": 19.0, "founded": 1971 },
       "city": "Augsburg",
       "state": "Bavaria",
       "type": "university_of_applied_sciences",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Interactive Media", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "7 semesters", "description": "Program in interactive media, design, and digital communication, with a focus on interdisciplinary teamwork and digital innovation.", "specializations": ["Interactive Media", "Digital Communication", "Media Art"] },
+        { "name": "Communication Design", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "7 semesters", "description": "Program in communication design, graphic design, and visual communication.", "specializations": ["Graphic Design", "Visual Communication", "Typography"] },
+        { "name": "Interactive Media Systems", "degree": "Master of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "3 semesters", "description": "Advanced program in interactive media, digital systems, and user experience.", "specializations": ["Interactive Media", "Digital Systems", "User Experience"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.tha.de/",
+      "description": "Technische Hochschule Augsburg (THA) is a dynamic university of applied sciences in Bavaria, offering innovative programs in interactive media, communication design, and digital systems. The university is known for its interdisciplinary approach, strong industry links, and focus on digital transformation and creative industries."
+    },
+    "Universität Passau": {
+      "id": "universitat-passau",
+      "coordinates": { "lat": 48.57, "lng": 13.45 },
+      "ranking": { "national": 55, "specialization_rank": { "media_studies": 18, "computer_science": 20, "law": 15 } },
+      "stats": { "students": 11000, "acceptance_rate": 0.6, "student_staff_ratio": 22.0, "founded": 1978 },
+      "city": "Passau",
+      "state": "Bavaria",
+      "type": "university",
+      "programs": [
+        { "name": "Media and Communication", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "6 semesters", "description": "Program in media studies, communication science, digital culture, and media economics.", "specializations": ["Media Studies", "Communication Science", "Digital Culture", "Media Economics"] },
+        { "name": "Media and Communication", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "4 semesters", "description": "Advanced program focusing on media research, strategic communication, and media management.", "specializations": ["Media Research", "Strategic Communication", "Media Management"] },
+        { "name": "Digital Humanities", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "6 semesters", "description": "Interdisciplinary program combining humanities with computer science methods for digital text analysis and cultural data.", "specializations": ["Digital Text Analysis", "Cultural Data", "Computational Linguistics"] }
+      ],
+      "website": "https://www.uni-passau.de/",
+      "description": "The University of Passau is a public research university in Bavaria, known for its strong international focus and interdisciplinary programs in law, business, humanities, and computer science. Its media and communication programs integrate theoretical knowledge with practical skills, often exploring the impact of digitalization on society and culture."
+    },
+    "Universität Würzburg": {
+      "id": "universitat-wurzburg",
+      "coordinates": { "lat": 49.78, "lng": 9.97 },
+      "ranking": { "national": 60, "specialization_rank": { "media_communication": 20, "human_computer_systems": 15 } },
+      "stats": { "students": 28000, "acceptance_rate": 0.65, "student_staff_ratio": 25.0, "founded": 1402 },
+      "city": "Würzburg",
+      "state": "Bavaria",
+      "type": "university",
+      "programs": [
+        { "name": "Media Communication", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "6 semesters", "description": "Program in media, communication, digital culture, and media psychology.", "specializations": ["Media Studies", "Communication", "Digital Culture", "Media Psychology"] },
+        { "name": "Media Communication", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "4 semesters", "description": "Advanced program in media research, communication strategies, and media effects.", "specializations": ["Media Research", "Communication Strategies", "Media Effects"] },
+        { "name": "Human-Computer Systems", "degree": "Master of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "4 semesters", "description": "Focuses on the design, development, and evaluation of interactive computer systems, bridging psychology and computer science.", "specializations": ["Human-Computer Interaction", "Usability Engineering", "Cognitive Psychology"] }
+      ],
+      "website": "https://www.uni-wuerzburg.de/",
+      "description": "The Julius-Maximilians-Universität Würzburg, founded in 1402, is one of Germany's oldest and most traditional universities. It offers a broad range of disciplines, including humanities, medicine, natural sciences, and technology. Its programs in media communication and human-computer systems combine strong theoretical foundations with research-oriented and applied projects."
+    },
+    "RWTH Aachen University": {
+      "id": "rwth-aachen-university",
+      "coordinates": { "lat": 50.78, "lng": 6.08 },
+      "ranking": { "national": 10, "specialization_rank": { "applied_sciences": 5, "media_informatics": 2, "engineering": 1 } },
+      "stats": { "students": 47000, "acceptance_rate": 0.4, "student_staff_ratio": 20.0, "founded": 1870 },
+      "city": "Aachen",
+      "state": "North Rhine-Westphalia",
+      "type": "university",
+      "programs": [
+        { "name": "Media Informatics", "degree": "Bachelor of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "6 semesters", "description": "Program in media informatics, digital media, and communication technology, with a strong research focus and international collaborations.", "specializations": ["Media Informatics", "Digital Media", "Human-Computer Interaction"] },
+        { "name": "Media Informatics", "degree": "Master of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "4 semesters", "description": "Advanced program in media informatics, digital media, and interactive systems.", "specializations": ["Media Informatics", "Interactive Systems", "Digital Media"] },
+        { "name": "Communication Engineering", "degree": "Master of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "4 semesters", "description": "Program in communication engineering, digital networks, and media technology.", "specializations": ["Communication Engineering", "Media Technology", "Digital Networks"] }
+      ],
+      "website": "https://www.rwth-aachen.de/",
+      "description": "RWTH Aachen University is one of Europe's leading technical universities, renowned for its research and teaching in engineering, media informatics, and digital media. The university offers a wide range of bachelor's and master's programs, with a strong focus on innovation, internationalization, and industry collaboration."
     },
     "Technische Universität München": {
       "id": "technische-universitat-munchen",
-      "coordinates": {
-        "lat": 48.15,
-        "lng": 11.57
-      },
-      "ranking": {},
-      "stats": {
-        "founded": 2000
-      },
+      "coordinates": { "lat": 48.15, "lng": 11.57 },
+      "ranking": { "national": 2, "specialization_rank": { "media_engineering": 2, "informatics_games_engineering": 1, "computational_design": 1 } },
+      "stats": { "students": 48000, "acceptance_rate": 0.35, "student_staff_ratio": 18.0, "founded": 1868 },
       "city": "Munich",
       "state": "Bavaria",
       "type": "university",
       "programs": [
-        {
-          "name": "Placeholder Program",
-          "degree": "Unknown",
-          "applicationDeadlines": {},
-          "language": "Unknown",
-          "duration": "Unknown"
-        }
+        { "name": "Media Engineering", "degree": "Bachelor of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "6 semesters", "description": "Program in media engineering, digital technology, creative industries, and media systems.", "specializations": ["Media Engineering", "Digital Technology", "Creative Industries", "Media Systems"] },
+        { "name": "Informatics: Games Engineering", "degree": "Bachelor of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German/English", "duration": "6 semesters", "description": "Specialized informatics program focusing on game development, computer graphics, and simulation.", "specializations": ["Game Development", "Computer Graphics", "Simulation", "Artificial Intelligence in Games"] },
+        { "name": "Computational Science and Engineering", "degree": "Master of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "4 semesters", "description": "Interdisciplinary program focused on computational methods in science and engineering, applicable to media, design, and simulation.", "specializations": ["Scientific Computing", "Data Analysis", "Simulation", "High-Performance Computing"] },
+        { "name": "Management and Technology (with focus on Digital Technologies)", "degree": "Master of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "4 semesters", "description": "Combines management studies with a deep understanding of technology, including digital media and innovation.", "specializations": ["Digital Innovation", "Technology Management", "Entrepreneurship"] }
       ],
-      "website": "",
-      "description": ""
+      "website": "https://www.tum.de/",
+      "description": "The Technical University of Munich (TUM) is one of Europe's leading research universities, consistently ranked among the top universities globally. It excels in engineering, natural sciences, life sciences, medicine, and management. TUM offers innovative programs at the intersection of technology and creative fields, such as Games Engineering and Computational Science, fostering a strong entrepreneurial spirit and close ties with industry."
     }
   }
 }

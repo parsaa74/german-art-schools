@@ -20,7 +20,7 @@ export default function D3VisualizationPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-[#101820] to-[#18212B] p-4 md:p-8 font-inter">
+    <main className="min-h-screen p-4 md:p-8 font-inter" style={{ background: 'transparent' }}>
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-2xl md:text-3xl font-bold text-white font-cinzel">

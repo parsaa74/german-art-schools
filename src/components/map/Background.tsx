@@ -18,6 +18,7 @@ const backgroundFragmentShader = /* glsl */`
   uniform float time;
   uniform vec2 resolution;
   uniform float isDarkMode;
+  uniform float transition;
   varying vec2 vUv;
 
   // Noise function (e.g., Simplex or Perlin - using a simple one here for brevity)
@@ -63,51 +64,61 @@ const backgroundFragmentShader = /* glsl */`
   }
 
   void main() {
-    // Adjust UVs based on resolution to avoid stretching
-    vec2 uv = vUv; // Use vUv directly for screen space
+    vec2 uv = vUv;
     vec2 aspectCorrectedUv = uv * vec2(resolution.x / resolution.y, 1.0);
 
-    // Evolving noise pattern
-    float noisePattern = fbm(aspectCorrectedUv * 2.5 + time * 0.05); // Slower evolution, adjust scale
-
-    // Add another layer of slower, larger noise for variation
+    float noisePattern = fbm(aspectCorrectedUv * 2.5 + time * 0.05);
     float slowNoise = fbm(aspectCorrectedUv * 0.8 + time * 0.02);
 
-    // Color mapping - create a dark, ethereal look
-    vec3 color1 = vec3(0.01, 0.02, 0.05); // Deep blue/purple
-    vec3 color2 = vec3(0.05, 0.1, 0.2);  // Slightly lighter blue
-    vec3 color3 = vec3(0.1, 0.05, 0.15); // Hint of magenta/purple
+    // Twilight palette
+    vec3 tw1 = vec3(0.02, 0.04, 0.08);
+    vec3 tw2 = vec3(0.04, 0.08, 0.16);
+    vec3 tw3 = vec3(0.08, 0.12, 0.24);
 
-    // --- FIX: Define combinedNoise before use ---
-    float combinedNoise = noisePattern * 0.7 + slowNoise * 0.3; // Combine noise patterns
+    // Sunset palette (warmer tones)
+    vec3 su1 = vec3(0.05, 0.1, 0.2);
+    vec3 su2 = vec3(0.1, 0.2, 0.3);
+    vec3 su3 = vec3(0.15, 0.3, 0.4);
 
-    vec3 finalColor = mix(color1, color2, smoothstep(0.3, 0.6, combinedNoise));
-    finalColor = mix(finalColor, color3, smoothstep(0.5, 0.8, slowNoise * 0.5 + noisePattern * 0.5));
+    // Combine noise patterns
+    float combinedNoise = noisePattern * 0.7 + slowNoise * 0.3;
+
+    // Generate each palette variation
+    vec3 twilight = mix(tw1, tw2, smoothstep(0.3, 0.6, combinedNoise));
+    twilight = mix(twilight, tw3, smoothstep(0.5, 0.8, slowNoise * 0.5 + noisePattern * 0.5));
+
+    vec3 sunset = mix(su1, su2, smoothstep(0.3, 0.6, combinedNoise));
+    sunset = mix(sunset, su3, smoothstep(0.5, 0.8, slowNoise * 0.5 + noisePattern * 0.5));
+
+    // Blend between twilight and sunset based on transition
+    vec3 finalColor = mix(twilight, sunset, transition);
 
     // Add subtle vignette
-    float vignette = smoothstep(0.8, 0.3, length(uv - 0.5)); // Inward vignette
-    finalColor *= vignette * 1.2; // Apply vignette and slightly boost brightness
+    float vignette = smoothstep(0.8, 0.3, length(uv - 0.5));
+    finalColor *= vignette * 1.2;
 
-    // Blend with dark background when dark mode is active
-    vec3 darkBg = vec3(0.005, 0.005, 0.005);
+    // Dark mode overlay
+    vec3 darkBg = vec3(0.005);
     finalColor = mix(finalColor, darkBg, isDarkMode);
-
-    // Add subtle grain (optional)
-    // finalColor += (random(uv + time * 0.1) - 0.5) * 0.03;
 
     gl_FragColor = vec4(finalColor, 1.0);
   }
 `;
 // --- END: Shaders for Background Quad ---
 
+interface BackgroundProps {
+  animateTransition?: boolean;
+}
 
-export default function Background() {
+export default function Background({ animateTransition = false }: BackgroundProps) {
   const materialRef = useRef<THREE.ShaderMaterial>(null);
   const { size } = useThree(); // Get viewport size for resolution uniform
 
   const uniforms = useMemo(() => ({
       time: { value: 0.0 },
-      resolution: { value: new THREE.Vector2(size.width * window.devicePixelRatio, size.height * window.devicePixelRatio) }
+      resolution: { value: new THREE.Vector2(size.width * window.devicePixelRatio, size.height * window.devicePixelRatio) },
+      isDarkMode: { value: 0.0 }, // Default to light mode
+      transition: { value: 0.0 }
   }), [size]);
 
   // Update resolution uniform if size changes
@@ -115,23 +126,42 @@ export default function Background() {
       uniforms.resolution.value.set(size.width * window.devicePixelRatio, size.height * window.devicePixelRatio);
   }, [size, uniforms]);
 
+  // Handle transition timing inside the shader
+  const transitionStart = useRef<number | null>(null);
+  useEffect(() => {
+    if (animateTransition) {
+      transitionStart.current = performance.now() / 1000; // Convert to seconds
+    }
+  }, [animateTransition]);
+
   useFrame(({ clock }) => {
     if (materialRef.current) {
       materialRef.current.uniforms.time.value = clock.getElapsedTime();
+      // update transition uniform over 2 seconds
+      if (transitionStart.current !== null) {
+        const elapsed = clock.getElapsedTime() - transitionStart.current;
+        const t = Math.min(elapsed / 2.0, 1.0);
+        materialRef.current.uniforms.transition.value = t;
+        if (t >= 1.0) {
+          transitionStart.current = null;
+        }
+      }
     }
   });
 
   return (
     // Fullscreen Quad
-    <mesh renderOrder={-1}> {/* Render behind everything else */}
+    <mesh renderOrder={-1000}> {/* Ensure it renders first */}
       <planeGeometry args={[2, 2]} /> {/* Simple plane covering the viewport */}
       <shaderMaterial
         ref={materialRef}
         vertexShader={backgroundVertexShader}
         fragmentShader={backgroundFragmentShader}
         uniforms={uniforms}
-        depthWrite={false} // No need to write to depth buffer
-        depthTest={false} // Prevent interference with objects behind
+        depthWrite={false}
+        depthTest={false}
+        transparent={false}
+        toneMapped={false}
       />
     </mesh>
   );

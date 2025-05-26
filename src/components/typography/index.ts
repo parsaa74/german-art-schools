@@ -1,4 +1,5 @@
 export { Text2D } from './Text2D'
 export { Text3D } from './Text3D'
 export { CreativeTitle } from './CreativeTitle'
+export { CreativeTitleHTML } from './CreativeTitleHTML'
 export * from './SubText' 

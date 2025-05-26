@@ -51,7 +51,7 @@ export default function D3VisualizationContainer() {
 
   return (
     <motion.div
-      className="d3-visualization-container p-4 rounded-xl bg-gradient-to-br from-[#101820]/90 to-[#18212B]/90 backdrop-blur-lg shadow-xl"
+      className="d3-visualization-container font-inter p-4 rounded-xl backdrop-blur-lg shadow-xl"
       initial={{ opacity: 0, y: 20 }}
       animate={{
         opacity: isVisible ? 1 : 0,

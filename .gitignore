@@ -27,6 +27,7 @@ Thumbs.db
 .cursorignore
 .roo/
 mcp_servers.json
+.roomodes
 
 # Ignore documentation except README and LICENSE
 *.md
