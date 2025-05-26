@@ -1,10 +1,231 @@
 {
   "statistics": {
     "last_updated": "2025-04-19",
-    "total_schools": 73,
-    "total_programs": 180
+    "total_schools": 77,
+    "total_programs": 190
   },
   "universities": {
+    "Hochschule für bildende Künste Hamburg": {
+      "id": "hochschule-fur-bildende-kunste-hamburg",
+      "coordinates": {
+        "lat": 53.5584,
+        "lng": 9.9665
+      },
+      "ranking": {
+        "national": 15,
+        "specialization_rank": {
+          "fine_arts": 8,
+          "visual_arts": 7,
+          "art_education": 9
+        }
+      },
+      "stats": {
+        "students": 850,
+        "acceptance_rate": 0.18,
+        "student_staff_ratio": 9.0,
+        "founded": 1767
+      },
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Bachelor of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Comprehensive fine arts program with focus on individual artistic development and interdisciplinary approaches.",
+          "specializations": ["Painting", "Sculpture", "Time-based Media", "Photography", "Digital Art"]
+        },
+        {
+          "name": "Fine Arts",
+          "degree": "Master of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Advanced program for deepening artistic practice and research.",
+          "specializations": ["Contemporary Art", "Media Art", "Artistic Research"]
+        },
+        {
+          "name": "Art Education",
+          "degree": "Master of Education",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Program preparing students for teaching art in schools and other educational contexts.",
+          "specializations": ["Art Pedagogy", "Art Theory", "Educational Research"]
+        }
+      ],
+      "website": "https://www.hfbk-hamburg.de/",
+      "description": "The Hamburg University of Fine Arts (HFBK) is one of Germany's most prestigious art academies. Founded in 1767, it offers a wide range of programs in fine arts and art education, with a strong emphasis on contemporary artistic practices and interdisciplinary approaches."
+    },
+    "Hochschule der Bildenden Künste Saar": {
+      "id": "hochschule-der-bildenden-kunste-saar",
+      "coordinates": {
+        "lat": 49.2372,
+        "lng": 6.9964
+      },
+      "ranking": {
+        "national": 28,
+        "specialization_rank": {
+          "fine_arts": 15,
+          "design": 12,
+          "art_education": 14
+        }
+      },
+      "stats": {
+        "students": 450,
+        "acceptance_rate": 0.22,
+        "student_staff_ratio": 10.0,
+        "founded": 1989
+      },
+      "city": "Saarbrücken",
+      "state": "Saarland",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Studio-based fine arts program with emphasis on individual artistic development.",
+          "specializations": ["Painting", "Sculpture", "Installation", "Media Art"]
+        },
+        {
+          "name": "Communication Design",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Program in visual communication, graphic design, and digital media.",
+          "specializations": ["Graphic Design", "Typography", "Interactive Media", "Visual Communication"]
+        },
+        {
+          "name": "Art Education",
+          "degree": "Master of Education",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 May"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Program preparing students for teaching art in schools.",
+          "specializations": ["Art Pedagogy", "Art History", "Educational Research"]
+        }
+      ],
+      "website": "https://www.hbks.uni-saarland.de/",
+      "description": "The Saar College of Fine Arts (HBK Saar) is a public art school in Saarbrücken, Saarland. It offers programs in fine arts, design, and art education, with a focus on practical, conceptual, and theoretical aspects of contemporary art and design practices."
+    },
+    "Hochschule für Bildende Künste Braunschweig": {
+      "id": "hochschule-fur-bildende-kunste-braunschweig",
+      "coordinates": {
+        "lat": 52.2735,
+        "lng": 10.5283
+      },
+      "ranking": {
+        "national": 16,
+        "specialization_rank": {
+          "fine_arts": 9,
+          "design": 11,
+          "art_education": 8
+        }
+      },
+      "stats": {
+        "students": 600,
+        "acceptance_rate": 0.20,
+        "student_staff_ratio": 8.5,
+        "founded": 1963
+      },
+      "city": "Braunschweig",
+      "state": "Lower Saxony",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "30 April"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Comprehensive fine arts program with emphasis on interdisciplinary artistic practices.",
+          "specializations": ["Painting", "Sculpture", "Installation", "Media Art", "Performance"]
+        },
+        {
+          "name": "Industrial Design",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "30 April"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Program focusing on product design, furniture design, and design theory.",
+          "specializations": ["Product Design", "Furniture Design", "Sustainable Design", "Design Theory"]
+        },
+        {
+          "name": "Art Education",
+          "degree": "Master of Education",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "30 April"}
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Program preparing students for teaching art in schools and cultural institutions.",
+          "specializations": ["Art Pedagogy", "Art Theory", "Educational Research"]
+        }
+      ],
+      "website": "https://www.hbk-bs.de/",
+      "description": "The Braunschweig University of Art (HBK Braunschweig) is a public art school in Lower Saxony with a strong focus on interdisciplinary art education. It offers programs in fine arts, design, and art education, emphasizing both practical skills and theoretical knowledge in contemporary art and design practices."
+    },
+    "Hochschule für Musik und Theater Rostock": {
+      "id": "hochschule-fur-musik-und-theater-rostock",
+      "coordinates": {
+        "lat": 54.0924,
+        "lng": 12.0991
+      },
+      "ranking": {
+        "national": 45,
+        "specialization_rank": {
+          "music": 18,
+          "performing_arts": 15
+        }
+      },
+      "stats": {
+        "students": 500,
+        "acceptance_rate": 0.25,
+        "student_staff_ratio": 8.0,
+        "founded": 1994
+      },
+      "city": "Rostock",
+      "state": "Mecklenburg-Vorpommern",
+      "type": "music_theater_academy",
+      "programs": [
+        {
+          "name": "Music",
+          "degree": "Bachelor of Music",
+          "applicationDeadlines": {
+            "winter": {"start": "1 February", "end": "31 March"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Comprehensive music education program with focus on performance and theory.",
+          "specializations": ["Instrumental Performance", "Vocal Performance", "Conducting", "Composition"]
+        }
+      ],
+      "website": "https://www.hmt-rostock.de/",
+      "description": "The Rostock University of Music and Theatre (HMT Rostock) is a public university for music and performing arts in Mecklenburg-Vorpommern, Germany. It offers a wide range of programs in music performance, education, and theater."
+    },
     "Kunstakademie Düsseldorf": {
       "id": "kunstakademie-dusseldorf",
       "coordinates": {
@@ -1067,8 +1288,8 @@
         "student_staff_ratio": 15.0,
         "founded": 2006
       },
-      "city": "Multiple",
-      "state": "Multiple",
+      "city": "Multiple Cities",
+      "state": "Bavaria",
       "type": "university_of_applied_sciences",
       "ncFrei": true,
       "programs": [
