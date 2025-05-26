@@ -106,15 +106,27 @@ export function SchoolNodes() {
 
       if (activeSemesterFilter) {
         const progs = (uni as any).programs || [];
-        const hasSem = activeSemesterFilter === 'winter'
-          ? progs.some((p: any) => p.applicationDeadlines?.winter)
-          : progs.some((p: any) => p.applicationDeadlines?.summer);
-        if (!hasSem) return false;
+        
+        // Check for semester availability in any program
+        const hasSemester = progs.some((p: any) => 
+          p.applicationDeadlines && p.applicationDeadlines[activeSemesterFilter]
+        );
+        
+        console.log(`[DEBUG] University ${uni.name} - Has ${activeSemesterFilter} semester:`, hasSemester);
+        
+        if (!hasSemester) return false;
       }
 
       if (activeNcFilter != null) {
-        const uniNc = (uni as any).ncFrei != null ? (uni as any).ncFrei : (uni as any).nc_frei;
-        if (uniNc !== activeNcFilter) return false;
+        // Directly use the ncFrei property we added to the university object
+        const uniNcFrei = (uni as any).ncFrei;
+        
+        console.log(`[DEBUG] University ${uni.name} - NC-frei value:`, uniNcFrei, "Filter value:", activeNcFilter);
+        
+        // If ncFrei status is defined, filter by it
+        if (uniNcFrei !== undefined && uniNcFrei !== activeNcFilter) {
+          return false;
+        }
       }
 
       if (currentTimelineFilter) {
@@ -219,12 +231,12 @@ export function SchoolNodes() {
         
         // NC-FREI MATCHING - Higher weight if NC filter is active
         const ncWeight = activeNcFilter !== null ? 2.0 : 1.0
-        const uniNc = (uni as any).ncFrei != null ? (uni as any).ncFrei : (uni as any).nc_frei
-        const selNc = (selectedUniversity as any).ncFrei != null ? (selectedUniversity as any).ncFrei : (selectedUniversity as any).nc_frei
-        if (uniNc != null && uniNc === selNc) {
-          score += 1.0 * ncWeight
+        const uniNcFrei = (uni as any).ncFrei;
+        const selNcFrei = (selectedUniversity as any).ncFrei;
+        if (uniNcFrei !== undefined && selNcFrei !== undefined && uniNcFrei === selNcFrei) {
+          score += 1.0 * ncWeight;
         }
-        maxPossibleScore += 1.0 * ncWeight
+        maxPossibleScore += 1.0 * ncWeight;
         
         // FOUNDED YEAR SIMILARITY - Higher weight if timeline filter is active
         const yearWeight = timelineFilter ? 2.0 : 1.0
@@ -254,7 +266,7 @@ export function SchoolNodes() {
             type: uni.type === selectedUniversity.type,
             programs: commonPrograms.length > 0,
             semester: (uniWinter && selWinter) || (uniSummer && selSummer),
-            ncFrei: uniNc != null && uniNc === selNc
+            ncFrei: uniNcFrei !== undefined && selNcFrei !== undefined && uniNcFrei === selNcFrei
           }
         }
       })
@@ -340,11 +352,6 @@ export function SchoolNodes() {
      return null;
    }
 
-   if (!hasFilteredNodes) {
-       console.log('[SchoolNodes] Not rendering: Zero universities match current filters or conditions.');
-       return null; // Return null if no schools to render after filtering
-   }
-
   // Prepare animated springs for positions
   const isNetwork = visualizationMode === 'network';
   const targets = filteredUniversities.map(uni => {
@@ -364,6 +371,11 @@ export function SchoolNodes() {
     to: { position: [pos.x, pos.y, pos.z] },
     config: { mass: 1, tension: 170, friction: 26 }
   })));
+
+   if (!hasFilteredNodes) {
+       console.log('[SchoolNodes] Not rendering: Zero universities match current filters or conditions.');
+       return null; // Return null if no schools to render after filtering
+   }
 
   // Render markers
   return (

@@ -27,6 +27,7 @@
       "city": "Düsseldorf",
       "state": "North Rhine-Westphalia",
       "type": "academy",
+      "ncFrei": false,
       "programs": [
         {
           "name": "Fine Arts",
@@ -89,12 +90,14 @@
       "city": "Berlin",
       "state": "Berlin",
       "type": "university_of_arts",
+      "ncFrei": false,
       "programs": [
         {
           "name": "Fine Arts",
           "degree": "Bachelor of Fine Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {"start": "1 March", "end": "15 April"},
+            "summer": {"start": "1 September", "end": "15 October"}
           },
           "language": "German",
           "duration": "8 semesters",
@@ -127,7 +130,8 @@
           "name": "Design",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {"start": "1 March", "end": "15 April"},
+            "summer": {"start": "1 September", "end": "15 October"}
           },
           "language": "German",
           "duration": "8 semesters",
@@ -265,12 +269,14 @@
       "city": "Bremen",
       "state": "Bremen",
       "type": "university_of_arts",
+      "ncFrei": true,
       "programs": [
         {
           "name": "Digitale Medien",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "15 May"}
+            "winter": {"start": "1 February", "end": "15 May"},
+            "summer": {"start": "1 August", "end": "15 November"}
           },
           "language": "German/English",
           "duration": "6 semesters",
@@ -600,12 +606,14 @@
       "city": "Offenbach am Main",
       "state": "Hesse",
       "type": "kunsthochschule",
+      "ncFrei": true,
       "programs": [
         {
           "name": "Visual Communication",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "1 June"}
+            "winter": {"start": "1 April", "end": "1 June"},
+            "summer": {"start": "1 October", "end": "1 December"}
           },
           "language": "German",
           "duration": "10 semesters",
@@ -870,6 +878,7 @@
       "city": "Weimar",
       "state": "Thuringia",
       "type": "university",
+      "ncFrei": false,
       "programs": [
         {
           "name": "Fine Art",
@@ -941,7 +950,8 @@
           "name": "Media Art and Design",
           "degree": "Bachelor of Fine Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "31 May"}
+            "winter": {"start": "1 April", "end": "31 May"},
+            "summer": {"start": "1 October", "end": "30 November"}
           },
           "language": "German",
           "duration": "8 semesters",
@@ -1060,12 +1070,14 @@
       "city": "Multiple",
       "state": "Multiple",
       "type": "university_of_applied_sciences",
+      "ncFrei": true,
       "programs": [
         {
           "name": "Media Design",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "31 July"}
+            "winter": {"start": "1 February", "end": "31 July"},
+            "summer": {"start": "1 August", "end": "31 January"}
           },
           "language": "German/English",
           "duration": "7 semesters",
@@ -1098,12 +1110,14 @@
       "city": "Stuttgart",
       "state": "Baden-Württemberg",
       "type": "university_of_applied_sciences",
+      "ncFrei": true,
       "programs": [
         {
           "name": "Design, Art and Media",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "31 May"}
+            "winter": {"start": "1 March", "end": "31 May"},
+            "summer": {"start": "1 September", "end": "30 November"}
           },
           "language": "German",
           "duration": "7 semesters",
@@ -1180,6 +1194,7 @@
       "city": "Schwäbisch Gmünd",
       "state": "Baden-Württemberg",
       "type": "kunsthochschule",
+      "ncFrei": true,
       "programs": [
         { "name": "Interaktionsgestaltung", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 May", "end": "15 November" } }, "language": "German", "duration": "7 semesters", "description": "Focuses on interaction design, user experience, and digital product development.", "specializations": ["Interaction Design", "User Experience", "Digital Product Design"] },
         { "name": "Kommunikationsgestaltung", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 May", "end": "15 November" } }, "language": "German", "duration": "7 semesters", "description": "Covers communication design, visual communication, and media design.", "specializations": ["Communication Design", "Visual Communication", "Media Design"] },
@@ -1279,8 +1294,20 @@
       "city": "Kleve/Kamp-Lintfort",
       "state": "North Rhine-Westphalia",
       "type": "university_of_applied_sciences",
+      "ncFrei": true,
       "programs": [
-        { "name": "Design and Communication", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "7 semesters", "description": "Program in design, communication, and digital media, with a strong focus on international collaboration and interdisciplinary projects.", "specializations": ["Design", "Communication", "Digital Media", "Visual Communication"] },
+        {
+          "name": "Design and Communication",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "31 July"},
+            "summer": {"start": "1 October", "end": "15 January"}
+          },
+          "language": "English",
+          "duration": "7 semesters",
+          "description": "Program in design, communication, and digital media, with a strong focus on international collaboration and interdisciplinary projects.",
+          "specializations": ["Design", "Communication", "Digital Media", "Visual Communication"]
+        },
         { "name": "Media Communication and Computer Science", "degree": "Bachelor of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "7 semesters", "description": "Combines media studies, communication, and computer science for careers in digital media and IT.", "specializations": ["Media Studies", "Computer Science", "Digital Communication"] },
         { "name": "International Relations", "degree": "Bachelor of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "7 semesters", "description": "Interdisciplinary program in international relations, politics, and communication.", "specializations": ["International Relations", "Political Communication"] },
         { "name": "Sustainable Design", "degree": "Master of Arts", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "3 semesters", "description": "Advanced program in sustainable design, innovation, and environmental communication.", "specializations": ["Sustainable Design", "Innovation", "Environmental Communication"] }
@@ -1425,6 +1452,7 @@
       "city": "Aachen",
       "state": "North Rhine-Westphalia",
       "type": "university",
+      "ncFrei": false,
       "programs": [
         { "name": "Media Informatics", "degree": "Bachelor of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "German", "duration": "6 semesters", "description": "Program in media informatics, digital media, and communication technology, with a strong research focus and international collaborations.", "specializations": ["Media Informatics", "Digital Media", "Human-Computer Interaction"] },
         { "name": "Media Informatics", "degree": "Master of Science", "applicationDeadlines": { "winter": { "start": "1 April", "end": "31 July" } }, "language": "English", "duration": "4 semesters", "description": "Advanced program in media informatics, digital media, and interactive systems.", "specializations": ["Media Informatics", "Interactive Systems", "Digital Media"] },

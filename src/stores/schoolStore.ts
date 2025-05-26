@@ -13,6 +13,7 @@ export interface SchoolData {
   websiteUrl: string;
   state: string;
   programTypes: string[];
+  ncFrei?: boolean;
 }
 
 // Import the formatted school data
@@ -37,6 +38,8 @@ export interface ProcessedUniversity {
   founded?: string;
   students?: string;
   coordinates?: { lat: number | null; lng: number | null };
+  // NC-frei status
+  ncFrei?: boolean;
   // Enhanced data properties
   programs?: Array<{
     name: string;
@@ -201,7 +204,8 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
                     founded: data.stats?.founded ? data.stats.founded.toString() : undefined,
                     students: data.stats?.students ? data.stats.students.toString() : undefined,
                     programs: data.programs || [],
-                    coordinates: data.coordinates
+                    coordinates: data.coordinates,
+                    ncFrei: data.ncFrei,
                 };
             });
             console.log(`SchoolStore DEBUG: Finished mapping enhanced data. ${processedCount} entries processed successfully.`);
@@ -235,7 +239,8 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
                     coordinates: {
                         lat: school.latitude,
                         lng: school.longitude
-                    }
+                    },
+                    ncFrei: school.ncFrei,
                 };
                 processedList.push(processedUni);
             });

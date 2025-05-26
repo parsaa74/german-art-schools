@@ -170,8 +170,7 @@ function SceneEventHandler({
 
             const positions = geometry.attributes.position as THREE.BufferAttribute;
             const sizes = geometry.attributes.size as THREE.BufferAttribute;
-            // Increase threshold for better detection
-            const threshold = 0.8; 
+            const threshold = 0.5;
 
             for (let i = 0; i < positions.count; i++) {
                 const point = new THREE.Vector3().fromBufferAttribute(positions, i);
@@ -213,39 +212,29 @@ function SceneEventHandler({
 
         clickTimeoutRef.current = setTimeout(() => {
             const intersectedName = checkIntersection();
-            console.log("Node clicked:", intersectedName);
 
             if (intersectedName) {
-                const uni = universityMap.get(intersectedName);
-                console.log("Found university:", uni?.name);
-                
-                if (uni) {
-                    if (intersectedName === selectedUniversity?.name) {
-                        setSelectedUniversity(null);
-                        setConnectionLines([]);
-                    } else {
+                if (intersectedName === selectedUniversity?.name) {
+                    setSelectedUniversity(null);
+                    setConnectionLines([]);
+                } else {
+                    const uni = universityMap.get(intersectedName);
+                    if (uni) {
                         setSelectedUniversity(uni);
-                        
-                        // Get the selected node position
                         const selectedPos = nodePositions.get(intersectedName);
                         if (selectedPos) {
-                            console.log("Found node position for:", intersectedName);
-                            // Find and create connections to nearest nodes
                             const neighbors = Array.from(nodePositions.entries())
                                 .filter(([name, pos]) => name !== intersectedName)
                                 .sort(([, posA], [, posB]) => selectedPos.distanceTo(posA) - selectedPos.distanceTo(posB))
                                 .slice(0, 5)
                                 .map(([name, pos]) => pos);
-                            
                             setConnectionLines(neighbors.map(neighborPos => [selectedPos, neighborPos]));
                         } else {
-                            console.warn("No position found for node:", intersectedName);
                             setConnectionLines([]);
                         }
                     }
                 }
             } else {
-                // Only clear selection if we clicked empty space
                 if (selectedUniversity) {
                     setSelectedUniversity(null);
                     setConnectionLines([]);
@@ -259,8 +248,12 @@ function SceneEventHandler({
         window.addEventListener('click', handleClick);
         return () => {
             window.removeEventListener('click', handleClick);
+             if (clickTimeoutRef.current) {
+                clearTimeout(clickTimeoutRef.current);
+            }
+            document.body.style.cursor = 'auto';
         };
-    }, [handleClick]);
+    }, [handleClick, controlsEnabled]);
 
     return null;
 }

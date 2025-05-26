@@ -158,8 +158,7 @@ export default function ConnectionLines({
         const sourceProgs = (sourceUni as any).programs || [];
         const sourceWinter = sourceProgs.some((p: any) => p.applicationDeadlines?.winter);
         const sourceSummer = sourceProgs.some((p: any) => p.applicationDeadlines?.summer);
-        const sourceNcFrei = (sourceUni as any).ncFrei != null ? 
-            (sourceUni as any).ncFrei : (sourceUni as any).nc_frei;
+        const sourceNcFrei = (sourceUni as any).ncFrei;
         const sourceFoundedYear = sourceUni.founded ? parseInt(sourceUni.founded) : null;
 
         for (const [targetName, targetUni] of universityMap.entries()) {
@@ -210,10 +209,9 @@ export default function ConnectionLines({
                 
                 // NC-FREI MATCHING
                 const ncWeight = activeNcFilter !== null ? 2.0 : 1.0;
-                const targetNcFrei = (targetUni as any).ncFrei != null ? 
-                    (targetUni as any).ncFrei : (targetUni as any).nc_frei;
+                const targetNcFrei = (targetUni as any).ncFrei;
                 
-                if (sourceNcFrei != null && targetNcFrei != null && sourceNcFrei === targetNcFrei) {
+                if (sourceNcFrei !== undefined && targetNcFrei !== undefined && sourceNcFrei === targetNcFrei) {
                     similarityScore += 1.0 * ncWeight;
                 }
                 maxPossibleScore += 1.0 * ncWeight;
