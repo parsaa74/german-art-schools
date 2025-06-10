@@ -8,9 +8,18 @@ import { BoxSelect, Network } from 'lucide-react' // Changed Cube to BoxSelect
 export function ViewModeToggle() {
   const { visualizationMode, setVisualizationMode } = useSchoolStore()
   const [mounted, setMounted] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     setMounted(true)
+    
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
   }, [])
 
   const toggleMode = () => {
@@ -38,8 +47,8 @@ export function ViewModeToggle() {
     >
       <motion.button
         onClick={toggleMode}
-        className="w-12 h-12 flex items-center justify-center ui-organic text-slate-300 hover:text-white transition-all duration-300 overflow-hidden relative"
-        whileHover={{ scale: 1.1, y: -2 }}
+        className={`w-12 h-12 flex items-center justify-center ${isMobile ? 'ui-mobile mobile-button' : 'ui-organic'} text-slate-300 hover:text-white transition-all duration-300 overflow-hidden relative`}
+        whileHover={{ scale: isMobile ? 1.05 : 1.1, y: isMobile ? -1 : -2 }}
         whileTap={{ scale: 0.95, y: 0 }}
         aria-label={`Switch to ${is3D ? '2D Force Graph' : '3D Network'} View`}
       >

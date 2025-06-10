@@ -25,7 +25,6 @@ import PostProcessing from './PostProcessing';
 
 // Hooks
 import { useFonts } from '@/hooks/useFonts';
-import { useAmbientMusic } from '@/hooks/useAmbientMusic';
 
 // Remove the entire SceneEventHandler component definition (lines ~25 to ~348)
 // function SceneEventHandler(...) { ... }
@@ -52,9 +51,6 @@ interface SceneContentProps {
 }
 
 export function SceneContent(_props: SceneContentProps) {
-  // initialize ambient music system
-  const { playTrack } = useAmbientMusic();
-
   // Load fonts
   useFonts();
 
@@ -84,16 +80,7 @@ export function SceneContent(_props: SceneContentProps) {
     initializeStore();
   }, [initializeStore]);
 
-  // switch ambient tracks on interaction
-  useEffect(() => {
-    if (selectedUniversity) {
-      playTrack('pulse');
-    } else if (hoverUniversityName) {
-      playTrack('drone');
-    } else {
-      playTrack('pad');
-    }
-  }, [hoverUniversityName, selectedUniversity, playTrack]);
+
 
   // Update OrbitControls target
     useEffect(() => {

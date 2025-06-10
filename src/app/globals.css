@@ -452,3 +452,165 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Mobile-specific utilities */
+@layer utilities {
+  .touch-manipulation {
+    touch-action: manipulation;
+  }
+  
+  .touch-pan-x {
+    touch-action: pan-x;
+  }
+  
+  .touch-pan-y {
+    touch-action: pan-y;
+  }
+  
+  .touch-pinch-zoom {
+    touch-action: pinch-zoom;
+  }
+  
+  .touch-none {
+    touch-action: none;
+  }
+  
+  .safe-area-inset-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  
+  .safe-area-inset-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  
+  .safe-area-inset-left {
+    padding-left: env(safe-area-inset-left);
+  }
+  
+  .safe-area-inset-right {
+    padding-right: env(safe-area-inset-right);
+  }
+  
+  .mobile-tap-highlight {
+    -webkit-tap-highlight-color: rgba(59, 130, 246, 0.3);
+  }
+  
+  .mobile-scroll {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+  }
+  
+  .mobile-text-size-adjust {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  
+  /* Mobile-specific UI adjustments */
+  .ui-mobile {
+    @apply ui-organic backdrop-blur-md;
+    background: linear-gradient(
+      135deg,
+      rgba(var(--background-dark), 0.95) 0%,
+      rgba(var(--background-light), 0.85) 100%
+    );
+    border: 1px solid rgba(var(--viz-primary), 0.15);
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      0 0 0 1px rgba(var(--viz-secondary), 0.1),
+      inset 0 0 20px rgba(var(--viz-primary), 0.05);
+  }
+  
+  .mobile-button {
+    @apply touch-manipulation mobile-tap-highlight;
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .mobile-input {
+    @apply touch-manipulation mobile-tap-highlight;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Mobile navigation */
+  .mobile-nav {
+    @apply fixed bottom-0 left-0 right-0 z-50;
+    @apply safe-area-inset-bottom;
+    background: linear-gradient(
+      to top,
+      rgba(var(--background-dark), 0.98) 0%,
+      rgba(var(--background-dark), 0.95) 100%
+    );
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(var(--viz-primary), 0.1);
+  }
+  
+  /* Mobile drawer */
+  .mobile-drawer {
+    @apply fixed inset-x-0 bottom-0 z-50;
+    @apply safe-area-inset-bottom;
+    max-height: 80vh;
+    background: linear-gradient(
+      to top,
+      rgba(var(--background-dark), 0.98) 0%,
+      rgba(var(--background-dark), 0.95) 100%
+    );
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(var(--viz-primary), 0.2);
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+  
+  /* Hide scrollbar on mobile while maintaining functionality */
+  .mobile-scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .mobile-scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Mobile-specific responsive design */
+@media (max-width: 768px) {
+  .ui-organic {
+    border-radius: 1rem;
+  }
+  
+  .expand-panel {
+    transform-origin: bottom center;
+  }
+  
+  /* Adjust animation timing for mobile */
+  .transition-viz {
+    transition-duration: 300ms;
+  }
+  
+  /* Optimize text rendering on mobile */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Landscape mobile adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+  .mobile-nav {
+    @apply hidden;
+  }
+  
+  .mobile-landscape-adjust {
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height */
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .hover\:scale-110:hover {
+    transform: scale(1.05);
+  }
+  
+  .hover\:scale-105:hover {
+    transform: scale(1.02);
+  }
+}

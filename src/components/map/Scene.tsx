@@ -25,7 +25,7 @@ import { CollapsibleControlPanel } from '@/components/ui/CollapsibleControlPanel
 import { SlidersHorizontal } from 'lucide-react';
 import { ViewModeToggle } from './ViewModeToggle'; // Import the new toggle
 import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
-import { useAmbientMusic } from '@/hooks/useAmbientMusic';
+
 import { IntroSequence } from './IntroSequence'; // Import the new component
 import { DollyController } from '../DollyController'; // Update import path to be relative
 import { SearchModal } from '@/components/ui/SearchModal';
@@ -33,6 +33,7 @@ import { SearchButton } from '@/components/ui/SearchButton';
 import { SearchTooltip } from '@/components/ui/SearchTooltip';
 import { RelationshipLegend } from '@/components/ui/relationship-legend';
 // import { TypeLegend } from '@/components/ui/type-legend'; // Moved to help modal
+import SimpleMusicPlayer from '@/components/ui/SimpleMusicPlayer';
 
 // Dynamic import for Background (assuming it's client-side)
 const Background = dynamic(() => import('./Background'), { ssr: false });
@@ -437,11 +438,10 @@ export function Scene({ lang, dict }: SceneProps) {
                         <ambientLight intensity={0.5} />
                         <pointLight position={[10, 10, 10]} intensity={0.8} />
                         
-                        {/* Always render the scene content but control opacity through props */}
+                        {/* Always render the scene content */}
                         <SceneContent 
                             lang={currentLang} 
                             dict={dict}
-                            visible={!showIntroSeq} 
                         />
                         
                         {/* Run camera animation over the scene */}
@@ -765,6 +765,10 @@ export function Scene({ lang, dict }: SceneProps) {
                 isOpen={showSearchModal}
                 onClose={() => setShowSearchModal(false)}
             />
+            
+            {/* Music Player */}
+            <SimpleMusicPlayer />
         </div>
     );
 }
+

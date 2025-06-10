@@ -31,6 +31,7 @@ interface SearchResult {
 
 export function SearchModal({ isOpen, onClose }: SearchModalProps) {
   const [search, setSearch] = useState('');
+  const [isMobile, setIsMobile] = useState(false);
   
   const {
     processedUniversities,
@@ -49,6 +50,17 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     activeSemesterFilter,
     activeNcFilter,
   } = useSchoolStore();
+
+  // Check if device is mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   // Enhanced fuzzy search function with scoring
   const fuzzyMatch = (text: string, query: string): { matches: boolean; score: number } => {
@@ -332,7 +344,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
 
   return (
     <CommandDialog open={isOpen} onOpenChange={onClose}>
-      <Command className="ui-organic min-h-[400px]">
+      <Command className={`${isMobile ? 'ui-mobile' : 'ui-organic'} min-h-[400px] md:min-h-[400px] max-h-[80vh] md:max-h-none`}>
         {/* Header with active filters */}
         {activeFilters.length > 0 && (
           <div className="flex flex-wrap gap-2 px-4 pt-4 pb-2">
@@ -353,13 +365,15 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
         )}
 
         {/* Search input */}
-        <div className="flex items-center border-b border-white/10 px-4 bg-slate-800/30">
+        <div className={`flex items-center border-b border-white/10 px-4 bg-slate-800/30 ${isMobile ? 'py-1' : ''}`}>
           <Search className="mr-3 h-4 w-4 shrink-0 text-cyan-400" />
           <CommandInput
-            placeholder="Search or browse universities, programs, states, school types..."
+            placeholder={isMobile ? "Search schools, programs..." : "Search or browse universities, programs, states, school types..."}
             value={search}
             onValueChange={setSearch}
-            className="flex h-12 w-full rounded-md bg-transparent py-3 text-sm text-white outline-none placeholder:text-slate-400 disabled:cursor-not-allowed disabled:opacity-50"
+            className={`flex w-full rounded-md bg-transparent text-white outline-none placeholder:text-slate-400 disabled:cursor-not-allowed disabled:opacity-50 mobile-input ${
+              isMobile ? 'h-14 py-4 text-base' : 'h-12 py-3 text-sm'
+            }`}
           />
         </div>
 

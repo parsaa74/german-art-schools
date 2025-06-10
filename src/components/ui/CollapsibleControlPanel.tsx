@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Button } from '@nextui-org/button' // Or your preferred button component
 import { Settings, X, SlidersHorizontal } from 'lucide-react' // Added SlidersHorizontal
@@ -41,6 +41,18 @@ export function CollapsibleControlPanel({
   panelTitle = 'Controls',
 }: CollapsibleControlPanelProps) {
   const [isOpen, setIsOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  // Check if device is mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   const togglePanel = () => setIsOpen(!isOpen)
 
@@ -59,7 +71,7 @@ export function CollapsibleControlPanel({
         <Button
           isIconOnly
           onClick={togglePanel}
-          className="ui-organic text-slate-300 hover:text-white transition-all duration-300 w-12 h-12"
+          className={`${isMobile ? 'ui-mobile mobile-button' : 'ui-organic'} text-slate-300 hover:text-white transition-all duration-300 w-12 h-12`}
           aria-label={isOpen ? 'Close Control Panel' : 'Open Control Panel'}
           size="md"
         >
@@ -87,7 +99,7 @@ export function CollapsibleControlPanel({
             animate="visible"
             exit="exit"
             transition={{ duration: 0.4, ease: [0.2, 0.8, 0.2, 1] }}
-            className="mt-2 w-64 ui-organic overflow-hidden"
+            className={`mt-2 ${isMobile ? 'w-72 ui-mobile' : 'w-64 ui-organic'} overflow-hidden`}
             style={{ originX: position.includes('right') ? 1 : 0 }}
           >
             <div className="p-3">

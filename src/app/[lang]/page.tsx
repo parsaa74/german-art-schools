@@ -2,6 +2,7 @@
 
 import React from 'react' // Removed useState as useDisclosure handles it
 import D3VisualizationContainer from '@/components/visualization/D3VisualizationContainer';
+import ResponsiveLayout from '@/components/layout/ResponsiveLayout';
 import NavBar from '@/components/navigation/NavBar'
 const Sidebar = NavBar;
 import { Analytics } from "@vercel/analytics/react"
@@ -10,6 +11,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Link } from "@nextui-org/react";
 // Import icons from react-icons
 import { FiHelpCircle, FiGithub } from 'react-icons/fi';
+
 
 export default function Home() {
   // State hook for the Help Modal visibility
@@ -33,24 +35,26 @@ export default function Home() {
   );
 
   return (
-    <main className="relative h-screen w-screen overflow-hidden bg-background text-foreground">
-          <D3VisualizationContainer />
-          <Sidebar />
+    <main className="relative h-screen w-screen overflow-hidden bg-background text-foreground mobile-text-size-adjust touch-manipulation">
+      <ResponsiveLayout>
+        <D3VisualizationContainer />
+      </ResponsiveLayout>
+      <Sidebar />
       <Analytics />
       <SpeedInsights />
 
-      {/* Help Icon Button - Bottom Left */}
+      {/* Help Icon Button - Bottom Left - Desktop Only */}
       <Button
         isIconOnly // Renders button as a circle for the icon
         aria-label="Color Legend Help"
         onPress={onOpen} // Opens the modal on press
-        className="fixed bottom-5 left-5 z-50 bg-black/30 backdrop-blur-sm text-white/80 hover:text-white hover:bg-black/50 transition-colors duration-200"
+        className="fixed bottom-5 left-5 z-50 bg-black/30 backdrop-blur-sm text-white/80 hover:text-white hover:bg-black/50 transition-colors duration-200 hidden md:flex mobile-button"
         size="lg" // Makes the button larger (adjust padding/size if needed)
       >
         <FiHelpCircle size={24} />
       </Button>
 
-      {/* GitHub Icon Link - Bottom Right */}
+      {/* GitHub Icon Link - Bottom Right - Desktop Only */}
       {/* Use NextUI Link component for better integration/styling */}
       <Button
         as={Link} // Render the button as a link
@@ -58,11 +62,35 @@ export default function Home() {
         isExternal // Adds rel="noopener noreferrer" and target="_blank"
         isIconOnly
         aria-label="View project on GitHub"
-        className="fixed bottom-5 right-5 z-50 bg-black/30 backdrop-blur-sm text-white/80 hover:text-white hover:bg-black/50 transition-colors duration-200"
+        className="fixed bottom-5 right-5 z-50 bg-black/30 backdrop-blur-sm text-white/80 hover:text-white hover:bg-black/50 transition-colors duration-200 hidden md:flex mobile-button"
         size="lg" // Match size with help button
       >
         <FiGithub size={24} />
       </Button>
+
+      {/* Mobile Help & GitHub - Moved to Mobile Nav */}
+      <div className="md:hidden fixed bottom-24 right-4 z-40 flex flex-col space-y-2">
+        <Button
+          isIconOnly
+          aria-label="Color Legend Help"
+          onPress={onOpen}
+          className="bg-black/30 backdrop-blur-sm text-white/80 hover:text-white hover:bg-black/50 transition-colors duration-200 mobile-button"
+          size="md"
+        >
+          <FiHelpCircle size={20} />
+        </Button>
+        <Button
+          as={Link}
+          href={githubUrl}
+          isExternal
+          isIconOnly
+          aria-label="View project on GitHub"
+          className="bg-black/30 backdrop-blur-sm text-white/80 hover:text-white hover:bg-black/50 transition-colors duration-200 mobile-button"
+          size="md"
+        >
+          <FiGithub size={20} />
+        </Button>
+      </div>
 
       {/* Help Modal */}
       <Modal
