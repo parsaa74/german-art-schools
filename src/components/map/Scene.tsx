@@ -31,6 +31,8 @@ import { DollyController } from '../DollyController'; // Update import path to b
 import { SearchModal } from '@/components/ui/SearchModal';
 import { SearchButton } from '@/components/ui/SearchButton';
 import { SearchTooltip } from '@/components/ui/SearchTooltip';
+import { RelationshipLegend } from '@/components/ui/relationship-legend';
+// import { TypeLegend } from '@/components/ui/type-legend'; // Moved to help modal
 
 // Dynamic import for Background (assuming it's client-side)
 const Background = dynamic(() => import('./Background'), { ssr: false });
@@ -341,7 +343,7 @@ export function Scene({ lang, dict }: SceneProps) {
         }
     }, [visualizationMode, showScene, setSelectedUniversity, setConnectionLines]);
 
-    // Keyboard shortcuts for search modal
+    // Keyboard shortcuts for search modal and help modal
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
             // Cmd+K (Mac) or Ctrl+K (Windows/Linux)
@@ -349,15 +351,19 @@ export function Scene({ lang, dict }: SceneProps) {
                 e.preventDefault();
                 setShowSearchModal(true);
             }
-            // Escape to close modal
-            if (e.key === 'Escape' && showSearchModal) {
-                setShowSearchModal(false);
+            // Escape to close modals
+            if (e.key === 'Escape') {
+                if (showSearchModal) {
+                    setShowSearchModal(false);
+                } else if (showHelp) {
+                    setShowHelp(false);
+                }
             }
         };
 
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [showSearchModal]);
+    }, [showSearchModal, showHelp]);
 
     // Animated button springs (using /web for HTML elements)
     const helpButtonSpring = useSpring({
@@ -512,25 +518,25 @@ export function Scene({ lang, dict }: SceneProps) {
                         onClick={() => setShowHelp(false)}></div>
                    <animated.div
                        style={modalSpring}
-                       className="relative max-w-md w-full mx-4 overflow-hidden"
+                       className="relative max-w-2xl w-full mx-4 overflow-hidden"
                        >
-                       <div className="relative bg-gradient-to-br from-slate-900/90 via-blue-950/90 to-slate-900/90 rounded-lg p-6 border border-blue-500/30">
+                       <div className="relative bg-gradient-to-br from-slate-900/90 via-blue-950/90 to-slate-900/90 rounded-lg p-5 border border-blue-500/30">
                            {/* Decorative elements */}
                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600/0 via-blue-400 to-cyan-400/0"></div>
                            <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-r from-cyan-400/0 via-blue-400 to-blue-600/0"></div>
                            <div className="absolute top-[10%] -left-20 w-40 h-40 rounded-full bg-blue-500/10 blur-3xl"></div>
                            <div className="absolute bottom-[10%] -right-20 w-60 h-60 rounded-full bg-cyan-500/10 blur-3xl"></div>
 
-                           <h2 className="font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-200 to-blue-400 text-2xl mb-6">
+                           <h2 className="font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-200 to-blue-400 text-lg mb-3 text-center">
                                NAVIGATING THE CONSTELLATION
                            </h2>
 
-                           <div className="space-y-4 relative z-10">
+                           <div className="space-y-2 relative z-10">
                                {/* ... Help content ... */}
-                               <div className="grid grid-cols-2 gap-x-6 gap-y-4">
+                               <div className="grid grid-cols-3 gap-x-4 gap-y-3">
                                  <div className="col-span-1 flex flex-col">
                                    <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Interaction</span>
-                                   <ul className="space-y-2 text-sm text-slate-200">
+                                   <ul className="space-y-1.5 text-sm text-slate-200">
                                      <li className="flex items-start">
                                        <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
                                        <span><span className="font-medium text-white">Drag:</span> Orbit camera</span>
@@ -548,57 +554,101 @@ export function Scene({ lang, dict }: SceneProps) {
 
                                  <div className="col-span-1 flex flex-col">
                                    <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Node Colors</span>
-                                   <ul className="space-y-2 text-sm text-slate-200">
+                                   <ul className="space-y-1.5 text-sm text-slate-200">
+                                     <li className="flex items-start">
+                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-red-500 rounded-full"></div>
+                                       <span><span className="font-medium text-red-400">Art Academy</span></span>
+                                     </li>
+                                     <li className="flex items-start">
+                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-green-500 rounded-full"></div>
+                                       <span><span className="font-medium text-green-400">Design School</span></span>
+                                     </li>
+                                     <li className="flex items-start">
+                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-purple-500 rounded-full"></div>
+                                       <span><span className="font-medium text-purple-400">Arts University</span></span>
+                                     </li>
+                                     <li className="flex items-start">
+                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-amber-500 rounded-full"></div>
+                                       <span><span className="font-medium text-amber-400">Film University</span></span>
+                                     </li>
                                      <li className="flex items-start">
                                        <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-blue-500 rounded-full"></div>
-                                       <span><span className="font-medium text-blue-400">Default</span></span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-white rounded-full"></div>
-                                       <span><span className="font-medium text-white">Hover</span></span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-blue-300 rounded-full"></div>
-                                       <span><span className="font-medium text-blue-300">Selected</span></span>
+                                       <span><span className="font-medium text-blue-400">General</span></span>
                                      </li>
                                    </ul>
                                  </div>
 
-                                 <div className="col-span-2 mt-2 flex flex-col">
+                                 <div className="col-span-1 flex flex-col">
+                                   <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Node Sizes</span>
+                                   <ul className="space-y-1.5 text-sm text-slate-200">
+                                     <li className="flex items-start">
+                                       <div className="w-2 h-2 mt-1 mr-2 bg-cyan-400 rounded-full"></div>
+                                       <span><span className="font-medium text-white">Students:</span> More = Larger</span>
+                                     </li>
+                                     <li className="flex items-start">
+                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                                       <span><span className="font-medium text-white">Ranking:</span> #1-10 = Largest</span>
+                                     </li>
+                                     <li className="flex items-start">
+                                       <div className="w-1 h-1 mt-2 mr-2 bg-cyan-400 rounded-full"></div>
+                                       <span><span className="font-medium text-white">Programs:</span> More = Bigger</span>
+                                     </li>
+                                   </ul>
+                                 </div>
+
+                                 <div className="col-span-1 flex flex-col">
+                                   <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">When Node Selected</span>
+                                   <ul className="space-y-1.5 text-sm text-slate-200">
+                                     <li className="flex items-start">
+                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-green-500 rounded-full"></div>
+                                       <span><span className="font-medium text-green-400">Green:</span> Very Strong relationship (70%+)</span>
+                                     </li>
+                                     <li className="flex items-start">
+                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-yellow-500 rounded-full"></div>
+                                       <span><span className="font-medium text-yellow-400">Yellow:</span> Moderate relationship (30-50%)</span>
+                                     </li>
+                                     <li className="flex items-start">
+                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-gray-500 rounded-full"></div>
+                                       <span><span className="font-medium text-gray-400">Gray:</span> Minimal relationship (&lt; 15%)</span>
+                                     </li>
+                                   </ul>
+                                 </div>
+
+                                 <div className="col-span-3 mt-4 flex flex-col">
                                    <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">UI Elements</span>
-                                   <ul className="space-y-2 text-sm text-slate-200">
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span><span className="font-medium text-white">Search (Top Center):</span> Find schools, states, programs</span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span><span className="font-medium text-white">Controls Panel (Top Left):</span> Access filters</span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span><span className="font-medium text-white">View Toggle (Bottom Left):</span> Switch 3D/2D modes</span>
-                                     </li>
-                                   </ul>
+                                   <div className="flex flex-wrap gap-x-8 gap-y-2">
+                                     <div className="flex items-center">
+                                       <div className="w-1.5 h-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                                       <span className="text-sm text-slate-200"><span className="font-medium text-white">Search (Top Center):</span> Find schools, states, programs</span>
+                                     </div>
+                                     <div className="flex items-center">
+                                       <div className="w-1.5 h-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                                       <span className="text-sm text-slate-200"><span className="font-medium text-white">Legends (Bottom):</span> Color coding guides</span>
+                                     </div>
+                                     <div className="flex items-center">
+                                       <div className="w-1.5 h-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                                       <span className="text-sm text-slate-200"><span className="font-medium text-white">Filters (Top Left):</span> Narrow down results</span>
+                                     </div>
+                                   </div>
                                  </div>
 
-                                 <div className="col-span-2 mt-4 flex flex-col">
+                                 <div className="col-span-3 mt-2 flex flex-col">
                                    <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Keyboard Shortcuts</span>
-                                   <ul className="space-y-2 text-sm text-slate-200">
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span><span className="font-medium text-white">Cmd/Ctrl + K:</span> Open search</span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span><span className="font-medium text-white">Escape:</span> Close modals</span>
-                                     </li>
-                                   </ul>
+                                   <div className="flex flex-wrap gap-x-8 gap-y-2">
+                                     <div className="flex items-center">
+                                       <div className="w-1.5 h-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                                       <span className="text-sm text-slate-200"><span className="font-medium text-white">Cmd/Ctrl + K:</span> Open search</span>
+                                     </div>
+                                     <div className="flex items-center">
+                                       <div className="w-1.5 h-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                                       <span className="text-sm text-slate-200"><span className="font-medium text-white">Escape:</span> Close modals</span>
+                                     </div>
+                                   </div>
                                  </div>
                                </div>
                                <animated.button
                                    onClick={() => setShowHelp(false)}
-                                   className="mt-6 w-full py-2.5 bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 font-medium rounded-sm tracking-wider text-white hover:from-blue-500 hover:via-blue-400 hover:to-cyan-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)]"
+                                   className="mt-4 w-full py-2 bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 font-medium rounded-sm tracking-wider text-white hover:from-blue-500 hover:via-blue-400 hover:to-cyan-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)]"
                                >
                                    RETURN TO CONSTELLATION
                                </animated.button>
@@ -699,6 +749,14 @@ export function Scene({ lang, dict }: SceneProps) {
                             onClose={handleClosePanel}
                         />
                      )}
+
+                     {/* Relationship Legend - Show when a university is selected */}
+                     <RelationshipLegend 
+                         isVisible={!!selectedUniversity}
+                         selectedUniversityName={selectedUniversity?.name || ''}
+                     />
+
+                     {/* Type Legend moved to help modal for cleaner UI */}
                 </>
             )}
 
