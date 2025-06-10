@@ -38,9 +38,9 @@ export function ViewModeToggle() {
     >
       <motion.button
         onClick={toggleMode}
-        className="w-11 h-11 flex items-center justify-center bg-slate-900/60 backdrop-blur-lg text-slate-300 border border-white/10 shadow-md hover:text-white transition-colors rounded-lg overflow-hidden relative"
-        whileHover={{ scale: 1.1, borderColor: 'rgba(255, 255, 255, 0.2)' }}
-        whileTap={{ scale: 0.95 }}
+        className="w-12 h-12 flex items-center justify-center ui-organic text-slate-300 hover:text-white transition-all duration-300 overflow-hidden relative"
+        whileHover={{ scale: 1.1, y: -2 }}
+        whileTap={{ scale: 0.95, y: 0 }}
         aria-label={`Switch to ${is3D ? '2D Force Graph' : '3D Network'} View`}
       >
         {/* Subtle background hint (Optional) */}

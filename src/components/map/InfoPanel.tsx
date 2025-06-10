@@ -93,8 +93,7 @@ export default function InfoPanel({
           aria-modal="true"
       aria-labelledby="school-name-heading"
           className={cn(
-            'fixed top-4 right-4 z-[500] w-full max-w-xs rounded-lg border border-white/10 shadow-2xl backdrop-blur-xl',
-            'bg-black/70 text-gray-100',
+            'fixed top-4 right-4 z-[500] w-full max-w-sm ui-organic text-gray-100',
             'max-h-[calc(100vh-2rem)] overflow-y-auto',
             'scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent hover:scrollbar-thumb-white/20',
             className
@@ -105,7 +104,7 @@ export default function InfoPanel({
           transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
       onClick={(e) => e.stopPropagation()}
     >
-          <div className="sticky top-0 z-10 bg-black/80 backdrop-blur-sm px-4 pt-4 pb-2 border-b border-white/10">
+          <div className="sticky top-0 z-10 bg-gradient-to-b from-black/90 via-black/80 to-transparent backdrop-blur-sm px-5 pt-5 pb-3 border-b border-white/10">
             <div className="flex justify-between items-start mb-2">
           <h2
             id="school-name-heading"
@@ -115,7 +114,7 @@ export default function InfoPanel({
           </h2>
           <button
             onClick={handleClose}
-                className="text-gray-400 hover:text-white hover:bg-white/10 p-1 rounded-full transition-colors focus:outline-none flex-shrink-0"
+                className="text-gray-400 hover:text-white hover:bg-white/10 p-2 rounded-pill transition-all duration-300 focus:outline-none flex-shrink-0 hover:scale-110"
             aria-label="Close information panel"
           >
                 <XMarkIcon className="h-4 w-4" />
@@ -123,7 +122,7 @@ export default function InfoPanel({
         </div>
           <span
               className={cn(
-                'inline-block px-2 py-1 text-[0.6rem] font-medium rounded-md border',
+                'inline-block px-3 py-1.5 text-[0.6rem] font-medium rounded-pill border',
                 'tracking-wide uppercase',
                 getTypeStyles(school.type)
               )}
@@ -168,7 +167,7 @@ export default function InfoPanel({
                   {school.programTypes.map((prog, index) => (
                   <span
                     key={index}
-                      className="px-1.5 py-0.5 border border-white/20 rounded text-[0.65rem] text-gray-200 bg-white/10 hover:bg-white/20 transition-colors"
+                      className="px-2 py-1 border border-white/20 rounded-soft text-[0.65rem] text-gray-200 bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-105"
                   >
                     {prog}
                   </span>

@@ -59,7 +59,7 @@ export function CollapsibleControlPanel({
         <Button
           isIconOnly
           onClick={togglePanel}
-          className="bg-slate-900/60 backdrop-blur-lg text-slate-300 border border-white/10 shadow-md hover:text-white transition-colors rounded-lg"
+          className="ui-organic text-slate-300 hover:text-white transition-all duration-300 w-12 h-12"
           aria-label={isOpen ? 'Close Control Panel' : 'Open Control Panel'}
           size="md"
         >
@@ -87,7 +87,7 @@ export function CollapsibleControlPanel({
             animate="visible"
             exit="exit"
             transition={{ duration: 0.4, ease: [0.2, 0.8, 0.2, 1] }}
-            className="mt-2 w-56 bg-slate-950/80 backdrop-blur-xl rounded-md shadow-lg border border-white/10 overflow-hidden"
+            className="mt-2 w-64 ui-organic overflow-hidden"
             style={{ originX: position.includes('right') ? 1 : 0 }}
           >
             <div className="p-3">

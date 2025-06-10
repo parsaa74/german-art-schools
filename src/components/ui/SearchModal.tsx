@@ -287,7 +287,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     // TEMP DEBUG LOG
     if (typeof window !== 'undefined' && search.trim()) {
       // Only log in browser and when searching
-      console.log('SEARCH RESULTS:', results.map(r => ({type: r.type, name: r.name, displayName: r.displayName, priority: r.priority})));
+      // console.log('SEARCH RESULTS:', results.map(r => ({type: r.type, name: r.name, displayName: r.displayName, priority: r.priority})));
     }
     return results.sort((a, b) => {
       if (a.priority !== b.priority) return b.priority - a.priority;
@@ -332,13 +332,13 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
 
   return (
     <CommandDialog open={isOpen} onOpenChange={onClose}>
-      <Command className="rounded-lg border shadow-xl bg-slate-900/98 backdrop-blur-xl border-white/10 min-h-[400px]">
+      <Command className="ui-organic min-h-[400px]">
         {/* Header with active filters */}
         {activeFilters.length > 0 && (
           <div className="flex flex-wrap gap-2 px-4 pt-4 pb-2">
             <span className="text-xs text-cyan-300 font-medium">Active filters:</span>
             {activeFilters.map((filter, index) => (
-              <span key={index} className="bg-cyan-700/80 text-white text-xs px-2 py-1 rounded-full font-medium flex items-center gap-1">
+              <span key={index} className="bg-cyan-700/80 text-white text-xs px-3 py-1.5 rounded-pill font-medium flex items-center gap-1 transition-all duration-300 hover:bg-cyan-600/90 hover:scale-105">
                 {filter.type}: {filter.value}
                 <button
                   className="ml-1 text-xs text-white/80 hover:text-white focus:outline-none"
@@ -386,7 +386,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                     e.preventDefault();
                     result.action();
                   }}
-                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
+                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02]"
                 >
                   {result.icon}
                   <div className="flex flex-col flex-1 min-w-0">
@@ -411,7 +411,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                     e.preventDefault();
                     result.action();
                   }}
-                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-emerald-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
+                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-emerald-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02]"
                 >
                   {result.icon}
                   <div className="flex flex-col flex-1 min-w-0">
@@ -436,7 +436,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                     e.preventDefault();
                     result.action();
                   }}
-                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
+                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02]"
                 >
                   {result.icon}
                   <div className="flex flex-col flex-1 min-w-0">

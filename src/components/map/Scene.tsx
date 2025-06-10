@@ -510,8 +510,8 @@ export function Scene({ lang, dict }: SceneProps) {
             )}
 
             {/* Help & GitHub Icons and Help Modal */}
-            <animated.button style={helpButtonSpring} onClick={() => setShowHelp(true)} className="absolute top-4 right-[70px] z-30 flex items-center justify-center w-10 h-10 bg-black/50 backdrop-blur-md text-white rounded-md border border-blue-500/30 shadow-lg hover:bg-blue-600/70 hover:text-white transition-colors" aria-label="Help / Info" > <FiHelpCircle size={20} /> </animated.button>
-            <animated.a style={githubButtonSpring} href="https://github.com/parsaa74/german-art-schools" target="_blank" rel="noopener noreferrer" className="absolute top-4 right-[125px] z-30 flex items-center justify-center w-10 h-10 bg-black/50 backdrop-blur-md text-white rounded-md border border-blue-500/30 shadow-lg hover:bg-blue-600/70 hover:text-white transition-colors" aria-label="View Source on GitHub" > <FiGithub size={20} /> </animated.a>
+            <animated.button style={helpButtonSpring} onClick={() => setShowHelp(true)} className="absolute top-4 right-[70px] z-30 flex items-center justify-center w-12 h-12 ui-organic text-white hover:text-white transition-all duration-300" aria-label="Help / Info" > <FiHelpCircle size={20} /> </animated.button>
+            <animated.a style={githubButtonSpring} href="https://github.com/parsaa74/german-art-schools" target="_blank" rel="noopener noreferrer" className="absolute top-4 right-[125px] z-30 flex items-center justify-center w-12 h-12 ui-organic text-white hover:text-white transition-all duration-300" aria-label="View Source on GitHub" > <FiGithub size={20} /> </animated.a>
             {showHelp && (
                 <div className="fixed inset-0 z-40 flex items-center justify-center">
                    <div className="absolute inset-0 bg-black/80 backdrop-blur-md"
@@ -520,7 +520,7 @@ export function Scene({ lang, dict }: SceneProps) {
                        style={modalSpring}
                        className="relative max-w-2xl w-full mx-4 overflow-hidden"
                        >
-                       <div className="relative bg-gradient-to-br from-slate-900/90 via-blue-950/90 to-slate-900/90 rounded-lg p-5 border border-blue-500/30">
+                       <div className="relative ui-organic p-6">
                            {/* Decorative elements */}
                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600/0 via-blue-400 to-cyan-400/0"></div>
                            <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-r from-cyan-400/0 via-blue-400 to-blue-600/0"></div>
@@ -648,7 +648,7 @@ export function Scene({ lang, dict }: SceneProps) {
                                </div>
                                <animated.button
                                    onClick={() => setShowHelp(false)}
-                                   className="mt-4 w-full py-2 bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 font-medium rounded-sm tracking-wider text-white hover:from-blue-500 hover:via-blue-400 hover:to-cyan-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(59,130,246,0.3)]"
+                                   className="mt-6 w-full ui-button-organic text-white font-semibold tracking-wider"
                                >
                                    RETURN TO CONSTELLATION
                                </animated.button>
@@ -673,7 +673,7 @@ export function Scene({ lang, dict }: SceneProps) {
                             id="state-filter-scene"
                             value={activeStateFilter || ''}
                             onChange={(e) => { setActiveStateFilter(e.target.value || null); }}
-                            className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-xs rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
                           >
                             <option value="">All States</option>
                             {uniqueStates.sort().map((state: string) => <option key={state} value={state}>{state}</option>)}
@@ -686,7 +686,7 @@ export function Scene({ lang, dict }: SceneProps) {
                             id="program-filter-scene"
                             value={activeProgramFilter || ''}
                             onChange={(e) => { setActiveProgramFilter(e.target.value || null); }}
-                            className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-xs rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
                           >
                             <option value="">All Programs</option>
                             {uniqueProgramTypes.sort().map((program: string) => <option key={program} value={program}>{program}</option>)}
@@ -699,7 +699,7 @@ export function Scene({ lang, dict }: SceneProps) {
                             id="type-filter-scene"
                             value={activeTypeFilter || ''}
                             onChange={(e) => setActiveTypeFilter(e.target.value || null)}
-                            className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-xs rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
                           >
                             <option value="">All Types</option>
                             {uniqueTypes.map((type: string) => (
@@ -716,7 +716,7 @@ export function Scene({ lang, dict }: SceneProps) {
                             id="semester-filter-scene"
                             value={activeSemesterFilter || ''}
                             onChange={(e) => setActiveSemesterFilter(e.target.value || null)}
-                            className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-xs rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
                           >
                             <option value="">All Semesters</option>
                             <option value="winter">Winter</option>
@@ -730,7 +730,7 @@ export function Scene({ lang, dict }: SceneProps) {
                             id="nc-filter-scene"
                             value={activeNcFilter === null ? '' : (activeNcFilter ? 'yes' : 'no')}
                             onChange={(e) => setActiveNcFilter(e.target.value === '' ? null : e.target.value === 'yes')}
-                            className="w-full bg-gray-800/80 border border-cyan-700/60 text-gray-100 text-xs rounded focus:ring-cyan-500 focus:border-cyan-500 p-1.5 appearance-none custom-select"
+                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
                           >
                             <option value="">All</option>
                             <option value="yes">Yes</option>

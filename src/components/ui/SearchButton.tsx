@@ -12,11 +12,11 @@ export function SearchButton({ onClick }: SearchButtonProps) {
   return (
     <motion.button
       onClick={onClick}
-      className="group relative flex items-center gap-2 px-4 py-2.5 bg-slate-900/80 backdrop-blur-lg text-slate-300 border border-white/20 shadow-lg hover:text-white hover:bg-slate-800/90 transition-all duration-200 rounded-lg min-w-[200px]"
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      initial={{ opacity: 0, y: -10 }}
-      animate={{ opacity: 1, y: 0 }}
+      className="group relative flex items-center gap-2 px-6 py-3 ui-organic text-slate-300 hover:text-white transition-all duration-300 min-w-[240px]"
+      whileHover={{ scale: 1.02, y: -2 }}
+      whileTap={{ scale: 0.98, y: 0 }}
+      initial={{ opacity: 0, y: -20, scale: 0.9 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ delay: 0.5, type: 'spring', stiffness: 200, damping: 18 }}
     >
       {/* Search Icon */}
@@ -30,7 +30,7 @@ export function SearchButton({ onClick }: SearchButtonProps) {
       {/* Keyboard Shortcut Indicator */}
       <div className="flex items-center gap-1 opacity-70 group-hover:opacity-100 transition-opacity">
         <div className="flex items-center gap-0.5">
-          <kbd className="px-1.5 py-0.5 text-xs font-semibold text-slate-400 bg-slate-700/80 border border-slate-600/50 rounded shadow-sm">
+          <kbd className="px-2 py-1 text-xs font-semibold text-slate-300 bg-white/10 border border-white/20 rounded-soft shadow-inner-glow">
             <Command className="h-2.5 w-2.5 inline mr-0.5" />
             K
           </kbd>
@@ -38,7 +38,7 @@ export function SearchButton({ onClick }: SearchButtonProps) {
       </div>
       
       {/* Subtle glow effect on hover */}
-      <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-500/10 to-cyan-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+      <div className="absolute inset-0 rounded-organic bg-gradient-to-r from-blue-500/5 to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
     </motion.button>
   );
 } 
