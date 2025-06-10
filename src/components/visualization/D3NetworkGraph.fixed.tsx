@@ -1,10 +1,8 @@
 'use client'
 
-import React, { useEffect, useRef, useState, useCallback } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore'
-import { motion } from 'framer-motion' // Import motion for potential parent animation
-
 // --- Interfaces ---
 // Ensure ProcessedUniversity includes coordinates or adjust access
 // REMOVE temporary interface
@@ -80,7 +78,28 @@ const OPACITY_LINK_HIDDEN = 0.05
 
 // --- Helper Functions ---
 const getNodeRadius = (node: D3Node): number => {
-  return Math.min(NODE_MAX_RADIUS, NODE_BASE_RADIUS + node.programCount * NODE_PROGRAM_SCALE)
+  // Use a combination of prestige score, student count, and program count for node size
+  const baseRadius = NODE_BASE_RADIUS;
+  
+  // Factor in prestige (ranking) - higher prestige = larger node
+  const prestigeFactor = node.university.prestigeScore ? 
+    (node.university.prestigeScore / 100) * 2 : 1;
+  
+  // Factor in student count - more students = larger node (with diminishing returns)
+  const studentFactor = node.university.stats?.students ? 
+    Math.sqrt(node.university.stats.students / 1000) + 1 : 1;
+  
+  // Factor in program diversity
+  const programFactor = 1 + (node.programCount * NODE_PROGRAM_SCALE);
+  
+  // Combine factors with different weights
+  const combinedRadius = baseRadius * (
+    prestigeFactor * 0.4 + 
+    studentFactor * 0.3 + 
+    programFactor * 0.3
+  );
+  
+  return Math.min(NODE_MAX_RADIUS, Math.max(NODE_BASE_RADIUS, combinedRadius));
 }
 
 // Helper to check if a node matches all active filters
@@ -119,6 +138,7 @@ export default function D3NetworkGraph({
   const nodeMapRef = useRef(new Map<string, D3Node>());
   const linkGroupRef = useRef<SVGGElement | null>(null); // Ref for link group
   const nodeGroupRef = useRef<SVGGElement | null>(null); // Ref for node group
+  const graphContentRef = useRef<SVGGElement | null>(null); // Ref for graph-content group
 
   // --- Zustand Store ---
   const {
@@ -144,6 +164,7 @@ export default function D3NetworkGraph({
   const [nodes, setNodes] = useState<D3Node[]>([])
   const [links, setLinks] = useState<D3Link[]>([]) // State for dynamic links
   const [neighborMap, setNeighborMap] = useState<Map<string, Set<string>>>(new Map()); // Store neighbors based on current links
+  const [zoomScale, setZoomScale] = useState(1); // Track zoom scale
 
   // --- Data Processing --- Create nodes
   useEffect(() => {
@@ -225,6 +246,7 @@ export default function D3NetworkGraph({
     let g = svg.select<SVGGElement>('g.graph-content');
     if (g.empty()) {
         g = svg.append('g').attr('class', 'graph-content');
+        graphContentRef.current = g.node();
 
         // --- Define SVG Filters ---
         const defs = svg.append('defs');
@@ -257,7 +279,22 @@ export default function D3NetworkGraph({
                  setSelectedUniversity(null);
              }
            });
+    } else {
+        graphContentRef.current = g.node();
     }
+
+    // --- D3 Zoom Behavior ---
+    svg.call(
+      d3.zoom<SVGSVGElement, unknown>()
+        .scaleExtent([0.2, 5])
+        .on('zoom', (event) => {
+          if (graphContentRef.current) {
+            d3.select(graphContentRef.current)
+              .attr('transform', event.transform.toString());
+            setZoomScale(event.transform.k);
+          }
+        })
+    );
 
     // --- Drag Handling --- (Defined inside useEffect to capture simulation)
     const drag = (simulation: d3.Simulation<D3Node, D3Link>) => {
@@ -307,16 +344,20 @@ export default function D3NetworkGraph({
 
     nodeEnter.append('text')
         .attr('class', 'node-label')
-        .text(d => d.name) // Use truncated name later if needed
+        .text(d => d.name)
         .attr('x', 0)
-        .attr('y', d => getNodeRadius(d) + 5) // Position below circle
+        .attr('y', d => getNodeRadius(d) + 5)
         .attr('dy', '0.35em')
         .attr('text-anchor', 'middle')
         .attr('font-family', 'Inter, sans-serif')
-        .attr('font-size', '8px') // Even smaller font size
+        .attr('font-size', d => `${Math.max(14, 32 / zoomScale)}px`) // Dynamic font size
+        .attr('font-weight', 'bold') // Make text bolder
+        .attr('stroke', '#222') // Add dark stroke for contrast
+        .attr('stroke-width', 0.8)
+        .attr('paint-order', 'stroke')
         .attr('fill', COLOR_LABEL)
         .style('pointer-events', 'none')
-        .attr('opacity', OPACITY_LABEL_HIDDEN); // Initially hidden
+        .attr('opacity', OPACITY_LABEL_HIDDEN);
 
     // Merge Enter and Update selections
     const nodeUpdate = nodeEnter.merge(nodeSelection);
@@ -331,6 +372,14 @@ export default function D3NetworkGraph({
     nodeUpdate.select('circle.node-circle')
         .transition('radiusUpdate').duration(TRANSITION_DURATION).ease(EASING_FUNCTION)
         .attr('r', d => getNodeRadius(d));
+
+    // Update font size on zoom
+    nodeEnter.merge(nodeSelection).select('text.node-label')
+      .attr('font-size', d => `${Math.max(14, 32 / zoomScale)}px`)
+      .attr('font-weight', 'bold')
+      .attr('stroke', '#222')
+      .attr('stroke-width', 0.8)
+      .attr('paint-order', 'stroke');
 
     // Exit: Remove old nodes
     nodeSelection.exit()
@@ -360,7 +409,7 @@ export default function D3NetworkGraph({
       simulationRef.current?.stop();
     }
 
-  }, [nodes, width, height, setSelectedUniversity, setHoverUniversityName]) // Dependencies for initial setup & node binding
+  }, [nodes, width, height, setSelectedUniversity, setHoverUniversityName, zoomScale]) // Dependencies for initial setup & node binding
 
 
   // --- Effect for Calculating and Updating Dynamic Links & Neighbors ---
@@ -374,6 +423,9 @@ export default function D3NetworkGraph({
 
         const newLinks: D3Link[] = [];
         const selectedPrograms = new Set(selectedNode.university.programTypes);
+        const selectedSpecializations = new Set(selectedNode.university.specializationVector || []);
+        const selectedStats = selectedNode.university.stats;
+        const selectedRanking = selectedNode.university.ranking;
 
         nodes.forEach(targetNode => {
             if (!targetNode || targetNode.id === selectedNode.id || !targetNode.university?.programTypes) return;
@@ -383,23 +435,72 @@ export default function D3NetworkGraph({
               return;
             }
 
-            let sharedCount = 0;
+            let connectionStrength = 0;
+            
+            // 1. Program similarity (base connection)
+            let sharedProgramCount = 0;
             targetNode.university.programTypes.forEach(program => {
                 if (selectedPrograms.has(program)) {
-                    sharedCount++;
+                    sharedProgramCount++;
                 }
             });
+            
+            // 2. Specialization similarity (enhanced connection)
+            let sharedSpecializations = 0;
+            if (targetNode.university.specializationVector) {
+                targetNode.university.specializationVector.forEach(spec => {
+                    if (selectedSpecializations.has(spec)) {
+                        sharedSpecializations++;
+                    }
+                });
+            }
+            
+            // 3. Ranking similarity (prestige clusters)
+            let rankingSimilarity = 0;
+            if (selectedRanking?.national && targetNode.university.ranking?.national) {
+                const rankingDiff = Math.abs(selectedRanking.national - targetNode.university.ranking.national);
+                rankingSimilarity = Math.max(0, 20 - rankingDiff) / 20; // Normalize to 0-1
+            }
+            
+            // 4. Student body similarity (size and selectivity)
+            let studentSimilarity = 0;
+            if (selectedStats?.students && targetNode.university.stats?.students) {
+                const studentRatio = Math.min(selectedStats.students, targetNode.university.stats.students) / 
+                                   Math.max(selectedStats.students, targetNode.university.stats.students);
+                studentSimilarity = studentRatio;
+            }
+            
+            // 5. Acceptance rate similarity (selectivity clusters)
+            let selectivitySimilarity = 0;
+            if (selectedStats?.acceptance_rate && targetNode.university.stats?.acceptance_rate) {
+                const rateDiff = Math.abs(selectedStats.acceptance_rate - targetNode.university.stats.acceptance_rate);
+                selectivitySimilarity = Math.max(0, 0.3 - rateDiff) / 0.3; // Normalize to 0-1
+            }
+            
+            // Combine all similarity metrics with weights
+            connectionStrength = (
+                sharedProgramCount * 3.0 +           // Programs are most important
+                sharedSpecializations * 2.0 +        // Specializations are secondary
+                rankingSimilarity * 1.5 +            // Ranking similarity
+                studentSimilarity * 1.0 +            // Student body similarity
+                selectivitySimilarity * 1.2          // Selectivity similarity
+            );
 
-            if (sharedCount > 0) {
+            // Only create link if there's meaningful connection
+            if (connectionStrength > 1.0) {
                 newLinks.push({
                     source: selectedNode.id,
                     target: targetNode.id,
-                    value: sharedCount,
+                    value: connectionStrength,
                     type: 'program'
                 });
             }
         });
-        return newLinks;
+        
+        // Sort links by strength and limit to top connections to avoid visual clutter
+        return newLinks
+            .sort((a, b) => b.value - a.value)
+            .slice(0, 15); // Show top 15 connections
     }
 
     const newDynamicLinks = calculateLinks(selectedNodeData);
@@ -470,6 +571,16 @@ export default function D3NetworkGraph({
                 targetFill = COLOR_SELECTED;
                 targetStroke = COLOR_STROKE_SELECTED;
                 targetStrokeWidth = 2.5;
+                nodeElement.raise();
+            } else if (isHovered) {
+                // Show hovered node's label even when another node is selected
+                targetNodeOpacity = OPACITY_NODE_DEFAULT;
+                targetLabelOpacity = OPACITY_LABEL_VISIBLE;
+                targetScale = HOVER_SCALE;
+                targetFilter = 'url(#glow)';
+                targetFill = COLOR_HOVER;
+                targetStroke = COLOR_STROKE_HOVER;
+                targetStrokeWidth = 2;
                 nodeElement.raise();
             } else if (isNeighborOfSelected) {
                 targetNodeOpacity = OPACITY_NODE_DEFAULT; // Keep neighbors visible

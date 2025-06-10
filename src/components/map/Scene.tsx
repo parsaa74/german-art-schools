@@ -28,6 +28,9 @@ import { motion, AnimatePresence } from 'framer-motion'; // Import motion and An
 import { useAmbientMusic } from '@/hooks/useAmbientMusic';
 import { IntroSequence } from './IntroSequence'; // Import the new component
 import { DollyController } from '../DollyController'; // Update import path to be relative
+import { SearchModal } from '@/components/ui/SearchModal';
+import { SearchButton } from '@/components/ui/SearchButton';
+import { SearchTooltip } from '@/components/ui/SearchTooltip';
 
 // Dynamic import for Background (assuming it's client-side)
 const Background = dynamic(() => import('./Background'), { ssr: false });
@@ -302,6 +305,7 @@ export function Scene({ lang, dict }: SceneProps) {
     const [showCameraAnim, setShowCameraAnim] = useState(false);
     // After camera animation, show scene
     const [showScene, setShowScene] = useState(false);
+    const [showSearchModal, setShowSearchModal] = useState(false);
 
     // Handler when the title overlay completes
     const handleOverlayComplete = useCallback(() => {
@@ -336,6 +340,24 @@ export function Scene({ lang, dict }: SceneProps) {
             setConnectionLines([]);
         }
     }, [visualizationMode, showScene, setSelectedUniversity, setConnectionLines]);
+
+    // Keyboard shortcuts for search modal
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            // Cmd+K (Mac) or Ctrl+K (Windows/Linux)
+            if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                e.preventDefault();
+                setShowSearchModal(true);
+            }
+            // Escape to close modal
+            if (e.key === 'Escape' && showSearchModal) {
+                setShowSearchModal(false);
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [showSearchModal]);
 
     // Animated button springs (using /web for HTML elements)
     const helpButtonSpring = useSpring({
@@ -473,6 +495,14 @@ export function Scene({ lang, dict }: SceneProps) {
                 </motion.div>
             )}
 
+            {/* Search Button - Prominently placed */}
+            {!showIntroSeq && (
+                <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-30">
+                    <SearchButton onClick={() => setShowSearchModal(true)} />
+                    <SearchTooltip />
+                </div>
+            )}
+
             {/* Help & GitHub Icons and Help Modal */}
             <animated.button style={helpButtonSpring} onClick={() => setShowHelp(true)} className="absolute top-4 right-[70px] z-30 flex items-center justify-center w-10 h-10 bg-black/50 backdrop-blur-md text-white rounded-md border border-blue-500/30 shadow-lg hover:bg-blue-600/70 hover:text-white transition-colors" aria-label="Help / Info" > <FiHelpCircle size={20} /> </animated.button>
             <animated.a style={githubButtonSpring} href="https://github.com/parsaa74/german-art-schools" target="_blank" rel="noopener noreferrer" className="absolute top-4 right-[125px] z-30 flex items-center justify-center w-10 h-10 bg-black/50 backdrop-blur-md text-white rounded-md border border-blue-500/30 shadow-lg hover:bg-blue-600/70 hover:text-white transition-colors" aria-label="View Source on GitHub" > <FiGithub size={20} /> </animated.a>
@@ -539,11 +569,29 @@ export function Scene({ lang, dict }: SceneProps) {
                                    <ul className="space-y-2 text-sm text-slate-200">
                                      <li className="flex items-start">
                                        <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                                       <span><span className="font-medium text-white">Search (Top Center):</span> Find schools, states, programs</span>
+                                     </li>
+                                     <li className="flex items-start">
+                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
                                        <span><span className="font-medium text-white">Controls Panel (Top Left):</span> Access filters</span>
                                      </li>
                                      <li className="flex items-start">
                                        <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
                                        <span><span className="font-medium text-white">View Toggle (Bottom Left):</span> Switch 3D/2D modes</span>
+                                     </li>
+                                   </ul>
+                                 </div>
+
+                                 <div className="col-span-2 mt-4 flex flex-col">
+                                   <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Keyboard Shortcuts</span>
+                                   <ul className="space-y-2 text-sm text-slate-200">
+                                     <li className="flex items-start">
+                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                                       <span><span className="font-medium text-white">Cmd/Ctrl + K:</span> Open search</span>
+                                     </li>
+                                     <li className="flex items-start">
+                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
+                                       <span><span className="font-medium text-white">Escape:</span> Close modals</span>
                                      </li>
                                    </ul>
                                  </div>
@@ -653,6 +701,12 @@ export function Scene({ lang, dict }: SceneProps) {
                      )}
                 </>
             )}
+
+            {/* Search Modal */}
+            <SearchModal 
+                isOpen={showSearchModal}
+                onClose={() => setShowSearchModal(false)}
+            />
         </div>
     );
 }

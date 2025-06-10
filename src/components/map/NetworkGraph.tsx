@@ -13,6 +13,28 @@ const NODE_HOVER_SCALE = 1.4 // Scale multiplier for hover state
 const NODE_SELECT_SCALE = 1.8 // Scale multiplier for selected state
 const LERP_SPEED = 8.0; // Speed for scale interpolation
 
+// Enhanced node scaling based on university data
+const getNodeScale = (university: ProcessedUniversity): number => {
+  let scale = NODE_BASE_SCALE;
+  
+  // Factor in prestige (ranking) - higher prestige = larger node
+  if (university.prestigeScore) {
+    scale *= (0.8 + (university.prestigeScore / 100) * 0.6); // 0.8x to 1.4x multiplier
+  }
+  
+  // Factor in student count for size
+  if (university.stats?.students) {
+    const studentMultiplier = Math.sqrt(university.stats.students / 1000) * 0.3 + 0.9;
+    scale *= Math.min(1.5, studentMultiplier); // Cap at 1.5x
+  }
+  
+  // Factor in program diversity
+  const programMultiplier = 1 + (university.programCount * 0.05);
+  scale *= Math.min(1.3, programMultiplier); // Cap at 1.3x
+  
+  return scale;
+}
+
 // Ethereal blue color mapping for university types - optimized for visibility and beauty
 const typeColors: { [key: string]: THREE.Color } = {
   university: new THREE.Color('#2979FF'), // Ethereal blue for universities - higher contrast
@@ -34,7 +56,7 @@ const typeEmissiveColors: { [key: string]: THREE.Color } = {
 }
 
 // Color mapping for node states (hover, selected) - ethereal theme
-const stateColors: { [key: string]: THREE.Color } = {
+const _stateColors: { [key: string]: THREE.Color } = {
   hover: new THREE.Color('#FFFFFF'), // White for hover state - clean and bright
   selected: new THREE.Color('#A7CBFF'), // Light blue for selected state - ethereal
   default: new THREE.Color('#5D9DFF') // Blue for default state - matches our theme
@@ -74,7 +96,80 @@ const createNodeGeometry = () => {
 const baseGeometry = createNodeGeometry();
 
 // Helper object for matrix calculation
-const dummyObject = new THREE.Object3D();
+const _dummyObject = new THREE.Object3D();
+
+// Function to calculate enhanced similarity between universities
+const calculateEnhancedSimilarity = (uni1: ProcessedUniversity, uni2: ProcessedUniversity): number => {
+  let similarity = 0;
+  
+  // 1. Type similarity (weight: 2.0)
+  if (uni1.type === uni2.type) similarity += 2.0;
+  
+  // 2. Program overlap (weight: 3.0)
+  const shared = uni1.programTypes?.filter(p => uni2.programTypes?.includes(p)).length || 0;
+  if (shared > 0) similarity += shared * 3.0;
+  
+  // 3. Specialization overlap (weight: 4.0)
+  const spec1 = uni1.specializationVector || [];
+  const spec2 = uni2.specializationVector || [];
+  const sharedSpec = spec1.filter(s => spec2.includes(s)).length;
+  if (sharedSpec > 0) similarity += sharedSpec * 4.0;
+  
+  // 4. Ranking proximity (weight: 1.5)
+  if (uni1.ranking?.national && uni2.ranking?.national) {
+    const rankDiff = Math.abs(uni1.ranking.national - uni2.ranking.national);
+    if (rankDiff <= 10) similarity += (10 - rankDiff) * 0.15;
+  }
+  
+  // 5. Stats similarity (weight: 1.0)
+  if (uni1.stats?.students && uni2.stats?.students) {
+    const studentRatio = Math.min(uni1.stats.students, uni2.stats.students) / 
+                        Math.max(uni1.stats.students, uni2.stats.students);
+    if (studentRatio > 0.5) similarity += studentRatio * 1.0;
+  }
+  
+  // 6. Acceptance rate similarity (weight: 1.0)
+  if (uni1.stats?.acceptance_rate && uni2.stats?.acceptance_rate) {
+    const rateDiff = Math.abs(uni1.stats.acceptance_rate - uni2.stats.acceptance_rate);
+    if (rateDiff < 0.2) similarity += (0.2 - rateDiff) * 5.0;
+  }
+  
+  // 7. Geographic proximity (weight: 1.0)
+  if (uni1.coordinates && uni2.coordinates && uni1.coordinates.lat && uni2.coordinates.lat && 
+      uni1.coordinates.lng && uni2.coordinates.lng) {
+    const latDiff = Math.abs(uni1.coordinates.lat - uni2.coordinates.lat);
+    const lngDiff = Math.abs(uni1.coordinates.lng - uni2.coordinates.lng);
+    const distance = Math.sqrt(latDiff * latDiff + lngDiff * lngDiff);
+    if (distance < 5) similarity += (5 - distance) * 0.2; // Close proximity bonus
+  }
+  
+  return similarity;
+};
+
+// Function to create similarity-based links
+const createSimilarityLinks = (universities: ProcessedUniversity[]) => {
+  const links: Array<{source: string, target: string, strength: number}> = [];
+  const minSimilarity = 3.0; // Minimum similarity threshold for creating links
+  
+  for (let i = 0; i < universities.length; i++) {
+    for (let j = i + 1; j < universities.length; j++) {
+      const similarity = calculateEnhancedSimilarity(universities[i], universities[j]);
+      
+      if (similarity >= minSimilarity) {
+        // Normalize strength (0.1 to 1.0)
+        const strength = Math.min(similarity / 20.0, 1.0);
+        links.push({
+          source: universities[i].name,
+          target: universities[j].name,
+          strength: strength
+        });
+      }
+    }
+  }
+  
+  console.log(`NetworkGraph: Created ${links.length} similarity-based links`);
+  return links;
+};
 
 export default function NetworkGraph({
   universities,
@@ -121,13 +216,28 @@ export default function NetworkGraph({
   const instanceColors = useMemo(() => {
     const colors = new Float32Array(universities.length * 3);
     universities.forEach((uni, i) => {
-      const baseColor = typeColors[uni.type] || typeColors.default;
+      let baseColor = typeColors[uni.type] || typeColors.default;
+      
+      // Modify color based on prestige (ranking)
+      if (uni.prestigeScore) {
+        const hsl = {h: 0, s: 0, l: 0};
+        baseColor.getHSL(hsl);
+        // Higher prestige = brighter, more saturated colors
+        const prestigeBoost = (uni.prestigeScore / 100) * 0.3;
+        baseColor = new THREE.Color().setHSL(
+          hsl.h,
+          Math.min(1, hsl.s + prestigeBoost),
+          Math.min(1, hsl.l + prestigeBoost * 0.2)
+        );
+      }
+      
+      // Add subtle variation for uniqueness
       const hsl = {h: 0, s: 0, l: 0};
       baseColor.getHSL(hsl);
       const uniqueColor = new THREE.Color().setHSL(
-        hsl.h + (Math.random() * 0.05 - 0.025),
-        hsl.s + (Math.random() * 0.1 - 0.05),
-        hsl.l
+        hsl.h + (Math.random() * 0.03 - 0.015),
+        hsl.s + (Math.random() * 0.05 - 0.025),
+        hsl.l + (Math.random() * 0.1 - 0.05)
       );
       uniqueColor.toArray(colors, i * 3);
     });
@@ -142,9 +252,57 @@ export default function NetworkGraph({
         if (uni.name === selectedNodeName) {
           nodeState = 2.0; // Selected
         } else {
-          const selectedUniType = universities.find(u => u.name === selectedNodeName)?.type;
-          const isRelated = selectedUniType && uni.type === selectedUniType;
-          nodeState = isRelated ? 4.0 : 3.0; // Related or Inactive
+          const selectedUni = universities.find(u => u.name === selectedNodeName);
+          if (selectedUni) {
+            // Enhanced similarity calculation
+            let similarity = 0;
+            
+            // Type similarity (base)
+            if (selectedUni.type === uni.type) similarity += 2;
+            
+            // Program overlap
+            const sharedPrograms = uni.programTypes?.filter(p => 
+              selectedUni.programTypes?.includes(p)).length || 0;
+            similarity += sharedPrograms;
+            
+            // Ranking similarity
+            if (selectedUni.ranking?.national && uni.ranking?.national) {
+              const rankingDiff = Math.abs(selectedUni.ranking.national - uni.ranking.national);
+              if (rankingDiff <= 10) similarity += 2;
+              else if (rankingDiff <= 20) similarity += 1;
+            }
+            
+            // Acceptance rate similarity
+            if (selectedUni.stats?.acceptance_rate && uni.stats?.acceptance_rate) {
+              const rateDiff = Math.abs(selectedUni.stats.acceptance_rate - uni.stats.acceptance_rate);
+              if (rateDiff <= 0.1) similarity += 1.5;
+              else if (rateDiff <= 0.2) similarity += 0.8;
+            }
+            
+            // Student count similarity
+            if (selectedUni.stats?.students && uni.stats?.students) {
+              const ratio = Math.min(selectedUni.stats.students, uni.stats.students) / 
+                          Math.max(selectedUni.stats.students, uni.stats.students);
+              if (ratio > 0.7) similarity += 1;
+              else if (ratio > 0.4) similarity += 0.5;
+            }
+            
+            // Specialization overlap
+            if (selectedUni.specializationVector && uni.specializationVector) {
+              const sharedSpecs = uni.specializationVector.filter(s => 
+                selectedUni.specializationVector?.includes(s)).length;
+              similarity += sharedSpecs * 0.5;
+            }
+            
+            // Determine state based on similarity
+            if (similarity >= 4) {
+              nodeState = 4.0; // Highly related
+            } else if (similarity >= 2) {
+              nodeState = 4.0; // Related
+            } else {
+              nodeState = 3.0; // Inactive
+            }
+          }
         }
       } else if (hoverNodeName && uni.name === hoverNodeName) {
         nodeState = 1.0; // Hover
@@ -296,22 +454,25 @@ export default function NetworkGraph({
         // --- Scale Interpolation ---
         let targetScaleValue = NODE_BASE_SCALE; // Base target scale
         const pulseTime = time; // Use consistent time for pulse calculation
+        
+        // Get the enhanced base scale for this university
+        const enhancedBaseScale = university ? getNodeScale(university) : NODE_BASE_SCALE;
 
         switch(Math.floor(nodeState)) {
           case 2: // Selected
-            targetScaleValue = NODE_BASE_SCALE * NODE_SELECT_SCALE * (1 + Math.sin(pulseTime * 2.5) * 0.12);
+            targetScaleValue = enhancedBaseScale * NODE_SELECT_SCALE * (1 + Math.sin(pulseTime * 2.5) * 0.12);
             break;
           case 1: // Hovered
-            targetScaleValue = NODE_BASE_SCALE * NODE_HOVER_SCALE * (1 + Math.sin(pulseTime * 3.5) * 0.07);
+            targetScaleValue = enhancedBaseScale * NODE_HOVER_SCALE * (1 + Math.sin(pulseTime * 3.5) * 0.07);
             break;
           case 4: // Related
-            targetScaleValue = NODE_BASE_SCALE * NODE_HOVER_SCALE * 0.9 * (1 + Math.sin(pulseTime * 1.8 + i * 0.2) * 0.05);
+            targetScaleValue = enhancedBaseScale * NODE_HOVER_SCALE * 0.9 * (1 + Math.sin(pulseTime * 1.8 + i * 0.2) * 0.05);
             break;
           case 3: // Inactive
-            targetScaleValue = NODE_BASE_SCALE * 0.7 * (1 + Math.sin(pulseTime * 0.6 + i) * 0.01);
+            targetScaleValue = enhancedBaseScale * 0.7 * (1 + Math.sin(pulseTime * 0.6 + i) * 0.01);
             break;
           default: // Normal
-            targetScaleValue = NODE_BASE_SCALE * (1 + Math.sin(pulseTime * 1.0 + i * 0.3) * 0.03);
+            targetScaleValue = enhancedBaseScale * (1 + Math.sin(pulseTime * 1.0 + i * 0.3) * 0.03);
         }
         // Update the target scale for this instance
         targetScalesRef.current[i] = targetScaleValue;
@@ -337,25 +498,49 @@ export default function NetworkGraph({
 
   // --- D3 Force Simulation ---
   useEffect(() => {
-    console.log('NetworkGraph: Initializing simulation for InstancedMesh.');
+    console.log('NetworkGraph: Initializing enhanced similarity-based simulation for InstancedMesh.');
 
     nodesRef.current = universities.map((uni) => ({
       id: uni.name,
       type: uni.type,
       programCount: uni.programTypes?.length || 0,
       originalData: uni,
+      // Initialize positions based on geographical coordinates with some randomization
+      x: uni.coordinates?.lng ? (uni.coordinates.lng - 10) * 0.8 + (Math.random() - 0.5) * 1 : Math.random() * 8 - 4,
+      y: uni.coordinates?.lat ? (uni.coordinates.lat - 50) * 0.8 + (Math.random() - 0.5) * 1 : Math.random() * 8 - 4,
+      z: Math.random() * 3 - 1.5, // Smaller Z range for better clustering visibility
     }));
+
+    // Create similarity-based links
+    const similarityLinks = createSimilarityLinks(universities);
 
     const simulation = d3
       .forceSimulation(nodesRef.current, 3)
-      .force('link', d3.forceLink().id((d: any) => d.id).strength(0.02).distance(3.0))
-      .force('charge', d3.forceManyBody().strength(-30))
-      .force('center', d3.forceCenter(0, 0, 0).strength(0.2))
-      .force('collision', d3.forceCollide().radius(1.0).strength(0.6))
-      .force('x', d3.forceX().strength(0.05))
-      .force('y', d3.forceY().strength(0.05))
-      .force('z', d3.forceZ().strength(0.05))
-      .alphaDecay(0.01) // Slightly faster decay
+      .force('link', d3.forceLink(similarityLinks)
+        .id((d: any) => d.id)
+        .strength((link: any) => link.strength * 0.3) // Use calculated strength
+        .distance((link: any) => {
+          // Distance based on similarity strength - stronger links = closer distance
+          return 2.0 - (link.strength * 1.5); // Range: 0.5 to 2.0
+        }))
+      .force('charge', d3.forceManyBody().strength((d: any) => {
+        // Adjust force strength based on university size and prestige
+        const uni = d.originalData;
+        const baseStrength = -40; // Slightly stronger repulsion for better separation
+        const prestigeMultiplier = uni.prestigeScore ? (uni.prestigeScore / 100) * 0.4 + 0.8 : 1;
+        const sizeMultiplier = uni.stats?.students ? Math.sqrt(uni.stats.students / 1000) * 0.2 + 0.9 : 1;
+        return baseStrength * prestigeMultiplier * sizeMultiplier;
+      }))
+      .force('center', d3.forceCenter(0, 0, 0).strength(0.15)) // Slightly weaker centering
+      .force('collision', d3.forceCollide().radius((d: any) => {
+        // Collision radius based on enhanced node scale
+        const uni = d.originalData;
+        return getNodeScale(uni) * 1.2; // Slightly larger collision radius
+      }).strength(0.8)) // Stronger collision avoidance
+      .force('x', d3.forceX().strength(0.03)) // Weaker X constraint
+      .force('y', d3.forceY().strength(0.03)) // Weaker Y constraint
+      .force('z', d3.forceZ().strength(0.03)) // Weaker Z constraint
+      .alphaDecay(0.005) // Slower cooling for better settling
       .stop();
 
     simulationRef.current = simulation;

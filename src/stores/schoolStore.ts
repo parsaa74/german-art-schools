@@ -53,6 +53,21 @@ export interface ProcessedUniversity {
     description?: string;
     specializations?: string[];
   }>;
+  // Enhanced statistical data for visualizations
+  ranking?: {
+    national?: number;
+    specialization_rank?: { [key: string]: number };
+  };
+  stats?: {
+    students?: number;
+    acceptance_rate?: number;
+    student_staff_ratio?: number;
+    founded?: number;
+  };
+  // Computed fields for clustering and connections
+  prestigeScore?: number; // Derived from ranking
+  popularityScore?: number; // Derived from student count and acceptance rate
+  specializationVector?: string[]; // Specializations for similarity calculations
 }
 
 // Visualization mode type
@@ -82,6 +97,7 @@ export interface SchoolStore {
   expandedPanel: string | null;
   timelineFilter: [number, number] | null;
   nodePositions: Map<string, THREE.Vector3>;
+  searchQuery: string;
 
   // Actions
   setIsLoading: (loading: boolean) => void;
@@ -100,6 +116,7 @@ export interface SchoolStore {
   setExpandedPanel: (panelId: string | null) => void;
   setVisualizationMode: (mode: VisualizationMode) => void;
   setTimelineFilter: (range: [number, number] | null) => void;
+  setSearchQuery: (query: string) => void;
 
   setNodePositions: (positions: Map<string, THREE.Vector3>) => void; // Use THREE.Vector3
   initializeStore: () => Promise<void>;
@@ -129,6 +146,7 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   timelineFilter: null,
   visualizationMode: 'network',
   nodePositions: new Map<string, THREE.Vector3>(),
+  searchQuery: '',
 
   // --- Actions (Setters) ---
   setIsLoading: (loading) => set({ isLoading: loading }),
@@ -147,6 +165,7 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   setExpandedPanel: (panelId) => set({ expandedPanel: panelId }),
   setVisualizationMode: (mode: VisualizationMode) => set({ visualizationMode: mode }),
   setTimelineFilter: (range) => set({ timelineFilter: range, selectedUniversity: null }),
+  setSearchQuery: (query) => set({ searchQuery: query }),
 
   setNodePositions: (positions) => set({ nodePositions: positions }),
 
@@ -190,6 +209,27 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
                     type = 'design_school';
                 }
                 processedCount++; // Increment successfully processed count
+                
+                // Extract specializations from programs for similarity calculations
+                const allSpecializations: string[] = [];
+                data.programs?.forEach((program: any) => {
+                    if (program.specializations) {
+                        allSpecializations.push(...program.specializations);
+                    }
+                });
+                
+                // Calculate prestige score (lower national ranking = higher prestige)
+                const prestigeScore = data.ranking?.national ? 
+                    Math.max(0, 100 - data.ranking.national) : 50; // Default to middle if no ranking
+                
+                // Calculate popularity score based on student count and selectivity
+                let popularityScore = 50; // Default
+                if (data.stats?.students && data.stats?.acceptance_rate) {
+                    const studentScore = Math.min(100, (data.stats.students / 50)); // Normalize to ~100 scale
+                    const selectivityScore = (1 - data.stats.acceptance_rate) * 100; // Lower acceptance = higher score
+                    popularityScore = (studentScore * 0.3 + selectivityScore * 0.7); // Weight selectivity more
+                }
+                
                 return {
                     id: data.id || name.toLowerCase().replace(/\s+/g, '-'),
                     name: name,
@@ -206,6 +246,12 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
                     programs: data.programs || [],
                     coordinates: data.coordinates,
                     ncFrei: data.ncFrei,
+                    // Enhanced fields
+                    ranking: data.ranking,
+                    stats: data.stats,
+                    prestigeScore,
+                    popularityScore,
+                    specializationVector: allSpecializations, // Will be converted to numeric vector later if needed
                 };
             });
             console.log(`SchoolStore DEBUG: Finished mapping enhanced data. ${processedCount} entries processed successfully.`);

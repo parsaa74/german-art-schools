@@ -62,6 +62,7 @@ export function SchoolNodes() {
     activeNcFilter,
     timelineFilter,
     visualizationMode,
+    searchQuery,
     setSelectedUniversity
   } = useSchoolStore(state => ({
     processedUniversities: state.processedUniversities,
@@ -75,23 +76,39 @@ export function SchoolNodes() {
     activeNcFilter: state.activeNcFilter,
     timelineFilter: state.timelineFilter,
     visualizationMode: state.visualizationMode,
+    searchQuery: state.searchQuery,
     setSelectedUniversity: state.setSelectedUniversity
   }));
 
-  const filteredUniversities = useMemo(() => {
-    console.log('[SchoolNodes useMemo] Recalculating filteredUniversities...');
-    console.log('[SchoolNodes useMemo] nodePositions.size:', nodePositions.size);
+  // Fuzzy search function
+  const fuzzyMatch = (text: string, query: string): boolean => {
+    if (!query.trim()) return true;
+    const normalizedText = text.toLowerCase();
+    const normalizedQuery = query.toLowerCase();
+    
+    // Exact match gets priority
+    if (normalizedText.includes(normalizedQuery)) return true;
+    
+    // Character by character fuzzy match
+    let queryIndex = 0;
+    for (let i = 0; i < normalizedText.length && queryIndex < normalizedQuery.length; i++) {
+      if (normalizedText[i] === normalizedQuery[queryIndex]) {
+        queryIndex++;
+      }
+    }
+    return queryIndex === normalizedQuery.length;
+  };
 
+  const filteredUniversities = useMemo(() => {
     // Check prerequisites for filtering
     if (!Array.isArray(processedUniversities) || processedUniversities.length === 0) {
-      console.log('[SchoolNodes useMemo] Bailing out: No universities yet.');
       return [];
     }
 
     // Log universities without positions
     const universitiesWithoutPositions = processedUniversities.filter(uni => !nodePositions.has(uni.name));
     if (universitiesWithoutPositions.length > 0) {
-      console.warn('[SchoolNodes useMemo] Universities missing positions:', universitiesWithoutPositions.map(uni => uni.name));
+      // console.warn('[SchoolNodes useMemo] Universities missing positions:', universitiesWithoutPositions.map(uni => uni.name));
     }
 
     const currentTimelineFilter = timelineFilter ?? null;
@@ -99,6 +116,17 @@ export function SchoolNodes() {
     const result = processedUniversities.filter(uni => {
       if (!uni) return false;
       if (!nodePositions.has(uni.name)) return false;
+
+      // Search query filter
+      if (searchQuery && searchQuery.trim()) {
+        const matchesSearch = fuzzyMatch(uni.name, searchQuery) ||
+                             fuzzyMatch(uni.state, searchQuery) ||
+                             fuzzyMatch(uni.city || '', searchQuery) ||
+                             fuzzyMatch(uni.description || '', searchQuery) ||
+                             uni.programTypes.some(p => fuzzyMatch(p, searchQuery));
+        
+        if (!matchesSearch) return false;
+      }
 
       if (activeStateFilter && uni.state !== activeStateFilter) return false;
       if (activeProgramFilter && !uni.programTypes.includes(activeProgramFilter)) return false;
@@ -138,10 +166,9 @@ export function SchoolNodes() {
       return true;
     });
     
-    console.log('[SchoolNodes useMemo] Finished recalculating. Filtered count:', result.length);
     return result;
 
-  }, [processedUniversities, nodePositions, activeStateFilter, activeProgramFilter, activeTypeFilter, activeSemesterFilter, activeNcFilter, timelineFilter]);
+  }, [processedUniversities, nodePositions, activeStateFilter, activeProgramFilter, activeTypeFilter, activeSemesterFilter, activeNcFilter, timelineFilter, searchQuery, fuzzyMatch]);
 
   // Auto-select the university if it's the only one after filtering
   useEffect(() => {

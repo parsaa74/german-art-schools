@@ -1,5 +1,5 @@
-import React, { useState, useRef, useMemo, useEffect } from 'react';
-import { useFrame, ThreeEvent } from '@react-three/fiber';
+import React, { useState, useRef, useMemo } from 'react';
+import { useFrame, ThreeEvent, useThree } from '@react-three/fiber';
 import { Sphere, Text, Line, Billboard } from '@react-three/drei';
 import * as THREE from 'three';
 import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore';
@@ -43,6 +43,9 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
   const { setHoverUniversityName, setSelectedUniversity, controlsEnabled } = useSchoolStore();
   const showHoverEffect = isHovered || localHover;
 
+  // Access camera from react-three-fiber
+  const { camera } = useThree();
+
   // Wandering motion setup (remains the same)
   const basePosition = useMemo(() => position.clone(), [position]);
   const randomSeed = useMemo(() => simpleHash(schoolData.id || schoolData.name), [schoolData.id, schoolData.name]);
@@ -84,16 +87,16 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
   });
 
   // Event handlers (remain the same)
-  const handlePointerOver = (event: ThreeEvent<PointerEvent>) => { 
+  const handlePointerOver = (event: ThreeEvent<globalThis.PointerEvent>) => { 
     if (!controlsEnabled || isSelected) return;
     event.stopPropagation();
     setLocalHover(true);
     if (!isSelected) {
         setHoverUniversityName(schoolData.name);
     }
-    document.body.style.cursor = 'pointer';
+    if (typeof globalThis.document !== 'undefined') globalThis.document.body.style.cursor = 'pointer';
    };
-  const handlePointerOut = (event: ThreeEvent<PointerEvent>) => { 
+  const handlePointerOut = (event: ThreeEvent<globalThis.PointerEvent>) => { 
     if (!controlsEnabled) return;
     event.stopPropagation();
     setLocalHover(false);
@@ -103,9 +106,9 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
     ) {
       setHoverUniversityName(null);
     }
-    document.body.style.cursor = 'auto';
+    if (typeof globalThis.document !== 'undefined') globalThis.document.body.style.cursor = 'auto';
    };
-  const handleClick = (event: ThreeEvent<MouseEvent>) => { 
+  const handleClick = (event: ThreeEvent<globalThis.MouseEvent>) => { 
      if (!controlsEnabled) return;
     event.stopPropagation(); 
     const currentSelected = useSchoolStore.getState().selectedUniversity;
@@ -126,6 +129,31 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
     () => [new THREE.Vector3(0, 0, 0), textPosition],
     [textPosition]
   );
+
+  // --- Dynamic font size based on camera distance ---
+  const [dynamicFontSize, setDynamicFontSize] = useState(MAP_CONFIG.radius * 0.018);
+  const [dynamicOutlineWidth, setDynamicOutlineWidth] = useState(0.001);
+
+  useFrame(() => {
+    if (groupRef.current) {
+      // Get world position of the label
+      const worldPosition = new THREE.Vector3();
+      groupRef.current.getWorldPosition(worldPosition);
+      const labelWorldPosition = worldPosition.clone().add(textPosition);
+      // Compute distance from camera to label
+      const distance = camera.position.distanceTo(labelWorldPosition);
+      // Reference distance (tweak as needed for your scene scale)
+      const referenceDistance = MAP_CONFIG.radius * 0.5;
+      // Font size increases as you zoom out (move camera away)
+      const baseSize = MAP_CONFIG.radius * 0.018;
+      const minSize = baseSize * 0.8;
+      const maxSize = baseSize * 3.5;
+      const newFontSize = Math.max(minSize, Math.min(maxSize, baseSize * (distance / referenceDistance)));
+      setDynamicFontSize(newFontSize);
+      // Outline width can also scale with font size for boldness
+      setDynamicOutlineWidth(0.001 + 0.002 * (newFontSize / baseSize));
+    }
+  });
 
   // Render
   return (
@@ -178,15 +206,18 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
           <AnimatedText
             position={textPosition} // Position relative to the Billboard
             color={isSelected ? '#FFFFFF' : '#E0E0E0'}
-            fontSize={MAP_CONFIG.radius * 0.018}
+            fontSize={dynamicFontSize}
             anchorY="bottom"
             anchorX="center"
-            outlineWidth={0.001}
+            outlineWidth={dynamicOutlineWidth}
             outlineColor="#111111"
             material-transparent={true}
             material-opacity={textOpacity}
             material-depthWrite={false}
             visible={textOpacity.to(o => o > 0.01)}
+            fontWeight={"bold"}
+            // Add shadow for more interest (if supported)
+            // shadow={true}
           >
             {schoolData.name}
           </AnimatedText>
