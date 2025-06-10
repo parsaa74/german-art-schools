@@ -381,8 +381,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
               {groupedResults.university.map(result => (
                 <CommandItem
                   key={result.name}
-                  onSelect={result.action}
-                  onClick={() => result.action()}
+                  onSelect={() => result.action()}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    result.action();
+                  }}
                   className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
                 >
                   {result.icon}
@@ -403,8 +406,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
               {groupedResults.program.map(result => (
                 <CommandItem
                   key={result.name}
-                  onSelect={result.action}
-                  onClick={() => result.action()}
+                  onSelect={() => result.action()}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    result.action();
+                  }}
                   className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-emerald-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
                 >
                   {result.icon}
@@ -425,8 +431,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
               {groupedResults.state.map(result => (
                 <CommandItem
                   key={result.name}
-                  onSelect={result.action}
-                  onClick={() => result.action()}
+                  onSelect={() => result.action()}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    result.action();
+                  }}
                   className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
                 >
                   {result.icon}
@@ -447,8 +456,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
               {groupedResults.type.map(result => (
                 <CommandItem
                   key={result.name}
-                  onSelect={result.action}
-                  onClick={() => result.action()}
+                  onSelect={() => result.action()}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    result.action();
+                  }}
                   className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-purple-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
                 >
                   {result.icon}
@@ -469,8 +481,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
               {groupedResults.nc.map(result => (
                 <CommandItem
                   key={result.name}
-                  onSelect={result.action}
-                  onClick={() => result.action()}
+                  onSelect={() => result.action()}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    result.action();
+                  }}
                   className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-green-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
                 >
                   {result.icon}
@@ -491,8 +506,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
               {groupedResults.semester.map(result => (
                 <CommandItem
                   key={result.name}
-                  onSelect={result.action}
-                  onClick={() => result.action()}
+                  onSelect={() => result.action()}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    result.action();
+                  }}
                   className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-yellow-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
                 >
                   {result.icon}
@@ -509,59 +527,39 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
 
           {/* Instructions when no search */}
           {!search && (
-            <div className="px-6 py-12 text-center">
-              <Search className="h-16 w-16 text-slate-600 mx-auto mb-6" />
-              <h3 className="text-white font-semibold text-lg mb-3">Search German Art Schools</h3>
-              <p className="text-sm text-slate-400 mb-6 max-w-md mx-auto">Start typing to find universities, states, programs, school types, and more</p>
+            <div className="px-6 py-8 text-center">
+              <Search className="h-12 w-12 text-slate-600 mx-auto mb-4" />
+              <h3 className="text-white font-medium mb-2">Search Schools</h3>
+              <p className="text-sm text-slate-400 mb-6">Find universities, programs, states, or school types</p>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-lg mx-auto text-left">
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <h4 className="text-cyan-300 font-medium text-sm mb-2 flex items-center gap-2">
-                    <MapPin className="h-4 w-4" />
-                    Try searching for states:
-                  </h4>
-                  <div className="text-xs text-slate-400 space-y-1">
-                    <p>"Bremen" • "Bavaria" • "Berlin"</p>
-                    <p>"North Rhine-Westphalia"</p>
-                  </div>
+              <div className="max-w-sm mx-auto space-y-3 text-left">
+                <div className="flex items-center gap-3 text-xs">
+                  <GraduationCap className="h-4 w-4 text-blue-400 flex-shrink-0" />
+                  <span className="text-slate-300">Universities:</span>
+                  <span className="text-slate-400">"Bremen Academy" • "UdK Berlin"</span>
                 </div>
                 
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <h4 className="text-emerald-300 font-medium text-sm mb-2 flex items-center gap-2">
-                    <Building2 className="h-4 w-4" />
-                    Try searching for programs:
-                  </h4>
-                  <div className="text-xs text-slate-400 space-y-1">
-                    <p>"Fine Arts" • "Design"</p>
-                    <p>"Architecture" • "Media"</p>
-                  </div>
+                <div className="flex items-center gap-3 text-xs">
+                  <MapPin className="h-4 w-4 text-cyan-400 flex-shrink-0" />
+                  <span className="text-slate-300">States:</span>
+                  <span className="text-slate-400">"Bremen" • "Bavaria" • "Berlin"</span>
                 </div>
                 
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <h4 className="text-purple-300 font-medium text-sm mb-2 flex items-center gap-2">
-                    <Users className="h-4 w-4" />
-                    Try searching for types:
-                  </h4>
-                  <div className="text-xs text-slate-400 space-y-1">
-                    <p>"University" • "Academy"</p>
-                    <p>"College" • "Institute"</p>
-                  </div>
+                <div className="flex items-center gap-3 text-xs">
+                  <Building2 className="h-4 w-4 text-emerald-400 flex-shrink-0" />
+                  <span className="text-slate-300">Programs:</span>
+                  <span className="text-slate-400">"Fine Arts" • "Design" • "Architecture"</span>
                 </div>
                 
-                <div className="bg-slate-800/50 rounded-lg p-4">
-                  <h4 className="text-green-300 font-medium text-sm mb-2 flex items-center gap-2">
-                    <CheckCircle className="h-4 w-4" />
-                    Try searching for options:
-                  </h4>
-                  <div className="text-xs text-slate-400 space-y-1">
-                    <p>"NC-free" • "Winter"</p>
-                    <p>"Summer" • "Semester"</p>
-                  </div>
+                <div className="flex items-center gap-3 text-xs">
+                  <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
+                  <span className="text-slate-300">Options:</span>
+                  <span className="text-slate-400">"NC-free" • "Winter" • "University"</span>
                 </div>
               </div>
               
-              <div className="text-xs text-slate-500 mt-6 space-y-1">
-                <p>Use ↑↓ to navigate results • Enter to select • Esc to close</p>
+              <div className="text-xs text-slate-500 mt-6">
+                <p>↑↓ navigate • Enter select • Esc close</p>
               </div>
             </div>
           )}
@@ -579,7 +577,8 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   setSelectedUniversity(null);
                   onClose();
                 }}
-                onClick={() => {
+                onMouseDown={(e) => {
+                  e.preventDefault();
                   setActiveStateFilter(null);
                   setActiveProgramFilter(null);
                   setActiveTypeFilter(null);
