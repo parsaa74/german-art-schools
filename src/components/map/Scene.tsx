@@ -2,19 +2,13 @@
 
 import { Suspense, useState, useEffect, useRef, useMemo, useCallback } from 'react'; // Ensure useCallback is imported
 import { Canvas, useFrame, useThree, extend, Object3DNode } from '@react-three/fiber';
-import { OrbitControls, Line } from '@react-three/drei';
-import { EffectComposer, Bloom, ChromaticAberration, Vignette } from '@react-three/postprocessing';
+import { Line } from '@react-three/drei';
 import { LineMaterial } from 'three-stdlib';
 import dynamic from 'next/dynamic';
 import * as THREE from 'three';
 import { useParams } from 'next/navigation';
-import Link from 'next/link';
-import { useFonts } from '@/hooks/useFonts';
-import { CreativeTitle, SubText } from '@/components/typography';
 import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore';
-import universityData from '@/../public/data/art_programs.json';
 import InfoPanel from './InfoPanel';
-import VisualizationToggle from './VisualizationToggle';
 import type { ProcessedUniversity as ProcessedUniversityType } from '@/stores/schoolStore';
 import { useMapStore } from '@/stores/mapStore';
 import { SceneContent } from './SceneContent'; // Renders content *inside* the Canvas
@@ -51,8 +45,8 @@ declare module '@react-three/fiber' {
 // --- START: AnimatedLine Component ---
 interface AnimatedLineProps {
     points: [THREE.Vector3, THREE.Vector3];
-    startColor?: THREE.Color | string | number;
-    endColor?: THREE.Color | string | number;
+    _startColor?: THREE.Color | string | number;
+    _endColor?: THREE.Color | string | number;
     lineWidth?: number;
     opacity?: number;
     animationDuration?: number; // Duration in seconds
@@ -60,8 +54,8 @@ interface AnimatedLineProps {
 
 function AnimatedLine({
     points,
-    startColor = '#1E90FF',
-    endColor = '#00FFFF',
+    _startColor = '#1E90FF',
+    _endColor = '#00FFFF',
     lineWidth = 1.5,
     opacity = 0.7,
     animationDuration = 0.6
@@ -138,7 +132,7 @@ function ConnectionLines({ points }: { points: Array<[THREE.Vector3, THREE.Vecto
 }
 
 function SceneEventHandler({
-    processedUniversities,
+    _processedUniversities,
     universityMap,
     nodePositions,
     setHoverUniversityName,
@@ -148,7 +142,7 @@ function SceneEventHandler({
     controlsEnabled,
     hoverUniversityName,
 }: {
-    processedUniversities: ProcessedUniversityType[];
+    _processedUniversities: ProcessedUniversityType[];
     universityMap: Map<string, ProcessedUniversityType>;
     nodePositions: Map<string, THREE.Vector3>;
     setHoverUniversityName: (name: string | null) => void;
