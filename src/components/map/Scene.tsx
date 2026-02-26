@@ -16,7 +16,7 @@ import D3NetworkGraph from '@/components/visualization/D3NetworkGraph.fixed'; //
 import { FiHelpCircle, FiGithub } from 'react-icons/fi'
 import { useSpring, animated } from '@react-spring/web'
 import { CollapsibleControlPanel } from '@/components/ui/CollapsibleControlPanel';
-import { SlidersHorizontal } from 'lucide-react';
+import { SlidersHorizontal, X } from 'lucide-react';
 import { ViewModeToggle } from './ViewModeToggle'; // Import the new toggle
 import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 
@@ -289,7 +289,9 @@ export function Scene({ lang, dict }: SceneProps) {
         setActiveNcFilter,
         uniqueStates,
         uniqueProgramTypes,
-        visualizationMode
+        visualizationMode,
+        searchQuery,
+        setSearchQuery
     } = useSchoolStore();
 
     const { activePanel, setActivePanel } = useMapStore();
@@ -387,7 +389,18 @@ export function Scene({ lang, dict }: SceneProps) {
       }, [processedUniversities]);
 
     // Handlers for UI OUTSIDE the canvas
-    const handleClosePanel = () => { setSelectedUniversity(null); };
+    // Handle close panel AND clear all filters for a complete reset
+    const handleClosePanel = useCallback(() => { 
+        setSelectedUniversity(null); 
+        setConnectionLines([]);
+        // Also clear all filters when closing the info panel
+        setActiveStateFilter(null);
+        setActiveProgramFilter(null);
+        setActiveTypeFilter(null);
+        setActiveSemesterFilter(null);
+        setActiveNcFilter(null);
+        setSearchQuery('');
+    }, [setSelectedUniversity, setConnectionLines, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setSearchQuery]);
     
     // Define animation variants for the main view cross-fade
     const visVariants = {
@@ -731,6 +744,25 @@ export function Scene({ lang, dict }: SceneProps) {
                             <option value="no">No</option>
                           </select>
                         </div>
+                        {/* Reset All Button */}
+                        {(activeStateFilter || activeProgramFilter || activeTypeFilter || activeSemesterFilter || activeNcFilter !== null || selectedUniversity) && (
+                          <button
+                            onClick={() => {
+                                setActiveStateFilter(null);
+                                setActiveProgramFilter(null);
+                                setActiveTypeFilter(null);
+                                setActiveSemesterFilter(null);
+                                setActiveNcFilter(null);
+                                setSelectedUniversity(null);
+                                setConnectionLines([]);
+                                setSearchQuery('');
+                            }}
+                            className="w-full mt-2 py-2 px-3 bg-red-500/20 hover:bg-red-500/40 border border-red-500/50 text-red-300 text-xs font-medium rounded-soft transition-all duration-300 flex items-center justify-center gap-2"
+                          >
+                            <X size={14} />
+                            Reset All
+                          </button>
+                        )}
                     </CollapsibleControlPanel>
 
                      <ViewModeToggle />
