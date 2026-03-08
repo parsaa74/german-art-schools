@@ -1698,6 +1698,66 @@
       ],
       "website": "https://www.tum.de/",
       "description": "The Technical University of Munich (TUM) is one of Europe's leading research universities, consistently ranked among the top universities globally. It excels in engineering, natural sciences, life sciences, medicine, and management. TUM offers innovative programs at the intersection of technology and creative fields, such as Games Engineering and Computational Science, fostering a strong entrepreneurial spirit and close ties with industry."
+    },
+    "Köln International School of Design": {
+      "id": "koln-international-school-of-design",
+      "coordinates": {
+        "lat": 50.935,
+        "lng": 6.955
+      },
+      "ranking": {
+        "national": 15,
+        "specialization_rank": {
+          "design": 8,
+          "communication_design": 6
+        }
+      },
+      "stats": {
+        "students": 320,
+        "acceptance_rate": 0.20,
+        "student_staff_ratio": 8.0,
+        "founded": 1991
+      },
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "design_school",
+      "programs": [
+        {
+          "name": "Integrated Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German/English",
+          "duration": "8 semesters",
+          "description": "Program focusing on integrated design approaches, combining product design, communication design, and spatial design in an interdisciplinary curriculum.",
+          "specializations": ["Product Design", "Communication Design", "Spatial Design", "Design Theory"]
+        },
+        {
+          "name": "Integrated Design Research",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German/English",
+          "duration": "4 semesters",
+          "description": "Advanced program focusing on research-driven design practice and interdisciplinary design solutions.",
+          "specializations": ["Design Research", "Strategic Design", "Social Design", "Sustainable Design"]
+        },
+        {
+          "name": "Communication Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German/English",
+          "duration": "8 semesters",
+          "description": "Program focusing on visual communication, graphic design, and media design with emphasis on practical and theoretical knowledge.",
+          "specializations": ["Graphic Design", "Typography", "Digital Media", "Brand Design"]
+        }
+      ],
+      "website": "https://kisd.de/en/",
+      "description": "The Köln International School of Design (KISD) is a public design university founded in 1991 in Cologne, Germany. It offers interdisciplinary programs in integrated design, communication design, and product design. KISD is known for its international orientation and focus on sustainable and social design practices."
     }
   }
 }
