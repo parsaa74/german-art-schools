@@ -22,6 +22,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'German Art Schools Map',
   description: 'Interactive map of art schools in Germany - Explore the rich artistic education landscape',
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -51,6 +55,9 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning className={inter.variable}>
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
+        <link rel="icon" href="/favicon.png" type="image/png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
