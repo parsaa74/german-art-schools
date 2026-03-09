@@ -1905,6 +1905,505 @@
       ],
       "website": "https://kunsthochschulekassel.de/",
       "description": "Kunsthochschule Kassel (Kassel University of Fine Arts) is one of Germany's oldest art schools, founded in 1777. It offers programs in fine arts and visual communication, and is known for its experimental approach and strong focus on contemporary art practices."
+    },
+    "Hochschule Pforzheim": {
+      "id": "hochschule-pforzheim",
+      "coordinates": {
+        "lat": 48.895,
+        "lng": 8.695
+      },
+      "ranking": {
+        "national": 20,
+        "specialization_rank": {
+          "design": 10,
+          "industrial_design": 4,
+          "transportation_design": 2
+        }
+      },
+      "stats": {
+        "students": 680,
+        "acceptance_rate": 0.22,
+        "student_staff_ratio": 8.5,
+        "founded": 1877
+      },
+      "city": "Pforzheim",
+      "state": "Baden-Württemberg",
+      "type": "design_school",
+      "programs": [
+        {
+          "name": "Industrial Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on industrial design, product design, and design engineering.",
+          "specializations": ["Product Design", "Industrial Design", "Design Engineering"]
+        },
+        {
+          "name": "Mode",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on fashion design, textile design, and fashion technology.",
+          "specializations": ["Fashion Design", "Textile Design", "Fashion Technology"]
+        },
+        {
+          "name": "Schmuck",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on jewelry design, metalsmithing, and accessory design.",
+          "specializations": ["Jewelry Design", "Metalsmithing", "Accessory Design"]
+        },
+        {
+          "name": "Visuelle Kommunikation",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on visual communication, graphic design, and media design.",
+          "specializations": ["Graphic Design", "Typography", "Media Design"]
+        },
+        {
+          "name": "Transportation Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on vehicle design, automotive design, and transportation design.",
+          "specializations": ["Vehicle Design", "Automotive Design", "Transportation Design"]
+        },
+        {
+          "name": "Transportation Design",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German/English",
+          "duration": "3 semesters",
+          "description": "Advanced program focusing on innovative transportation design and mobility solutions.",
+          "specializations": ["Advanced Vehicle Design", "Mobility Design", "Sustainable Transportation"]
+        },
+        {
+          "name": "Creative Communication and Brand Management",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German/English",
+          "duration": "3 semesters",
+          "description": "Advanced program focusing on strategic communication, brand management, and creative leadership.",
+          "specializations": ["Brand Strategy", "Creative Leadership", "Strategic Communication"]
+        },
+        {
+          "name": "Creative Direction",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German/English",
+          "duration": "3 semesters",
+          "description": "Advanced program focusing on creative direction, art direction, and design leadership.",
+          "specializations": ["Art Direction", "Design Leadership", "Creative Strategy"]
+        },
+        {
+          "name": "Design & Future Making",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German/English",
+          "duration": "3 semesters",
+          "description": "Advanced program focusing on experimental design, future-oriented design, and innovation.",
+          "specializations": ["Experimental Design", "Future Studies", "Innovation Design"]
+        }
+      ],
+      "website": "https://www.hs-pforzheim.de",
+      "description": "Hochschule Pforzheim (Pforzheim University) is a public university of applied sciences founded in 1877. It is one of Germany's leading design schools, known for its programs in industrial design, transportation design, jewelry design, fashion, and visual communication."
+    },
+    "Hochschule für Medien Stuttgart": {
+      "id": "hdm-stuttgart",
+      "coordinates": {
+        "lat": 48.714,
+        "lng": 9.102
+      },
+      "ranking": {
+        "national": 22,
+        "specialization_rank": {
+          "media": 8,
+          "communication": 6
+        }
+      },
+      "stats": {
+        "students": 4900,
+        "acceptance_rate": 0.28,
+        "student_staff_ratio": 10.0,
+        "founded": 2001
+      },
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "university_of_arts",
+      "programs": [
+        {
+          "name": "Audiovisuelle Medien",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on audiovisual media, film production, and media design.",
+          "specializations": ["Film Production", "Media Design", "Audiovisual Media"]
+        },
+        {
+          "name": "Bibliothek und digitale Information",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on library science, digital information management, and information science.",
+          "specializations": ["Library Science", "Digital Information", "Information Management"]
+        },
+        {
+          "name": "Crossmedia-Redaktion & Public Relations",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on crossmedia journalism, public relations, and corporate communications.",
+          "specializations": ["Journalism", "Public Relations", "Corporate Communications"]
+        },
+        {
+          "name": "Deutsch-Chinesischer Studiengang Medien und Technologie",
+          "degree": "Bachelor of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "German-Chinese program focusing on media and technology.",
+          "specializations": ["Media Technology", "Crosscultural Media", "Digital Media"]
+        },
+        {
+          "name": "Digital- und Medienwirtschaft",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on digital media business, media management, and digital economy.",
+          "specializations": ["Media Business", "Digital Economy", "Media Management"]
+        },
+        {
+          "name": "Informationsdesign",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on information design, data visualization, and user experience.",
+          "specializations": ["Information Design", "Data Visualization", "UX Design"]
+        },
+        {
+          "name": "Integriertes Produktdesign",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on integrated product design, industrial design, and design engineering.",
+          "specializations": ["Product Design", "Industrial Design", "Design Engineering"]
+        },
+        {
+          "name": "Media Entertainment",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on media entertainment, gaming, and interactive media.",
+          "specializations": ["Entertainment Media", "Game Design", "Interactive Media"]
+        },
+        {
+          "name": "Mediapublishing",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on media publishing, digital publishing, and content management.",
+          "specializations": ["Publishing", "Digital Publishing", "Content Management"]
+        },
+        {
+          "name": "Medien- und Wirtschaftspsychologie",
+          "degree": "Bachelor of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on media psychology, business psychology, and consumer behavior.",
+          "specializations": ["Media Psychology", "Consumer Psychology", "Business Psychology"]
+        },
+        {
+          "name": "Medieninformatik",
+          "degree": "Bachelor of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on media informatics, software development, and multimedia programming.",
+          "specializations": ["Media Informatics", "Software Development", "Multimedia"]
+        },
+        {
+          "name": "Mobile Medien",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on mobile media, app development, and mobile technology.",
+          "specializations": ["Mobile Media", "App Development", "Mobile Technology"]
+        },
+        {
+          "name": "Online-Medien-Management",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on online media management, digital marketing, and web content.",
+          "specializations": ["Online Management", "Digital Marketing", "Web Content"]
+        },
+        {
+          "name": "Print Media and Packaging Technologies",
+          "degree": "Bachelor of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on print media, packaging technology, and print production.",
+          "specializations": ["Print Media", "Packaging Technology", "Print Production"]
+        },
+        {
+          "name": "Social Media Marketing & Management",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on social media marketing, content strategy, and community management.",
+          "specializations": ["Social Media Marketing", "Content Strategy", "Community Management"]
+        },
+        {
+          "name": "Technisches Produktmanagement – Technisches Design",
+          "degree": "Bachelor of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on technical product management and technical design.",
+          "specializations": ["Product Management", "Technical Design", "Engineering"]
+        },
+        {
+          "name": "Werbung und Marktkommunikation",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on advertising, marketing communications, and brand management.",
+          "specializations": ["Advertising", "Marketing Communications", "Brand Management"]
+        },
+        {
+          "name": "Wirtschaftsinformatik und digitale Medien",
+          "degree": "Bachelor of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on business informatics and digital media.",
+          "specializations": ["Business Informatics", "Digital Media", "IT Management"]
+        },
+        {
+          "name": "Wirtschaftsingenieurwesen Medien",
+          "degree": "Bachelor of Engineering",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on industrial engineering with focus on media.",
+          "specializations": ["Industrial Engineering", "Media Technology", "Media Management"]
+        },
+        {
+          "name": "Audiovisual Media Creation and Technology",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "English",
+          "duration": "3 semesters",
+          "description": "Master's program focusing on audiovisual media creation and technology.",
+          "specializations": ["AV Media Creation", "Media Technology", "Film Production"]
+        },
+        {
+          "name": "Computer Science and Media",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "English",
+          "duration": "3 semesters",
+          "description": "Master's program focusing on computer science and media applications.",
+          "specializations": ["Media Computing", "Software Engineering", "Media Applications"]
+        },
+        {
+          "name": "Crossmedia Publishing & Management",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German",
+          "duration": "3 semesters",
+          "description": "Master's program focusing on crossmedia publishing and management.",
+          "specializations": ["Publishing Management", "Crossmedia", "Digital Publishing"]
+        },
+        {
+          "name": "Digital Design",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German/English",
+          "duration": "3 semesters",
+          "description": "Master's program focusing on digital design, interaction design, and user experience.",
+          "specializations": ["Digital Design", "Interaction Design", "UX Design"]
+        },
+        {
+          "name": "Master of Media Research",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German/English",
+          "duration": "3 semesters",
+          "description": "Master's program focusing on media research, media studies, and empirical media research.",
+          "specializations": ["Media Research", "Media Studies", "Empirical Research"]
+        },
+        {
+          "name": "Medienmanagement",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German",
+          "duration": "3 semesters",
+          "description": "Master's program focusing on media management, leadership, and media economics.",
+          "specializations": ["Media Management", "Leadership", "Media Economics"]
+        },
+        {
+          "name": "Packaging Development Management",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German/English",
+          "duration": "3 semesters",
+          "description": "Master's program focusing on packaging development and management.",
+          "specializations": ["Packaging Development", "Packaging Management", "Sustainable Packaging"]
+        },
+        {
+          "name": "Unternehmenskommunikation",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German",
+          "duration": "3 semesters",
+          "description": "Master's program focusing on corporate communications, PR, and strategic communications.",
+          "specializations": ["Corporate Communications", "PR", "Strategic Communications"]
+        },
+        {
+          "name": "Wirtschaftsinformatik",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German",
+          "duration": "3 semesters",
+          "description": "Master's program focusing on business informatics and digital transformation.",
+          "specializations": ["Business Informatics", "Digital Transformation", "IT Management"]
+        }
+      ],
+      "website": "https://hdm-stuttgart.de/",
+      "description": "The Stuttgart Media University (Hochschule für Medien Stuttgart, HdM) is a state university of media studies in Stuttgart, Germany, offering nearly 30 accredited bachelor's and master's degree programs within three faculties. Founded in 2001, it is located at Nobelstraße 10 in the University of Stuttgart Campus Vaihingen."
+    },
+    "Kunstakademie Münster": {
+      "id": "kunstakademie-munster",
+      "coordinates": {
+        "lat": 51.9607,
+        "lng": 7.6281
+      },
+      "ranking": {
+        "national": 16,
+        "specialization_rank": {
+          "fine_arts": 7
+        }
+      },
+      "stats": {
+        "students": 360,
+        "acceptance_rate": 0.15,
+        "student_staff_ratio": 6.5,
+        "founded": 1971
+      },
+      "city": "Münster",
+      "state": "North Rhine-Westphalia",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Freie Kunst",
+          "degree": "Akademiebrief (Diplom)",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "The Fine Arts program at Kunstakademie Münster is one of the freest and most self-determined study programs. The program aims to foster artistic talent, art history knowledge, and artistic-technical skills. The goal is the development of an independent artistic personality. Studies include an orientation semester (2 semesters) followed by studio study in an artistic class (8 semesters).",
+          "specializations": ["Painting", "Sculpture", "Drawing", "Printmaking", "New Media", "Photography"]
+        }
+      ],
+      "website": "https://www.kunstakademie-muenster.de/",
+      "description": "Kunstakademie Münster (Academy of Fine Arts Münster) is a public art school founded in 1971 and located at Leonardo-Campus 2 in Münster. It offers programs in Fine Arts with an emphasis on artistic freedom and self-determination. The academy provides studio-based learning in artistic classes complemented by technical workshops and art-related sciences."
     }
   }
 }
