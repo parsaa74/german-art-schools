@@ -1,8 +1,8 @@
 {
   "statistics": {
     "last_updated": "2025-04-15",
-    "total_schools": 51,
-    "total_programs": 183
+    "total_schools": 54,
+    "total_programs": 189
   },
   "universities": {
     "Kunstakademie Düsseldorf": {
@@ -631,6 +631,153 @@
       ],
       "website": "https://kisd.de/en/",
       "description": "The Köln International School of Design (KISD) is a public design university founded in 1991 in Cologne, Germany. It offers interdisciplinary programs in integrated design, communication design, and product design. KISD is known for its international orientation and focus on sustainable and social design practices."
+    },
+    "Hochschule Reutlingen": {
+      "id": "hochschule-reutlingen",
+      "coordinates": {
+        "lat": 48.495,
+        "lng": 9.205
+      },
+      "ranking": {
+        "national": 25,
+        "specialization_rank": {
+          "design": 12,
+          "textile_design": 3
+        }
+      },
+      "stats": {
+        "students": 580,
+        "acceptance_rate": 0.25,
+        "student_staff_ratio": 9.0,
+        "founded": 1855
+      },
+      "city": "Reutlingen",
+      "state": "Baden-Württemberg",
+      "type": "design_school",
+      "programs": [
+        {
+          "name": "Integrated Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 May", "end": "15 July"}
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Program focusing on integrated design, combining product design, communication design, and textile design.",
+          "specializations": ["Product Design", "Communication Design", "Textile Design", "Design Theory"]
+        },
+        {
+          "name": "Textile Design",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {"start": "1 April", "end": "15 May"}
+          },
+          "language": "German/English",
+          "duration": "3 semesters",
+          "description": "Advanced program focusing on innovative textile design and technology.",
+          "specializations": ["Textile Innovation", "Smart Textiles", "Sustainable Textiles", "Fashion Design"]
+        }
+      ],
+      "website": "https://www.reutlingen-university.de/",
+      "description": "Hochschule Reutlingen (Reutlingen University) is a public university of applied sciences founded in 1855. It offers programs in design, engineering, and business. The Faculty of Design is known for its focus on textile design, product design, and communication design."
+    },
+    "Kunsthochschule Mainz": {
+      "id": "kunsthochschule-mainz",
+      "coordinates": {
+        "lat": 49.9929,
+        "lng": 8.2473
+      },
+      "ranking": {
+        "national": 18,
+        "specialization_rank": {
+          "fine_arts": 8,
+          "visual_communication": 5
+        }
+      },
+      "stats": {
+        "students": 450,
+        "acceptance_rate": 0.18,
+        "student_staff_ratio": 7.5,
+        "founded": 1975
+      },
+      "city": "Mainz",
+      "state": "Rhineland-Palatinate",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Program focusing on fine arts with emphasis on individual artistic development.",
+          "specializations": ["Painting", "Sculpture", "Photography", "Performance"]
+        },
+        {
+          "name": "Visual Communication",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Program focusing on visual communication, graphic design, and media design.",
+          "specializations": ["Graphic Design", "Typography", "Illustration", "Media Design"]
+        }
+      ],
+      "website": "https://kunsthochschule-mainz.de/",
+      "description": "Kunsthochschule Mainz (Mainz University of Fine Arts) is a public art school founded in 1975. It offers programs in fine arts and visual communication, with a focus on interdisciplinary art practice and experimental approaches."
+    },
+    "Kunsthochschule Kassel": {
+      "id": "kunsthochschule-kassel",
+      "coordinates": {
+        "lat": 51.3127,
+        "lng": 9.4797
+      },
+      "ranking": {
+        "national": 14,
+        "specialization_rank": {
+          "fine_arts": 6,
+          "visual_communication": 4
+        }
+      },
+      "stats": {
+        "students": 520,
+        "acceptance_rate": 0.16,
+        "student_staff_ratio": 8.0,
+        "founded": 1777
+      },
+      "city": "Kassel",
+      "state": "Hesse",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Program focusing on fine arts with emphasis on individual artistic development and experimental approaches.",
+          "specializations": ["Painting", "Sculpture", "Photography", "New Media"]
+        },
+        {
+          "name": "Visual Communication",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {"start": "1 March", "end": "15 April"}
+          },
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Program focusing on visual communication, graphic design, and media arts.",
+          "specializations": ["Graphic Design", "Typography", "Illustration", "Media Art"]
+        }
+      ],
+      "website": "https://kunsthochschulekassel.de/",
+      "description": "Kunsthochschule Kassel (Kassel University of Fine Arts) is one of Germany's oldest art schools, founded in 1777. It offers programs in fine arts and visual communication, and is known for its experimental approach and strong focus on contemporary art practices."
     }
   }
 }
