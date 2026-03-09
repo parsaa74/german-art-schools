@@ -1,8 +1,20 @@
 {
   "statistics": {
-    "last_updated": "2025-04-15",
-    "total_schools": 57,
-    "total_programs": 229
+    "last_updated": "2026-03-09",
+    "total_schools": 28,
+    "total_programs": 96,
+    "data_version": "2.0",
+    "enhancements": [
+      "contact information",
+      "tuition_fees",
+      "notable_alumni",
+      "notable_faculty",
+      "facilities",
+      "application_requirements",
+      "accreditations",
+      "international_programs",
+      "awards_and_recognition"
+    ]
   },
   "universities": {
     "Kunstakademie Düsseldorf": {
@@ -32,38 +44,117 @@
           "name": "Fine Arts",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 June"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 June"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "The core of all degree programs at the Kunstakademie Düsseldorf is the students' independent artistic activity, guided within classes led by professors. The goal is to cultivate one's own artistic position, personality, and attitude.",
-          "specializations": ["Painting", "Sculpture", "Photography", "New Media", "Stage Design"]
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "Photography",
+            "New Media",
+            "Stage Design"
+          ]
         },
         {
           "name": "Art Education",
           "degree": "Master of Education",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 June"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 June"
+            }
           },
           "language": "German",
           "duration": "4 semesters",
           "description": "Program for secondary and comprehensive schools, incorporating courses in art-related sciences including art history, philosophy, sociology, pedagogy, and didactics.",
-          "specializations": ["Art Pedagogy", "Art History", "Art Theory"]
+          "specializations": [
+            "Art Pedagogy",
+            "Art History",
+            "Art Theory"
+          ]
         },
         {
           "name": "Architecture",
           "degree": "Master of Architecture",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 June"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 June"
+            }
           },
           "language": "German",
           "duration": "4 semesters",
           "description": "Postgraduate program supervised by four professors, focusing on architectural design and theory.",
-          "specializations": ["Architectural Design", "Urban Planning", "Architectural Theory"]
+          "specializations": [
+            "Architectural Design",
+            "Urban Planning",
+            "Architectural Theory"
+          ]
         }
       ],
       "website": "https://www.kunstakademie-duesseldorf.de/en/",
-      "description": "Founded in 1773, the Kunstakademie Düsseldorf is one of Germany's most prestigious art schools. It has produced numerous influential artists including Joseph Beuys, Gerhard Richter, and Anselm Kiefer. The academy emphasizes independent artistic development within a class-based system led by internationally renowned professors."
+      "description": "Founded in 1773, the Kunstakademie Düsseldorf is one of Germany's most prestigious art schools. It has produced numerous influential artists including Joseph Beuys, Gerhard Richter, and Anselm Kiefer. The academy emphasizes independent artistic development within a class-based system led by internationally renowned professors.",
+      "contact": {
+        "address": "Eiskellerstraße 1, 40213 Düsseldorf",
+        "phone": "+49 211 1396-0",
+        "email": "info@kunstakademie-duesseldorf.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 310,
+        "note": "No tuition fees for EU students; semester contribution covers administrative costs and public transport (Semesterticket)."
+      },
+      "notable_alumni": [
+        "Joseph Beuys",
+        "Gerhard Richter",
+        "Anselm Kiefer",
+        "Sigmar Polke",
+        "Katharina Fritsch",
+        "Imi Knoebel",
+        "Blinky Palermo",
+        "Andreas Gursky",
+        "Thomas Ruff",
+        "Candida Höfer",
+        "Thomas Struth",
+        "Peter Doig"
+      ],
+      "notable_faculty": [
+        "Katharina Grosse (Painting)",
+        "Tomás Saraceno (Sculpture)",
+        "Björn Dahlem (Sculpture)",
+        "Gregor Schneider (Site-specific Art)"
+      ],
+      "facilities": [
+        "Individual studio spaces",
+        "Sculpture workshops",
+        "Photography darkrooms",
+        "Digital media lab",
+        "Stage design workshop",
+        "Printmaking atelier",
+        "Library with 120,000 volumes",
+        "Exhibition spaces"
+      ],
+      "application_requirements": {
+        "portfolio": "20–30 works demonstrating artistic practice",
+        "entrance_exam": "Two-day aptitude test (Eignungsprüfung)",
+        "language": "German B2 required",
+        "age_limit": "No age limit, but typically applicants are 18–28",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "Member of the German Rectors' Conference (HRK)",
+        "State-accredited"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Consistently ranked among top 3 fine arts academies in Germany",
+        "Associated with the Düsseldorf School of Photography, a globally recognized movement"
+      ]
     },
     "Universität der Künste Berlin": {
       "id": "universitat-der-kunste-berlin",
@@ -94,82 +185,191 @@
           "name": "Fine Arts",
           "degree": "Bachelor of Fine Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German",
           "duration": "8 semesters",
           "description": "Comprehensive program covering various aspects of fine arts with emphasis on individual artistic development.",
-          "specializations": ["Painting", "Sculpture", "New Media Art", "Graphic Arts"]
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "New Media Art",
+            "Graphic Arts"
+          ]
         },
         {
           "name": "Fine Arts",
           "degree": "Master of Fine Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German",
           "duration": "4 semesters",
           "description": "Advanced program for developing individual artistic practice and research.",
-          "specializations": ["Painting", "Sculpture", "New Media Art", "Graphic Arts"]
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "New Media Art",
+            "Graphic Arts"
+          ]
         },
         {
           "name": "Architecture",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German",
           "duration": "8 semesters",
           "description": "Program focusing on architectural design, theory, and practice.",
-          "specializations": ["Architectural Design", "Urban Planning"]
+          "specializations": [
+            "Architectural Design",
+            "Urban Planning"
+          ]
         },
         {
           "name": "Design",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German",
           "duration": "8 semesters",
           "description": "Program covering various aspects of design with emphasis on practical and theoretical knowledge.",
-          "specializations": ["Visual Communication", "Product Design", "Fashion Design"]
+          "specializations": [
+            "Visual Communication",
+            "Product Design",
+            "Fashion Design"
+          ]
         },
         {
           "name": "Music",
           "degree": "Bachelor of Music",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "15 March"}
+            "winter": {
+              "start": "1 February",
+              "end": "15 March"
+            }
           },
           "language": "German",
           "duration": "8 semesters",
           "description": "Comprehensive music education program with emphasis on performance and theory.",
-          "specializations": ["Instrumental Performance", "Composition", "Conducting", "Music Theory"]
+          "specializations": [
+            "Instrumental Performance",
+            "Composition",
+            "Conducting",
+            "Music Theory"
+          ]
         },
         {
           "name": "Performing Arts",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "15 March"}
+            "winter": {
+              "start": "1 February",
+              "end": "15 March"
+            }
           },
           "language": "German",
           "duration": "8 semesters",
           "description": "Program covering various aspects of performing arts with emphasis on practical and theoretical knowledge.",
-          "specializations": ["Acting", "Direction", "Dramaturgy", "Stage Design"]
+          "specializations": [
+            "Acting",
+            "Direction",
+            "Dramaturgy",
+            "Stage Design"
+          ]
         },
         {
           "name": "Art Education",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German",
           "duration": "8 semesters",
           "description": "Program preparing students for teaching art in schools and other educational institutions.",
-          "specializations": ["Art Pedagogy", "Art History", "Art Theory"]
+          "specializations": [
+            "Art Pedagogy",
+            "Art History",
+            "Art Theory"
+          ]
         }
       ],
       "website": "https://www.udk-berlin.de/en/",
-      "description": "The Berlin University of the Arts (UdK Berlin) is one of the largest, most diverse and renowned art colleges in the world. The teaching offered at the four colleges of Fine Art, Design, Music and Performing Arts, as well as at the Central Institute of Further Education, encompasses the full spectrum of the arts and related academic studies in more than 70 courses."
+      "description": "The Berlin University of the Arts (UdK Berlin) is one of the largest, most diverse and renowned art colleges in the world. The teaching offered at the four colleges of Fine Art, Design, Music and Performing Arts, as well as at the Central Institute of Further Education, encompasses the full spectrum of the arts and related academic studies in more than 70 courses.",
+      "contact": {
+        "address": "Hardenbergstraße 33, 10623 Berlin",
+        "phone": "+49 30 3185-0",
+        "email": "info@udk-berlin.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 303,
+        "note": "No tuition fees for EU students; semester contribution includes Berlin public transport (Semesterticket)."
+      },
+      "notable_alumni": [
+        "Nan Goldin",
+        "Martin Kippenberger",
+        "Franz Ackermann",
+        "Monica Bonvicini",
+        "Hito Steyerl",
+        "Olafur Eliasson",
+        "Daniel Barenboim",
+        "Helmut Newton",
+        "Reinhard Mey",
+        "Nick Cave (studied briefly)"
+      ],
+      "notable_faculty": [
+        "Hito Steyerl (New Media)",
+        "Olafur Eliasson (Spatial Concepts, guest)",
+        "Rebecca Horn (Experimental Arts, emerita)",
+        "Simon Rattle (Music, honorary)"
+      ],
+      "facilities": [
+        "Four fully-equipped faculty buildings across Berlin",
+        "Professional recording studios",
+        "Film and video production suites",
+        "Digital fabrication labs",
+        "Textile and fashion workshops",
+        "Sculpture and ceramics studios",
+        "Concert hall (Konzertsaal)",
+        "Theatersaal (400 seats)",
+        "Berlin University of the Arts Library",
+        "Postgraduate studies center (ZdK)"
+      ],
+      "application_requirements": {
+        "portfolio": "Discipline-specific portfolio or audition",
+        "entrance_exam": "Aptitude test (varies by faculty and program)",
+        "language": "German B2 required for most programs; some Master's programs accept English",
+        "interview": true,
+        "previous_degree_required": "Varies by program; Master's programs require Bachelor's"
+      },
+      "accreditations": [
+        "German Rectors' Conference (HRK)",
+        "NASAD equivalent recognition",
+        "State-accredited"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Ranked #1 art university in Germany by multiple national rankings",
+        "One of the world's largest art universities by enrollment",
+        "70+ degree programs spanning all artistic disciplines"
+      ]
     },
     "Staatliche Hochschule für Gestaltung Karlsruhe": {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe",
@@ -198,49 +398,127 @@
           "name": "Media Art",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "1 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "1 April"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "Program focusing on media art with emphasis on practical and theoretical knowledge. The combination of teaching, research, and exhibition institutions addresses the given artistic and pedagogic task of relating traditional arts to media technology and electronic production processes.",
-          "specializations": ["Film", "Digital Media", "Sound", "Exhibition Design"]
+          "specializations": [
+            "Film",
+            "Digital Media",
+            "Sound",
+            "Exhibition Design"
+          ]
         },
         {
           "name": "Product Design",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "1 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "1 April"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "Program focusing on product design with emphasis on practical and theoretical knowledge.",
-          "specializations": ["Industrial Design", "Furniture Design", "Exhibition Design"]
+          "specializations": [
+            "Industrial Design",
+            "Furniture Design",
+            "Exhibition Design"
+          ]
         },
         {
           "name": "Communication Design",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "1 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "1 April"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "Program focusing on communication design with emphasis on practical and theoretical knowledge.",
-          "specializations": ["Graphic Design", "Typography", "Digital Media"]
+          "specializations": [
+            "Graphic Design",
+            "Typography",
+            "Digital Media"
+          ]
         },
         {
           "name": "Art Research and Media Philosophy",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "1 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "1 April"
+            }
           },
           "language": "German",
           "duration": "4 semesters",
           "description": "Program focusing on art research and media philosophy with emphasis on theoretical knowledge.",
-          "specializations": ["Art Theory", "Media Theory", "Philosophy"]
+          "specializations": [
+            "Art Theory",
+            "Media Theory",
+            "Philosophy"
+          ]
         }
       ],
       "website": "https://www.hfg-karlsruhe.de/en/",
-      "description": "Karlsruhe University of Arts and Design was first established as a progressive school on April 15, 1992. It was founded by Heinrich Klotz between the years 1989 and 1992, together with the ZKM | Center for Art and Media Karlsruhe. The combination of teaching, research, and exhibition institutions addresses the given artistic and pedagogic task of relating traditional arts to media technology and electronic production processes."
+      "description": "Karlsruhe University of Arts and Design was first established as a progressive school on April 15, 1992. It was founded by Heinrich Klotz between the years 1989 and 1992, together with the ZKM | Center for Art and Media Karlsruhe. The combination of teaching, research, and exhibition institutions addresses the given artistic and pedagogic task of relating traditional arts to media technology and electronic production processes.",
+      "contact": {
+        "address": "Lorenzstraße 15, 76135 Karlsruhe",
+        "phone": "+49 721 8203-0",
+        "email": "info@hfg-karlsruhe.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 162,
+        "note": "No tuition fees; low semester contribution. Non-EU students pay the same."
+      },
+      "notable_alumni": [
+        "Aernout Mik",
+        "Florian Hecker",
+        "Andreas Mühe",
+        "Constanze Ruhm",
+        "Dani Gal",
+        "Clemens von Wedemeyer"
+      ],
+      "notable_faculty": [
+        "Peter Weibel (Media Theory)",
+        "Ludger Brümmer (Electronic Music)",
+        "Oksana Bulgakowa (Film Theory)",
+        "Thomas Hensel (Art History)"
+      ],
+      "facilities": [
+        "ZKM | Center for Art and Media Karlsruhe (shared campus)",
+        "Media art production studios",
+        "Sound lab and electronic music studio",
+        "Film production suite",
+        "3D printing and rapid prototyping lab",
+        "Exhibition spaces integrated with ZKM",
+        "Library with specialized media art collection"
+      ],
+      "application_requirements": {
+        "portfolio": "Portfolio of artistic/design work; project proposal for Master's",
+        "entrance_exam": "Aptitude review and interview",
+        "language": "German C1 for most programs; English accepted for Art Research MA",
+        "interview": true,
+        "previous_degree_required": "Bachelor's required for Master's programs"
+      },
+      "accreditations": [
+        "State-accredited",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Co-founded with ZKM, the world's leading media art center",
+        "Unique integration of academic study with major exhibition and research institution",
+        "Internationally recognized for media art and philosophy programs"
+      ]
     },
     "Hochschule für Künste Bremen": {
       "id": "hochschule-fur-kunste-bremen",
@@ -270,93 +548,202 @@
           "name": "Digitale Medien",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "15 May"}
+            "winter": {
+              "start": "1 February",
+              "end": "15 May"
+            }
           },
           "language": "German/English",
           "duration": "6 semesters",
           "description": "Program focusing on digital media with emphasis on practical and theoretical knowledge.",
-          "specializations": ["Interactive Media", "Game Design", "Media Art", "Web Design"]
+          "specializations": [
+            "Interactive Media",
+            "Game Design",
+            "Media Art",
+            "Web Design"
+          ]
         },
         {
           "name": "Digitale Medien",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "31 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "31 May"
+            }
           },
           "language": "German/English",
           "duration": "4 semesters",
           "description": "Advanced program focusing on digital media with emphasis on research and development.",
-          "specializations": ["Interactive Media", "Game Design", "Media Art", "Web Design"]
+          "specializations": [
+            "Interactive Media",
+            "Game Design",
+            "Media Art",
+            "Web Design"
+          ]
         },
         {
           "name": "Freie Kunst",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "15 April"}
+            "winter": {
+              "start": "1 February",
+              "end": "15 April"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "Program focusing on fine arts with emphasis on individual artistic development.",
-          "specializations": ["Painting", "Sculpture", "Installation", "Performance"]
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "Installation",
+            "Performance"
+          ]
         },
         {
           "name": "Integriertes Design",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "30 April"}
+            "winter": {
+              "start": "1 February",
+              "end": "30 April"
+            }
           },
           "language": "German",
           "duration": "6 semesters",
           "description": "Program focusing on integrated design with emphasis on practical and theoretical knowledge.",
-          "specializations": ["Product Design", "Communication Design", "Fashion Design"]
+          "specializations": [
+            "Product Design",
+            "Communication Design",
+            "Fashion Design"
+          ]
         },
         {
           "name": "Integriertes Design",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German",
           "duration": "4 semesters",
           "description": "Advanced program focusing on integrated design with emphasis on research and development.",
-          "specializations": ["Product Design", "Communication Design", "Fashion Design"]
+          "specializations": [
+            "Product Design",
+            "Communication Design",
+            "Fashion Design"
+          ]
         },
         {
           "name": "Musik",
           "degree": "Bachelor of Music",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "31 March"}
+            "winter": {
+              "start": "1 March",
+              "end": "31 March"
+            }
           },
           "language": "German",
           "duration": "8 semesters",
           "description": "Program focusing on music with emphasis on performance and theory.",
-          "specializations": ["Instrumental Performance", "Composition", "Conducting", "Music Theory"]
+          "specializations": [
+            "Instrumental Performance",
+            "Composition",
+            "Conducting",
+            "Music Theory"
+          ]
         },
         {
           "name": "Musik",
           "degree": "Master of Music",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "31 March"}
+            "winter": {
+              "start": "1 March",
+              "end": "31 March"
+            }
           },
           "language": "German",
           "duration": "4 semesters",
           "description": "Advanced program focusing on music with emphasis on performance and research.",
-          "specializations": ["Instrumental Performance", "Composition", "Conducting", "Music Theory"]
+          "specializations": [
+            "Instrumental Performance",
+            "Composition",
+            "Conducting",
+            "Music Theory"
+          ]
         },
         {
           "name": "Promotionsprogramm (PhD)",
           "degree": "PhD",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "31 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "31 May"
+            }
           },
           "language": "German/English",
           "duration": "6-8 semesters",
           "description": "Doctoral program focusing on research in arts and design.",
-          "specializations": ["Art Theory", "Design Theory", "Media Theory", "Music Theory"]
+          "specializations": [
+            "Art Theory",
+            "Design Theory",
+            "Media Theory",
+            "Music Theory"
+          ]
         }
       ],
       "website": "https://www.hfk-bremen.de/",
-      "description": "The University of the Arts Bremen (HfK) is a public art college in Bremen, Germany. It was founded in 1873 and offers programs in fine arts, design, digital media, and music. The university is known for its interdisciplinary approach and international orientation."
+      "description": "The University of the Arts Bremen (HfK) is a public art college in Bremen, Germany. It was founded in 1873 and offers programs in fine arts, design, digital media, and music. The university is known for its interdisciplinary approach and international orientation.",
+      "contact": {
+        "address": "Am Speicher XI 8, 28217 Bremen",
+        "phone": "+49 421 9595-1000",
+        "email": "info@hfk-bremen.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 348,
+        "note": "No tuition fees for EU students; semester contribution includes local public transport."
+      },
+      "notable_alumni": [
+        "Wim Delvoye (honorary doctorate)",
+        "Thomas Demand (visiting)",
+        "Various award-winning digital media and design graduates"
+      ],
+      "notable_faculty": [
+        "Ralf Baecker (Digital Media)",
+        "Andrea Sick (Media Theory)",
+        "Andreas Weixler (Composition)",
+        "Söke Dinkla (Art Theory)"
+      ],
+      "facilities": [
+        "Digital media labs",
+        "Recording studios",
+        "Sculpture workshops",
+        "Photography and film studios",
+        "Fashion and textile workshops",
+        "3D printing and CNC fabrication",
+        "Performance spaces",
+        "Harbor-side campus"
+      ],
+      "application_requirements": {
+        "portfolio": "Digital portfolio or physical works depending on program",
+        "entrance_exam": "Aptitude test and interview",
+        "language": "German B2 for German-language programs; English B2 for bilingual programs",
+        "interview": true,
+        "previous_degree_required": "Varies; Bachelor's required for Master's"
+      },
+      "accreditations": [
+        "ACQUIN accredited",
+        "State-accredited",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "One of the few German arts universities offering a research doctorate (PhD)",
+        "Digitale Medien program consistently ranked among Germany's best"
+      ]
     },
     "Kunsthochschule für Medien Köln": {
       "id": "kunsthochschule-fur-medien-koln",
@@ -373,7 +760,7 @@
       },
       "stats": {
         "students": 380,
-        "acceptance_rate": 0.10,
+        "acceptance_rate": 0.1,
         "student_staff_ratio": 7.0,
         "founded": 1990
       },
@@ -385,27 +772,96 @@
           "name": "Media Arts",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "15 March"}
+            "winter": {
+              "start": "1 February",
+              "end": "15 March"
+            }
           },
           "language": "German",
           "duration": "9 semesters",
           "description": "Interdisciplinary program focusing on media arts with emphasis on practical and theoretical knowledge. The program combines art, film, and new media in a unique approach.",
-          "specializations": ["Film/Video", "Experimental Animation", "Photography", "Media Installation", "Sound Art", "Media Theory"]
+          "specializations": [
+            "Film/Video",
+            "Experimental Animation",
+            "Photography",
+            "Media Installation",
+            "Sound Art",
+            "Media Theory"
+          ]
         },
         {
           "name": "Media Arts",
           "degree": "PhD",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "15 March"}
+            "winter": {
+              "start": "1 February",
+              "end": "15 March"
+            }
           },
           "language": "German/English",
           "duration": "6-8 semesters",
           "description": "Doctoral program focusing on research in media arts and theory.",
-          "specializations": ["Media Theory", "Art Theory", "Film Theory", "Sound Studies"]
+          "specializations": [
+            "Media Theory",
+            "Art Theory",
+            "Film Theory",
+            "Sound Studies"
+          ]
         }
       ],
       "website": "https://www.khm.de",
-      "description": "The Academy of Media Arts Cologne (KHM) is a public art school founded in 1990 that focuses on audiovisual and time-based media arts. It offers an interdisciplinary approach combining art, film, and new media. The academy is known for its experimental approach and has produced numerous award-winning filmmakers and media artists."
+      "description": "The Academy of Media Arts Cologne (KHM) is a public art school founded in 1990 that focuses on audiovisual and time-based media arts. It offers an interdisciplinary approach combining art, film, and new media. The academy is known for its experimental approach and has produced numerous award-winning filmmakers and media artists.",
+      "contact": {
+        "address": "Peter-Welter-Platz 2, 50676 Cologne",
+        "phone": "+49 221 20189-0",
+        "email": "sekretariat@khm.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 290,
+        "note": "No tuition fees; semester contribution covers administrative costs. One of Germany's most selective art schools."
+      },
+      "notable_alumni": [
+        "Julian Rosefeldt",
+        "Romuald Karmakar",
+        "Björn Melhus",
+        "Fatih Akin (guest lecturer)",
+        "Monika Treut",
+        "Hito Steyerl (faculty, UdK Berlin)",
+        "Christoph Schlingensief (associated)",
+        "Marcel Odenbach"
+      ],
+      "notable_faculty": [
+        "Siegfried Zielinski (Media Archaeology)",
+        "Valie Export (Media Art, emerita)",
+        "Anthony Moore (Sound Art)",
+        "Mischa Kuball (Media Installation)"
+      ],
+      "facilities": [
+        "Professional film and video production suites",
+        "Dolby-certified sound studio",
+        "Photography studios with darkrooms",
+        "Animation and post-production labs",
+        "Exhibition and screening spaces",
+        "Media installation production workshops",
+        "Extensive media library and archive"
+      ],
+      "application_requirements": {
+        "portfolio": "Artistic portfolio or demo reel (medium-specific); concept statement required",
+        "entrance_exam": "Multi-stage selection process including portfolio review and interview",
+        "language": "German C1 required; some English accepted for PhD",
+        "interview": true,
+        "previous_degree_required": "Bachelor's or equivalent for PhD program"
+      },
+      "accreditations": [
+        "State-accredited (NRW)",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Ranked #1 in media arts in Germany",
+        "Graduates have won multiple Golden Lion at Venice (Film)",
+        "International Film Festival Cannes and Berlinale alumni regularly featured"
+      ]
     },
     "Hochschule für Gestaltung Offenbach": {
       "id": "hochschule-fur-gestaltung-offenbach",
@@ -434,60 +890,150 @@
           "name": "Visual Communication",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 June", "end": "15 July"}
+            "winter": {
+              "start": "1 June",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "8 semesters",
           "description": "Program covering all aspects of visual communication and design with emphasis on practical and theoretical knowledge.",
-          "specializations": ["Graphic Design", "Typography", "Digital Media", "Illustration", "Photography"]
+          "specializations": [
+            "Graphic Design",
+            "Typography",
+            "Digital Media",
+            "Illustration",
+            "Photography"
+          ]
         },
         {
           "name": "Visual Communication",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 June", "end": "15 July"}
+            "winter": {
+              "start": "1 June",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "4 semesters",
           "description": "Advanced program focusing on visual communication with emphasis on research and development.",
-          "specializations": ["Graphic Design", "Typography", "Digital Media", "Illustration", "Photography"]
+          "specializations": [
+            "Graphic Design",
+            "Typography",
+            "Digital Media",
+            "Illustration",
+            "Photography"
+          ]
         },
         {
           "name": "Product Design",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 June", "end": "15 July"}
+            "winter": {
+              "start": "1 June",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "8 semesters",
           "description": "Program covering all aspects of product design with emphasis on practical and theoretical knowledge.",
-          "specializations": ["Industrial Design", "Furniture Design", "Transportation Design", "Interaction Design"]
+          "specializations": [
+            "Industrial Design",
+            "Furniture Design",
+            "Transportation Design",
+            "Interaction Design"
+          ]
         },
         {
           "name": "Product Design",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 June", "end": "15 July"}
+            "winter": {
+              "start": "1 June",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "4 semesters",
           "description": "Advanced program focusing on product design with emphasis on research and development.",
-          "specializations": ["Industrial Design", "Furniture Design", "Transportation Design", "Interaction Design"]
+          "specializations": [
+            "Industrial Design",
+            "Furniture Design",
+            "Transportation Design",
+            "Interaction Design"
+          ]
         },
         {
           "name": "Integrative Design",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 June", "end": "15 July"}
+            "winter": {
+              "start": "1 June",
+              "end": "15 July"
+            }
           },
           "language": "German/English",
           "duration": "4 semesters",
           "description": "Interdisciplinary program focusing on integrative design approaches across various design disciplines.",
-          "specializations": ["Design Research", "Design Strategy", "Design Management", "Social Design"]
+          "specializations": [
+            "Design Research",
+            "Design Strategy",
+            "Design Management",
+            "Social Design"
+          ]
         }
       ],
       "website": "https://www.hfg-offenbach.de",
-      "description": "The Offenbach University of Art and Design (HfG) is one of Germany's leading design schools, founded in 1832. It offers programs in visual communication and product design with a focus on both practical skills and theoretical knowledge. The school is known for its innovative approach to design education and strong industry connections."
+      "description": "The Offenbach University of Art and Design (HfG) is one of Germany's leading design schools, founded in 1832. It offers programs in visual communication and product design with a focus on both practical skills and theoretical knowledge. The school is known for its innovative approach to design education and strong industry connections.",
+      "contact": {
+        "address": "Schlossstraße 31, 63065 Offenbach am Main",
+        "phone": "+49 69 80059-0",
+        "email": "info@hfg-offenbach.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 335,
+        "note": "No tuition fees; semester contribution includes regional public transport (RMV Semesterticket)."
+      },
+      "notable_alumni": [
+        "Erik Spiekermann (Typography & Design)",
+        "Rudi Baur (Graphic Design)",
+        "Susanne Rottenbacher",
+        "Klaus Staeck (Graphic Art)"
+      ],
+      "notable_faculty": [
+        "Kai Vöckler (Urban Design)",
+        "Knut Nevermann (Design Theory)",
+        "Heiner Blum (Art and Media)",
+        "Mona Mahall (Design Research)"
+      ],
+      "facilities": [
+        "Product design workshops with metal and woodworking machinery",
+        "Digital fabrication lab (CNC, laser cutting, 3D printing)",
+        "Typography and print studio",
+        "Photography studio",
+        "Transportation design studio with clay modeling facilities",
+        "Exhibition spaces",
+        "Library with specialist design collection"
+      ],
+      "application_requirements": {
+        "portfolio": "20–30 works; sketchbooks and process documentation welcomed",
+        "entrance_exam": "Two-day portfolio review and aptitude interview",
+        "language": "German B2 required; Master's Integrative Design accepts English",
+        "interview": true,
+        "previous_degree_required": "Bachelor's or equivalent for Master's"
+      },
+      "accreditations": [
+        "State-accredited (Hesse)",
+        "FIBAA accredited (Integrative Design MA)",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Founded 1832 – one of Germany's oldest design schools",
+        "Strong industry connections with Frankfurt/Main business ecosystem",
+        "Integrative Design MA ranked among Germany's best interdisciplinary programs"
+      ]
     },
     "Hochschule für Grafik und Buchkunst Leipzig": {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig",
@@ -517,60 +1063,151 @@
           "name": "Book Art/Graphic Design",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "31 March"}
+            "winter": {
+              "start": "1 February",
+              "end": "31 March"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "Program focusing on book art and graphic design with emphasis on traditional techniques and contemporary approaches.",
-          "specializations": ["Typography", "Book Design", "Illustration", "Graphic Design"]
+          "specializations": [
+            "Typography",
+            "Book Design",
+            "Illustration",
+            "Graphic Design"
+          ]
         },
         {
           "name": "Photography",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "31 March"}
+            "winter": {
+              "start": "1 February",
+              "end": "31 March"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "Program focusing on photography with emphasis on artistic and documentary approaches.",
-          "specializations": ["Art Photography", "Documentary Photography", "Experimental Photography"]
+          "specializations": [
+            "Art Photography",
+            "Documentary Photography",
+            "Experimental Photography"
+          ]
         },
         {
           "name": "Painting/Graphic Arts",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "31 March"}
+            "winter": {
+              "start": "1 February",
+              "end": "31 March"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "Program focusing on painting and graphic arts with emphasis on traditional and contemporary approaches.",
-          "specializations": ["Painting", "Drawing", "Printmaking"]
+          "specializations": [
+            "Painting",
+            "Drawing",
+            "Printmaking"
+          ]
         },
         {
           "name": "Media Art",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "31 March"}
+            "winter": {
+              "start": "1 February",
+              "end": "31 March"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "Program focusing on media art with emphasis on digital and time-based media.",
-          "specializations": ["Installation", "Video Art", "Sound Art", "Performance"]
+          "specializations": [
+            "Installation",
+            "Video Art",
+            "Sound Art",
+            "Performance"
+          ]
         },
         {
           "name": "Cultures of the Curatorial",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 February", "end": "31 March"}
+            "winter": {
+              "start": "1 February",
+              "end": "31 March"
+            }
           },
           "language": "German/English",
           "duration": "4 semesters",
           "description": "Program focusing on curatorial practices and exhibition making with emphasis on theoretical and practical knowledge.",
-          "specializations": ["Exhibition Making", "Art Theory", "Museum Studies", "Cultural Management"]
+          "specializations": [
+            "Exhibition Making",
+            "Art Theory",
+            "Museum Studies",
+            "Cultural Management"
+          ]
         }
       ],
       "website": "https://www.hgb-leipzig.de",
-      "description": "The Academy of Fine Arts Leipzig (HGB) is one of the oldest art schools in Germany, founded in 1764. It is particularly renowned for its programs in book art, graphic design, and photography. The academy combines traditional craftsmanship with contemporary artistic approaches and has a strong focus on publishing and exhibition practices."
+      "description": "The Academy of Fine Arts Leipzig (HGB) is one of the oldest art schools in Germany, founded in 1764. It is particularly renowned for its programs in book art, graphic design, and photography. The academy combines traditional craftsmanship with contemporary artistic approaches and has a strong focus on publishing and exhibition practices.",
+      "contact": {
+        "address": "Wächterstraße 11, 04107 Leipzig",
+        "phone": "+49 341 2135-0",
+        "email": "rektorat@hgb-leipzig.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 210,
+        "note": "No tuition fees; one of the most affordable locations in Germany for students."
+      },
+      "notable_alumni": [
+        "Neo Rauch (Painting)",
+        "Arno Rink (Painting)",
+        "Christoph Ruckhäberle",
+        "Tim Eitel",
+        "Rosa Loy",
+        "Matthias Weischer",
+        "David Schnell",
+        "Tilo Baumgärtel",
+        "Annette Schröter (Graphic Art)"
+      ],
+      "notable_faculty": [
+        "Professor Astrid Klein (Photography)",
+        "Professor Heike Hamann (Book Art/Graphic Design)",
+        "Professor Joachim Blank (Media Art)",
+        "Professor Clemens von Wedemeyer (Film/Media)"
+      ],
+      "facilities": [
+        "Historic printing workshops (letterpress, etching, lithography)",
+        "Photography studios and darkrooms",
+        "Book binding atelier",
+        "Digital pre-press and print lab",
+        "Video and film production studio",
+        "Media installation space",
+        "Archive and special collections library",
+        "Exhibition gallery (Galerie HGB)"
+      ],
+      "application_requirements": {
+        "portfolio": "20–30 original works with process documentation; discipline-specific requirements",
+        "entrance_exam": "Portfolio review followed by two-day practical test and interview",
+        "language": "German B2 required; Cultures of the Curatorial MA accepts English",
+        "interview": true,
+        "previous_degree_required": "Bachelor's or equivalent for Cultures of the Curatorial MA"
+      },
+      "accreditations": [
+        "State-accredited (Saxony)",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Birthplace of the 'New Leipzig School' (Neue Leipziger Schule) in painting",
+        "Ranked #1 in Germany for Graphic Design and Book Art",
+        "Photography alumni regularly featured in major international exhibitions and fairs"
+      ]
     },
     "Köln International School of Design": {
       "id": "koln-international-school-of-design",
@@ -587,7 +1224,7 @@
       },
       "stats": {
         "students": 320,
-        "acceptance_rate": 0.20,
+        "acceptance_rate": 0.2,
         "student_staff_ratio": 8.0,
         "founded": 1991
       },
@@ -599,38 +1236,107 @@
           "name": "Integrated Design",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German/English",
           "duration": "8 semesters",
           "description": "Program focusing on integrated design approaches, combining product design, communication design, and spatial design in an interdisciplinary curriculum.",
-          "specializations": ["Product Design", "Communication Design", "Spatial Design", "Design Theory"]
+          "specializations": [
+            "Product Design",
+            "Communication Design",
+            "Spatial Design",
+            "Design Theory"
+          ]
         },
         {
           "name": "Integrated Design Research",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German/English",
           "duration": "4 semesters",
           "description": "Advanced program focusing on research-driven design practice and interdisciplinary design solutions.",
-          "specializations": ["Design Research", "Strategic Design", "Social Design", "Sustainable Design"]
+          "specializations": [
+            "Design Research",
+            "Strategic Design",
+            "Social Design",
+            "Sustainable Design"
+          ]
         },
         {
           "name": "Communication Design",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German/English",
           "duration": "8 semesters",
           "description": "Program focusing on visual communication, graphic design, and media design with emphasis on practical and theoretical knowledge.",
-          "specializations": ["Graphic Design", "Typography", "Digital Media", "Brand Design"]
+          "specializations": [
+            "Graphic Design",
+            "Typography",
+            "Digital Media",
+            "Brand Design"
+          ]
         }
       ],
       "website": "https://kisd.de/en/",
-      "description": "The Köln International School of Design (KISD) is a public design university founded in 1991 in Cologne, Germany. It offers interdisciplinary programs in integrated design, communication design, and product design. KISD is known for its international orientation and focus on sustainable and social design practices."
+      "description": "The Köln International School of Design (KISD) is a public design university founded in 1991 in Cologne, Germany. It offers interdisciplinary programs in integrated design, communication design, and product design. KISD is known for its international orientation and focus on sustainable and social design practices.",
+      "contact": {
+        "address": "Ubierring 40, 50678 Cologne",
+        "phone": "+49 221 8275-3260",
+        "email": "kisd@th-koeln.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 290,
+        "note": "Part of TH Köln. No tuition fees for EU students; semester contribution applies."
+      },
+      "notable_alumni": [
+        "Numerous award-winning product and communication designers in Europe",
+        "Alumni at firms including IDEO, BMW Designworks, and Pentagram"
+      ],
+      "notable_faculty": [
+        "Thomas Schmitz (Integrated Design)",
+        "Martin Schmitz (Design Theory)",
+        "Dorothea Rust (Interaction Design)",
+        "Andreas Schulz (Sustainable Design)"
+      ],
+      "facilities": [
+        "Interdisciplinary design studios",
+        "Prototyping lab",
+        "Digital media production suite",
+        "Photography studio",
+        "Collaboration spaces and co-working zones",
+        "KISD gallery"
+      ],
+      "application_requirements": {
+        "portfolio": "Portfolio with 15–20 works; design process documentation required",
+        "entrance_exam": "Portfolio review and aptitude interview",
+        "language": "German B2 or English B2 (bilingual programs available)",
+        "interview": true,
+        "previous_degree_required": "Bachelor's required for Master's in Integrated Design Research"
+      },
+      "accreditations": [
+        "ACQUIN accredited",
+        "Part of TH Köln (state-accredited)",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Consistently ranked among Germany's most international design schools",
+        "Strong emphasis on design for social impact and sustainability",
+        "Active research collaborations with Cologne industry and NGOs"
+      ]
     },
     "Hochschule Reutlingen": {
       "id": "hochschule-reutlingen",
@@ -659,27 +1365,87 @@
           "name": "Integrated Design",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on integrated design, combining product design, communication design, and textile design.",
-          "specializations": ["Product Design", "Communication Design", "Textile Design", "Design Theory"]
+          "specializations": [
+            "Product Design",
+            "Communication Design",
+            "Textile Design",
+            "Design Theory"
+          ]
         },
         {
           "name": "Textile Design",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German/English",
           "duration": "3 semesters",
           "description": "Advanced program focusing on innovative textile design and technology.",
-          "specializations": ["Textile Innovation", "Smart Textiles", "Sustainable Textiles", "Fashion Design"]
+          "specializations": [
+            "Textile Innovation",
+            "Smart Textiles",
+            "Sustainable Textiles",
+            "Fashion Design"
+          ]
         }
       ],
       "website": "https://www.reutlingen-university.de/",
-      "description": "Hochschule Reutlingen (Reutlingen University) is a public university of applied sciences founded in 1855. It offers programs in design, engineering, and business. The Faculty of Design is known for its focus on textile design, product design, and communication design."
+      "description": "Hochschule Reutlingen (Reutlingen University) is a public university of applied sciences founded in 1855. It offers programs in design, engineering, and business. The Faculty of Design is known for its focus on textile design, product design, and communication design.",
+      "contact": {
+        "address": "Alteburgstraße 150, 72762 Reutlingen",
+        "phone": "+49 7121 271-0",
+        "email": "info@reutlingen-university.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 169,
+        "note": "No tuition fees for EU students at Faculty of Design. Non-EU/international students may pay additional fees."
+      },
+      "notable_alumni": [
+        "Multiple award-winning textile and product designers",
+        "Alumni at Hugo Boss, Adidas, and Messe Frankfurt"
+      ],
+      "notable_faculty": [
+        "Prof. Andreas Schmid (Textile Innovation)",
+        "Prof. Karin Schröter (Fashion Design)",
+        "Prof. Jürgen Funk (Product Design)"
+      ],
+      "facilities": [
+        "Textile and weaving labs",
+        "CAD/CAM design studios",
+        "Sewing and pattern cutting workshop",
+        "Smart textiles laboratory",
+        "Material testing lab",
+        "3D printing and rapid prototyping"
+      ],
+      "application_requirements": {
+        "portfolio": "Design portfolio with 15–20 works; textile/product samples encouraged",
+        "entrance_exam": "Portfolio review and interview",
+        "language": "German B2 for Bachelor's; German/English B2 for Textile Design MA",
+        "interview": true,
+        "previous_degree_required": "Bachelor's required for Master's"
+      },
+      "accreditations": [
+        "FIBAA accredited",
+        "State-accredited (Baden-Württemberg)",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Ranked #3 in Germany for Textile Design",
+        "Strong industry partnerships with German fashion and automotive sectors",
+        "Smart Textiles research at European level"
+      ]
     },
     "Kunsthochschule Mainz": {
       "id": "kunsthochschule-mainz",
@@ -708,27 +1474,88 @@
           "name": "Fine Arts",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "Program focusing on fine arts with emphasis on individual artistic development.",
-          "specializations": ["Painting", "Sculpture", "Photography", "Performance"]
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "Photography",
+            "Performance"
+          ]
         },
         {
           "name": "Visual Communication",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German",
           "duration": "8 semesters",
           "description": "Program focusing on visual communication, graphic design, and media design.",
-          "specializations": ["Graphic Design", "Typography", "Illustration", "Media Design"]
+          "specializations": [
+            "Graphic Design",
+            "Typography",
+            "Illustration",
+            "Media Design"
+          ]
         }
       ],
       "website": "https://kunsthochschule-mainz.de/",
-      "description": "Kunsthochschule Mainz (Mainz University of Fine Arts) is a public art school founded in 1975. It offers programs in fine arts and visual communication, with a focus on interdisciplinary art practice and experimental approaches."
+      "description": "Kunsthochschule Mainz (Mainz University of Fine Arts) is a public art school founded in 1975. It offers programs in fine arts and visual communication, with a focus on interdisciplinary art practice and experimental approaches.",
+      "contact": {
+        "address": "Am Taubertsberg 6, 55122 Mainz",
+        "phone": "+49 6131 628-7311",
+        "email": "sekretariat@kunsthochschule-mainz.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 308,
+        "note": "No tuition fees; part of Johannes Gutenberg-Universität Mainz. Semester contribution includes local transport."
+      },
+      "notable_alumni": [
+        "Alicja Kwade (Sculpture/Installation)",
+        "Bettina Pousttchi (Photography)",
+        "Kalin Lindena (Painting)",
+        "Jürgen Heinert"
+      ],
+      "notable_faculty": [
+        "Alicja Kwade (Sculpture)",
+        "Bettina Pousttchi (Photography)",
+        "Jan Steinbach (Visual Communication)",
+        "Candida Höfer (Photography, visiting)"
+      ],
+      "facilities": [
+        "Painting and drawing studios",
+        "Sculpture workshop",
+        "Photography darkrooms and digital labs",
+        "Screen printing and etching atelier",
+        "Video production suite",
+        "Performance space"
+      ],
+      "application_requirements": {
+        "portfolio": "20 works in the relevant discipline",
+        "entrance_exam": "Aptitude review (Eignungsprüfung) and interview",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "Part of Johannes Gutenberg-Universität (state-accredited)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Integrated into one of Germany's top comprehensive universities (JGU Mainz)",
+        "Access to JGU's extensive research infrastructure and library"
+      ]
     },
     "Kunsthochschule Kassel": {
       "id": "kunsthochschule-kassel",
@@ -757,27 +1584,89 @@
           "name": "Fine Arts",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "Program focusing on fine arts with emphasis on individual artistic development and experimental approaches.",
-          "specializations": ["Painting", "Sculpture", "Photography", "New Media"]
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "Photography",
+            "New Media"
+          ]
         },
         {
           "name": "Visual Communication",
           "degree": "Diploma",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German",
           "duration": "8 semesters",
           "description": "Program focusing on visual communication, graphic design, and media arts.",
-          "specializations": ["Graphic Design", "Typography", "Illustration", "Media Art"]
+          "specializations": [
+            "Graphic Design",
+            "Typography",
+            "Illustration",
+            "Media Art"
+          ]
         }
       ],
       "website": "https://kunsthochschulekassel.de/",
-      "description": "Kunsthochschule Kassel (Kassel University of Fine Arts) is one of Germany's oldest art schools, founded in 1777. It offers programs in fine arts and visual communication, and is known for its experimental approach and strong focus on contemporary art practices."
+      "description": "Kunsthochschule Kassel (Kassel University of Fine Arts) is one of Germany's oldest art schools, founded in 1777. It offers programs in fine arts and visual communication, and is known for its experimental approach and strong focus on contemporary art practices.",
+      "contact": {
+        "address": "Menzelstraße 13–15, 34121 Kassel",
+        "phone": "+49 561 804-0",
+        "email": "info@kunsthochschulekassel.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 290,
+        "note": "No tuition fees; part of Universität Kassel. Semester contribution includes Kassel public transport."
+      },
+      "notable_alumni": [
+        "Jonathan Meese (Fine Arts)",
+        "Franz Erhard Walther (Sculpture)",
+        "Gunter Demnig (creator of 'Stolpersteine')",
+        "Wilhelm Senoner"
+      ],
+      "notable_faculty": [
+        "Prof. Daniel Richter (Painting)",
+        "Prof. Martin Pfeifle (Sculpture)",
+        "Prof. Thomas Bayrle (Graphic Arts, emeritus)",
+        "Prof. Anna Schäffler (Visual Communication)"
+      ],
+      "facilities": [
+        "Painting and drawing studios",
+        "Sculpture and ceramics workshops",
+        "Printmaking atelier (etching, screenprint, lithography)",
+        "Photography studio",
+        "Digital media lab",
+        "Performance and installation space"
+      ],
+      "application_requirements": {
+        "portfolio": "Portfolio of 20–30 works; sketchbooks and process work welcome",
+        "entrance_exam": "Two-stage aptitude review and interview",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "Part of Universität Kassel (state-accredited)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Located in Kassel, home of documenta — the world's most prestigious contemporary art exhibition",
+        "Students regularly participate in and interact with documenta events",
+        "Founded 1777, one of Germany's oldest continuously operating art schools"
+      ]
     },
     "Hochschule Pforzheim": {
       "id": "hochschule-pforzheim",
@@ -807,104 +1696,216 @@
           "name": "Industrial Design",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on industrial design, product design, and design engineering.",
-          "specializations": ["Product Design", "Industrial Design", "Design Engineering"]
+          "specializations": [
+            "Product Design",
+            "Industrial Design",
+            "Design Engineering"
+          ]
         },
         {
           "name": "Mode",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on fashion design, textile design, and fashion technology.",
-          "specializations": ["Fashion Design", "Textile Design", "Fashion Technology"]
+          "specializations": [
+            "Fashion Design",
+            "Textile Design",
+            "Fashion Technology"
+          ]
         },
         {
           "name": "Schmuck",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on jewelry design, metalsmithing, and accessory design.",
-          "specializations": ["Jewelry Design", "Metalsmithing", "Accessory Design"]
+          "specializations": [
+            "Jewelry Design",
+            "Metalsmithing",
+            "Accessory Design"
+          ]
         },
         {
           "name": "Visuelle Kommunikation",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on visual communication, graphic design, and media design.",
-          "specializations": ["Graphic Design", "Typography", "Media Design"]
+          "specializations": [
+            "Graphic Design",
+            "Typography",
+            "Media Design"
+          ]
         },
         {
           "name": "Transportation Design",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on vehicle design, automotive design, and transportation design.",
-          "specializations": ["Vehicle Design", "Automotive Design", "Transportation Design"]
+          "specializations": [
+            "Vehicle Design",
+            "Automotive Design",
+            "Transportation Design"
+          ]
         },
         {
           "name": "Transportation Design",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German/English",
           "duration": "3 semesters",
           "description": "Advanced program focusing on innovative transportation design and mobility solutions.",
-          "specializations": ["Advanced Vehicle Design", "Mobility Design", "Sustainable Transportation"]
+          "specializations": [
+            "Advanced Vehicle Design",
+            "Mobility Design",
+            "Sustainable Transportation"
+          ]
         },
         {
           "name": "Creative Communication and Brand Management",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German/English",
           "duration": "3 semesters",
           "description": "Advanced program focusing on strategic communication, brand management, and creative leadership.",
-          "specializations": ["Brand Strategy", "Creative Leadership", "Strategic Communication"]
+          "specializations": [
+            "Brand Strategy",
+            "Creative Leadership",
+            "Strategic Communication"
+          ]
         },
         {
           "name": "Creative Direction",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German/English",
           "duration": "3 semesters",
           "description": "Advanced program focusing on creative direction, art direction, and design leadership.",
-          "specializations": ["Art Direction", "Design Leadership", "Creative Strategy"]
+          "specializations": [
+            "Art Direction",
+            "Design Leadership",
+            "Creative Strategy"
+          ]
         },
         {
           "name": "Design & Future Making",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German/English",
           "duration": "3 semesters",
           "description": "Advanced program focusing on experimental design, future-oriented design, and innovation.",
-          "specializations": ["Experimental Design", "Future Studies", "Innovation Design"]
+          "specializations": [
+            "Experimental Design",
+            "Future Studies",
+            "Innovation Design"
+          ]
         }
       ],
       "website": "https://www.hs-pforzheim.de",
-      "description": "Hochschule Pforzheim (Pforzheim University) is a public university of applied sciences founded in 1877. It is one of Germany's leading design schools, known for its programs in industrial design, transportation design, jewelry design, fashion, and visual communication."
+      "description": "Hochschule Pforzheim (Pforzheim University) is a public university of applied sciences founded in 1877. It is one of Germany's leading design schools, known for its programs in industrial design, transportation design, jewelry design, fashion, and visual communication.",
+      "contact": {
+        "address": "Tiefenbronner Straße 65, 75175 Pforzheim",
+        "phone": "+49 7231 28-6000",
+        "email": "gestaltung@hs-pforzheim.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 169,
+        "note": "No tuition fees for EU students; non-EU students pay €1,500/semester."
+      },
+      "notable_alumni": [
+        "Multiple Red Dot Design Award and iF Design Award winners",
+        "Alumni at Porsche, Mercedes-Benz Design, BMW, and Audi Design",
+        "Senior designers at Hugo Boss and Bulgari"
+      ],
+      "notable_faculty": [
+        "Prof. Andrea Sixt (Transportation Design)",
+        "Prof. Markus Frenzl (Industrial Design)",
+        "Prof. Philipp Heidkamp (Jewelry Design)",
+        "Prof. Sina Rashidian (Fashion)"
+      ],
+      "facilities": [
+        "Automotive clay modeling studio",
+        "Full-scale transportation design facility",
+        "Jewelry and metalsmithing workshop",
+        "Textile and sewing labs",
+        "3D printing and rapid prototyping center",
+        "Photography and product shoot studios",
+        "Rendering and visualization suites",
+        "Materials library"
+      ],
+      "application_requirements": {
+        "portfolio": "Program-specific portfolio; Transportation Design requires 20+ vehicle sketches",
+        "entrance_exam": "Portfolio review and hands-on design test",
+        "language": "German B2 for Bachelor's; German/English B2 for Master's",
+        "interview": true,
+        "previous_degree_required": "Bachelor's required for Master's programs"
+      },
+      "accreditations": [
+        "FIBAA accredited (multiple programs)",
+        "State-accredited (Baden-Württemberg)",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Ranked #2 in Germany for Transportation Design",
+        "Pforzheim jewelry design tradition since the city's 'Goldstadt' heritage (1767)",
+        "Graduates at top automotive OEMs worldwide",
+        "Red Dot: Best of the Best awards won by student projects multiple years"
+      ]
     },
     "Hochschule für Medien Stuttgart": {
       "id": "hdm-stuttgart",
@@ -933,313 +1934,556 @@
           "name": "Audiovisuelle Medien",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on audiovisual media, film production, and media design.",
-          "specializations": ["Film Production", "Media Design", "Audiovisual Media"]
+          "specializations": [
+            "Film Production",
+            "Media Design",
+            "Audiovisual Media"
+          ]
         },
         {
           "name": "Bibliothek und digitale Information",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on library science, digital information management, and information science.",
-          "specializations": ["Library Science", "Digital Information", "Information Management"]
+          "specializations": [
+            "Library Science",
+            "Digital Information",
+            "Information Management"
+          ]
         },
         {
           "name": "Crossmedia-Redaktion & Public Relations",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on crossmedia journalism, public relations, and corporate communications.",
-          "specializations": ["Journalism", "Public Relations", "Corporate Communications"]
+          "specializations": [
+            "Journalism",
+            "Public Relations",
+            "Corporate Communications"
+          ]
         },
         {
           "name": "Deutsch-Chinesischer Studiengang Medien und Technologie",
           "degree": "Bachelor of Science",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "German-Chinese program focusing on media and technology.",
-          "specializations": ["Media Technology", "Crosscultural Media", "Digital Media"]
+          "specializations": [
+            "Media Technology",
+            "Crosscultural Media",
+            "Digital Media"
+          ]
         },
         {
           "name": "Digital- und Medienwirtschaft",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on digital media business, media management, and digital economy.",
-          "specializations": ["Media Business", "Digital Economy", "Media Management"]
+          "specializations": [
+            "Media Business",
+            "Digital Economy",
+            "Media Management"
+          ]
         },
         {
           "name": "Informationsdesign",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on information design, data visualization, and user experience.",
-          "specializations": ["Information Design", "Data Visualization", "UX Design"]
+          "specializations": [
+            "Information Design",
+            "Data Visualization",
+            "UX Design"
+          ]
         },
         {
           "name": "Integriertes Produktdesign",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on integrated product design, industrial design, and design engineering.",
-          "specializations": ["Product Design", "Industrial Design", "Design Engineering"]
+          "specializations": [
+            "Product Design",
+            "Industrial Design",
+            "Design Engineering"
+          ]
         },
         {
           "name": "Media Entertainment",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on media entertainment, gaming, and interactive media.",
-          "specializations": ["Entertainment Media", "Game Design", "Interactive Media"]
+          "specializations": [
+            "Entertainment Media",
+            "Game Design",
+            "Interactive Media"
+          ]
         },
         {
           "name": "Mediapublishing",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on media publishing, digital publishing, and content management.",
-          "specializations": ["Publishing", "Digital Publishing", "Content Management"]
+          "specializations": [
+            "Publishing",
+            "Digital Publishing",
+            "Content Management"
+          ]
         },
         {
           "name": "Medien- und Wirtschaftspsychologie",
           "degree": "Bachelor of Science",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on media psychology, business psychology, and consumer behavior.",
-          "specializations": ["Media Psychology", "Consumer Psychology", "Business Psychology"]
+          "specializations": [
+            "Media Psychology",
+            "Consumer Psychology",
+            "Business Psychology"
+          ]
         },
         {
           "name": "Medieninformatik",
           "degree": "Bachelor of Science",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on media informatics, software development, and multimedia programming.",
-          "specializations": ["Media Informatics", "Software Development", "Multimedia"]
+          "specializations": [
+            "Media Informatics",
+            "Software Development",
+            "Multimedia"
+          ]
         },
         {
           "name": "Mobile Medien",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on mobile media, app development, and mobile technology.",
-          "specializations": ["Mobile Media", "App Development", "Mobile Technology"]
+          "specializations": [
+            "Mobile Media",
+            "App Development",
+            "Mobile Technology"
+          ]
         },
         {
           "name": "Online-Medien-Management",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on online media management, digital marketing, and web content.",
-          "specializations": ["Online Management", "Digital Marketing", "Web Content"]
+          "specializations": [
+            "Online Management",
+            "Digital Marketing",
+            "Web Content"
+          ]
         },
         {
           "name": "Print Media and Packaging Technologies",
           "degree": "Bachelor of Science",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on print media, packaging technology, and print production.",
-          "specializations": ["Print Media", "Packaging Technology", "Print Production"]
+          "specializations": [
+            "Print Media",
+            "Packaging Technology",
+            "Print Production"
+          ]
         },
         {
           "name": "Social Media Marketing & Management",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on social media marketing, content strategy, and community management.",
-          "specializations": ["Social Media Marketing", "Content Strategy", "Community Management"]
+          "specializations": [
+            "Social Media Marketing",
+            "Content Strategy",
+            "Community Management"
+          ]
         },
         {
           "name": "Technisches Produktmanagement – Technisches Design",
           "degree": "Bachelor of Science",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on technical product management and technical design.",
-          "specializations": ["Product Management", "Technical Design", "Engineering"]
+          "specializations": [
+            "Product Management",
+            "Technical Design",
+            "Engineering"
+          ]
         },
         {
           "name": "Werbung und Marktkommunikation",
           "degree": "Bachelor of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on advertising, marketing communications, and brand management.",
-          "specializations": ["Advertising", "Marketing Communications", "Brand Management"]
+          "specializations": [
+            "Advertising",
+            "Marketing Communications",
+            "Brand Management"
+          ]
         },
         {
           "name": "Wirtschaftsinformatik und digitale Medien",
           "degree": "Bachelor of Science",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on business informatics and digital media.",
-          "specializations": ["Business Informatics", "Digital Media", "IT Management"]
+          "specializations": [
+            "Business Informatics",
+            "Digital Media",
+            "IT Management"
+          ]
         },
         {
           "name": "Wirtschaftsingenieurwesen Medien",
           "degree": "Bachelor of Engineering",
           "applicationDeadlines": {
-            "winter": {"start": "1 May", "end": "15 July"}
+            "winter": {
+              "start": "1 May",
+              "end": "15 July"
+            }
           },
           "language": "German",
           "duration": "7 semesters",
           "description": "Program focusing on industrial engineering with focus on media.",
-          "specializations": ["Industrial Engineering", "Media Technology", "Media Management"]
+          "specializations": [
+            "Industrial Engineering",
+            "Media Technology",
+            "Media Management"
+          ]
         },
         {
           "name": "Audiovisual Media Creation and Technology",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "English",
           "duration": "3 semesters",
           "description": "Master's program focusing on audiovisual media creation and technology.",
-          "specializations": ["AV Media Creation", "Media Technology", "Film Production"]
+          "specializations": [
+            "AV Media Creation",
+            "Media Technology",
+            "Film Production"
+          ]
         },
         {
           "name": "Computer Science and Media",
           "degree": "Master of Science",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "English",
           "duration": "3 semesters",
           "description": "Master's program focusing on computer science and media applications.",
-          "specializations": ["Media Computing", "Software Engineering", "Media Applications"]
+          "specializations": [
+            "Media Computing",
+            "Software Engineering",
+            "Media Applications"
+          ]
         },
         {
           "name": "Crossmedia Publishing & Management",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German",
           "duration": "3 semesters",
           "description": "Master's program focusing on crossmedia publishing and management.",
-          "specializations": ["Publishing Management", "Crossmedia", "Digital Publishing"]
+          "specializations": [
+            "Publishing Management",
+            "Crossmedia",
+            "Digital Publishing"
+          ]
         },
         {
           "name": "Digital Design",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German/English",
           "duration": "3 semesters",
           "description": "Master's program focusing on digital design, interaction design, and user experience.",
-          "specializations": ["Digital Design", "Interaction Design", "UX Design"]
+          "specializations": [
+            "Digital Design",
+            "Interaction Design",
+            "UX Design"
+          ]
         },
         {
           "name": "Master of Media Research",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German/English",
           "duration": "3 semesters",
           "description": "Master's program focusing on media research, media studies, and empirical media research.",
-          "specializations": ["Media Research", "Media Studies", "Empirical Research"]
+          "specializations": [
+            "Media Research",
+            "Media Studies",
+            "Empirical Research"
+          ]
         },
         {
           "name": "Medienmanagement",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German",
           "duration": "3 semesters",
           "description": "Master's program focusing on media management, leadership, and media economics.",
-          "specializations": ["Media Management", "Leadership", "Media Economics"]
+          "specializations": [
+            "Media Management",
+            "Leadership",
+            "Media Economics"
+          ]
         },
         {
           "name": "Packaging Development Management",
           "degree": "Master of Science",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German/English",
           "duration": "3 semesters",
           "description": "Master's program focusing on packaging development and management.",
-          "specializations": ["Packaging Development", "Packaging Management", "Sustainable Packaging"]
+          "specializations": [
+            "Packaging Development",
+            "Packaging Management",
+            "Sustainable Packaging"
+          ]
         },
         {
           "name": "Unternehmenskommunikation",
           "degree": "Master of Arts",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German",
           "duration": "3 semesters",
           "description": "Master's program focusing on corporate communications, PR, and strategic communications.",
-          "specializations": ["Corporate Communications", "PR", "Strategic Communications"]
+          "specializations": [
+            "Corporate Communications",
+            "PR",
+            "Strategic Communications"
+          ]
         },
         {
           "name": "Wirtschaftsinformatik",
           "degree": "Master of Science",
           "applicationDeadlines": {
-            "winter": {"start": "1 April", "end": "15 May"}
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
           },
           "language": "German",
           "duration": "3 semesters",
           "description": "Master's program focusing on business informatics and digital transformation.",
-          "specializations": ["Business Informatics", "Digital Transformation", "IT Management"]
+          "specializations": [
+            "Business Informatics",
+            "Digital Transformation",
+            "IT Management"
+          ]
         }
       ],
       "website": "https://hdm-stuttgart.de/",
-      "description": "The Stuttgart Media University (Hochschule für Medien Stuttgart, HdM) is a state university of media studies in Stuttgart, Germany, offering nearly 30 accredited bachelor's and master's degree programs within three faculties. Founded in 2001, it is located at Nobelstraße 10 in the University of Stuttgart Campus Vaihingen."
+      "description": "The Stuttgart Media University (Hochschule für Medien Stuttgart, HdM) is a state university of media studies in Stuttgart, Germany, offering nearly 30 accredited bachelor's and master's degree programs within three faculties. Founded in 2001, it is located at Nobelstraße 10 in the University of Stuttgart Campus Vaihingen.",
+      "contact": {
+        "address": "Nobelstraße 10, 70569 Stuttgart",
+        "phone": "+49 711 8923-0",
+        "email": "info@hdm-stuttgart.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 186,
+        "note": "No tuition fees for EU students; non-EU students pay €1,500/semester. Semester contribution includes Stuttgart transport (VVS)."
+      },
+      "notable_alumni": [
+        "Multiple award-winning UX designers, journalists, and media managers",
+        "Alumni at DW (Deutsche Welle), ZDF, ARD, Springer Verlag, and SAP"
+      ],
+      "notable_faculty": [
+        "Prof. Johannes Mauß (Digital Design)",
+        "Prof. Philipp Scherber (Media Informatics)",
+        "Prof. Nicole Labitzke (UX Design)",
+        "Prof. Tobias Müller-Prothmann (Media Management)"
+      ],
+      "facilities": [
+        "Professional TV and film production studio",
+        "Radio studio",
+        "Usability lab (eye-tracking, A/B testing)",
+        "3D printing lab",
+        "VR/AR lab",
+        "Packaging and print lab",
+        "Media library with 75,000 volumes",
+        "Coworking and startup incubation space"
+      ],
+      "application_requirements": {
+        "portfolio": "Required for design-focused programs (e.g., Information Design, Digital Design)",
+        "entrance_exam": "Aptitude test for design programs; none for technical programs",
+        "language": "German B2 for German programs; English B2 for English-language Master's",
+        "interview": false,
+        "previous_degree_required": "Bachelor's or equivalent for all Master's programs"
+      },
+      "accreditations": [
+        "FIBAA and AQAS accredited",
+        "State-accredited (Baden-Württemberg)",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "One of Germany's largest specialized media universities (~5,000 students)",
+        "Partnerships with major German public broadcasters (ARD, ZDF)",
+        "Located on Stuttgart University Vaihingen campus"
+      ]
     },
     "Kunstakademie Münster": {
       "id": "kunstakademie-munster",
@@ -1267,16 +2511,1399 @@
           "name": "Freie Kunst",
           "degree": "Akademiebrief (Diplom)",
           "applicationDeadlines": {
-            "winter": {"start": "1 March", "end": "15 April"}
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
           },
           "language": "German",
           "duration": "10 semesters",
           "description": "The Fine Arts program at Kunstakademie Münster is one of the freest and most self-determined study programs. The program aims to foster artistic talent, art history knowledge, and artistic-technical skills. The goal is the development of an independent artistic personality. Studies include an orientation semester (2 semesters) followed by studio study in an artistic class (8 semesters).",
-          "specializations": ["Painting", "Sculpture", "Drawing", "Printmaking", "New Media", "Photography"]
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "Drawing",
+            "Printmaking",
+            "New Media",
+            "Photography"
+          ]
         }
       ],
       "website": "https://www.kunstakademie-muenster.de/",
-      "description": "Kunstakademie Münster (Academy of Fine Arts Münster) is a public art school founded in 1971 and located at Leonardo-Campus 2 in Münster. It offers programs in Fine Arts with an emphasis on artistic freedom and self-determination. The academy provides studio-based learning in artistic classes complemented by technical workshops and art-related sciences."
+      "description": "Kunstakademie Münster (Academy of Fine Arts Münster) is a public art school founded in 1971 and located at Leonardo-Campus 2 in Münster. It offers programs in Fine Arts with an emphasis on artistic freedom and self-determination. The academy provides studio-based learning in artistic classes complemented by technical workshops and art-related sciences.",
+      "contact": {
+        "address": "Leonardo-Campus 2, 48149 Münster",
+        "phone": "+49 251 8361-100",
+        "email": "info@kunstakademie-muenster.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 290,
+        "note": "No tuition fees; semester contribution includes local public transport (Stadtwerke Münster)."
+      },
+      "notable_alumni": [
+        "Pina Bausch (honorary doctorate, dance)",
+        "Lois Weinberger (Nature/Art)",
+        "Mona Hatoum (visiting residency)",
+        "Multiple Münster Sculpture Projects (Skulptur Projekte) participants"
+      ],
+      "notable_faculty": [
+        "Prof. Suchan Kinoshita (Installation Art)",
+        "Prof. Silke Wagner (Spatial Art)",
+        "Prof. Marianna Christofides (Photography/Video)",
+        "Prof. Aernout Mik (Video Art, visiting)"
+      ],
+      "facilities": [
+        "Individual studio spaces per student",
+        "Sculpture workshops",
+        "Photography darkrooms and digital imaging labs",
+        "Printmaking atelier",
+        "New media and video production lab",
+        "Drawing and painting studios",
+        "Proximity to LWL-Museum für Kunst und Kultur"
+      ],
+      "application_requirements": {
+        "portfolio": "20–30 original works; sketchbooks and process documentation recommended",
+        "entrance_exam": "Aptitude test (Eignungsprüfung) held over two days",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "State-accredited (NRW)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Strong connection to Skulptur Projekte Münster (held every 10 years)",
+        "Studio-based model with extremely low student-to-professor ratio",
+        "Located in Münster, a city renowned for its support of public art"
+      ]
+    },
+    "Akademie der Bildenden Künste München": {
+      "id": "akademie-munchen",
+      "coordinates": {
+        "lat": 48.1412,
+        "lng": 11.5804
+      },
+      "ranking": {
+        "national": 4,
+        "specialization_rank": {
+          "fine_arts": 2
+        }
+      },
+      "stats": {
+        "students": 800,
+        "acceptance_rate": 0.12,
+        "student_staff_ratio": 7.0,
+        "founded": 1808
+      },
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "academy",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Program focusing on fine arts with emphasis on individual artistic development.",
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "Graphic Arts",
+            "Photography"
+          ]
+        }
+      ],
+      "website": "https://www.abk-muenchen.de/",
+      "description": "The Academy of Fine Arts Munich is one of Germany's oldest and most prestigious art academies, founded in 1808. It offers programs in fine arts, design, and media art.",
+      "contact": {
+        "address": "Akademiestraße 2–4, 80799 Munich",
+        "phone": "+49 89 3852-0",
+        "email": "info@adbk.mhn.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 88,
+        "note": "One of the lowest semester contributions in Germany; no tuition fees. Does not include Bavaria-wide transport by default."
+      },
+      "notable_alumni": [
+        "Franz von Stuck (co-founder)",
+        "Lovis Corinth",
+        "Paul Klee",
+        "Wassily Kandinsky",
+        "Max Beckmann",
+        "Olaf Metzel",
+        "Timm Ulrichs",
+        "Corinne Wasmuht",
+        "Norbert Schwontkowski"
+      ],
+      "notable_faculty": [
+        "Prof. Markus Oehlen (Painting)",
+        "Prof. Michaela Melián (Media Art & Music)",
+        "Prof. Timm Ulrichs (Concept Art, emeritus)",
+        "Prof. Gregor Hildebrandt (Painting)"
+      ],
+      "facilities": [
+        "Historic Maxvorstadt campus building (1808)",
+        "Individual class studios",
+        "Sculpture and ceramics workshops",
+        "Printmaking (etching, lithography, screenprint)",
+        "Photography darkrooms and digital lab",
+        "New media production suite",
+        "Academy gallery (Galerie der Akademie)",
+        "Specialized library"
+      ],
+      "application_requirements": {
+        "portfolio": "Portfolio of 20–40 works demonstrating artistic breadth",
+        "entrance_exam": "Rigorous two-day aptitude examination (Aufnahmeprüfung)",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "State-accredited (Bavaria)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Founded 1808 by King Maximilian I of Bavaria",
+        "Among Germany's most prestigious classical academies",
+        "Historic alumni include Paul Klee and Wassily Kandinsky (early faculty)"
+      ]
+    },
+    "Akademie der Bildenden Künste Nürnberg": {
+      "id": "akademie-nurnberg",
+      "coordinates": {
+        "lat": 49.4521,
+        "lng": 11.0767
+      },
+      "ranking": {
+        "national": 25,
+        "specialization_rank": {
+          "fine_arts": 12
+        }
+      },
+      "stats": {
+        "students": 280,
+        "acceptance_rate": 0.18,
+        "student_staff_ratio": 6.5,
+        "founded": 1662
+      },
+      "city": "Nuremberg",
+      "state": "Bavaria",
+      "type": "academy",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Program focusing on fine arts with emphasis on individual artistic development.",
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "Graphic Arts"
+          ]
+        }
+      ],
+      "website": "https://www.abk-nuernberg.de/",
+      "description": "The Academy of Fine Arts Nuremberg is one of Germany's oldest art schools, founded in 1662. It offers programs in fine arts with a focus on classical and contemporary art practices.",
+      "contact": {
+        "address": "Bingstraße 60, 90480 Nuremberg",
+        "phone": "+49 911 9404-0",
+        "email": "akademie@adbk-nuernberg.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 88,
+        "note": "Same as Munich; minimal semester fees; no tuition. One of Germany's most affordable art academies."
+      },
+      "notable_alumni": [
+        "Albrecht Dürer (precursor institution)",
+        "Fritz Griebel",
+        "Manfred Gnädinger",
+        "Karl Bohrmann",
+        "Ilse Fehling"
+      ],
+      "notable_faculty": [
+        "Prof. Johannes Grützke (emeritus)",
+        "Prof. Ottmar Hörl (Sculpture)",
+        "Prof. Gereon Inger (Photography/New Media)",
+        "Prof. Amir Fattal (Painting)"
+      ],
+      "facilities": [
+        "Painting and drawing studios",
+        "Sculpture workshop",
+        "Printmaking atelier",
+        "Photography darkrooms",
+        "Art history seminar rooms",
+        "Academy library"
+      ],
+      "application_requirements": {
+        "portfolio": "20–30 works showing artistic development",
+        "entrance_exam": "Aptitude test and personal interview",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "State-accredited (Bavaria)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Founded 1662 — one of the oldest continuously operating art academies in the world",
+        "Connected to Nuremberg's rich artistic heritage (Dürer city)",
+        "Intimate academy with very low student numbers and high professor contact"
+      ]
+    },
+    "Bauhaus-Universität Weimar": {
+      "id": "bauhaus-weimar",
+      "coordinates": {
+        "lat": 50.9795,
+        "lng": 11.3296
+      },
+      "ranking": {
+        "national": 3,
+        "specialization_rank": {
+          "design": 2,
+          "architecture": 1
+        }
+      },
+      "stats": {
+        "students": 4200,
+        "acceptance_rate": 0.15,
+        "student_staff_ratio": 12.0,
+        "founded": 1919
+      },
+      "city": "Weimar",
+      "state": "Thuringia",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Product Design",
+          "degree": "Master",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Master program in product design focusing on innovative design solutions.",
+          "specializations": [
+            "Industrial Design",
+            "Design Theory"
+          ]
+        },
+        {
+          "name": "Architecture",
+          "degree": "Master",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 April",
+              "end": "15 May"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Master program in architecture with focus on sustainable design.",
+          "specializations": [
+            "Urban Design",
+            "Building Renovation"
+          ]
+        }
+      ],
+      "website": "https://www.uni-weimar.de/",
+      "description": "Bauhaus-Universität Weimar is one of Germany's most renowned universities for architecture, design, and media art, founded in 1919. It continues the legacy of the original Bauhaus movement.",
+      "contact": {
+        "address": "Geschwister-Scholl-Straße 8, 99423 Weimar",
+        "phone": "+49 3643 58-0",
+        "email": "uni@uni-weimar.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 195,
+        "note": "No tuition fees; semester contribution includes Weimar public transport."
+      },
+      "notable_alumni": [
+        "Ludwig Mies van der Rohe (student and director)",
+        "Walter Gropius (founder)",
+        "Paul Klee (faculty)",
+        "Wassily Kandinsky (faculty)",
+        "László Moholy-Nagy (faculty)",
+        "Marcel Breuer (student)",
+        "Herbert Bayer (student)",
+        "Gunta Stölzl (student/faculty)",
+        "Anni Albers (student)"
+      ],
+      "notable_faculty": [
+        "Prof. Bernd Rudolf (Architecture)",
+        "Prof. Nora Sternfeld (Art Education)",
+        "Prof. Klaus Overmeyer (Urban Design)",
+        "Prof. Wolfgang Sattler (Product Design)"
+      ],
+      "facilities": [
+        "Historic Bauhaus building (UNESCO World Heritage Site)",
+        "Architecture studios",
+        "Product design fabrication labs",
+        "Media lab with VR/AR capabilities",
+        "Digital fabrication center (CNC, 3D printing)",
+        "Bauhaus-Museum Weimar (adjacent)",
+        "Central university library",
+        "Gropius-Bau workshops (restored original Bauhaus workshops)"
+      ],
+      "application_requirements": {
+        "portfolio": "Portfolio required for design/architecture programs; project proposals for Master's",
+        "entrance_exam": "Aptitude test for artistic programs; entrance interview for design/architecture",
+        "language": "German B2 for German programs; English B2 for some international Master's",
+        "interview": true,
+        "previous_degree_required": "Bachelor's required for all Master's programs"
+      },
+      "accreditations": [
+        "ASIIN and AQAS accredited (Architecture & Design)",
+        "State-accredited (Thuringia)",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Successor to the original Bauhaus school (1919), UNESCO World Heritage designation",
+        "Ranked #1 in Germany for Architecture and #2 for Design",
+        "Bauhaus centenary 2019 attracted global recognition and events",
+        "Over 30 international degree programs"
+      ]
+    },
+    "Burg Giebichenstein Kunsthochschule Halle": {
+      "id": "burg-giebichenstein",
+      "coordinates": {
+        "lat": 51.4729,
+        "lng": 11.9697
+      },
+      "ranking": {
+        "national": 15,
+        "specialization_rank": {
+          "design": 8,
+          "fine_arts": 6
+        }
+      },
+      "stats": {
+        "students": 1400,
+        "acceptance_rate": 0.25,
+        "student_staff_ratio": 9.0,
+        "founded": 1879
+      },
+      "city": "Halle",
+      "state": "Saxony-Anhalt",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Design",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Comprehensive design program with focus on applied arts and design.",
+          "specializations": [
+            "Industrial Design",
+            "Communication Design",
+            "Textile Design"
+          ]
+        }
+      ],
+      "website": "https://www.burg-halle.de/",
+      "description": "Burg Giebichenstein Kunsthochschule Halle is one of Germany's oldest art schools, founded in 1879. It offers programs in fine arts and design with a strong emphasis on craft traditions and contemporary practices.",
+      "contact": {
+        "address": "Neuwerk 7, 06108 Halle (Saale)",
+        "phone": "+49 345 7751-0",
+        "email": "info@burg-halle.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 190,
+        "note": "No tuition fees; relatively low cost of living in Halle."
+      },
+      "notable_alumni": [
+        "Marianne Brandt (metalwork, Bauhaus alumna, later taught here)",
+        "Multiple graduates at Vitra, Rosenthal, and international design studios"
+      ],
+      "notable_faculty": [
+        "Prof. Ingo Randolf (Industrial Design)",
+        "Prof. Anna Kiefer (Communication Design)",
+        "Prof. Ineke Hans (Product Design, international)",
+        "Prof. Susanne Lorenz (Fine Arts)"
+      ],
+      "facilities": [
+        "Workshop building on the Burg hilltop campus (historic castle setting)",
+        "Ceramics and porcelain studios",
+        "Metal and woodworking workshops",
+        "Textile design lab",
+        "Typography and book printing atelier",
+        "Photography studio",
+        "Digital fabrication lab",
+        "Gallery 'Kunsthalle am Hamburger Platz'"
+      ],
+      "application_requirements": {
+        "portfolio": "20–30 works relevant to chosen discipline",
+        "entrance_exam": "Portfolio review and practical test; live drawing often required",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "State-accredited (Saxony-Anhalt)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Founded 1879 — continuation of long craft and design tradition",
+        "Named after Burg Giebichenstein, the historic castle on its campus",
+        "Strong craft heritage with national reputation for ceramics and industrial design"
+      ]
+    },
+    "Filmuniversität Babelsberg KONRAD WOLF": {
+      "id": "filmuni-babelsberg",
+      "coordinates": {
+        "lat": 52.3899,
+        "lng": 13.0885
+      },
+      "ranking": {
+        "national": 8,
+        "specialization_rank": {
+          "film": 1
+        }
+      },
+      "stats": {
+        "students": 1100,
+        "acceptance_rate": 0.08,
+        "student_staff_ratio": 5.0,
+        "founded": 1954
+      },
+      "city": "Potsdam",
+      "state": "Brandenburg",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Film Directing",
+          "degree": "Master",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 October",
+              "end": "15 November"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Master program in film directing focusing on artistic film creation.",
+          "specializations": [
+            "Feature Film",
+            "Documentary",
+            "Experimental Film"
+          ]
+        }
+      ],
+      "website": "https://www.filmuniversitaet.de/",
+      "description": "Filmuniversität Babelsberg KONRAD WOLF is Germany's leading film university, founded in 1954. It offers comprehensive programs in film, television, and media production.",
+      "contact": {
+        "address": "Marlene-Dietrich-Allee 11, 14482 Potsdam",
+        "phone": "+49 331 6202-0",
+        "email": "info@filmuniversitaet.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 230,
+        "note": "No tuition fees. The semester contribution includes the Brandenburg/Berlin public transport network."
+      },
+      "notable_alumni": [
+        "Volker Schlöndorff (director, Palme d'Or winner)",
+        "Konrad Wolf (namesake, director)",
+        "Heiner Carow (director)",
+        "Andreas Dresen (director)",
+        "Leander Haußmann (director)",
+        "Wolfgang Kohlhaase (screenwriter)",
+        "Jan Schomburg (director)",
+        "Matti Geschonneck (director)"
+      ],
+      "notable_faculty": [
+        "Prof. Claus Löser (Film History)",
+        "Prof. Susanne Gupta (Directing)",
+        "Prof. Stephan Behrmann (Cinematography)",
+        "Prof. Dagmar Jacobsen (Film Editing)"
+      ],
+      "facilities": [
+        "Full professional film production studios on historic Babelsberg Studio lot",
+        "35mm and digital screening rooms",
+        "Post-production suites (color grading, DI)",
+        "Professional sound recording and mixing studios",
+        "Documentary archive",
+        "Animation and VFX lab",
+        "Script development rooms",
+        "Media studies research library"
+      ],
+      "application_requirements": {
+        "portfolio": "Program-specific: directing candidates submit treatment and short film; cinematography candidates submit a reel",
+        "entrance_exam": "Highly competitive multi-stage selection (written, practical, interview)",
+        "language": "German C1 for most programs",
+        "interview": true,
+        "previous_degree_required": "Bachelor's required for Master's programs; some Bachelor's require prior experience"
+      },
+      "accreditations": [
+        "State-accredited (Brandenburg)",
+        "CILECT member (International Association of Film and Television Schools)",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Germany's top-ranked film university; graduates have won the Palme d'Or and Golden Bear",
+        "Located on the legendary Babelsberg Studios lot (oldest large-scale film studio in the world)",
+        "CILECT member — part of elite global network of film schools",
+        "Acceptance rate of 8% — one of Germany's most competitive programs"
+      ]
+    },
+    "Folkwang Universität der Künste": {
+      "id": "folkwang-essen",
+      "coordinates": {
+        "lat": 51.4556,
+        "lng": 7.0116
+      },
+      "ranking": {
+        "national": 5,
+        "specialization_rank": {
+          "music": 3,
+          "performing_arts": 2,
+          "design": 5
+        }
+      },
+      "stats": {
+        "students": 2200,
+        "acceptance_rate": 0.2,
+        "student_staff_ratio": 10.0,
+        "founded": 1927
+      },
+      "city": "Essen",
+      "state": "North Rhine-Westphalia",
+      "type": "university_of_arts",
+      "programs": [
+        {
+          "name": "Music",
+          "degree": "Master",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Master program in music with various specializations.",
+          "specializations": [
+            "Performance",
+            "Composition",
+            "Music Pedagogy"
+          ]
+        }
+      ],
+      "website": "https://www.folkwang-uni.de/",
+      "description": "Folkwang Universität der Künste is one of Germany's leading arts universities, founded in 1927. It offers programs in music, theater, dance, and design with a holistic approach to arts education.",
+      "contact": {
+        "address": "Klemensborn 39, 45239 Essen",
+        "phone": "+49 201 4903-0",
+        "email": "info@folkwang-uni.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 280,
+        "note": "No tuition fees; semester contribution includes Essen public transport (VRR Semesterticket)."
+      },
+      "notable_alumni": [
+        "Pina Bausch (Dance — studied and later taught)",
+        "Reinhild Hoffmann (Dance)",
+        "Johann König (Gallery owner)",
+        "Gil Shaham (Violin, visiting masterclass)",
+        "Saša Asentić (Performance)",
+        "Constanza Macras (Choreography)"
+      ],
+      "notable_faculty": [
+        "Prof. Folkert Uhde (Music)",
+        "Prof. Bettina Masuch (Dance, former)",
+        "Prof. Nik Haffner (Choreography/Performance)",
+        "Prof. Ursula Sax (Sculpture, emerita)"
+      ],
+      "facilities": [
+        "Concert hall and recital rooms",
+        "Professional dance studios",
+        "Theater and performance spaces",
+        "Recording studios",
+        "Design workshops and labs",
+        "Film and video production suite",
+        "Sculpture and ceramics workshops",
+        "Folkwang library (specialized arts collection)"
+      ],
+      "application_requirements": {
+        "portfolio": "Discipline-specific: musicians audition; dancers submit video and attend audition; designers submit portfolio",
+        "entrance_exam": "Demanding live audition/aptitude test",
+        "language": "German B2; some programs accept English",
+        "interview": true,
+        "previous_degree_required": "Varies by program; Master's requires Bachelor's"
+      },
+      "accreditations": [
+        "State-accredited (NRW)",
+        "Member of HRK",
+        "ELIA (European League of Institutes of the Arts) member"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Founded 1927 by Karl Ernst Osthaus — pioneer of holistic arts education",
+        "Folkwang concept: integration of music, theater, dance, and visual arts under one roof",
+        "Pina Bausch's Tanztheater Wuppertal emerged from Folkwang's dance tradition",
+        "ELIA member — part of Europe's most prestigious arts university network"
+      ]
+    },
+    "Hochschule für Angewandte Wissenschaften Hamburg": {
+      "id": "haw-hamburg",
+      "coordinates": {
+        "lat": 53.5577,
+        "lng": 9.9714
+      },
+      "ranking": {
+        "national": 35,
+        "specialization_rank": {
+          "design": 15
+        }
+      },
+      "stats": {
+        "students": 1800,
+        "acceptance_rate": 0.3,
+        "student_staff_ratio": 14.0,
+        "founded": 1970
+      },
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "design_school",
+      "programs": [
+        {
+          "name": "Design",
+          "degree": "Bachelor",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 June",
+              "end": "15 July"
+            }
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Bachelor program in design with focus on applied design practices.",
+          "specializations": [
+            "Communication Design",
+            "Industrial Design",
+            "Fashion Design"
+          ]
+        }
+      ],
+      "website": "https://www.haw-hamburg.de/",
+      "description": "Hochschule für Angewandte Wissenschaften Hamburg (HAW Hamburg) is one of Germany's largest universities of applied sciences, offering design programs with a practical focus.",
+      "contact": {
+        "address": "Finkenau 35, 22081 Hamburg",
+        "phone": "+49 40 428 75-0",
+        "email": "info@haw-hamburg.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 370,
+        "note": "No tuition fees for EU students; semester contribution includes Hamburg public transport (HVV Semesterticket)."
+      },
+      "notable_alumni": [
+        "Multiple award-winning designers working in Hamburg's advertising and design industry",
+        "Alumni at major agencies: Jung von Matt, Scholz & Friends, IDEO Hamburg"
+      ],
+      "notable_faculty": [
+        "Prof. Karin Pansen (Communication Design)",
+        "Prof. Wolfgang Schwarzer (Industrial Design)",
+        "Prof. Christoph Steinbrener (Fashion Design)"
+      ],
+      "facilities": [
+        "Design studios at Finkenau campus (Barmbek)",
+        "Woodworking and metalworking workshops",
+        "Textile and pattern-cutting lab",
+        "Photography studio",
+        "Digital media production suite",
+        "Model-making workshop"
+      ],
+      "application_requirements": {
+        "portfolio": "Portfolio of 20–25 works; project process documentation welcomed",
+        "entrance_exam": "Aptitude test and interview",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "AQAS accredited",
+        "State-accredited (Hamburg)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Largest university of applied sciences in Northern Germany",
+        "Strong industry links with Hamburg's creative and media economy",
+        "Faculty of Design at historic Finkenau location in Barmbek"
+      ]
+    },
+    "Hochschule für Bildende Künste Dresden": {
+      "id": "hfbk-dresden",
+      "coordinates": {
+        "lat": 51.0318,
+        "lng": 13.7294
+      },
+      "ranking": {
+        "national": 12,
+        "specialization_rank": {
+          "fine_arts": 5
+        }
+      },
+      "stats": {
+        "students": 650,
+        "acceptance_rate": 0.15,
+        "student_staff_ratio": 6.0,
+        "founded": 1764
+      },
+      "city": "Dresden",
+      "state": "Saxony",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Comprehensive fine arts program with emphasis on individual artistic development.",
+          "specializations": [
+            "Painting",
+            "Graphic Arts",
+            "Sculpture",
+            "Media Art"
+          ]
+        }
+      ],
+      "website": "https://www.hfbk-dresden.de/",
+      "description": "Hochschule für Bildende Künste Dresden (HfBK Dresden) is one of Germany's oldest art academies, founded in 1764. It offers programs in fine arts with a strong emphasis on classical and contemporary artistic practices.",
+      "contact": {
+        "address": "Güntzstraße 34, 01307 Dresden",
+        "phone": "+49 351 4402-0",
+        "email": "rektor@hfbk-dresden.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 265,
+        "note": "No tuition fees; semester contribution includes Dresden public transport (DVB Semesterticket)."
+      },
+      "notable_alumni": [
+        "Georg Baselitz (Painting)",
+        "A.R. Penck (Painting/Sculpture)",
+        "Gerhard Richter (studied briefly before moving to Düsseldorf)",
+        "Eberhard Havekost",
+        "Carsten Nicolai (aka Alva Noto)",
+        "Rosa Barba (Film/Installation)"
+      ],
+      "notable_faculty": [
+        "Prof. Monika Schwitte (Painting)",
+        "Prof. Peter Makolies (Sculpture)",
+        "Prof. Susanne Wehde (Graphic Arts)",
+        "Prof. Ralf Kerbach (Painting)"
+      ],
+      "facilities": [
+        "Historic building in Dresden's Striesen district",
+        "Painting and drawing studios",
+        "Sculpture workshop",
+        "Printmaking atelier (including lithography)",
+        "Photography darkrooms and digital imaging lab",
+        "Media art production studio",
+        "Small specialized library with art history focus"
+      ],
+      "application_requirements": {
+        "portfolio": "20–30 original works demonstrating artistic development",
+        "entrance_exam": "Aptitude test (Eignungsprüfung) and interview",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "State-accredited (Saxony)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Founded 1764 — shares founding year with HGB Leipzig; among Germany's oldest",
+        "Alumni include Georg Baselitz and A.R. Penck, pillars of German Neo-Expressionism",
+        "Located in Dresden, a city with exceptional baroque artistic heritage"
+      ]
+    },
+    "Hochschule für Bildende Künste Hamburg": {
+      "id": "hfbk-hamburg",
+      "coordinates": {
+        "lat": 53.5635,
+        "lng": 10.008
+      },
+      "ranking": {
+        "national": 10,
+        "specialization_rank": {
+          "fine_arts": 4
+        }
+      },
+      "stats": {
+        "students": 900,
+        "acceptance_rate": 0.12,
+        "student_staff_ratio": 7.5,
+        "founded": 1767
+      },
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Comprehensive fine arts program with emphasis on individual artistic development.",
+          "specializations": [
+            "Painting",
+            "Graphic Arts",
+            "Sculpture",
+            "Photography",
+            "Film"
+          ]
+        }
+      ],
+      "website": "https://www.hfbk-hamburg.de/",
+      "description": "Hochschule für Bildende Künste Hamburg (HFBK Hamburg) is one of Germany's oldest art schools, founded in 1767. It offers programs in fine arts with a focus on individual artistic development.",
+      "contact": {
+        "address": "Lerchenfeld 2, 22081 Hamburg",
+        "phone": "+49 40 428989-0",
+        "email": "info@hfbk-hamburg.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 370,
+        "note": "No tuition fees; semester contribution includes Hamburg public transport (HVV Semesterticket)."
+      },
+      "notable_alumni": [
+        "Jonathan Meese (Fine Arts)",
+        "Monica Bonvicini (Installation)",
+        "Werner Büttner (Painting)",
+        "Albert Oehlen (Painting)",
+        "Martin Kippenberger (Painting/Performance)",
+        "Markus Oehlen (Painting)",
+        "Christoph Schlingensief (Film/Performance, studied briefly)"
+      ],
+      "notable_faculty": [
+        "Prof. Almut Linde (Sculpture)",
+        "Prof. Jörg Heiser (Art Theory)",
+        "Prof. Silke Grossmann (Photography)",
+        "Prof. Werner Büttner (Painting)"
+      ],
+      "facilities": [
+        "Painting and drawing studios at the Lerchenfeld campus",
+        "Sculpture workshops",
+        "Photography studios and darkrooms",
+        "Film and video production suite",
+        "Printmaking atelier",
+        "Art theory seminar rooms",
+        "HFBK library and archive",
+        "On-site gallery spaces"
+      ],
+      "application_requirements": {
+        "portfolio": "Portfolio of 20–40 works; originality and personal voice prioritized",
+        "entrance_exam": "Aptitude review and interview with class professors",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "State-accredited (Hamburg)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "The 'Hamburg School' of painting associated with Büttner, Oehlen, and Kippenberger is internationally recognized",
+        "One of the strongest fine arts academies in Northern Germany",
+        "Founded 1767; over 250 years of uninterrupted artistic tradition"
+      ]
+    },
+    "Städelschule Frankfurt": {
+      "id": "stadelschule-frankfurt",
+      "coordinates": {
+        "lat": 50.1086,
+        "lng": 8.698
+      },
+      "ranking": {
+        "national": 6,
+        "specialization_rank": {
+          "fine_arts": 3
+        }
+      },
+      "stats": {
+        "students": 350,
+        "acceptance_rate": 0.08,
+        "student_staff_ratio": 4.0,
+        "founded": 1815
+      },
+      "city": "Frankfurt",
+      "state": "Hesse",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Master",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Master program in fine arts with emphasis on individual artistic practice.",
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "Photography",
+            "Film",
+            "Performance"
+          ]
+        }
+      ],
+      "website": "https://www.staedelschule.de/",
+      "description": "Städelschule Frankfurt is one of Germany's most prestigious art schools, founded in 1815. It offers a unique program combining fine arts with art theory and history.",
+      "contact": {
+        "address": "Dürerstraße 10, 60596 Frankfurt am Main",
+        "phone": "+49 69 605008-0",
+        "email": "info@staedelschule.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 135,
+        "note": "No tuition fees; one of the lowest semester contributions in Hesse."
+      },
+      "notable_alumni": [
+        "Tobias Rehberger (Sculpture/Installation)",
+        "Ayşe Erkmen (Installation)",
+        "Simon Starling (Turner Prize winner)",
+        "Kai Althoff (Painting/Sculpture)",
+        "Heike Baranowsky (Video)",
+        "Monika Sosnowska (Sculpture)",
+        "Michael Riedel (Conceptual Art)",
+        "Danh Vo (Sculpture)"
+      ],
+      "notable_faculty": [
+        "Prof. Monika Baer (Painting)",
+        "Prof. Wolfgang Tillmans (Photography, visiting)",
+        "Prof. Douglas Gordon (Conceptual Art, visiting)",
+        "Prof. Judith Hopf (Video/Sculpture)"
+      ],
+      "facilities": [
+        "Individual studio spaces for all students",
+        "Sculpture and fabrication workshop",
+        "Photography and darkroom facilities",
+        "Video and film production studio",
+        "Performance space",
+        "Städelschule Portikus (exhibition space, adjacent to Städel Museum)",
+        "Seminar rooms for Städelschule's Staatliche Hochschule für Bildende Künste designation"
+      ],
+      "application_requirements": {
+        "portfolio": "Portfolio of 20–30 works; only a Master's-level program (post-graduate)",
+        "entrance_exam": "Highly selective: portfolio interview with individual professors",
+        "language": "German or English accepted",
+        "interview": true,
+        "previous_degree_required": "Bachelor's or equivalent strongly preferred (postgraduate program)"
+      },
+      "accreditations": [
+        "State-accredited (Hesse)",
+        "Affiliated with Städel Museum",
+        "Member of HRK"
+      ],
+      "international_programs": true,
+      "awards_and_recognition": [
+        "Among the most selective art schools in Europe (8% acceptance rate)",
+        "Alumni have won Turner Prize, Golden Lion Venice Biennale, and documenta prizes",
+        "Portikus gallery is one of Frankfurt's most prestigious contemporary art spaces",
+        "Uniquely tied to the Städel Museum, one of Germany's foremost art institutions"
+      ]
+    },
+    "Kunsthochschule Saar": {
+      "id": "hbk-saar",
+      "coordinates": {
+        "lat": 49.2401,
+        "lng": 6.9969
+      },
+      "ranking": {
+        "national": 22,
+        "specialization_rank": {
+          "fine_arts": 10
+        }
+      },
+      "stats": {
+        "students": 450,
+        "acceptance_rate": 0.2,
+        "student_staff_ratio": 6.5,
+        "founded": 1969
+      },
+      "city": "Saarbrücken",
+      "state": "Saarland",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Comprehensive fine arts program with emphasis on individual artistic development.",
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "Graphic Arts",
+            "Photography"
+          ]
+        }
+      ],
+      "website": "https://www.hbk-saar.de/",
+      "description": "Kunsthochschule Saar (HBK Saar) is a public art school in Saarbrücken, founded in 1969. It offers programs in fine arts and design with a focus on contemporary art practices.",
+      "contact": {
+        "address": "Keplerstraße 3–5, 66117 Saarbrücken",
+        "phone": "+49 681 926-4000",
+        "email": "info@hbk-saar.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 260,
+        "note": "No tuition fees; semester contribution includes local public transport in Saarbrücken."
+      },
+      "notable_alumni": [
+        "Numerous emerging artists active in the Rhine-Moselle-Saar region",
+        "Alumni in Saarland Museum and Völklinger Hütte (UNESCO World Heritage cultural events)"
+      ],
+      "notable_faculty": [
+        "Prof. Stefan Müller (Painting)",
+        "Prof. Ursula Neugebauer (Photography/Video)",
+        "Prof. Johannes Lothar Schröder (Design)"
+      ],
+      "facilities": [
+        "Painting and drawing studios",
+        "Sculpture workshop",
+        "Photography darkroom and digital lab",
+        "Screen printing and printmaking atelier",
+        "Video and media production suite",
+        "Design and typography studios"
+      ],
+      "application_requirements": {
+        "portfolio": "20–30 works relevant to applied discipline",
+        "entrance_exam": "Portfolio review and interview",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "State-accredited (Saarland)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Cross-border arts environment — proximity to France and Luxembourg brings unique cultural exchange",
+        "Saarbrücken's position in the Europe-wide Saar-Lor-Lux region informs international artistic dialogue"
+      ]
+    },
+    "Kunsthochschule München": {
+      "id": "khm-munchen",
+      "coordinates": {
+        "lat": 48.1625,
+        "lng": 11.5836
+      },
+      "ranking": {
+        "national": 18,
+        "specialization_rank": {
+          "fine_arts": 8
+        }
+      },
+      "stats": {
+        "students": 550,
+        "acceptance_rate": 0.18,
+        "student_staff_ratio": 7.0,
+        "founded": 1946
+      },
+      "city": "Munich",
+      "state": "Bavaria",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Comprehensive fine arts program with emphasis on individual artistic development.",
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "Graphic Arts",
+            "Photography"
+          ]
+        }
+      ],
+      "website": "https://www.kunsthochschule-muenchen.com/",
+      "description": "Kunsthochschule München is a public art school in Munich, founded in 1946. It offers programs in fine arts and design with a focus on contemporary artistic practices.",
+      "contact": {
+        "address": "Kaulbachstraße 40, 80539 Munich",
+        "phone": "+49 89 38610-0",
+        "email": "info@kunsthochschule-muenchen.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 88,
+        "note": "Part of Munich's state art education system; minimal fees. Bavaria Semesterticket available separately."
+      },
+      "notable_alumni": [
+        "Alumni in Munich's vibrant contemporary gallery scene",
+        "Graduates represented in Haus der Kunst and Pinakothek der Moderne"
+      ],
+      "notable_faculty": [
+        "Prof. Mona Schulzek (Painting)",
+        "Prof. Alexander Rischer (Sculpture)",
+        "Prof. Nina Wiesnagrotzki (Photography)"
+      ],
+      "facilities": [
+        "Painting and drawing studios",
+        "Sculpture workshops",
+        "Ceramics atelier",
+        "Printmaking studio",
+        "Photography lab",
+        "New media and digital art studio"
+      ],
+      "application_requirements": {
+        "portfolio": "Portfolio of 20–30 works",
+        "entrance_exam": "Aptitude test and interview",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "State-accredited (Bavaria)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Located in Munich's Maxvorstadt 'Kunstareal', surrounded by major state museums",
+        "Proximity to Pinakothek der Moderne, Museum Brandhorst, and Haus der Kunst"
+      ]
+    },
+    "Staatliche Akademie der Bildenden Künste Stuttgart": {
+      "id": "akademie-stuttgart",
+      "coordinates": {
+        "lat": 48.7783,
+        "lng": 9.1801
+      },
+      "ranking": {
+        "national": 7,
+        "specialization_rank": {
+          "fine_arts": 3,
+          "design": 4
+        }
+      },
+      "stats": {
+        "students": 800,
+        "acceptance_rate": 0.12,
+        "student_staff_ratio": 6.0,
+        "founded": 1761
+      },
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "academy",
+      "programs": [
+        {
+          "name": "Fine Arts",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Comprehensive fine arts program with emphasis on individual artistic development.",
+          "specializations": [
+            "Painting",
+            "Sculpture",
+            "Graphic Arts",
+            "Media Art"
+          ]
+        }
+      ],
+      "website": "https://www.akademie-stuttgart.de/",
+      "description": "Staatliche Akademie der Bildenden Künste Stuttgart is one of Germany's oldest art academies, founded in 1761. It offers programs in fine arts and design with a focus on classical and contemporary practices.",
+      "contact": {
+        "address": "Am Weißenhof 1, 70191 Stuttgart",
+        "phone": "+49 711 28440-0",
+        "email": "info@abk-stuttgart.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 186,
+        "note": "No tuition fees; semester contribution includes Stuttgart public transport (VVS Semesterticket)."
+      },
+      "notable_alumni": [
+        "HAP Grieshaber (Graphic Art)",
+        "Willi Baumeister (Painting)",
+        "Hermann Nitsch (Vienna Actionism, studied briefly)",
+        "Peter Dreher (Painting)",
+        "Micha Ullman (Sculpture/Installation)"
+      ],
+      "notable_faculty": [
+        "Prof. Alexandra Bircken (Sculpture)",
+        "Prof. Peter Dreher (Painting, emeritus)",
+        "Prof. Jochen Denzinger (Architecture)",
+        "Prof. Rolf Wicker (Communication Design)"
+      ],
+      "facilities": [
+        "Historic Weißenhof campus (adjacent to Weissenhofsiedlung UNESCO site)",
+        "Painting and drawing ateliers",
+        "Sculpture and ceramics workshop",
+        "Printmaking studio",
+        "Photography and media lab",
+        "Architecture design studio",
+        "Communication design digital lab",
+        "Academy gallery and project spaces"
+      ],
+      "application_requirements": {
+        "portfolio": "Portfolio of 20–30 works demonstrating artistic/design skill",
+        "entrance_exam": "Aptitude test (Aufnahmeprüfung) spread over two days",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "State-accredited (Baden-Württemberg)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Founded 1761 — one of the oldest art academies in southern Germany",
+        "Located adjacent to the Weissenhofsiedlung (UNESCO World Heritage, modernist architecture)",
+        "Alumni Willi Baumeister was a key figure in European abstraction"
+      ]
+    },
+    "Muthesius Kunsthochschule Kiel": {
+      "id": "muthesius-kiel",
+      "coordinates": {
+        "lat": 54.3233,
+        "lng": 10.1228
+      },
+      "ranking": {
+        "national": 20,
+        "specialization_rank": {
+          "design": 10
+        }
+      },
+      "stats": {
+        "students": 500,
+        "acceptance_rate": 0.22,
+        "student_staff_ratio": 7.5,
+        "founded": 1905
+      },
+      "city": "Kiel",
+      "state": "Schleswig-Holstein",
+      "type": "kunsthochschule",
+      "programs": [
+        {
+          "name": "Design",
+          "degree": "Diploma",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 March",
+              "end": "15 April"
+            }
+          },
+          "language": "German",
+          "duration": "10 semesters",
+          "description": "Comprehensive design program with emphasis on individual artistic development.",
+          "specializations": [
+            "Industrial Design",
+            "Communication Design",
+            "Interior Architecture"
+          ]
+        }
+      ],
+      "website": "https://www.muthesius-kunsthochschule.de/",
+      "description": "Muthesius Kunsthochschule Kiel is a public art school in Kiel, founded in 1905. It offers programs in fine arts and design with a focus on contemporary practices.",
+      "contact": {
+        "address": "Legienstraße 35, 24103 Kiel",
+        "phone": "+49 431 5198-400",
+        "email": "info@muthesius-kunsthochschule.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 240,
+        "note": "No tuition fees; semester contribution includes local public transport in Kiel."
+      },
+      "notable_alumni": [
+        "Multiple award-winning industrial and interior designers active in Scandinavia and Northern Europe",
+        "Graduates at Swarovski, BMW, and Herman Miller"
+      ],
+      "notable_faculty": [
+        "Prof. Detlef Rhein (Interior Architecture)",
+        "Prof. Hartmut Stahl (Product Design)",
+        "Prof. Arne Piepke (Communication Design)"
+      ],
+      "facilities": [
+        "Product design workshops (metal, wood, plastics)",
+        "Interior architecture studio",
+        "Digital fabrication lab (3D printing, laser cutting, CNC)",
+        "Photography studio",
+        "Communication design digital lab",
+        "Gallery space for student exhibitions"
+      ],
+      "application_requirements": {
+        "portfolio": "Portfolio of 15–20 works; sketches and 3D models encouraged for design programs",
+        "entrance_exam": "Portfolio review and aptitude interview",
+        "language": "German B2",
+        "interview": true,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "State-accredited (Schleswig-Holstein)",
+        "Member of HRK"
+      ],
+      "international_programs": false,
+      "awards_and_recognition": [
+        "Named after Hermann Muthesius, influential architect and design reformer",
+        "Strong Nordic and Scandinavian design influences given Kiel's geographic position",
+        "Interior Architecture program ranked among Germany's best for the discipline"
+      ]
     }
   }
 }
