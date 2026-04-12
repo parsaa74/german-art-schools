@@ -5,13 +5,12 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useSchoolStore } from '@/stores/schoolStore';
 import {
   Command,
-  CommandDialog,
   CommandInput,
   CommandList,
   CommandEmpty,
   CommandGroup,
-  CommandItem,
 } from '@/components/ui/command';
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Search, MapPin, GraduationCap, Building2, Users, CheckCircle, XCircle, Snowflake, Sun } from 'lucide-react';
 
 interface SearchModalProps {
@@ -90,17 +89,24 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
           // Query word contains text word - medium score  
           bestWordScore = Math.max(bestWordScore, 70);
         } else {
-          // Character-by-character fuzzy match as fallback
-          let charMatchScore = 0;
-          let queryIndex = 0;
-          for (let i = 0; i < textWord.length && queryIndex < queryWord.length; i++) {
-            if (textWord[i] === queryWord[queryIndex]) {
-              queryIndex++;
-              charMatchScore++;
+          // Word-level levenshtein for cross-language variants (e.g. "media" → "medien")
+          const wordLev = levenshtein(textWord, queryWord);
+          const editThreshold = Math.min(2, Math.ceil(queryWord.length / 3));
+          if (wordLev <= editThreshold && wordLev < queryWord.length) {
+            bestWordScore = Math.max(bestWordScore, (1 - wordLev / queryWord.length) * 65);
+          } else {
+            // Character-by-character fuzzy match as fallback
+            let charMatchScore = 0;
+            let queryIndex = 0;
+            for (let i = 0; i < textWord.length && queryIndex < queryWord.length; i++) {
+              if (textWord[i] === queryWord[queryIndex]) {
+                queryIndex++;
+                charMatchScore++;
+              }
             }
-          }
-          if (queryIndex === queryWord.length) {
-            bestWordScore = Math.max(bestWordScore, (charMatchScore / queryWord.length) * 50);
+            if (queryIndex === queryWord.length) {
+              bestWordScore = Math.max(bestWordScore, (charMatchScore / queryWord.length) * 50);
+            }
           }
         }
       }
@@ -343,8 +349,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
   }, [activeStateFilter, activeProgramFilter, activeTypeFilter, activeSemesterFilter, activeNcFilter, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter]);
 
   return (
-    <CommandDialog open={isOpen} onOpenChange={onClose}>
-      <Command className={`${isMobile ? 'ui-mobile' : 'ui-organic'} min-h-[400px] md:min-h-[400px] max-h-[80vh] md:max-h-none`}>
+    <Dialog open={isOpen} onOpenChange={onClose}>
+      <DialogContent className="overflow-hidden p-0 shadow-2xl max-w-2xl w-[95vw] top-[15%] translate-y-0 border-white/10" aria-describedby={undefined}>
+        <DialogTitle className="sr-only">Search Schools</DialogTitle>
+        <DialogDescription className="sr-only">Search for universities, programs, states, and school types</DialogDescription>
+      <Command shouldFilter={false} className={`${isMobile ? 'ui-mobile' : 'ui-organic'} min-h-[400px] md:min-h-[400px] max-h-[80vh] md:max-h-none`}>
         {/* Header with active filters */}
         {activeFilters.length > 0 && (
           <div className="flex flex-wrap gap-2 px-4 pt-4 pb-2">
@@ -393,14 +402,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
           {groupedResults.university && (
             <CommandGroup heading="Universities" className="text-cyan-300 text-sm font-semibold tracking-tight mb-2">
               {groupedResults.university.map(result => (
-                <CommandItem
+                <button
                   key={result.name}
-                  onSelect={() => result.action()}
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                    result.action();
-                  }}
-                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02]"
+                  type="button"
+                  onClick={() => result.action()}
+                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02] w-full text-left"
                 >
                   {result.icon}
                   <div className="flex flex-col flex-1 min-w-0">
@@ -409,7 +415,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                       <span className="text-xs text-slate-400 truncate">{result.description}</span>
                     )}
                   </div>
-                </CommandItem>
+                </button>
               ))}
             </CommandGroup>
           )}
@@ -418,14 +424,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
           {groupedResults.program && (
             <CommandGroup heading="Programs" className="text-emerald-300 text-sm font-semibold tracking-tight mb-2">
               {groupedResults.program.map(result => (
-                <CommandItem
+                <button
                   key={result.name}
-                  onSelect={() => result.action()}
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                    result.action();
-                  }}
-                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-emerald-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02]"
+                  type="button"
+                  onClick={() => result.action()}
+                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-emerald-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02] w-full text-left"
                 >
                   {result.icon}
                   <div className="flex flex-col flex-1 min-w-0">
@@ -434,7 +437,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                       <span className="text-xs text-slate-400 truncate">Filter by {result.description}</span>
                     )}
                   </div>
-                </CommandItem>
+                </button>
               ))}
             </CommandGroup>
           )}
@@ -443,14 +446,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
           {groupedResults.state && (
             <CommandGroup heading="States" className="text-cyan-300 text-sm font-semibold tracking-tight mb-2">
               {groupedResults.state.map(result => (
-                <CommandItem
+                <button
                   key={result.name}
-                  onSelect={() => result.action()}
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                    result.action();
-                  }}
-                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02]"
+                  type="button"
+                  onClick={() => result.action()}
+                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02] w-full text-left"
                 >
                   {result.icon}
                   <div className="flex flex-col flex-1 min-w-0">
@@ -459,7 +459,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                       <span className="text-xs text-slate-400 truncate">Filter by {result.description}</span>
                     )}
                   </div>
-                </CommandItem>
+                </button>
               ))}
             </CommandGroup>
           )}
@@ -468,14 +468,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
           {groupedResults.type && (
             <CommandGroup heading="School Types" className="text-purple-300 text-sm font-semibold tracking-tight mb-2">
               {groupedResults.type.map(result => (
-                <CommandItem
+                <button
                   key={result.name}
-                  onSelect={() => result.action()}
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                    result.action();
-                  }}
-                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-purple-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
+                  type="button"
+                  onClick={() => result.action()}
+                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-purple-500/40 text-white rounded-md mx-1 my-0.5 transition-all w-full text-left"
                 >
                   {result.icon}
                   <div className="flex flex-col flex-1 min-w-0">
@@ -484,7 +481,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                       <span className="text-xs text-slate-400 truncate">Filter by {result.description}</span>
                     )}
                   </div>
-                </CommandItem>
+                </button>
               ))}
             </CommandGroup>
           )}
@@ -493,14 +490,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
           {groupedResults.nc && (
             <CommandGroup heading="NC-free Options" className="text-green-300 text-sm font-semibold tracking-tight mb-2">
               {groupedResults.nc.map(result => (
-                <CommandItem
+                <button
                   key={result.name}
-                  onSelect={() => result.action()}
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                    result.action();
-                  }}
-                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-green-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
+                  type="button"
+                  onClick={() => result.action()}
+                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-green-500/40 text-white rounded-md mx-1 my-0.5 transition-all w-full text-left"
                 >
                   {result.icon}
                   <div className="flex flex-col flex-1 min-w-0">
@@ -509,7 +503,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                       <span className="text-xs text-slate-400 truncate">{result.description}</span>
                     )}
                   </div>
-                </CommandItem>
+                </button>
               ))}
             </CommandGroup>
           )}
@@ -518,14 +512,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
           {groupedResults.semester && (
             <CommandGroup heading="Semester Options" className="text-yellow-300 text-sm font-semibold tracking-tight mb-2">
               {groupedResults.semester.map(result => (
-                <CommandItem
+                <button
                   key={result.name}
-                  onSelect={() => result.action()}
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                    result.action();
-                  }}
-                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-yellow-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
+                  type="button"
+                  onClick={() => result.action()}
+                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-yellow-500/40 text-white rounded-md mx-1 my-0.5 transition-all w-full text-left"
                 >
                   {result.icon}
                   <div className="flex flex-col flex-1 min-w-0">
@@ -534,7 +525,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                       <span className="text-xs text-slate-400 truncate">{result.description}</span>
                     )}
                   </div>
-                </CommandItem>
+                </button>
               ))}
             </CommandGroup>
           )}
@@ -581,8 +572,9 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
           {/* Clear all filters option */}
           {activeFilters.length > 0 && !search && (
             <CommandGroup heading="Quick Actions" className="text-slate-400 text-sm font-semibold tracking-tight mb-2">
-              <CommandItem
-                onSelect={() => {
+              <button
+                type="button"
+                onClick={() => {
                   setActiveStateFilter(null);
                   setActiveProgramFilter(null);
                   setActiveTypeFilter(null);
@@ -591,25 +583,16 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   setSelectedUniversity(null);
                   onClose();
                 }}
-                onMouseDown={(e) => {
-                  e.preventDefault();
-                  setActiveStateFilter(null);
-                  setActiveProgramFilter(null);
-                  setActiveTypeFilter(null);
-                  setActiveSemesterFilter(null);
-                  setActiveNcFilter(null);
-                  setSelectedUniversity(null);
-                  onClose();
-                }}
-                className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-slate-500/40 text-white rounded-md mx-1 my-0.5 transition-all"
+                className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-slate-500/40 text-white rounded-md mx-1 my-0.5 transition-all w-full text-left"
               >
                 <Search className="h-4 w-4" />
                 <span>Clear all filters</span>
-              </CommandItem>
+              </button>
             </CommandGroup>
           )}
         </CommandList>
       </Command>
-    </CommandDialog>
+      </DialogContent>
+    </Dialog>
   );
 } 
