@@ -517,9 +517,9 @@ export function Scene({ lang, dict }: SceneProps) {
                         onClick={() => setShowHelp(false)}></div>
                    <animated.div
                        style={modalSpring}
-                       className="relative max-w-2xl w-full mx-4 overflow-hidden"
+                       className="relative max-w-2xl w-full mx-3 sm:mx-4 overflow-hidden"
                        >
-                       <div className="relative ui-organic p-6">
+                       <div className="relative ui-organic p-4 sm:p-6 overflow-y-auto max-h-[85vh]">
                            {/* Decorative elements */}
                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600/0 via-blue-400 to-cyan-400/0"></div>
                            <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-r from-cyan-400/0 via-blue-400 to-blue-600/0"></div>
@@ -532,7 +532,7 @@ export function Scene({ lang, dict }: SceneProps) {
 
                            <div className="space-y-2 relative z-10">
                                {/* ... Help content ... */}
-                               <div className="grid grid-cols-3 gap-x-4 gap-y-3">
+                               <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-4">
                                  <div className="col-span-1 flex flex-col">
                                    <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Interaction</span>
                                    <ul className="space-y-1.5 text-sm text-slate-200">
@@ -595,7 +595,7 @@ export function Scene({ lang, dict }: SceneProps) {
                                    </ul>
                                  </div>
 
-                                 <div className="col-span-1 flex flex-col">
+                                 <div className="col-span-1 sm:col-span-2 flex flex-col">
                                    <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">When Node Selected</span>
                                    <ul className="space-y-1.5 text-sm text-slate-200">
                                      <li className="flex items-start">
@@ -613,7 +613,7 @@ export function Scene({ lang, dict }: SceneProps) {
                                    </ul>
                                  </div>
 
-                                 <div className="col-span-3 mt-4 flex flex-col">
+                                 <div className="col-span-1 sm:col-span-3 mt-2 sm:mt-4 flex flex-col">
                                    <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">UI Elements</span>
                                    <div className="flex flex-wrap gap-x-8 gap-y-2">
                                      <div className="flex items-center">
@@ -631,7 +631,7 @@ export function Scene({ lang, dict }: SceneProps) {
                                    </div>
                                  </div>
 
-                                 <div className="col-span-3 mt-2 flex flex-col">
+                                 <div className="col-span-1 sm:col-span-3 mt-2 flex flex-col">
                                    <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Keyboard Shortcuts</span>
                                    <div className="flex flex-wrap gap-x-8 gap-y-2">
                                      <div className="flex items-center">
