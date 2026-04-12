@@ -307,11 +307,13 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
       // Only log in browser and when searching
       // console.log('SEARCH RESULTS:', results.map(r => ({type: r.type, name: r.name, displayName: r.displayName, priority: r.priority})));
     }
-    return results.sort((a, b) => {
-      if (a.priority !== b.priority) return b.priority - a.priority;
-      const typeOrder = { university: 0, state: 1, program: 2, type: 3, nc: 4, semester: 5 };
-      return typeOrder[a.type] - typeOrder[b.type];
-    }).slice(0, 25);
+    // Cap universities at 8 so programs/states/types always visible
+    const unis = results.filter(r => r.type === 'university')
+      .sort((a, b) => b.priority - a.priority)
+      .slice(0, 8);
+    const others = results.filter(r => r.type !== 'university')
+      .sort((a, b) => b.priority - a.priority);
+    return [...unis, ...others];
   }, [search, processedUniversities, uniqueStates, uniqueProgramTypes, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setSelectedUniversity, onClose]);
 
   // Update search query in store
