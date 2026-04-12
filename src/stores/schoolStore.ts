@@ -19,8 +19,6 @@ export interface SchoolData {
 // Import the formatted school data
 import schoolsData from '@/data/schools_formatted.json';
 
-// Import the enhanced data directly
-import enhancedSchoolsData from '@/data/enhanced_german_art_schools.json';
 
 // Interface for the processed university data used within the app
 export interface ProcessedUniversity {
@@ -187,11 +185,10 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
 
         // --- Start: Data Processing Logic (Use enhanced data or fallback) ---
         try {
-            console.log("SchoolStore DEBUG: Attempting to use enhancedSchoolsData:", 
-              enhancedSchoolsData ? `Object with ${Object.keys(enhancedSchoolsData.universities || {}).length} keys` : 'Import failed or null');
-              console.log("SchoolStore DEBUG: Keys found in enhancedSchoolsData.universities:", Object.keys(enhancedSchoolsData.universities || {}));
-            
-            const enhancedData = enhancedSchoolsData;
+            const { default: enhancedData } = await import('../data/enhanced_german_art_schools.json');
+            console.log("SchoolStore DEBUG: Attempting to use enhancedSchoolsData:",
+              enhancedData ? `Object with ${Object.keys(enhancedData.universities || {}).length} keys` : 'Import failed or null');
+              console.log("SchoolStore DEBUG: Keys found in enhancedSchoolsData.universities:", Object.keys(enhancedData.universities || {}));
             let processedCount = 0;
             processedList = Object.entries(enhancedData.universities).map(([name, data]: [string, any], index: number) => {
                 

@@ -22,11 +22,12 @@ const SimpleMusicPlayer: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false)
   
   const audioRef = useRef<HTMLAudioElement>(null)
+  const srcLoadedRef = useRef(false)
   const currentTrack = tracks[currentTrackIndex]
 
-  // Load audio when track changes
+  // Load audio when track changes — only if the user has already started playback
   useEffect(() => {
-    if (audioRef.current && currentTrack) {
+    if (audioRef.current && currentTrack && srcLoadedRef.current) {
       // Use the correct base path for Vite
       const audioPath = `/german-art-schools/audio/${currentTrack.filename}`
       console.log('Loading audio:', audioPath)
@@ -81,11 +82,20 @@ const SimpleMusicPlayer: React.FC = () => {
 
   const togglePlay = () => {
     if (!audioRef.current) return
-    
+
+    // Lazy-load: set src the first time the user hits play
+    if (!srcLoadedRef.current && currentTrack) {
+      const audioPath = `/german-art-schools/audio/${currentTrack.filename}`
+      console.log('Loading audio (lazy):', audioPath)
+      audioRef.current.src = audioPath
+      audioRef.current.load()
+      srcLoadedRef.current = true
+    }
+
     console.log('Toggle play, current state:', isPlaying)
     console.log('Audio src:', audioRef.current.src)
     console.log('Audio readyState:', audioRef.current.readyState)
-    
+
     if (isPlaying) {
       audioRef.current.pause()
       setIsPlaying(false)
@@ -120,7 +130,7 @@ const SimpleMusicPlayer: React.FC = () => {
 
   return (
     <>
-      <audio ref={audioRef} />
+      <audio ref={audioRef} preload="none" />
       
       <AnimatePresence>
         {/* Minimized Music Button */}

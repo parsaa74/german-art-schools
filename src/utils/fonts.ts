@@ -49,10 +49,6 @@ export const FONTS = {
   INTER_REGULAR: '/fonts/inter/Inter-Regular.woff2',
   INTER_ITALIC: '/fonts/inter/Inter-Italic.woff2',
   INTER_VARIABLE: '/fonts/inter/InterVariable.woff2',
-  
-  // Text3D fonts (JSON format)
-  INTER_JSON: '/fonts/inter.json',
-  INTER_VARIABLE_JSON: '/fonts/Inter-VariableFont_opsz,wght.json',
 }
 
 /**

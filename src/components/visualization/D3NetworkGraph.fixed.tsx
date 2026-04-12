@@ -1,7 +1,23 @@
 'use client'
 
 import React, { useEffect, useRef, useState } from 'react'
-import * as d3 from 'd3'
+import {
+  forceSimulation,
+  forceX,
+  forceY,
+  forceCenter,
+  forceCollide,
+  type Simulation,
+  type SimulationNodeDatum,
+  type SimulationLinkDatum,
+} from 'd3-force'
+import {
+  select,
+  zoom,
+  drag,
+  easeCubicInOut,
+  type D3DragEvent,
+} from 'd3'
 import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore'
 // --- Interfaces ---
 // Ensure ProcessedUniversity includes coordinates or adjust access
@@ -10,7 +26,7 @@ import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore'
 //     coordinates?: { lat: number | null; lng: number | null };
 // }
 
-interface D3Node extends d3.SimulationNodeDatum {
+interface D3Node extends SimulationNodeDatum {
   id: string // Use university name as ID
   name: string
   type: string
@@ -28,7 +44,7 @@ interface D3Node extends d3.SimulationNodeDatum {
   initialY?: number
 }
 
-interface D3Link extends d3.SimulationLinkDatum<D3Node> {
+interface D3Link extends SimulationLinkDatum<D3Node> {
   source: string | D3Node // D3 expects string IDs initially, then resolves to nodes
   target: string | D3Node
   value: number // Strength/importance of the link (e.g., shared program count)
@@ -53,7 +69,7 @@ const SELECT_SCALE = 1.6 // Scale when selected
 const LINK_BASE_WIDTH = 0.6
 const LINK_VALUE_SCALE = 0.4 // Reduced scale impact
 const TRANSITION_DURATION = 250 // Slightly faster transitions
-const EASING_FUNCTION = d3.easeCubicInOut // Consistent easing
+const EASING_FUNCTION = easeCubicInOut // Consistent easing
 
 // --- Base Colors (Align with 3D view if possible) ---
 const COLOR_DEFAULT = '#06b6d4' // cyan-500
@@ -134,7 +150,7 @@ export default function D3NetworkGraph({
   className = '',
 }: Omit<D3NetworkGraphProps, 'timelineFilter'>) { // Remove timelineFilter from props
   const svgRef = useRef<SVGSVGElement>(null)
-  const simulationRef = useRef<d3.Simulation<D3Node, D3Link> | null>(null)
+  const simulationRef = useRef<Simulation<D3Node, D3Link> | null>(null)
   const nodeMapRef = useRef(new Map<string, D3Node>());
   const linkGroupRef = useRef<SVGGElement | null>(null); // Ref for link group
   const nodeGroupRef = useRef<SVGGElement | null>(null); // Ref for node group
@@ -207,18 +223,18 @@ export default function D3NetworkGraph({
   useEffect(() => {
     if (!svgRef.current || !nodes || nodes.length === 0) return
 
-    const svg = d3.select(svgRef.current)
+    const svg = select(svgRef.current)
     const currentWidth = width;
     const currentHeight = height;
 
     // Initialize or Update Simulation
     if (!simulationRef.current) {
-        simulationRef.current = d3.forceSimulation<D3Node>()
-            // .force('charge', d3.forceManyBody().strength(-120).distanceMax(currentWidth / 4)) // Temporarily disable charge
-            .force('x', d3.forceX(currentWidth / 2).strength(0.02)) // Weak centering force X
-            .force('y', d3.forceY(currentHeight / 2).strength(0.02)) // Weak centering force Y
-            .force('center', d3.forceCenter(currentWidth / 2, currentHeight / 2).strength(0.04))
-            .force('collision', d3.forceCollide<D3Node>().radius(d => {
+        simulationRef.current = forceSimulation<D3Node>()
+            // .force('charge', forceManyBody().strength(-120).distanceMax(currentWidth / 4)) // Temporarily disable charge
+            .force('x', forceX(currentWidth / 2).strength(0.02)) // Weak centering force X
+            .force('y', forceY(currentHeight / 2).strength(0.02)) // Weak centering force Y
+            .force('center', forceCenter(currentWidth / 2, currentHeight / 2).strength(0.04))
+            .force('collision', forceCollide<D3Node>().radius(d => {
                  const radius = getNodeRadius(d) + 6;
                  if (radius <= 0) {
                      console.warn(`[D3 Collision] Node ${d.id} has non-positive collision radius: ${radius}`);
@@ -232,7 +248,7 @@ export default function D3NetworkGraph({
         simulationRef.current.on('tick', () => {
             // Update node positions
             if (nodeGroupRef.current) {
-                d3.select(nodeGroupRef.current).selectAll<SVGGElement, D3Node>('g.node-container')
+                select(nodeGroupRef.current).selectAll<SVGGElement, D3Node>('g.node-container')
                     .attr('transform', d => `translate(${d.initialX},${d.initialY})`); // Fix to initial coords
             }
             // Link positions remain static for now (not rendering dynamic links)
@@ -285,11 +301,11 @@ export default function D3NetworkGraph({
 
     // --- D3 Zoom Behavior ---
     svg.call(
-      d3.zoom<SVGSVGElement, unknown>()
+      zoom<SVGSVGElement, unknown>()
         .scaleExtent([0.2, 5])
         .on('zoom', (event) => {
           if (graphContentRef.current) {
-            d3.select(graphContentRef.current)
+            select(graphContentRef.current)
               .attr('transform', event.transform.toString());
             setZoomScale(event.transform.k);
           }
@@ -297,18 +313,18 @@ export default function D3NetworkGraph({
     );
 
     // --- Drag Handling --- (Defined inside useEffect to capture simulation)
-    const drag = (simulation: d3.Simulation<D3Node, D3Link>) => {
-      function dragstarted(this: SVGGElement, event: d3.D3DragEvent<SVGGElement, D3Node, unknown>, d: D3Node) {
+    const dragBehavior = (simulation: Simulation<D3Node, D3Link>) => {
+      function dragstarted(this: SVGGElement, event: D3DragEvent<SVGGElement, D3Node, unknown>, d: D3Node) {
         if (!event.active) simulation.alphaTarget(0.3).restart();
         d.fx = d.x;
         d.fy = d.y;
-        d3.select(this).raise(); // Bring dragged node to front
+        select(this).raise(); // Bring dragged node to front
       }
-      function dragged(event: d3.D3DragEvent<SVGGElement, D3Node, unknown>, d: D3Node) {
+      function dragged(event: D3DragEvent<SVGGElement, D3Node, unknown>, d: D3Node) {
         d.fx = event.x;
         d.fy = event.y;
       }
-      function dragended(event: d3.D3DragEvent<SVGGElement, D3Node, unknown>, d: D3Node) {
+      function dragended(event: D3DragEvent<SVGGElement, D3Node, unknown>, d: D3Node) {
         if (!event.active) simulation.alphaTarget(0);
         // Keep node fixed after drag - comment out if you want it to drift
         // d.fx = event.x;
@@ -317,14 +333,14 @@ export default function D3NetworkGraph({
         d.fx = null;
         d.fy = null;
       }
-      return d3.drag<SVGGElement, D3Node>()
+      return drag<SVGGElement, D3Node>()
         .on('start', dragstarted)
         .on('drag', dragged)
         .on('end', dragended);
     }
 
     // --- Node Element Selection and Data Binding ---
-    const nodeSelection = d3.select(nodeGroupRef.current!)
+    const nodeSelection = select(nodeGroupRef.current!)
       .selectAll<SVGGElement, D3Node>('g.node-container')
       .data(nodes, (d: D3Node): string => d.id);
 
@@ -333,7 +349,7 @@ export default function D3NetworkGraph({
         .attr('class', 'node-container')
         .style('cursor', 'pointer')
         .attr('opacity', 0) // Start transparent for fade-in
-        .call(drag(simulationRef.current!) as any);
+        .call(dragBehavior(simulationRef.current!) as any);
 
     nodeEnter.append('circle')
         .attr('class', 'node-circle')
@@ -531,15 +547,15 @@ export default function D3NetworkGraph({
     const neighborsOfHovered = hoveredNodeId ? neighborMap.get(hoveredNodeId) : null; // Get neighbors if hovered
 
     // Select node and link groups
-    const nodeGroupSelection = d3.select(nodeGroupRef.current);
-    const linkGroupSelection = d3.select(linkGroupRef.current);
+    const nodeGroupSelection = select(nodeGroupRef.current);
+    const linkGroupSelection = select(linkGroupRef.current);
     if (!nodeGroupSelection.node() || !linkGroupSelection.node()) return;
 
     const nodeContainers = nodeGroupSelection.selectAll<SVGGElement, D3Node>('g.node-container');
 
     // Update Node Styles based on selection, hover, and filters
     nodeContainers.each(function (d: D3Node) {
-        const nodeElement = d3.select(this);
+        const nodeElement = select(this);
         const circle = nodeElement.select<SVGCircleElement>('circle.node-circle');
         const label = nodeElement.select<SVGTextElement>('text.node-label');
 

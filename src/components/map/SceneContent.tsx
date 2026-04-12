@@ -23,25 +23,12 @@ import CustomForceGraph from './CustomForceGraph';
 // Post-processing
 import PostProcessing from './PostProcessing';
 
-// Hooks
-import { useFonts } from '@/hooks/useFonts';
-
 // Remove the entire SceneEventHandler component definition (lines ~25 to ~348)
 // function SceneEventHandler(...) { ... }
 
-// Frame invalidator (unchanged)
-function FrameInvalidator({ controlsEnabled }: { controlsEnabled: boolean }) {
-    const { invalidate } = useThree();
-    useEffect(() => {
-        if (!controlsEnabled) {
-            // Invalidate periodically when controls are disabled (e.g., for animations)
-            // This could be adjusted based on performance needs
-            const handle = setInterval(() => invalidate(), 100); // e.g., 10 fps
-            return () => clearInterval(handle);
-        }
-        // No need for continuous invalidation when controls are active, as they trigger redraws
-    }, [controlsEnabled, invalidate]);
-    return null; // Must return null
+// Frame invalidator — no-op; react-three-fiber handles invalidation via frameloop="demand"
+function FrameInvalidator(_props: { controlsEnabled: boolean }) {
+    return null;
 }
 
 interface SceneContentProps {
@@ -51,9 +38,6 @@ interface SceneContentProps {
 }
 
 export function SceneContent(_props: SceneContentProps) {
-  // Load fonts
-  useFonts();
-
   // Access state and actions from Zustand store
     const {
         processedUniversities,
