@@ -35,9 +35,9 @@ export function SearchButton({
         onClick={onClick}
         className={`
           relative ui-organic
-          flex items-center justify-between gap-4 
-          px-8 py-4 min-w-[280px] h-14
-          text-white font-medium text-base
+          flex items-center justify-between gap-3
+          px-4 sm:px-8 py-3 sm:py-4 w-full sm:min-w-[280px] h-12 sm:h-14
+          text-white font-medium text-sm sm:text-base
           hover:scale-[1.02] active:scale-[0.98]
           transition-all duration-300 ease-out
           group cursor-pointer
@@ -57,8 +57,8 @@ export function SearchButton({
           </span>
         </div>
         
-        {/* Right side: Keyboard shortcut indicator */}
-        <div className="flex items-center gap-2 text-xs text-white/60 group-hover:text-white/80 transition-colors duration-200">
+        {/* Right side: Keyboard shortcut indicator — hidden on mobile */}
+        <div className="hidden sm:flex items-center gap-2 text-xs text-white/60 group-hover:text-white/80 transition-colors duration-200">
           <kbd className="
             px-3 py-2 
             bg-white/10 group-hover:bg-white/20

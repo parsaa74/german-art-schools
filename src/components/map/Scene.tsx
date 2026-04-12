@@ -471,17 +471,46 @@ export function Scene({ lang, dict }: SceneProps) {
                 </motion.div>
             )}
 
-            {/* Search Button - Prominently placed */}
-            {!showIntroSeq && (
-                <div className="absolute top-4 left-1/2 transform -translate-x-1/2 z-30">
-                    <SearchButton onClick={() => setShowSearchModal(true)} />
-                    <SearchTooltip />
+            {/* Top bar: search (center) + icon buttons (right) */}
+            <div className="absolute top-0 inset-x-0 z-30 flex items-center justify-between px-3 pt-3 sm:px-4 sm:pt-4 gap-2">
+                {/* Ghost spacer — mirrors right button group width to keep search centered */}
+                <div className="flex items-center gap-1 sm:gap-2 invisible pointer-events-none" aria-hidden="true">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12" />
+                    <div className="w-10 h-10 sm:w-12 sm:h-12" />
                 </div>
-            )}
 
-            {/* Help & GitHub Icons and Help Modal */}
-            <animated.button style={helpButtonSpring} onClick={() => setShowHelp(true)} className="absolute top-4 right-[70px] z-30 flex items-center justify-center w-12 h-12 ui-organic text-white hover:text-white transition-all duration-300" aria-label="Help / Info" > <FiHelpCircle size={20} /> </animated.button>
-            <animated.a style={githubButtonSpring} href="https://github.com/parsaa74/german-art-schools" target="_blank" rel="noopener noreferrer" className="absolute top-4 right-[125px] z-30 flex items-center justify-center w-12 h-12 ui-organic text-white hover:text-white transition-all duration-300" aria-label="View Source on GitHub" > <FiGithub size={20} /> </animated.a>
+                {/* Center: search */}
+                <div className="flex-1 flex justify-center relative">
+                    {!showIntroSeq && (
+                        <>
+                            <SearchButton onClick={() => setShowSearchModal(true)} />
+                            <SearchTooltip />
+                        </>
+                    )}
+                </div>
+
+                {/* Right: GitHub + Help */}
+                <div className="flex items-center gap-1 sm:gap-2">
+                    <animated.a
+                        style={githubButtonSpring}
+                        href="https://github.com/parsaa74/german-art-schools"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 ui-organic text-white hover:text-white transition-all duration-300"
+                        aria-label="View Source on GitHub"
+                    >
+                        <FiGithub size={18} />
+                    </animated.a>
+                    <animated.button
+                        style={helpButtonSpring}
+                        onClick={() => setShowHelp(true)}
+                        className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 ui-organic text-white hover:text-white transition-all duration-300"
+                        aria-label="Help / Info"
+                    >
+                        <FiHelpCircle size={18} />
+                    </animated.button>
+                </div>
+            </div>
             {showHelp && (
                 <div className="fixed inset-0 z-40 flex items-center justify-center">
                    <div className="absolute inset-0 bg-black/80 backdrop-blur-md"
