@@ -19,8 +19,24 @@ Thumbs.db
 # Sentry Config File
 .env.sentry-build-plugin
 
-# Next.js build output
+# Build outputs
 .next/
+dist/
+out/
+
+# Environment files
+.env.local
+.env.*.local
+
+# Generated/temporary files
+temp*.html
+*_data.html
+*.log
+*.tmp
+tsconfig.tsbuildinfo
+
+# Generated screenshots
+Generated Image*.png
 
 # AI/Cursor and Roo configuration
 .cursor/
