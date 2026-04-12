@@ -46,9 +46,9 @@ export function CreativeTitleHTML({
       className={`relative ${className}`}
       style={{
         fontSize: `${fontSize}rem`,
-        fontFamily: 'Inter, sans-serif',
-        fontWeight: 500,
-        letterSpacing: '0.02em',
+        fontFamily: 'var(--font-playfair), Georgia, serif',
+        fontWeight: 400,
+        letterSpacing: '0.05em',
         WebkitFontSmoothing: 'antialiased'
       }}
     >

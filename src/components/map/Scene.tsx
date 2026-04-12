@@ -21,7 +21,6 @@ import { ViewModeToggle } from './ViewModeToggle'; // Import the new toggle
 import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 
 import { IntroSequence } from './IntroSequence'; // Import the new component
-import { DollyController } from '../DollyController'; // Update import path to be relative
 import { SearchModal } from '@/components/ui/SearchModal';
 import { SearchButton } from '@/components/ui/SearchButton';
 import { SearchTooltip } from '@/components/ui/SearchTooltip';
@@ -300,22 +299,16 @@ export function Scene({ lang, dict }: SceneProps) {
     const [showHelp, setShowHelp] = useState(false);
     // Intro UI overlay state
     const [showIntroSeq, setShowIntroSeq] = useState(true);
-    // Camera animation state
-    const [showCameraAnim, setShowCameraAnim] = useState(false);
-    // After camera animation, show scene
-    const [showScene, setShowScene] = useState(false);
     const [showSearchModal, setShowSearchModal] = useState(false);
 
     // Handler when the title overlay completes
     const handleOverlayComplete = useCallback(() => {
-        console.log("Overlay sequence complete, starting camera animation.");
         setShowIntroSeq(false);
-        setShowCameraAnim(true);
     }, []);
 
     useEffect(() => {
-        console.log('Scene states:', { showIntroSeq, showCameraAnim, showScene });
-    }, [showIntroSeq, showCameraAnim, showScene]);
+        console.log('Scene states:', { showIntroSeq });
+    }, [showIntroSeq]);
 
     // Client-side check & Store Initialization
     useEffect(() => {
@@ -323,22 +316,14 @@ export function Scene({ lang, dict }: SceneProps) {
         initializeSchoolStore();
     }, [initializeSchoolStore]);
 
-    // Remove the automatic timeout that skips the camera animation
-    useEffect(() => {
-        if (showIntroSeq) {
-            // Let the IntroSequence component handle its own completion
-            // through the handleOverlayComplete callback
-            console.log("Starting intro sequence");
-        }
-    }, [showIntroSeq]);
 
-    // Clear selection when switching modes after scene loads
+    // Clear selection when switching modes
     useEffect(() => {
-        if (visualizationMode === 'network' && showScene) {
+        if (visualizationMode === 'network') {
             setSelectedUniversity(null);
             setConnectionLines([]);
         }
-    }, [visualizationMode, showScene, setSelectedUniversity, setConnectionLines]);
+    }, [visualizationMode, setSelectedUniversity, setConnectionLines]);
 
     // Keyboard shortcuts for search modal and help modal
     useEffect(() => {
@@ -431,8 +416,8 @@ export function Scene({ lang, dict }: SceneProps) {
                     dpr={[1, 1.5]}
                     frameloop="always"
                     className="w-full h-full"
-                    camera={{ 
-                        position: [0, -50, 150],
+                    camera={{
+                        position: [0, 0, 30],
                         fov: 45,
                         near: 0.1,
                         far: 1000
@@ -451,18 +436,6 @@ export function Scene({ lang, dict }: SceneProps) {
                             dict={dict}
                         />
                         
-                        {/* Run camera animation over the scene */}
-                        {showCameraAnim && (
-                            <DollyController
-                                onComplete={() => {
-                                    console.log("Camera animation complete");
-                                    setShowCameraAnim(false);
-                                }}
-                                targetPosition={new THREE.Vector3(0, 0, 30)}
-                                targetLookAt={new THREE.Vector3(0, 0, 0)}
-                                lerpAlpha={0.009}
-                            />
-                        )}
                     </Suspense>
                 </Canvas>
             </div>
@@ -471,17 +444,7 @@ export function Scene({ lang, dict }: SceneProps) {
             <AnimatePresence mode="wait">
                 {showIntroSeq && (
                     <IntroSequence
-                        onIntroComplete={() => {
-                            console.log("Intro sequence complete, starting transition");
-                            
-                            // Start camera animation immediately
-                            setShowCameraAnim(true);
-                            
-                            // Delayed removal of intro sequence for cross-fade effect
-                            setTimeout(() => {
-                                setShowIntroSeq(false);
-                            }, 2000); // Longer delay for better dissolve effect
-                        }}
+                        onIntroComplete={() => setShowIntroSeq(false)}
                         dict={dict}
                         startAnimations={true}
                     />

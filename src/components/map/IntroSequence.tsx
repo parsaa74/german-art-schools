@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { CreativeTitleHTML } from '@/components/typography/CreativeTitleHTML';
 
 interface IntroSequenceProps {
     onIntroComplete: () => void;
-    dict: any; // Dictionary for translations
-    startAnimations: boolean; // Control when animations start
+    dict: any;
+    startAnimations: boolean;
 }
 
 export function IntroSequence({
@@ -13,100 +13,75 @@ export function IntroSequence({
     dict,
     startAnimations
 }: IntroSequenceProps) {
-    const [titleProgress, setTitleProgress] = useState(0);
-    const [overlayOpacity, setOverlayOpacity] = useState(0.7); // Start with semi-transparent
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
-        if (startAnimations) {
-            // Start title reveal animation immediately
-            let progress = 0;
-            const titleAnimation = setInterval(() => {
-                progress += 0.02; // Slower progress
-                setTitleProgress(Math.min(progress, 1));
-                if (progress >= 1) {
-                    clearInterval(titleAnimation);
-                    // Start fading out overlay after title is fully revealed
-                    setTimeout(() => {
-                        setOverlayOpacity(0);
-                    }, 1500); // Wait 1.5s after title is revealed
-                }
-            }, 16); // ~60fps
+        setIsMobile(window.matchMedia('(pointer: coarse)').matches);
+    }, []);
 
-            // Complete intro after all animations
-            const timer = setTimeout(() => {
-                onIntroComplete();
-            }, 6000); // Match total duration with camera animation
+    useEffect(() => {
+        if (!startAnimations) return;
 
-            return () => {
-                clearInterval(titleAnimation);
-                clearTimeout(timer);
-            };
-        }
+        const timer = setTimeout(() => {
+            onIntroComplete();
+        }, 3200);
+
+        return () => clearTimeout(timer);
     }, [startAnimations, onIntroComplete]);
 
-    if (!startAnimations) {
-        return null;
-    }
+    if (!startAnimations) return null;
 
     return (
         <motion.div
             key="intro-overlay"
-            initial={{ 
-                opacity: 1,
-                backdropFilter: "blur(10px)",
-                backgroundColor: "rgba(0, 0, 0, 0.7)"
-            }}
-            animate={{ 
-                opacity: 1,
-                backdropFilter: "blur(0px)",
-                backgroundColor: `rgba(0, 0, 0, ${overlayOpacity})`
-            }}
-            exit={{ 
-                opacity: 0,
-                backdropFilter: "blur(0px)",
-                backgroundColor: "rgba(0, 0, 0, 0)"
-            }}
-            transition={{ 
-                duration: 2.0,
-                ease: "easeInOut",
-                when: "afterChildren"
-            }}
-            className="absolute inset-0 z-20 flex flex-col items-center justify-center"
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.2, ease: 'easeInOut' }}
+            className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-black"
         >
-            <div className="text-center p-8 max-w-2xl relative">
-                {/* Main Title */}
+            <div className="flex flex-col items-center gap-10">
+                {/* Title */}
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -20, transition: { duration: 0.5, ease: "easeInOut" } }}
-                    transition={{ 
-                        duration: 1.0,
-                        ease: "easeOut",
-                        delay: 0.5
-                    }}
-                    className="mb-8"
+                    transition={{ duration: 1.0, ease: 'easeOut', delay: 0.3 }}
                 >
                     <CreativeTitleHTML
-                        text={dict?.introTitle || "German Art Schools"}
-                        introProgress={titleProgress}
-                        fontSize={2.0}
+                        text={dict?.introTitle || 'German Art Schools'}
+                        introProgress={1}
+                        fontSize={2.4}
                     />
                 </motion.div>
 
-                {/* Subtitle */}
+                {/* Pulsing dots */}
+                <div className="flex items-center gap-3">
+                    {[0, 1, 2].map((i) => (
+                        <motion.span
+                            key={i}
+                            className="block w-1.5 h-1.5 rounded-full bg-blue-300/70"
+                            animate={{ opacity: [0.2, 1, 0.2] }}
+                            transition={{
+                                duration: 1.2,
+                                repeat: Infinity,
+                                delay: i * 0.25,
+                                ease: 'easeInOut',
+                            }}
+                        />
+                    ))}
+                </div>
+
+                {/* Control hint */}
                 <motion.p
                     initial={{ opacity: 0 }}
-                    animate={{ opacity: titleProgress > 0.5 ? 1 : 0 }}
-                    exit={{ opacity: 0, transition: { duration: 0.5, ease: "easeInOut", delay: 0.2 } }}
-                    transition={{ 
-                        duration: 1.0,
-                        ease: "easeOut"
-                    }}
-                    className="text-xl text-slate-200/90 intro-glitch"
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1.0, ease: 'easeOut', delay: 1.2 }}
+                    className="text-xs tracking-widest uppercase text-slate-500 select-none"
                 >
-                    {dict?.introSubtitle || "Exploring German Art, Media, and Design Education."}
+                    {isMobile
+                        ? 'Pinch to zoom · Drag to pan · Tap to explore'
+                        : 'Scroll to zoom · Drag to pan · Click to explore'}
                 </motion.p>
             </div>
         </motion.div>
     );
-} 
+}
