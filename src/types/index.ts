@@ -48,6 +48,13 @@ export interface Program {
   description?: string;
   specializations?: string[];
   requirements?: string[];
+  portfolioRequirements?: {
+    required: boolean;
+    description?: string;
+    items?: string[];
+    format?: string;
+    deadline?: string;
+  };
   link?: string;
   id?: string;
 }

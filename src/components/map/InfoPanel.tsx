@@ -1,10 +1,12 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useMemo } from 'react'
 import { XMarkIcon } from '@heroicons/react/24/solid'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { ProcessedUniversity } from '@/stores/schoolStore'
 import { cn } from '@/lib/utils'
+import { getNextDeadline } from '@/utils/deadlineUtils'
+import { generateSchoolICalFile, downloadICalFile } from '@/utils/icalExport'
 
 // Define the props interface for InfoPanel
 interface InfoPanelProps {
@@ -176,8 +178,12 @@ export default function InfoPanel({
               </PanelSection>
             )}
 
+            {school.programs && school.programs.length > 0 && (
+              <DeadlineSection school={school} delay={4} />
+            )}
+
             {school.website && (
-              <PanelSection title="Website" icon={<WebsiteIcon />} delay={4}>
+              <PanelSection title="Website" icon={<WebsiteIcon />} delay={5}>
             <a
               href={school.website}
               target="_blank"
@@ -194,6 +200,70 @@ export default function InfoPanel({
         )}
     </AnimatePresence>
   )
+}
+
+// --- Deadline Section Component ---
+function DeadlineSection({ school, delay }: { school: ProcessedUniversity; delay: number }) {
+  const nextDeadline = useMemo(() => {
+    if (!school.programs || school.programs.length === 0) return null;
+    // Find the best deadline across all programs
+    for (const prog of school.programs) {
+      if (prog.applicationDeadlines) {
+        const result = getNextDeadline(prog.applicationDeadlines);
+        if (result && result.status.status !== 'closed') return { ...result, programName: prog.name };
+      }
+    }
+    // If all are closed, just return the first one
+    for (const prog of school.programs) {
+      if (prog.applicationDeadlines) {
+        const result = getNextDeadline(prog.applicationDeadlines);
+        if (result) return { ...result, programName: prog.name };
+      }
+    }
+    return null;
+  }, [school.programs]);
+
+  const handleDownloadICal = () => {
+    const icalContent = generateSchoolICalFile({
+      name: school.name,
+      website: school.website,
+      programs: school.programs || [],
+    });
+    const filename = `${school.name.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase()}-deadlines.ics`;
+    downloadICalFile(icalContent, filename);
+  };
+
+  if (!nextDeadline) return null;
+
+  return (
+    <PanelSection title="Application Deadline" icon={<DeadlineIcon />} delay={delay}>
+      <div className="space-y-2">
+        <div className="flex items-center gap-2">
+          <span
+            className={cn(
+              'inline-block px-2 py-0.5 text-[0.6rem] font-medium rounded-full border',
+              nextDeadline.status.color
+            )}
+          >
+            {nextDeadline.status.label}
+          </span>
+          <span className="text-[0.65rem] text-gray-400">
+            {nextDeadline.semester} semester
+          </span>
+        </div>
+        <div className="text-[0.7rem] text-gray-300">
+          {nextDeadline.programName}: {nextDeadline.deadline.start} — {nextDeadline.deadline.end}
+        </div>
+        <button
+          onClick={handleDownloadICal}
+          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-soft text-[0.65rem] text-blue-300 bg-blue-500/15 border border-blue-400/30 hover:bg-blue-500/25 hover:text-blue-200 transition-all duration-200 mt-1"
+        >
+          <CalendarIcon />
+          Export all deadlines (.ics)
+        </button>
+      </div>
+    </PanelSection>
+  );
 }
 
 // --- SVG Icons (Refined Minimalist Style) ---
@@ -233,6 +303,22 @@ function WebsiteIcon() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+    </svg>
+  )
+}
+
+function DeadlineIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  )
+}
+
+function CalendarIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
     </svg>
   )
 }

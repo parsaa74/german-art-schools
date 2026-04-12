@@ -1,0 +1,46 @@
+name: Validate School Deadlines
+
+on:
+  schedule:
+    # Run on the 1st of every month at 8am UTC
+    - cron: '0 8 1 * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run deadline validation
+        id: validate
+        continue-on-error: true
+        run: node scripts/validateDeadlines.js
+
+      - name: Create issue if problems found
+        if: steps.validate.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "Deadline Validation: Issues found ($(date +%Y-%m-%d))" \
+            --body-file scripts/validation-issue.md \
+            --label "data-validation"
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-report
+          path: scripts/validation-report.json
+          retention-days: 30

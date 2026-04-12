@@ -58,7 +58,18 @@
             "Photography",
             "New Media",
             "Stage Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         },
         {
           "name": "Art Education",
@@ -76,7 +87,18 @@
             "Art Pedagogy",
             "Art History",
             "Art Theory"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating artistic ability combined with pedagogical interest.",
+            "items": [
+              "10-15 original artworks",
+              "Teaching concept or pedagogical statement",
+              "Letter of motivation",
+              "Artistic CV"
+            ],
+            "format": "Physical portfolio or digital upload (PDF)"
+          }
         },
         {
           "name": "Architecture",
@@ -94,7 +116,18 @@
             "Architectural Design",
             "Urban Planning",
             "Architectural Theory"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio showcasing spatial thinking, design sensitivity, and technical drawing skills.",
+            "items": [
+              "10-15 design works or drawings",
+              "Spatial/architectural sketches",
+              "Technical drawings (if available)",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://www.kunstakademie-duesseldorf.de/en/",
@@ -198,7 +231,18 @@
             "Sculpture",
             "New Media Art",
             "Graphic Arts"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         },
         {
           "name": "Fine Arts",
@@ -217,7 +261,18 @@
             "Sculpture",
             "New Media Art",
             "Graphic Arts"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         },
         {
           "name": "Architecture",
@@ -234,7 +289,18 @@
           "specializations": [
             "Architectural Design",
             "Urban Planning"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio showcasing spatial thinking, design sensitivity, and technical drawing skills.",
+            "items": [
+              "10-15 design works or drawings",
+              "Spatial/architectural sketches",
+              "Technical drawings (if available)",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Design",
@@ -252,7 +318,18 @@
             "Visual Communication",
             "Product Design",
             "Fashion Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Music",
@@ -271,7 +348,18 @@
             "Composition",
             "Conducting",
             "Music Theory"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Audition demonstrating musical ability and artistic potential.",
+            "items": [
+              "Audition recording (2-3 contrasting pieces)",
+              "Repertoire list",
+              "Brief artistic biography",
+              "Proof of prior musical education"
+            ],
+            "format": "Audio/video recording (digital submission) plus live audition"
+          }
         },
         {
           "name": "Performing Arts",
@@ -290,7 +378,18 @@
             "Direction",
             "Dramaturgy",
             "Stage Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio or audition demonstrating performance skills and creative vision.",
+            "items": [
+              "Performance recording or documentation",
+              "Artistic statement",
+              "CV with performance experience",
+              "Two contrasting monologues or scenes (for acting)"
+            ],
+            "format": "Video recording (digital submission) plus live audition"
+          }
         },
         {
           "name": "Art Education",
@@ -308,7 +407,18 @@
             "Art Pedagogy",
             "Art History",
             "Art Theory"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating artistic ability combined with pedagogical interest.",
+            "items": [
+              "10-15 original artworks",
+              "Teaching concept or pedagogical statement",
+              "Letter of motivation",
+              "Artistic CV"
+            ],
+            "format": "Physical portfolio or digital upload (PDF)"
+          }
         }
       ],
       "website": "https://www.udk-berlin.de/en/",
@@ -411,7 +521,18 @@
             "Digital Media",
             "Sound",
             "Exhibition Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Product Design",
@@ -429,7 +550,18 @@
             "Industrial Design",
             "Furniture Design",
             "Exhibition Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Communication Design",
@@ -447,7 +579,18 @@
             "Graphic Design",
             "Typography",
             "Digital Media"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Art Research and Media Philosophy",
@@ -465,7 +608,18 @@
             "Art Theory",
             "Media Theory",
             "Philosophy"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Research proposal and documentation of prior academic/artistic work.",
+            "items": [
+              "Research proposal (5-10 pages)",
+              "Writing sample or publication",
+              "CV with academic and artistic background",
+              "Two academic references"
+            ],
+            "format": "Digital submission (PDF)"
+          }
         }
       ],
       "website": "https://www.hfg-karlsruhe.de/en/",
@@ -561,7 +715,18 @@
             "Game Design",
             "Media Art",
             "Web Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Digitale Medien",
@@ -580,7 +745,18 @@
             "Game Design",
             "Media Art",
             "Web Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Freie Kunst",
@@ -599,7 +775,18 @@
             "Sculpture",
             "Installation",
             "Performance"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         },
         {
           "name": "Integriertes Design",
@@ -617,7 +804,18 @@
             "Product Design",
             "Communication Design",
             "Fashion Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Integriertes Design",
@@ -635,7 +833,18 @@
             "Product Design",
             "Communication Design",
             "Fashion Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Musik",
@@ -654,7 +863,18 @@
             "Composition",
             "Conducting",
             "Music Theory"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Audition demonstrating musical ability and artistic potential.",
+            "items": [
+              "Audition recording (2-3 contrasting pieces)",
+              "Repertoire list",
+              "Brief artistic biography",
+              "Proof of prior musical education"
+            ],
+            "format": "Audio/video recording (digital submission) plus live audition"
+          }
         },
         {
           "name": "Musik",
@@ -673,7 +893,18 @@
             "Composition",
             "Conducting",
             "Music Theory"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Audition demonstrating musical ability and artistic potential.",
+            "items": [
+              "Audition recording (2-3 contrasting pieces)",
+              "Repertoire list",
+              "Brief artistic biography",
+              "Proof of prior musical education"
+            ],
+            "format": "Audio/video recording (digital submission) plus live audition"
+          }
         },
         {
           "name": "Promotionsprogramm (PhD)",
@@ -692,7 +923,18 @@
             "Design Theory",
             "Media Theory",
             "Music Theory"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Research proposal and documentation of prior academic/artistic work.",
+            "items": [
+              "Research proposal (5-10 pages)",
+              "Writing sample or publication",
+              "CV with academic and artistic background",
+              "Two academic references"
+            ],
+            "format": "Digital submission (PDF)"
+          }
         }
       ],
       "website": "https://www.hfk-bremen.de/",
@@ -787,7 +1029,18 @@
             "Media Installation",
             "Sound Art",
             "Media Theory"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Media Arts",
@@ -806,7 +1059,18 @@
             "Art Theory",
             "Film Theory",
             "Sound Studies"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         }
       ],
       "website": "https://www.khm.de",
@@ -904,7 +1168,18 @@
             "Digital Media",
             "Illustration",
             "Photography"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Visual Communication",
@@ -924,7 +1199,18 @@
             "Digital Media",
             "Illustration",
             "Photography"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Product Design",
@@ -943,7 +1229,18 @@
             "Furniture Design",
             "Transportation Design",
             "Interaction Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Product Design",
@@ -962,7 +1259,18 @@
             "Furniture Design",
             "Transportation Design",
             "Interaction Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Integrative Design",
@@ -981,7 +1289,18 @@
             "Design Strategy",
             "Design Management",
             "Social Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://www.hfg-offenbach.de",
@@ -1076,7 +1395,18 @@
             "Book Design",
             "Illustration",
             "Graphic Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Photography",
@@ -1094,7 +1424,18 @@
             "Art Photography",
             "Documentary Photography",
             "Experimental Photography"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Photography portfolio demonstrating technical skill and artistic vision.",
+            "items": [
+              "20-30 photographs (coherent series preferred)",
+              "Artist statement",
+              "Technical description of works",
+              "Artistic CV"
+            ],
+            "format": "Digital upload (high-res JPEG/TIFF) or physical prints"
+          }
         },
         {
           "name": "Painting/Graphic Arts",
@@ -1112,7 +1453,18 @@
             "Painting",
             "Drawing",
             "Printmaking"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         },
         {
           "name": "Media Art",
@@ -1131,7 +1483,18 @@
             "Video Art",
             "Sound Art",
             "Performance"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Cultures of the Curatorial",
@@ -1150,7 +1513,18 @@
             "Art Theory",
             "Museum Studies",
             "Cultural Management"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative and conceptual ability in the field.",
+            "items": [
+              "10-15 relevant works or projects",
+              "Written concept or research proposal",
+              "CV",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB)"
+          }
         }
       ],
       "website": "https://www.hgb-leipzig.de",
@@ -1249,7 +1623,18 @@
             "Communication Design",
             "Spatial Design",
             "Design Theory"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Integrated Design Research",
@@ -1268,7 +1653,18 @@
             "Strategic Design",
             "Social Design",
             "Sustainable Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Communication Design",
@@ -1287,7 +1683,18 @@
             "Typography",
             "Digital Media",
             "Brand Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://kisd.de/en/",
@@ -1378,7 +1785,18 @@
             "Communication Design",
             "Textile Design",
             "Design Theory"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Textile Design",
@@ -1397,7 +1815,18 @@
             "Smart Textiles",
             "Sustainable Textiles",
             "Fashion Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://www.reutlingen-university.de/",
@@ -1487,7 +1916,18 @@
             "Sculpture",
             "Photography",
             "Performance"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         },
         {
           "name": "Visual Communication",
@@ -1506,7 +1946,18 @@
             "Typography",
             "Illustration",
             "Media Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://kunsthochschule-mainz.de/",
@@ -1597,7 +2048,18 @@
             "Sculpture",
             "Photography",
             "New Media"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         },
         {
           "name": "Visual Communication",
@@ -1616,7 +2078,18 @@
             "Typography",
             "Illustration",
             "Media Art"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://kunsthochschulekassel.de/",
@@ -1708,7 +2181,18 @@
             "Product Design",
             "Industrial Design",
             "Design Engineering"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Mode",
@@ -1726,7 +2210,18 @@
             "Fashion Design",
             "Textile Design",
             "Fashion Technology"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Fashion/textile portfolio demonstrating design ability and material awareness.",
+            "items": [
+              "15-20 design works or fashion illustrations",
+              "Material experiments/textile samples (if physical)",
+              "Process documentation",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Schmuck",
@@ -1744,7 +2239,18 @@
             "Jewelry Design",
             "Metalsmithing",
             "Accessory Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Visuelle Kommunikation",
@@ -1762,7 +2268,18 @@
             "Graphic Design",
             "Typography",
             "Media Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Transportation Design",
@@ -1780,7 +2297,18 @@
             "Vehicle Design",
             "Automotive Design",
             "Transportation Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Transportation Design",
@@ -1798,7 +2326,18 @@
             "Advanced Vehicle Design",
             "Mobility Design",
             "Sustainable Transportation"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Creative Communication and Brand Management",
@@ -1816,7 +2355,17 @@
             "Brand Strategy",
             "Creative Leadership",
             "Strategic Communication"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Creative Direction",
@@ -1834,7 +2383,17 @@
             "Art Direction",
             "Design Leadership",
             "Creative Strategy"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Design & Future Making",
@@ -1852,7 +2411,18 @@
             "Experimental Design",
             "Future Studies",
             "Innovation Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://www.hs-pforzheim.de",
@@ -1946,7 +2516,18 @@
             "Film Production",
             "Media Design",
             "Audiovisual Media"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Bibliothek und digitale Information",
@@ -1964,7 +2545,17 @@
             "Library Science",
             "Digital Information",
             "Information Management"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Crossmedia-Redaktion & Public Relations",
@@ -1982,7 +2573,17 @@
             "Journalism",
             "Public Relations",
             "Corporate Communications"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Deutsch-Chinesischer Studiengang Medien und Technologie",
@@ -2000,7 +2601,18 @@
             "Media Technology",
             "Crosscultural Media",
             "Digital Media"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Digital- und Medienwirtschaft",
@@ -2018,7 +2630,18 @@
             "Media Business",
             "Digital Economy",
             "Media Management"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Informationsdesign",
@@ -2036,7 +2659,18 @@
             "Information Design",
             "Data Visualization",
             "UX Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Integriertes Produktdesign",
@@ -2054,7 +2688,18 @@
             "Product Design",
             "Industrial Design",
             "Design Engineering"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Media Entertainment",
@@ -2072,7 +2717,17 @@
             "Entertainment Media",
             "Game Design",
             "Interactive Media"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Mediapublishing",
@@ -2090,7 +2745,17 @@
             "Publishing",
             "Digital Publishing",
             "Content Management"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Medien- und Wirtschaftspsychologie",
@@ -2108,7 +2773,18 @@
             "Media Psychology",
             "Consumer Psychology",
             "Business Psychology"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Medieninformatik",
@@ -2126,7 +2802,18 @@
             "Media Informatics",
             "Software Development",
             "Multimedia"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Mobile Medien",
@@ -2144,7 +2831,18 @@
             "Mobile Media",
             "App Development",
             "Mobile Technology"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Online-Medien-Management",
@@ -2162,7 +2860,18 @@
             "Online Management",
             "Digital Marketing",
             "Web Content"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Print Media and Packaging Technologies",
@@ -2180,7 +2889,17 @@
             "Print Media",
             "Packaging Technology",
             "Print Production"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Social Media Marketing & Management",
@@ -2198,7 +2917,17 @@
             "Social Media Marketing",
             "Content Strategy",
             "Community Management"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Technisches Produktmanagement – Technisches Design",
@@ -2216,7 +2945,18 @@
             "Product Management",
             "Technical Design",
             "Engineering"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Werbung und Marktkommunikation",
@@ -2234,7 +2974,17 @@
             "Advertising",
             "Marketing Communications",
             "Brand Management"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Wirtschaftsinformatik und digitale Medien",
@@ -2252,7 +3002,18 @@
             "Business Informatics",
             "Digital Media",
             "IT Management"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Wirtschaftsingenieurwesen Medien",
@@ -2270,7 +3031,18 @@
             "Industrial Engineering",
             "Media Technology",
             "Media Management"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Audiovisual Media Creation and Technology",
@@ -2288,7 +3060,18 @@
             "AV Media Creation",
             "Media Technology",
             "Film Production"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Computer Science and Media",
@@ -2306,7 +3089,17 @@
             "Media Computing",
             "Software Engineering",
             "Media Applications"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Crossmedia Publishing & Management",
@@ -2324,7 +3117,17 @@
             "Publishing Management",
             "Crossmedia",
             "Digital Publishing"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Digital Design",
@@ -2342,7 +3145,18 @@
             "Digital Design",
             "Interaction Design",
             "UX Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Master of Media Research",
@@ -2360,7 +3174,18 @@
             "Media Research",
             "Media Studies",
             "Empirical Research"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Research proposal and documentation of prior academic/artistic work.",
+            "items": [
+              "Research proposal (5-10 pages)",
+              "Writing sample or publication",
+              "CV with academic and artistic background",
+              "Two academic references"
+            ],
+            "format": "Digital submission (PDF)"
+          }
         },
         {
           "name": "Medienmanagement",
@@ -2378,7 +3203,18 @@
             "Media Management",
             "Leadership",
             "Media Economics"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         },
         {
           "name": "Packaging Development Management",
@@ -2396,7 +3232,17 @@
             "Packaging Development",
             "Packaging Management",
             "Sustainable Packaging"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Unternehmenskommunikation",
@@ -2414,7 +3260,17 @@
             "Corporate Communications",
             "PR",
             "Strategic Communications"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Wirtschaftsinformatik",
@@ -2432,7 +3288,17 @@
             "Business Informatics",
             "Digital Transformation",
             "IT Management"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio demonstrating creative ability and potential in the field.",
+            "items": [
+              "10-20 relevant works",
+              "Letter of motivation",
+              "CV"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://hdm-stuttgart.de/",
@@ -2526,7 +3392,18 @@
             "Printmaking",
             "New Media",
             "Photography"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         }
       ],
       "website": "https://www.kunstakademie-muenster.de/",
@@ -2618,7 +3495,18 @@
             "Sculpture",
             "Graphic Arts",
             "Photography"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         }
       ],
       "website": "https://www.abk-muenchen.de/",
@@ -2715,7 +3603,18 @@
             "Painting",
             "Sculpture",
             "Graphic Arts"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         }
       ],
       "website": "https://www.abk-nuernberg.de/",
@@ -2806,7 +3705,18 @@
           "specializations": [
             "Industrial Design",
             "Design Theory"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         },
         {
           "name": "Architecture",
@@ -2823,7 +3733,18 @@
           "specializations": [
             "Urban Design",
             "Building Renovation"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio showcasing spatial thinking, design sensitivity, and technical drawing skills.",
+            "items": [
+              "10-15 design works or drawings",
+              "Spatial/architectural sketches",
+              "Technical drawings (if available)",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://www.uni-weimar.de/",
@@ -2923,7 +3844,18 @@
             "Industrial Design",
             "Communication Design",
             "Textile Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://www.burg-halle.de/",
@@ -3013,7 +3945,18 @@
             "Feature Film",
             "Documentary",
             "Experimental Film"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
+            "items": [
+              "Short film or video work (max 15 min)",
+              "Treatment or concept paper",
+              "Director's statement or artistic statement",
+              "CV with relevant experience"
+            ],
+            "format": "Digital submission (video link or upload, max 500MB)"
+          }
         }
       ],
       "website": "https://www.filmuniversitaet.de/",
@@ -3113,7 +4056,18 @@
             "Performance",
             "Composition",
             "Music Pedagogy"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Audition demonstrating musical ability and artistic potential.",
+            "items": [
+              "Audition recording (2-3 contrasting pieces)",
+              "Repertoire list",
+              "Brief artistic biography",
+              "Proof of prior musical education"
+            ],
+            "format": "Audio/video recording (digital submission) plus live audition"
+          }
         }
       ],
       "website": "https://www.folkwang-uni.de/",
@@ -3209,7 +4163,18 @@
             "Communication Design",
             "Industrial Design",
             "Fashion Design"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://www.haw-hamburg.de/",
@@ -3298,7 +4263,18 @@
             "Graphic Arts",
             "Sculpture",
             "Media Art"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         }
       ],
       "website": "https://www.hfbk-dresden.de/",
@@ -3393,7 +4369,18 @@
             "Sculpture",
             "Photography",
             "Film"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         }
       ],
       "website": "https://www.hfbk-hamburg.de/",
@@ -3490,7 +4477,18 @@
             "Photography",
             "Film",
             "Performance"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         }
       ],
       "website": "https://www.staedelschule.de/",
@@ -3588,7 +4586,18 @@
             "Sculpture",
             "Graphic Arts",
             "Photography"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         }
       ],
       "website": "https://www.hbk-saar.de/",
@@ -3675,7 +4684,18 @@
             "Sculpture",
             "Graphic Arts",
             "Photography"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         }
       ],
       "website": "https://www.kunsthochschule-muenchen.com/",
@@ -3763,7 +4783,18 @@
             "Sculpture",
             "Graphic Arts",
             "Media Art"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
+            "items": [
+              "15-25 original artworks",
+              "Sketchbook or work diary",
+              "Artistic CV",
+              "Letter of motivation"
+            ],
+            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          }
         }
       ],
       "website": "https://www.akademie-stuttgart.de/",
@@ -3856,7 +4887,18 @@
             "Industrial Design",
             "Communication Design",
             "Interior Architecture"
-          ]
+          ],
+          "portfolioRequirements": {
+            "required": true,
+            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
+            "items": [
+              "15-20 design works",
+              "Process documentation/sketches",
+              "Project descriptions",
+              "Letter of motivation"
+            ],
+            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          }
         }
       ],
       "website": "https://www.muthesius-kunsthochschule.de/",
