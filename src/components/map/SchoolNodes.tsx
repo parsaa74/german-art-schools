@@ -61,6 +61,8 @@ export function SchoolNodes() {
     activeSemesterFilter,
     activeNcFilter,
     activeApplicationMethodFilter,
+    activeCourseLanguageFilter,
+    activeDegreeFilter,
     timelineFilter,
     visualizationMode,
     searchQuery,
@@ -76,6 +78,8 @@ export function SchoolNodes() {
     activeSemesterFilter: state.activeSemesterFilter,
     activeNcFilter: state.activeNcFilter,
     activeApplicationMethodFilter: state.activeApplicationMethodFilter,
+    activeCourseLanguageFilter: state.activeCourseLanguageFilter,
+    activeDegreeFilter: state.activeDegreeFilter,
     timelineFilter: state.timelineFilter,
     visualizationMode: state.visualizationMode,
     searchQuery: state.searchQuery,
@@ -166,6 +170,18 @@ export function SchoolNodes() {
         }
       }
 
+      if (activeCourseLanguageFilter != null) {
+        const progs = (uni as any).programs || [];
+        const hasLanguage = progs.some((p: any) => p.language === activeCourseLanguageFilter);
+        if (!hasLanguage) return false;
+      }
+
+      if (activeDegreeFilter != null) {
+        const progs = (uni as any).programs || [];
+        const hasDegree = progs.some((p: any) => p.degree === activeDegreeFilter);
+        if (!hasDegree) return false;
+      }
+
       if (currentTimelineFilter) {
         const foundedYear = uni.founded ? parseInt(uni.founded) : null;
         if (foundedYear === null || foundedYear < currentTimelineFilter[0] || foundedYear > currentTimelineFilter[1]) {
@@ -177,7 +193,7 @@ export function SchoolNodes() {
     
     return result;
 
-  }, [processedUniversities, nodePositions, activeStateFilter, activeProgramFilter, activeTypeFilter, activeSemesterFilter, activeNcFilter, activeApplicationMethodFilter, timelineFilter, searchQuery, fuzzyMatch]);
+  }, [processedUniversities, nodePositions, activeStateFilter, activeProgramFilter, activeTypeFilter, activeSemesterFilter, activeNcFilter, activeApplicationMethodFilter, activeCourseLanguageFilter, activeDegreeFilter, timelineFilter, searchQuery, fuzzyMatch]);
 
   // Auto-select the university if it's the only one after filtering
   useEffect(() => {

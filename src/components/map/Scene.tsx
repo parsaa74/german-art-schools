@@ -288,8 +288,14 @@ export function Scene({ lang, dict }: SceneProps) {
         setActiveNcFilter,
         activeApplicationMethodFilter,
         setActiveApplicationMethodFilter,
+        activeCourseLanguageFilter,
+        setActiveCourseLanguageFilter,
+        activeDegreeFilter,
+        setActiveDegreeFilter,
         uniqueStates,
         uniqueProgramTypes,
+        uniqueCourseLanguages,
+        uniqueDegreeTypes,
         visualizationMode,
         searchQuery,
         setSearchQuery
@@ -386,8 +392,10 @@ export function Scene({ lang, dict }: SceneProps) {
         setActiveTypeFilter(null);
         setActiveSemesterFilter(null);
         setActiveNcFilter(null);
+        setActiveCourseLanguageFilter(null);
+        setActiveDegreeFilter(null);
         setSearchQuery('');
-    }, [setSelectedUniversity, setConnectionLines, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setActiveApplicationMethodFilter, setSearchQuery]);
+    }, [setSelectedUniversity, setConnectionLines, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setActiveApplicationMethodFilter, setActiveCourseLanguageFilter, setActiveDegreeFilter, setSearchQuery]);
     
     // Define animation variants for the main view cross-fade
     const visVariants = {
@@ -682,7 +690,7 @@ export function Scene({ lang, dict }: SceneProps) {
                         </div>
                         {/* Program Filter */}
                         <div className="mb-1">
-                          <label htmlFor="program-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Program Type</label>
+                          <label htmlFor="program-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Subject Groups</label>
                           <select
                             id="program-filter-scene"
                             value={activeProgramFilter || ''}
@@ -752,8 +760,34 @@ export function Scene({ lang, dict }: SceneProps) {
                             <option value="direct">Direct portal</option>
                           </select>
                         </div>
+                        {/* Course Language Filter */}
+                        <div className="mb-1">
+                          <label htmlFor="language-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Course Language</label>
+                          <select
+                            id="language-filter-scene"
+                            value={activeCourseLanguageFilter || ''}
+                            onChange={(e) => setActiveCourseLanguageFilter(e.target.value || null)}
+                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
+                          >
+                            <option value="">All Languages</option>
+                            {uniqueCourseLanguages.map((lang: string) => <option key={lang} value={lang}>{lang}</option>)}
+                          </select>
+                        </div>
+                        {/* Degree Type Filter */}
+                        <div className="mb-1">
+                          <label htmlFor="degree-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Degree Type</label>
+                          <select
+                            id="degree-filter-scene"
+                            value={activeDegreeFilter || ''}
+                            onChange={(e) => setActiveDegreeFilter(e.target.value || null)}
+                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
+                          >
+                            <option value="">All Degrees</option>
+                            {uniqueDegreeTypes.map((deg: string) => <option key={deg} value={deg}>{deg}</option>)}
+                          </select>
+                        </div>
                         {/* Reset All Button */}
-                        {(activeStateFilter || activeProgramFilter || activeTypeFilter || activeSemesterFilter || activeNcFilter !== null || activeApplicationMethodFilter !== null || selectedUniversity) && (
+                        {(activeStateFilter || activeProgramFilter || activeTypeFilter || activeSemesterFilter || activeNcFilter !== null || activeApplicationMethodFilter !== null || activeCourseLanguageFilter !== null || activeDegreeFilter !== null || selectedUniversity) && (
                           <button
                             onClick={() => {
                                 setActiveStateFilter(null);
@@ -762,6 +796,8 @@ export function Scene({ lang, dict }: SceneProps) {
                                 setActiveSemesterFilter(null);
                                 setActiveNcFilter(null);
                                 setActiveApplicationMethodFilter(null);
+                                setActiveCourseLanguageFilter(null);
+                                setActiveDegreeFilter(null);
                                 setSelectedUniversity(null);
                                 setConnectionLines([]);
                                 setSearchQuery('');

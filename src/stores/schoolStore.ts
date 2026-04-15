@@ -75,9 +75,13 @@ export interface SchoolStore {
   activeSemesterFilter: string | null;
   activeNcFilter: boolean | null;
   activeApplicationMethodFilter: 'uni-assist' | 'direct' | null;
+  activeCourseLanguageFilter: string | null;
+  activeDegreeFilter: string | null;
   uniqueStates: string[];
   visualizationMode: VisualizationMode;
   uniqueProgramTypes: string[];
+  uniqueCourseLanguages: string[];
+  uniqueDegreeTypes: string[];
   introComplete: boolean;
   expandedPanel: string | null;
   timelineFilter: [number, number] | null;
@@ -98,6 +102,8 @@ export interface SchoolStore {
   setActiveSemesterFilter: (semester: string | null) => void;
   setActiveNcFilter: (ncFree: boolean | null) => void;
   setActiveApplicationMethodFilter: (method: 'uni-assist' | 'direct' | null) => void;
+  setActiveCourseLanguageFilter: (language: string | null) => void;
+  setActiveDegreeFilter: (degree: string | null) => void;
   setIntroComplete: (complete: boolean) => void;
   setExpandedPanel: (panelId: string | null) => void;
   setVisualizationMode: (mode: VisualizationMode) => void;
@@ -126,8 +132,12 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   activeSemesterFilter: null,
   activeNcFilter: null,
   activeApplicationMethodFilter: null,
+  activeCourseLanguageFilter: null,
+  activeDegreeFilter: null,
   uniqueStates: [],
   uniqueProgramTypes: [],
+  uniqueCourseLanguages: [],
+  uniqueDegreeTypes: [],
   introComplete: false,
   expandedPanel: null,
   timelineFilter: null,
@@ -149,6 +159,8 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   setActiveSemesterFilter: (semester) => set({ activeSemesterFilter: semester, selectedUniversity: null }),
   setActiveNcFilter: (ncFree) => set({ activeNcFilter: ncFree, selectedUniversity: null }),
   setActiveApplicationMethodFilter: (method) => set({ activeApplicationMethodFilter: method, selectedUniversity: null }),
+  setActiveCourseLanguageFilter: (language) => set({ activeCourseLanguageFilter: language, selectedUniversity: null }),
+  setActiveDegreeFilter: (degree) => set({ activeDegreeFilter: degree, selectedUniversity: null }),
   setIntroComplete: (complete) => set({ introComplete: complete }),
   setExpandedPanel: (panelId) => set({ expandedPanel: panelId }),
   setVisualizationMode: (mode: VisualizationMode) => set({ visualizationMode: mode }),
@@ -172,6 +184,8 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
         const map = new Map<string, ProcessedUniversity>();
         const states = new Set<string>();
         const programs = new Set<string>();
+        const languages = new Set<string>();
+        const degrees = new Set<string>();
 
         const { default: enhancedData } = await import('../data/enhanced_german_art_schools.json');
         processedList = Object.entries(enhancedData.universities).map(([name, data]: [string, any]) => {
@@ -240,6 +254,10 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
             // Add to states and programs sets
             states.add(uni.state);
             uni.programTypes.forEach(p => programs.add(p));
+            uni.programs?.forEach((p) => {
+              if (p.language) languages.add(p.language);
+              if (p.degree) degrees.add(p.degree);
+            });
 
             // Calculate and add position if lat/lng are valid
             if (uni.location && typeof uni.location[0] === 'number' && typeof uni.location[1] === 'number') {
@@ -253,6 +271,8 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
 
         const uniqueStatesArray = Array.from(states).sort();
         const uniqueProgramTypesArray = Array.from(programs).sort();
+        const uniqueCourseLanguagesArray = Array.from(languages).sort();
+        const uniqueDegreeTypesArray = Array.from(degrees).sort();
 
         console.log(`Processed ${processedList.length} universities. Found ${uniqueStatesArray.length} states and ${uniqueProgramTypesArray.length} program types. Calculated ${positions.size} node positions.`);
 
@@ -271,6 +291,8 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
             universityMap: map,
             uniqueStates: uniqueStatesArray,
             uniqueProgramTypes: uniqueProgramTypesArray,
+            uniqueCourseLanguages: uniqueCourseLanguagesArray,
+            uniqueDegreeTypes: uniqueDegreeTypesArray,
             isLoading: false,
             controlsEnabled: true, 
             nodePositions: positions, // Use the calculated positions map
