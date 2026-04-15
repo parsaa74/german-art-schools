@@ -1,7 +1,7 @@
 {
   "statistics": {
     "last_updated": "2026-04-15",
-    "total_schools": 55,
+    "total_schools": 81,
     "total_programs": 323
   },
   "universities": {
@@ -139,7 +139,15 @@
         }
       ],
       "website": "https://www.hfbk-hamburg.de/",
-      "description": "The Hamburg University of Fine Arts (HFBK) is one of Germany's most prestigious art academies. Founded in 1767, it offers a wide range of programs in fine arts and art education, with a strong emphasis on contemporary artistic practices and interdisciplinary approaches."
+      "description": "The Hamburg University of Fine Arts (HFBK) is one of Germany's most prestigious art academies. Founded in 1767, it offers a wide range of programs in fine arts and art education, with a strong emphasis on contemporary artistic practices and interdisciplinary approaches.",
+      "address": {
+        "street": "Dürerstraße 10",
+        "postalCode": "60596",
+        "city": "Frankfurt am Main"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Nein"
     },
     "Hochschule der Bildenden Künste Saar": {
       "id": "hochschule-der-bildenden-kunste-saar",
@@ -230,7 +238,15 @@
         }
       ],
       "website": "https://www.hbks.uni-saarland.de/",
-      "description": "The Saar College of Fine Arts (HBK Saar) is a public art school in Saarbrücken, Saarland. It offers programs in fine arts, design, and art education, with a focus on practical, conceptual, and theoretical aspects of contemporary art and design practices."
+      "description": "The Saar College of Fine Arts (HBK Saar) is a public art school in Saarbrücken, Saarland. It offers programs in fine arts, design, and art education, with a focus on practical, conceptual, and theoretical aspects of contemporary art and design practices.",
+      "address": {
+        "street": "Keplerstraße 3-5",
+        "postalCode": "66117",
+        "city": "Saarbrücken"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Hochschule für Bildende Künste Braunschweig": {
       "id": "hochschule-fur-bildende-kunste-braunschweig",
@@ -322,7 +338,15 @@
         }
       ],
       "website": "https://www.hbk-bs.de/",
-      "description": "The Braunschweig University of Art (HBK Braunschweig) is a public art school in Lower Saxony with a strong focus on interdisciplinary art education. It offers programs in fine arts, design, and art education, emphasizing both practical skills and theoretical knowledge in contemporary art and design practices."
+      "description": "The Braunschweig University of Art (HBK Braunschweig) is a public art school in Lower Saxony with a strong focus on interdisciplinary art education. It offers programs in fine arts, design, and art education, emphasizing both practical skills and theoretical knowledge in contemporary art and design practices.",
+      "address": {
+        "street": "Johannes-Selenka-Platz 1",
+        "postalCode": "38118",
+        "city": "Braunschweig"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Hochschule für Musik und Theater Rostock": {
       "id": "hochschule-fur-musik-und-theater-rostock",
@@ -368,7 +392,15 @@
         }
       ],
       "website": "https://www.hmt-rostock.de/",
-      "description": "The Rostock University of Music and Theatre (HMT Rostock) is a public university for music and performing arts in Mecklenburg-Vorpommern, Germany. It offers a wide range of programs in music performance, education, and theater."
+      "description": "The Rostock University of Music and Theatre (HMT Rostock) is a public university for music and performing arts in Mecklenburg-Vorpommern, Germany. It offers a wide range of programs in music performance, education, and theater.",
+      "address": {
+        "street": "Harvestehuder Weg 12",
+        "postalCode": "20148",
+        "city": "Hamburg"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Kunstakademie Düsseldorf": {
       "id": "kunstakademie-dusseldorf",
@@ -473,7 +505,15 @@
         }
       ],
       "website": "https://www.kunstakademie-duesseldorf.de/en/",
-      "description": "Founded in 1773, the Kunstakademie Düsseldorf is one of Germany's most prestigious art schools. It has produced numerous influential artists including Joseph Beuys, Gerhard Richter, and Anselm Kiefer. The academy emphasizes independent artistic development within a class-based system led by internationally renowned professors."
+      "description": "Founded in 1773, the Kunstakademie Düsseldorf is one of Germany's most prestigious art schools. It has produced numerous influential artists including Joseph Beuys, Gerhard Richter, and Anselm Kiefer. The academy emphasizes independent artistic development within a class-based system led by internationally renowned professors.",
+      "address": {
+        "street": "Eiskellerstraße 1",
+        "postalCode": "40213",
+        "city": "Düsseldorf"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Universität der Künste Berlin": {
       "id": "universitat-der-kunste-berlin",
@@ -680,7 +720,15 @@
         }
       ],
       "website": "https://www.udk-berlin.de/en/",
-      "description": "The Berlin University of the Arts (UdK Berlin) is one of the largest, most diverse and renowned art colleges in the world. The teaching offered at the four colleges of Fine Art, Design, Music and Performing Arts, as well as at the Central Institute of Further Education, encompasses the full spectrum of the arts and related academic studies in more than 70 courses."
+      "description": "The Berlin University of the Arts (UdK Berlin) is one of the largest, most diverse and renowned art colleges in the world. The teaching offered at the four colleges of Fine Art, Design, Music and Performing Arts, as well as at the Central Institute of Further Education, encompasses the full spectrum of the arts and related academic studies in more than 70 courses.",
+      "address": {
+        "street": "Einsteinufer 43",
+        "postalCode": "10587",
+        "city": "Berlin"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Staatliche Hochschule für Gestaltung Karlsruhe": {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe",
@@ -820,7 +868,15 @@
         }
       ],
       "website": "https://www.hfg-karlsruhe.de/en/",
-      "description": "Karlsruhe University of Arts and Design was first established as a progressive school on April 15, 1992. It was founded by Heinrich Klotz between the years 1989 and 1992, together with the ZKM | Center for Art and Media Karlsruhe. The combination of teaching, research, and exhibition institutions addresses the given artistic and pedagogic task of relating traditional arts to media technology and electronic production processes."
+      "description": "Karlsruhe University of Arts and Design was first established as a progressive school on April 15, 1992. It was founded by Heinrich Klotz between the years 1989 and 1992, together with the ZKM | Center for Art and Media Karlsruhe. The combination of teaching, research, and exhibition institutions addresses the given artistic and pedagogic task of relating traditional arts to media technology and electronic production processes.",
+      "address": {
+        "street": "Lorenzstr. 15",
+        "postalCode": "76135",
+        "city": "Karlsruhe"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Hochschule für Künste Bremen": {
       "id": "hochschule-fur-kunste-bremen",
@@ -1071,7 +1127,15 @@
         }
       ],
       "website": "https://www.hfk-bremen.de/",
-      "description": "The University of the Arts Bremen (HfK) is a public art college in Bremen, Germany. It was founded in 1873 and offers programs in fine arts, design, digital media, and music. The university is known for its interdisciplinary approach and international orientation."
+      "description": "The University of the Arts Bremen (HfK) is a public art college in Bremen, Germany. It was founded in 1873 and offers programs in fine arts, design, digital media, and music. The university is known for its interdisciplinary approach and international orientation.",
+      "address": {
+        "street": "Am Speicher XI 8",
+        "postalCode": "28217",
+        "city": "Bremen"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Staatliche Akademie der Bildenden Künste Stuttgart": {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart",
@@ -1405,7 +1469,15 @@
         }
       ],
       "website": "https://www.abk-stuttgart.de/en/",
-      "description": "The State Academy of Fine Arts Stuttgart (ABK Stuttgart) is one of the oldest and largest art schools in Germany. Founded in 1761, it offers a wide range of programs in fine arts, architecture, design, art education, and conservation."
+      "description": "The State Academy of Fine Arts Stuttgart (ABK Stuttgart) is one of the oldest and largest art schools in Germany. Founded in 1761, it offers a wide range of programs in fine arts, architecture, design, art education, and conservation.",
+      "address": {
+        "street": "Reinhold-Frank-Straße 67",
+        "postalCode": "76133",
+        "city": "Karlsruhe"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Kunsthochschule für Medien Köln": {
       "id": "kunsthochschule-fur-medien-koln",
@@ -1524,7 +1596,15 @@
         }
       ],
       "website": "https://www.khm.de/en/",
-      "description": "The Academy of Media Arts Cologne (KHM) is unique in Germany, offering a project-based 'Media Arts' diploma program that brings together practices from art, film, and theory. It provides resources for independent artistic work across various media forms."
+      "description": "The Academy of Media Arts Cologne (KHM) is unique in Germany, offering a project-based 'Media Arts' diploma program that brings together practices from art, film, and theory. It provides resources for independent artistic work across various media forms.",
+      "address": {
+        "street": "Heumarkt 14",
+        "postalCode": "50667",
+        "city": "Köln"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Hochschule für Gestaltung Offenbach": {
       "id": "hochschule-fur-gestaltung-offenbach",
@@ -1821,7 +1901,15 @@
         }
       ],
       "website": "https://www.hfg-offenbach.de/en/",
-      "description": "The Offenbach University of Art and Design (HfG Offenbach) is a state art college in Hesse, Germany. It offers diploma programs in Visual Communication and Product Design, as well as teacher training and doctoral studies. It emphasizes the integration of theory and practice."
+      "description": "The Offenbach University of Art and Design (HfG Offenbach) is a state art college in Hesse, Germany. It offers diploma programs in Visual Communication and Product Design, as well as teacher training and doctoral studies. It emphasizes the integration of theory and practice.",
+      "address": {
+        "street": "Schloßstraße 31",
+        "postalCode": "63065",
+        "city": "Offenbach"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Hochschule für Grafik und Buchkunst Leipzig": {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig",
@@ -2047,7 +2135,15 @@
         }
       ],
       "website": "https://www.hgb-leipzig.de/en/",
-      "description": "The Academy of Fine Arts Leipzig (HGB) is one of the oldest art schools in Germany. It offers diploma programs in Painting/Graphics, Book Design/Graphic Design, Photography, and Media Art, as well as a Master's program in Cultures of the Curatorial."
+      "description": "The Academy of Fine Arts Leipzig (HGB) is one of the oldest art schools in Germany. It offers diploma programs in Painting/Graphics, Book Design/Graphic Design, Photography, and Media Art, as well as a Master's program in Cultures of the Curatorial.",
+      "address": {
+        "street": "Wächterstraße 11",
+        "postalCode": "04107",
+        "city": "Leipzig"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Muthesius Kunsthochschule Kiel": {
       "id": "muthesius-kunsthochschule-kiel",
@@ -2268,7 +2364,15 @@
         }
       ],
       "website": "https://muthesius-kunsthochschule.de/en/",
-      "description": "The Muthesius University of Fine Arts and Design in Kiel is the only art university in Schleswig-Holstein. It offers Bachelor's and Master's programs in Fine Arts, Communication Design, Industrial Design, and Spatial Strategies."
+      "description": "The Muthesius University of Fine Arts and Design in Kiel is the only art university in Schleswig-Holstein. It offers Bachelor's and Master's programs in Fine Arts, Communication Design, Industrial Design, and Spatial Strategies.",
+      "address": {
+        "street": "Legienstraße 35",
+        "postalCode": "24103",
+        "city": "Kiel"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Bauhaus-Universität Weimar": {
       "id": "bauhaus-universitat-weimar",
@@ -2596,7 +2700,15 @@
         }
       ],
       "website": "https://www.alanus.edu/en/",
-      "description": "Alanus University of Arts and Social Sciences is a private university in Alfter, near Bonn. It offers programs in fine arts, art education, and social sciences, with a focus on interdisciplinary and practice-oriented learning."
+      "description": "Alanus University of Arts and Social Sciences is a private university in Alfter, near Bonn. It offers programs in fine arts, art education, and social sciences, with a focus on interdisciplinary and practice-oriented learning.",
+      "address": {
+        "street": "Villestraße 3",
+        "postalCode": "53347",
+        "city": "Alfter"
+      },
+      "hrkMember": false,
+      "tragerschaft": "privat, staatlich anerkannt",
+      "promotionsrecht": "Ja"
     },
     "Hochschule der bildenden Künste Essen": {
       "id": "hochschule-der-bildenden-kunste-essen",
@@ -2659,7 +2771,15 @@
         }
       ],
       "website": "https://www.hbk-essen.de/",
-      "description": "The Hochschule der bildenden Künste Essen is a young art academy in the Ruhr area, offering programs in fine arts with a focus on contemporary artistic practice."
+      "description": "The Hochschule der bildenden Künste Essen is a young art academy in the Ruhr area, offering programs in fine arts with a focus on contemporary artistic practice.",
+      "address": {
+        "street": "Prinz-Friedrich-Str. 28 A",
+        "postalCode": "45257",
+        "city": "Essen"
+      },
+      "hrkMember": false,
+      "tragerschaft": "privat, staatlich anerkannt",
+      "promotionsrecht": "Nein"
     },
     "Hochschule Macromedia": {
       "id": "hochschule-macromedia",
@@ -2825,7 +2945,15 @@
         }
       ],
       "website": "https://www.hff-muenchen.de/en/",
-      "description": "The University of Television and Film Munich (HFF München) is one of the most renowned film schools in Germany, offering programs in film and television production, directing, and screenwriting."
+      "description": "The University of Television and Film Munich (HFF München) is one of the most renowned film schools in Germany, offering programs in film and television production, directing, and screenwriting.",
+      "address": {
+        "street": "Bernd-Eichinger-Platz 1",
+        "postalCode": "80333",
+        "city": "München"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Filmuniversität Babelsberg KONRAD WOLF": {
       "id": "filmuniversitat-babelsberg-konrad-wolf",
@@ -3050,7 +3178,15 @@
         }
       ],
       "website": "https://www.filmuniversitaet.de/en/",
-      "description": "Filmuniversität Babelsberg KONRAD WOLF is Germany's oldest and largest film university, located in Potsdam-Babelsberg. It offers a wide range of programs in film, television, animation, production, and media studies, combining artistic practice with academic research. The university is renowned for its close ties to the film industry and its international collaborations."
+      "description": "Filmuniversität Babelsberg KONRAD WOLF is Germany's oldest and largest film university, located in Potsdam-Babelsberg. It offers a wide range of programs in film, television, animation, production, and media studies, combining artistic practice with academic research. The university is renowned for its close ties to the film industry and its international collaborations.",
+      "address": {
+        "street": "Marlene-Dietrich-Allee 11",
+        "postalCode": "14482",
+        "city": "Potsdam"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Hochschule für Gestaltung Schwäbisch Gmünd": {
       "id": "hochschule-fur-gestaltung-schwabisch-gmund",
@@ -5823,7 +5959,15 @@
         }
       ],
       "website": "https://www.kunstakademie-muenster.de/",
-      "description": "Kunstakademie Münster (Academy of Fine Arts Münster) is a public art school founded in 1971 and located at Leonardo-Campus 2 in Münster. It offers programs in Fine Arts with an emphasis on artistic freedom and self-determination. The academy provides studio-based learning in artistic classes complemented by technical workshops and art-related sciences."
+      "description": "Kunstakademie Münster (Academy of Fine Arts Münster) is a public art school founded in 1971 and located at Leonardo-Campus 2 in Münster. It offers programs in Fine Arts with an emphasis on artistic freedom and self-determination. The academy provides studio-based learning in artistic classes complemented by technical workshops and art-related sciences.",
+      "address": {
+        "street": "Leonardo-Campus 2",
+        "postalCode": "48149",
+        "city": "Münster"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Akademie der Bildenden Künste München": {
       "id": "akademie-munchen",
@@ -5953,7 +6097,15 @@
         "Founded 1808 by King Maximilian I of Bavaria",
         "Among Germany's most prestigious classical academies",
         "Historic alumni include Paul Klee and Wassily Kandinsky (early faculty)"
-      ]
+      ],
+      "address": {
+        "street": "Akademiestraße 2-4",
+        "postalCode": "80799",
+        "city": "München"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Akademie der Bildenden Künste Nürnberg": {
       "id": "akademie-nurnberg",
@@ -6094,7 +6246,15 @@
         "Founded 1662 — one of the oldest continuously operating art academies in the world",
         "Connected to Nuremberg's rich artistic heritage (Dürer city)",
         "Intimate academy with very low student numbers and high professor contact"
-      ]
+      ],
+      "address": {
+        "street": "Bingstraße 60",
+        "postalCode": "90480",
+        "city": "Nürnberg"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Nein"
     },
     "Burg Giebichenstein Kunsthochschule Halle": {
       "id": "burg-giebichenstein",
@@ -6229,7 +6389,15 @@
         "Founded 1879 — continuation of long craft and design tradition",
         "Named after Burg Giebichenstein, the historic castle on its campus",
         "Strong craft heritage with national reputation for ceramics and industrial design"
-      ]
+      ],
+      "address": {
+        "street": "Neuwerk 7",
+        "postalCode": "06108",
+        "city": "Halle"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Folkwang Universität der Künste": {
       "id": "folkwang-essen",
@@ -6385,7 +6553,15 @@
         "Folkwang concept: integration of music, theater, dance, and visual arts under one roof",
         "Pina Bausch's Tanztheater Wuppertal emerged from Folkwang's dance tradition",
         "ELIA member — part of Europe's most prestigious arts university network"
-      ]
+      ],
+      "address": {
+        "street": "Klemensborn 39",
+        "postalCode": "45239",
+        "city": "Essen"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Hochschule für Angewandte Wissenschaften Hamburg": {
       "id": "haw-hamburg",
@@ -6596,7 +6772,15 @@
         "Founded 1764 — shares founding year with HGB Leipzig; among Germany's oldest",
         "Alumni include Georg Baselitz and A.R. Penck, pillars of German Neo-Expressionism",
         "Located in Dresden, a city with exceptional baroque artistic heritage"
-      ]
+      ],
+      "address": {
+        "street": "Güntzstraße 34",
+        "postalCode": "01307",
+        "city": "Dresden"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Städelschule Frankfurt": {
       "id": "stadelschule-frankfurt",
@@ -6893,7 +7077,19 @@
           "duration": ""
         }
       ],
-      "website": "https://www.kh-berlin.de"
+      "website": "https://www.kh-berlin.de",
+      "stats": {
+        "students": 834,
+        "founded": 1946
+      },
+      "address": {
+        "street": "Bühringstraße 20",
+        "postalCode": "13086",
+        "city": "Berlin"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Nein"
     },
     "Hochschule für Musik und Theater Leipzig": {
       "id": "hmt-leipzig",
@@ -6928,8 +7124,18 @@
       ],
       "website": "https://www.hmt-leipzig.de/",
       "stats": {
-        "founded": 1843
-      }
+        "founded": 1843,
+        "students": 1166
+      },
+      "city": "Leipzig",
+      "address": {
+        "street": "Grassistraße 8",
+        "postalCode": "04107",
+        "city": "Leipzig"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     },
     "Hochschule für Musik, Theater und Medien Hannover": {
       "id": "hmtm-hannover",
@@ -6964,8 +7170,642 @@
       ],
       "website": "https://www.hmtm-hannover.de/",
       "stats": {
-        "founded": 1897
-      }
+        "founded": 1897,
+        "students": 1365
+      },
+      "city": "Hannover",
+      "address": {
+        "street": "Neues Haus 1",
+        "postalCode": "30175",
+        "city": "Hannover"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Hochschule für evangelische Kirchenmusik der Evangelisch-Lutherischen Kirche in Bayern": {
+      "id": "hochschule-fur-evangelische-kirchenmusik",
+      "coordinates": {
+        "lat": 49.9456,
+        "lng": 11.5713
+      },
+      "stats": {
+        "students": 24,
+        "founded": 2000
+      },
+      "city": "Bayreuth",
+      "state": "Bayern",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.hfk-bayreuth.de",
+      "address": {
+        "street": "Wilhelminenstraße 9",
+        "postalCode": "95444",
+        "city": "Bayreuth"
+      },
+      "hrkMember": false,
+      "tragerschaft": "kirchlich, staatlich anerkannt",
+      "promotionsrecht": "Nein"
+    },
+    "Hochschule für Musik Hanns Eisler Berlin": {
+      "id": "hochschule-fur-musik-berlin",
+      "coordinates": {
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      "stats": {
+        "students": 554,
+        "founded": 1950
+      },
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.hfm-berlin.de",
+      "address": {
+        "street": "Charlottenstraße 55",
+        "postalCode": "10117",
+        "city": "Berlin"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Nein"
+    },
+    "Hochschule für Schauspielkunst Ernst Busch": {
+      "id": "hochschule-fur-schauspielkunst-berlin",
+      "coordinates": {
+        "lat": 52.52,
+        "lng": 13.405
+      },
+      "stats": {
+        "students": 197,
+        "founded": 1905
+      },
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "academy",
+      "programs": [],
+      "website": "http://www.hfs-berlin.de",
+      "address": {
+        "street": "Zinnowitzer Straße 11",
+        "postalCode": "10115",
+        "city": "Berlin"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Nein"
+    },
+    "Hochschule für Musik Detmold": {
+      "id": "hochschule-fur-musik-detmold",
+      "coordinates": {
+        "lat": 51.9381,
+        "lng": 8.8783
+      },
+      "stats": {
+        "students": 635,
+        "founded": 1946
+      },
+      "city": "Detmold",
+      "state": "Nordrhein-Westfalen",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.hfm-detmold.de/",
+      "address": {
+        "street": "Neustadt 22",
+        "postalCode": "32756",
+        "city": "Detmold"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Hochschule für Kirchenmusik der Evangelisch-Lutherischen Landeskirche Sachsens": {
+      "id": "hochschule-fur-kirchenmusik-dresden",
+      "coordinates": {
+        "lat": 51.0504,
+        "lng": 13.7373
+      },
+      "stats": {
+        "students": 22,
+        "founded": 1949
+      },
+      "city": "Dresden",
+      "state": "Sachsen",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.kirchenmusik-dresden.de",
+      "address": {
+        "street": "Käthe Kollwitz Ufer 97",
+        "postalCode": "01309",
+        "city": "Dresden"
+      },
+      "hrkMember": false,
+      "tragerschaft": "kirchlich, staatlich anerkannt",
+      "promotionsrecht": "Nein"
+    },
+    "Hochschule für Musik Carl Maria von Weber Dresden": {
+      "id": "hochschule-fur-musik-dresden",
+      "coordinates": {
+        "lat": 51.0504,
+        "lng": 13.7373
+      },
+      "stats": {
+        "students": 705,
+        "founded": 1856
+      },
+      "city": "Dresden",
+      "state": "Sachsen",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.hfmdd.de",
+      "address": {
+        "street": "Wettiner Platz 13",
+        "postalCode": "01067",
+        "city": "Dresden"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Palucca Hochschule für Tanz Dresden": {
+      "id": "palucca-hochschule-fur-tanz",
+      "coordinates": {
+        "lat": 51.0504,
+        "lng": 13.7373
+      },
+      "stats": {
+        "students": 170,
+        "founded": 1925
+      },
+      "city": "Dresden",
+      "state": "Sachsen",
+      "type": "academy",
+      "programs": [],
+      "website": "http://www.palucca.eu",
+      "address": {
+        "street": "Basteiplatz 4",
+        "postalCode": "01277",
+        "city": "Dresden"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Nein"
+    },
+    "Robert Schumann Hochschule Düsseldorf": {
+      "id": "robert-schumann-hochschule",
+      "coordinates": {
+        "lat": 51.2277,
+        "lng": 6.7735
+      },
+      "stats": {
+        "students": 812,
+        "founded": 1935
+      },
+      "city": "Düsseldorf",
+      "state": "Nordrhein-Westfalen",
+      "type": "kunsthochschule",
+      "programs": [],
+      "website": "http://www.rsh-duesseldorf.de",
+      "address": {
+        "street": "Fischerstr. 110",
+        "postalCode": "40474",
+        "city": "Düsseldorf"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Hochschule für Musik und Darstellende Kunst Frankfurt am Main": {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "coordinates": {
+        "lat": 50.1109,
+        "lng": 8.6821
+      },
+      "stats": {
+        "students": 940,
+        "founded": 1878
+      },
+      "city": "Frankfurt am Main",
+      "state": "Hessen",
+      "type": "music_theater_academy",
+      "programs": [],
+      "website": "https://www.hfmdk-frankfurt.de",
+      "address": {
+        "street": "Eschersheimer Landstraße 29-39",
+        "postalCode": "60322",
+        "city": "Frankfurt am Main"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Hochschule für Musik Freiburg im Breisgau": {
+      "id": "hochschule-fur-musik-freiburg",
+      "coordinates": {
+        "lat": 47.999,
+        "lng": 7.8421
+      },
+      "stats": {
+        "students": 631,
+        "founded": 1946
+      },
+      "city": "Freiburg",
+      "state": "Baden-Württemberg",
+      "type": "music_academy",
+      "programs": [],
+      "website": "https://www.mh-freiburg.de",
+      "address": {
+        "street": "Mendelssohn-Bartholdy-Platz 1",
+        "postalCode": "79102",
+        "city": "Freiburg"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Evangelische Hochschule für Kirchenmusik": {
+      "id": "evangelische-hochschule-fur-kirchenmusik-halle",
+      "coordinates": {
+        "lat": 51.4828,
+        "lng": 11.9697
+      },
+      "stats": {
+        "students": 52,
+        "founded": 1926
+      },
+      "city": "Halle",
+      "state": "Sachsen-Anhalt",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.ehk-halle.de",
+      "address": {
+        "street": "Kleine Ulrichstraße 35",
+        "postalCode": "06108",
+        "city": "Halle"
+      },
+      "hrkMember": false,
+      "tragerschaft": "kirchlich, staatlich anerkannt",
+      "promotionsrecht": "Nein"
+    },
+    "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Baden": {
+      "id": "hochschule-fur-kirchenmusik-heidelberg",
+      "coordinates": {
+        "lat": 49.3988,
+        "lng": 8.6724
+      },
+      "stats": {
+        "students": 32,
+        "founded": 1931
+      },
+      "city": "Heidelberg",
+      "state": "Baden-Württemberg",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.hfk-heidelberg.de",
+      "address": {
+        "street": "Hildastr. 8",
+        "postalCode": "69115",
+        "city": "Heidelberg"
+      },
+      "hrkMember": false,
+      "tragerschaft": "kirchlich, staatlich anerkannt",
+      "promotionsrecht": "Nein"
+    },
+    "Hochschule für Musik Karlsruhe": {
+      "id": "hochschule-fur-musik-karlsruhe",
+      "coordinates": {
+        "lat": 49.0069,
+        "lng": 8.4037
+      },
+      "stats": {
+        "students": 545,
+        "founded": 1812
+      },
+      "city": "Karlsruhe",
+      "state": "Baden-Württemberg",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.hfm-karlsruhe.de",
+      "address": {
+        "street": "Am Schloss Gottesaue 7",
+        "postalCode": "76131",
+        "city": "Karlsruhe"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Hochschule für Musik und Tanz Köln": {
+      "id": "hochschule-fur-musik-und-tanz-koln",
+      "coordinates": {
+        "lat": 50.9375,
+        "lng": 6.9603
+      },
+      "stats": {
+        "students": 1388,
+        "founded": 1845
+      },
+      "city": "Köln",
+      "state": "Nordrhein-Westfalen",
+      "type": "music_theater_academy",
+      "programs": [],
+      "website": "https://www.hfmt-koeln.de/",
+      "address": {
+        "street": "Unter Krahnenbäumen 87",
+        "postalCode": "50668",
+        "city": "Köln"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Musikhochschule Lübeck": {
+      "id": "musikhochschule-lubeck",
+      "coordinates": {
+        "lat": 53.8655,
+        "lng": 10.6866
+      },
+      "stats": {
+        "students": 440,
+        "founded": 1973
+      },
+      "city": "Lübeck",
+      "state": "Schleswig-Holstein",
+      "type": "music_academy",
+      "programs": [],
+      "website": "https://www.mh-luebeck.de",
+      "address": {
+        "street": "Große Petersgrube 21",
+        "postalCode": "23552",
+        "city": "Lübeck"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Staatliche Hochschule für Musik und Darstellende Kunst Mannheim": {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-mannheim",
+      "coordinates": {
+        "lat": 49.4875,
+        "lng": 8.466
+      },
+      "stats": {
+        "students": 598,
+        "founded": 1971
+      },
+      "city": "Mannheim",
+      "state": "Baden-Württemberg",
+      "type": "music_theater_academy",
+      "programs": [],
+      "website": "http://www.muho-mannheim.de",
+      "address": {
+        "street": "N 7, 18",
+        "postalCode": "68161",
+        "city": "Mannheim"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Hochschule für Musik Nürnberg": {
+      "id": "hochschule-fur-musik-nurnberg",
+      "coordinates": {
+        "lat": 49.4521,
+        "lng": 11.0767
+      },
+      "stats": {
+        "students": 470,
+        "founded": 2008
+      },
+      "city": "Nürnberg",
+      "state": "Bayern",
+      "type": "music_academy",
+      "programs": [],
+      "website": "https://www.hfm-nuernberg.de/hochschule",
+      "address": {
+        "street": "Veilhofstraße 34",
+        "postalCode": "90489",
+        "city": "Nürnberg"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Hochschule für Katholische Kirchenmusik und Musikpädagogik": {
+      "id": "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik",
+      "coordinates": {
+        "lat": 49.0134,
+        "lng": 12.1016
+      },
+      "stats": {
+        "students": 132,
+        "founded": 2001
+      },
+      "city": "Regensburg",
+      "state": "Bayern",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.hfkm-regensburg.de",
+      "address": {
+        "street": "Andreasstraße 9",
+        "postalCode": "93059",
+        "city": "Regensburg"
+      },
+      "hrkMember": false,
+      "tragerschaft": "kirchlich, staatlich anerkannt",
+      "promotionsrecht": "Nein"
+    },
+    "Hochschule für Kirchenmusik der Diözese Rottenburg-Stuttgart": {
+      "id": "hochschule-fur-kirchenmusik-rottenburg",
+      "coordinates": {
+        "lat": 48.4766,
+        "lng": 8.9356
+      },
+      "stats": {
+        "students": 18,
+        "founded": 1949
+      },
+      "city": "Rottenburg",
+      "state": "Baden-Württemberg",
+      "type": "music_academy",
+      "programs": [],
+      "website": "www.kirchenmusik-hochschule.org",
+      "address": {
+        "street": "St.-Meinrad-Weg 6",
+        "postalCode": "72108",
+        "city": "Rottenburg"
+      },
+      "hrkMember": false,
+      "tragerschaft": "kirchlich, staatlich anerkannt",
+      "promotionsrecht": "Nein"
+    },
+    "Hochschule für Musik Saar": {
+      "id": "hochschule-fur-musik-saar",
+      "coordinates": {
+        "lat": 49.2402,
+        "lng": 6.9969
+      },
+      "stats": {
+        "students": 487,
+        "founded": 1947
+      },
+      "city": "Saarbrücken",
+      "state": "Saarland",
+      "type": "music_academy",
+      "programs": [],
+      "website": "www.hfmsaar.de",
+      "address": {
+        "street": "Trierer Str. 2-4",
+        "postalCode": "66111",
+        "city": "Saarbrücken"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart": {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "coordinates": {
+        "lat": 48.7758,
+        "lng": 9.1829
+      },
+      "stats": {
+        "students": 804,
+        "founded": 1857
+      },
+      "city": "Stuttgart",
+      "state": "Baden-Württemberg",
+      "type": "music_theater_academy",
+      "programs": [],
+      "website": "http://www.hmdk-stuttgart.de",
+      "address": {
+        "street": "Urbanstraße 25",
+        "postalCode": "70182",
+        "city": "Stuttgart"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Staatliche Hochschule für Musik Trossingen": {
+      "id": "staatliche-hochschule-fur-musik-trossingen",
+      "coordinates": {
+        "lat": 48.0766,
+        "lng": 8.6388
+      },
+      "stats": {
+        "students": 434,
+        "founded": 1944
+      },
+      "city": "Trossingen",
+      "state": "Baden-Württemberg",
+      "type": "music_academy",
+      "programs": [],
+      "website": "https://www.hfm-trossingen.de",
+      "address": {
+        "street": "Schultheiß-Koch-Platz 3",
+        "postalCode": "78647",
+        "city": "Trossingen"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Württemberg": {
+      "id": "hochschule-fur-kirchenmusik-tubingen",
+      "coordinates": {
+        "lat": 48.5216,
+        "lng": 9.0576
+      },
+      "stats": {
+        "students": 24,
+        "founded": 1945
+      },
+      "city": "Tübingen",
+      "state": "Baden-Württemberg",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.kirchenmusikhochschule.de",
+      "address": {
+        "street": "Gartenstraße 12",
+        "postalCode": "72074",
+        "city": "Tübingen"
+      },
+      "hrkMember": false,
+      "tragerschaft": "kirchlich, staatlich anerkannt",
+      "promotionsrecht": "Nein"
+    },
+    "Hochschule für Musik Franz Liszt Weimar": {
+      "id": "hochschule-fur-musik-weimar",
+      "coordinates": {
+        "lat": 50.9795,
+        "lng": 11.3235
+      },
+      "stats": {
+        "students": 755,
+        "founded": 1872
+      },
+      "city": "Weimar",
+      "state": "Thüringen",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.hfm-weimar.de",
+      "address": {
+        "street": "Platz der Demokratie 2/3",
+        "postalCode": "99423",
+        "city": "Weimar"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
+    },
+    "Hochschule für Kirchenmusik der Evangelischen Kirche von Westfalen": {
+      "id": "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen",
+      "coordinates": {
+        "lat": 51.4436,
+        "lng": 7.3353
+      },
+      "stats": {
+        "students": 39,
+        "founded": 1948
+      },
+      "city": "Witten",
+      "state": "Nordrhein-Westfalen",
+      "type": "music_academy",
+      "programs": [],
+      "website": "https://www.hochschule-kirchenmusik.de",
+      "address": {
+        "street": "Ruhrstraße 48",
+        "postalCode": "58452",
+        "city": "Witten"
+      },
+      "hrkMember": false,
+      "tragerschaft": "kirchlich, staatlich anerkannt",
+      "promotionsrecht": "Nein"
+    },
+    "Hochschule für Musik Würzburg": {
+      "id": "hochschule-fur-musik-wurzburg",
+      "coordinates": {
+        "lat": 49.7913,
+        "lng": 9.9534
+      },
+      "stats": {
+        "students": 576,
+        "founded": 1804
+      },
+      "city": "Würzburg",
+      "state": "Bayern",
+      "type": "music_academy",
+      "programs": [],
+      "website": "http://www.hfm-wuerzburg.de",
+      "address": {
+        "street": "Hofstallstraße 6-8",
+        "postalCode": "97070",
+        "city": "Würzburg"
+      },
+      "hrkMember": true,
+      "tragerschaft": "öffentlich-rechtlich",
+      "promotionsrecht": "Ja"
     }
   }
 }
