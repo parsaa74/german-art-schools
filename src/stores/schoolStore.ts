@@ -38,6 +38,8 @@ export interface ProcessedUniversity {
   coordinates?: { lat: number | null; lng: number | null };
   // NC-frei status
   ncFrei?: boolean;
+  // Application method
+  applicationMethod?: 'uni-assist' | 'direct';
   // Enhanced data properties
   programs?: Array<{
     name: string;
@@ -88,6 +90,7 @@ export interface SchoolStore {
   activeTypeFilter: string | null;
   activeSemesterFilter: string | null;
   activeNcFilter: boolean | null;
+  activeApplicationMethodFilter: 'uni-assist' | 'direct' | null;
   uniqueStates: string[];
   visualizationMode: VisualizationMode;
   uniqueProgramTypes: string[];
@@ -110,6 +113,7 @@ export interface SchoolStore {
   setActiveTypeFilter: (type: string | null) => void;
   setActiveSemesterFilter: (semester: string | null) => void;
   setActiveNcFilter: (ncFree: boolean | null) => void;
+  setActiveApplicationMethodFilter: (method: 'uni-assist' | 'direct' | null) => void;
   setIntroComplete: (complete: boolean) => void;
   setExpandedPanel: (panelId: string | null) => void;
   setVisualizationMode: (mode: VisualizationMode) => void;
@@ -137,6 +141,7 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   activeTypeFilter: null,
   activeSemesterFilter: null,
   activeNcFilter: null,
+  activeApplicationMethodFilter: null,
   uniqueStates: [],
   uniqueProgramTypes: [],
   introComplete: false,
@@ -159,6 +164,7 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   setActiveTypeFilter: (type) => set({ activeTypeFilter: type, selectedUniversity: null }),
   setActiveSemesterFilter: (semester) => set({ activeSemesterFilter: semester, selectedUniversity: null }),
   setActiveNcFilter: (ncFree) => set({ activeNcFilter: ncFree, selectedUniversity: null }),
+  setActiveApplicationMethodFilter: (method) => set({ activeApplicationMethodFilter: method, selectedUniversity: null }),
   setIntroComplete: (complete) => set({ introComplete: complete }),
   setExpandedPanel: (panelId) => set({ expandedPanel: panelId }),
   setVisualizationMode: (mode: VisualizationMode) => set({ visualizationMode: mode }),
@@ -243,6 +249,7 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
                     programs: data.programs || [],
                     coordinates: data.coordinates,
                     ncFrei: data.ncFrei,
+                    applicationMethod: data.applicationMethod,
                     // Enhanced fields
                     ranking: data.ranking,
                     stats: data.stats,

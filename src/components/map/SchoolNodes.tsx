@@ -60,6 +60,7 @@ export function SchoolNodes() {
     activeTypeFilter,
     activeSemesterFilter,
     activeNcFilter,
+    activeApplicationMethodFilter,
     timelineFilter,
     visualizationMode,
     searchQuery,
@@ -74,6 +75,7 @@ export function SchoolNodes() {
     activeTypeFilter: state.activeTypeFilter,
     activeSemesterFilter: state.activeSemesterFilter,
     activeNcFilter: state.activeNcFilter,
+    activeApplicationMethodFilter: state.activeApplicationMethodFilter,
     timelineFilter: state.timelineFilter,
     visualizationMode: state.visualizationMode,
     searchQuery: state.searchQuery,
@@ -157,6 +159,13 @@ export function SchoolNodes() {
         }
       }
 
+      if (activeApplicationMethodFilter != null) {
+        const uniMethod = (uni as any).applicationMethod;
+        if (uniMethod !== undefined && uniMethod !== activeApplicationMethodFilter) {
+          return false;
+        }
+      }
+
       if (currentTimelineFilter) {
         const foundedYear = uni.founded ? parseInt(uni.founded) : null;
         if (foundedYear === null || foundedYear < currentTimelineFilter[0] || foundedYear > currentTimelineFilter[1]) {
@@ -168,7 +177,7 @@ export function SchoolNodes() {
     
     return result;
 
-  }, [processedUniversities, nodePositions, activeStateFilter, activeProgramFilter, activeTypeFilter, activeSemesterFilter, activeNcFilter, timelineFilter, searchQuery, fuzzyMatch]);
+  }, [processedUniversities, nodePositions, activeStateFilter, activeProgramFilter, activeTypeFilter, activeSemesterFilter, activeNcFilter, activeApplicationMethodFilter, timelineFilter, searchQuery, fuzzyMatch]);
 
   // Auto-select the university if it's the only one after filtering
   useEffect(() => {
@@ -264,7 +273,16 @@ export function SchoolNodes() {
           score += 1.0 * ncWeight;
         }
         maxPossibleScore += 1.0 * ncWeight;
-        
+
+        // APPLICATION METHOD MATCHING
+        const appMethodWeight = activeApplicationMethodFilter !== null ? 2.0 : 1.0;
+        const uniAppMethod = (uni as any).applicationMethod;
+        const selAppMethod = (selectedUniversity as any).applicationMethod;
+        if (uniAppMethod !== undefined && selAppMethod !== undefined && uniAppMethod === selAppMethod) {
+          score += 1.0 * appMethodWeight;
+        }
+        maxPossibleScore += 1.0 * appMethodWeight;
+
         // FOUNDED YEAR SIMILARITY - Higher weight if timeline filter is active
         const yearWeight = timelineFilter ? 2.0 : 1.0
         if (uni.founded && selectedUniversity.founded) {
@@ -357,7 +375,7 @@ export function SchoolNodes() {
     })
     
     return result
-  }, [selectedUniversity, spherePositions, filteredUniversities, activeStateFilter, activeTypeFilter, activeProgramFilter, activeSemesterFilter, activeNcFilter, timelineFilter])
+  }, [selectedUniversity, spherePositions, filteredUniversities, activeStateFilter, activeTypeFilter, activeProgramFilter, activeSemesterFilter, activeNcFilter, activeApplicationMethodFilter, timelineFilter])
 
   // --- DEBUG LOGS START --- (Log state used in *this* render)
   console.log('[SchoolNodes] Rendering...')

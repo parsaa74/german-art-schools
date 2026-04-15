@@ -11,7 +11,7 @@ import {
   CommandGroup,
 } from '@/components/ui/command';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import { Search, MapPin, GraduationCap, Building2, Users, CheckCircle, XCircle, Snowflake, Sun } from 'lucide-react';
+import { Search, MapPin, GraduationCap, Building2, Users, CheckCircle, XCircle, Snowflake, Sun, Globe, University } from 'lucide-react';
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -19,7 +19,7 @@ interface SearchModalProps {
 }
 
 interface SearchResult {
-  type: 'university' | 'state' | 'program' | 'type' | 'nc' | 'semester';
+  type: 'university' | 'state' | 'program' | 'type' | 'nc' | 'semester' | 'applicationMethod';
   name: string;
   displayName: string;
   description?: string;
@@ -41,6 +41,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     setActiveTypeFilter,
     setActiveSemesterFilter,
     setActiveNcFilter,
+    setActiveApplicationMethodFilter,
     setSelectedUniversity,
     setSearchQuery,
     activeProgramFilter,
@@ -48,6 +49,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     activeTypeFilter,
     activeSemesterFilter,
     activeNcFilter,
+    activeApplicationMethodFilter,
   } = useSchoolStore();
 
   // Check if device is mobile
@@ -270,6 +272,36 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
         });
       }
 
+      // Search application method options
+      const appMethodTerms = ['uni-assist', 'uniassist', 'direct', 'portal', 'application method', 'apply'];
+      const appMethodIsSubstring = appMethodTerms.some(term => term.toLowerCase().includes(search.toLowerCase()));
+      if (appMethodTerms.some(term => fuzzyMatch(term, search).score > 0 || levenshtein(term.toLowerCase(), search.toLowerCase()) <= 2 || appMethodIsSubstring)) {
+        results.push({
+          type: 'applicationMethod',
+          name: 'uni-assist',
+          displayName: 'Apply via uni-assist',
+          description: 'Show schools using the uni-assist portal',
+          action: () => {
+            setActiveApplicationMethodFilter('uni-assist');
+            onClose();
+          },
+          icon: <Globe className="h-4 w-4 text-orange-400" />,
+          priority: appMethodIsSubstring ? 100 : 48
+        });
+        results.push({
+          type: 'applicationMethod',
+          name: 'direct',
+          displayName: 'Apply directly to university',
+          description: 'Show schools with direct application portal',
+          action: () => {
+            setActiveApplicationMethodFilter('direct');
+            onClose();
+          },
+          icon: <University className="h-4 w-4 text-amber-400" />,
+          priority: appMethodIsSubstring ? 99 : 47
+        });
+      }
+
       // Search semester options (force substring match)
       const semesterTerms = ['semester', 'winter', 'summer'];
       const semesterIsSubstring = semesterTerms.some(term => term.toLowerCase().includes(search.toLowerCase()));
@@ -314,7 +346,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     const others = results.filter(r => r.type !== 'university')
       .sort((a, b) => b.priority - a.priority);
     return [...unis, ...others];
-  }, [search, processedUniversities, uniqueStates, uniqueProgramTypes, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setSelectedUniversity, onClose]);
+  }, [search, processedUniversities, uniqueStates, uniqueProgramTypes, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setActiveApplicationMethodFilter, setSelectedUniversity, onClose]);
 
   // Update search query in store
   useEffect(() => {
@@ -347,8 +379,9 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     if (activeTypeFilter) filters.push({ type: 'Type', value: activeTypeFilter.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '), clear: () => setActiveTypeFilter(null) });
     if (activeSemesterFilter) filters.push({ type: 'Semester', value: activeSemesterFilter, clear: () => setActiveSemesterFilter(null) });
     if (activeNcFilter !== null) filters.push({ type: 'NC-free', value: activeNcFilter ? 'Yes' : 'No', clear: () => setActiveNcFilter(null) });
+    if (activeApplicationMethodFilter !== null) filters.push({ type: 'Apply via', value: activeApplicationMethodFilter === 'uni-assist' ? 'uni-assist' : 'Direct portal', clear: () => setActiveApplicationMethodFilter(null) });
     return filters;
-  }, [activeStateFilter, activeProgramFilter, activeTypeFilter, activeSemesterFilter, activeNcFilter, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter]);
+  }, [activeStateFilter, activeProgramFilter, activeTypeFilter, activeSemesterFilter, activeNcFilter, activeApplicationMethodFilter, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setActiveApplicationMethodFilter]);
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -510,6 +543,28 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
             </CommandGroup>
           )}
 
+          {/* Application Method Options */}
+          {groupedResults.applicationMethod && (
+            <CommandGroup heading="Application Method" className="text-orange-300 text-sm font-semibold tracking-tight mb-2">
+              {groupedResults.applicationMethod.map(result => (
+                <button
+                  key={result.name}
+                  type="button"
+                  onClick={() => result.action()}
+                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-orange-500/40 text-white rounded-md mx-1 my-0.5 transition-all w-full text-left"
+                >
+                  {result.icon}
+                  <div className="flex flex-col flex-1 min-w-0">
+                    <span className="font-medium truncate">{result.displayName}</span>
+                    {result.description && (
+                      <span className="text-xs text-slate-400 truncate">{result.description}</span>
+                    )}
+                  </div>
+                </button>
+              ))}
+            </CommandGroup>
+          )}
+
           {/* Semester Options */}
           {groupedResults.semester && (
             <CommandGroup heading="Semester Options" className="text-yellow-300 text-sm font-semibold tracking-tight mb-2">
@@ -563,6 +618,12 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   <span className="text-slate-300">Options:</span>
                   <span className="text-slate-400">"NC-free" • "Winter" • "University"</span>
                 </div>
+
+                <div className="flex items-center gap-3 text-xs">
+                  <Globe className="h-4 w-4 text-orange-400 flex-shrink-0" />
+                  <span className="text-slate-300">Application:</span>
+                  <span className="text-slate-400">"uni-assist" • "direct" • "portal"</span>
+                </div>
               </div>
               
               <div className="text-xs text-slate-500 mt-6">
@@ -582,6 +643,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   setActiveTypeFilter(null);
                   setActiveSemesterFilter(null);
                   setActiveNcFilter(null);
+                  setActiveApplicationMethodFilter(null);
                   setSelectedUniversity(null);
                   onClose();
                 }}

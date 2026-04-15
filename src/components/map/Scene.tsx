@@ -286,6 +286,8 @@ export function Scene({ lang, dict }: SceneProps) {
         setActiveSemesterFilter,
         activeNcFilter,
         setActiveNcFilter,
+        activeApplicationMethodFilter,
+        setActiveApplicationMethodFilter,
         uniqueStates,
         uniqueProgramTypes,
         visualizationMode,
@@ -385,7 +387,7 @@ export function Scene({ lang, dict }: SceneProps) {
         setActiveSemesterFilter(null);
         setActiveNcFilter(null);
         setSearchQuery('');
-    }, [setSelectedUniversity, setConnectionLines, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setSearchQuery]);
+    }, [setSelectedUniversity, setConnectionLines, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setActiveApplicationMethodFilter, setSearchQuery]);
     
     // Define animation variants for the main view cross-fade
     const visVariants = {
@@ -736,8 +738,22 @@ export function Scene({ lang, dict }: SceneProps) {
                             <option value="no">No</option>
                           </select>
                         </div>
+                        {/* Application Method Filter */}
+                        <div className="mb-1">
+                          <label htmlFor="appmethod-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Application Method</label>
+                          <select
+                            id="appmethod-filter-scene"
+                            value={activeApplicationMethodFilter || ''}
+                            onChange={(e) => setActiveApplicationMethodFilter((e.target.value || null) as 'uni-assist' | 'direct' | null)}
+                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
+                          >
+                            <option value="">All</option>
+                            <option value="uni-assist">uni-assist</option>
+                            <option value="direct">Direct portal</option>
+                          </select>
+                        </div>
                         {/* Reset All Button */}
-                        {(activeStateFilter || activeProgramFilter || activeTypeFilter || activeSemesterFilter || activeNcFilter !== null || selectedUniversity) && (
+                        {(activeStateFilter || activeProgramFilter || activeTypeFilter || activeSemesterFilter || activeNcFilter !== null || activeApplicationMethodFilter !== null || selectedUniversity) && (
                           <button
                             onClick={() => {
                                 setActiveStateFilter(null);
@@ -745,6 +761,7 @@ export function Scene({ lang, dict }: SceneProps) {
                                 setActiveTypeFilter(null);
                                 setActiveSemesterFilter(null);
                                 setActiveNcFilter(null);
+                                setActiveApplicationMethodFilter(null);
                                 setSelectedUniversity(null);
                                 setConnectionLines([]);
                                 setSearchQuery('');
