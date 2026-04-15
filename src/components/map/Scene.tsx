@@ -308,6 +308,7 @@ export function Scene({ lang, dict }: SceneProps) {
     // Intro UI overlay state
     const [showIntroSeq, setShowIntroSeq] = useState(true);
     const [showSearchModal, setShowSearchModal] = useState(false);
+    const [canvasKey, setCanvasKey] = useState(0);
 
     // Handler when the title overlay completes
     const handleOverlayComplete = useCallback(() => {
@@ -417,13 +418,17 @@ export function Scene({ lang, dict }: SceneProps) {
             {/* Unified 3D Canvas with continuous shader */}
             <div className="absolute inset-0 w-full h-full z-0">
                 <Canvas
-                    gl={{ 
-                        antialias: true, 
-                        alpha: true, 
-                        powerPreference: 'high-performance',
-                        preserveDrawingBuffer: true
+                    key={canvasKey}
+                    gl={{
+                        antialias: false,
+                        alpha: true,
+                        powerPreference: 'default',
+                        failIfMajorPerformanceCaveat: false,
+                        stencil: false,
+                        depth: true,
                     }}
-                    dpr={[1, 1.5]}
+                    dpr={1}
+                    resize={{ debounce: 200, scroll: false }}
                     frameloop="always"
                     className="w-full h-full"
                     camera={{
@@ -433,6 +438,15 @@ export function Scene({ lang, dict }: SceneProps) {
                         far: 1000
                     }}
                     style={{ opacity: 1, transition: 'opacity 1s ease-in-out' }}
+                    onCreated={({ gl }) => {
+                        const canvas = gl.domElement;
+                        const onLost = (e: Event) => {
+                            e.preventDefault();
+                            console.warn('[WebGL] context lost — remounting');
+                            setTimeout(() => setCanvasKey((k) => k + 1), 300);
+                        };
+                        canvas.addEventListener('webglcontextlost', onLost, false);
+                    }}
                 >
                     <Suspense fallback={null}>
                         {/* Animate background when intro sequence is done */}
