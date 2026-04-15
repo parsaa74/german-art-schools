@@ -13,7 +13,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const DATA_PATH = path.join(__dirname, '..', 'public', 'enhanced_german_art_schools.json');
+const DATA_PATH = path.join(__dirname, '..', 'src', 'data', 'enhanced_german_art_schools.json');
 const REPORT_PATH = path.join(__dirname, 'validation-report.json');
 const REQUEST_TIMEOUT = 10000; // 10 seconds
 

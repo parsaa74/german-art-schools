@@ -4,22 +4,6 @@ import * as THREE from 'three';
 // Ensure geo utilities are imported
 import { latLngToVector3, MAP_CONFIG } from '@/lib/geo/index'; 
 
-// Define the structure of the schools_formatted.json data
-export interface SchoolData {
-  id: string;
-  name: string;
-  latitude: number;
-  longitude: number;
-  websiteUrl: string;
-  state: string;
-  programTypes: string[];
-  ncFrei?: boolean;
-}
-
-// Import the formatted school data
-import schoolsData from '@/data/schools_formatted.json';
-
-
 // Interface for the processed university data used within the app
 export interface ProcessedUniversity {
   id: string;
@@ -189,30 +173,18 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
         const states = new Set<string>();
         const programs = new Set<string>();
 
-        // --- Start: Data Processing Logic (Use enhanced data or fallback) ---
-        try {
-            const { default: enhancedData } = await import('../data/enhanced_german_art_schools.json');
-            console.log("SchoolStore DEBUG: Attempting to use enhancedSchoolsData:",
-              enhancedData ? `Object with ${Object.keys(enhancedData.universities || {}).length} keys` : 'Import failed or null');
-              console.log("SchoolStore DEBUG: Keys found in enhancedSchoolsData.universities:", Object.keys(enhancedData.universities || {}));
-            let processedCount = 0;
-            processedList = Object.entries(enhancedData.universities).map(([name, data]: [string, any], index: number) => {
-                
-                // == MORE DETAILED LOGGING INSIDE MAP ==
-                console.log(`SchoolStore DEBUG: Processing entry ${index + 1}: ${name}`);
+        const { default: enhancedData } = await import('../data/enhanced_german_art_schools.json');
+        processedList = Object.entries(enhancedData.universities).map(([name, data]: [string, any]) => {
                 if (!data.coordinates?.lat || !data.coordinates?.lng) {
                     console.warn(`SchoolStore WARN: Missing coordinates for ${name}`);
                 }
-                // == END DETAILED LOGGING ==
-                
+
                 let type = data.type || 'university';
                 if (type === 'academy' || type === 'kunsthochschule' || type === 'university_of_arts') {
                     type = 'art_academy';
                 } else if (type.includes('design')) {
                     type = 'design_school';
                 }
-                processedCount++; // Increment successfully processed count
-                
                 // Extract specializations from programs for similarity calculations
                 const allSpecializations: string[] = [];
                 data.programs?.forEach((program: any) => {
@@ -258,47 +230,9 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
                     specializationVector: allSpecializations, // Will be converted to numeric vector later if needed
                 };
             });
-            console.log(`SchoolStore DEBUG: Finished mapping enhanced data. ${processedCount} entries processed successfully.`);
-            console.log('SchoolStore DEBUG: Successfully processed enhanced data. Example founded years:',
-              processedList.slice(0, 5).map(p => `${p.name}: ${p.founded}`) 
-            );
-            console.log('Successfully loaded enhanced data with', processedList.length, 'universities');
-        }
-        catch (enhancedError) {
-            console.error('SchoolStore DEBUG: Error processing enhanced data:', enhancedError);
-            console.warn('Could not load enhanced data, falling back to basic data:', enhancedError);
+        console.log(`SchoolStore: Loaded ${processedList.length} universities.`);
 
-            processedList = []; // Reset list
-            const rawData = schoolsData as SchoolData[];
-            rawData.forEach((school) => {
-                let type = 'university';
-                if (school.programTypes.some(p => p.toLowerCase().includes('fine arts') || p.toLowerCase().includes('kunst'))) {
-                    type = 'art_academy';
-                } else if (school.programTypes.some(p => p.toLowerCase().includes('design') || p.toLowerCase().includes('media'))) {
-                    type = 'design_school';
-                }
-                const processedUni: ProcessedUniversity = {
-                    id: school.id,
-                    name: school.name,
-                    location: [school.latitude, school.longitude],
-                    type,
-                    state: school.state,
-                    programCount: school.programTypes.length,
-                    website: school.websiteUrl,
-                    programTypes: school.programTypes,
-                    coordinates: {
-                        lat: school.latitude,
-                        lng: school.longitude
-                    },
-                    ncFrei: school.ncFrei,
-                };
-                processedList.push(processedUni);
-            });
-            console.log('SchoolStore DEBUG: Using fallback basic data.');
-        }
-        // --- End: Data Processing Logic ---
-
-        // == RE-ADD: Calculate Node Positions ==
+        // == Calculate Node Positions ==
         const positions = new Map<string, THREE.Vector3>();
         processedList.forEach(uni => {
             // Add to university map
