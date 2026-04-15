@@ -7,6 +7,7 @@ import type { ProcessedUniversity } from '@/stores/schoolStore'
 import { cn } from '@/lib/utils'
 import { getNextDeadline } from '@/utils/deadlineUtils'
 import { generateSchoolICalFile, downloadICalFile } from '@/utils/icalExport'
+import { getLogoForSchool } from '@/data/universityLogos'
 
 // Define the props interface for InfoPanel
 interface InfoPanelProps {
@@ -107,10 +108,17 @@ export default function InfoPanel({
       onClick={(e) => e.stopPropagation()}
     >
           <div className="sticky top-0 z-10 bg-gradient-to-b from-black/90 via-black/80 to-transparent backdrop-blur-sm px-5 pt-5 pb-3 border-b border-white/10">
-            <div className="flex justify-between items-start mb-2">
+            <div className="flex justify-between items-start mb-2 gap-3">
+          {getLogoForSchool(school.id) && (
+            <img
+              src={getLogoForSchool(school.id)}
+              alt={`${school.name} logo`}
+              className="w-10 h-10 object-contain flex-shrink-0 rounded bg-white/90 p-1"
+            />
+          )}
           <h2
             id="school-name-heading"
-                className="text-lg font-semibold text-white leading-tight pr-3"
+                className="text-lg font-semibold text-white leading-tight pr-3 flex-1"
           >
             {school.name}
           </h2>

@@ -8,10 +8,10 @@
     "predeploy": "npm run build",
     "deploy": "touch dist/.nojekyll && gh-pages -d dist -t",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "validate-deadlines": "node scripts/validateDeadlines.js"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@formatjs/intl-localematcher": "^0.6.1",
@@ -27,7 +27,6 @@
     "@react-three/postprocessing": "^2.19.1",
     "@supabase/supabase-js": "^2.21.0",
     "@tanstack/react-query": "^4.29.0",
-    "@turf/turf": "^7.2.0",
     "@tweenjs/tween.js": "^25.0.0",
     "@types/d3": "^7.4.3",
     "@types/d3-geo": "^3.1.0",
@@ -43,9 +42,7 @@
     "d3-geo": "^3.1.1",
     "d3-geo-projection": "^4.0.0",
     "framer-motion": "^12.7.4",
-    "geojson-world-map": "^0.0.2",
     "gsap": "latest",
-    "kdbush": "^4.0.2",
     "lucide-react": "^0.469.0",
     "mapbox-gl": "^2.15.0",
     "negotiator": "^1.0.0",
@@ -62,7 +59,6 @@
     "three-geojson-geometry": "^2.0.0",
     "three-mesh-bvh": "^0.7.0",
     "three-stdlib": "^2.35.2",
-    "topojson-client": "^3.1.0",
     "zustand": "^4.3.0"
   },
   "devDependencies": {

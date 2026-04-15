@@ -3,7 +3,6 @@
 import { useEffect, useRef } from 'react';
 import { useThree } from '@react-three/fiber';
 import * as THREE from 'three';
-import { useMapStore } from '@/stores/mapStore';
 import type { ProcessedUniversity } from '@/stores/schoolStore';
 
 interface SceneEventHandlerProps {
