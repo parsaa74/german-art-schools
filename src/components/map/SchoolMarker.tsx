@@ -236,19 +236,20 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
   const speedFactor = useMemo(() => 0.2 + (randomSeed % 500) / 1000 * 0.3, [randomSeed]);
   const amplitude = selectedUniversity ? MAP_CONFIG.radius * 0.003 : MAP_CONFIG.radius * 0.008;
 
-  const textVisible = showHoverEffect || isCameraFacing;
+  const showPassiveLabel = isCameraFacing && !showHoverEffect;
 
   // Spring animations
-  const { springScale, color, emissiveColor, glowOpacity, textOpacity, textScale, textSlideY, formationScale } = useSpring({
+  const { springScale, color, emissiveColor, glowOpacity, textOpacity, textScale, textSlideY, lineOpacity, formationScale } = useSpring({
     springScale: isSelected ? 1.8 : (showHoverEffect ? 1.5 : 1.0),
     color: nodeColor,
     emissiveColor: isSelected ? '#93C5FD' : (showHoverEffect ? '#FFFFFF' : nodeColor),
     glowOpacity: isSelected ? 0.7 : (showHoverEffect ? 0.6 :
       deadlineInfo.urgency === 'urgent' ? 0.55 :
       deadlineInfo.urgency === 'soon' ? 0.45 : 0.3),
-    textOpacity: showHoverEffect ? 1 : (isCameraFacing ? 0.75 : 0),
-    textScale: textVisible ? 1 : 0.01,
-    textSlideY: textVisible ? 0 : -(MAP_CONFIG.radius * 0.012),
+    textOpacity: showPassiveLabel ? 0.75 : 0,
+    textScale: showPassiveLabel ? 1 : 0.01,
+    textSlideY: showPassiveLabel ? 0 : -(MAP_CONFIG.radius * 0.012),
+    lineOpacity: showHoverEffect ? 1 : (showPassiveLabel ? 0.75 : 0),
     formationScale: selectedUniversity && selectedUniversity.name !== schoolData.name ? 0.8 : 1.0,
     config: (key: string) => {
       if (key === 'textScale') return { mass: 0.6, tension: 380, friction: 14 }; // bouncy pop
@@ -364,7 +365,10 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
       // Camera-facing detection: project node to NDC and check if near screen center
       const ndc = worldPosition.clone().project(camera);
       const distFromCenter = Math.sqrt(ndc.x * ndc.x + ndc.y * ndc.y);
-      const nowFacing = distFromCenter < 0.18 && ndc.z < 1 && !showHoverEffect && !isSelected;
+      // Near-side check: node must be on the camera-facing hemisphere of the orb.
+      // Globe is centered at origin, so dot(nodePos, cameraPos) > 0 means same side.
+      const onNearSide = worldPosition.dot(camera.position) > 0;
+      const nowFacing = onNearSide && distFromCenter < 0.18 && ndc.z < 1 && !showHoverEffect && !isSelected;
       if (nowFacing !== isCameraFacingRef.current) {
         isCameraFacingRef.current = nowFacing;
         setIsCameraFacing(nowFacing);
@@ -372,33 +376,10 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
     }
   });
 
-  // Text content — show deadline info prominently on hover; just name when camera-facing
-  const enhancedText = useMemo(() => {
-    let text = schoolData.name;
-
-    if (showHoverEffect) {
-      // Always show deadline status on hover
-      if (deadlineInfo.urgency !== 'none') {
-        text += `\n${deadlineInfo.label}`;
-      } else {
-        text += `\nNo upcoming deadlines`;
-      }
-
-      // Show relationship when a university is selected
-      if (selectedUniversity && selectedUniversity.name !== schoolData.name) {
-        const score = calculateUniversityRelationship(selectedUniversity, schoolData);
-        const strength = score > 0.5 ? 'Strong match' : score > 0.25 ? 'Moderate match' : 'Weak match';
-        text += `\n${strength}`;
-      }
-
-      if (schoolData.stats?.students) {
-        text += `\n${schoolData.stats.students} students`;
-      }
-    }
-
-    return text;
-  }, [schoolData, showHoverEffect, selectedUniversity, deadlineInfo]);
-  // isCameraFacing intentionally excluded — camera-facing shows name only, no extra lines
+  // Text bounds — measured on sync to size background plane
+  const [textBounds, setTextBounds] = useState<{ w: number; h: number }>({ w: 0, h: 0 });
+  const textPadX = dynamicFontSize * 0.5;
+  const textPadY = dynamicFontSize * 0.3;
 
   // Render
   return (
@@ -456,42 +437,88 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
         </mesh>
       )}
 
-      {/* Billboard to make text face camera */}
-      <Billboard
-        follow={true}
-      >
+      <Billboard follow={true}>
+        {/* Connecting line — visible on passive + hover */}
+        <AnimatedLine
+          points={linePoints}
+          color={isSelected ? '#FFFFFF' : '#AAAAAA'}
+          lineWidth={1}
+          dashed={false}
+          transparent={true}
+          opacity={lineOpacity}
+          depthWrite={false}
+          visible={lineOpacity.to(o => o > 0.01)}
+        />
+
+        {/* Passive camera-facing label (name only) with dark background */}
         <animated.group
           scale={textScale}
           position-y={textSlideY}
           visible={textOpacity.to(o => o > 0.01)}
         >
-          {/* Enhanced Hover Text with university info */}
+          {/* Dark background plane */}
+          {textBounds.w > 0 && (
+            <animated.mesh
+              position={[
+                textPosition.x,
+                textPosition.y + textBounds.h / 2,
+                textPosition.z - 0.001,
+              ]}
+            >
+              <planeGeometry args={[textBounds.w + textPadX * 2, textBounds.h + textPadY * 2]} />
+              <animated.meshBasicMaterial
+                color="#0B1220"
+                transparent
+                opacity={textOpacity.to(o => o * 0.85)}
+                depthWrite={false}
+              />
+            </animated.mesh>
+          )}
+          {/* Subtle border — slightly larger plane behind background */}
+          {textBounds.w > 0 && (
+            <animated.mesh
+              position={[
+                textPosition.x,
+                textPosition.y + textBounds.h / 2,
+                textPosition.z - 0.002,
+              ]}
+            >
+              <planeGeometry args={[
+                textBounds.w + textPadX * 2 + dynamicFontSize * 0.08,
+                textBounds.h + textPadY * 2 + dynamicFontSize * 0.08,
+              ]} />
+              <animated.meshBasicMaterial
+                color={isSelected ? '#60A5FA' : '#334155'}
+                transparent
+                opacity={textOpacity.to(o => o * 0.9)}
+                depthWrite={false}
+              />
+            </animated.mesh>
+          )}
           <AnimatedText
             position={textPosition}
-            color={isSelected ? '#FFFFFF' : '#E0E0E0'}
+            color={isSelected ? '#FFFFFF' : '#F1F5F9'}
             fontSize={dynamicFontSize}
             anchorY="bottom"
             anchorX="center"
             outlineWidth={dynamicOutlineWidth}
-            outlineColor="#111111"
+            outlineColor="#000000"
             material-transparent={true}
             material-opacity={textOpacity}
             material-depthWrite={false}
             fontWeight={"bold"}
+            onSync={(mesh) => {
+              const box = mesh.geometry.boundingBox;
+              if (!box) return;
+              const w = box.max.x - box.min.x;
+              const h = box.max.y - box.min.y;
+              if (Math.abs(w - textBounds.w) > 0.0001 || Math.abs(h - textBounds.h) > 0.0001) {
+                setTextBounds({ w, h });
+              }
+            }}
           >
-            {enhancedText}
+            {schoolData.name}
           </AnimatedText>
-
-          {/* Connecting Line */}
-          <AnimatedLine
-            points={linePoints}
-            color={isSelected ? '#FFFFFF' : '#AAAAAA'}
-            lineWidth={1}
-            dashed={false}
-            transparent={true}
-            opacity={textOpacity}
-            depthWrite={false}
-          />
         </animated.group>
       </Billboard>
     </group>
