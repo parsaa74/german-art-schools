@@ -92,6 +92,26 @@ const OPACITY_LINK_DEFAULT = 0.15
 const OPACITY_LINK_ACTIVE = 0.6
 const OPACITY_LINK_HIDDEN = 0.05
 
+// Type-based node colors
+const TYPE_COLORS: Record<string, string> = {
+  university: '#06b6d4',    // cyan-500
+  art_academy: '#a855f7',   // purple-500
+  design_school: '#f59e0b', // amber-500
+  music_academy: '#ec4899', // pink-500
+  film_school: '#10b981',   // emerald-500
+}
+
+const TYPE_STROKE_COLORS: Record<string, string> = {
+  university: '#5eead4',    // teal-300
+  art_academy: '#d8b4fe',   // purple-300
+  design_school: '#fcd34d', // amber-300
+  music_academy: '#f9a8d4', // pink-300
+  film_school: '#6ee7b7',   // emerald-300
+}
+
+const getTypeColor = (node: D3Node): string => TYPE_COLORS[node.type] || COLOR_DEFAULT
+const getTypeStrokeColor = (node: D3Node): string => TYPE_STROKE_COLORS[node.type] || COLOR_STROKE_DEFAULT
+
 // --- Helper Functions ---
 const getNodeRadius = (node: D3Node): number => {
   // Use a combination of prestige score, student count, and program count for node size
@@ -155,6 +175,7 @@ export default function D3NetworkGraph({
   const linkGroupRef = useRef<SVGGElement | null>(null); // Ref for link group
   const nodeGroupRef = useRef<SVGGElement | null>(null); // Ref for node group
   const graphContentRef = useRef<SVGGElement | null>(null); // Ref for graph-content group
+  const zoomTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   // --- Zustand Store ---
   const {
@@ -193,8 +214,12 @@ export default function D3NetworkGraph({
     const newNodes: D3Node[] = (processedUniversities as ProcessedUniversity[])
       .filter(uni => uni.programTypes && uni.programTypes.length > 0 && uni.coordinates?.lat)
       .map(uni => {
-         const initX = Math.random() * (width * 0.8) + width * 0.1
-         const initY = Math.random() * (height * 0.8) + height * 0.1
+         const initX = uni.coordinates?.lng
+           ? (uni.coordinates.lng - 6) / 9 * (width * 0.8) + width * 0.1
+           : Math.random() * (width * 0.8) + width * 0.1
+         const initY = uni.coordinates?.lat
+           ? (55 - uni.coordinates.lat) / 7.7 * (height * 0.8) + height * 0.1
+           : Math.random() * (height * 0.8) + height * 0.1
          const node: D3Node = {
             id: uni.name,
             name: uni.name,
@@ -242,14 +267,13 @@ export default function D3NetworkGraph({
                  }
                  return radius;
             }).strength(0.7))
-            .alphaTarget(0.05)
             .alphaDecay(0.02);
 
         simulationRef.current.on('tick', () => {
             // Update node positions
             if (nodeGroupRef.current) {
                 select(nodeGroupRef.current).selectAll<SVGGElement, D3Node>('g.node-container')
-                    .attr('transform', d => `translate(${d.initialX},${d.initialY})`); // Fix to initial coords
+                    .attr('transform', d => `translate(${d.x ?? d.initialX},${d.y ?? d.initialY})`);
             }
             // Link positions remain static for now (not rendering dynamic links)
         });
@@ -307,7 +331,10 @@ export default function D3NetworkGraph({
           if (graphContentRef.current) {
             select(graphContentRef.current)
               .attr('transform', event.transform.toString());
-            setZoomScale(event.transform.k);
+            if (zoomTimeoutRef.current) clearTimeout(zoomTimeoutRef.current);
+            zoomTimeoutRef.current = setTimeout(() => {
+              setZoomScale(event.transform.k);
+            }, 50);
           }
         })
     );
@@ -354,8 +381,8 @@ export default function D3NetworkGraph({
     nodeEnter.append('circle')
         .attr('class', 'node-circle')
         .attr('r', d => getNodeRadius(d))
-        .attr('fill', COLOR_DEFAULT)
-        .attr('stroke', COLOR_STROKE_DEFAULT)
+        .attr('fill', d => getTypeColor(d))
+        .attr('stroke', d => getTypeStrokeColor(d))
         .attr('stroke-width', 1.5);
 
     nodeEnter.append('text')
@@ -570,8 +597,8 @@ export default function D3NetworkGraph({
         let targetLabelOpacity = OPACITY_LABEL_HIDDEN;
         let targetScale = 1.0;
         let targetFilter = null;
-        let targetFill = COLOR_DEFAULT;
-        let targetStroke = COLOR_STROKE_DEFAULT;
+        let targetFill = getTypeColor(d);
+        let targetStroke = getTypeStrokeColor(d);
         let targetStrokeWidth = 1.5;
 
         if (!matchesFilters) {
@@ -650,19 +677,41 @@ export default function D3NetworkGraph({
     // Enter new links
     const linkEnter = linkSelection.enter().append('line')
         .attr('class', 'link') // Add class
-        .attr('stroke-width', d => Math.min(2.5, LINK_BASE_WIDTH + d.value * LINK_VALUE_SCALE))
+        .attr('stroke-width', (d: D3Link) => {
+          const norm = Math.min(1, d.value / 12);
+          return 0.8 + norm * 3.2;
+        })
         .attr('stroke', COLOR_LINK_ACTIVE) // Start with active color during transition
         .attr('stroke-opacity', 0) // Start transparent
-        .attr('x1', d => (typeof d.source === 'string' ? nodeMapRef.current.get(d.source) : d.source as D3Node)?.initialX ?? 0)
-        .attr('y1', d => (typeof d.source === 'string' ? nodeMapRef.current.get(d.source) : d.source as D3Node)?.initialY ?? 0)
-        .attr('x2', d => (typeof d.target === 'string' ? nodeMapRef.current.get(d.target) : d.target as D3Node)?.initialX ?? 0)
-        .attr('y2', d => (typeof d.target === 'string' ? nodeMapRef.current.get(d.target) : d.target as D3Node)?.initialY ?? 0);
+        .attr('x1', d => {
+          const n = typeof d.source === 'string' ? nodeMapRef.current.get(d.source) : d.source as D3Node;
+          return n?.x ?? n?.initialX ?? 0;
+        })
+        .attr('y1', d => {
+          const n = typeof d.source === 'string' ? nodeMapRef.current.get(d.source) : d.source as D3Node;
+          return n?.y ?? n?.initialY ?? 0;
+        })
+        .attr('x2', d => {
+          const n = typeof d.target === 'string' ? nodeMapRef.current.get(d.target) : d.target as D3Node;
+          return n?.x ?? n?.initialX ?? 0;
+        })
+        .attr('y2', d => {
+          const n = typeof d.target === 'string' ? nodeMapRef.current.get(d.target) : d.target as D3Node;
+          return n?.y ?? n?.initialY ?? 0;
+        });
 
     // Update + Enter links (style update)
     linkEnter.merge(linkSelection)
         .transition('linkStyle').duration(TRANSITION_DURATION).ease(EASING_FUNCTION)
         .attr('stroke', COLOR_LINK_ACTIVE)
-        .attr('stroke-opacity', OPACITY_LINK_ACTIVE); // Fade in/update active links
+        .attr('stroke-opacity', (d: D3Link) => {
+          const norm = Math.min(1, d.value / 12);
+          return 0.3 + norm * 0.5;
+        })
+        .attr('stroke-width', (d: D3Link) => {
+          const norm = Math.min(1, d.value / 12);
+          return 0.8 + norm * 3.2;
+        }); // Fade in/update active links
         // Default/dimmed link styles are handled by the base group attributes
         // We only explicitly style the *active* links when a node is selected
 

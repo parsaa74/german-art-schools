@@ -167,7 +167,6 @@ const createSimilarityLinks = (universities: ProcessedUniversity[]) => {
     }
   }
   
-  console.log(`NetworkGraph: Created ${links.length} similarity-based links`);
   return links;
 };
 
@@ -180,7 +179,6 @@ export default function NetworkGraph({
 }: NetworkGraphProps) {
 
   if (!universities || universities.length === 0) {
-    console.log("NetworkGraph: No universities data provided or empty array.");
     return null;
   }
 
@@ -210,7 +208,8 @@ export default function NetworkGraph({
     return materials;
   };
 
-  const typeMaterials = createMaterialsForTypes();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const typeMaterials = useMemo(() => createMaterialsForTypes(), []);
   const nodeMaterial = typeMaterials['default'];
 
   const instanceColors = useMemo(() => {
@@ -336,8 +335,7 @@ export default function NetworkGraph({
       if (!currentScalesRef.current || currentScalesRef.current.length !== universities.length) {
         currentScalesRef.current = new Float32Array(universities.length).fill(NODE_BASE_SCALE);
         targetScalesRef.current = new Float32Array(universities.length).fill(NODE_BASE_SCALE);
-        console.log("Initialized scale refs for", universities.length, "universities.");
-      } else {
+        } else {
          // If only instanceStates changed, update targetScales immediately for responsiveness
          // This prevents waiting for the next frame to start interpolation
          universities.forEach((_, i) => {
@@ -357,9 +355,6 @@ export default function NetworkGraph({
          });
       }
 
-      console.log("Updated instance attributes:",
-        meshRef.current.geometry.hasAttribute('instanceColor'),
-        meshRef.current.geometry.hasAttribute('instanceState'));
     }
   }, [instanceColors, instanceStates, universities]); // universities dependency added
 
@@ -368,16 +363,21 @@ export default function NetworkGraph({
     if (meshRef.current && currentScalesRef.current && targetScalesRef.current) {
       if (!meshRef.current.visible) {
         meshRef.current.visible = true;
-        console.log("Made mesh visible");
       }
 
       const time = state.clock.getElapsedTime();
 
+      const _matrix = new THREE.Matrix4();
+      const _position = new THREE.Vector3();
+      const _quaternion = new THREE.Quaternion();
+      const _scale = new THREE.Vector3();
+      const _euler = new THREE.Euler();
+
       for (let i = 0; i < meshRef.current.count; i++) {
-        const matrix = new THREE.Matrix4();
-        const position = new THREE.Vector3();
-        const quaternion = new THREE.Quaternion();
-        const scale = new THREE.Vector3();
+        const matrix = _matrix;
+        const position = _position;
+        const quaternion = _quaternion;
+        const scale = _scale;
 
         meshRef.current.getMatrixAt(i, matrix);
         matrix.decompose(position, quaternion, scale);
@@ -449,7 +449,7 @@ export default function NetworkGraph({
             rotationY = Math.cos(time * 0.2 + i * 0.1) * 0.02 * animationIntensity;
         }
         position.y += floatOffset;
-        quaternion.setFromEuler(new THREE.Euler(rotationX, rotationY, rotationZ));
+        quaternion.setFromEuler(_euler.set(rotationX, rotationY, rotationZ));
 
         // --- Scale Interpolation ---
         let targetScaleValue = NODE_BASE_SCALE; // Base target scale
@@ -498,8 +498,6 @@ export default function NetworkGraph({
 
   // --- D3 Force Simulation ---
   useEffect(() => {
-    console.log('NetworkGraph: Initializing enhanced similarity-based simulation for InstancedMesh.');
-
     nodesRef.current = universities.map((uni) => ({
       id: uni.name,
       type: uni.type,
@@ -615,11 +613,9 @@ export default function NetworkGraph({
     };
 
     simulation.on('tick', handleTick)
-    console.log("NetworkGraph: Starting simulation heating.");
     simulation.alpha(1).restart();
 
     return () => {
-      console.log('NetworkGraph: Stopping simulation and cleaning up.')
       if (simulationRef.current) {
         simulationRef.current.stop()
         simulationRef.current.on('tick', null);
@@ -631,7 +627,6 @@ export default function NetworkGraph({
   }, [universities, onLayoutUpdate])
 
   if (universities.length === 0) return null
-  console.log(`Rendering InstancedMesh with ${universities.length} instances.`);
 
   // Accessibility useEffect remains the same
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import * as d3 from 'd3'
 import { motion } from 'framer-motion'
 import { germanArtMovements, ArtMovement } from '@/utils/artMovements' // Import ArtMovement type if available, or define inline
@@ -20,10 +20,12 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
   const [isVisible, setIsVisible] = useState(false)
   const [activeRange, setActiveRange] = useState<[number, number] | null>(null)
   
-  // Extract founding years from universities
-  const foundingYears = processedUniversities
-    .map(uni => uni.founded ? parseInt(uni.founded) : null)
-    .filter(year => year !== null) as number[]
+  const foundingYears = useMemo(
+    () => processedUniversities
+      .map(uni => uni.founded ? parseInt(uni.founded) : null)
+      .filter(year => year !== null) as number[],
+    [processedUniversities]
+  )
   
   // Add Bauhaus-inspired color scale
   const bauhausColors = ["#D40000", "#F0C808", "#004699", "#00A36C", "#FFFFFF", "#000000"]
@@ -31,17 +33,9 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
   
   // Set up timeline data
   useEffect(() => {
-    // == DEBUG TIMELINE: Log entry and foundingYears length ==
-    console.log(`D3Timeline DEBUG: useEffect entered. foundingYears.length: ${foundingYears.length}`);
-
     if (!svgRef.current || foundingYears.length === 0) {
-      // == DEBUG TIMELINE: Log if exiting early ==
-      console.warn('D3Timeline DEBUG: Exiting useEffect early (no SVG ref or no founding years).');
       return;
     }
-
-    // == DEBUG TIMELINE: Log after check, confirming rendering logic is reached ==
-    console.log('D3Timeline DEBUG: Proceeding with timeline rendering logic...');
 
     const svg = d3.select(svgRef.current)
     svg.selectAll('*').remove() // Clear previous content
@@ -192,7 +186,7 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
       .attr('cy', innerHeight - 10)
       .attr('r', 3.5)
       // Use updated color scale for points
-      .attr('fill', d => getNodeColor(d))
+      .attr('fill', (d: ProcessedUniversity) => getTypeColorForTimeline(d))
       .attr('stroke', 'rgba(255, 255, 255, 0.5)') // Softer stroke
       .attr('stroke-width', 0.5)
       // Initial state for animation
@@ -208,29 +202,37 @@ export default function D3Timeline({ width, height, onTimelineFilter }: D3Timeli
       .attr('opacity', 0.7) // Slightly transparent
       .attr('transform', 'translate(0, 0)');
 
-    console.log('D3Timeline foundingYears:', foundingYears);
-    console.log('D3Timeline germanArtMovements:', germanArtMovements);
-    if (foundingYears.length === 0) {
-        console.warn('D3Timeline: No founding years found, timeline may not render.');
-    }
+    // Add tooltips
+    pointsGroup.selectAll<SVGCircleElement, ProcessedUniversity>('.founding-point')
+      .append('title')
+      .text((d: ProcessedUniversity) => `${d.name} (${d.founded})`)
+
+    pointsGroup.selectAll<SVGCircleElement, ProcessedUniversity>('.founding-point')
+      .on('mouseover', function(this: SVGCircleElement) {
+        d3.select(this)
+          .transition().duration(150)
+          .attr('r', 6)
+          .attr('opacity', 1);
+      })
+      .on('mouseout', function(this: SVGCircleElement) {
+        d3.select(this)
+          .transition().duration(150)
+          .attr('r', 3.5)
+          .attr('opacity', 0.7);
+      });
 
   }, [width, height, processedUniversities, foundingYears, activeRange, onTimelineFilter]) // Added updateActiveStyle dependency implicitly via activeRange
 
-  // Helper function to get node color (uses Bauhaus scale)
-  const getNodeColor = (uni: ProcessedUniversity, opacity = 1): string => {
-    const baseColor = colorScale(uni.id)
-    const rgb = hexToRgb(baseColor)
-    return `rgba(${rgb}, ${opacity})`
+  const getTypeColorForTimeline = (uni: ProcessedUniversity): string => {
+    const typeColors: Record<string, string> = {
+      university: '#06b6d4',    // cyan
+      art_academy: '#a855f7',   // purple
+      design_school: '#f59e0b', // amber
+      music_academy: '#ec4899', // pink
+      film_school: '#10b981',   // emerald
+    }
+    return typeColors[uni.type] || '#06b6d4'
   }
-
-  // Helper function to convert hex color to RGB
-  const hexToRgb = (hex: string): string => {
-    hex = hex.replace('#', '');
-    const r = parseInt(hex.substring(0, 2), 16);
-    const g = parseInt(hex.substring(2, 4), 16);
-    const b = parseInt(hex.substring(4, 6), 16);
-    return `${r}, ${g}, ${b}`;
-  };
   
   // Show the timeline after a short delay
   useEffect(() => {
