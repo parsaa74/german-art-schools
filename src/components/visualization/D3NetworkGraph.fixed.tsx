@@ -211,14 +211,38 @@ export default function D3NetworkGraph({
       return
     }
 
-    const newNodes: D3Node[] = (processedUniversities as ProcessedUniversity[])
-      .filter(uni => uni.programTypes && uni.programTypes.length > 0 && uni.coordinates?.lat)
+    // Compute data-driven geographic bounds for accurate projection
+    const geoFiltered = (processedUniversities as ProcessedUniversity[])
+      .filter(uni => uni.programTypes && uni.programTypes.length > 0 && uni.coordinates?.lat && uni.coordinates?.lng)
+    const allLats = geoFiltered.map(u => u.coordinates!.lat as number)
+    const allLngs = geoFiltered.map(u => u.coordinates!.lng as number)
+    const minLat = Math.min(...allLats), maxLat = Math.max(...allLats)
+    const minLng = Math.min(...allLngs), maxLng = Math.max(...allLngs)
+    // Longitude correction: 1° lng ≠ 1° lat; at mean lat, scale by cos(lat)
+    const meanLat = (minLat + maxLat) / 2
+    const lngCorrection = Math.cos(meanLat * Math.PI / 180)
+    // Add 10% padding to bounds
+    const latPad = (maxLat - minLat) * 0.1
+    const lngPad = (maxLng - minLng) * 0.1
+    const paddedMaxLat = maxLat + latPad
+    const paddedMinLng = minLng - lngPad
+    const lngRange = (maxLng - minLng + 2 * lngPad) * lngCorrection
+    const latRange = maxLat - minLat + 2 * latPad
+    // Uniform scale to preserve geographic shape, centered in SVG
+    const svgPad = width * 0.08
+    const availW = width - 2 * svgPad, availH = height - 2 * svgPad
+    const geoScale = Math.min(availW / lngRange, availH / latRange)
+    const mapW = lngRange * geoScale, mapH = latRange * geoScale
+    const ox = svgPad + (availW - mapW) / 2
+    const oy = svgPad + (availH - mapH) / 2
+
+    const newNodes: D3Node[] = geoFiltered
       .map(uni => {
          const initX = uni.coordinates?.lng
-           ? (uni.coordinates.lng - 6) / 9 * (width * 0.8) + width * 0.1
+           ? ox + (uni.coordinates.lng - paddedMinLng) * lngCorrection * geoScale
            : Math.random() * (width * 0.8) + width * 0.1
          const initY = uni.coordinates?.lat
-           ? (55 - uni.coordinates.lat) / 7.7 * (height * 0.8) + height * 0.1
+           ? oy + (paddedMaxLat - uni.coordinates.lat) * geoScale
            : Math.random() * (height * 0.8) + height * 0.1
          const node: D3Node = {
             id: uni.name,
