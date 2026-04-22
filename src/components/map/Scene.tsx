@@ -18,6 +18,8 @@ import { useSpring, animated } from '@react-spring/web'
 import { CollapsibleControlPanel } from '@/components/ui/CollapsibleControlPanel';
 import { SlidersHorizontal, X } from 'lucide-react';
 import { ViewModeToggle } from './ViewModeToggle'; // Import the new toggle
+import { ProgramsToggle } from './ProgramsToggle';
+import { ProgramInfoPanel } from './ProgramInfoPanel';
 import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 
 import { IntroSequence } from './IntroSequence'; // Import the new component
@@ -825,6 +827,7 @@ export function Scene({ lang, dict }: SceneProps) {
                     </CollapsibleControlPanel>
 
                      <ViewModeToggle />
+                     <ProgramsToggle />
 
                      {/* Info Panel */}
                      {selectedUniversity && (
@@ -834,6 +837,7 @@ export function Scene({ lang, dict }: SceneProps) {
                             onClose={handleClosePanel}
                         />
                      )}
+                     <ProgramInfoPanel />
 
                      {/* Relationship Legend - Show when a university is selected */}
                      <RelationshipLegend 

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#581c87"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#g)"/>
+  <g stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none">
+    <path d="M40 140 L760 140"/>
+    <path d="M40 170 L760 170"/>
+    <path d="M40 200 L760 200"/>
+    <path d="M40 230 L760 230"/>
+    <path d="M40 260 L760 260"/>
+  </g>
+  <g transform="translate(380 180)" fill="rgba(255,255,255,0.9)">
+    <ellipse cx="0" cy="40" rx="22" ry="16" transform="rotate(-20 0 40)"/>
+    <rect x="19" y="-50" width="4" height="88" transform="rotate(-20 19 -50)"/>
+    <ellipse cx="120" cy="50" rx="22" ry="16" transform="rotate(-20 120 50)"/>
+    <rect x="139" y="-40" width="4" height="88" transform="rotate(-20 139 -40)"/>
+    <path d="M21 -48 Q80 -60 141 -42 L141 -30 Q80 -48 21 -36 Z"/>
+  </g>
+  <text x="400" y="330" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="500" letter-spacing="4" fill="rgba(255,255,255,0.75)">MUSIC ACADEMY</text>
+</svg>

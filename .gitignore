@@ -35,6 +35,9 @@ temp*.html
 *.tmp
 tsconfig.tsbuildinfo
 
+# Build-only embedding artifacts (large, not shipped to client)
+/data/program_embeddings.json
+
 # Generated screenshots
 Generated Image*.png
 

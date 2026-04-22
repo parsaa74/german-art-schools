@@ -18,6 +18,82 @@ const AnimatedSphere = animated(Sphere);
 const AnimatedText = animated(Text);
 const AnimatedLine = animated(Line);
 
+const FRESNEL_VERT = `
+  varying vec3 vNormal;
+  varying vec3 vViewDir;
+  void main() {
+    vec4 mv = modelViewMatrix * vec4(position, 1.0);
+    vNormal = normalize(normalMatrix * normal);
+    vViewDir = normalize(-mv.xyz);
+    gl_Position = projectionMatrix * mv;
+  }
+`;
+
+const FRESNEL_FRAG = `
+  uniform vec3 uColor;
+  uniform float uIntensity;
+  uniform float uPower;
+  varying vec3 vNormal;
+  varying vec3 vViewDir;
+  void main() {
+    vec3 n = normalize(vNormal);
+    vec3 v = normalize(vViewDir);
+    float rim = clamp(1.0 - dot(v, n), 0.0, 1.0);
+    rim = pow(max(rim, 1e-4), uPower);
+    gl_FragColor = vec4(uColor * rim * uIntensity, rim);
+  }
+`;
+
+function FresnelRim({
+  nodeSize,
+  springScale,
+  formationScale,
+  color,
+  intensity,
+  power,
+}: {
+  nodeSize: number;
+  springScale: any;
+  formationScale: any;
+  color: any;
+  intensity: any;
+  power: number;
+}) {
+  const matRef = useRef<THREE.ShaderMaterial>(null);
+  const tmpColor = useMemo(() => new THREE.Color(), []);
+  const uniforms = useMemo(() => ({
+    uColor: { value: new THREE.Color('#ffffff') },
+    uIntensity: { value: 1.0 },
+    uPower: { value: power },
+  }), [power]);
+
+  useFrame(() => {
+    if (!matRef.current) return;
+    tmpColor.set(color.get());
+    matRef.current.uniforms.uColor.value.copy(tmpColor);
+    matRef.current.uniforms.uIntensity.value = intensity.get();
+  });
+
+  return (
+    <animated.mesh
+      scale={springScale.to((s: number) => s * formationScale.get() * 1.05)}
+      renderOrder={1}
+    >
+      <sphereGeometry args={[nodeSize, 32, 32]} />
+      <shaderMaterial
+        ref={matRef}
+        transparent
+        depthWrite={false}
+        depthTest
+        blending={THREE.AdditiveBlending}
+        uniforms={uniforms}
+        vertexShader={FRESNEL_VERT}
+        fragmentShader={FRESNEL_FRAG}
+      />
+    </animated.mesh>
+  );
+}
+
 // simpleHash function
 function simpleHash(str: string): number {
   let hash = 0;
@@ -236,21 +312,29 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
   const speedFactor = useMemo(() => 0.2 + (randomSeed % 500) / 1000 * 0.3, [randomSeed]);
   const amplitude = selectedUniversity ? MAP_CONFIG.radius * 0.003 : MAP_CONFIG.radius * 0.008;
 
-  const showPassiveLabel = isCameraFacing && !showHoverEffect;
+  // When another uni is selected, this node is "backgrounded"
+  const isBackgrounded = !!(selectedUniversity && !isSelected);
+  const showPassiveLabel = isCameraFacing && !showHoverEffect && !isBackgrounded;
 
   // Spring animations
-  const { springScale, color, emissiveColor, glowOpacity, textOpacity, textScale, textSlideY, lineOpacity, formationScale } = useSpring({
-    springScale: isSelected ? 1.8 : (showHoverEffect ? 1.5 : 1.0),
+  const { springScale, color, emissiveColor, glowOpacity, nodeOpacity, emissiveIntensity, rimIntensity, textOpacity, textScale, textSlideY, lineOpacity, formationScale } = useSpring({
+    springScale: isSelected ? 1.8 : (showHoverEffect ? 1.5 : (isBackgrounded ? 0.88 : 1.0)),
     color: nodeColor,
     emissiveColor: isSelected ? '#93C5FD' : (showHoverEffect ? '#FFFFFF' : nodeColor),
     glowOpacity: isSelected ? 0.7 : (showHoverEffect ? 0.6 :
+      isBackgrounded ? 0.2 :
       deadlineInfo.urgency === 'urgent' ? 0.55 :
       deadlineInfo.urgency === 'soon' ? 0.45 : 0.3),
+    nodeOpacity: isSelected ? 1.0 : showHoverEffect ? 0.95 : isBackgrounded ? 0.62 : 0.85,
+    emissiveIntensity: isSelected ? 1.4 : showHoverEffect ? 1.2 : isBackgrounded ? 0.7 : 1.0,
+    rimIntensity: isSelected ? 2.4 : showHoverEffect ? 2.0 : isBackgrounded ? 0.7 :
+      deadlineInfo.urgency === 'urgent' ? 1.7 :
+      deadlineInfo.urgency === 'soon' ? 1.5 : 1.2,
     textOpacity: showPassiveLabel ? 0.75 : 0,
     textScale: showPassiveLabel ? 1 : 0.01,
     textSlideY: showPassiveLabel ? 0 : -(MAP_CONFIG.radius * 0.012),
     lineOpacity: showHoverEffect ? 1 : (showPassiveLabel ? 0.75 : 0),
-    formationScale: selectedUniversity && selectedUniversity.name !== schoolData.name ? 0.8 : 1.0,
+    formationScale: isBackgrounded ? 0.92 : 1.0,
     config: (key: string) => {
       if (key === 'textScale') return { mass: 0.6, tension: 380, friction: 14 }; // bouncy pop
       if (key === 'textSlideY') return { mass: 0.6, tension: 300, friction: 20 }; // slide up
@@ -394,36 +478,29 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
       >
         {/* Enhanced animated standard material */}
         <animated.meshStandardMaterial
-          color={color} 
-          emissive={emissiveColor} 
-          emissiveIntensity={1.5}
+          color={color}
+          emissive={emissiveColor}
+          emissiveIntensity={emissiveIntensity}
           metalness={0.1}
           roughness={0.4}
           transparent
-          opacity={isSelected ? 1.0 : (showHoverEffect ? 0.95 : 0.85)}
+          opacity={nodeOpacity}
+          depthWrite={!isBackgrounded}
         />
       </AnimatedSphere>
 
-      {/* Glow Effect Sphere */}
-      {(showHoverEffect || isSelected) && (
-        <AnimatedSphere
-          args={[nodeSize * 1.4, 32, 32]}
-          scale={springScale.to(s => s * formationScale.get())}
-          visible={glowOpacity.to(o => o > 0.01)}
-        >
-          <animated.meshBasicMaterial
-            color={emissiveColor}
-            transparent
-            opacity={glowOpacity}
-            depthWrite={false}
-            side={THREE.BackSide}
-            blending={THREE.AdditiveBlending}
-          />
-        </AnimatedSphere>
-      )}
+      {/* Fresnel rim light — always on, modulated by state */}
+      <FresnelRim
+        nodeSize={nodeSize}
+        springScale={springScale}
+        formationScale={formationScale}
+        color={emissiveColor}
+        intensity={rimIntensity}
+        power={2.2}
+      />
 
       {/* Deadline urgency pulsing ring */}
-      {showRing && (
+      {showRing && !isBackgrounded && (
         <mesh ref={ringRef} rotation={[Math.PI / 2, 0, 0]}>
           <ringGeometry args={[nodeSize * 1.6, nodeSize * 2.0, 32]} />
           <meshBasicMaterial

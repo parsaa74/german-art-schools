@@ -17,6 +17,7 @@ import { SchoolMarker } from './SchoolMarker';
 // Component imports
 // import NetworkGraph from './NetworkGraph'; // Remove old graph
 import { SchoolNodes } from './SchoolNodes'; // Import new nodes component
+import { ProgramSatellites } from './ProgramSatellites';
 import CustomForceGraph from './CustomForceGraph';
 // import SceneEffects from './SceneEffects';
 
@@ -116,6 +117,7 @@ export function SceneContent(_props: SceneContentProps) {
       {visualizationMode === 'network' && (
         <>
           <SchoolNodes /> {/* Use the new SchoolNodes component */}
+          <ProgramSatellites />
         </>
       )}
 

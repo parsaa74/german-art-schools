@@ -7,6 +7,7 @@ import type { ProcessedUniversity } from '@/stores/schoolStore'
 import { cn } from '@/lib/utils'
 import { getNextDeadline } from '@/utils/deadlineUtils'
 import { generateSchoolICalFile, downloadICalFile } from '@/utils/icalExport'
+import { getImageForSchool } from '@/data/universityImages'
 
 interface MobileInfoPanelProps {
   school: ProcessedUniversity | null
@@ -156,6 +157,22 @@ export default function MobileInfoPanel({
                 {school.type.replace('_', ' ')}
               </span>
             </div>
+
+            {/* Hero image */}
+            <motion.div
+              className="relative mx-6 mt-2 mb-2 rounded-xl overflow-hidden border border-white/10 aspect-[2/1] bg-black/40"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+            >
+              <img
+                src={getImageForSchool(school.id, school.type)}
+                alt={`${school.name} placeholder image`}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+            </motion.div>
 
             {/* Content */}
             <div className="px-6 pb-8 space-y-0">

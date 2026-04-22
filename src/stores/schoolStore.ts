@@ -57,6 +57,12 @@ export interface ProcessedUniversity {
 // Visualization mode type
 export type VisualizationMode = 'network' | 'd3-force';
 
+export interface ProgramEdge {
+  src: string;
+  dst: string;
+  weight: number;
+}
+
 // Interface for the store's state and actions
 export interface SchoolStore {
   // State Properties
@@ -88,6 +94,12 @@ export interface SchoolStore {
   nodePositions: Map<string, THREE.Vector3>;
   searchQuery: string;
 
+  // Program network state
+  showPrograms: boolean;
+  selectedProgramId: string | null;
+  programEdges: ProgramEdge[];
+  programById: Map<string, { schoolName: string; schoolId: string; program: any }>;
+
   // Actions
   setIsLoading: (loading: boolean) => void;
   setSelectedUniversity: (university: ProcessedUniversity | null) => void;
@@ -111,6 +123,8 @@ export interface SchoolStore {
   setSearchQuery: (query: string) => void;
 
   setNodePositions: (positions: Map<string, THREE.Vector3>) => void; // Use THREE.Vector3
+  setShowPrograms: (show: boolean) => void;
+  setSelectedProgramId: (id: string | null) => void;
   initializeStore: () => Promise<void>;
 }
 
@@ -144,6 +158,10 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   visualizationMode: 'network',
   nodePositions: new Map<string, THREE.Vector3>(),
   searchQuery: '',
+  showPrograms: true,
+  selectedProgramId: null,
+  programEdges: [],
+  programById: new Map(),
 
   // --- Actions (Setters) ---
   setIsLoading: (loading) => set({ isLoading: loading }),
@@ -168,6 +186,8 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   setSearchQuery: (query) => set({ searchQuery: query }),
 
   setNodePositions: (positions) => set({ nodePositions: positions }),
+  setShowPrograms: (show) => set({ showPrograms: show, selectedProgramId: null }),
+  setSelectedProgramId: (id) => set({ selectedProgramId: id }),
 
   // --- Initialization Action ---
   initializeStore: async () => {
@@ -188,6 +208,8 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
         const degrees = new Set<string>();
 
         const { default: enhancedData } = await import('../data/enhanced_german_art_schools.json');
+        const { default: programGraph } = await import('../data/program_graph.json');
+        const programByIdMap = new Map<string, { schoolName: string; schoolId: string; program: any }>();
         processedList = Object.entries(enhancedData.universities).map(([name, data]: [string, any]) => {
                 if (!data.coordinates?.lat || !data.coordinates?.lng) {
                     console.warn(`SchoolStore WARN: Missing coordinates for ${name}`);
@@ -219,8 +241,14 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
                     popularityScore = (studentScore * 0.3 + selectivityScore * 0.7); // Weight selectivity more
                 }
                 
+                const schoolId = data.id || name.toLowerCase().replace(/\s+/g, '-');
+                (data.programs ?? []).forEach((p: any) => {
+                    if (p.program_id) {
+                        programByIdMap.set(p.program_id, { schoolName: name, schoolId, program: p });
+                    }
+                });
                 return {
-                    id: data.id || name.toLowerCase().replace(/\s+/g, '-'),
+                    id: schoolId,
                     name: name,
                     location: [data.coordinates?.lat || 0, data.coordinates?.lng || 0],
                     type,
@@ -294,8 +322,10 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
             uniqueCourseLanguages: uniqueCourseLanguagesArray,
             uniqueDegreeTypes: uniqueDegreeTypesArray,
             isLoading: false,
-            controlsEnabled: true, 
+            controlsEnabled: true,
             nodePositions: positions, // Use the calculated positions map
+            programEdges: (programGraph as any).edges as ProgramEdge[],
+            programById: programByIdMap,
         });
 
     } catch (error) {

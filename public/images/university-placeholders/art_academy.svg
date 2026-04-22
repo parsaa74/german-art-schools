@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#064e3b"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#g)"/>
+  <g fill="rgba(255,255,255,0.1)">
+    <circle cx="140" cy="110" r="70"/>
+    <circle cx="640" cy="290" r="90"/>
+    <circle cx="680" cy="90" r="40"/>
+  </g>
+  <g transform="translate(400 190)" fill="rgba(255,255,255,0.85)">
+    <ellipse cx="0" cy="0" rx="70" ry="50"/>
+    <circle cx="-40" cy="-20" r="6" fill="#f87171"/>
+    <circle cx="-10" cy="-30" r="6" fill="#fbbf24"/>
+    <circle cx="25" cy="-22" r="6" fill="#60a5fa"/>
+    <circle cx="40" cy="5" r="6" fill="#a78bfa"/>
+    <rect x="60" y="-4" width="80" height="8" rx="2" fill="rgba(255,255,255,0.6)" transform="rotate(-20 60 0)"/>
+    <circle cx="142" cy="-24" r="5" fill="rgba(255,255,255,0.9)"/>
+  </g>
+  <text x="400" y="320" text-anchor="middle" font-family="Inter,sans-serif" font-size="20" font-weight="500" letter-spacing="4" fill="rgba(255,255,255,0.75)">ART ACADEMY</text>
+</svg>

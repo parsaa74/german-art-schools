@@ -1,0 +1,2267 @@
+{
+  "createdAt": "2026-04-19T15:18:58.595Z",
+  "count": 323,
+  "programs": [
+    {
+      "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
+      "schoolId": "hochschule-fur-bildende-kunste-hamburg",
+      "schoolName": "Hochschule für bildende Künste Hamburg",
+      "name": "Fine Arts",
+      "degree": "Bachelor of Fine Arts"
+    },
+    {
+      "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--master-of-fine-arts",
+      "schoolId": "hochschule-fur-bildende-kunste-hamburg",
+      "schoolName": "Hochschule für bildende Künste Hamburg",
+      "name": "Fine Arts",
+      "degree": "Master of Fine Arts"
+    },
+    {
+      "program_id": "hochschule-fur-bildende-kunste-hamburg--art-education--master-of-education",
+      "schoolId": "hochschule-fur-bildende-kunste-hamburg",
+      "schoolName": "Hochschule für bildende Künste Hamburg",
+      "name": "Art Education",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
+      "schoolId": "hochschule-fur-bildende-kunste-hamburg",
+      "schoolName": "Hochschule für bildende Künste Hamburg",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified",
+      "schoolId": "hochschule-fur-bildende-kunste-hamburg",
+      "schoolName": "Hochschule für bildende Künste Hamburg",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-bildende-kunste-hamburg--design--unspecified",
+      "schoolId": "hochschule-fur-bildende-kunste-hamburg",
+      "schoolName": "Hochschule für bildende Künste Hamburg",
+      "name": "Design",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
+      "schoolId": "hochschule-fur-bildende-kunste-hamburg",
+      "schoolName": "Hochschule für bildende Künste Hamburg",
+      "name": "Film",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-der-bildenden-kunste-saar--fine-arts--diploma",
+      "schoolId": "hochschule-der-bildenden-kunste-saar",
+      "schoolName": "Hochschule der Bildenden Künste Saar",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-der-bildenden-kunste-saar--communication-design--diploma",
+      "schoolId": "hochschule-der-bildenden-kunste-saar",
+      "schoolName": "Hochschule der Bildenden Künste Saar",
+      "name": "Communication Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-der-bildenden-kunste-saar--art-education--master-of-education",
+      "schoolId": "hochschule-der-bildenden-kunste-saar",
+      "schoolName": "Hochschule der Bildenden Künste Saar",
+      "name": "Art Education",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified",
+      "schoolId": "hochschule-der-bildenden-kunste-saar",
+      "schoolName": "Hochschule der Bildenden Künste Saar",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--diploma",
+      "schoolId": "hochschule-fur-bildende-kunste-braunschweig",
+      "schoolName": "Hochschule für Bildende Künste Braunschweig",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-bildende-kunste-braunschweig--industrial-design--diploma",
+      "schoolId": "hochschule-fur-bildende-kunste-braunschweig",
+      "schoolName": "Hochschule für Bildende Künste Braunschweig",
+      "name": "Industrial Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-bildende-kunste-braunschweig--art-education--master-of-education",
+      "schoolId": "hochschule-fur-bildende-kunste-braunschweig",
+      "schoolName": "Hochschule für Bildende Künste Braunschweig",
+      "name": "Art Education",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
+      "schoolId": "hochschule-fur-bildende-kunste-braunschweig",
+      "schoolName": "Hochschule für Bildende Künste Braunschweig",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--music--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Music",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "kunstakademie-dusseldorf--fine-arts--diploma",
+      "schoolId": "kunstakademie-dusseldorf",
+      "schoolName": "Kunstakademie Düsseldorf",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "kunstakademie-dusseldorf--art-education--master-of-education",
+      "schoolId": "kunstakademie-dusseldorf",
+      "schoolName": "Kunstakademie Düsseldorf",
+      "name": "Art Education",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "kunstakademie-dusseldorf--architecture--master-of-architecture",
+      "schoolId": "kunstakademie-dusseldorf",
+      "schoolName": "Kunstakademie Düsseldorf",
+      "name": "Architecture",
+      "degree": "Master of Architecture"
+    },
+    {
+      "program_id": "kunstakademie-dusseldorf--fine-arts--unspecified",
+      "schoolId": "kunstakademie-dusseldorf",
+      "schoolName": "Kunstakademie Düsseldorf",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "kunstakademie-dusseldorf--sculpture--unspecified",
+      "schoolId": "kunstakademie-dusseldorf",
+      "schoolName": "Kunstakademie Düsseldorf",
+      "name": "Sculpture",
+      "degree": ""
+    },
+    {
+      "program_id": "kunstakademie-dusseldorf--painting--unspecified",
+      "schoolId": "kunstakademie-dusseldorf",
+      "schoolName": "Kunstakademie Düsseldorf",
+      "name": "Painting",
+      "degree": ""
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Fine Arts",
+      "degree": "Bachelor of Fine Arts"
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--fine-arts--master-of-fine-arts",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Fine Arts",
+      "degree": "Master of Fine Arts"
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--architecture--bachelor-of-arts",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Architecture",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--design--bachelor-of-arts",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--music--bachelor-of-music",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Music",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--performing-arts--bachelor-of-arts",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Performing Arts",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Art Education",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--fine-arts--diploma",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--fine-arts--unspecified",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--art-and-media--unspecified",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Art and Media",
+      "degree": ""
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--visual-communication--unspecified",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Visual Communication",
+      "degree": ""
+    },
+    {
+      "program_id": "universitat-der-kunste-berlin--design--unspecified",
+      "schoolId": "universitat-der-kunste-berlin",
+      "schoolName": "Universität der Künste Berlin",
+      "name": "Design",
+      "degree": ""
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--diploma",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "schoolName": "Staatliche Hochschule für Gestaltung Karlsruhe",
+      "name": "Media Art",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--diploma",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "schoolName": "Staatliche Hochschule für Gestaltung Karlsruhe",
+      "name": "Product Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--diploma",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "schoolName": "Staatliche Hochschule für Gestaltung Karlsruhe",
+      "name": "Communication Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--art-research-and-media-philosophy--master-of-arts",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "schoolName": "Staatliche Hochschule für Gestaltung Karlsruhe",
+      "name": "Art Research and Media Philosophy",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--diploma",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "schoolName": "Staatliche Hochschule für Gestaltung Karlsruhe",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--unspecified",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "schoolName": "Staatliche Hochschule für Gestaltung Karlsruhe",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--unspecified",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "schoolName": "Staatliche Hochschule für Gestaltung Karlsruhe",
+      "name": "Communication Design",
+      "degree": ""
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--unspecified",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "schoolName": "Staatliche Hochschule für Gestaltung Karlsruhe",
+      "name": "Product Design",
+      "degree": ""
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "schoolName": "Staatliche Hochschule für Gestaltung Karlsruhe",
+      "name": "Media Art",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Digitale Medien",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Digitale Medien",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--freie-kunst--diploma",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Freie Kunst",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Integriertes Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Integriertes Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Musik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--musik--master-of-music",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Musik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--phd",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Promotionsprogramm (PhD)",
+      "degree": "PhD"
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--musik--bachelor-master",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Musik",
+      "degree": "Bachelor/Master"
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Digitale Medien",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Freie Kunst",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Integriertes Design",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--musik--unspecified",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Musik",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Promotionsprogramm (PhD)",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--digital-media--unspecified",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Digital Media",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-kunste-bremen--integrated-design--unspecified",
+      "schoolId": "hochschule-fur-kunste-bremen",
+      "schoolName": "Hochschule für Künste Bremen",
+      "name": "Integrated Design",
+      "degree": ""
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Freie Kunst",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--bachelor-of-science",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Architektur",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--master-of-science",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Architektur",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--bachelor-of-arts",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Industrial Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--master-of-arts",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Industrial Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--bachelor-of-arts",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Kommunikationsdesign",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--master-of-arts",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Kommunikationsdesign",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--textildesign--bachelor-of-arts",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Textildesign",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--textildesign--master-of-arts",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Textildesign",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstwissenschaften-restaurierung--bachelor-of-arts",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Kunstwissenschaften - Restaurierung",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstwissenschaften-restaurierung--master-of-arts",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Kunstwissenschaften - Restaurierung",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--buhnen-und-kostumbild--diploma",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Bühnen- und Kostümbild",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstpadagogik--master-of-education",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Kunstpädagogik",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--unspecified",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architecture--unspecified",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Architecture",
+      "degree": ""
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--design--unspecified",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Design",
+      "degree": ""
+    },
+    {
+      "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--art-education--unspecified",
+      "schoolId": "staatliche-akademie-der-bildenden-kunste-stuttgart",
+      "schoolName": "Staatliche Akademie der Bildenden Künste Stuttgart",
+      "name": "Art Education",
+      "degree": ""
+    },
+    {
+      "program_id": "kunsthochschule-fur-medien-koln--media-arts--diploma",
+      "schoolId": "kunsthochschule-fur-medien-koln",
+      "schoolName": "Kunsthochschule für Medien Köln",
+      "name": "Media Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "kunsthochschule-fur-medien-koln--media-arts-postgraduate--diploma",
+      "schoolId": "kunsthochschule-fur-medien-koln",
+      "schoolName": "Kunsthochschule für Medien Köln",
+      "name": "Media Arts (Postgraduate)",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "kunsthochschule-fur-medien-koln--media-arts--phd",
+      "schoolId": "kunsthochschule-fur-medien-koln",
+      "schoolName": "Kunsthochschule für Medien Köln",
+      "name": "Media Arts",
+      "degree": "PhD"
+    },
+    {
+      "program_id": "kunsthochschule-fur-medien-koln--media-arts--unspecified",
+      "schoolId": "kunsthochschule-fur-medien-koln",
+      "schoolName": "Kunsthochschule für Medien Köln",
+      "name": "Media Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "kunsthochschule-fur-medien-koln--film--unspecified",
+      "schoolId": "kunsthochschule-fur-medien-koln",
+      "schoolName": "Kunsthochschule für Medien Köln",
+      "name": "Film",
+      "degree": ""
+    },
+    {
+      "program_id": "kunsthochschule-fur-medien-koln--animation--unspecified",
+      "schoolId": "kunsthochschule-fur-medien-koln",
+      "schoolName": "Kunsthochschule für Medien Köln",
+      "name": "Animation",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Visual Communication",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--product-design--diploma",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Product Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--art-education-secondary-schools--state-examination",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Art Education (Secondary Schools)",
+      "degree": "State Examination"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--postgraduate-studies-meisterschuler--meisterschuler",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Postgraduate Studies (Meisterschüler)",
+      "degree": "Meisterschüler"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--doctoral-studies-phd--dr-phil",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Doctoral Studies (PhD)",
+      "degree": "Dr. phil."
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--bachelor-of-arts",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Visual Communication",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--master-of-arts",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Visual Communication",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--product-design--bachelor-of-arts",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Product Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--product-design--master-of-arts",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Product Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--integrative-design--master-of-arts",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Integrative Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Visual Communication",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--product-design--unspecified",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Product Design",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-offenbach--media--unspecified",
+      "schoolId": "hochschule-fur-gestaltung-offenbach",
+      "schoolName": "Hochschule für Gestaltung Offenbach",
+      "name": "Media",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphics--diploma",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Painting/Graphics",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-design-graphic-design--diploma",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Book Design/Graphic Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--photography--diploma",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Photography",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--diploma",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Media Art",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--cultures-of-the-curatorial--master-of-arts",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Cultures of the Curatorial",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-art-graphic-design--diploma",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Book Art/Graphic Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphic-arts--diploma",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Painting/Graphic Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--diploma",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--unspecified",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-printmaking--unspecified",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Painting/Printmaking",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--photography--unspecified",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Photography",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--unspecified",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Media Art",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-design-graphic-design--unspecified",
+      "schoolId": "hochschule-fur-grafik-und-buchkunst-leipzig",
+      "schoolName": "Hochschule für Grafik und Buchkunst Leipzig",
+      "name": "Book Design/Graphic Design",
+      "degree": ""
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Fine Arts",
+      "degree": "Bachelor of Fine Arts"
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Fine Arts",
+      "degree": "Master of Fine Arts"
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--communication-design--bachelor-of-arts",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Communication Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--communication-design--master-of-arts",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Communication Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--industrial-design--bachelor-of-arts",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Industrial Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--industrial-design--master-of-arts",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Industrial Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--spatial-strategies--master-of-arts",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Spatial Strategies",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--design--diploma",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--fine-arts--diploma",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--fine-arts--unspecified",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--communication-design--unspecified",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Communication Design",
+      "degree": ""
+    },
+    {
+      "program_id": "muthesius-kunsthochschule-kiel--industrial-design--unspecified",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "schoolName": "Muthesius Kunsthochschule Kiel",
+      "name": "Industrial Design",
+      "degree": ""
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Fine Art",
+      "degree": "Bachelor of Fine Arts"
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Fine Art",
+      "degree": "Master of Fine Arts"
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--product-design--bachelor-of-arts",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Product Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--product-design--master-of-arts",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Product Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--visual-communication--bachelor-of-arts",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Visual Communication",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--visual-communication--master-of-arts",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Visual Communication",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--media-art-and-design--bachelor-of-fine-arts",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Media Art and Design",
+      "degree": "Bachelor of Fine Arts"
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--product-design--master",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Product Design",
+      "degree": "Master"
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--architecture--master",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Architecture",
+      "degree": "Master"
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Human-Computer Interaction",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--architecture--unspecified",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Architecture",
+      "degree": ""
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--art-and-design--unspecified",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Art and Design",
+      "degree": ""
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--media--unspecified",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Media",
+      "degree": ""
+    },
+    {
+      "program_id": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
+      "schoolId": "alanus-hochschule-fur-kunst-und-gesellschaft",
+      "schoolName": "Alanus Hochschule für Kunst und Gesellschaft",
+      "name": "Fine Arts",
+      "degree": "Bachelor of Fine Arts"
+    },
+    {
+      "program_id": "alanus-hochschule-fur-kunst-und-gesellschaft--art-education--master-of-education",
+      "schoolId": "alanus-hochschule-fur-kunst-und-gesellschaft",
+      "schoolName": "Alanus Hochschule für Kunst und Gesellschaft",
+      "name": "Art Education",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "hochschule-der-bildenden-kunste-essen--fine-arts--bachelor-of-fine-arts",
+      "schoolId": "hochschule-der-bildenden-kunste-essen",
+      "schoolName": "Hochschule der bildenden Künste Essen",
+      "name": "Fine Arts",
+      "degree": "Bachelor of Fine Arts"
+    },
+    {
+      "program_id": "hochschule-der-bildenden-kunste-essen--fine-arts--diploma",
+      "schoolId": "hochschule-der-bildenden-kunste-essen",
+      "schoolName": "Hochschule der bildenden Künste Essen",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-der-bildenden-kunste-essen--fine-arts--unspecified",
+      "schoolId": "hochschule-der-bildenden-kunste-essen",
+      "schoolName": "Hochschule der bildenden Künste Essen",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-macromedia--media-design--bachelor-of-arts",
+      "schoolId": "hochschule-macromedia",
+      "schoolName": "Hochschule Macromedia",
+      "name": "Media Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "merz-akademie--design-art-and-media--bachelor-of-arts",
+      "schoolId": "merz-akademie",
+      "schoolName": "Merz Akademie",
+      "name": "Design, Art and Media",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-fernsehen-und-film-munchen--film-and-television--diploma",
+      "schoolId": "hochschule-fur-fernsehen-und-film-munchen",
+      "schoolName": "Hochschule für Fernsehen und Film München",
+      "name": "Film and Television",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hochschule-fur-fernsehen-und-film-munchen--film-production--unspecified",
+      "schoolId": "hochschule-fur-fernsehen-und-film-munchen",
+      "schoolName": "Hochschule für Fernsehen und Film München",
+      "name": "Film Production",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-fernsehen-und-film-munchen--screenwriting--unspecified",
+      "schoolId": "hochschule-fur-fernsehen-und-film-munchen",
+      "schoolName": "Hochschule für Fernsehen und Film München",
+      "name": "Screenwriting",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-fernsehen-und-film-munchen--cinematography--unspecified",
+      "schoolId": "hochschule-fur-fernsehen-und-film-munchen",
+      "schoolName": "Hochschule für Fernsehen und Film München",
+      "name": "Cinematography",
+      "degree": ""
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--film-directing--diploma",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Film Directing",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--screenwriting-dramaturgy--diploma",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Screenwriting/Dramaturgy",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--animation--diploma",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Animation",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--cinematography--diploma",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Cinematography",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--film-and-television-production--diploma",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Film and Television Production",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--sound--diploma",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Sound",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--editing--diploma",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Editing",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--media-studies--master-of-arts",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Media Studies",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--film-directing--master",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Film Directing",
+      "degree": "Master"
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Film Production",
+      "degree": ""
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Animation",
+      "degree": ""
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--screenwriting--unspecified",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Screenwriting",
+      "degree": ""
+    },
+    {
+      "program_id": "filmuniversitat-babelsberg-konrad-wolf--acting--unspecified",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "schoolName": "Filmuniversität Babelsberg KONRAD WOLF",
+      "name": "Acting",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--interaktionsgestaltung--bachelor-of-arts",
+      "schoolId": "hochschule-fur-gestaltung-schwabisch-gmund",
+      "schoolName": "Hochschule für Gestaltung Schwäbisch Gmünd",
+      "name": "Interaktionsgestaltung",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--kommunikationsgestaltung--bachelor-of-arts",
+      "schoolId": "hochschule-fur-gestaltung-schwabisch-gmund",
+      "schoolName": "Hochschule für Gestaltung Schwäbisch Gmünd",
+      "name": "Kommunikationsgestaltung",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--produktgestaltung--bachelor-of-arts",
+      "schoolId": "hochschule-fur-gestaltung-schwabisch-gmund",
+      "schoolName": "Hochschule für Gestaltung Schwäbisch Gmünd",
+      "name": "Produktgestaltung",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--strategische-gestaltung--master-of-arts",
+      "schoolId": "hochschule-fur-gestaltung-schwabisch-gmund",
+      "schoolName": "Hochschule für Gestaltung Schwäbisch Gmünd",
+      "name": "Strategische Gestaltung",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--bachelor-of-arts",
+      "schoolId": "hochschule-fur-gestaltung-schwabisch-gmund",
+      "schoolName": "Hochschule für Gestaltung Schwäbisch Gmünd",
+      "name": "Communication Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--unspecified",
+      "schoolId": "hochschule-fur-gestaltung-schwabisch-gmund",
+      "schoolName": "Hochschule für Gestaltung Schwäbisch Gmünd",
+      "name": "Communication Design",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
+      "schoolId": "hochschule-fur-gestaltung-schwabisch-gmund",
+      "schoolName": "Hochschule für Gestaltung Schwäbisch Gmünd",
+      "name": "Interaction Design",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--product-design--unspecified",
+      "schoolId": "hochschule-fur-gestaltung-schwabisch-gmund",
+      "schoolName": "Hochschule für Gestaltung Schwäbisch Gmünd",
+      "name": "Product Design",
+      "degree": ""
+    },
+    {
+      "program_id": "bard-college-berlin--humanities-the-arts-and-social-thought--bachelor-of-arts",
+      "schoolId": "bard-college-berlin",
+      "schoolName": "Bard College Berlin",
+      "name": "Humanities, the Arts, and Social Thought",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "bard-college-berlin--economics-politics-and-social-thought--bachelor-of-arts",
+      "schoolId": "bard-college-berlin",
+      "schoolName": "Bard College Berlin",
+      "name": "Economics, Politics, and Social Thought",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "academy-of-visual-arts-frankfurt--visual-arts--bachelor-of-arts",
+      "schoolId": "academy-of-visual-arts-frankfurt",
+      "schoolName": "Academy of Visual Arts Frankfurt",
+      "name": "Visual Arts",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "academy-of-visual-arts-frankfurt--communication-design--bachelor-of-arts",
+      "schoolId": "academy-of-visual-arts-frankfurt",
+      "schoolName": "Academy of Visual Arts Frankfurt",
+      "name": "Communication Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "academy-of-visual-arts-frankfurt--fine-arts--diploma",
+      "schoolId": "academy-of-visual-arts-frankfurt",
+      "schoolName": "Academy of Visual Arts Frankfurt",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "academy-of-visual-arts-frankfurt--fine-arts--unspecified",
+      "schoolId": "academy-of-visual-arts-frankfurt",
+      "schoolName": "Academy of Visual Arts Frankfurt",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "fachhochschule-potsdam--interface-design--bachelor-of-arts",
+      "schoolId": "fachhochschule-potsdam",
+      "schoolName": "Fachhochschule Potsdam",
+      "name": "Interface Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "fachhochschule-potsdam--communication-design--bachelor-of-arts",
+      "schoolId": "fachhochschule-potsdam",
+      "schoolName": "Fachhochschule Potsdam",
+      "name": "Communication Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "fachhochschule-potsdam--product-design--bachelor-of-arts",
+      "schoolId": "fachhochschule-potsdam",
+      "schoolName": "Fachhochschule Potsdam",
+      "name": "Product Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "fachhochschule-potsdam--european-media-studies-with-university-of-potsdam--master-of-arts",
+      "schoolId": "fachhochschule-potsdam",
+      "schoolName": "Fachhochschule Potsdam",
+      "name": "European Media Studies (with University of Potsdam)",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-darmstadt--media-and-communication--bachelor-of-arts",
+      "schoolId": "hochschule-darmstadt",
+      "schoolName": "Hochschule Darmstadt",
+      "name": "Media and Communication",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
+      "schoolId": "hochschule-darmstadt",
+      "schoolName": "Hochschule Darmstadt",
+      "name": "Animation and Game",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-darmstadt--motion-pictures--bachelor-of-arts",
+      "schoolId": "hochschule-darmstadt",
+      "schoolName": "Hochschule Darmstadt",
+      "name": "Motion Pictures",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-darmstadt--communication-design--bachelor-of-arts",
+      "schoolId": "hochschule-darmstadt",
+      "schoolName": "Hochschule Darmstadt",
+      "name": "Communication Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-darmstadt--expanded-realities--master-of-arts",
+      "schoolId": "hochschule-darmstadt",
+      "schoolName": "Hochschule Darmstadt",
+      "name": "Expanded Realities",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-darmstadt--interactive-media-design--bachelor-of-arts",
+      "schoolId": "hochschule-darmstadt",
+      "schoolName": "Hochschule Darmstadt",
+      "name": "Interactive Media Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-darmstadt--digital-media--master-of-science",
+      "schoolId": "hochschule-darmstadt",
+      "schoolName": "Hochschule Darmstadt",
+      "name": "Digital Media",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "hochschule-darmstadt--digital-media--unspecified",
+      "schoolId": "hochschule-darmstadt",
+      "schoolName": "Hochschule Darmstadt",
+      "name": "Digital Media",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-rhein-waal--design-and-communication--bachelor-of-arts",
+      "schoolId": "hochschule-rhein-waal",
+      "schoolName": "Hochschule Rhein-Waal",
+      "name": "Design and Communication",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-rhein-waal--media-communication-and-computer-science--bachelor-of-science",
+      "schoolId": "hochschule-rhein-waal",
+      "schoolName": "Hochschule Rhein-Waal",
+      "name": "Media Communication and Computer Science",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "hochschule-rhein-waal--international-relations--bachelor-of-arts",
+      "schoolId": "hochschule-rhein-waal",
+      "schoolName": "Hochschule Rhein-Waal",
+      "name": "International Relations",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-rhein-waal--sustainable-design--master-of-arts",
+      "schoolId": "hochschule-rhein-waal",
+      "schoolName": "Hochschule Rhein-Waal",
+      "name": "Sustainable Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "technische-universitat-berlin--media-technology--bachelor-of-science",
+      "schoolId": "technische-universitat-berlin",
+      "schoolName": "Technische Universität Berlin",
+      "name": "Media Technology",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "technische-universitat-berlin--human-computer-interaction--master-of-science",
+      "schoolId": "technische-universitat-berlin",
+      "schoolName": "Technische Universität Berlin",
+      "name": "Human-Computer Interaction",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "technische-universitat-berlin--design-and-computation--master-of-science",
+      "schoolId": "technische-universitat-berlin",
+      "schoolName": "Technische Universität Berlin",
+      "name": "Design and Computation",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "technische-universitat-berlin--audiovisual-media-culture-and-communication--master-of-arts",
+      "schoolId": "technische-universitat-berlin",
+      "schoolName": "Technische Universität Berlin",
+      "name": "Audiovisual Media Culture and Communication",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-anhalt--design-integrated-design--bachelor-of-arts",
+      "schoolId": "hochschule-anhalt",
+      "schoolName": "Hochschule Anhalt",
+      "name": "Design (Integrated Design)",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-anhalt--design-master--master-of-arts",
+      "schoolId": "hochschule-anhalt",
+      "schoolName": "Hochschule Anhalt",
+      "name": "Design (Master)",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-anhalt--architecture-dessau-international-architecture-graduate-school-dia--master-of-arts",
+      "schoolId": "hochschule-anhalt",
+      "schoolName": "Hochschule Anhalt",
+      "name": "Architecture (Dessau International Architecture Graduate School - DIA)",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "universitat-trier--media-studies--bachelor-of-arts",
+      "schoolId": "universitat-trier",
+      "schoolName": "Universität Trier",
+      "name": "Media Studies",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "universitat-trier--media-studies--master-of-arts",
+      "schoolId": "universitat-trier",
+      "schoolName": "Universität Trier",
+      "name": "Media Studies",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "universitat-trier--digital-humanities--master-of-arts",
+      "schoolId": "universitat-trier",
+      "schoolName": "Universität Trier",
+      "name": "Digital Humanities",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "universitat-siegen--media-studies--bachelor-of-arts",
+      "schoolId": "universitat-siegen",
+      "schoolName": "Universität Siegen",
+      "name": "Media Studies",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "universitat-siegen--media-studies--master-of-arts",
+      "schoolId": "universitat-siegen",
+      "schoolName": "Universität Siegen",
+      "name": "Media Studies",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "universitat-siegen--human-computer-interaction--master-of-science",
+      "schoolId": "universitat-siegen",
+      "schoolName": "Universität Siegen",
+      "name": "Human Computer Interaction",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "universitat-siegen--human-computer-interaction--master-of-science--2",
+      "schoolId": "universitat-siegen",
+      "schoolName": "Universität Siegen",
+      "name": "Human-Computer Interaction",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "technische-hochschule-ingolstadt--design-and-user-experience--bachelor-of-arts",
+      "schoolId": "technische-hochschule-ingolstadt",
+      "schoolName": "Technische Hochschule Ingolstadt",
+      "name": "Design and User Experience",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "technische-hochschule-ingolstadt--user-experience-design--master-of-arts",
+      "schoolId": "technische-hochschule-ingolstadt",
+      "schoolName": "Technische Hochschule Ingolstadt",
+      "name": "User Experience Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "technische-hochschule-ingolstadt--mobility-and-transportation-design--bachelor-of-arts",
+      "schoolId": "technische-hochschule-ingolstadt",
+      "schoolName": "Technische Hochschule Ingolstadt",
+      "name": "Mobility and Transportation Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
+      "schoolId": "technische-hochschule-ingolstadt",
+      "schoolName": "Technische Hochschule Ingolstadt",
+      "name": "User Experience Design",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "technische-hochschule-ingolstadt--user-experience-design--unspecified",
+      "schoolId": "technische-hochschule-ingolstadt",
+      "schoolName": "Technische Hochschule Ingolstadt",
+      "name": "User Experience Design",
+      "degree": ""
+    },
+    {
+      "program_id": "technische-hochschule-augsburg--interactive-media--bachelor-of-arts",
+      "schoolId": "technische-hochschule-augsburg",
+      "schoolName": "Technische Hochschule Augsburg",
+      "name": "Interactive Media",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "technische-hochschule-augsburg--communication-design--bachelor-of-arts",
+      "schoolId": "technische-hochschule-augsburg",
+      "schoolName": "Technische Hochschule Augsburg",
+      "name": "Communication Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
+      "schoolId": "technische-hochschule-augsburg",
+      "schoolName": "Technische Hochschule Augsburg",
+      "name": "Interactive Media Systems",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
+      "schoolId": "technische-hochschule-augsburg",
+      "schoolName": "Technische Hochschule Augsburg",
+      "name": "Interactive Media Systems",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
+      "schoolId": "technische-hochschule-augsburg",
+      "schoolName": "Technische Hochschule Augsburg",
+      "name": "Interactive Media Systems",
+      "degree": ""
+    },
+    {
+      "program_id": "universitat-passau--media-and-communication--bachelor-of-arts",
+      "schoolId": "universitat-passau",
+      "schoolName": "Universität Passau",
+      "name": "Media and Communication",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "universitat-passau--media-and-communication--master-of-arts",
+      "schoolId": "universitat-passau",
+      "schoolName": "Universität Passau",
+      "name": "Media and Communication",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "universitat-passau--digital-humanities--bachelor-of-arts",
+      "schoolId": "universitat-passau",
+      "schoolName": "Universität Passau",
+      "name": "Digital Humanities",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
+      "schoolId": "universitat-passau",
+      "schoolName": "Universität Passau",
+      "name": "Computer Science with specialization in Human-Computer Interaction",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--unspecified",
+      "schoolId": "universitat-passau",
+      "schoolName": "Universität Passau",
+      "name": "Computer Science with specialization in Human-Computer Interaction",
+      "degree": ""
+    },
+    {
+      "program_id": "universitat-wurzburg--media-communication--bachelor-of-arts",
+      "schoolId": "universitat-wurzburg",
+      "schoolName": "Universität Würzburg",
+      "name": "Media Communication",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "universitat-wurzburg--media-communication--master-of-arts",
+      "schoolId": "universitat-wurzburg",
+      "schoolName": "Universität Würzburg",
+      "name": "Media Communication",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "universitat-wurzburg--human-computer-systems--master-of-science",
+      "schoolId": "universitat-wurzburg",
+      "schoolName": "Universität Würzburg",
+      "name": "Human-Computer Systems",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "universitat-wurzburg--human-computer-interaction--master-of-science",
+      "schoolId": "universitat-wurzburg",
+      "schoolName": "Universität Würzburg",
+      "name": "Human-Computer Interaction",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "universitat-wurzburg--human-computer-interaction--unspecified",
+      "schoolId": "universitat-wurzburg",
+      "schoolName": "Universität Würzburg",
+      "name": "Human-Computer Interaction",
+      "degree": ""
+    },
+    {
+      "program_id": "rwth-aachen-university--media-informatics--bachelor-of-science",
+      "schoolId": "rwth-aachen-university",
+      "schoolName": "RWTH Aachen University",
+      "name": "Media Informatics",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "rwth-aachen-university--media-informatics--master-of-science",
+      "schoolId": "rwth-aachen-university",
+      "schoolName": "RWTH Aachen University",
+      "name": "Media Informatics",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "rwth-aachen-university--communication-engineering--master-of-science",
+      "schoolId": "rwth-aachen-university",
+      "schoolName": "RWTH Aachen University",
+      "name": "Communication Engineering",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "rwth-aachen-university--human-technology-interaction-and-communication--master-of-science",
+      "schoolId": "rwth-aachen-university",
+      "schoolName": "RWTH Aachen University",
+      "name": "Human-Technology Interaction and Communication",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "rwth-aachen-university--human-technology-interaction-and-communication--unspecified",
+      "schoolId": "rwth-aachen-university",
+      "schoolName": "RWTH Aachen University",
+      "name": "Human-Technology Interaction and Communication",
+      "degree": ""
+    },
+    {
+      "program_id": "technische-universitat-munchen--media-engineering--bachelor-of-science",
+      "schoolId": "technische-universitat-munchen",
+      "schoolName": "Technische Universität München",
+      "name": "Media Engineering",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "technische-universitat-munchen--informatics-games-engineering--bachelor-of-science",
+      "schoolId": "technische-universitat-munchen",
+      "schoolName": "Technische Universität München",
+      "name": "Informatics: Games Engineering",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "technische-universitat-munchen--computational-science-and-engineering--master-of-science",
+      "schoolId": "technische-universitat-munchen",
+      "schoolName": "Technische Universität München",
+      "name": "Computational Science and Engineering",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "technische-universitat-munchen--management-and-technology-with-focus-on-digital-technologies--master-of-science",
+      "schoolId": "technische-universitat-munchen",
+      "schoolName": "Technische Universität München",
+      "name": "Management and Technology (with focus on Digital Technologies)",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "koln-international-school-of-design--integrated-design--bachelor-of-arts",
+      "schoolId": "koln-international-school-of-design",
+      "schoolName": "Köln International School of Design",
+      "name": "Integrated Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "koln-international-school-of-design--integrated-design-research--master-of-arts",
+      "schoolId": "koln-international-school-of-design",
+      "schoolName": "Köln International School of Design",
+      "name": "Integrated Design Research",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "koln-international-school-of-design--communication-design--bachelor-of-arts",
+      "schoolId": "koln-international-school-of-design",
+      "schoolName": "Köln International School of Design",
+      "name": "Communication Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-reutlingen--integrated-design--bachelor-of-arts",
+      "schoolId": "hochschule-reutlingen",
+      "schoolName": "Hochschule Reutlingen",
+      "name": "Integrated Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-reutlingen--textile-design--master-of-arts",
+      "schoolId": "hochschule-reutlingen",
+      "schoolName": "Hochschule Reutlingen",
+      "name": "Textile Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "kunsthochschule-mainz--fine-arts--diploma",
+      "schoolId": "kunsthochschule-mainz",
+      "schoolName": "Kunsthochschule Mainz",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "kunsthochschule-mainz--visual-communication--diploma",
+      "schoolId": "kunsthochschule-mainz",
+      "schoolName": "Kunsthochschule Mainz",
+      "name": "Visual Communication",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "kunsthochschule-mainz--fine-arts--unspecified",
+      "schoolId": "kunsthochschule-mainz",
+      "schoolName": "Kunsthochschule Mainz",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "kunsthochschule-kassel--fine-arts--diploma",
+      "schoolId": "kunsthochschule-kassel",
+      "schoolName": "Kunsthochschule Kassel",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "kunsthochschule-kassel--visual-communication--diploma",
+      "schoolId": "kunsthochschule-kassel",
+      "schoolName": "Kunsthochschule Kassel",
+      "name": "Visual Communication",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "kunsthochschule-kassel--fine-arts--unspecified",
+      "schoolId": "kunsthochschule-kassel",
+      "schoolName": "Kunsthochschule Kassel",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "hochschule-pforzheim--industrial-design--bachelor-of-arts",
+      "schoolId": "hochschule-pforzheim",
+      "schoolName": "Hochschule Pforzheim",
+      "name": "Industrial Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-pforzheim--mode--bachelor-of-arts",
+      "schoolId": "hochschule-pforzheim",
+      "schoolName": "Hochschule Pforzheim",
+      "name": "Mode",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-pforzheim--schmuck--bachelor-of-arts",
+      "schoolId": "hochschule-pforzheim",
+      "schoolName": "Hochschule Pforzheim",
+      "name": "Schmuck",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-pforzheim--visuelle-kommunikation--bachelor-of-arts",
+      "schoolId": "hochschule-pforzheim",
+      "schoolName": "Hochschule Pforzheim",
+      "name": "Visuelle Kommunikation",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-pforzheim--transportation-design--bachelor-of-arts",
+      "schoolId": "hochschule-pforzheim",
+      "schoolName": "Hochschule Pforzheim",
+      "name": "Transportation Design",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-pforzheim--transportation-design--master-of-arts",
+      "schoolId": "hochschule-pforzheim",
+      "schoolName": "Hochschule Pforzheim",
+      "name": "Transportation Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-pforzheim--creative-communication-and-brand-management--master-of-arts",
+      "schoolId": "hochschule-pforzheim",
+      "schoolName": "Hochschule Pforzheim",
+      "name": "Creative Communication and Brand Management",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-pforzheim--creative-direction--master-of-arts",
+      "schoolId": "hochschule-pforzheim",
+      "schoolName": "Hochschule Pforzheim",
+      "name": "Creative Direction",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-pforzheim--design-future-making--master-of-arts",
+      "schoolId": "hochschule-pforzheim",
+      "schoolName": "Hochschule Pforzheim",
+      "name": "Design & Future Making",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--audiovisuelle-medien--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Audiovisuelle Medien",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--bibliothek-und-digitale-information--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Bibliothek und digitale Information",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--crossmedia-redaktion-public-relations--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Crossmedia-Redaktion & Public Relations",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--deutsch-chinesischer-studiengang-medien-und-technologie--bachelor-of-science",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Deutsch-Chinesischer Studiengang Medien und Technologie",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "hdm-stuttgart--digital-und-medienwirtschaft--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Digital- und Medienwirtschaft",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--informationsdesign--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Informationsdesign",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--integriertes-produktdesign--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Integriertes Produktdesign",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--media-entertainment--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Media Entertainment",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--mediapublishing--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Mediapublishing",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--medien-und-wirtschaftspsychologie--bachelor-of-science",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Medien- und Wirtschaftspsychologie",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "hdm-stuttgart--medieninformatik--bachelor-of-science",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Medieninformatik",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "hdm-stuttgart--mobile-medien--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Mobile Medien",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--online-medien-management--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Online-Medien-Management",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--print-media-and-packaging-technologies--bachelor-of-science",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Print Media and Packaging Technologies",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "hdm-stuttgart--social-media-marketing-management--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Social Media Marketing & Management",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--technisches-produktmanagement-technisches-design--bachelor-of-science",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Technisches Produktmanagement – Technisches Design",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "hdm-stuttgart--werbung-und-marktkommunikation--bachelor-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Werbung und Marktkommunikation",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--wirtschaftsinformatik-und-digitale-medien--bachelor-of-science",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Wirtschaftsinformatik und digitale Medien",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "hdm-stuttgart--wirtschaftsingenieurwesen-medien--bachelor-of-engineering",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Wirtschaftsingenieurwesen Medien",
+      "degree": "Bachelor of Engineering"
+    },
+    {
+      "program_id": "hdm-stuttgart--audiovisual-media-creation-and-technology--master-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Audiovisual Media Creation and Technology",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--computer-science-and-media--master-of-science",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Computer Science and Media",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "hdm-stuttgart--crossmedia-publishing-management--master-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Crossmedia Publishing & Management",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--digital-design--master-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Digital Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--master-of-media-research--master-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Master of Media Research",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--medienmanagement--master-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Medienmanagement",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--packaging-development-management--master-of-science",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Packaging Development Management",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "hdm-stuttgart--unternehmenskommunikation--master-of-arts",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Unternehmenskommunikation",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hdm-stuttgart--wirtschaftsinformatik--master-of-science",
+      "schoolId": "hdm-stuttgart",
+      "schoolName": "Hochschule für Medien Stuttgart",
+      "name": "Wirtschaftsinformatik",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "kunstakademie-munster--freie-kunst--akademiebrief-diplom",
+      "schoolId": "kunstakademie-munster",
+      "schoolName": "Kunstakademie Münster",
+      "name": "Freie Kunst",
+      "degree": "Akademiebrief (Diplom)"
+    },
+    {
+      "program_id": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
+      "schoolId": "kunstakademie-munster",
+      "schoolName": "Kunstakademie Münster",
+      "name": "Fine Arts",
+      "degree": "Bachelor of Fine Arts"
+    },
+    {
+      "program_id": "kunstakademie-munster--art-education--master-of-education",
+      "schoolId": "kunstakademie-munster",
+      "schoolName": "Kunstakademie Münster",
+      "name": "Art Education",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "kunstakademie-munster--fine-arts--unspecified",
+      "schoolId": "kunstakademie-munster",
+      "schoolName": "Kunstakademie Münster",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "kunstakademie-munster--art-education--unspecified",
+      "schoolId": "kunstakademie-munster",
+      "schoolName": "Kunstakademie Münster",
+      "name": "Art Education",
+      "degree": ""
+    },
+    {
+      "program_id": "akademie-munchen--fine-arts--diploma",
+      "schoolId": "akademie-munchen",
+      "schoolName": "Akademie der Bildenden Künste München",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "akademie-munchen--fine-arts--unspecified",
+      "schoolId": "akademie-munchen",
+      "schoolName": "Akademie der Bildenden Künste München",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "akademie-munchen--architecture--unspecified",
+      "schoolId": "akademie-munchen",
+      "schoolName": "Akademie der Bildenden Künste München",
+      "name": "Architecture",
+      "degree": ""
+    },
+    {
+      "program_id": "akademie-munchen--art-education--unspecified",
+      "schoolId": "akademie-munchen",
+      "schoolName": "Akademie der Bildenden Künste München",
+      "name": "Art Education",
+      "degree": ""
+    },
+    {
+      "program_id": "akademie-nurnberg--fine-arts--diploma",
+      "schoolId": "akademie-nurnberg",
+      "schoolName": "Akademie der Bildenden Künste Nürnberg",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "akademie-nurnberg--fine-arts--diploma-in-fine-arts",
+      "schoolId": "akademie-nurnberg",
+      "schoolName": "Akademie der Bildenden Künste Nürnberg",
+      "name": "Fine Arts",
+      "degree": "Diploma in Fine Arts"
+    },
+    {
+      "program_id": "akademie-nurnberg--fine-arts--unspecified",
+      "schoolId": "akademie-nurnberg",
+      "schoolName": "Akademie der Bildenden Künste Nürnberg",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "akademie-nurnberg--graphic-design--unspecified",
+      "schoolId": "akademie-nurnberg",
+      "schoolName": "Akademie der Bildenden Künste Nürnberg",
+      "name": "Graphic Design",
+      "degree": ""
+    },
+    {
+      "program_id": "akademie-nurnberg--art-education--unspecified",
+      "schoolId": "akademie-nurnberg",
+      "schoolName": "Akademie der Bildenden Künste Nürnberg",
+      "name": "Art Education",
+      "degree": ""
+    },
+    {
+      "program_id": "burg-giebichenstein--design--diploma",
+      "schoolId": "burg-giebichenstein",
+      "schoolName": "Burg Giebichenstein Kunsthochschule Halle",
+      "name": "Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "burg-giebichenstein--fine-arts--diploma",
+      "schoolId": "burg-giebichenstein",
+      "schoolName": "Burg Giebichenstein Kunsthochschule Halle",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "burg-giebichenstein--fine-arts--unspecified",
+      "schoolId": "burg-giebichenstein",
+      "schoolName": "Burg Giebichenstein Kunsthochschule Halle",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "burg-giebichenstein--industrial-design--unspecified",
+      "schoolId": "burg-giebichenstein",
+      "schoolName": "Burg Giebichenstein Kunsthochschule Halle",
+      "name": "Industrial Design",
+      "degree": ""
+    },
+    {
+      "program_id": "burg-giebichenstein--communication-design--unspecified",
+      "schoolId": "burg-giebichenstein",
+      "schoolName": "Burg Giebichenstein Kunsthochschule Halle",
+      "name": "Communication Design",
+      "degree": ""
+    },
+    {
+      "program_id": "folkwang-essen--music--master",
+      "schoolId": "folkwang-essen",
+      "schoolName": "Folkwang Universität der Künste",
+      "name": "Music",
+      "degree": "Master"
+    },
+    {
+      "program_id": "folkwang-essen--fine-arts--diploma",
+      "schoolId": "folkwang-essen",
+      "schoolName": "Folkwang Universität der Künste",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "folkwang-essen--fine-arts--unspecified",
+      "schoolId": "folkwang-essen",
+      "schoolName": "Folkwang Universität der Künste",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "folkwang-essen--music--unspecified",
+      "schoolId": "folkwang-essen",
+      "schoolName": "Folkwang Universität der Künste",
+      "name": "Music",
+      "degree": ""
+    },
+    {
+      "program_id": "folkwang-essen--dance--unspecified",
+      "schoolId": "folkwang-essen",
+      "schoolName": "Folkwang Universität der Künste",
+      "name": "Dance",
+      "degree": ""
+    },
+    {
+      "program_id": "folkwang-essen--design--unspecified",
+      "schoolId": "folkwang-essen",
+      "schoolName": "Folkwang Universität der Künste",
+      "name": "Design",
+      "degree": ""
+    },
+    {
+      "program_id": "folkwang-essen--theatre--unspecified",
+      "schoolId": "folkwang-essen",
+      "schoolName": "Folkwang Universität der Künste",
+      "name": "Theatre",
+      "degree": ""
+    },
+    {
+      "program_id": "haw-hamburg--design--bachelor",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Design",
+      "degree": "Bachelor"
+    },
+    {
+      "program_id": "hfbk-dresden--fine-arts--diploma",
+      "schoolId": "hfbk-dresden",
+      "schoolName": "Hochschule für Bildende Künste Dresden",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hfbk-dresden--fine-arts--unspecified",
+      "schoolId": "hfbk-dresden",
+      "schoolName": "Hochschule für Bildende Künste Dresden",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "stadelschule-frankfurt--fine-arts--master",
+      "schoolId": "stadelschule-frankfurt",
+      "schoolName": "Städelschule Frankfurt",
+      "name": "Fine Arts",
+      "degree": "Master"
+    },
+    {
+      "program_id": "stadelschule-frankfurt--fine-arts--diploma",
+      "schoolId": "stadelschule-frankfurt",
+      "schoolName": "Städelschule Frankfurt",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "stadelschule-frankfurt--fine-arts--unspecified",
+      "schoolId": "stadelschule-frankfurt",
+      "schoolName": "Städelschule Frankfurt",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "khm-munchen--fine-arts--diploma",
+      "schoolId": "khm-munchen",
+      "schoolName": "Kunsthochschule München",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "technische-universitat-chemnitz--human-computer-interaction--master-of-science",
+      "schoolId": "technische-universitat-chemnitz",
+      "schoolName": "Technische Universität Chemnitz",
+      "name": "Human-Computer Interaction",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "technische-universitat-chemnitz--human-computer-interaction--unspecified",
+      "schoolId": "technische-universitat-chemnitz",
+      "schoolName": "Technische Universität Chemnitz",
+      "name": "Human-Computer Interaction",
+      "degree": ""
+    },
+    {
+      "program_id": "kunsthochschule-berlin-weissensee--fine-arts--diploma",
+      "schoolId": "kunsthochschule-berlin-weissensee",
+      "schoolName": "Kunsthochschule Berlin-Weißensee",
+      "name": "Fine Arts",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "kunsthochschule-berlin-weissensee--fine-arts--unspecified",
+      "schoolId": "kunsthochschule-berlin-weissensee",
+      "schoolName": "Kunsthochschule Berlin-Weißensee",
+      "name": "Fine Arts",
+      "degree": ""
+    },
+    {
+      "program_id": "hmt-leipzig--music--unspecified",
+      "schoolId": "hmt-leipzig",
+      "schoolName": "Hochschule für Musik und Theater Leipzig",
+      "name": "Music",
+      "degree": ""
+    },
+    {
+      "program_id": "hmt-leipzig--drama--unspecified",
+      "schoolId": "hmt-leipzig",
+      "schoolName": "Hochschule für Musik und Theater Leipzig",
+      "name": "Drama",
+      "degree": ""
+    },
+    {
+      "program_id": "hmt-leipzig--music-education--unspecified",
+      "schoolId": "hmt-leipzig",
+      "schoolName": "Hochschule für Musik und Theater Leipzig",
+      "name": "Music Education",
+      "degree": ""
+    },
+    {
+      "program_id": "hmtm-hannover--music--unspecified",
+      "schoolId": "hmtm-hannover",
+      "schoolName": "Hochschule für Musik, Theater und Medien Hannover",
+      "name": "Music",
+      "degree": ""
+    },
+    {
+      "program_id": "hmtm-hannover--acting--unspecified",
+      "schoolId": "hmtm-hannover",
+      "schoolName": "Hochschule für Musik, Theater und Medien Hannover",
+      "name": "Acting",
+      "degree": ""
+    },
+    {
+      "program_id": "hmtm-hannover--media-management--unspecified",
+      "schoolId": "hmtm-hannover",
+      "schoolName": "Hochschule für Musik, Theater und Medien Hannover",
+      "name": "Media Management",
+      "degree": ""
+    }
+  ]
+}

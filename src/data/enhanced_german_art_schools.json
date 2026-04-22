@@ -22,7 +22,7 @@
       "stats": {
         "students": 850,
         "acceptance_rate": 0.18,
-        "student_staff_ratio": 9.0,
+        "student_staff_ratio": 9,
         "founded": 1767
       },
       "city": "Hamburg",
@@ -47,7 +47,20 @@
             "Time-based Media",
             "Photography",
             "Digital Art"
-          ]
+          ],
+          "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-04-19T15:43:06.282Z",
+            "sourceUrl": "https://www.hfbk-hamburg.de/"
+          }
         },
         {
           "name": "Fine Arts",
@@ -65,7 +78,20 @@
             "Contemporary Art",
             "Media Art",
             "Artistic Research"
-          ]
+          ],
+          "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--master-of-fine-arts",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-04-19T15:43:06.282Z",
+            "sourceUrl": "https://www.hfbk-hamburg.de/"
+          }
         },
         {
           "name": "Art Education",
@@ -83,7 +109,20 @@
             "Art Pedagogy",
             "Art Theory",
             "Educational Research"
-          ]
+          ],
+          "program_id": "hochschule-fur-bildende-kunste-hamburg--art-education--master-of-education",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-lehramt",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-04-19T15:43:06.282Z",
+            "sourceUrl": "https://www.hfbk-hamburg.de/"
+          }
         },
         {
           "name": "Fine Arts",
@@ -114,6 +153,19 @@
               "Letter of motivation"
             ],
             "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          },
+          "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:45:32.059Z",
+            "sourceUrl": "https://www.hfbk-hamburg.de/"
           }
         },
         {
@@ -121,21 +173,60 @@
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:45:32.059Z",
+            "sourceUrl": "https://www.hfbk-hamburg.de/"
+          }
         },
         {
           "name": "Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-bildende-kunste-hamburg--design--unspecified",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:45:32.059Z",
+            "sourceUrl": "https://www.hfbk-hamburg.de/"
+          }
         },
         {
           "name": "Film",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:45:32.059Z",
+            "sourceUrl": "https://www.hfbk-hamburg.de/"
+          }
         }
       ],
       "website": "https://www.hfbk-hamburg.de/",
@@ -166,7 +257,7 @@
       "stats": {
         "students": 450,
         "acceptance_rate": 0.22,
-        "student_staff_ratio": 10.0,
+        "student_staff_ratio": 10,
         "founded": 1989
       },
       "city": "Saarbrücken",
@@ -190,7 +281,8 @@
             "Sculpture",
             "Installation",
             "Media Art"
-          ]
+          ],
+          "program_id": "hochschule-der-bildenden-kunste-saar--fine-arts--diploma"
         },
         {
           "name": "Communication Design",
@@ -209,7 +301,8 @@
             "Typography",
             "Interactive Media",
             "Visual Communication"
-          ]
+          ],
+          "program_id": "hochschule-der-bildenden-kunste-saar--communication-design--diploma"
         },
         {
           "name": "Art Education",
@@ -227,14 +320,16 @@
             "Art Pedagogy",
             "Art History",
             "Educational Research"
-          ]
+          ],
+          "program_id": "hochschule-der-bildenden-kunste-saar--art-education--master-of-education"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified"
         }
       ],
       "website": "https://www.hbks.uni-saarland.de/",
@@ -290,7 +385,20 @@
             "Installation",
             "Media Art",
             "Performance"
-          ]
+          ],
+          "program_id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--diploma",
+          "details": {
+            "programUrl": "https://www.hbk-bs.de/studium/studienangebot/freie-kunst/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:43:09.592Z",
+            "sourceUrl": "https://www.hbk-bs.de/"
+          }
         },
         {
           "name": "Industrial Design",
@@ -309,7 +417,20 @@
             "Furniture Design",
             "Sustainable Design",
             "Design Theory"
-          ]
+          ],
+          "program_id": "hochschule-fur-bildende-kunste-braunschweig--industrial-design--diploma",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:46:07.491Z",
+            "sourceUrl": "https://www.hbk-bs.de/"
+          }
         },
         {
           "name": "Art Education",
@@ -327,14 +448,40 @@
             "Art Pedagogy",
             "Art Theory",
             "Educational Research"
-          ]
+          ],
+          "program_id": "hochschule-fur-bildende-kunste-braunschweig--art-education--master-of-education",
+          "details": {
+            "programUrl": "https://www.hbk-bs.de/studium/studienangebot/kunstpaedagogik/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:43:09.592Z",
+            "sourceUrl": "https://www.hbk-bs.de/"
+          }
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
+          "details": {
+            "programUrl": "https://www.hbk-bs.de/studium/studienangebot/freie-kunst/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:43:09.592Z",
+            "sourceUrl": "https://www.hbk-bs.de/"
+          }
         }
       ],
       "website": "https://www.hbk-bs.de/",
@@ -364,7 +511,7 @@
       "stats": {
         "students": 500,
         "acceptance_rate": 0.25,
-        "student_staff_ratio": 8.0,
+        "student_staff_ratio": 8,
         "founded": 1994
       },
       "city": "Rostock",
@@ -388,7 +535,20 @@
             "Vocal Performance",
             "Conducting",
             "Composition"
-          ]
+          ],
+          "program_id": "hochschule-fur-musik-und-theater-rostock--music--bachelor-of-music",
+          "details": {
+            "programUrl": "https://www.hmt-rostock.de/studium/studienangebot/musik/",
+            "applicationUrl": "https://www.hmt-rostock.de/studium/bewerbung/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:47:11.855Z",
+            "sourceUrl": "https://www.hmt-rostock.de/"
+          }
         }
       ],
       "website": "https://www.hmt-rostock.de/",
@@ -444,7 +604,8 @@
             "Photography",
             "New Media",
             "Stage Design"
-          ]
+          ],
+          "program_id": "kunstakademie-dusseldorf--fine-arts--diploma"
         },
         {
           "name": "Art Education",
@@ -462,7 +623,8 @@
             "Art Pedagogy",
             "Art History",
             "Art Theory"
-          ]
+          ],
+          "program_id": "kunstakademie-dusseldorf--art-education--master-of-education"
         },
         {
           "name": "Architecture",
@@ -480,28 +642,32 @@
             "Architectural Design",
             "Urban Planning",
             "Architectural Theory"
-          ]
+          ],
+          "program_id": "kunstakademie-dusseldorf--architecture--master-of-architecture"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "kunstakademie-dusseldorf--fine-arts--unspecified"
         },
         {
           "name": "Sculpture",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "kunstakademie-dusseldorf--sculpture--unspecified"
         },
         {
           "name": "Painting",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "kunstakademie-dusseldorf--painting--unspecified"
         }
       ],
       "website": "https://www.kunstakademie-duesseldorf.de/en/",
@@ -533,7 +699,7 @@
       "stats": {
         "students": 3500,
         "acceptance_rate": 0.12,
-        "student_staff_ratio": 9.0,
+        "student_staff_ratio": 9,
         "founded": 1696
       },
       "city": "Berlin",
@@ -562,7 +728,8 @@
             "Sculpture",
             "New Media Art",
             "Graphic Arts"
-          ]
+          ],
+          "program_id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts"
         },
         {
           "name": "Fine Arts",
@@ -581,7 +748,8 @@
             "Sculpture",
             "New Media Art",
             "Graphic Arts"
-          ]
+          ],
+          "program_id": "universitat-der-kunste-berlin--fine-arts--master-of-fine-arts"
         },
         {
           "name": "Architecture",
@@ -598,7 +766,8 @@
           "specializations": [
             "Architectural Design",
             "Urban Planning"
-          ]
+          ],
+          "program_id": "universitat-der-kunste-berlin--architecture--bachelor-of-arts"
         },
         {
           "name": "Design",
@@ -620,7 +789,8 @@
             "Visual Communication",
             "Product Design",
             "Fashion Design"
-          ]
+          ],
+          "program_id": "universitat-der-kunste-berlin--design--bachelor-of-arts"
         },
         {
           "name": "Music",
@@ -639,7 +809,8 @@
             "Composition",
             "Conducting",
             "Music Theory"
-          ]
+          ],
+          "program_id": "universitat-der-kunste-berlin--music--bachelor-of-music"
         },
         {
           "name": "Performing Arts",
@@ -658,7 +829,8 @@
             "Direction",
             "Dramaturgy",
             "Stage Design"
-          ]
+          ],
+          "program_id": "universitat-der-kunste-berlin--performing-arts--bachelor-of-arts"
         },
         {
           "name": "Art Education",
@@ -676,7 +848,8 @@
             "Art Pedagogy",
             "Art History",
             "Art Theory"
-          ]
+          ],
+          "program_id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts"
         },
         {
           "name": "Fine Arts",
@@ -688,35 +861,40 @@
             }
           },
           "language": "German",
-          "duration": "10 semesters"
+          "duration": "10 semesters",
+          "program_id": "universitat-der-kunste-berlin--fine-arts--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "universitat-der-kunste-berlin--fine-arts--unspecified"
         },
         {
           "name": "Art and Media",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "universitat-der-kunste-berlin--art-and-media--unspecified"
         },
         {
           "name": "Visual Communication",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "universitat-der-kunste-berlin--visual-communication--unspecified"
         },
         {
           "name": "Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "universitat-der-kunste-berlin--design--unspecified"
         }
       ],
       "website": "https://www.udk-berlin.de/en/",
@@ -770,7 +948,8 @@
             "Digital Media",
             "Sound",
             "Exhibition Design"
-          ]
+          ],
+          "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--diploma"
         },
         {
           "name": "Product Design",
@@ -788,7 +967,8 @@
             "Industrial Design",
             "Furniture Design",
             "Exhibition Design"
-          ]
+          ],
+          "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--diploma"
         },
         {
           "name": "Communication Design",
@@ -806,7 +986,8 @@
             "Graphic Design",
             "Typography",
             "Digital Media"
-          ]
+          ],
+          "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--diploma"
         },
         {
           "name": "Art Research and Media Philosophy",
@@ -824,7 +1005,8 @@
             "Art Theory",
             "Media Theory",
             "Philosophy"
-          ]
+          ],
+          "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--art-research-and-media-philosophy--master-of-arts"
         },
         {
           "name": "Fine Arts",
@@ -836,35 +1018,40 @@
             }
           },
           "language": "German",
-          "duration": "10 semesters"
+          "duration": "10 semesters",
+          "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--unspecified"
         },
         {
           "name": "Communication Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--unspecified"
         },
         {
           "name": "Product Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--unspecified"
         },
         {
           "name": "Media Art",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified"
         }
       ],
       "website": "https://www.hfg-karlsruhe.de/en/",
@@ -895,7 +1082,7 @@
       "stats": {
         "students": 900,
         "acceptance_rate": 0.25,
-        "student_staff_ratio": 10.0,
+        "student_staff_ratio": 10,
         "founded": 1873
       },
       "city": "Bremen",
@@ -924,7 +1111,8 @@
             "Game Design",
             "Media Art",
             "Web Design"
-          ]
+          ],
+          "program_id": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts"
         },
         {
           "name": "Digitale Medien",
@@ -943,7 +1131,8 @@
             "Game Design",
             "Media Art",
             "Web Design"
-          ]
+          ],
+          "program_id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts"
         },
         {
           "name": "Freie Kunst",
@@ -962,7 +1151,8 @@
             "Sculpture",
             "Installation",
             "Performance"
-          ]
+          ],
+          "program_id": "hochschule-fur-kunste-bremen--freie-kunst--diploma"
         },
         {
           "name": "Integriertes Design",
@@ -980,7 +1170,8 @@
             "Product Design",
             "Communication Design",
             "Fashion Design"
-          ]
+          ],
+          "program_id": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts"
         },
         {
           "name": "Integriertes Design",
@@ -998,7 +1189,8 @@
             "Product Design",
             "Communication Design",
             "Fashion Design"
-          ]
+          ],
+          "program_id": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts"
         },
         {
           "name": "Musik",
@@ -1017,7 +1209,8 @@
             "Composition",
             "Conducting",
             "Music Theory"
-          ]
+          ],
+          "program_id": "hochschule-fur-kunste-bremen--musik--bachelor-of-music"
         },
         {
           "name": "Musik",
@@ -1036,7 +1229,8 @@
             "Composition",
             "Conducting",
             "Music Theory"
-          ]
+          ],
+          "program_id": "hochschule-fur-kunste-bremen--musik--master-of-music"
         },
         {
           "name": "Promotionsprogramm (PhD)",
@@ -1055,7 +1249,8 @@
             "Design Theory",
             "Media Theory",
             "Music Theory"
-          ]
+          ],
+          "program_id": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--phd"
         },
         {
           "name": "Musik",
@@ -1067,63 +1262,72 @@
             }
           },
           "language": "German",
-          "duration": "Varies"
+          "duration": "Varies",
+          "program_id": "hochschule-fur-kunste-bremen--musik--bachelor-master"
         },
         {
           "name": "Digitale Medien",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-kunste-bremen--digitale-medien--unspecified"
         },
         {
           "name": "Freie Kunst",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-kunste-bremen--freie-kunst--unspecified"
         },
         {
           "name": "Integriertes Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-kunste-bremen--integriertes-design--unspecified"
         },
         {
           "name": "Musik",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-kunste-bremen--musik--unspecified"
         },
         {
           "name": "Promotionsprogramm (PhD)",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified"
         },
         {
           "name": "Digital Media",
           "degree": "",
           "applicationDeadlines": {},
           "language": "English",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-kunste-bremen--digital-media--unspecified"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-kunste-bremen--fine-arts--unspecified"
         },
         {
           "name": "Integrated Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-kunste-bremen--integrated-design--unspecified"
         }
       ],
       "website": "https://www.hfk-bremen.de/",
@@ -1155,7 +1359,7 @@
       "stats": {
         "students": 900,
         "acceptance_rate": 0.18,
-        "student_staff_ratio": 10.0,
+        "student_staff_ratio": 10,
         "founded": 1761
       },
       "city": "Stuttgart",
@@ -1180,7 +1384,8 @@
             "Graphic Arts",
             "Media Art",
             "Ceramics"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma"
         },
         {
           "name": "Architektur",
@@ -1199,7 +1404,8 @@
             "Urban Planning",
             "Building Technology",
             "Architectural Theory"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--bachelor-of-science"
         },
         {
           "name": "Architektur",
@@ -1218,7 +1424,8 @@
             "Sustainable Building",
             "Urban Strategies",
             "Digital Design Methods"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--master-of-science"
         },
         {
           "name": "Industrial Design",
@@ -1237,7 +1444,8 @@
             "Interaction Design",
             "Service Design",
             "Design Research"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--bachelor-of-arts"
         },
         {
           "name": "Industrial Design",
@@ -1256,7 +1464,8 @@
             "Strategic Design",
             "Sustainable Design",
             "Design Management"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--master-of-arts"
         },
         {
           "name": "Kommunikationsdesign",
@@ -1276,7 +1485,8 @@
             "Illustration",
             "Photography",
             "Digital Media"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--bachelor-of-arts"
         },
         {
           "name": "Kommunikationsdesign",
@@ -1295,7 +1505,8 @@
             "Editorial Design",
             "Corporate Design",
             "Interaction Design"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--master-of-arts"
         },
         {
           "name": "Textildesign",
@@ -1314,7 +1525,8 @@
             "Printed Textiles",
             "Surface Design",
             "Material Technology"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--textildesign--bachelor-of-arts"
         },
         {
           "name": "Textildesign",
@@ -1333,7 +1545,8 @@
             "Sustainable Textiles",
             "Textile Art",
             "Fashion Textiles"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--textildesign--master-of-arts"
         },
         {
           "name": "Kunstwissenschaften - Restaurierung",
@@ -1352,7 +1565,8 @@
             "Paper and Book Restoration",
             "Archaeological Objects Restoration",
             "Preventive Conservation"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstwissenschaften-restaurierung--bachelor-of-arts"
         },
         {
           "name": "Kunstwissenschaften - Restaurierung",
@@ -1371,7 +1585,8 @@
             "Paper and Book Restoration",
             "Archaeological Objects Restoration",
             "Modern Materials and Media"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstwissenschaften-restaurierung--master-of-arts"
         },
         {
           "name": "Bühnen- und Kostümbild",
@@ -1389,7 +1604,8 @@
             "Stage Design",
             "Costume Design",
             "Dramaturgy"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--buhnen-und-kostumbild--diploma"
         },
         {
           "name": "Kunstpädagogik",
@@ -1407,7 +1623,8 @@
             "Art Education",
             "Didactics",
             "Art History"
-          ]
+          ],
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstpadagogik--master-of-education"
         },
         {
           "name": "Fine Arts",
@@ -1437,35 +1654,40 @@
               "Letter of motivation"
             ],
             "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          }
+          },
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--unspecified"
         },
         {
           "name": "Architecture",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architecture--unspecified"
         },
         {
           "name": "Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--design--unspecified"
         },
         {
           "name": "Art Education",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--art-education--unspecified"
         }
       ],
       "website": "https://www.abk-stuttgart.de/en/",
@@ -1494,7 +1716,7 @@
       "stats": {
         "students": 400,
         "acceptance_rate": 0.1,
-        "student_staff_ratio": 6.0,
+        "student_staff_ratio": 6,
         "founded": 1990
       },
       "city": "Cologne",
@@ -1520,7 +1742,20 @@
             "Sound Art",
             "Art History",
             "Aesthetics"
-          ]
+          ],
+          "program_id": "kunsthochschule-fur-medien-koln--media-arts--diploma",
+          "details": {
+            "programUrl": "https://www.khm.de/Studium/",
+            "applicationUrl": "https://www.khm.de/bewerbung_medialekuenste/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:51:49.489Z",
+            "sourceUrl": "https://www.khm.de/en/"
+          }
         },
         {
           "name": "Media Arts (Postgraduate)",
@@ -1541,7 +1776,20 @@
             "Sound Art",
             "Art History",
             "Aesthetics"
-          ]
+          ],
+          "program_id": "kunsthochschule-fur-medien-koln--media-arts-postgraduate--diploma",
+          "details": {
+            "programUrl": "https://www.khm.de/Studium/",
+            "applicationUrl": "https://www.khm.de/bewerbung_medialekuenste/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:51:49.489Z",
+            "sourceUrl": "https://www.khm.de/en/"
+          }
         },
         {
           "name": "Media Arts",
@@ -1571,6 +1819,19 @@
               "CV with relevant experience"
             ],
             "format": "Digital submission (video link or upload, max 500MB)"
+          },
+          "program_id": "kunsthochschule-fur-medien-koln--media-arts--phd",
+          "details": {
+            "programUrl": "https://www.khm.de/khm_forschung/",
+            "applicationUrl": "https://www.khm.de/bewerbung_medialekuenste/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:51:49.489Z",
+            "sourceUrl": "https://www.khm.de/en/"
           }
         },
         {
@@ -1578,21 +1839,60 @@
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "kunsthochschule-fur-medien-koln--media-arts--unspecified",
+          "details": {
+            "programUrl": "https://www.khm.de/Studium/",
+            "applicationUrl": "https://www.khm.de/bewerbung_medialekuenste/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": 75,
+            "studentsEnrolled": 400,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:51:49.489Z",
+            "sourceUrl": "https://www.khm.de/en/"
+          }
         },
         {
           "name": "Film",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "kunsthochschule-fur-medien-koln--film--unspecified",
+          "details": {
+            "programUrl": "https://www.khm.de/fg_Film_und_Fernsehen/",
+            "applicationUrl": "https://www.khm.de/bewerbung_medialekuenste/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:51:49.489Z",
+            "sourceUrl": "https://www.khm.de/en/"
+          }
         },
         {
           "name": "Animation",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "kunsthochschule-fur-medien-koln--animation--unspecified",
+          "details": {
+            "programUrl": "https://www.khm.de/animationsstudio/",
+            "applicationUrl": "https://www.khm.de/bewerbung_medialekuenste/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:51:49.489Z",
+            "sourceUrl": "https://www.khm.de/en/"
+          }
         }
       ],
       "website": "https://www.khm.de/en/",
@@ -1622,7 +1922,7 @@
       "stats": {
         "students": 750,
         "acceptance_rate": 0.2,
-        "student_staff_ratio": 11.0,
+        "student_staff_ratio": 11,
         "founded": 1832
       },
       "city": "Offenbach am Main",
@@ -1653,7 +1953,8 @@
             "Photography",
             "Stage/Space Design",
             "Theory"
-          ]
+          ],
+          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma"
         },
         {
           "name": "Product Design",
@@ -1672,7 +1973,8 @@
             "Interface Design",
             "Materials/Technology",
             "Theory"
-          ]
+          ],
+          "program_id": "hochschule-fur-gestaltung-offenbach--product-design--diploma"
         },
         {
           "name": "Art Education (Secondary Schools)",
@@ -1689,7 +1991,8 @@
           "specializations": [
             "Art Pedagogy",
             "Didactics"
-          ]
+          ],
+          "program_id": "hochschule-fur-gestaltung-offenbach--art-education-secondary-schools--state-examination"
         },
         {
           "name": "Postgraduate Studies (Meisterschüler)",
@@ -1706,7 +2009,8 @@
           "specializations": [
             "Visual Communication",
             "Product Design"
-          ]
+          ],
+          "program_id": "hochschule-fur-gestaltung-offenbach--postgraduate-studies-meisterschuler--meisterschuler"
         },
         {
           "name": "Doctoral Studies (PhD)",
@@ -1724,7 +2028,8 @@
             "Design Theory",
             "Media Theory",
             "Art History"
-          ]
+          ],
+          "program_id": "hochschule-fur-gestaltung-offenbach--doctoral-studies-phd--dr-phil"
         },
         {
           "name": "Visual Communication",
@@ -1755,7 +2060,8 @@
               "Letter of motivation"
             ],
             "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          }
+          },
+          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--bachelor-of-arts"
         },
         {
           "name": "Visual Communication",
@@ -1786,7 +2092,8 @@
               "Letter of motivation"
             ],
             "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          }
+          },
+          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--master-of-arts"
         },
         {
           "name": "Product Design",
@@ -1816,7 +2123,8 @@
               "Letter of motivation"
             ],
             "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          }
+          },
+          "program_id": "hochschule-fur-gestaltung-offenbach--product-design--bachelor-of-arts"
         },
         {
           "name": "Product Design",
@@ -1846,7 +2154,8 @@
               "Letter of motivation"
             ],
             "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          }
+          },
+          "program_id": "hochschule-fur-gestaltung-offenbach--product-design--master-of-arts"
         },
         {
           "name": "Integrative Design",
@@ -1876,28 +2185,32 @@
               "Letter of motivation"
             ],
             "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          }
+          },
+          "program_id": "hochschule-fur-gestaltung-offenbach--integrative-design--master-of-arts"
         },
         {
           "name": "Visual Communication",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified"
         },
         {
           "name": "Product Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-gestaltung-offenbach--product-design--unspecified"
         },
         {
           "name": "Media",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-gestaltung-offenbach--media--unspecified"
         }
       ],
       "website": "https://www.hfg-offenbach.de/en/",
@@ -1951,7 +2264,20 @@
             "Painting",
             "Printmaking",
             "Drawing"
-          ]
+          ],
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphics--diploma",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/teaching/painting_printmaking/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
+          }
         },
         {
           "name": "Book Design/Graphic Design",
@@ -1970,7 +2296,20 @@
             "Typography",
             "Illustration",
             "Graphic Design"
-          ]
+          ],
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-design-graphic-design--diploma",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/teaching/bookdesign_graphicdesign/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
+          }
         },
         {
           "name": "Photography",
@@ -1988,7 +2327,20 @@
             "Documentary Photography",
             "Artistic Photography",
             "Applied Photography"
-          ]
+          ],
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--photography--diploma",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/teaching/photography/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
+          }
         },
         {
           "name": "Media Art",
@@ -2007,7 +2359,20 @@
             "Installation",
             "Performance",
             "Net Art"
-          ]
+          ],
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--diploma",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/teaching/mediaart/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
+          }
         },
         {
           "name": "Cultures of the Curatorial",
@@ -2025,7 +2390,20 @@
             "Curatorial Studies",
             "Art Theory",
             "Cultural Studies"
-          ]
+          ],
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--cultures-of-the-curatorial--master-of-arts",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/teaching/culturesofthecuratorial/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
+          }
         },
         {
           "name": "Book Art/Graphic Design",
@@ -2055,6 +2433,19 @@
               "Letter of motivation"
             ],
             "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          },
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-art-graphic-design--diploma",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/teaching/bookdesign_graphicdesign/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
           }
         },
         {
@@ -2084,6 +2475,19 @@
               "Letter of motivation"
             ],
             "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          },
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphic-arts--diploma",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/teaching/painting_printmaking/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
           }
         },
         {
@@ -2096,42 +2500,120 @@
             }
           },
           "language": "German",
-          "duration": "10 semesters"
+          "duration": "10 semesters",
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--diploma",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/study/degreeprogrammes/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
+          }
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--unspecified",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/study/degreeprogrammes/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
+          }
         },
         {
           "name": "Painting/Printmaking",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-printmaking--unspecified",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/teaching/painting_printmaking/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
+          }
         },
         {
           "name": "Photography",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--photography--unspecified",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/teaching/photography/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
+          }
         },
         {
           "name": "Media Art",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--unspecified",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/teaching/mediaart/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
+          }
         },
         {
           "name": "Book Design/Graphic Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-design-graphic-design--unspecified",
+          "details": {
+            "programUrl": "https://www.hgb-leipzig.de/en/teaching/bookdesign_graphicdesign/",
+            "applicationUrl": "https://www.hgb-leipzig.de/en/study/application/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:52:43.812Z",
+            "sourceUrl": "https://www.hgb-leipzig.de/en/"
+          }
         }
       ],
       "website": "https://www.hgb-leipzig.de/en/",
@@ -2185,7 +2667,8 @@
             "Sculpture",
             "Ceramics",
             "Media Art"
-          ]
+          ],
+          "program_id": "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts"
         },
         {
           "name": "Fine Arts",
@@ -2204,7 +2687,8 @@
             "Sculpture",
             "Ceramics",
             "Media Art"
-          ]
+          ],
+          "program_id": "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts"
         },
         {
           "name": "Communication Design",
@@ -2224,7 +2708,8 @@
             "Illustration",
             "Interaction Design",
             "Photography"
-          ]
+          ],
+          "program_id": "muthesius-kunsthochschule-kiel--communication-design--bachelor-of-arts"
         },
         {
           "name": "Communication Design",
@@ -2243,7 +2728,8 @@
             "Corporate Design",
             "Editorial Design",
             "Interaction Design"
-          ]
+          ],
+          "program_id": "muthesius-kunsthochschule-kiel--communication-design--master-of-arts"
         },
         {
           "name": "Industrial Design",
@@ -2261,7 +2747,8 @@
             "Product Design",
             "Interface Design",
             "Design Theory"
-          ]
+          ],
+          "program_id": "muthesius-kunsthochschule-kiel--industrial-design--bachelor-of-arts"
         },
         {
           "name": "Industrial Design",
@@ -2279,7 +2766,8 @@
             "Strategic Design",
             "Design Innovation",
             "Sustainable Design"
-          ]
+          ],
+          "program_id": "muthesius-kunsthochschule-kiel--industrial-design--master-of-arts"
         },
         {
           "name": "Spatial Strategies",
@@ -2298,7 +2786,8 @@
             "Scenography",
             "Interior Architecture",
             "Urban Strategies"
-          ]
+          ],
+          "program_id": "muthesius-kunsthochschule-kiel--spatial-strategies--master-of-arts"
         },
         {
           "name": "Design",
@@ -2327,7 +2816,8 @@
               "Letter of motivation"
             ],
             "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          }
+          },
+          "program_id": "muthesius-kunsthochschule-kiel--design--diploma"
         },
         {
           "name": "Fine Arts",
@@ -2339,28 +2829,32 @@
             }
           },
           "language": "German",
-          "duration": "10 semesters"
+          "duration": "10 semesters",
+          "program_id": "muthesius-kunsthochschule-kiel--fine-arts--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "muthesius-kunsthochschule-kiel--fine-arts--unspecified"
         },
         {
           "name": "Communication Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "muthesius-kunsthochschule-kiel--communication-design--unspecified"
         },
         {
           "name": "Industrial Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "muthesius-kunsthochschule-kiel--industrial-design--unspecified"
         }
       ],
       "website": "https://muthesius-kunsthochschule.de/en/",
@@ -2391,7 +2885,7 @@
       "stats": {
         "students": 4000,
         "acceptance_rate": 0.25,
-        "student_staff_ratio": 12.0,
+        "student_staff_ratio": 12,
         "founded": 1860
       },
       "city": "Weimar",
@@ -2417,7 +2911,8 @@
             "Installation",
             "Performance",
             "New Media"
-          ]
+          ],
+          "program_id": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts"
         },
         {
           "name": "Fine Art",
@@ -2437,7 +2932,8 @@
             "Installation",
             "Performance",
             "New Media"
-          ]
+          ],
+          "program_id": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts"
         },
         {
           "name": "Product Design",
@@ -2455,7 +2951,8 @@
             "Industrial Design",
             "Interaction Design",
             "Material Studies"
-          ]
+          ],
+          "program_id": "bauhaus-universitat-weimar--product-design--bachelor-of-arts"
         },
         {
           "name": "Product Design",
@@ -2473,7 +2970,8 @@
             "Design Research",
             "Sustainable Design",
             "Social Design"
-          ]
+          ],
+          "program_id": "bauhaus-universitat-weimar--product-design--master-of-arts"
         },
         {
           "name": "Visual Communication",
@@ -2493,7 +2991,8 @@
             "Photography",
             "Illustration",
             "Interaction Design"
-          ]
+          ],
+          "program_id": "bauhaus-universitat-weimar--visual-communication--bachelor-of-arts"
         },
         {
           "name": "Visual Communication",
@@ -2512,7 +3011,8 @@
             "Editorial Design",
             "Corporate Design",
             "Digital Media"
-          ]
+          ],
+          "program_id": "bauhaus-universitat-weimar--visual-communication--master-of-arts"
         },
         {
           "name": "Media Art and Design",
@@ -2535,7 +3035,8 @@
             "Interaction Design",
             "Experimental Radio",
             "Electroacoustic Composition"
-          ]
+          ],
+          "program_id": "bauhaus-universitat-weimar--media-art-and-design--bachelor-of-fine-arts"
         },
         {
           "name": "Product Design",
@@ -2563,7 +3064,8 @@
               "Letter of motivation"
             ],
             "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          }
+          },
+          "program_id": "bauhaus-universitat-weimar--product-design--master"
         },
         {
           "name": "Architecture",
@@ -2591,7 +3093,8 @@
               "Letter of motivation"
             ],
             "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          }
+          },
+          "program_id": "bauhaus-universitat-weimar--architecture--master"
         },
         {
           "name": "Human-Computer Interaction",
@@ -2613,28 +3116,32 @@
             "Human-Computer Interaction",
             "User Experience Design",
             "Interactive Systems"
-          ]
+          ],
+          "program_id": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science"
         },
         {
           "name": "Architecture",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "bauhaus-universitat-weimar--architecture--unspecified"
         },
         {
           "name": "Art and Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "bauhaus-universitat-weimar--art-and-design--unspecified"
         },
         {
           "name": "Media",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "bauhaus-universitat-weimar--media--unspecified"
         }
       ],
       "website": "https://www.uni-weimar.de/en/",
@@ -2656,7 +3163,7 @@
       "stats": {
         "students": 1800,
         "acceptance_rate": 0.35,
-        "student_staff_ratio": 12.0,
+        "student_staff_ratio": 12,
         "founded": 1973
       },
       "city": "Alfter",
@@ -2679,7 +3186,8 @@
             "Painting",
             "Sculpture",
             "Interdisciplinary Art"
-          ]
+          ],
+          "program_id": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts"
         },
         {
           "name": "Art Education",
@@ -2696,7 +3204,8 @@
           "specializations": [
             "Art Pedagogy",
             "Art Theory"
-          ]
+          ],
+          "program_id": "alanus-hochschule-fur-kunst-und-gesellschaft--art-education--master-of-education"
         }
       ],
       "website": "https://www.alanus.edu/en/",
@@ -2725,7 +3234,7 @@
       "stats": {
         "students": 400,
         "acceptance_rate": 0.28,
-        "student_staff_ratio": 11.0,
+        "student_staff_ratio": 11,
         "founded": 2001
       },
       "city": "Essen",
@@ -2748,7 +3257,8 @@
             "Painting",
             "Sculpture",
             "Media Art"
-          ]
+          ],
+          "program_id": "hochschule-der-bildenden-kunste-essen--fine-arts--bachelor-of-fine-arts"
         },
         {
           "name": "Fine Arts",
@@ -2760,14 +3270,16 @@
             }
           },
           "language": "German",
-          "duration": "10 semesters"
+          "duration": "10 semesters",
+          "program_id": "hochschule-der-bildenden-kunste-essen--fine-arts--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-der-bildenden-kunste-essen--fine-arts--unspecified"
         }
       ],
       "website": "https://www.hbk-essen.de/",
@@ -2797,7 +3309,7 @@
       "stats": {
         "students": 3500,
         "acceptance_rate": 0.45,
-        "student_staff_ratio": 15.0,
+        "student_staff_ratio": 15,
         "founded": 2006
       },
       "city": "Multiple Cities",
@@ -2825,7 +3337,20 @@
             "Graphic Design",
             "Animation",
             "Digital Media"
-          ]
+          ],
+          "program_id": "hochschule-macromedia--media-design--bachelor-of-arts",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:54:28.444Z",
+            "sourceUrl": "https://www.macromedia-fachhochschule.de/en/"
+          }
         }
       ],
       "website": "https://www.macromedia-fachhochschule.de/en/",
@@ -2847,7 +3372,7 @@
       "stats": {
         "students": 350,
         "acceptance_rate": 0.32,
-        "student_staff_ratio": 10.0,
+        "student_staff_ratio": 10,
         "founded": 1918
       },
       "city": "Stuttgart",
@@ -2875,7 +3400,20 @@
             "Design",
             "Art",
             "Media"
-          ]
+          ],
+          "program_id": "merz-akademie--design-art-and-media--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://www.merz-akademie.de/en/studium/bachelor/",
+            "applicationUrl": "https://www.merz-akademie.de/en/bewerbung-bachelor/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:55:05.397Z",
+            "sourceUrl": "https://www.merz-akademie.de/en/"
+          }
         }
       ],
       "website": "https://www.merz-akademie.de/en/",
@@ -2896,7 +3434,7 @@
       "stats": {
         "students": 350,
         "acceptance_rate": 0.18,
-        "student_staff_ratio": 8.0,
+        "student_staff_ratio": 8,
         "founded": 1966
       },
       "city": "Munich",
@@ -2920,28 +3458,80 @@
             "Screenwriting",
             "Cinematography",
             "Production"
-          ]
+          ],
+          "program_id": "hochschule-fur-fernsehen-und-film-munchen--film-and-television--diploma",
+          "details": {
+            "programUrl": "https://www.hff-muenchen.de/de_DE/lehrangebot-landingpage",
+            "applicationUrl": "https://www.hff-muenchen.de/de_DE/bewerbung",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:55:44.525Z",
+            "sourceUrl": "https://www.hff-muenchen.de/en/"
+          }
         },
         {
           "name": "Film Production",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-fernsehen-und-film-munchen--film-production--unspecified",
+          "details": {
+            "programUrl": "https://www.hff-muenchen.de/de_DE/abt-5-produktion-und-medienwirtschaft",
+            "applicationUrl": "https://www.hff-muenchen.de/de_DE/bewerbung",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:55:44.525Z",
+            "sourceUrl": "https://www.hff-muenchen.de/en/"
+          }
         },
         {
           "name": "Screenwriting",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-fernsehen-und-film-munchen--screenwriting--unspecified",
+          "details": {
+            "programUrl": "https://www.hff-muenchen.de/de_DE/abt-6-drehbuch",
+            "applicationUrl": "https://www.hff-muenchen.de/de_DE/bewerbung",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:55:44.525Z",
+            "sourceUrl": "https://www.hff-muenchen.de/en/"
+          }
         },
         {
           "name": "Cinematography",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-fernsehen-und-film-munchen--cinematography--unspecified",
+          "details": {
+            "programUrl": "https://www.hff-muenchen.de/de_DE/abt-7-bildgestaltung",
+            "applicationUrl": "https://www.hff-muenchen.de/de_DE/bewerbung",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:55:44.525Z",
+            "sourceUrl": "https://www.hff-muenchen.de/en/"
+          }
         }
       ],
       "website": "https://www.hff-muenchen.de/en/",
@@ -2972,7 +3562,7 @@
       "stats": {
         "students": 800,
         "acceptance_rate": 0.18,
-        "student_staff_ratio": 7.0,
+        "student_staff_ratio": 7,
         "founded": 1954
       },
       "city": "Potsdam",
@@ -2995,7 +3585,20 @@
             "Feature Film",
             "Documentary",
             "Television"
-          ]
+          ],
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--film-directing--diploma",
+          "details": {
+            "programUrl": "https://www.filmuniversitaet.de/en/studies/study-programs/bachelor-programs/directing",
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         },
         {
           "name": "Screenwriting/Dramaturgy",
@@ -3012,7 +3615,20 @@
           "specializations": [
             "Screenwriting",
             "Dramaturgy"
-          ]
+          ],
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--screenwriting-dramaturgy--diploma",
+          "details": {
+            "programUrl": "https://www.filmuniversitaet.de/en/studies/study-programs/bachelor-programs/screenwriting-dramaturgy",
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         },
         {
           "name": "Animation",
@@ -3030,7 +3646,20 @@
             "2D Animation",
             "3D Animation",
             "Experimental Animation"
-          ]
+          ],
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--animation--diploma",
+          "details": {
+            "programUrl": "https://www.filmuniversitaet.de/en/studies/study-programs/bachelor-programs/animation",
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         },
         {
           "name": "Cinematography",
@@ -3048,7 +3677,20 @@
             "Cinematography",
             "Lighting",
             "Visual Storytelling"
-          ]
+          ],
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--cinematography--diploma",
+          "details": {
+            "programUrl": "https://www.filmuniversitaet.de/en/studies/study-programs/bachelor-programs/cinematography",
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         },
         {
           "name": "Film and Television Production",
@@ -3065,7 +3707,20 @@
           "specializations": [
             "Production",
             "Media Management"
-          ]
+          ],
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--film-and-television-production--diploma",
+          "details": {
+            "programUrl": "https://www.filmuniversitaet.de/en/studies/study-programs/bachelor-programs/film-and-television-production",
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         },
         {
           "name": "Sound",
@@ -3082,7 +3737,20 @@
           "specializations": [
             "Sound Design",
             "Audio Engineering"
-          ]
+          ],
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--sound--diploma",
+          "details": {
+            "programUrl": "https://www.filmuniversitaet.de/en/studies/study-programs/bachelor-programs/sound-design-for-audiovisual-media",
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         },
         {
           "name": "Editing",
@@ -3099,7 +3767,20 @@
           "specializations": [
             "Editing",
             "Post-Production"
-          ]
+          ],
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--editing--diploma",
+          "details": {
+            "programUrl": "https://www.filmuniversitaet.de/en/studies/study-programs/bachelor-programs/editing",
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         },
         {
           "name": "Media Studies",
@@ -3117,7 +3798,20 @@
             "Film Studies",
             "Media Theory",
             "Cultural Studies"
-          ]
+          ],
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--media-studies--master-of-arts",
+          "details": {
+            "programUrl": "https://www.filmuniversitaet.de/en/studies/study-programs/master-programs/media-studies",
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         },
         {
           "name": "Film Directing",
@@ -3146,6 +3840,19 @@
               "CV with relevant experience"
             ],
             "format": "Digital submission (video link or upload, max 500MB)"
+          },
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--film-directing--master",
+          "details": {
+            "programUrl": "https://www.filmuniversitaet.de/en/studies/study-programs/master-programs/directing",
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
           }
         },
         {
@@ -3153,28 +3860,80 @@
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         },
         {
           "name": "Animation",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         },
         {
           "name": "Screenwriting",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--screenwriting--unspecified",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         },
         {
           "name": "Acting",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "filmuniversitat-babelsberg-konrad-wolf--acting--unspecified",
+          "details": {
+            "programUrl": "https://www.filmuniversitaet.de/en/studies/study-programs/bachelor-programs/acting",
+            "applicationUrl": "https://www.filmuniversitaet.de/en/studies/application/application-process",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:44.974Z",
+            "sourceUrl": "https://www.filmuniversitaet.de/en/"
+          }
         }
       ],
       "website": "https://www.filmuniversitaet.de/en/",
@@ -3205,7 +3964,7 @@
       "stats": {
         "students": 700,
         "acceptance_rate": 0.25,
-        "student_staff_ratio": 10.0,
+        "student_staff_ratio": 10,
         "founded": 1971
       },
       "city": "Schwäbisch Gmünd",
@@ -3229,7 +3988,20 @@
             "Interaction Design",
             "User Experience",
             "Digital Product Design"
-          ]
+          ],
+          "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--interaktionsgestaltung--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://www.hfg-gmuend.de/en/studium/interaction-design",
+            "applicationUrl": "https://www.hfg-gmuend.de/en/bewerben/application-bachelors",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:58.386Z",
+            "sourceUrl": "https://www.hfg-gmuend.de/en/"
+          }
         },
         {
           "name": "Kommunikationsgestaltung",
@@ -3247,7 +4019,20 @@
             "Communication Design",
             "Visual Communication",
             "Media Design"
-          ]
+          ],
+          "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--kommunikationsgestaltung--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://www.hfg-gmuend.de/en/studium/communication-design",
+            "applicationUrl": "https://www.hfg-gmuend.de/en/bewerben/application-bachelors",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:58.386Z",
+            "sourceUrl": "https://www.hfg-gmuend.de/en/"
+          }
         },
         {
           "name": "Produktgestaltung",
@@ -3265,7 +4050,20 @@
             "Product Design",
             "Industrial Design",
             "Innovation"
-          ]
+          ],
+          "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--produktgestaltung--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://www.hfg-gmuend.de/en/studium/product-design",
+            "applicationUrl": "https://www.hfg-gmuend.de/en/bewerben/application-bachelors",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:58.386Z",
+            "sourceUrl": "https://www.hfg-gmuend.de/en/"
+          }
         },
         {
           "name": "Strategische Gestaltung",
@@ -3283,7 +4081,20 @@
             "Strategic Design",
             "Design Management",
             "Innovation"
-          ]
+          ],
+          "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--strategische-gestaltung--master-of-arts",
+          "details": {
+            "programUrl": "https://www.hfg-gmuend.de/en/studium/strategic-design",
+            "applicationUrl": "https://www.hfg-gmuend.de/en/bewerben/application-master",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:58.386Z",
+            "sourceUrl": "https://www.hfg-gmuend.de/en/"
+          }
         },
         {
           "name": "Communication Design",
@@ -3295,28 +4106,80 @@
             }
           },
           "language": "German",
-          "duration": "7 semesters"
+          "duration": "7 semesters",
+          "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://www.hfg-gmuend.de/en/studium/communication-design",
+            "applicationUrl": "https://www.hfg-gmuend.de/en/bewerben/application-bachelors",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:58.386Z",
+            "sourceUrl": "https://www.hfg-gmuend.de/en/"
+          }
         },
         {
           "name": "Communication Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--unspecified",
+          "details": {
+            "programUrl": "https://www.hfg-gmuend.de/en/studium/communication-design",
+            "applicationUrl": "https://www.hfg-gmuend.de/en/bewerben/application-bachelors",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:58.386Z",
+            "sourceUrl": "https://www.hfg-gmuend.de/en/"
+          }
         },
         {
           "name": "Interaction Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
+          "details": {
+            "programUrl": "https://www.hfg-gmuend.de/en/studium/interaction-design",
+            "applicationUrl": "https://www.hfg-gmuend.de/en/bewerben/application-bachelors",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:58.386Z",
+            "sourceUrl": "https://www.hfg-gmuend.de/en/"
+          }
         },
         {
           "name": "Product Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-fur-gestaltung-schwabisch-gmund--product-design--unspecified",
+          "details": {
+            "programUrl": "https://www.hfg-gmuend.de/en/studium/product-design",
+            "applicationUrl": "https://www.hfg-gmuend.de/en/bewerben/application-bachelors",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:56:58.386Z",
+            "sourceUrl": "https://www.hfg-gmuend.de/en/"
+          }
         }
       ],
       "website": "https://www.hfg-gmuend.de/en/",
@@ -3338,7 +4201,7 @@
       "stats": {
         "students": 350,
         "acceptance_rate": 0.4,
-        "student_staff_ratio": 8.0,
+        "student_staff_ratio": 8,
         "founded": 1999
       },
       "city": "Berlin",
@@ -3362,7 +4225,20 @@
             "Philosophy and Ethics",
             "Art History and Visual Culture",
             "Social and Political Thought"
-          ]
+          ],
+          "program_id": "bard-college-berlin--humanities-the-arts-and-social-thought--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://berlin.bard.edu/academics/humanities-the-arts-and-social-thought/",
+            "applicationUrl": "https://berlin.bard.edu/admissions/how-to-apply/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:57:40.334Z",
+            "sourceUrl": "https://berlin.bard.edu/"
+          }
         },
         {
           "name": "Economics, Politics, and Social Thought",
@@ -3380,7 +4256,20 @@
             "Political Economy",
             "Social Theory",
             "International Relations"
-          ]
+          ],
+          "program_id": "bard-college-berlin--economics-politics-and-social-thought--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://berlin.bard.edu/academics/economics-politics-and-social-thought/",
+            "applicationUrl": "https://berlin.bard.edu/admissions/how-to-apply/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T15:57:40.334Z",
+            "sourceUrl": "https://berlin.bard.edu/"
+          }
         }
       ],
       "website": "https://berlin.bard.edu/",
@@ -3402,7 +4291,7 @@
       "stats": {
         "students": 200,
         "acceptance_rate": 0.5,
-        "student_staff_ratio": 10.0,
+        "student_staff_ratio": 10,
         "founded": 1990
       },
       "city": "Frankfurt",
@@ -3427,7 +4316,8 @@
             "Sculpture",
             "New Media",
             "Conceptual Art"
-          ]
+          ],
+          "program_id": "academy-of-visual-arts-frankfurt--visual-arts--bachelor-of-arts"
         },
         {
           "name": "Communication Design",
@@ -3446,7 +4336,8 @@
             "Typography",
             "Illustration",
             "Digital Communication"
-          ]
+          ],
+          "program_id": "academy-of-visual-arts-frankfurt--communication-design--bachelor-of-arts"
         },
         {
           "name": "Fine Arts",
@@ -3458,14 +4349,16 @@
             }
           },
           "language": "German",
-          "duration": "10 semesters"
+          "duration": "10 semesters",
+          "program_id": "academy-of-visual-arts-frankfurt--fine-arts--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "academy-of-visual-arts-frankfurt--fine-arts--unspecified"
         }
       ],
       "website": "https://www.ava-frankfurt.de/",
@@ -3488,7 +4381,7 @@
       "stats": {
         "students": 4000,
         "acceptance_rate": 0.6,
-        "student_staff_ratio": 16.0,
+        "student_staff_ratio": 16,
         "founded": 1991
       },
       "city": "Potsdam",
@@ -3512,7 +4405,8 @@
             "User Experience",
             "Interaction Design",
             "Digital Media"
-          ]
+          ],
+          "program_id": "fachhochschule-potsdam--interface-design--bachelor-of-arts"
         },
         {
           "name": "Communication Design",
@@ -3531,7 +4425,8 @@
             "Graphic Design",
             "Typography",
             "Illustration"
-          ]
+          ],
+          "program_id": "fachhochschule-potsdam--communication-design--bachelor-of-arts"
         },
         {
           "name": "Product Design",
@@ -3549,7 +4444,8 @@
             "Product Design",
             "Industrial Design",
             "Sustainable Design"
-          ]
+          ],
+          "program_id": "fachhochschule-potsdam--product-design--bachelor-of-arts"
         },
         {
           "name": "European Media Studies (with University of Potsdam)",
@@ -3567,7 +4463,8 @@
             "Media Culture",
             "Media Theory",
             "European Media Systems"
-          ]
+          ],
+          "program_id": "fachhochschule-potsdam--european-media-studies-with-university-of-potsdam--master-of-arts"
         }
       ],
       "website": "https://www.fh-potsdam.de/",
@@ -3591,7 +4488,7 @@
       "stats": {
         "students": 17000,
         "acceptance_rate": 0.38,
-        "student_staff_ratio": 15.0,
+        "student_staff_ratio": 15,
         "founded": 1971
       },
       "city": "Darmstadt",
@@ -3614,7 +4511,8 @@
             "Media",
             "Communication",
             "Digital Storytelling"
-          ]
+          ],
+          "program_id": "hochschule-darmstadt--media-and-communication--bachelor-of-arts"
         },
         {
           "name": "Animation and Game",
@@ -3632,7 +4530,8 @@
             "Animation",
             "Game Design",
             "Interactive Media"
-          ]
+          ],
+          "program_id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts"
         },
         {
           "name": "Motion Pictures",
@@ -3650,7 +4549,8 @@
             "Film",
             "Television",
             "Digital Video"
-          ]
+          ],
+          "program_id": "hochschule-darmstadt--motion-pictures--bachelor-of-arts"
         },
         {
           "name": "Communication Design",
@@ -3668,7 +4568,8 @@
             "Graphic Design",
             "Branding",
             "Visual Communication"
-          ]
+          ],
+          "program_id": "hochschule-darmstadt--communication-design--bachelor-of-arts"
         },
         {
           "name": "Expanded Realities",
@@ -3686,7 +4587,8 @@
             "Virtual Reality",
             "Augmented Reality",
             "Mixed Reality"
-          ]
+          ],
+          "program_id": "hochschule-darmstadt--expanded-realities--master-of-arts"
         },
         {
           "name": "Interactive Media Design",
@@ -3704,7 +4606,8 @@
             "Interactive Design",
             "User Experience",
             "Digital Product Design"
-          ]
+          ],
+          "program_id": "hochschule-darmstadt--interactive-media-design--bachelor-of-arts"
         },
         {
           "name": "Digital Media",
@@ -3722,14 +4625,16 @@
             "Media Informatics",
             "Human-Computer Interaction",
             "Interactive Media"
-          ]
+          ],
+          "program_id": "hochschule-darmstadt--digital-media--master-of-science"
         },
         {
           "name": "Digital Media",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hochschule-darmstadt--digital-media--unspecified"
         }
       ],
       "website": "https://www.h-da.de/",
@@ -3752,7 +4657,7 @@
       "stats": {
         "students": 7000,
         "acceptance_rate": 0.6,
-        "student_staff_ratio": 18.0,
+        "student_staff_ratio": 18,
         "founded": 2009
       },
       "city": "Kleve/Kamp-Lintfort",
@@ -3781,7 +4686,8 @@
             "Communication",
             "Digital Media",
             "Visual Communication"
-          ]
+          ],
+          "program_id": "hochschule-rhein-waal--design-and-communication--bachelor-of-arts"
         },
         {
           "name": "Media Communication and Computer Science",
@@ -3799,7 +4705,8 @@
             "Media Studies",
             "Computer Science",
             "Digital Communication"
-          ]
+          ],
+          "program_id": "hochschule-rhein-waal--media-communication-and-computer-science--bachelor-of-science"
         },
         {
           "name": "International Relations",
@@ -3816,7 +4723,8 @@
           "specializations": [
             "International Relations",
             "Political Communication"
-          ]
+          ],
+          "program_id": "hochschule-rhein-waal--international-relations--bachelor-of-arts"
         },
         {
           "name": "Sustainable Design",
@@ -3834,7 +4742,8 @@
             "Sustainable Design",
             "Innovation",
             "Environmental Communication"
-          ]
+          ],
+          "program_id": "hochschule-rhein-waal--sustainable-design--master-of-arts"
         }
       ],
       "website": "https://www.hochschule-rhein-waal.de/",
@@ -3857,7 +4766,7 @@
       "stats": {
         "students": 35500,
         "acceptance_rate": 0.38,
-        "student_staff_ratio": 20.0,
+        "student_staff_ratio": 20,
         "founded": 1879
       },
       "city": "Berlin",
@@ -3881,7 +4790,8 @@
             "Digital Systems",
             "Creative Engineering",
             "Interactive Systems"
-          ]
+          ],
+          "program_id": "technische-universitat-berlin--media-technology--bachelor-of-science"
         },
         {
           "name": "Human-Computer Interaction",
@@ -3899,7 +4809,8 @@
             "User Interface Design",
             "User Experience Research",
             "Interaction Design"
-          ]
+          ],
+          "program_id": "technische-universitat-berlin--human-computer-interaction--master-of-science"
         },
         {
           "name": "Design and Computation",
@@ -3917,7 +4828,8 @@
             "Computational Design",
             "Digital Fabrication",
             "Media Architecture"
-          ]
+          ],
+          "program_id": "technische-universitat-berlin--design-and-computation--master-of-science"
         },
         {
           "name": "Audiovisual Media Culture and Communication",
@@ -3935,7 +4847,8 @@
             "Media Theory",
             "Film Studies",
             "Communication Science"
-          ]
+          ],
+          "program_id": "technische-universitat-berlin--audiovisual-media-culture-and-communication--master-of-arts"
         }
       ],
       "website": "https://www.tu.berlin/",
@@ -3958,7 +4871,7 @@
       "stats": {
         "students": 8000,
         "acceptance_rate": 0.55,
-        "student_staff_ratio": 17.0,
+        "student_staff_ratio": 17,
         "founded": 1991
       },
       "city": "Dessau/Köthen/Bernburg",
@@ -3982,7 +4895,8 @@
             "Visual Communication",
             "Digital Media",
             "Exhibition Design"
-          ]
+          ],
+          "program_id": "hochschule-anhalt--design-integrated-design--bachelor-of-arts"
         },
         {
           "name": "Design (Master)",
@@ -4000,7 +4914,8 @@
             "Integrated Design",
             "Design Research",
             "Sustainable Design"
-          ]
+          ],
+          "program_id": "hochschule-anhalt--design-master--master-of-arts"
         },
         {
           "name": "Architecture (Dessau International Architecture Graduate School - DIA)",
@@ -4018,7 +4933,8 @@
             "Architectural Design",
             "Urban Design",
             "Computational Architecture"
-          ]
+          ],
+          "program_id": "hochschule-anhalt--architecture-dessau-international-architecture-graduate-school-dia--master-of-arts"
         }
       ],
       "website": "https://www.hs-anhalt.de/",
@@ -4040,7 +4956,7 @@
       "stats": {
         "students": 12000,
         "acceptance_rate": 0.6,
-        "student_staff_ratio": 23.0,
+        "student_staff_ratio": 23,
         "founded": 1473,
         "re_established": 1970
       },
@@ -4065,7 +4981,20 @@
             "Communication",
             "Digital Culture",
             "Media History"
-          ]
+          ],
+          "program_id": "universitat-trier--media-studies--bachelor-of-arts",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:01:42.271Z",
+            "sourceUrl": "https://www.uni-trier.de/"
+          }
         },
         {
           "name": "Media Studies",
@@ -4083,7 +5012,20 @@
             "Media Theory",
             "Media Analysis",
             "Digital Media Practices"
-          ]
+          ],
+          "program_id": "universitat-trier--media-studies--master-of-arts",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:01:42.271Z",
+            "sourceUrl": "https://www.uni-trier.de/"
+          }
         },
         {
           "name": "Digital Humanities",
@@ -4101,7 +5043,20 @@
             "Computational Linguistics",
             "Digital Text Analysis",
             "Cultural Heritage Digitization"
-          ]
+          ],
+          "program_id": "universitat-trier--digital-humanities--master-of-arts",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:01:42.271Z",
+            "sourceUrl": "https://www.uni-trier.de/"
+          }
         }
       ],
       "website": "https://www.uni-trier.de/",
@@ -4123,7 +5078,7 @@
       "stats": {
         "students": 19000,
         "acceptance_rate": 0.6,
-        "student_staff_ratio": 22.0,
+        "student_staff_ratio": 22,
         "founded": 1972
       },
       "city": "Siegen",
@@ -4147,7 +5102,8 @@
             "Communication",
             "Digital Culture",
             "Media Practice"
-          ]
+          ],
+          "program_id": "universitat-siegen--media-studies--bachelor-of-arts"
         },
         {
           "name": "Media Studies",
@@ -4165,7 +5121,8 @@
             "Media Theory",
             "Media Research",
             "Digital Media Culture"
-          ]
+          ],
+          "program_id": "universitat-siegen--media-studies--master-of-arts"
         },
         {
           "name": "Human Computer Interaction",
@@ -4183,7 +5140,8 @@
             "Interaction Design",
             "User Experience",
             "Usability Engineering"
-          ]
+          ],
+          "program_id": "universitat-siegen--human-computer-interaction--master-of-science"
         },
         {
           "name": "Human-Computer Interaction",
@@ -4205,7 +5163,8 @@
             "Interactive Technologies",
             "User-Centered Design",
             "Usability Engineering"
-          ]
+          ],
+          "program_id": "universitat-siegen--human-computer-interaction--master-of-science--2"
         }
       ],
       "website": "https://www.uni-siegen.de/",
@@ -4228,7 +5187,7 @@
       "stats": {
         "students": 6000,
         "acceptance_rate": 0.55,
-        "student_staff_ratio": 20.0,
+        "student_staff_ratio": 20,
         "founded": 1994
       },
       "city": "Ingolstadt",
@@ -4251,7 +5210,8 @@
             "Design",
             "User Experience",
             "Digital Product Design"
-          ]
+          ],
+          "program_id": "technische-hochschule-ingolstadt--design-and-user-experience--bachelor-of-arts"
         },
         {
           "name": "User Experience Design",
@@ -4269,7 +5229,8 @@
             "User Experience",
             "Usability Engineering",
             "Digital Innovation"
-          ]
+          ],
+          "program_id": "technische-hochschule-ingolstadt--user-experience-design--master-of-arts"
         },
         {
           "name": "Mobility and Transportation Design",
@@ -4287,7 +5248,8 @@
             "Mobility Design",
             "Transportation Design",
             "Automotive Design"
-          ]
+          ],
+          "program_id": "technische-hochschule-ingolstadt--mobility-and-transportation-design--bachelor-of-arts"
         },
         {
           "name": "User Experience Design",
@@ -4309,14 +5271,16 @@
             "User Experience Design",
             "Interface Design",
             "Human-Computer Interaction"
-          ]
+          ],
+          "program_id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science"
         },
         {
           "name": "User Experience Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "technische-hochschule-ingolstadt--user-experience-design--unspecified"
         }
       ],
       "website": "https://www.thi.de/",
@@ -4339,7 +5303,7 @@
       "stats": {
         "students": 6500,
         "acceptance_rate": 0.5,
-        "student_staff_ratio": 19.0,
+        "student_staff_ratio": 19,
         "founded": 1971
       },
       "city": "Augsburg",
@@ -4362,7 +5326,8 @@
             "Interactive Media",
             "Digital Communication",
             "Media Art"
-          ]
+          ],
+          "program_id": "technische-hochschule-augsburg--interactive-media--bachelor-of-arts"
         },
         {
           "name": "Communication Design",
@@ -4380,7 +5345,8 @@
             "Graphic Design",
             "Visual Communication",
             "Typography"
-          ]
+          ],
+          "program_id": "technische-hochschule-augsburg--communication-design--bachelor-of-arts"
         },
         {
           "name": "Interactive Media Systems",
@@ -4398,7 +5364,8 @@
             "Interactive Media",
             "Digital Systems",
             "User Experience"
-          ]
+          ],
+          "program_id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science"
         },
         {
           "name": "Interactive Media Systems",
@@ -4413,14 +5380,16 @@
             "Interactive Media",
             "System Design",
             "Media Technology"
-          ]
+          ],
+          "program_id": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts"
         },
         {
           "name": "Interactive Media Systems",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "technische-hochschule-augsburg--interactive-media-systems--unspecified"
         }
       ],
       "website": "https://www.tha.de/",
@@ -4443,7 +5412,7 @@
       "stats": {
         "students": 11000,
         "acceptance_rate": 0.6,
-        "student_staff_ratio": 22.0,
+        "student_staff_ratio": 22,
         "founded": 1978
       },
       "city": "Passau",
@@ -4467,7 +5436,8 @@
             "Communication Science",
             "Digital Culture",
             "Media Economics"
-          ]
+          ],
+          "program_id": "universitat-passau--media-and-communication--bachelor-of-arts"
         },
         {
           "name": "Media and Communication",
@@ -4485,7 +5455,8 @@
             "Media Research",
             "Strategic Communication",
             "Media Management"
-          ]
+          ],
+          "program_id": "universitat-passau--media-and-communication--master-of-arts"
         },
         {
           "name": "Digital Humanities",
@@ -4503,7 +5474,8 @@
             "Digital Text Analysis",
             "Cultural Data",
             "Computational Linguistics"
-          ]
+          ],
+          "program_id": "universitat-passau--digital-humanities--bachelor-of-arts"
         },
         {
           "name": "Computer Science with specialization in Human-Computer Interaction",
@@ -4522,14 +5494,16 @@
             "User-Centered Design",
             "Interactive System Development",
             "Usability Evaluation"
-          ]
+          ],
+          "program_id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science"
         },
         {
           "name": "Computer Science with specialization in Human-Computer Interaction",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--unspecified"
         }
       ],
       "website": "https://www.uni-passau.de/",
@@ -4551,7 +5525,7 @@
       "stats": {
         "students": 28000,
         "acceptance_rate": 0.65,
-        "student_staff_ratio": 25.0,
+        "student_staff_ratio": 25,
         "founded": 1402
       },
       "city": "Würzburg",
@@ -4575,7 +5549,8 @@
             "Communication",
             "Digital Culture",
             "Media Psychology"
-          ]
+          ],
+          "program_id": "universitat-wurzburg--media-communication--bachelor-of-arts"
         },
         {
           "name": "Media Communication",
@@ -4593,7 +5568,8 @@
             "Media Research",
             "Communication Strategies",
             "Media Effects"
-          ]
+          ],
+          "program_id": "universitat-wurzburg--media-communication--master-of-arts"
         },
         {
           "name": "Human-Computer Systems",
@@ -4611,7 +5587,8 @@
             "Human-Computer Interaction",
             "Usability Engineering",
             "Cognitive Psychology"
-          ]
+          ],
+          "program_id": "universitat-wurzburg--human-computer-systems--master-of-science"
         },
         {
           "name": "Human-Computer Interaction",
@@ -4629,14 +5606,16 @@
             "Interactive Systems",
             "Usability Engineering",
             "Cognitive Psychology"
-          ]
+          ],
+          "program_id": "universitat-wurzburg--human-computer-interaction--master-of-science"
         },
         {
           "name": "Human-Computer Interaction",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "universitat-wurzburg--human-computer-interaction--unspecified"
         }
       ],
       "website": "https://www.uni-wuerzburg.de/",
@@ -4659,7 +5638,7 @@
       "stats": {
         "students": 47000,
         "acceptance_rate": 0.4,
-        "student_staff_ratio": 20.0,
+        "student_staff_ratio": 20,
         "founded": 1870
       },
       "city": "Aachen",
@@ -4683,7 +5662,8 @@
             "Media Informatics",
             "Digital Media",
             "Human-Computer Interaction"
-          ]
+          ],
+          "program_id": "rwth-aachen-university--media-informatics--bachelor-of-science"
         },
         {
           "name": "Media Informatics",
@@ -4701,7 +5681,8 @@
             "Media Informatics",
             "Interactive Systems",
             "Digital Media"
-          ]
+          ],
+          "program_id": "rwth-aachen-university--media-informatics--master-of-science"
         },
         {
           "name": "Communication Engineering",
@@ -4719,7 +5700,8 @@
             "Communication Engineering",
             "Media Technology",
             "Digital Networks"
-          ]
+          ],
+          "program_id": "rwth-aachen-university--communication-engineering--master-of-science"
         },
         {
           "name": "Human-Technology Interaction and Communication",
@@ -4734,14 +5716,16 @@
             "Human-Technology Interaction",
             "Communication Science",
             "Interdisciplinary Research"
-          ]
+          ],
+          "program_id": "rwth-aachen-university--human-technology-interaction-and-communication--master-of-science"
         },
         {
           "name": "Human-Technology Interaction and Communication",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "rwth-aachen-university--human-technology-interaction-and-communication--unspecified"
         }
       ],
       "website": "https://www.rwth-aachen.de/",
@@ -4764,7 +5748,7 @@
       "stats": {
         "students": 48000,
         "acceptance_rate": 0.35,
-        "student_staff_ratio": 18.0,
+        "student_staff_ratio": 18,
         "founded": 1868
       },
       "city": "Munich",
@@ -4788,7 +5772,8 @@
             "Digital Technology",
             "Creative Industries",
             "Media Systems"
-          ]
+          ],
+          "program_id": "technische-universitat-munchen--media-engineering--bachelor-of-science"
         },
         {
           "name": "Informatics: Games Engineering",
@@ -4807,7 +5792,8 @@
             "Computer Graphics",
             "Simulation",
             "Artificial Intelligence in Games"
-          ]
+          ],
+          "program_id": "technische-universitat-munchen--informatics-games-engineering--bachelor-of-science"
         },
         {
           "name": "Computational Science and Engineering",
@@ -4826,7 +5812,8 @@
             "Data Analysis",
             "Simulation",
             "High-Performance Computing"
-          ]
+          ],
+          "program_id": "technische-universitat-munchen--computational-science-and-engineering--master-of-science"
         },
         {
           "name": "Management and Technology (with focus on Digital Technologies)",
@@ -4844,7 +5831,8 @@
             "Digital Innovation",
             "Technology Management",
             "Entrepreneurship"
-          ]
+          ],
+          "program_id": "technische-universitat-munchen--management-and-technology-with-focus-on-digital-technologies--master-of-science"
         }
       ],
       "website": "https://www.tum.de/",
@@ -4866,7 +5854,7 @@
       "stats": {
         "students": 320,
         "acceptance_rate": 0.2,
-        "student_staff_ratio": 8.0,
+        "student_staff_ratio": 8,
         "founded": 1991
       },
       "city": "Cologne",
@@ -4890,7 +5878,20 @@
             "Communication Design",
             "Spatial Design",
             "Design Theory"
-          ]
+          ],
+          "program_id": "koln-international-school-of-design--integrated-design--bachelor-of-arts",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": "https://kisd.de/en/application/bachelor-integrated-design-en/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:07:21.335Z",
+            "sourceUrl": "https://kisd.de/en/"
+          }
         },
         {
           "name": "Integrated Design Research",
@@ -4909,7 +5910,20 @@
             "Strategic Design",
             "Social Design",
             "Sustainable Design"
-          ]
+          ],
+          "program_id": "koln-international-school-of-design--integrated-design-research--master-of-arts",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": "https://kisd.de/en/application/ma-integrated-design/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:07:21.335Z",
+            "sourceUrl": "https://kisd.de/en/"
+          }
         },
         {
           "name": "Communication Design",
@@ -4928,7 +5942,20 @@
             "Typography",
             "Digital Media",
             "Brand Design"
-          ]
+          ],
+          "program_id": "koln-international-school-of-design--communication-design--bachelor-of-arts",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:07:21.335Z",
+            "sourceUrl": "https://kisd.de/en/"
+          }
         }
       ],
       "website": "https://kisd.de/en/",
@@ -4950,7 +5977,7 @@
       "stats": {
         "students": 580,
         "acceptance_rate": 0.25,
-        "student_staff_ratio": 9.0,
+        "student_staff_ratio": 9,
         "founded": 1855
       },
       "city": "Reutlingen",
@@ -4974,7 +6001,20 @@
             "Communication Design",
             "Textile Design",
             "Design Theory"
-          ]
+          ],
+          "program_id": "hochschule-reutlingen--integrated-design--bachelor-of-arts",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:07:55.172Z",
+            "sourceUrl": "https://www.reutlingen-university.de/"
+          }
         },
         {
           "name": "Textile Design",
@@ -4993,7 +6033,20 @@
             "Smart Textiles",
             "Sustainable Textiles",
             "Fashion Design"
-          ]
+          ],
+          "program_id": "hochschule-reutlingen--textile-design--master-of-arts",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:07:55.172Z",
+            "sourceUrl": "https://www.reutlingen-university.de/"
+          }
         }
       ],
       "website": "https://www.reutlingen-university.de/",
@@ -5039,7 +6092,20 @@
             "Sculpture",
             "Photography",
             "Performance"
-          ]
+          ],
+          "program_id": "kunsthochschule-mainz--fine-arts--diploma",
+          "details": {
+            "programUrl": "https://kunsthochschule-mainz.de/studium/freie-bildende-kunst-2/studiengang-freie-bildende-kunst/",
+            "applicationUrl": "https://kunsthochschule-mainz.de/bewerbung/freie-bildende-kunst/bewerbung-freie-bildende-kunst/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-04-19T16:08:41.054Z",
+            "sourceUrl": "https://kunsthochschule-mainz.de/"
+          }
         },
         {
           "name": "Visual Communication",
@@ -5058,14 +6124,28 @@
             "Typography",
             "Illustration",
             "Media Design"
-          ]
+          ],
+          "program_id": "kunsthochschule-mainz--visual-communication--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "kunsthochschule-mainz--fine-arts--unspecified",
+          "details": {
+            "programUrl": "https://kunsthochschule-mainz.de/studium/freie-bildende-kunst-2/",
+            "applicationUrl": "https://kunsthochschule-mainz.de/bewerbung/freie-bildende-kunst/",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-04-19T16:08:41.054Z",
+            "sourceUrl": "https://kunsthochschule-mainz.de/"
+          }
         }
       ],
       "website": "https://kunsthochschule-mainz.de/",
@@ -5087,7 +6167,7 @@
       "stats": {
         "students": 520,
         "acceptance_rate": 0.16,
-        "student_staff_ratio": 8.0,
+        "student_staff_ratio": 8,
         "founded": 1777
       },
       "city": "Kassel",
@@ -5111,7 +6191,8 @@
             "Sculpture",
             "Photography",
             "New Media"
-          ]
+          ],
+          "program_id": "kunsthochschule-kassel--fine-arts--diploma"
         },
         {
           "name": "Visual Communication",
@@ -5130,14 +6211,16 @@
             "Typography",
             "Illustration",
             "Media Art"
-          ]
+          ],
+          "program_id": "kunsthochschule-kassel--visual-communication--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "kunsthochschule-kassel--fine-arts--unspecified"
         }
       ],
       "website": "https://kunsthochschulekassel.de/",
@@ -5183,7 +6266,8 @@
             "Product Design",
             "Industrial Design",
             "Design Engineering"
-          ]
+          ],
+          "program_id": "hochschule-pforzheim--industrial-design--bachelor-of-arts"
         },
         {
           "name": "Mode",
@@ -5201,7 +6285,8 @@
             "Fashion Design",
             "Textile Design",
             "Fashion Technology"
-          ]
+          ],
+          "program_id": "hochschule-pforzheim--mode--bachelor-of-arts"
         },
         {
           "name": "Schmuck",
@@ -5219,7 +6304,8 @@
             "Jewelry Design",
             "Metalsmithing",
             "Accessory Design"
-          ]
+          ],
+          "program_id": "hochschule-pforzheim--schmuck--bachelor-of-arts"
         },
         {
           "name": "Visuelle Kommunikation",
@@ -5237,7 +6323,8 @@
             "Graphic Design",
             "Typography",
             "Media Design"
-          ]
+          ],
+          "program_id": "hochschule-pforzheim--visuelle-kommunikation--bachelor-of-arts"
         },
         {
           "name": "Transportation Design",
@@ -5255,7 +6342,8 @@
             "Vehicle Design",
             "Automotive Design",
             "Transportation Design"
-          ]
+          ],
+          "program_id": "hochschule-pforzheim--transportation-design--bachelor-of-arts"
         },
         {
           "name": "Transportation Design",
@@ -5273,7 +6361,8 @@
             "Advanced Vehicle Design",
             "Mobility Design",
             "Sustainable Transportation"
-          ]
+          ],
+          "program_id": "hochschule-pforzheim--transportation-design--master-of-arts"
         },
         {
           "name": "Creative Communication and Brand Management",
@@ -5291,7 +6380,8 @@
             "Brand Strategy",
             "Creative Leadership",
             "Strategic Communication"
-          ]
+          ],
+          "program_id": "hochschule-pforzheim--creative-communication-and-brand-management--master-of-arts"
         },
         {
           "name": "Creative Direction",
@@ -5309,7 +6399,8 @@
             "Art Direction",
             "Design Leadership",
             "Creative Strategy"
-          ]
+          ],
+          "program_id": "hochschule-pforzheim--creative-direction--master-of-arts"
         },
         {
           "name": "Design & Future Making",
@@ -5327,7 +6418,8 @@
             "Experimental Design",
             "Future Studies",
             "Innovation Design"
-          ]
+          ],
+          "program_id": "hochschule-pforzheim--design-future-making--master-of-arts"
         }
       ],
       "website": "https://www.hs-pforzheim.de",
@@ -5349,7 +6441,7 @@
       "stats": {
         "students": 4900,
         "acceptance_rate": 0.28,
-        "student_staff_ratio": 10.0,
+        "student_staff_ratio": 10,
         "founded": 2001
       },
       "city": "Stuttgart",
@@ -5372,7 +6464,20 @@
             "Film Production",
             "Media Design",
             "Audiovisual Media"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--audiovisuelle-medien--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/audiovisuelle-medien/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Bibliothek und digitale Information",
@@ -5390,7 +6495,20 @@
             "Library Science",
             "Digital Information",
             "Information Management"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--bibliothek-und-digitale-information--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/bibliothek-und-digitale-information/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Crossmedia-Redaktion & Public Relations",
@@ -5408,7 +6526,20 @@
             "Journalism",
             "Public Relations",
             "Corporate Communications"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--crossmedia-redaktion-public-relations--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/crossmedia-redaktion-public-relations/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Deutsch-Chinesischer Studiengang Medien und Technologie",
@@ -5426,7 +6557,20 @@
             "Media Technology",
             "Crosscultural Media",
             "Digital Media"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--deutsch-chinesischer-studiengang-medien-und-technologie--bachelor-of-science",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/deutsch-chinesischer-studiengang-medien-und-technologie/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Digital- und Medienwirtschaft",
@@ -5444,7 +6588,20 @@
             "Media Business",
             "Digital Economy",
             "Media Management"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--digital-und-medienwirtschaft--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/digital-und-medienwirtschaft/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Informationsdesign",
@@ -5462,7 +6619,20 @@
             "Information Design",
             "Data Visualization",
             "UX Design"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--informationsdesign--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/informationsdesign/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Integriertes Produktdesign",
@@ -5480,7 +6650,20 @@
             "Product Design",
             "Industrial Design",
             "Design Engineering"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--integriertes-produktdesign--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/integriertes-produktdesign/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Media Entertainment",
@@ -5498,7 +6681,20 @@
             "Entertainment Media",
             "Game Design",
             "Interactive Media"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--media-entertainment--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/media-entertainment/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Mediapublishing",
@@ -5516,7 +6712,20 @@
             "Publishing",
             "Digital Publishing",
             "Content Management"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--mediapublishing--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/mediapublishing/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Medien- und Wirtschaftspsychologie",
@@ -5534,7 +6743,20 @@
             "Media Psychology",
             "Consumer Psychology",
             "Business Psychology"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--medien-und-wirtschaftspsychologie--bachelor-of-science",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/medien-und-wirtschaftspsychologie/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Medieninformatik",
@@ -5552,7 +6774,20 @@
             "Media Informatics",
             "Software Development",
             "Multimedia"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--medieninformatik--bachelor-of-science",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/medieninformatik/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Mobile Medien",
@@ -5570,7 +6805,20 @@
             "Mobile Media",
             "App Development",
             "Mobile Technology"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--mobile-medien--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/mobile-medien/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Online-Medien-Management",
@@ -5588,7 +6836,20 @@
             "Online Management",
             "Digital Marketing",
             "Web Content"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--online-medien-management--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/online-medien-management/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Print Media and Packaging Technologies",
@@ -5606,7 +6867,20 @@
             "Print Media",
             "Packaging Technology",
             "Print Production"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--print-media-and-packaging-technologies--bachelor-of-science",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/print-media-and-packaging-technologies/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Social Media Marketing & Management",
@@ -5624,7 +6898,20 @@
             "Social Media Marketing",
             "Content Strategy",
             "Community Management"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--social-media-marketing-management--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/social-media-marketing-management/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Technisches Produktmanagement – Technisches Design",
@@ -5642,7 +6929,20 @@
             "Product Management",
             "Technical Design",
             "Engineering"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--technisches-produktmanagement-technisches-design--bachelor-of-science",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/technisches-produktmanagement-technisches-design/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Werbung und Marktkommunikation",
@@ -5660,7 +6960,20 @@
             "Advertising",
             "Marketing Communications",
             "Brand Management"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--werbung-und-marktkommunikation--bachelor-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/werbung-und-marktkommunikation/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Wirtschaftsinformatik und digitale Medien",
@@ -5678,7 +6991,20 @@
             "Business Informatics",
             "Digital Media",
             "IT Management"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--wirtschaftsinformatik-und-digitale-medien--bachelor-of-science",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/wirtschaftsinformatik-und-digitale-medien/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Wirtschaftsingenieurwesen Medien",
@@ -5696,7 +7022,20 @@
             "Industrial Engineering",
             "Media Technology",
             "Media Management"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--wirtschaftsingenieurwesen-medien--bachelor-of-engineering",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/bachelor/wirtschaftsingenieurwesen-medien/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Audiovisual Media Creation and Technology",
@@ -5714,7 +7053,20 @@
             "AV Media Creation",
             "Media Technology",
             "Film Production"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--audiovisual-media-creation-and-technology--master-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/master/audiovisual-media-creation-and-technology/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Computer Science and Media",
@@ -5732,7 +7084,20 @@
             "Media Computing",
             "Software Engineering",
             "Media Applications"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--computer-science-and-media--master-of-science",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/master/computer-science-and-media/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Crossmedia Publishing & Management",
@@ -5750,7 +7115,20 @@
             "Publishing Management",
             "Crossmedia",
             "Digital Publishing"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--crossmedia-publishing-management--master-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/master/crossmedia-publishing-management/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Digital Design",
@@ -5768,7 +7146,20 @@
             "Digital Design",
             "Interaction Design",
             "UX Design"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--digital-design--master-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/master/digital-design/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Master of Media Research",
@@ -5786,7 +7177,20 @@
             "Media Research",
             "Media Studies",
             "Empirical Research"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--master-of-media-research--master-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/master/master-of-media-research/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Medienmanagement",
@@ -5804,7 +7208,20 @@
             "Media Management",
             "Leadership",
             "Media Economics"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--medienmanagement--master-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/master/medienmanagement/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Packaging Development Management",
@@ -5822,7 +7239,20 @@
             "Packaging Development",
             "Packaging Management",
             "Sustainable Packaging"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--packaging-development-management--master-of-science",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/master/packaging-development-management/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Unternehmenskommunikation",
@@ -5840,7 +7270,20 @@
             "Corporate Communications",
             "PR",
             "Strategic Communications"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--unternehmenskommunikation--master-of-arts",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/master/unternehmenskommunikation/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         },
         {
           "name": "Wirtschaftsinformatik",
@@ -5858,7 +7301,20 @@
             "Business Informatics",
             "Digital Transformation",
             "IT Management"
-          ]
+          ],
+          "program_id": "hdm-stuttgart--wirtschaftsinformatik--master-of-science",
+          "details": {
+            "programUrl": "https://hdm-stuttgart.de/studienangebot/master/wirtschaftsinformatik/",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:10:17.304Z",
+            "sourceUrl": "https://hdm-stuttgart.de/"
+          }
         }
       ],
       "website": "https://hdm-stuttgart.de/",
@@ -5905,7 +7361,8 @@
             "Printmaking",
             "New Media",
             "Photography"
-          ]
+          ],
+          "program_id": "kunstakademie-munster--freie-kunst--akademiebrief-diplom"
         },
         {
           "name": "Fine Arts",
@@ -5923,7 +7380,8 @@
             "Painting",
             "Sculpture",
             "Installation Art"
-          ]
+          ],
+          "program_id": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts"
         },
         {
           "name": "Art Education",
@@ -5941,21 +7399,24 @@
             "Art Pedagogy",
             "Art History",
             "Art Theory"
-          ]
+          ],
+          "program_id": "kunstakademie-munster--art-education--master-of-education"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "kunstakademie-munster--fine-arts--unspecified"
         },
         {
           "name": "Art Education",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "kunstakademie-munster--art-education--unspecified"
         }
       ],
       "website": "https://www.kunstakademie-muenster.de/",
@@ -5984,7 +7445,7 @@
       "stats": {
         "students": 800,
         "acceptance_rate": 0.12,
-        "student_staff_ratio": 7.0,
+        "student_staff_ratio": 7,
         "founded": 1808
       },
       "city": "Munich",
@@ -6019,28 +7480,32 @@
               "Letter of motivation"
             ],
             "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          }
+          },
+          "program_id": "akademie-munchen--fine-arts--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "akademie-munchen--fine-arts--unspecified"
         },
         {
           "name": "Architecture",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "akademie-munchen--architecture--unspecified"
         },
         {
           "name": "Art Education",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "akademie-munchen--art-education--unspecified"
         }
       ],
       "website": "https://www.abk-muenchen.de/",
@@ -6156,7 +7621,8 @@
               "Letter of motivation"
             ],
             "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          }
+          },
+          "program_id": "akademie-nurnberg--fine-arts--diploma"
         },
         {
           "name": "Fine Arts",
@@ -6174,28 +7640,32 @@
             "Painting",
             "Sculpture",
             "New Media"
-          ]
+          ],
+          "program_id": "akademie-nurnberg--fine-arts--diploma-in-fine-arts"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "akademie-nurnberg--fine-arts--unspecified"
         },
         {
           "name": "Graphic Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "akademie-nurnberg--graphic-design--unspecified"
         },
         {
           "name": "Art Education",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "akademie-nurnberg--art-education--unspecified"
         }
       ],
       "website": "https://www.abk-nuernberg.de/",
@@ -6272,7 +7742,7 @@
       "stats": {
         "students": 1400,
         "acceptance_rate": 0.25,
-        "student_staff_ratio": 9.0,
+        "student_staff_ratio": 9,
         "founded": 1879
       },
       "city": "Halle",
@@ -6306,7 +7776,8 @@
               "Letter of motivation"
             ],
             "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          }
+          },
+          "program_id": "burg-giebichenstein--design--diploma"
         },
         {
           "name": "Fine Arts",
@@ -6318,28 +7789,32 @@
             }
           },
           "language": "German",
-          "duration": "10 semesters"
+          "duration": "10 semesters",
+          "program_id": "burg-giebichenstein--fine-arts--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "burg-giebichenstein--fine-arts--unspecified"
         },
         {
           "name": "Industrial Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "burg-giebichenstein--industrial-design--unspecified"
         },
         {
           "name": "Communication Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "burg-giebichenstein--communication-design--unspecified"
         }
       ],
       "website": "https://www.burg-halle.de/",
@@ -6416,7 +7891,7 @@
       "stats": {
         "students": 2200,
         "acceptance_rate": 0.2,
-        "student_staff_ratio": 10.0,
+        "student_staff_ratio": 10,
         "founded": 1927
       },
       "city": "Essen",
@@ -6450,7 +7925,8 @@
               "Proof of prior musical education"
             ],
             "format": "Audio/video recording (digital submission) plus live audition"
-          }
+          },
+          "program_id": "folkwang-essen--music--master"
         },
         {
           "name": "Fine Arts",
@@ -6462,42 +7938,48 @@
             }
           },
           "language": "German",
-          "duration": "10 semesters"
+          "duration": "10 semesters",
+          "program_id": "folkwang-essen--fine-arts--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "folkwang-essen--fine-arts--unspecified"
         },
         {
           "name": "Music",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "folkwang-essen--music--unspecified"
         },
         {
           "name": "Dance",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "folkwang-essen--dance--unspecified"
         },
         {
           "name": "Design",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "folkwang-essen--design--unspecified"
         },
         {
           "name": "Theatre",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "folkwang-essen--theatre--unspecified"
         }
       ],
       "website": "https://www.folkwang-uni.de/",
@@ -6578,7 +8060,7 @@
       "stats": {
         "students": 1800,
         "acceptance_rate": 0.3,
-        "student_staff_ratio": 14.0,
+        "student_staff_ratio": 14,
         "founded": 1970
       },
       "city": "Hamburg",
@@ -6612,6 +8094,19 @@
               "Letter of motivation"
             ],
             "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          },
+          "program_id": "haw-hamburg--design--bachelor",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:12:28.426Z",
+            "sourceUrl": "https://www.haw-hamburg.de/"
           }
         }
       ],
@@ -6677,7 +8172,7 @@
       "stats": {
         "students": 650,
         "acceptance_rate": 0.15,
-        "student_staff_ratio": 6.0,
+        "student_staff_ratio": 6,
         "founded": 1764
       },
       "city": "Dresden",
@@ -6712,6 +8207,19 @@
               "Letter of motivation"
             ],
             "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+          },
+          "program_id": "hfbk-dresden--fine-arts--diploma",
+          "details": {
+            "programUrl": "https://www.hfbk-dresden.de/lehre-forschung/studiengaenge/bildende-kunst",
+            "applicationUrl": "https://www.hfbk-dresden.de/studium/bewerbung/bewerbungsformalia",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-04-19T16:13:10.721Z",
+            "sourceUrl": "https://www.hfbk-dresden.de/"
           }
         },
         {
@@ -6719,7 +8227,20 @@
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hfbk-dresden--fine-arts--unspecified",
+          "details": {
+            "programUrl": "https://www.hfbk-dresden.de/lehre-forschung/studiengaenge/bildende-kunst",
+            "applicationUrl": "https://www.hfbk-dresden.de/studium/bewerbung/bewerbungsformalia",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-04-19T16:13:10.721Z",
+            "sourceUrl": "https://www.hfbk-dresden.de/"
+          }
         }
       ],
       "website": "https://www.hfbk-dresden.de/",
@@ -6797,7 +8318,7 @@
       "stats": {
         "students": 350,
         "acceptance_rate": 0.08,
-        "student_staff_ratio": 4.0,
+        "student_staff_ratio": 4,
         "founded": 1815
       },
       "city": "Frankfurt",
@@ -6833,7 +8354,8 @@
               "Letter of motivation"
             ],
             "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          }
+          },
+          "program_id": "stadelschule-frankfurt--fine-arts--master"
         },
         {
           "name": "Fine Arts",
@@ -6845,14 +8367,16 @@
             }
           },
           "language": "German",
-          "duration": "10 semesters"
+          "duration": "10 semesters",
+          "program_id": "stadelschule-frankfurt--fine-arts--diploma"
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "stadelschule-frankfurt--fine-arts--unspecified"
         }
       ],
       "website": "https://www.staedelschule.de/",
@@ -6926,7 +8450,7 @@
       "stats": {
         "students": 550,
         "acceptance_rate": 0.18,
-        "student_staff_ratio": 7.0,
+        "student_staff_ratio": 7,
         "founded": 1946
       },
       "city": "Munich",
@@ -6961,7 +8485,8 @@
               "Letter of motivation"
             ],
             "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          }
+          },
+          "program_id": "khm-munchen--fine-arts--diploma"
         }
       ],
       "website": "https://www.kunsthochschule-muenchen.com/",
@@ -7035,14 +8560,16 @@
             "Cognitive Psychology",
             "User Experience Design",
             "Software Engineering"
-          ]
+          ],
+          "program_id": "technische-universitat-chemnitz--human-computer-interaction--master-of-science"
         },
         {
           "name": "Human-Computer Interaction",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "technische-universitat-chemnitz--human-computer-interaction--unspecified"
         }
       ],
       "website": "https://www.tu-chemnitz.de/"
@@ -7067,14 +8594,40 @@
             }
           },
           "language": "German",
-          "duration": "10 semesters"
+          "duration": "10 semesters",
+          "program_id": "kunsthochschule-berlin-weissensee--fine-arts--diploma",
+          "details": {
+            "programUrl": "https://www.kh-berlin.de/kunst",
+            "applicationUrl": "https://www.kh-berlin.de/studium/studienbewerbung",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:14:42.711Z",
+            "sourceUrl": "https://www.kh-berlin.de"
+          }
         },
         {
           "name": "Fine Arts",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "kunsthochschule-berlin-weissensee--fine-arts--unspecified",
+          "details": {
+            "programUrl": "https://www.kh-berlin.de/kunst",
+            "applicationUrl": "https://www.kh-berlin.de/studium/studienbewerbung",
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:14:42.711Z",
+            "sourceUrl": "https://www.kh-berlin.de"
+          }
         }
       ],
       "website": "https://www.kh-berlin.de",
@@ -7105,21 +8658,60 @@
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hmt-leipzig--music--unspecified",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:15:22.827Z",
+            "sourceUrl": "https://www.hmt-leipzig.de/"
+          }
         },
         {
           "name": "Drama",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hmt-leipzig--drama--unspecified",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:15:22.827Z",
+            "sourceUrl": "https://www.hmt-leipzig.de/"
+          }
         },
         {
           "name": "Music Education",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hmt-leipzig--music-education--unspecified",
+          "details": {
+            "programUrl": null,
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": null,
+            "extractedAt": "2026-04-19T16:15:22.827Z",
+            "sourceUrl": "https://www.hmt-leipzig.de/"
+          }
         }
       ],
       "website": "https://www.hmt-leipzig.de/",
@@ -7151,21 +8743,24 @@
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hmtm-hannover--music--unspecified"
         },
         {
           "name": "Acting",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hmtm-hannover--acting--unspecified"
         },
         {
           "name": "Media Management",
           "degree": "",
           "applicationDeadlines": {},
           "language": "",
-          "duration": ""
+          "duration": "",
+          "program_id": "hmtm-hannover--media-management--unspecified"
         }
       ],
       "website": "https://www.hmtm-hannover.de/",

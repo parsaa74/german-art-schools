@@ -9,7 +9,11 @@
     "deploy": "touch dist/.nojekyll && gh-pages -d dist -t",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "validate-deadlines": "node scripts/validateDeadlines.js"
+    "validate-deadlines": "node scripts/validateDeadlines.js",
+    "build:program-ids": "tsx scripts/build-program-ids.ts",
+    "build:program-embeddings": "tsx --env-file=.env.local scripts/build-program-embeddings.ts",
+    "build:program-graph": "tsx scripts/build-program-graph.ts",
+    "scrape:program-details": "tsx --env-file=.env.local scripts/scrape-program-details.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
@@ -86,6 +90,9 @@
     "opentype.js": "^1.3.4",
     "ttf2woff": "^3.0.0",
     "typescript": "^5.0.4",
-    "vite": "^6.3.1"
+    "vite": "^6.3.1",
+    "tsx": "^4.19.2",
+    "@google/genai": "^0.9.0",
+    "@anthropic-ai/sdk": "^0.37.0"
   }
 }

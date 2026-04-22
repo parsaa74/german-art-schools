@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils'
 import { getNextDeadline } from '@/utils/deadlineUtils'
 import { generateSchoolICalFile, downloadICalFile } from '@/utils/icalExport'
 import { getLogoForSchool } from '@/data/universityLogos'
+import { getImageForSchool } from '@/data/universityImages'
 
 // Define the props interface for InfoPanel
 interface InfoPanelProps {
@@ -96,9 +97,9 @@ export default function InfoPanel({
           aria-modal="true"
       aria-labelledby="school-name-heading"
           className={cn(
-            'fixed top-4 right-4 z-[500] w-full max-w-sm ui-organic text-gray-100',
-            'max-h-[calc(100vh-2rem)] overflow-y-auto',
-            'scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent hover:scrollbar-thumb-white/20',
+            'fixed top-4 right-4 z-[500] w-[min(22rem,calc(100vw-2rem))] ui-organic text-gray-100',
+            'max-h-[calc(100vh-2rem)] overflow-y-auto overflow-x-hidden',
+            'scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent hover:scrollbar-thumb-white/50',
             className
           )}
           initial={{ opacity: 0, x: 40, scale: 0.95 }}
@@ -107,8 +108,8 @@ export default function InfoPanel({
           transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
       onClick={(e) => e.stopPropagation()}
     >
-          <div className="sticky top-0 z-10 bg-gradient-to-b from-black/90 via-black/80 to-transparent backdrop-blur-sm px-5 pt-5 pb-3 border-b border-white/10">
-            <div className="flex justify-between items-start mb-2 gap-3">
+          <div className="sticky top-0 z-10 bg-gradient-to-b from-black/90 via-black/80 to-transparent backdrop-blur-sm px-4 pt-3 pb-2 border-b border-white/10">
+            <div className="flex justify-between items-start mb-1.5 gap-2">
           {getLogoForSchool(school.id) && (
             <img
               src={getLogoForSchool(school.id)}
@@ -140,6 +141,21 @@ export default function InfoPanel({
             {school.type.replace('_', ' ')}
           </span>
       </div>
+
+          <motion.div
+            className="relative mx-4 mt-2 rounded-soft overflow-hidden border border-white/10 aspect-[5/2] bg-black/40"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.25, delay: 0.05 }}
+          >
+            <img
+              src={getImageForSchool(school.id, school.type)}
+              alt={`${school.name} placeholder image`}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+          </motion.div>
 
           <div className="px-4 pb-4 pt-2 space-y-0">
             <PanelSection title="Location" icon={<LocationIcon />} delay={0}>
