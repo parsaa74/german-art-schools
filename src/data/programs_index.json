@@ -1,6 +1,6 @@
 {
-  "createdAt": "2026-04-19T15:18:58.595Z",
-  "count": 323,
+  "createdAt": "2026-06-10T13:02:06.741Z",
+  "count": 746,
   "programs": [
     {
       "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
@@ -108,11 +108,172 @@
       "degree": ""
     },
     {
-      "program_id": "hochschule-fur-musik-und-theater-rostock--music--bachelor-of-music",
+      "program_id": "hochschule-fur-musik-und-theater-rostock--kunstlerische-ausbildung--bachelor-of-music",
       "schoolId": "hochschule-fur-musik-und-theater-rostock",
       "schoolName": "Hochschule für Musik und Theater Rostock",
-      "name": "Music",
+      "name": "Künstlerische Ausbildung",
       "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--popularmusik-mit-klassik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Popularmusik mit Klassik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--instrumental-und-gesangspadagogik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Instrumental- und Gesangspädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--orchesterdirigieren-korrepetition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Orchesterdirigieren / Korrepetition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--musiktheorie-komposition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Musiktheorie / Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--orchesterinstrumente--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Orchesterinstrumente",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--kammermusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Kammermusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--klavier-solo-klavierduo--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Klavier solo / Klavierduo",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--gitarre-solo--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Gitarre solo",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--buhnengesang--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Bühnengesang",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--konzertgesang--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Konzertgesang",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--opernstudio--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Opernstudio",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--instrumental-und-gesangspadagogik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Instrumental- und Gesangspädagogik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--orchesterdirigieren-korrepetition--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Orchesterdirigieren / Korrepetition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--komposition--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Komposition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--musiktheorie--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Musiktheorie",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--musikwissenschaft--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Musikwissenschaft",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--konzertexamen--konzertexamen",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Konzertexamen",
+      "degree": "Konzertexamen"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--schauspiel--diplom",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Schauspiel",
+      "degree": "Diplom"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--lehramt-musik--staatsexamen",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Lehramt Musik",
+      "degree": "Staatsexamen"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--lehramt-theater-darstellendes-spiel--staatsexamen",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Lehramt Theater (Darstellendes Spiel)",
+      "degree": "Staatsexamen"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--quereinstieg-musik-unterrichten--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Quereinstieg Musik unterrichten",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--quereinstieg-theater-unterrichten--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Quereinstieg Theater unterrichten",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-theater-rostock--elementare-musikpadagogik-emp--zertifikat",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "schoolName": "Hochschule für Musik und Theater Rostock",
+      "name": "Elementare Musikpädagogik (EMP)",
+      "degree": "Zertifikat"
     },
     {
       "program_id": "kunstakademie-dusseldorf--fine-arts--diploma",
@@ -2145,11 +2306,95 @@
       "degree": ""
     },
     {
-      "program_id": "haw-hamburg--design--bachelor",
+      "program_id": "haw-hamburg--illustration--bachelor-of-arts",
       "schoolId": "haw-hamburg",
       "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
-      "name": "Design",
-      "degree": "Bachelor"
+      "name": "Illustration",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "haw-hamburg--kommunikationsdesign--bachelor-of-arts",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Kommunikationsdesign",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "haw-hamburg--mode-kostum-und-textildesign--bachelor-of-arts",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Mode-, Kostüm- und Textildesign",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "haw-hamburg--medientechnik--bachelor-of-science",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Medientechnik",
+      "degree": "Bachelor of Science"
+    },
+    {
+      "program_id": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Medien und Kommunikation",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "haw-hamburg--illustration--master-of-arts",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Illustration",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "haw-hamburg--kommunikationsdesign--master-of-arts",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Kommunikationsdesign",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "haw-hamburg--mode-kostum-und-textildesign--master-of-arts",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Mode-, Kostüm- und Textildesign",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "haw-hamburg--digital-reality--master-of-science",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Digital Reality",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "haw-hamburg--digitale-kommunikation--master-of-arts",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Digitale Kommunikation",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "haw-hamburg--digitale-transformation-der-informations-und-medienwirtschaft--master-of-arts",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Digitale Transformation der Informations- und Medienwirtschaft",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "haw-hamburg--games--master-of-arts",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Games",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "haw-hamburg--zeitabhangige-medien-sound-vision--master-of-arts",
+      "schoolId": "haw-hamburg",
+      "schoolName": "Hochschule für Angewandte Wissenschaften Hamburg",
+      "name": "Zeitabhängige Medien – Sound/Vision",
+      "degree": "Master of Arts"
     },
     {
       "program_id": "hfbk-dresden--fine-arts--diploma",
@@ -2159,11 +2404,46 @@
       "degree": "Diploma"
     },
     {
-      "program_id": "hfbk-dresden--fine-arts--unspecified",
+      "program_id": "hfbk-dresden--theatre-design--diploma",
       "schoolId": "hfbk-dresden",
       "schoolName": "Hochschule für Bildende Künste Dresden",
-      "name": "Fine Arts",
-      "degree": ""
+      "name": "Theatre Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hfbk-dresden--theatre-design-scenic-painting--diploma",
+      "schoolId": "hfbk-dresden",
+      "schoolName": "Hochschule für Bildende Künste Dresden",
+      "name": "Theatre Design – Scenic Painting",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hfbk-dresden--stage-setting-and-costume-design--diploma",
+      "schoolId": "hfbk-dresden",
+      "schoolName": "Hochschule für Bildende Künste Dresden",
+      "name": "Stage Setting and Costume Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hfbk-dresden--art-technology-preservation-and-restoration-of-artistic-and-cultural-assets--diploma",
+      "schoolId": "hfbk-dresden",
+      "schoolName": "Hochschule für Bildende Künste Dresden",
+      "name": "Art Technology, Preservation and Restoration of Artistic and Cultural Assets",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "hfbk-dresden--art-therapy-postgraduate--postgraduate-diploma",
+      "schoolId": "hfbk-dresden",
+      "schoolName": "Hochschule für Bildende Künste Dresden",
+      "name": "Art Therapy (postgraduate)",
+      "degree": "Postgraduate Diploma"
+    },
+    {
+      "program_id": "hfbk-dresden--meisterschuler-master-class--meisterschuler",
+      "schoolId": "hfbk-dresden",
+      "schoolName": "Hochschule für Bildende Künste Dresden",
+      "name": "Meisterschüler / Master Class",
+      "degree": "Meisterschüler"
     },
     {
       "program_id": "stadelschule-frankfurt--fine-arts--master",
@@ -2262,6 +2542,2687 @@
       "schoolName": "Hochschule für Musik, Theater und Medien Hannover",
       "name": "Media Management",
       "degree": ""
+    },
+    {
+      "program_id": "hochschule-fur-evangelische-kirchenmusik--evangelische-kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-evangelische-kirchenmusik",
+      "schoolName": "Hochschule für evangelische Kirchenmusik der Evangelisch-Lutherischen Kirche in Bayern",
+      "name": "Evangelische Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-evangelische-kirchenmusik--chorleitung--bachelor-of-music",
+      "schoolId": "hochschule-fur-evangelische-kirchenmusik",
+      "schoolName": "Hochschule für evangelische Kirchenmusik der Evangelisch-Lutherischen Kirche in Bayern",
+      "name": "Chorleitung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-evangelische-kirchenmusik--orgel--bachelor-of-music",
+      "schoolId": "hochschule-fur-evangelische-kirchenmusik",
+      "schoolName": "Hochschule für evangelische Kirchenmusik der Evangelisch-Lutherischen Kirche in Bayern",
+      "name": "Orgel",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-evangelische-kirchenmusik--klavierpadagogik--bachelor-of-music",
+      "schoolId": "hochschule-fur-evangelische-kirchenmusik",
+      "schoolName": "Hochschule für evangelische Kirchenmusik der Evangelisch-Lutherischen Kirche in Bayern",
+      "name": "Klavierpädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-evangelische-kirchenmusik--evangelische-kirchenmusik--master-of-music",
+      "schoolId": "hochschule-fur-evangelische-kirchenmusik",
+      "schoolName": "Hochschule für evangelische Kirchenmusik der Evangelisch-Lutherischen Kirche in Bayern",
+      "name": "Evangelische Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-evangelische-kirchenmusik--instrumental-vokalpadagogik--master-of-music",
+      "schoolId": "hochschule-fur-evangelische-kirchenmusik",
+      "schoolName": "Hochschule für evangelische Kirchenmusik der Evangelisch-Lutherischen Kirche in Bayern",
+      "name": "Instrumental-/Vokalpädagogik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-evangelische-kirchenmusik--musikleitung-instrumental-vokal--master-of-music",
+      "schoolId": "hochschule-fur-evangelische-kirchenmusik",
+      "schoolName": "Hochschule für evangelische Kirchenmusik der Evangelisch-Lutherischen Kirche in Bayern",
+      "name": "Musikleitung instrumental/vokal",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-evangelische-kirchenmusik--kunstlerisches-orgelspiel--master-of-music",
+      "schoolId": "hochschule-fur-evangelische-kirchenmusik",
+      "schoolName": "Hochschule für evangelische Kirchenmusik der Evangelisch-Lutherischen Kirche in Bayern",
+      "name": "Künstlerisches Orgelspiel",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--kunstlerische-instrumentalausbildung--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Künstlerische Instrumentalausbildung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--kunstlerische-instrumentalausbildung--master-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Künstlerische Instrumentalausbildung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--gesang--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Gesang",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--gesang--master-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Gesang",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--komposition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--komposition--master-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Komposition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--orchesterdirigieren--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Orchesterdirigieren",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--orchesterdirigieren--master-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Orchesterdirigieren",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--chordirigieren--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Chordirigieren",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--chordirigieren--master-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Chordirigieren",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--musiktheater-regie--bachelor",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Musiktheater-Regie",
+      "degree": "Bachelor"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--produktionsdramaturgie-fur-musiktheater--master",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Produktionsdramaturgie für Musiktheater",
+      "degree": "Master"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--liedgestaltung-fur-pianist-innen--master-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Liedgestaltung für Pianist*innen",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--kammermusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Kammermusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--korrepetition--master-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Korrepetition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-berlin--elektroakustische-musik--master-of-music",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "schoolName": "Hochschule für Musik Hanns Eisler Berlin",
+      "name": "Elektroakustische Musik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-schauspielkunst-berlin--schauspiel--diplom",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "schoolName": "Hochschule für Schauspielkunst Ernst Busch",
+      "name": "Schauspiel",
+      "degree": "Diplom"
+    },
+    {
+      "program_id": "hochschule-fur-schauspielkunst-berlin--schauspielregie--diplom",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "schoolName": "Hochschule für Schauspielkunst Ernst Busch",
+      "name": "Schauspielregie",
+      "degree": "Diplom"
+    },
+    {
+      "program_id": "hochschule-fur-schauspielkunst-berlin--zeitgenossische-puppenspielkunst--diplom",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "schoolName": "Hochschule für Schauspielkunst Ernst Busch",
+      "name": "Zeitgenössische Puppenspielkunst",
+      "degree": "Diplom"
+    },
+    {
+      "program_id": "hochschule-fur-schauspielkunst-berlin--dramaturgie--master-of-arts",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "schoolName": "Hochschule für Schauspielkunst Ernst Busch",
+      "name": "Dramaturgie",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-schauspielkunst-berlin--spiel-und-objekt--master-of-arts",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "schoolName": "Hochschule für Schauspielkunst Ernst Busch",
+      "name": "Spiel und Objekt",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-schauspielkunst-berlin--choreographie--master-of-arts",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "schoolName": "Hochschule für Schauspielkunst Ernst Busch",
+      "name": "Choreographie",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--kunstlerische-ausbildung--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Künstlerische Ausbildung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--kunstlerische-ausbildung--master-of-music",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Künstlerische Ausbildung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--chorleitung--master-of-music",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Chorleitung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--orchesterleitung--master-of-music",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Orchesterleitung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--instrumental-und-gesangspadagogik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Instrumental- und Gesangspädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--elementare-musikpadagogik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Elementare Musikpädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--lehramt-musik--lehramt",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Lehramt Musik",
+      "degree": "Lehramt"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--komposition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--musiktheorie-und-gehorbildung--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Musiktheorie und Gehörbildung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--musikubertragung-tonmeister--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Musikübertragung / Tonmeister",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-detmold--musikubertragung-tonmeister--master-of-music",
+      "schoolId": "hochschule-fur-musik-detmold",
+      "schoolName": "Hochschule für Musik Detmold",
+      "name": "Musikübertragung / Tonmeister",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-dresden--kirchenmusik-b--diplom",
+      "schoolId": "hochschule-fur-kirchenmusik-dresden",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelisch-Lutherischen Landeskirche Sachsens",
+      "name": "Kirchenmusik (B)",
+      "degree": "Diplom"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--kunstlerische-ausbildung--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Künstlerische Ausbildung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--kunstlerische-ausbildung--master-of-music",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Künstlerische Ausbildung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--kunstlerisch-padagogische-ausbildung--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Künstlerisch-pädagogische Ausbildung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--dirigieren-korrepetition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Dirigieren / Korrepetition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--dirigieren-korrepetition--master-of-music",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Dirigieren / Korrepetition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--jazz-rock-pop--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Jazz/Rock/Pop",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--jazz-rock-pop--master-of-music",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Jazz/Rock/Pop",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--komposition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--komposition--master-of-music",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Komposition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--musiktheorie--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Musiktheorie",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--musiktheorie--master-of-music",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Musiktheorie",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--lehramt-musik--staatsexamen",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Lehramt Musik",
+      "degree": "Staatsexamen"
+    },
+    {
+      "program_id": "hochschule-fur-musik-dresden--meisterklasse--meisterklassenexamen",
+      "schoolId": "hochschule-fur-musik-dresden",
+      "schoolName": "Hochschule für Musik Carl Maria von Weber Dresden",
+      "name": "Meisterklasse",
+      "degree": "Meisterklassenexamen"
+    },
+    {
+      "program_id": "palucca-hochschule-fur-tanz--tanz--bachelor-of-arts",
+      "schoolId": "palucca-hochschule-fur-tanz",
+      "schoolName": "Palucca Hochschule für Tanz Dresden",
+      "name": "Tanz",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "palucca-hochschule-fur-tanz--choreografie--master-of-arts",
+      "schoolId": "palucca-hochschule-fur-tanz",
+      "schoolName": "Palucca Hochschule für Tanz Dresden",
+      "name": "Choreografie",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "palucca-hochschule-fur-tanz--tanzpadagogik--master-of-arts",
+      "schoolId": "palucca-hochschule-fur-tanz",
+      "schoolName": "Palucca Hochschule für Tanz Dresden",
+      "name": "Tanzpädagogik",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "palucca-hochschule-fur-tanz--dance-teacher-berufsbegleitend--master-of-arts",
+      "schoolId": "palucca-hochschule-fur-tanz",
+      "schoolName": "Palucca Hochschule für Tanz Dresden",
+      "name": "Dance Teacher (berufsbegleitend)",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "palucca-hochschule-fur-tanz--kunstlerische-meisterklasse--meisterklassenexamen",
+      "schoolId": "palucca-hochschule-fur-tanz",
+      "schoolName": "Palucca Hochschule für Tanz Dresden",
+      "name": "Künstlerische Meisterklasse",
+      "degree": "Meisterklassenexamen"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--orchesterinstrumente--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Orchesterinstrumente",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--orchesterinstrumente--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Orchesterinstrumente",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--klavier--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Klavier",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--klavier--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Klavier",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--gesang--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Gesang",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--gesang--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Gesang",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--gitarre--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Gitarre",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--gitarre--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Gitarre",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--orgel--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Orgel",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--orgel--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Orgel",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--chorleitung--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Chorleitung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--chorleitung--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Chorleitung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--orchesterleitung--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Orchesterleitung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--orchesterleitung--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Orchesterleitung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--kirchenmusik--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--kirchenmusik--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--komposition--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--komposition--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Komposition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--musik-und-medien--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Musik und Medien",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--ton-und-bild--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Ton und Bild",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--musikpadagogik--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Musikpädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--musikpadagogik--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Musikpädagogik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--musiktheorie-und-horerziehung--bachelor-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Musiktheorie und Hörerziehung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--musikwissenschaft--bachelor-of-arts",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Musikwissenschaft",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--musikwissenschaft--master-of-arts",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Musikwissenschaft",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--klang-und-realitat--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Klang und Realität",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--kunstlerische-musikproduktion--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Künstlerische Musikproduktion",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--musikfilmregie--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Musikfilmregie",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--orchesterpraxis--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Orchesterpraxis",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--liedgestaltung--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Liedgestaltung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "robert-schumann-hochschule--kammermusik--master-of-music",
+      "schoolId": "robert-schumann-hochschule",
+      "schoolName": "Robert Schumann Hochschule Düsseldorf",
+      "name": "Kammermusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kunstlerische-ausbildung-musik-kam--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Künstlerische Ausbildung Musik (KAM)",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kunstlerische-ausbildung-musik-kam--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Künstlerische Ausbildung Musik (KAM)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--gesang--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Gesang",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--gesang-musiktheater--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Gesang Musiktheater",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--konzert-gesang--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Konzert (Gesang)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--komposition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--komposition--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Komposition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kirchenmusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--historische-interpretationspraxis-hip--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Historische Interpretationspraxis (HIP)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kammermusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Kammermusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--instrumentalpadagogik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Instrumentalpädagogik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--musikpadagogik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Musikpädagogik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--bigband-spielen-schreiben-leiten--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Bigband – Spielen, Schreiben, Leiten",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--iema-comp-contemporary-music-performance--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "IEMA CoMP: Contemporary Music Performance",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--concert-performance-kronberg-academy--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Concert Performance – Kronberg Academy",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--concert-performance-kronberg-academy--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Concert Performance – Kronberg Academy",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--lehramt-musik--staatsexamen",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Lehramt Musik",
+      "degree": "Staatsexamen"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--schauspiel--bachelor-of-arts",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Schauspiel",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--regie--bachelor-of-arts",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Regie",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--tanz--bachelor-of-arts",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Tanz",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--contemporary-dance-education--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Contemporary Dance Education",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--theater-und-orchestermanagement--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Theater- und Orchestermanagement",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--konzertexamen--konzertexamen",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "schoolName": "Hochschule für Musik und Darstellende Kunst Frankfurt am Main",
+      "name": "Konzertexamen",
+      "degree": "Konzertexamen"
+    },
+    {
+      "program_id": "hochschule-fur-musik-freiburg--musik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-freiburg",
+      "schoolName": "Hochschule für Musik Freiburg im Breisgau",
+      "name": "Musik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-freiburg--musik--master-of-music",
+      "schoolId": "hochschule-fur-musik-freiburg",
+      "schoolName": "Hochschule für Musik Freiburg im Breisgau",
+      "name": "Musik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-freiburg--kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-freiburg",
+      "schoolName": "Hochschule für Musik Freiburg im Breisgau",
+      "name": "Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-freiburg--kirchenmusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-freiburg",
+      "schoolName": "Hochschule für Musik Freiburg im Breisgau",
+      "name": "Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-freiburg--lehramt-musik--lehramt",
+      "schoolId": "hochschule-fur-musik-freiburg",
+      "schoolName": "Hochschule für Musik Freiburg im Breisgau",
+      "name": "Lehramt Musik",
+      "degree": "Lehramt"
+    },
+    {
+      "program_id": "hochschule-fur-musik-freiburg--elementare-musikpadagogik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-freiburg",
+      "schoolName": "Hochschule für Musik Freiburg im Breisgau",
+      "name": "Elementare Musikpädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-freiburg--konzertexamen-meisterklasse--konzertexamen",
+      "schoolId": "hochschule-fur-musik-freiburg",
+      "schoolName": "Hochschule für Musik Freiburg im Breisgau",
+      "name": "Konzertexamen / Meisterklasse",
+      "degree": "Konzertexamen"
+    },
+    {
+      "program_id": "evangelische-hochschule-fur-kirchenmusik-halle--kirchenmusik--bachelor-of-music",
+      "schoolId": "evangelische-hochschule-fur-kirchenmusik-halle",
+      "schoolName": "Evangelische Hochschule für Kirchenmusik",
+      "name": "Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "evangelische-hochschule-fur-kirchenmusik-halle--kombistudium-kirchenmusik-lehramt-musik-an-gymnasien--bachelor-of-music",
+      "schoolId": "evangelische-hochschule-fur-kirchenmusik-halle",
+      "schoolName": "Evangelische Hochschule für Kirchenmusik",
+      "name": "Kombistudium Kirchenmusik / Lehramt Musik an Gymnasien",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "evangelische-hochschule-fur-kirchenmusik-halle--kirchenmusik--master-of-music",
+      "schoolId": "evangelische-hochschule-fur-kirchenmusik-halle",
+      "schoolName": "Evangelische Hochschule für Kirchenmusik",
+      "name": "Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "evangelische-hochschule-fur-kirchenmusik-halle--chor-und-orchesterleitung--master-of-music",
+      "schoolId": "evangelische-hochschule-fur-kirchenmusik-halle",
+      "schoolName": "Evangelische Hochschule für Kirchenmusik",
+      "name": "Chor- und Orchesterleitung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "evangelische-hochschule-fur-kirchenmusik-halle--kirchliche-popularmusik--master-of-music",
+      "schoolId": "evangelische-hochschule-fur-kirchenmusik-halle",
+      "schoolName": "Evangelische Hochschule für Kirchenmusik",
+      "name": "Kirchliche Popularmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "evangelische-hochschule-fur-kirchenmusik-halle--konzert-und-oratoriengesang--master-of-music",
+      "schoolId": "evangelische-hochschule-fur-kirchenmusik-halle",
+      "schoolName": "Evangelische Hochschule für Kirchenmusik",
+      "name": "Konzert- und Oratoriengesang",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "evangelische-hochschule-fur-kirchenmusik-halle--kunstlerisches-orgelspiel--master-of-music",
+      "schoolId": "evangelische-hochschule-fur-kirchenmusik-halle",
+      "schoolName": "Evangelische Hochschule für Kirchenmusik",
+      "name": "Künstlerisches Orgelspiel",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "evangelische-hochschule-fur-kirchenmusik-halle--lehramt-musik--master-of-education",
+      "schoolId": "evangelische-hochschule-fur-kirchenmusik-halle",
+      "schoolName": "Evangelische Hochschule für Kirchenmusik",
+      "name": "Lehramt Musik",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-heidelberg--evangelische-kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-heidelberg",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Baden",
+      "name": "Evangelische Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-heidelberg--evangelische-kirchenmusik--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-heidelberg",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Baden",
+      "name": "Evangelische Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-heidelberg--popularkirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-heidelberg",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Baden",
+      "name": "Popularkirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-heidelberg--popularkirchenmusik--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-heidelberg",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Baden",
+      "name": "Popularkirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-heidelberg--posaunenwart--bachelor-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-heidelberg",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Baden",
+      "name": "Posaunenwart",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-heidelberg--erganzungsstudiengang-fur-schulmusiker-innen--zertifikat",
+      "schoolId": "hochschule-fur-kirchenmusik-heidelberg",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Baden",
+      "name": "Ergänzungsstudiengang für Schulmusiker*innen",
+      "degree": "Zertifikat"
+    },
+    {
+      "program_id": "hochschule-fur-musik-karlsruhe--musik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-karlsruhe",
+      "schoolName": "Hochschule für Musik Karlsruhe",
+      "name": "Musik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-karlsruhe--musik--master-of-music",
+      "schoolId": "hochschule-fur-musik-karlsruhe",
+      "schoolName": "Hochschule für Musik Karlsruhe",
+      "name": "Musik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-karlsruhe--kunstlerisches-lehramt-an-gymnasien-schulmusik--lehramt",
+      "schoolId": "hochschule-fur-musik-karlsruhe",
+      "schoolName": "Hochschule für Musik Karlsruhe",
+      "name": "Künstlerisches Lehramt an Gymnasien (Schulmusik)",
+      "degree": "Lehramt"
+    },
+    {
+      "program_id": "hochschule-fur-musik-karlsruhe--solistenexamen-konzertexamen--konzertexamen",
+      "schoolId": "hochschule-fur-musik-karlsruhe",
+      "schoolName": "Hochschule für Musik Karlsruhe",
+      "name": "Solistenexamen (Konzertexamen)",
+      "degree": "Konzertexamen"
+    },
+    {
+      "program_id": "hochschule-fur-musik-karlsruhe--certificate-of-advanced-studies--certificate-of-advanced-studies",
+      "schoolId": "hochschule-fur-musik-karlsruhe",
+      "schoolName": "Hochschule für Musik Karlsruhe",
+      "name": "Certificate of Advanced Studies",
+      "degree": "Certificate of Advanced Studies"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--holzblaser--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Holzbläser",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--blechblaser--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Blechbläser",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--blasinstrumente--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Blasinstrumente",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--streichinstrumente--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Streichinstrumente",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--streichinstrumente--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Streichinstrumente",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--klavier--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Klavier",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--klavier--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Klavier",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--orgel--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Orgel",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--orgel--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Orgel",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--gitarre--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Gitarre",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--gitarre--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Gitarre",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--harfe--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Harfe",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--harfe--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Harfe",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--mandoline--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Mandoline",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--mandoline--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Mandoline",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--schlagzeug--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Schlagzeug",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--schlagzeug--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Schlagzeug",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--gesang--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Gesang",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--gesang-lied-konzert--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Gesang Lied/Konzert",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--gesang-musiktheater--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Gesang Musiktheater",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--chordirigieren--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Chordirigieren",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--dirigieren-chor--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Dirigieren Chor",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--dirigieren-orchester--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Dirigieren Orchester",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--dirigieren-musiktheater--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Dirigieren Musiktheater",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--orchesterdirigieren--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Orchesterdirigieren",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--instrumentale-komposition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Instrumentale Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--instrumentale-komposition--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Instrumentale Komposition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--elektronische-komposition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Elektronische Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--elektronische-komposition--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Elektronische Komposition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--jazz-pop--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Jazz/Pop",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--jazz-pop-instrumental-vokal--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Jazz/Pop instrumental/vokal",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--jazz-komposition-arrangement--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Jazz-Komposition/Arrangement",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--historische-instrumente--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Historische Instrumente",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--historische-instrumente-und-barockgesang--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Historische Instrumente und Barockgesang",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--elementare-musikpadagogik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Elementare Musikpädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--instrumental-gesangspadagogik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Instrumental-/Gesangspädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--musikpadagogik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Musikpädagogik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--musikpadagogik--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Musikpädagogik",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--evangelische-kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Evangelische Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--evangelische-kirchenmusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Evangelische Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--katholische-kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Katholische Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--katholische-kirchenmusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Katholische Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--kammermusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Kammermusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--liedgestaltung-klavier--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Liedgestaltung (Klavier)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--opernkorrepetition--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Opernkorrepetition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--interpretation-neue-musik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Interpretation Neue Musik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--neue-klaviermusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Neue Klaviermusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--orchesterspiel--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Orchesterspiel",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--production--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Production",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--musikwissenschaft--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Musikwissenschaft",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--gender-queer-studies--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Gender & Queer Studies",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--lehramt-musik--lehramt",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Lehramt Musik",
+      "degree": "Lehramt"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--konzertexamen--konzertexamen",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Konzertexamen",
+      "degree": "Konzertexamen"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--tanz--bachelor-of-arts",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Tanz",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--tanzvermittlung--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Tanzvermittlung",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-tanz-koln--tanzwissenschaft--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "schoolName": "Hochschule für Musik und Tanz Köln",
+      "name": "Tanzwissenschaft",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-blasinstrumente--bachelor-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Blasinstrumente)",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-blasinstrumente-schlagzeug--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Blasinstrumente / Schlagzeug)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-streichinstrumente-harfe--bachelor-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Streichinstrumente / Harfe)",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-streichinstrumente-harfe--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Streichinstrumente / Harfe)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-tasteninstrumente--bachelor-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Tasteninstrumente)",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-tasteninstrumente--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Tasteninstrumente)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-gitarre--bachelor-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Gitarre)",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-gitarre--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Gitarre)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-saxophon--bachelor-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Saxophon)",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-saxophon--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Saxophon)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-schlagzeug--bachelor-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Schlagzeug)",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-orgel--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental (Orgel)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--vokal--bachelor-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Vokal",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--vokal--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Vokal",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--komposition--bachelor-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--komposition--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Komposition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--kirchenmusik-b--bachelor-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Kirchenmusik B",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--kirchenmusik-a--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Kirchenmusik A",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--musiktheorie-gehorbildung--bachelor-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Musiktheorie / Gehörbildung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--musiktheorie--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Musiktheorie",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumentale-und-elementare-musikpadagogik--bachelor-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumentale und elementare Musikpädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--instrumental-und-gesangspadagogik--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Instrumental- und Gesangspädagogik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--kammermusik--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Kammermusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--korrepetition--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Korrepetition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--musik-vermitteln-gesang-popgesang--bachelor-of-arts",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Musik Vermitteln (Gesang / Popgesang)",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--musik-vermitteln-klavier--bachelor-of-arts",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Musik Vermitteln (Klavier)",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--musik-vermitteln-sonstige-instrumente--bachelor-of-arts",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Musik Vermitteln (Sonstige Instrumente)",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--musikplus-grundschule--bachelor-of-arts",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "MusikPlus – Grundschule",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--musikplus-grundschule--master-of-education",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "MusikPlus – Grundschule",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--lehramt-gymnasium-musik-vermitteln--master-of-education",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Lehramt Gymnasium – Musik Vermitteln",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--lehramt-gymnasium-umstieg--master-of-education",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Lehramt Gymnasium (Umstieg)",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--lehramt-grundschule-umstieg--master-of-education",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Lehramt Grundschule (Umstieg)",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--sound-arts-and-creative-music-technology--master-of-music",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Sound Arts and Creative Music Technology",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--konzertexamen--konzertexamen",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Konzertexamen",
+      "degree": "Konzertexamen"
+    },
+    {
+      "program_id": "musikhochschule-lubeck--weiterbildung-darstellendes-spiel--certificate-of-advanced-studies",
+      "schoolId": "musikhochschule-lubeck",
+      "schoolName": "Musikhochschule Lübeck",
+      "name": "Weiterbildung Darstellendes Spiel",
+      "degree": "Certificate of Advanced Studies"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--musik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-mannheim",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Mannheim",
+      "name": "Musik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--musik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-mannheim",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Mannheim",
+      "name": "Musik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--jazz-popularmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-mannheim",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Mannheim",
+      "name": "Jazz / Popularmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--jazz-popularmusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-mannheim",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Mannheim",
+      "name": "Jazz / Popularmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--tanz-tanzpadagogik--bachelor-of-arts",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-mannheim",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Mannheim",
+      "name": "Tanz / Tanzpädagogik",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--tanz-tanzpadagogik--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-mannheim",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Mannheim",
+      "name": "Tanz / Tanzpädagogik",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--lehramt-musik-an-gymnasien--bachelor",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-mannheim",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Mannheim",
+      "name": "Lehramt Musik an Gymnasien",
+      "degree": "Bachelor"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--lehramt-musik-an-gymnasien--master",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-mannheim",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Mannheim",
+      "name": "Lehramt Musik an Gymnasien",
+      "degree": "Master"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--solistische-ausbildung--konzertexamen",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-mannheim",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Mannheim",
+      "name": "Solistische Ausbildung",
+      "degree": "Konzertexamen"
+    },
+    {
+      "program_id": "hochschule-fur-musik-nurnberg--kunstlerischer-bachelor--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-nurnberg",
+      "schoolName": "Hochschule für Musik Nürnberg",
+      "name": "Künstlerischer Bachelor",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-nurnberg--kunstlerisch-padagogischer-bachelor--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-nurnberg",
+      "schoolName": "Hochschule für Musik Nürnberg",
+      "name": "Künstlerisch-pädagogischer Bachelor",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-nurnberg--kunstlerischer-master--master-of-music",
+      "schoolId": "hochschule-fur-musik-nurnberg",
+      "schoolName": "Hochschule für Musik Nürnberg",
+      "name": "Künstlerischer Master",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-nurnberg--musikwissenschaften--master-of-arts",
+      "schoolId": "hochschule-fur-musik-nurnberg",
+      "schoolName": "Hochschule für Musik Nürnberg",
+      "name": "Musikwissenschaften",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-nurnberg--meisterklasse--meisterklassendiplom",
+      "schoolId": "hochschule-fur-musik-nurnberg",
+      "schoolName": "Hochschule für Musik Nürnberg",
+      "name": "Meisterklasse",
+      "degree": "Meisterklassendiplom"
+    },
+    {
+      "program_id": "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik--katholische-kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik",
+      "schoolName": "Hochschule für Katholische Kirchenmusik und Musikpädagogik",
+      "name": "Katholische Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik--katholische-kirchenmusik--master-of-music",
+      "schoolId": "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik",
+      "schoolName": "Hochschule für Katholische Kirchenmusik und Musikpädagogik",
+      "name": "Katholische Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-rottenburg--katholische-kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-rottenburg",
+      "schoolName": "Hochschule für Kirchenmusik der Diözese Rottenburg-Stuttgart",
+      "name": "Katholische Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-rottenburg--katholische-kirchenmusik--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-rottenburg",
+      "schoolName": "Hochschule für Kirchenmusik der Diözese Rottenburg-Stuttgart",
+      "name": "Katholische Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-rottenburg--chorleitung--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-rottenburg",
+      "schoolName": "Hochschule für Kirchenmusik der Diözese Rottenburg-Stuttgart",
+      "name": "Chorleitung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-rottenburg--gesang-gesangspadagogik--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-rottenburg",
+      "schoolName": "Hochschule für Kirchenmusik der Diözese Rottenburg-Stuttgart",
+      "name": "Gesang / Gesangspädagogik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-rottenburg--gregorianik-deutscher-liturgiegesang--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-rottenburg",
+      "schoolName": "Hochschule für Kirchenmusik der Diözese Rottenburg-Stuttgart",
+      "name": "Gregorianik / Deutscher Liturgiegesang",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-rottenburg--orgelimprovisation-liturgisches-orgelspiel--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-rottenburg",
+      "schoolName": "Hochschule für Kirchenmusik der Diözese Rottenburg-Stuttgart",
+      "name": "Orgelimprovisation / Liturgisches Orgelspiel",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-rottenburg--orgelliteraturspiel--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-rottenburg",
+      "schoolName": "Hochschule für Kirchenmusik der Diözese Rottenburg-Stuttgart",
+      "name": "Orgelliteraturspiel",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-rottenburg--zertifikat-c--zertifikat",
+      "schoolId": "hochschule-fur-kirchenmusik-rottenburg",
+      "schoolName": "Hochschule für Kirchenmusik der Diözese Rottenburg-Stuttgart",
+      "name": "Zertifikat C",
+      "degree": "Zertifikat"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-instrument--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Instrument",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-gesang--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Gesang",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-orchester-und-ensemblemusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Orchester- und Ensemblemusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-jazz-und-aktuelle-musik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Jazz und Aktuelle Musik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-komposition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-orchesterleitung--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Dirigieren (Orchesterleitung)",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-chorleitung--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Dirigieren (Chorleitung)",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kirchenmusik-ev-kath--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Kirchenmusik ev./kath.",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisch-padagogisches-profil--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisch-pädagogisches Profil",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisch-padagogisches-profil-musiktheorie--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisch-pädagogisches Profil Musiktheorie",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--elementare-musikpadagogik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Elementare Musikpädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--cultural-studies-und-management--bachelor-of-arts",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Cultural Studies und Management",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-instrument--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Instrument",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-gesang--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Gesang",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-orchesterinstrument-orchesterakademie--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Orchesterinstrument (Orchesterakademie)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-kammermusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Kammermusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-liedgestaltung--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Liedgestaltung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-improvisation-fur-tasteninstrumente--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Improvisation für Tasteninstrumente",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-instrumentalkorrepetition--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Instrumentalkorrepetition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-komposition--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Komposition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-neue-musik--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Neue Musik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-neue-musik--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Dirigieren Neue Musik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-orchesterleitung--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Dirigieren (Orchesterleitung)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-chorleitung--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Dirigieren (Chorleitung)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-jazz--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisches Profil Jazz",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kirchenmusik-kath-ev-a--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Kirchenmusik kath./ev. A",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisch-padagogisches-profil-gehorbildung--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisch-pädagogisches Profil Gehörbildung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kunstlerisch-padagogisches-profil-musiktheorie--master-of-music",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Künstlerisch-pädagogisches Profil Musiktheorie",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--advanced-education-in-music-pedagogy--master-of-education",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Advanced Education in Music Pedagogy",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--q-master-lehramt-musik--master-of-education",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Q-Master Lehramt Musik",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "hochschule-fur-musik-saar--kulturmanagement--master-of-arts",
+      "schoolId": "hochschule-fur-musik-saar",
+      "schoolName": "Hochschule für Musik Saar",
+      "name": "Kulturmanagement",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--musik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Musik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--musik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Musik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--kirchenmusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--schauspiel--bachelor-of-arts",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Schauspiel",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--figurentheater--bachelor-of-arts",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Figurentheater",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--sprechkunst-sprecherziehung--bachelor-of-arts",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Sprechkunst / Sprecherziehung",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--sprechkunst--master-of-arts",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Sprechkunst",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--oper--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Oper",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--lehramt-gymnasium-mit-dem-fach-musik--bachelor",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Lehramt Gymnasium mit dem Fach Musik",
+      "degree": "Bachelor"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--lehramt-gymnasium-mit-dem-fach-musik--master",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Lehramt Gymnasium mit dem Fach Musik",
+      "degree": "Master"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--konzertexamen--konzertexamen",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Konzertexamen",
+      "degree": "Konzertexamen"
+    },
+    {
+      "program_id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--weiterbildungs-master-berufsbegleitend--master-of-music",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "schoolName": "Staatliche Hochschule für Musik und Darstellende Kunst Stuttgart",
+      "name": "Weiterbildungs-Master (berufsbegleitend)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-musik-trossingen--musik--bachelor-of-music",
+      "schoolId": "staatliche-hochschule-fur-musik-trossingen",
+      "schoolName": "Staatliche Hochschule für Musik Trossingen",
+      "name": "Musik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-musik-trossingen--musik--master-of-music",
+      "schoolId": "staatliche-hochschule-fur-musik-trossingen",
+      "schoolName": "Staatliche Hochschule für Musik Trossingen",
+      "name": "Musik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-musik-trossingen--musikdesign--bachelor-of-music",
+      "schoolId": "staatliche-hochschule-fur-musik-trossingen",
+      "schoolName": "Staatliche Hochschule für Musik Trossingen",
+      "name": "Musikdesign",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-musik-trossingen--audio-experience-design--master-of-music",
+      "schoolId": "staatliche-hochschule-fur-musik-trossingen",
+      "schoolName": "Staatliche Hochschule für Musik Trossingen",
+      "name": "Audio Experience Design",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-musik-trossingen--creative-arts-practice--master-of-music",
+      "schoolId": "staatliche-hochschule-fur-musik-trossingen",
+      "schoolName": "Staatliche Hochschule für Musik Trossingen",
+      "name": "Creative Arts Practice",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-musik-trossingen--rhythmik-mit-elementarer-musikpadagogik--bachelor-of-music",
+      "schoolId": "staatliche-hochschule-fur-musik-trossingen",
+      "schoolName": "Staatliche Hochschule für Musik Trossingen",
+      "name": "Rhythmik mit Elementarer Musikpädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "staatliche-hochschule-fur-musik-trossingen--musik-und-bewegung--bachelor-of-music",
+      "schoolId": "staatliche-hochschule-fur-musik-trossingen",
+      "schoolName": "Staatliche Hochschule für Musik Trossingen",
+      "name": "Musik und Bewegung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-tubingen--evangelische-kirchenmusik-b--bachelor-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-tubingen",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Württemberg",
+      "name": "Evangelische Kirchenmusik B",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-tubingen--evangelische-popular-kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-tubingen",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Württemberg",
+      "name": "Evangelische Popular-Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-tubingen--evangelische-kirchenmusik-a--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-tubingen",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Württemberg",
+      "name": "Evangelische Kirchenmusik A",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-tubingen--kirchliche-popularmusik--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-tubingen",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Württemberg",
+      "name": "Kirchliche Popularmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-tubingen--ka-aufbaustudiengang-orgel--kunstlerische-ausbildung",
+      "schoolId": "hochschule-fur-kirchenmusik-tubingen",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Landeskirche in Württemberg",
+      "name": "KA-Aufbaustudiengang Orgel",
+      "degree": "Künstlerische Ausbildung"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--kunstlerische-instrumentalausbildung--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Künstlerische Instrumentalausbildung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--kunstlerische-instrumentalausbildung--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Künstlerische Instrumentalausbildung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--gesang-musiktheater--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Gesang / Musiktheater",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--gesang-musiktheater--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Gesang / Musiktheater",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--jazz--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Jazz",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--jazz--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Jazz",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--alte-musik-historische-instrumente--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Alte Musik / Historische Instrumente",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--alte-musik-historische-instrumente--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Alte Musik / Historische Instrumente",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--orchesterdirigieren--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Orchesterdirigieren",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--orchesterdirigieren--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Orchesterdirigieren",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--chordirigieren--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Chordirigieren",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--chordirigieren--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Chordirigieren",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--kirchenmusik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Kirchenmusik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--kirchenmusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Kirchenmusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--komposition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--komposition--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Komposition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--musiktheorie--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Musiktheorie",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--musiktheorie--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Musiktheorie",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--elementare-musikpadagogik-rhythmik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Elementare Musikpädagogik / Rhythmik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--schulmusik-lehramt-an-gymnasien--staatsexamen",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Schulmusik (Lehramt an Gymnasien)",
+      "degree": "Staatsexamen"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--musikwissenschaft--bachelor-of-arts",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Musikwissenschaft",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--musikwissenschaft--master-of-arts",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Musikwissenschaft",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--kulturmanagement--master-of-arts",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Kulturmanagement",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--liedgestaltung-fur-pianisten--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Liedgestaltung für Pianisten",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--kammermusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Kammermusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-weimar--opernkorrepetition--master-of-music",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "schoolName": "Hochschule für Musik Franz Liszt Weimar",
+      "name": "Opernkorrepetition",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen--evangelische-kirchenmusik-klassisch--bachelor-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Kirche von Westfalen",
+      "name": "Evangelische Kirchenmusik Klassisch",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen--evangelische-kirchenmusik-popular--bachelor-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Kirche von Westfalen",
+      "name": "Evangelische Kirchenmusik Popular",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen--evangelische-kirchenmusik-klassisch--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Kirche von Westfalen",
+      "name": "Evangelische Kirchenmusik Klassisch",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen--evangelische-kirchenmusik-popular--master-of-music",
+      "schoolId": "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen",
+      "schoolName": "Hochschule für Kirchenmusik der Evangelischen Kirche von Westfalen",
+      "name": "Evangelische Kirchenmusik Popular",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--kunstlerische-ausbildung--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Künstlerische Ausbildung",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--kunstlerische-ausbildung--master-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Künstlerische Ausbildung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--jazz--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Jazz",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--jazz--master-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Jazz",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--kirchenmusik-ev-kath--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Kirchenmusik (ev./kath.)",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--elementare-musikpadagogik--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Elementare Musikpädagogik",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--komposition--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Komposition",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--komposition-auch-mit-neuen-medien--master-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Komposition (auch mit neuen Medien)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--musiktheorie--bachelor-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Musiktheorie",
+      "degree": "Bachelor of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--gesang-konzert-operngesang--master-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Gesang (Konzert-/Operngesang)",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--kammermusik--master-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Kammermusik",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--chorleitung--master-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Chorleitung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--blasorchesterleitung--master-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Blasorchesterleitung",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--kunstlerisch-padagogische-masterstudiengange--master-of-music",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Künstlerisch-pädagogische Masterstudiengänge",
+      "degree": "Master of Music"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--lehramt-musik--lehramt",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Lehramt Musik",
+      "degree": "Lehramt"
+    },
+    {
+      "program_id": "hochschule-fur-musik-wurzburg--meisterklasse--meisterklassendiplom",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "schoolName": "Hochschule für Musik Würzburg",
+      "name": "Meisterklasse",
+      "degree": "Meisterklassendiplom"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--regie-szenischer-film--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Regie Szenischer Film",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--regie-dokumentarfilm--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Regie Dokumentarfilm",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--regie-journalistischer-film--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Regie Journalistischer Film",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--werbefilm-regie-producing--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Werbefilm Regie/Producing",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--drehbuch--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Drehbuch",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--bildgestaltung-kamera--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Bildgestaltung/Kamera",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--montage-schnitt--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Montage/Schnitt",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--produktion--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Produktion",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--produktion-creative-series-producing--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Produktion – Creative Series Producing",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--produktion-executive-line-producing--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Produktion – Executive Line Producing",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--produktion-international-producing--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Produktion – International Producing",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--animation--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Animation",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--animation-effects-producing--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Animation/Effects Producing",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--visual-effects--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Visual Effects",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--interaktive-medien--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Interaktive Medien",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--szenenbild-production-design--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Szenenbild / Production Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--filmmusik--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Filmmusik",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--filmton-sounddesign--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Filmton/Sounddesign",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--motion-design--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Motion Design",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--technical-directing--diploma",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Technical Directing",
+      "degree": "Diploma"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--masterclass-atelier-ludwigsburg-paris--masterclass-weiterbildung",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Masterclass Atelier Ludwigsburg-Paris",
+      "degree": "Masterclass (Weiterbildung)"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--filmschauspielworkshop--workshop",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "Filmschauspielworkshop",
+      "degree": "Workshop"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--international-screen-acting-workshop--workshop",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "International Screen Acting Workshop",
+      "degree": "Workshop"
+    },
+    {
+      "program_id": "filmakademie-baden-wurttemberg--international-class--workshop",
+      "schoolId": "filmakademie-baden-wurttemberg",
+      "schoolName": "Filmakademie Baden-Württemberg",
+      "name": "International Class",
+      "degree": "Workshop"
     }
   ]
 }

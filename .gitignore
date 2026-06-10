@@ -52,3 +52,7 @@ mcp_servers.json
 *.md
 !README.md
 !LICENSE
+
+# Browser session artifacts
+.playwright-mcp/
+scratch/

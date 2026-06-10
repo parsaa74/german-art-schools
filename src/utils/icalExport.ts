@@ -74,17 +74,18 @@ export function generateICalEvent(params: {
   schoolName: string;
   programName: string;
   semester: 'winter' | 'summer';
-  deadline: { start: string; end: string };
+  deadline: { start?: string; end: string };
   website?: string;
 }): string {
   const { schoolName, programName, semester, deadline, website } = params;
-  const dtStart = parseDeadlineDateToICal(deadline.start);
+  // Deadline-only windows (no published opening date) become single-day events
+  const dtStart = parseDeadlineDateToICal(deadline.start ?? deadline.end);
   const dtEnd = parseDeadlineDateToICal(deadline.end);
   const uid = generateUID(schoolName, programName, semester);
   const stamp = nowStamp();
 
   const summary = `${schoolName} - ${programName} (${semester} semester)`;
-  let description = `Application period for ${programName} at ${schoolName}.\\n${semester.charAt(0).toUpperCase() + semester.slice(1)} semester.\\nOpens: ${deadline.start}\\nCloses: ${deadline.end}`;
+  let description = `Application period for ${programName} at ${schoolName}.\\n${semester.charAt(0).toUpperCase() + semester.slice(1)} semester.${deadline.start ? `\\nOpens: ${deadline.start}` : ''}\\nCloses: ${deadline.end}`;
   if (website) {
     description += `\\nWebsite: ${website}`;
   }
@@ -128,7 +129,7 @@ export function generateICalFile(
     schoolName: string;
     programName: string;
     semester: string;
-    deadline: { start: string; end: string };
+    deadline: { start?: string; end: string };
     website?: string;
   }>
 ): string {
@@ -179,8 +180,8 @@ export function generateSchoolICalFile(school: {
   programs: Array<{
     name: string;
     applicationDeadlines?: {
-      winter?: { start: string; end: string };
-      summer?: { start: string; end: string };
+      winter?: { start?: string; end?: string };
+      summer?: { start?: string; end?: string };
     };
   }>;
 }): string {
@@ -188,7 +189,7 @@ export function generateSchoolICalFile(school: {
     schoolName: string;
     programName: string;
     semester: string;
-    deadline: { start: string; end: string };
+    deadline: { start?: string; end: string };
     website?: string;
   }> = [];
 
@@ -196,12 +197,12 @@ export function generateSchoolICalFile(school: {
     if (!prog.applicationDeadlines) continue;
     for (const semester of ['winter', 'summer'] as const) {
       const dl = prog.applicationDeadlines[semester];
-      if (dl) {
+      if (dl?.end) {
         events.push({
           schoolName: school.name,
           programName: prog.name,
           semester,
-          deadline: dl,
+          deadline: { start: dl.start, end: dl.end },
           website: school.website,
         });
       }
@@ -221,8 +222,8 @@ export function generateAllDeadlinesICalFile(
     programs: Array<{
       name: string;
       applicationDeadlines?: {
-        winter?: { start: string; end: string };
-        summer?: { start: string; end: string };
+        winter?: { start?: string; end?: string };
+        summer?: { start?: string; end?: string };
       };
     }>;
   }>
@@ -231,7 +232,7 @@ export function generateAllDeadlinesICalFile(
     schoolName: string;
     programName: string;
     semester: string;
-    deadline: { start: string; end: string };
+    deadline: { start?: string; end: string };
     website?: string;
   }> = [];
 
@@ -241,12 +242,12 @@ export function generateAllDeadlinesICalFile(
       if (!prog.applicationDeadlines) continue;
       for (const semester of ['winter', 'summer'] as const) {
         const dl = prog.applicationDeadlines[semester];
-        if (dl) {
+        if (dl?.end) {
           events.push({
             schoolName: uni.name,
             programName: prog.name,
             semester,
-            deadline: dl,
+            deadline: { start: dl.start, end: dl.end },
             website: uni.website,
           });
         }

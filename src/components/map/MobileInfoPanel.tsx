@@ -307,7 +307,7 @@ function MobileDeadlineSection({ school, delay }: { school: ProcessedUniversity;
           </span>
         </div>
         <div className="text-sm text-gray-300">
-          {nextDeadline.programName}: {nextDeadline.deadline.start} — {nextDeadline.deadline.end}
+          {nextDeadline.programName}: {nextDeadline.deadline.start ? `${nextDeadline.deadline.start} — ` : 'until '}{nextDeadline.deadline.end}
         </div>
         <button
           onClick={handleDownloadICal}

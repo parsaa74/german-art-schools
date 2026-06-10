@@ -11,8 +11,14 @@ export interface UpcomingDeadline {
   schoolName: string;
   programName: string;
   semester: 'winter' | 'summer';
-  deadline: { start: string; end: string };
+  deadline: DeadlineWindow;
   status: DeadlineStatus;
+}
+
+/** Some schools only publish a submission deadline, so `start` is optional. */
+export interface DeadlineWindow {
+  start?: string;
+  end?: string;
 }
 
 const MONTHS: Record<string, number> = {
@@ -54,21 +60,62 @@ function daysBetween(a: Date, b: Date): number {
   return Math.ceil((b.getTime() - a.getTime()) / msPerDay);
 }
 
+function tryParseDeadlineDate(dateStr: string | undefined, year?: number): Date | null {
+  if (!dateStr) return null;
+  try {
+    return parseDeadlineDate(dateStr, year);
+  } catch {
+    return null;
+  }
+}
+
 /**
  * Get the status of a deadline period (start → end).
  * Handles year-boundary crossing (e.g. Dec start → Jan end for summer semester).
+ * Windows without a start date are treated as open until the deadline.
+ * Returns null when the window has no parseable end date.
  */
-export function getDeadlineStatus(deadline: { start: string; end: string }): DeadlineStatus {
+export function getDeadlineStatus(deadline: DeadlineWindow): DeadlineStatus | null {
   const now = new Date();
   const currentYear = now.getFullYear();
 
+  // Deadline-only window (no published opening date)
+  if (!tryParseDeadlineDate(deadline.start, currentYear)) {
+    let endOnly = tryParseDeadlineDate(deadline.end);
+    if (!endOnly) return null;
+    const days = daysBetween(now, endOnly);
+    if (days <= 14) {
+      return {
+        status: 'closing-soon',
+        daysRemaining: days,
+        label: days <= 1 ? 'Last day!' : `${days} days left`,
+        color: 'text-red-400 bg-red-500/20 border-red-500/50',
+      };
+    }
+    if (days <= 120) {
+      return {
+        status: 'open',
+        daysRemaining: days,
+        label: `${days} days left`,
+        color: 'text-emerald-400 bg-emerald-500/20 border-emerald-500/50',
+      };
+    }
+    return {
+      status: 'upcoming',
+      daysRemaining: days,
+      label: `Deadline in ${days} days`,
+      color: 'text-amber-400 bg-amber-500/20 border-amber-500/50',
+    };
+  }
+
   // Parse start and end for current year first
-  let startDate = parseDeadlineDate(deadline.start, currentYear);
-  let endDate = parseDeadlineDate(deadline.end, currentYear);
+  let startDate = parseDeadlineDate(deadline.start!, currentYear);
+  let endDate = tryParseDeadlineDate(deadline.end, currentYear);
+  if (!endDate) return null;
 
   // Handle year-boundary: if end is before start (e.g. Dec → Jan), push end to next year
   if (endDate <= startDate) {
-    endDate = parseDeadlineDate(deadline.end, currentYear + 1);
+    endDate = parseDeadlineDate(deadline.end!, currentYear + 1);
   }
 
   // If the entire window has passed, shift both to next cycle
@@ -127,29 +174,21 @@ export function getDeadlineStatus(deadline: { start: string; end: string }): Dea
  */
 export function getNextDeadline(
   deadlines: {
-    winter?: { start: string; end: string };
-    summer?: { start: string; end: string };
+    winter?: DeadlineWindow;
+    summer?: DeadlineWindow;
   }
-): { semester: 'winter' | 'summer'; deadline: { start: string; end: string }; status: DeadlineStatus } | null {
+): { semester: 'winter' | 'summer'; deadline: DeadlineWindow; status: DeadlineStatus } | null {
   const candidates: Array<{
     semester: 'winter' | 'summer';
-    deadline: { start: string; end: string };
+    deadline: DeadlineWindow;
     status: DeadlineStatus;
   }> = [];
 
-  if (deadlines.winter) {
-    candidates.push({
-      semester: 'winter',
-      deadline: deadlines.winter,
-      status: getDeadlineStatus(deadlines.winter),
-    });
-  }
-  if (deadlines.summer) {
-    candidates.push({
-      semester: 'summer',
-      deadline: deadlines.summer,
-      status: getDeadlineStatus(deadlines.summer),
-    });
+  for (const semester of ['winter', 'summer'] as const) {
+    const window = deadlines[semester];
+    if (!window) continue;
+    const status = getDeadlineStatus(window);
+    if (status) candidates.push({ semester, deadline: window, status });
   }
 
   if (candidates.length === 0) return null;
@@ -182,8 +221,8 @@ export function getAllUpcomingDeadlines(
     programs: Array<{
       name: string;
       applicationDeadlines?: {
-        winter?: { start: string; end: string };
-        summer?: { start: string; end: string };
+        winter?: DeadlineWindow;
+        summer?: DeadlineWindow;
       };
     }>;
   }>
@@ -200,6 +239,7 @@ export function getAllUpcomingDeadlines(
         const d = dl[semester];
         if (!d) continue;
         const status = getDeadlineStatus(d);
+        if (!status) continue;
         // Only include non-closed deadlines
         if (status.status !== 'closed') {
           results.push({

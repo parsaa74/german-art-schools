@@ -276,7 +276,7 @@ function DeadlineSection({ school, delay }: { school: ProcessedUniversity; delay
           </span>
         </div>
         <div className="text-[0.7rem] text-gray-300">
-          {nextDeadline.programName}: {nextDeadline.deadline.start} — {nextDeadline.deadline.end}
+          {nextDeadline.programName}: {nextDeadline.deadline.start ? `${nextDeadline.deadline.start} — ` : 'until '}{nextDeadline.deadline.end}
         </div>
         <button
           onClick={handleDownloadICal}
