@@ -1,0 +1,43 @@
+- generic [ref=e4]:
+  - generic [ref=e9]:
+    - button "Open search (Cmd+K or Ctrl+K)" [ref=e14] [cursor=pointer]:
+      - generic [ref=e15]:
+        - img [ref=e17]
+        - generic [ref=e21]: Search Schools
+      - generic [ref=e22]:
+        - generic [ref=e23]: Ctrl
+        - generic [ref=e24]: +
+        - generic [ref=e25]: K
+    - generic [ref=e26]:
+      - link "View Source on GitHub" [ref=e58] [cursor=pointer]:
+        - /url: https://github.com/parsaa74/german-art-schools
+        - img [ref=e59]
+      - button "Help / Info" [ref=e27] [cursor=pointer]:
+        - img [ref=e28]
+  - generic [ref=e31]:
+    - generic [ref=e33]:
+      - generic [ref=e34]: 6 / 81 remain
+      - button "All filters" [ref=e35] [cursor=pointer]
+    - generic [ref=e102]:
+      - paragraph [ref=e103]: Step 2 · Kind of school
+      - heading "What kind of place are you after?" [level=2] [ref=e104]
+      - generic [ref=e105]:
+        - button "Any" [ref=e106] [cursor=pointer]
+        - button "music_theater_academy" [ref=e107] [cursor=pointer]
+        - button "kunstakademie" [ref=e108] [cursor=pointer]
+        - button "university_of_applied_sciences" [ref=e109] [cursor=pointer]
+        - button "college" [ref=e110] [cursor=pointer]
+        - button "music_academy" [ref=e111] [cursor=pointer]
+        - button "Art academy" [ref=e112] [cursor=pointer]
+        - button "Design school" [ref=e113] [cursor=pointer]
+        - button "Film university" [ref=e114] [cursor=pointer]
+        - button "University" [ref=e115] [cursor=pointer]
+      - generic [ref=e116]:
+        - button "← Back" [ref=e117] [cursor=pointer]
+        - button "Skip →" [ref=e118] [cursor=pointer]
+  - button "Open Control Panel" [ref=e99] [cursor=pointer]:
+    - img [ref=e101]
+  - button "Switch to 2D Force Graph View" [ref=e46] [cursor=pointer]:
+    - img [ref=e49]
+  - button "Open Music Player" [ref=e55] [cursor=pointer]:
+    - img [ref=e56]

@@ -100,6 +100,12 @@ export interface SchoolStore {
   programEdges: ProgramEdge[];
   programById: Map<string, { schoolName: string; schoolId: string; program: any }>;
 
+  // Atmosphere (shattered-glass weather/mood system)
+  storminess: number;       // 0 calm … 1 storm — driven by application deadlines
+  intent: number;           // 0 … 1 — how narrowed the user's choice is
+  lightningFlash: number;   // transient 0..1 flash, set by the Atmosphere driver
+  atmosphereAuto: boolean;  // derive storminess/intent from data vs. manual control
+
   // Actions
   setIsLoading: (loading: boolean) => void;
   setSelectedUniversity: (university: ProcessedUniversity | null) => void;
@@ -125,6 +131,10 @@ export interface SchoolStore {
   setNodePositions: (positions: Map<string, THREE.Vector3>) => void; // Use THREE.Vector3
   setShowPrograms: (show: boolean) => void;
   setSelectedProgramId: (id: string | null) => void;
+  setStorminess: (v: number) => void;
+  setIntent: (v: number) => void;
+  setLightningFlash: (v: number) => void;
+  setAtmosphereAuto: (v: boolean) => void;
   initializeStore: () => Promise<void>;
 }
 
@@ -163,6 +173,12 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   programEdges: [],
   programById: new Map(),
 
+  // Atmosphere
+  storminess: 0.12,
+  intent: 0,
+  lightningFlash: 0,
+  atmosphereAuto: true,
+
   // --- Actions (Setters) ---
   setIsLoading: (loading) => set({ isLoading: loading }),
   setSelectedUniversity: (university) => set({ selectedUniversity: university }),
@@ -188,6 +204,10 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   setNodePositions: (positions) => set({ nodePositions: positions }),
   setShowPrograms: (show) => set({ showPrograms: show, selectedProgramId: null }),
   setSelectedProgramId: (id) => set({ selectedProgramId: id }),
+  setStorminess: (v) => set({ storminess: v }),
+  setIntent: (v) => set({ intent: v }),
+  setLightningFlash: (v) => set({ lightningFlash: v }),
+  setAtmosphereAuto: (v) => set({ atmosphereAuto: v }),
 
   // --- Initialization Action ---
   initializeStore: async () => {

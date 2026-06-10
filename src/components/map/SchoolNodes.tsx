@@ -4,6 +4,8 @@ import * as THREE from 'three';
 import { latLngToVector3, MAP_CONFIG } from '@/lib/geo/index';
 import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore';
 import { SchoolMarker } from './SchoolMarker';
+import { buildFractureGeometries } from '@/lib/glass/fracture';
+import { ATMO } from './atmosphere/config';
 
 // Removed the commented-out shader code block entirely
 
@@ -85,6 +87,20 @@ export function SchoolNodes() {
     searchQuery: state.searchQuery,
     setSelectedUniversity: state.setSelectedUniversity
   }));
+
+  // One broken window: generate the master fracture once for ALL schools and
+  // assign each a stable shard (by sorted name, so it never changes on filter).
+  const shardGeometries = useMemo(() => {
+    const names = processedUniversities.map(u => u.name).sort();
+    const geos = buildFractureGeometries(Math.max(names.length, 1), {
+      seed: ATMO.fracture.seed,
+      depth: ATMO.fracture.depth,
+      bevel: ATMO.fracture.bevel,
+    });
+    const map = new Map<string, THREE.BufferGeometry>();
+    names.forEach((n, i) => map.set(n, geos[i % geos.length]));
+    return { map, fallback: geos[0] };
+  }, [processedUniversities]);
 
   // Fuzzy search function
   const fuzzyMatch = (text: string, query: string): boolean => {
@@ -421,7 +437,7 @@ export function SchoolNodes() {
       if (filteredUniversities.length === 1) {
         return new THREE.Vector3(0, 0, 0);
       }
-      
+
       return selectedUniversity
         ? relationshipPositions.get(uni.name)!
         : spherePositions.get(uni.name)!;
@@ -453,6 +469,7 @@ export function SchoolNodes() {
               schoolData={uni}
               isHovered={hoverUniversityName === uni.name}
               isSelected={selectedUniversity?.name === uni.name || filteredUniversities.length === 1}
+              shardGeometry={shardGeometries.map.get(uni.name) ?? shardGeometries.fallback}
             />
           </a.group>
         );

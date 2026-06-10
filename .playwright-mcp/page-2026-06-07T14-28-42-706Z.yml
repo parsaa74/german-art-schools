@@ -1,0 +1,37 @@
+- generic [ref=e4]:
+  - generic [ref=e9]:
+    - button "Open search (Cmd+K or Ctrl+K)" [ref=e14] [cursor=pointer]:
+      - generic [ref=e15]:
+        - img [ref=e17]
+        - generic [ref=e21]: Search Schools
+      - generic [ref=e22]:
+        - generic [ref=e23]: Ctrl
+        - generic [ref=e24]: +
+        - generic [ref=e25]: K
+    - generic [ref=e26]:
+      - link "View Source on GitHub":
+        - /url: https://github.com/parsaa74/german-art-schools
+        - img
+      - button "Help / Info" [ref=e27] [cursor=pointer]:
+        - img [ref=e28]
+  - generic [ref=e31]:
+    - generic [ref=e33]:
+      - generic [ref=e34]: 0 / 0 remain
+      - button "All filters" [ref=e35] [cursor=pointer]
+    - generic [ref=e36]:
+      - paragraph [ref=e37]: The window has broken down to
+      - paragraph [ref=e38]: 0 schools
+      - paragraph [ref=e39]: Click a shard to explore it — or keep refining.
+      - generic [ref=e40]:
+        - button "Refine" [ref=e41] [cursor=pointer]
+        - button "Start over" [ref=e42] [cursor=pointer]
+        - button "Explore" [ref=e43] [cursor=pointer]
+  - generic [ref=e44]:
+    - generic:
+      - button "Open Control Panel":
+        - generic:
+          - img
+  - button "Switch to 2D Force Graph View" [ref=e46] [cursor=pointer]:
+    - img [ref=e49]
+  - button "Open Music Player" [ref=e55] [cursor=pointer]:
+    - img [ref=e56]

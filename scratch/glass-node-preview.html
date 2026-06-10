@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Atmosphere lab — shattered glass school network</title>
+<style>
+  :root { color-scheme: dark; }
+  html, body { margin: 0; height: 100%; background: #04060c; overflow: hidden; font-family: ui-monospace, "SF Mono", Menlo, monospace; }
+  #info {
+    position: fixed; left: 16px; top: 14px; z-index: 10;
+    color: #cbd5e1; font-size: 12px; line-height: 1.55; pointer-events: none; text-shadow: 0 1px 3px #000;
+  }
+  #info b { color: #f1f5f9; }
+  #info .legend span { display:inline-block; padding:1px 6px; border-radius:4px; margin-right:4px; color:#04060c; font-weight:700; }
+  #hint { position: fixed; left: 16px; bottom: 12px; z-index: 10; color:#64748b; font-size: 11px; text-shadow:0 1px 2px #000; }
+</style>
+</head>
+<body>
+<div id="info">
+  <div><b>Atmosphere lab</b> — one broken window, scattered into a school network</div>
+  <div style="margin-top:3px;color:#94a3b8;">
+    <b>formation</b>: window ↔ network ·
+    <b>storminess</b>: deadline pressure ·
+    <b>intent</b>: how narrowed your choice is
+  </div>
+  <div class="legend" style="margin-top:6px;">
+    <span style="background:#EF4444">art academy</span>
+    <span style="background:#10B981">design</span>
+    <span style="background:#8B5CF6">arts univ.</span>
+    <span style="background:#F59E0B">film</span>
+    <span style="background:#3B82F6">university</span>
+  </div>
+</div>
+<div id="hint">drag to orbit · scroll to zoom · panel top-right · try the presets at the bottom of the panel</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+    "lil-gui": "https://unpkg.com/lil-gui@0.19.2/dist/lil-gui.esm.js",
+    "d3-delaunay": "https://cdn.jsdelivr.net/npm/d3-delaunay@6/+esm"
+  }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { Delaunay } from 'd3-delaunay';
+import GUI from 'lil-gui';
+
+const M = THREE.MathUtils;
+
+// ---------- renderer / scene / camera ----------
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+const baseExposure = 1.05;
+
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2('#0a1020', 0.02);
+
+const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 200);
+camera.position.set(0, 0, 9);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true; controls.dampingFactor = 0.08;
+
+// ---------- moody procedural environment (for glass reflections / glints) ----------
+function buildEnv() {
+  const s = new THREE.Scene();
+  const dome = new THREE.Mesh(
+    new THREE.SphereGeometry(10, 32, 16),
+    new THREE.ShaderMaterial({
+      side: THREE.BackSide,
+      uniforms: {},
+      vertexShader: `varying vec3 vP; void main(){ vP=position; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+      fragmentShader: `varying vec3 vP; void main(){
+        vec3 d=normalize(vP); float h=d.y*0.5+0.5;
+        vec3 col=mix(vec3(0.02,0.03,0.06), vec3(0.10,0.10,0.16), h);
+        // two cool bright streaks → become the glints on the glass bevels
+        float s1=smoothstep(0.06,0.0,abs(d.x-0.5))*smoothstep(-0.2,0.6,d.y);
+        float s2=smoothstep(0.05,0.0,abs(d.x+0.45))*smoothstep(0.2,0.9,d.y);
+        col += vec3(0.7,0.8,1.0)*s1*1.4 + vec3(1.0,0.85,0.7)*s2*1.1;
+        gl_FragColor=vec4(col,1.0);
+      }`,
+    })
+  );
+  s.add(dome);
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  const env = pmrem.fromScene(s, 0.5).texture;
+  dome.geometry.dispose(); dome.material.dispose();
+  return env;
+}
+scene.environment = buildEnv();
+
+// ---------- moody sky dome (drifting storm clouds + lightning) ----------
+const skyUniforms = {
+  uTime: { value: 0 }, uWeather: { value: 0.0 }, uFlash: { value: 0.0 },
+};
+const sky = new THREE.Mesh(
+  new THREE.SphereGeometry(60, 32, 16),
+  new THREE.ShaderMaterial({
+    side: THREE.BackSide, depthWrite: false, uniforms: skyUniforms,
+    vertexShader: `varying vec3 vP; void main(){ vP=position; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+    fragmentShader: `
+      varying vec3 vP; uniform float uTime,uWeather,uFlash;
+      float hash(vec2 p){ return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453); }
+      float noise(vec2 p){ vec2 i=floor(p),f=fract(p); f=f*f*(3.0-2.0*f);
+        return mix(mix(hash(i),hash(i+vec2(1,0)),f.x), mix(hash(i+vec2(0,1)),hash(i+vec2(1,1)),f.x), f.y); }
+      float fbm(vec2 p){ float v=0.0,a=0.5; for(int i=0;i<5;i++){ v+=a*noise(p); p*=2.0; a*=0.5;} return v; }
+      void main(){
+        vec3 d=normalize(vP); float h=clamp(d.y*0.5+0.5,0.0,1.0);
+        vec3 topC=mix(vec3(0.05,0.07,0.15), vec3(0.005,0.01,0.03), uWeather);
+        vec3 horC=mix(vec3(0.18,0.13,0.20), vec3(0.04,0.05,0.09), uWeather);
+        vec3 col=mix(horC,topC,smoothstep(0.0,1.0,h));
+        vec2 uv=vec2(atan(d.z,d.x), h);
+        float speed=mix(0.012,0.06,uWeather);
+        float n=fbm(uv*vec2(2.5,3.5)+vec2(uTime*speed,uTime*speed*0.3));
+        float cloud=smoothstep(0.45,0.95,n)*smoothstep(0.02,0.5,h);
+        vec3 cloudCol=mix(vec3(0.28,0.24,0.30), vec3(0.015,0.02,0.04), uWeather);
+        col=mix(col,cloudCol,cloud*mix(0.35,0.95,uWeather));
+        col+=uFlash*vec3(0.55,0.65,0.95)*(0.4+cloud);
+        gl_FragColor=vec4(col,1.0);
+      }`,
+  })
+);
+sky.renderOrder = -1;
+scene.add(sky);
+
+// ---------- backdrop globe (so refraction has structure behind it) ----------
+const globe = new THREE.Mesh(
+  new THREE.SphereGeometry(4.6, 24, 16),
+  new THREE.MeshBasicMaterial({ color: '#16233b', wireframe: true, transparent: true, opacity: 0.35, fog: false })
+);
+scene.add(globe);
+
+// ---------- rain (shader-driven streaks, intensity follows storminess) ----------
+const rain = (() => {
+  const DROPS = 1400, RANGE = 18;
+  const pos = new Float32Array(DROPS * 2 * 3);
+  const aTop = new Float32Array(DROPS * 2);
+  const aPhase = new Float32Array(DROPS * 2);
+  const aSpeed = new Float32Array(DROPS * 2);
+  const aLen = new Float32Array(DROPS * 2);
+  const aWind = new Float32Array(DROPS * 2);
+  for (let i = 0; i < DROPS; i++) {
+    const x = (Math.random()-0.5)*16, z = (Math.random()-0.5)*16;
+    const ph = Math.random(), sp = 6+Math.random()*6, ln = 0.3+Math.random()*0.5, wd = 0.2+Math.random()*0.4;
+    for (let k = 0; k < 2; k++) {
+      const j = i*2+k;
+      pos[j*3]=x; pos[j*3+1]=0; pos[j*3+2]=z;
+      aTop[j]=k; aPhase[j]=ph; aSpeed[j]=sp; aLen[j]=ln; aWind[j]=wd;
+    }
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.BufferAttribute(pos,3));
+  g.setAttribute('aTop', new THREE.BufferAttribute(aTop,1));
+  g.setAttribute('aPhase', new THREE.BufferAttribute(aPhase,1));
+  g.setAttribute('aSpeed', new THREE.BufferAttribute(aSpeed,1));
+  g.setAttribute('aLen', new THREE.BufferAttribute(aLen,1));
+  g.setAttribute('aWind', new THREE.BufferAttribute(aWind,1));
+  const mat = new THREE.ShaderMaterial({
+    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, fog: false,
+    uniforms: { uTime:{value:0}, uRange:{value:RANGE}, uWeather:{value:0} },
+    vertexShader: `
+      attribute float aTop,aPhase,aSpeed,aLen,aWind;
+      uniform float uTime,uRange; varying float vA; uniform float uWeather;
+      void main(){ vec3 p=position;
+        float fall=mod(uTime*aSpeed+aPhase*uRange,uRange);
+        p.y = uRange*0.5 - fall + aTop*aLen;
+        p.x += sin(uTime*0.6+aPhase*6.28)*aWind;
+        vA = uWeather;
+        gl_Position=projectionMatrix*modelViewMatrix*vec4(p,1.0);
+      }`,
+    fragmentShader: `varying float vA; void main(){ gl_FragColor=vec4(vec3(0.7,0.8,1.0), vA*0.32); }`,
+  });
+  const ls = new THREE.LineSegments(g, mat);
+  ls.frustumCulled = false;
+  scene.add(ls);
+  return mat;
+})();
+
+// ---------- the schools: sibling shards from ONE fracture ----------
+const TYPES = [
+  { color: '#EF4444' }, { color: '#10B981' }, { color: '#8B5CF6' },
+  { color: '#F59E0B' }, { color: '#3B82F6' },
+];
+const PANE_W = 4.4, PANE_H = 5.4, CLOUD_R = 3.4;
+const GRAY = new THREE.Color('#8090a8');
+
+const params = {
+  formation: 1.0,     // 0 = reassembled window, 1 = school network cloud
+  storminess: 0.15,   // deadline pressure → weather
+  intent: 0.0,        // how narrowed the user's choice is → clarity
+  pieces: 40,
+  roughness: 0.05, transmission: 1.0, thickness: 0.45, ior: 1.52,
+  tintStrength: 0.6, bevel: 0.02, depth: 0.12, envIntensity: 1.3, clearcoat: 1.0,
+  rain: true, showGlobe: true, autoDemo: false,
+  newBreak: () => { seed = (Math.random()*1e9)|0; build(); },
+  reRollIntent: () => { shards.forEach((s,i)=> s.affinity = mulberry32(seed*7+i*131)()); },
+  presetUrgent: () => set({ storminess: 0.95, intent: 0.15, formation: 1.0 }),
+  presetCalm:   () => set({ storminess: 0.05, intent: 0.0, formation: 1.0 }),
+  presetFocus:  () => set({ storminess: 0.2, intent: 0.92, formation: 1.0 }),
+  presetWindow: () => set({ storminess: 0.3, intent: 0.0, formation: 0.0 }),
+};
+let seed = 12345;
+function set(o){ Object.assign(params, o); gui.controllersRecursive().forEach(c=>c.updateDisplay()); }
+
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+
+function genPoints(rnd, count) {
+  const impact = [ (rnd()-0.5)*PANE_W*0.45, (rnd()-0.5)*PANE_H*0.45 ];
+  const pts = [ impact.slice() ];
+  for (let i=0;i<count;i++){
+    let x,y;
+    if (rnd()<0.55){ const r=Math.pow(rnd(),2)*Math.min(PANE_W,PANE_H)*0.65, a=rnd()*Math.PI*2;
+      x=impact[0]+Math.cos(a)*r; y=impact[1]+Math.sin(a)*r; }
+    else { x=(rnd()-0.5)*PANE_W; y=(rnd()-0.5)*PANE_H; }
+    x=Math.max(-PANE_W/2+0.02,Math.min(PANE_W/2-0.02,x));
+    y=Math.max(-PANE_H/2+0.02,Math.min(PANE_H/2-0.02,y));
+    pts.push([x,y]);
+  }
+  return { pts, impact };
+}
+
+const group = new THREE.Group();
+scene.add(group);
+let shards = [];
+
+function build() {
+  shards.forEach(s=>{ group.remove(s.mesh); s.mesh.geometry.dispose(); s.mesh.material.dispose(); });
+  shards = [];
+  const rnd = mulberry32(seed);
+  const { pts } = genPoints(rnd, params.pieces);
+  const del = new Delaunay(Float64Array.from(pts.flat()));
+  const vor = del.voronoi([-PANE_W/2,-PANE_H/2,PANE_W/2,PANE_H/2]);
+  const ga = Math.PI*(3-Math.sqrt(5));
+  let placed = 0;
+  const cells = [];
+  for (let i=0;i<pts.length;i++){ const poly=vor.cellPolygon(i); if(poly&&poly.length>=4) cells.push(poly); }
+  const N = cells.length;
+
+  cells.forEach((poly, idx) => {
+    const pp = poly.slice(0,-1);
+    let cx=0,cy=0; pp.forEach(p=>{cx+=p[0];cy+=p[1];}); cx/=pp.length; cy/=pp.length;
+    let cellR=0; pp.forEach(p=> cellR=Math.max(cellR,Math.hypot(p[0]-cx,p[1]-cy)));
+    const shape=new THREE.Shape();
+    pp.forEach((p,k)=> k===0?shape.moveTo(p[0],p[1]):shape.lineTo(p[0],p[1])); shape.closePath();
+    const bevel=Math.min(params.bevel, cellR*0.22);
+    const geo=new THREE.ExtrudeGeometry(shape,{ depth:params.depth, bevelEnabled:bevel>0.003,
+      bevelThickness:bevel, bevelSize:bevel, bevelSegments:1, steps:1 });
+    geo.translate(-cx,-cy,-params.depth/2);
+
+    const type=TYPES[Math.floor(rnd()*TYPES.length)];
+    const tcol=new THREE.Color(type.color);
+    const mat=new THREE.MeshPhysicalMaterial({ color:'#ffffff', metalness:0, roughness:params.roughness,
+      transmission:params.transmission, thickness:params.thickness, ior:params.ior,
+      attenuationColor: tcol.clone(), attenuationDistance: 1-params.tintStrength+0.001,
+      clearcoat:params.clearcoat, clearcoatRoughness:0.08, envMapIntensity:params.envIntensity,
+      transparent:true, side:THREE.DoubleSide });
+    const mesh=new THREE.Mesh(geo,mat);
+
+    // pane position (reassembled window) vs cloud position (network)
+    const pane=new THREE.Vector3(cx,cy,0);
+    const yy=1-(idx/Math.max(N-1,1))*2, rr=Math.sqrt(Math.max(0,1-yy*yy)), th=ga*idx;
+    const cloud=new THREE.Vector3(Math.cos(th)*rr, yy, Math.sin(th)*rr).multiplyScalar(CLOUD_R);
+    cloud.x+=(rnd()-0.5)*0.6; cloud.y+=(rnd()-0.5)*0.6; cloud.z+=(rnd()-0.5)*0.6;
+
+    mesh.userData = {
+      pane, cloud, cloudDir: cloud.clone().normalize(),
+      rot: new THREE.Euler(rnd()*Math.PI*2, rnd()*Math.PI*2, rnd()*Math.PI*2),
+      jitter: new THREE.Vector3(rnd(),rnd(),rnd()).multiplyScalar(6.28),
+    };
+    group.add(mesh);
+    shards.push({ mesh, type, tcol, affinity: rnd() });
+    placed++;
+  });
+}
+build();
+
+// ---------- gui ----------
+const gui = new GUI({ title: 'atmosphere lab' });
+gui.add(params,'formation',0,1,0.01).name('formation (win↔net)').listen();
+gui.add(params,'storminess',0,1,0.01).name('storminess (deadline)').listen();
+gui.add(params,'intent',0,1,0.01).name('intent (your filter)').listen();
+gui.add(params,'reRollIntent').name('↻ re-roll intent');
+gui.add(params,'autoDemo').name('auto demo').listen();
+const gf=gui.addFolder('glass');
+const live=()=>shards.forEach(({mesh})=>{ const m=mesh.material;
+  m.transmission=params.transmission; m.thickness=params.thickness; m.ior=params.ior;
+  m.clearcoat=params.clearcoat; m.needsUpdate=true; });
+gf.add(params,'transmission',0,1,0.01).onChange(live);
+gf.add(params,'thickness',0,2,0.01).onChange(live);
+gf.add(params,'ior',1,2.4,0.01).onChange(live);
+gf.add(params,'roughness',0,0.5,0.01).name('base roughness');
+gf.add(params,'tintStrength',0,0.98,0.01).name('tint strength');
+gf.add(params,'envIntensity',0,3,0.05).name('reflections');
+gf.add(params,'clearcoat',0,1,0.01).onChange(live);
+gf.add(params,'bevel',0,0.1,0.002).name('edge bevel').onFinishChange(build);
+gf.add(params,'depth',0.02,0.5,0.01).name('glass thickness').onFinishChange(build);
+gf.add(params,'pieces',12,120,1).name('# schools').onFinishChange(build);
+gf.add(params,'newBreak').name('↻ new break');
+const gs=gui.addFolder('scene');
+gs.add(params,'rain').name('rain');
+gs.add(params,'showGlobe').name('backdrop globe').onChange(v=>globe.visible=v);
+const gp=gui.addFolder('presets');
+gp.add(params,'presetUrgent').name('🌩 deadline urgent');
+gp.add(params,'presetCalm').name('☀ calm / open');
+gp.add(params,'presetFocus').name('🎯 focused choice');
+gp.add(params,'presetWindow').name('🪟 reassemble window');
+
+// ---------- loop ----------
+const tmpA=new THREE.Vector3(), tmpB=new THREE.Vector3(), focal=new THREE.Vector3(0,0,2.8), tmpC=new THREE.Color();
+const clock=new THREE.Clock(); let flash=0;
+function animate(){
+  const t=clock.getElapsedTime(), dt=clock.getDelta? 0:0;
+  if (params.autoDemo){
+    params.storminess = 0.5+0.5*Math.sin(t*0.18);
+    params.intent     = 0.5+0.5*Math.sin(t*0.11+1.5);
+    params.formation  = 0.5+0.5*Math.sin(t*0.07+3.0);
+  }
+  const W=params.storminess, U=params.intent, F=params.formation;
+
+  // sky / weather
+  skyUniforms.uTime.value=t; skyUniforms.uWeather.value=W;
+  flash*=0.86;
+  if (W>0.55 && Math.random()<0.012*W) flash=0.7+Math.random()*0.5;
+  skyUniforms.uFlash.value=flash;
+  renderer.toneMappingExposure = baseExposure*(1+flash*0.7) * (1-W*0.25);
+  rain.uniforms.uTime.value=t; rain.uniforms.uWeather.value = params.rain? W:0;
+  scene.fog.density = M.lerp(0.012,0.055,W);
+  tmpC.set('#101826').lerp(new THREE.Color('#05070d'), W); scene.fog.color.copy(tmpC);
+
+  // whole constellation sways; storm = faster/wider
+  group.rotation.y = Math.sin(t*0.22)*M.lerp(0.12,0.4,W);
+  group.rotation.x = Math.sin(t*0.16)*M.lerp(0.06,0.2,W);
+
+  for (const s of shards){
+    const m=s.mesh, u=m.userData;
+    const clarity = M.lerp(0.6, s.affinity, U);   // intent decides whether affinity matters
+    // position: window ↔ network, then intent pulls matches in / pushes others out
+    tmpA.lerpVectors(u.pane,u.cloud,F);
+    const pull=U*clarity*0.55, push=U*(1-clarity)*0.8;
+    tmpB.copy(tmpA).lerp(focal,pull).addScaledVector(u.cloudDir, push*1.6);
+    // storm rattle
+    const jit=W*(0.02+(1-clarity)*0.05);
+    tmpB.x+=Math.sin(t*9+u.jitter.x)*jit; tmpB.y+=Math.cos(t*11+u.jitter.y)*jit;
+    m.position.lerp(tmpB,0.12);
+    // rotation lerps from facing-camera (window) to tumbled (network)
+    m.rotation.set(u.rot.x*F, u.rot.y*F, u.rot.z*F);
+    // material: matches stay clear+saturated+reflective, non-matches frost+desaturate+dim
+    m.material.roughness = M.clamp(params.roughness + (1-clarity)*0.6, 0, 1);
+    m.material.envMapIntensity = params.envIntensity*(0.4+0.6*clarity);
+    tmpC.copy(s.tcol).lerp(GRAY,(1-clarity)*0.7);
+    m.material.attenuationColor.copy(tmpC);
+    m.material.attenuationDistance = (1-params.tintStrength+0.001)*(1+(1-clarity)*1.6);
+    m.material.opacity = M.lerp(0.7,1.0,clarity);
+  }
+
+  controls.update();
+  renderer.render(scene,camera);
+  requestAnimationFrame(animate);
+}
+animate();
+
+addEventListener('resize',()=>{ camera.aspect=innerWidth/innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth,innerHeight); });
+</script>
+</body>
+</html>

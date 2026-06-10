@@ -1,0 +1,57 @@
+- generic [ref=e4]:
+  - generic [ref=e9]:
+    - button "Open search (Cmd+K or Ctrl+K)" [ref=e14] [cursor=pointer]:
+      - generic [ref=e15]:
+        - img [ref=e17]
+        - generic [ref=e21]: Search Schools
+      - generic [ref=e22]:
+        - generic [ref=e23]: Ctrl
+        - generic [ref=e24]: +
+        - generic [ref=e25]: K
+    - generic [ref=e26]:
+      - link "View Source on GitHub" [ref=e58] [cursor=pointer]:
+        - /url: https://github.com/parsaa74/german-art-schools
+        - img [ref=e59]
+      - button "Help / Info" [ref=e27] [cursor=pointer]:
+        - img [ref=e28]
+  - generic [ref=e31]:
+    - generic [ref=e33]:
+      - generic [ref=e34]: 81 / 81 remain
+      - button "All filters" [ref=e35] [cursor=pointer]
+    - generic [ref=e67]:
+      - paragraph [ref=e68]: Step 1 · Where
+      - heading "Where in Germany do you want to be?" [level=2] [ref=e69]
+      - generic [ref=e70]:
+        - button "Any" [ref=e71] [cursor=pointer]
+        - button "Baden-Württemberg" [ref=e72] [cursor=pointer]
+        - button "Bavaria" [ref=e73] [cursor=pointer]
+        - button "Bayern" [ref=e74] [cursor=pointer]
+        - button "Berlin" [ref=e75] [cursor=pointer]
+        - button "Brandenburg" [ref=e76] [cursor=pointer]
+        - button "Bremen" [ref=e77] [cursor=pointer]
+        - button "Hamburg" [ref=e78] [cursor=pointer]
+        - button "Hesse" [ref=e79] [cursor=pointer]
+        - button "Hessen" [ref=e80] [cursor=pointer]
+        - button "Lower Saxony" [ref=e81] [cursor=pointer]
+        - button "Mecklenburg-Vorpommern" [ref=e82] [cursor=pointer]
+        - button "Niedersachsen" [ref=e83] [cursor=pointer]
+        - button "Nordrhein-Westfalen" [ref=e84] [cursor=pointer]
+        - button "North Rhine-Westphalia" [ref=e85] [cursor=pointer]
+        - button "Rhineland-Palatinate" [ref=e86] [cursor=pointer]
+        - button "Saarland" [ref=e87] [cursor=pointer]
+        - button "Sachsen" [ref=e88] [cursor=pointer]
+        - button "Sachsen-Anhalt" [ref=e89] [cursor=pointer]
+        - button "Saxony" [ref=e90] [cursor=pointer]
+        - button "Saxony-Anhalt" [ref=e91] [cursor=pointer]
+        - button "Schleswig-Holstein" [ref=e92] [cursor=pointer]
+        - button "Thuringia" [ref=e93] [cursor=pointer]
+        - button "Thüringen" [ref=e94] [cursor=pointer]
+      - generic [ref=e95]:
+        - button "← Back" [disabled] [ref=e96]
+        - button "Skip →" [ref=e97] [cursor=pointer]
+  - button "Open Control Panel" [ref=e99] [cursor=pointer]:
+    - img [ref=e101]
+  - button "Switch to 2D Force Graph View" [ref=e46] [cursor=pointer]:
+    - img [ref=e49]
+  - button "Open Music Player" [ref=e55] [cursor=pointer]:
+    - img [ref=e56]

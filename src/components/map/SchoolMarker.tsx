@@ -1,22 +1,25 @@
-import React, { useState, useRef, useMemo } from 'react';
+import React, { useState, useRef, useMemo, useEffect } from 'react';
 import { useFrame, ThreeEvent, useThree } from '@react-three/fiber';
-import { Sphere, Text, Line, Billboard } from '@react-three/drei';
+import { Text, Line, Billboard } from '@react-three/drei';
 import * as THREE from 'three';
 import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore';
 import { useSpring, animated } from '@react-spring/three';
 import { MAP_CONFIG } from '@/lib/geo/index';
 import { getFormationPositionForUniversity, calculateUniversityRelationship } from '@/utils/universityRelations';
+import { ATMO, rattleAmplitude } from './atmosphere/config';
 
 interface SchoolMarkerProps {
   position: THREE.Vector3;
   schoolData: ProcessedUniversity;
   isHovered: boolean;
   isSelected: boolean;
+  shardGeometry: THREE.BufferGeometry;
 }
 
-const AnimatedSphere = animated(Sphere);
 const AnimatedText = animated(Text);
 const AnimatedLine = animated(Line);
+const Z_AXIS = new THREE.Vector3(0, 0, 1);
+const lerp = THREE.MathUtils.lerp;
 
 const FRESNEL_VERT = `
   varying vec3 vNormal;
@@ -45,6 +48,7 @@ const FRESNEL_FRAG = `
 `;
 
 function FresnelRim({
+  geometry,
   nodeSize,
   springScale,
   formationScale,
@@ -52,6 +56,7 @@ function FresnelRim({
   intensity,
   power,
 }: {
+  geometry: THREE.BufferGeometry;
   nodeSize: number;
   springScale: any;
   formationScale: any;
@@ -74,12 +79,13 @@ function FresnelRim({
     matRef.current.uniforms.uIntensity.value = intensity.get();
   });
 
+  // Shares the shard silhouette so the glow is angular, not a round halo.
   return (
     <animated.mesh
-      scale={springScale.to((s: number) => s * formationScale.get() * 1.05)}
-      renderOrder={1}
+      geometry={geometry}
+      scale={springScale.to((s: number) => s * formationScale.get() * nodeSize * 1.08)}
+      renderOrder={2}
     >
-      <sphereGeometry args={[nodeSize, 32, 32]} />
       <shaderMaterial
         ref={matRef}
         transparent
@@ -92,6 +98,23 @@ function FresnelRim({
       />
     </animated.mesh>
   );
+}
+
+// School type → stained-glass tint (stable identity, independent of selection).
+function getTypeColor(type: string): string {
+  switch (type) {
+    case 'art_academy':
+    case 'kunsthochschule':
+      return '#EF4444';
+    case 'design_school':
+      return '#10B981';
+    case 'university_of_arts':
+      return '#8B5CF6';
+    case 'film_university':
+      return '#F59E0B';
+    default:
+      return '#3B82F6';
+  }
 }
 
 // simpleHash function
@@ -253,9 +276,10 @@ function calculateNodeColor(
 
 // --- Removed getBaseColor function --- 
 
-export function SchoolMarker({ position, schoolData, isHovered, isSelected }: SchoolMarkerProps) {
+export function SchoolMarker({ position, schoolData, isHovered, isSelected, shardGeometry }: SchoolMarkerProps) {
   const groupRef = useRef<THREE.Group>(null);
-  const meshRef = useRef<THREE.Mesh>(null);
+  const shardRef = useRef<THREE.Mesh>(null);
+  const orientRef = useRef<THREE.Group>(null);
   const ringRef = useRef<THREE.Mesh>(null);
   const [localHover, setLocalHover] = useState(false);
   const [isCameraFacing, setIsCameraFacing] = useState(false);
@@ -275,6 +299,45 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
     calculateNodeColor(schoolData, isSelected, showHoverEffect, selectedUniversity),
     [schoolData, isSelected, showHoverEffect, selectedUniversity]
   );
+
+  // --- Glass shard: stained-glass tint by type, clarity driven by intent/affinity ---
+  const typeColorObj = useMemo(() => new THREE.Color(getTypeColor(schoolData.type)), [schoolData.type]);
+  const frostColor = useMemo(() => new THREE.Color(ATMO.glass.frostColor), []);
+  const glassMaterial = useMemo(() => new THREE.MeshPhysicalMaterial({
+    color: '#ffffff',
+    metalness: 0,
+    roughness: ATMO.glass.roughness,
+    transmission: ATMO.glass.transmission,
+    thickness: ATMO.glass.thickness,
+    ior: ATMO.glass.ior,
+    attenuationColor: typeColorObj.clone(),
+    attenuationDistance: 1 - ATMO.glass.tintStrength + 0.001,
+    clearcoat: ATMO.glass.clearcoat,
+    clearcoatRoughness: ATMO.glass.clearcoatRoughness,
+    envMapIntensity: ATMO.glass.envIntensity,
+    emissive: typeColorObj.clone(), // backlit stained-glass glow
+    emissiveIntensity: ATMO.glass.emissiveIntensity,
+    iridescence: ATMO.glass.iridescence,
+    iridescenceIOR: ATMO.glass.iridescenceIor,
+    transparent: true,
+    side: THREE.DoubleSide,
+  }), [typeColorObj]);
+  useEffect(() => () => glassMaterial.dispose(), [glassMaterial]);
+
+  // How well this shard matches the currently selected school (1 when none selected / is selected).
+  const relationshipScore = useMemo(() => {
+    if (!selectedUniversity || selectedUniversity.name === schoolData.name) return 1;
+    return calculateUniversityRelationship(selectedUniversity, schoolData);
+  }, [selectedUniversity, schoolData]);
+
+  // Scratch objects reused each frame (no per-frame allocation).
+  const tmp = useMemo(() => ({
+    world: new THREE.Vector3(),
+    dir: new THREE.Vector3(),
+    quat: new THREE.Quaternion(),
+    wobble: new THREE.Quaternion(),
+    color: new THREE.Color(),
+  }), []);
 
   // Ring properties based on urgency
   const ringColor = URGENCY_RING_COLORS[deadlineInfo.urgency];
@@ -317,7 +380,7 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
   const showPassiveLabel = isCameraFacing && !showHoverEffect && !isBackgrounded;
 
   // Spring animations
-  const { springScale, color, emissiveColor, glowOpacity, nodeOpacity, emissiveIntensity, rimIntensity, textOpacity, textScale, textSlideY, lineOpacity, formationScale } = useSpring({
+  const { springScale, emissiveColor, rimIntensity, textOpacity, textScale, textSlideY, lineOpacity, formationScale } = useSpring({
     springScale: isSelected ? 1.8 : (showHoverEffect ? 1.5 : (isBackgrounded ? 0.88 : 1.0)),
     color: nodeColor,
     emissiveColor: isSelected ? '#93C5FD' : (showHoverEffect ? '#FFFFFF' : nodeColor),
@@ -344,13 +407,25 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
 
   // Removed uniforms memoization
 
-  // Frame loop for wandering motion, formation transitions, and ring pulse
+  // Frame loop for wandering motion, formation transitions, glass response, and ring pulse
   useFrame(({ clock }) => {
+    const t = clock.getElapsedTime();
+    const { intent, storminess } = useSchoolStore.getState();
+
+    // Clarity: how strongly this shard matches the user's current intent.
+    // Strong match → clear/sharp/saturated. Weak match → frosted/washed/dim.
+    const clarity = isSelected
+      ? 1
+      : selectedUniversity
+        ? lerp(ATMO.clarity.neutral, relationshipScore, intent)
+        : 1;
+
     if (groupRef.current) {
-      const elapsedTime = clock.getElapsedTime() * speedFactor;
-      const wanderX = Math.sin(elapsedTime + timeOffsetX) * amplitude;
-      const wanderY = Math.cos(elapsedTime + timeOffsetY) * amplitude;
-      const wanderZ = Math.sin(elapsedTime + timeOffsetZ) * amplitude * 0.7;
+      const elapsedTime = t * speedFactor;
+      const ra = rattleAmplitude(storminess, clarity); // storms make shards tremble
+      const wanderX = Math.sin(elapsedTime + timeOffsetX) * amplitude + Math.sin(t * 9 + timeOffsetX) * ra;
+      const wanderY = Math.cos(elapsedTime + timeOffsetY) * amplitude + Math.cos(t * 11 + timeOffsetY) * ra;
+      const wanderZ = Math.sin(elapsedTime + timeOffsetZ) * amplitude * 0.7 + Math.sin(t * 13 + timeOffsetZ) * ra;
 
       if (formationPosition && selectedUniversity) {
         const targetX = formationPosition.x + wanderX;
@@ -367,7 +442,38 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
           basePosition.z + wanderZ
         );
       }
+
+      // Orient the shard so its face points outward from the globe, plus a subtle wobble.
+      if (orientRef.current) {
+        groupRef.current.getWorldPosition(tmp.world);
+        tmp.dir.copy(tmp.world);
+        if (tmp.dir.lengthSq() < 1e-4) tmp.dir.set(0, 0, 1); else tmp.dir.normalize();
+        tmp.quat.setFromUnitVectors(Z_AXIS, tmp.dir);
+        tmp.wobble.setFromAxisAngle(tmp.dir, Math.sin(t * 0.5 + timeOffsetX) * 0.18);
+        orientRef.current.quaternion.copy(tmp.quat).multiply(tmp.wobble);
+      }
+
+      // Scale to data size; matches grow a touch, weak matches shrink.
+      if (shardRef.current) {
+        const sc = nodeSize * springScale.get() * formationScale.get() * (0.82 + 0.32 * clarity);
+        shardRef.current.scale.setScalar(sc);
+      }
     }
+
+    // Glass material reacts to clarity.
+    const m = glassMaterial;
+    m.roughness = THREE.MathUtils.clamp(
+      ATMO.glass.roughness + (1 - clarity) * (ATMO.glass.frostRoughness - ATMO.glass.roughness),
+      0,
+      1
+    );
+    m.envMapIntensity = ATMO.glass.envIntensity * (0.4 + 0.6 * clarity);
+    tmp.color.copy(typeColorObj).lerp(frostColor, (1 - clarity) * 0.7);
+    m.attenuationColor.copy(tmp.color);
+    m.emissive.copy(tmp.color); // backlit glow follows the (clarity-washed) tint
+    m.emissiveIntensity = ATMO.glass.emissiveIntensity * (0.35 + 0.65 * clarity);
+    m.attenuationDistance = (1 - ATMO.glass.tintStrength + 0.001) * (1 + (1 - clarity) * 1.6);
+    m.opacity = lerp(ATMO.glass.opacityMin, 1, clarity);
 
     // Pulse the urgency ring
     if (ringRef.current && showRing) {
@@ -467,37 +573,31 @@ export function SchoolMarker({ position, schoolData, isHovered, isSelected }: Sc
 
   // Render
   return (
-    <group ref={groupRef} position={basePosition}> 
-      <AnimatedSphere
-        ref={meshRef}
-        args={[nodeSize, 32, 32]} // Use calculated size
-        scale={springScale.to(s => s * formationScale.get())} 
-        onPointerOver={handlePointerOver}
-        onPointerOut={handlePointerOut}
-        onClick={handleClick}
-      >
-        {/* Enhanced animated standard material */}
-        <animated.meshStandardMaterial
-          color={color}
-          emissive={emissiveColor}
-          emissiveIntensity={emissiveIntensity}
-          metalness={0.1}
-          roughness={0.4}
-          transparent
-          opacity={nodeOpacity}
-          depthWrite={!isBackgrounded}
+    <group ref={groupRef} position={basePosition}>
+      {/* Glass shard — a piece of the one broken window. Oriented outward + wobble. */}
+      <group ref={orientRef}>
+        <mesh
+          ref={shardRef}
+          geometry={shardGeometry}
+          material={glassMaterial}
+          scale={nodeSize}
+          renderOrder={1}
+          onPointerOver={handlePointerOver}
+          onPointerOut={handlePointerOut}
+          onClick={handleClick}
         />
-      </AnimatedSphere>
 
-      {/* Fresnel rim light — always on, modulated by state */}
-      <FresnelRim
-        nodeSize={nodeSize}
-        springScale={springScale}
-        formationScale={formationScale}
-        color={emissiveColor}
-        intensity={rimIntensity}
-        power={2.2}
-      />
+        {/* Fresnel rim light — angular glow matching the shard, modulated by state */}
+        <FresnelRim
+          geometry={shardGeometry}
+          nodeSize={nodeSize}
+          springScale={springScale}
+          formationScale={formationScale}
+          color={emissiveColor}
+          intensity={rimIntensity}
+          power={2.2}
+        />
+      </group>
 
       {/* Deadline urgency pulsing ring */}
       {showRing && !isBackgrounded && (

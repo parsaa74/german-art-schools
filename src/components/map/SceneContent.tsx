@@ -3,7 +3,7 @@
 // Essential imports
 import { Suspense, useEffect, useRef, useMemo, useState } from 'react';
 import { useThree, extend, Object3DNode } from '@react-three/fiber';
-import { OrbitControls, PerspectiveCamera, MapControls, Environment, PerformanceMonitor } from '@react-three/drei';
+import { OrbitControls, PerspectiveCamera, MapControls, PerformanceMonitor } from '@react-three/drei';
 import * as THREE from 'three';
 import { LineMaterial } from 'three-stdlib';
 
@@ -16,13 +16,17 @@ import { SchoolMarker } from './SchoolMarker';
 
 // Component imports
 // import NetworkGraph from './NetworkGraph'; // Remove old graph
-import { SchoolNodes } from './SchoolNodes'; // Import new nodes component
+import { SchoolNodes } from './SchoolNodes'; // (legacy 3D network — replaced by GlassWall)
+import { GlassWall } from './GlassWall';
 import { ProgramSatellites } from './ProgramSatellites';
 import CustomForceGraph from './CustomForceGraph';
 // import SceneEffects from './SceneEffects';
 
 // Post-processing
 import PostProcessing from './PostProcessing';
+
+// Atmosphere (moody env, fog, rain, lightning + weather/intent driver)
+import { Atmosphere } from './atmosphere/Atmosphere';
 
 // Remove the entire SceneEventHandler component definition (lines ~25 to ~348)
 // function SceneEventHandler(...) { ... }
@@ -95,31 +99,32 @@ export function SceneContent(_props: SceneContentProps) {
         near={0.1}
         far={1000}
       />
+      {/* Locked frontal view of the glass wall — no orbit/pan, only a little zoom */}
       <OrbitControls
         ref={controlsRef}
         enableDamping
-        dampingFactor={0.05}
-        enablePan={!isLoading && controlsEnabled}
-        minDistance={1} // Adjust min distance
-        maxDistance={100} // Adjust max distance
+        dampingFactor={0.08}
+        enableRotate={false}
+        enablePan={false}
+        minDistance={12}
+        maxDistance={24}
         enableZoom={!isLoading && controlsEnabled}
         enabled={controlsEnabled}
         target={new THREE.Vector3(...cameraTarget)}
-        rotateSpeed={0.5}
-        zoomSpeed={0.8}
+        zoomSpeed={0.6}
         makeDefault
       />
 
       {/* Remove Background component since it's already in the parent Scene */}
       {/* <Background /> */}
 
-      {/* Only render 3D visualization in network mode */}
+      {/* Frontal glass wall — the schools as one window that breaks as you filter */}
       {visualizationMode === 'network' && (
-        <>
-          <SchoolNodes /> {/* Use the new SchoolNodes component */}
-          <ProgramSatellites />
-        </>
+        <GlassWall />
       )}
+
+      {/* Moody environment + weather (replaces the old studio Environment) */}
+      <Atmosphere />
 
       {/* Post-processing effects */}
       <PostProcessing />
@@ -136,9 +141,6 @@ export function SceneContent(_props: SceneContentProps) {
           />
         )} */}
       </group>
-
-      {/* Environment and Effects */}
-      <Environment preset="studio" />
 
     </Suspense>
     );

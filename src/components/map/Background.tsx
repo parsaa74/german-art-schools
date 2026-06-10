@@ -3,6 +3,7 @@
 import { useRef, useMemo, useEffect } from 'react' // Added useEffect import
 import * as THREE from 'three'
 import { useFrame, useThree } from '@react-three/fiber'
+import { useSchoolStore } from '@/stores/schoolStore'
 
 // --- START: Shaders for Background Quad ---
 const backgroundVertexShader = /* glsl */`
@@ -19,6 +20,8 @@ const backgroundFragmentShader = /* glsl */`
   uniform vec2 resolution;
   uniform float isDarkMode;
   uniform float transition;
+  uniform float uStorm;
+  uniform float uFlash;
   varying vec2 vUv;
 
   // Noise function (e.g., Simplex or Perlin - using a simple one here for brevity)
@@ -67,8 +70,8 @@ const backgroundFragmentShader = /* glsl */`
     vec2 uv = vUv;
     vec2 aspectCorrectedUv = uv * vec2(resolution.x / resolution.y, 1.0);
 
-    float noisePattern = fbm(aspectCorrectedUv * 2.5 + time * 0.05);
-    float slowNoise = fbm(aspectCorrectedUv * 0.8 + time * 0.02);
+    float noisePattern = fbm(aspectCorrectedUv * 2.5 + time * (0.05 + uStorm * 0.12));
+    float slowNoise = fbm(aspectCorrectedUv * 0.8 + time * (0.02 + uStorm * 0.05));
 
     // Twilight palette
     vec3 tw1 = vec3(0.02, 0.04, 0.08);
@@ -101,6 +104,11 @@ const backgroundFragmentShader = /* glsl */`
     vec3 darkBg = vec3(0.005);
     finalColor = mix(finalColor, darkBg, isDarkMode);
 
+    // Storm: cool & darken the sky; lightning briefly flashes it
+    finalColor *= mix(1.0, 0.5, uStorm);
+    finalColor = mix(finalColor, finalColor * vec3(0.72, 0.8, 1.0), uStorm * 0.6);
+    finalColor += uFlash * vec3(0.35, 0.42, 0.6);
+
     gl_FragColor = vec4(finalColor, 1.0);
   }
 `;
@@ -118,7 +126,9 @@ export default function Background({ animateTransition = false }: BackgroundProp
       time: { value: 0.0 },
       resolution: { value: new THREE.Vector2(size.width * window.devicePixelRatio, size.height * window.devicePixelRatio) },
       isDarkMode: { value: 0.0 }, // Default to light mode
-      transition: { value: 0.0 }
+      transition: { value: 0.0 },
+      uStorm: { value: 0.0 },
+      uFlash: { value: 0.0 }
   }), [size]);
 
   // Update resolution uniform if size changes
@@ -137,6 +147,10 @@ export default function Background({ animateTransition = false }: BackgroundProp
   useFrame(({ clock }) => {
     if (materialRef.current) {
       materialRef.current.uniforms.time.value = clock.getElapsedTime();
+      // Weather: storm darkens/churns the sky, lightning flashes it (read without subscribing)
+      const { storminess, lightningFlash } = useSchoolStore.getState();
+      materialRef.current.uniforms.uStorm.value = storminess;
+      materialRef.current.uniforms.uFlash.value = lightningFlash;
       // update transition uniform over 2 seconds
       if (transitionStart.current !== null) {
         const elapsed = clock.getElapsedTime() - transitionStart.current;

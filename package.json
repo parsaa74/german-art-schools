@@ -66,7 +66,9 @@
     "zustand": "^4.3.0"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.37.0",
     "@eslint/js": "^9.25.1",
+    "@google/genai": "^0.9.0",
     "@shadcn/ui": "^0.0.4",
     "@types/d3-force": "^3.0.10",
     "@types/geojson": "^7946.0.15",
@@ -88,11 +90,9 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "gh-pages": "^6.3.0",
     "opentype.js": "^1.3.4",
+    "tsx": "^4.19.2",
     "ttf2woff": "^3.0.0",
     "typescript": "^5.0.4",
-    "vite": "^6.3.1",
-    "tsx": "^4.19.2",
-    "@google/genai": "^0.9.0",
-    "@anthropic-ai/sdk": "^0.37.0"
+    "vite": "^6.3.1"
   }
 }

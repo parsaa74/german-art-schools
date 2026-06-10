@@ -1,0 +1,9 @@
+- generic [ref=e4]:
+  - generic [ref=e39]:
+    - link "View Source on GitHub" [ref=e48] [cursor=pointer]:
+      - /url: https://github.com/parsaa74/german-art-schools
+      - img [ref=e49]
+    - button "Help / Info" [ref=e40] [cursor=pointer]:
+      - img [ref=e41]
+  - button "Open Music Player" [ref=e45] [cursor=pointer]:
+    - img [ref=e46]

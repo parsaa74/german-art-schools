@@ -1,87 +1,107 @@
-import { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { CreativeTitleHTML } from '@/components/typography/CreativeTitleHTML';
+'use client'
+
+/**
+ * IntroSequence — a minimal loading veil: no title, no copy, just a sketch of
+ * an ethereal, breathing surface (2D-canvas contour lines undulating around a
+ * slow breath, in the wall's mono-glass tone).
+ *
+ * Deliberately free of three.js / framer-motion so it paints near-instantly as
+ * the lazy-loaded Scene's Suspense fallback. The animation clock is absolute
+ * (performance.now), so the hand-off from App's fallback instance to Scene's
+ * overlay instance is seamless — the surface keeps breathing mid-phrase.
+ */
+
+import { useEffect, useRef } from 'react';
 
 interface IntroSequenceProps {
-    onIntroComplete: () => void;
-    dict: any;
-    startAnimations: boolean;
+  /** true → fade the veil out (the scene underneath is ready) */
+  leaving?: boolean;
+  /** called once the fade-out has finished */
+  onLeft?: () => void;
 }
 
-export function IntroSequence({
-    onIntroComplete,
-    dict,
-    startAnimations
-}: IntroSequenceProps) {
-    const [isMobile, setIsMobile] = useState(false);
+const LINES = 28;
+const FADE_MS = 1100;
 
-    useEffect(() => {
-        setIsMobile(window.matchMedia('(pointer: coarse)').matches);
-    }, []);
+export function IntroSequence({ leaving = false, onLeft }: IntroSequenceProps) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
-    useEffect(() => {
-        if (!startAnimations) return;
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
 
-        const timer = setTimeout(() => {
-            onIntroComplete();
-        }, 3200);
+    let raf = 0;
+    let w = 0, h = 0;
 
-        return () => clearTimeout(timer);
-    }, [startAnimations, onIntroComplete]);
+    const resize = () => {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = canvas.clientWidth; h = canvas.clientHeight;
+      canvas.width = w * dpr; canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+    resize();
+    window.addEventListener('resize', resize);
 
-    if (!startAnimations) return null;
+    const draw = () => {
+      const t = performance.now() / 1000; // absolute → seamless across remounts
+      ctx.clearRect(0, 0, w, h);
+      const cx = w / 2, cy = h / 2;
+      const span = Math.min(w * 0.62, 760);
+      const breath = 0.62 + 0.38 * Math.sin(t * 0.55); // slow inhale … exhale
+      const rise = Math.sin(t * 0.55) * 6;             // the sheet lifts on the inhale
+      ctx.globalCompositeOperation = 'lighter';
+      ctx.lineWidth = 1;
 
-    return (
-        <motion.div
-            key="intro-overlay"
-            initial={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.2, ease: 'easeInOut' }}
-            className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-black"
-        >
-            <div className="flex flex-col items-center gap-10">
-                {/* Title */}
-                <motion.div
-                    initial={{ opacity: 0, y: 16 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.0, ease: 'easeOut', delay: 0.3 }}
-                >
-                    <CreativeTitleHTML
-                        text={dict?.introTitle || 'German Art Schools'}
-                        introProgress={1}
-                        fontSize={2.4}
-                    />
-                </motion.div>
+      for (let i = 0; i < LINES; i++) {
+        const v = i / (LINES - 1) - 0.5;          // -0.5 … 0.5 across the sheet
+        const envelope = Math.exp(-v * v * 7);    // soft membrane edges
+        const baseY = cy + v * Math.min(h * 0.34, 300);
+        ctx.beginPath();
+        const STEPS = 90;
+        for (let k = 0; k <= STEPS; k++) {
+          const u = k / STEPS;
+          const x = cx - span / 2 + u * span;
+          const edge = Math.sin(u * Math.PI);     // pinch the line ends to points
+          const ripple =
+            Math.sin(u * 5.1 + t * 0.9 + i * 0.35) * 7 +
+            Math.sin(u * 11.7 - t * 0.6 + i * 0.18) * 3.5;
+          const y = baseY + ripple * envelope * edge * breath - rise * envelope;
+          if (k === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+        }
+        const alpha = (0.05 + 0.1 * envelope) * (0.75 + 0.25 * breath);
+        ctx.strokeStyle = `rgba(168, 194, 224, ${alpha})`; // the wall's mono-glass tone
+        ctx.stroke();
+      }
+      raf = requestAnimationFrame(draw);
+    };
+    raf = requestAnimationFrame(draw);
 
-                {/* Pulsing dots */}
-                <div className="flex items-center gap-3">
-                    {[0, 1, 2].map((i) => (
-                        <motion.span
-                            key={i}
-                            className="block w-1.5 h-1.5 rounded-full bg-blue-300/70"
-                            animate={{ opacity: [0.2, 1, 0.2] }}
-                            transition={{
-                                duration: 1.2,
-                                repeat: Infinity,
-                                delay: i * 0.25,
-                                ease: 'easeInOut',
-                            }}
-                        />
-                    ))}
-                </div>
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('resize', resize);
+    };
+  }, []);
 
-                {/* Control hint */}
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 1.0, ease: 'easeOut', delay: 1.2 }}
-                    className="text-xs tracking-widest uppercase text-slate-500 select-none"
-                >
-                    {isMobile
-                        ? 'Pinch to zoom · Drag to pan · Tap to explore'
-                        : 'Scroll to zoom · Drag to pan · Click to explore'}
-                </motion.p>
-            </div>
-        </motion.div>
-    );
+  useEffect(() => {
+    if (!leaving || !onLeft) return;
+    const t = setTimeout(onLeft, FADE_MS);
+    return () => clearTimeout(t);
+  }, [leaving, onLeft]);
+
+  return (
+    <div
+      className="fixed inset-0 z-20"
+      style={{
+        background: '#04060c',
+        opacity: leaving ? 0 : 1,
+        transition: `opacity ${FADE_MS}ms ease-in-out`,
+        pointerEvents: leaving ? 'none' : 'auto',
+      }}
+      aria-hidden="true"
+    >
+      <canvas ref={canvasRef} className="block w-full h-full" />
+    </div>
+  );
 }

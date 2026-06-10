@@ -16,11 +16,12 @@ import D3NetworkGraph from '@/components/visualization/D3NetworkGraph.fixed'; //
 import { FiHelpCircle, FiGithub } from 'react-icons/fi'
 import { useSpring, animated } from '@react-spring/web'
 import { CollapsibleControlPanel } from '@/components/ui/CollapsibleControlPanel';
+import { FilterWizard } from '@/components/ui/FilterWizard';
 import { SlidersHorizontal, X } from 'lucide-react';
 import { ViewModeToggle } from './ViewModeToggle'; // Import the new toggle
 import { ProgramsToggle } from './ProgramsToggle';
 import { ProgramInfoPanel } from './ProgramInfoPanel';
-import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
+import { motion } from 'framer-motion';
 
 import { IntroSequence } from './IntroSequence'; // Import the new component
 import { SearchModal } from '@/components/ui/SearchModal';
@@ -269,6 +270,16 @@ interface SceneProps {
 const DEFAULT_WIDTH = 800;
 const DEFAULT_HEIGHT = 600;
 
+// Reports once the canvas has actually rendered a few frames (shaders compiled,
+// first paint done) — the intro veil lifts when the scene is real, not on a timer.
+function ReadyPing({ onReady }: { onReady: () => void }) {
+    const frames = useRef(0);
+    useFrame(() => {
+        if (frames.current < 3 && ++frames.current === 3) onReady();
+    });
+    return null;
+}
+
 export function Scene({ lang, dict }: SceneProps) {
     const params = useParams();
     const currentLang = lang || (params?.lang as string) || 'en';
@@ -307,19 +318,26 @@ export function Scene({ lang, dict }: SceneProps) {
     const [isClient, setIsClient] = useState(false);
     const initializeSchoolStore = useSchoolStore((state) => state.initializeStore);
     const [showHelp, setShowHelp] = useState(false);
-    // Intro UI overlay state
+    // Intro veil state: stays up until the canvas has rendered real frames, the
+    // data is in, and a short minimum has passed (so it never just blinks).
     const [showIntroSeq, setShowIntroSeq] = useState(true);
+    const [sceneReady, setSceneReady] = useState(false);
+    const [introMinDone, setIntroMinDone] = useState(false);
     const [showSearchModal, setShowSearchModal] = useState(false);
     const [canvasKey, setCanvasKey] = useState(0);
 
-    // Handler when the title overlay completes
+    useEffect(() => {
+        const t = setTimeout(() => setIntroMinDone(true), 1400);
+        return () => clearTimeout(t);
+    }, []);
+
+    const handleSceneReady = useCallback(() => setSceneReady(true), []);
+    const introLeaving = sceneReady && introMinDone && processedUniversities.length > 0;
+
+    // Handler when the veil has finished fading out
     const handleOverlayComplete = useCallback(() => {
         setShowIntroSeq(false);
     }, []);
-
-    useEffect(() => {
-        console.log('Scene states:', { showIntroSeq });
-    }, [showIntroSeq]);
 
     // Client-side check & Store Initialization
     useEffect(() => {
@@ -451,31 +469,28 @@ export function Scene({ lang, dict }: SceneProps) {
                     }}
                 >
                     <Suspense fallback={null}>
-                        {/* Animate background when intro sequence is done */}
-                        <Background animateTransition={!showIntroSeq} />
+                        {/* Background is now the 3D moody cloud sky dome (Atmosphere/MoodySky) */}
                         <ambientLight intensity={0.5} />
                         <pointLight position={[10, 10, 10]} intensity={0.8} />
                         
                         {/* Always render the scene content */}
-                        <SceneContent 
-                            lang={currentLang} 
+                        <SceneContent
+                            lang={currentLang}
                             dict={dict}
                         />
-                        
+                        <ReadyPing onReady={handleSceneReady} />
+
                     </Suspense>
                 </Canvas>
             </div>
 
-            {/* Overlay UI: Intro text or main controls */}
-            <AnimatePresence mode="wait">
-                {showIntroSeq && (
-                    <IntroSequence
-                        onIntroComplete={() => setShowIntroSeq(false)}
-                        dict={dict}
-                        startAnimations={true}
-                    />
-                )}
-            </AnimatePresence>
+            {/* Intro veil: a breathing surface that lifts once the scene is ready */}
+            {showIntroSeq && (
+                <IntroSequence
+                    leaving={introLeaving}
+                    onLeft={handleOverlayComplete}
+                />
+            )}
 
             {/* 2D D3 Graph Container - Only visible in d3-force mode after main phase */}
             {visualizationMode === 'd3-force' && (
@@ -686,6 +701,9 @@ export function Scene({ lang, dict }: SceneProps) {
             {/* Filters panel & ViewModeToggle & InfoPanel (when not intro) */}
             {!showIntroSeq && (
                 <>
+                    {/* Guided subtitle flow — the primary, intuitive way to break the wall */}
+                    <FilterWizard />
+
                     <CollapsibleControlPanel
                         position="top-left"
                         panelTitle="Filters"

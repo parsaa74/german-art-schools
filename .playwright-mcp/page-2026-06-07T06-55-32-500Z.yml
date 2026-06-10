@@ -1,0 +1,28 @@
+- generic [ref=e4]:
+  - generic [ref=e10]:
+    - generic [ref=e14]:
+      - generic [ref=e15]: G
+      - generic [ref=e16]: e
+      - generic [ref=e17]: r
+      - generic [ref=e18]: m
+      - generic [ref=e19]: a
+      - generic [ref=e20]: "n"
+      - generic [ref=e22]: A
+      - generic [ref=e23]: r
+      - generic [ref=e24]: t
+      - generic [ref=e26]: S
+      - generic [ref=e27]: c
+      - generic [ref=e28]: h
+      - generic [ref=e29]: o
+      - generic [ref=e30]: o
+      - generic [ref=e31]: l
+      - generic [ref=e32]: s
+    - paragraph [ref=e37]: Scroll to zoom · Drag to pan · Click to explore
+  - generic [ref=e39]:
+    - link "View Source on GitHub" [ref=e48] [cursor=pointer]:
+      - /url: https://github.com/parsaa74/german-art-schools
+      - img [ref=e49]
+    - button "Help / Info" [ref=e40] [cursor=pointer]:
+      - img [ref=e41]
+  - button "Open Music Player" [ref=e45] [cursor=pointer]:
+    - img [ref=e46]
