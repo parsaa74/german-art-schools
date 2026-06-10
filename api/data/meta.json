@@ -1,0 +1,13 @@
+{
+  "snapshot_date": "2026-06-10",
+  "generated_at": "2026-06-10T14:04:57.693Z",
+  "counts": {
+    "schools": 82,
+    "programs": 746,
+    "edges": 2921,
+    "vectors": 746
+  },
+  "data_hash": "d46809a10810",
+  "embedding_model": "gemini-embedding-2-preview",
+  "license": "TBD"
+}

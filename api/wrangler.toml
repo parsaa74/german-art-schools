@@ -1,0 +1,16 @@
+name = "german-art-schools-api"
+main = "src/index.ts"
+compatibility_date = "2026-06-01"
+
+# .bin artifacts (api/data/vectors.bin) import as ArrayBuffer ("Data" rule).
+# This exists so the semantic-search agent can do:
+#   import vectorsBin from '../data/vectors.bin'
+# inside src/routes/search.ts without touching this file.
+# Note: vitest does not read wrangler rules; api/vitest.config.ts has a
+# matching inline plugin that resolves .bin imports to an ArrayBuffer.
+rules = [
+  { type = "Data", globs = ["**/*.bin"], fallthrough = true }
+]
+
+[observability]
+enabled = true

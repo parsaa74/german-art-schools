@@ -1,0 +1,26 @@
+{
+  "name": "german-art-schools-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Read-only REST API for German art school + program data, served as a Cloudflare Worker.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@hono/mcp": "^0.3.0",
+    "@hono/zod-openapi": "^1.4.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "hono": "^4.12.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^4.0.0",
+    "wrangler": "^4.0.0"
+  }
+}

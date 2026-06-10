@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`response shape snapshots (additive-only contract) > /v1/programs/{id} shape 1`] = `
+[
+  "application_url",
+  "deadlines[].end.day",
+  "deadlines[].end.month",
+  "deadlines[].semester",
+  "deadlines[].start.day",
+  "deadlines[].start.month",
+  "deadlines_raw.winter.end",
+  "deadlines_raw.winter.start",
+  "degree",
+  "degree_level",
+  "description",
+  "duration",
+  "extracted_at",
+  "language",
+  "name",
+  "portfolio_required",
+  "program_id",
+  "program_url",
+  "school_id",
+  "school_name",
+  "source_url",
+  "specializations[]",
+  "tuition_eur_per_semester",
+]
+`;
+
+exports[`response shape snapshots (additive-only contract) > /v1/schools/{id} shape 1`] = `
+[
+  "city",
+  "coordinates.lat",
+  "coordinates.lng",
+  "id",
+  "name",
+  "program_ids[]",
+  "state",
+  "stats.founded",
+  "stats.student_staff_ratio",
+  "stats.students",
+  "type",
+]
+`;

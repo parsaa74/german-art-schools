@@ -1,0 +1,113 @@
+name: API
+
+on:
+  push:
+    paths:
+      - 'api/**'
+      - 'src/data/**'
+      - 'scripts/build-api-artifacts.ts'
+      - '.github/workflows/api.yml'
+  pull_request:
+    paths:
+      - 'api/**'
+      - 'src/data/**'
+      - 'scripts/build-api-artifacts.ts'
+      - '.github/workflows/api.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            api/package-lock.json
+
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Save committed artifact meta
+        run: cp api/data/meta.json /tmp/meta-committed.json
+
+      # data/program_embeddings.json (29MB) is gitignored, and the artifact
+      # builder hard-requires it for vectors.bin. When it is absent in CI we
+      # skip regeneration and test against the committed artifacts instead.
+      - name: Regenerate API artifacts
+        id: regen
+        run: |
+          if [ -f data/program_embeddings.json ]; then
+            npm run build:api-artifacts
+            echo "regenerated=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::data/program_embeddings.json not available (gitignored); skipping artifact regeneration, using committed artifacts"
+            echo "regenerated=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Fail if regenerated counts dropped >5%
+        if: steps.regen.outputs.regenerated == 'true'
+        run: |
+          node -e '
+            const fs = require("fs");
+            const committed = JSON.parse(fs.readFileSync("/tmp/meta-committed.json", "utf8")).counts;
+            const fresh = JSON.parse(fs.readFileSync("api/data/meta.json", "utf8")).counts;
+            let failed = false;
+            for (const [key, before] of Object.entries(committed)) {
+              const after = fresh[key] ?? 0;
+              const drop = before > 0 ? (before - after) / before : 0;
+              console.log(`${key}: committed=${before} regenerated=${after} drop=${(drop * 100).toFixed(1)}%`);
+              if (drop > 0.05) {
+                console.error(`::error::count "${key}" dropped more than 5% (${before} -> ${after})`);
+                failed = true;
+              }
+            }
+            process.exit(failed ? 1 : 0);
+          '
+
+      - name: Install API dependencies
+        working-directory: api
+        run: npm ci
+
+      - name: Typecheck
+        working-directory: api
+        run: npm run typecheck
+
+      - name: Test
+        working-directory: api
+        run: npm test
+
+  deploy:
+    needs: test
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Secrets cannot be referenced in `if:` directly, so export presence
+      # as a step output and gate the deploy step on it.
+      - name: Check for Cloudflare API token
+        id: token
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::CLOUDFLARE_API_TOKEN not set; skipping deploy"
+          fi
+
+      - name: Deploy worker
+        if: steps.token.outputs.present == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: api
+          command: deploy
