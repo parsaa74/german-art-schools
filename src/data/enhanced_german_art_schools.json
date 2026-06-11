@@ -1,8 +1,8 @@
 {
   "statistics": {
     "last_updated": "2026-06-11",
-    "total_schools": 83,
-    "total_programs": 758
+    "total_schools": 93,
+    "total_programs": 771
   },
   "universities": {
     "Hochschule für bildende Künste Hamburg": {
@@ -3290,6 +3290,37 @@
           "language": "",
           "duration": "",
           "program_id": "bauhaus-universitat-weimar--media--unspecified"
+        },
+        {
+          "name": "Media Ecologies",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "end": "30 September"
+            }
+          },
+          "language": "English",
+          "duration": "4 semesters",
+          "description": "Research-oriented, fully English-taught MA combining media studies and environmental humanities. Modules on digital environments, planetary media, and archive ecologies, with interdisciplinary electives from computer science, civil engineering, architecture, and art and design. Winter intake; EU applicants apply by 30 September, non-EU applicants by 15 July via uni-assist. English B2 required; no tuition fees.",
+          "specializations": [
+            "Digital Environments",
+            "Planetary Media",
+            "Archive Ecologies",
+            "Environmental Humanities"
+          ],
+          "details": {
+            "applicationUrl": "https://www.uni-weimar.de/de/medien/studium/media-ecologies-ma/",
+            "capacity": null,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": "English B2 (IELTS 6.5 / TOEFL iBT 85 or equivalent)",
+            "portfolioRequired": false,
+            "programUrl": "https://www.uni-weimar.de/de/medien/studium/media-ecologies-ma/",
+            "sourceUrl": "https://www.uni-weimar.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "bauhaus-universitat-weimar--media-ecologies--master-of-arts"
         }
       ],
       "website": "https://www.uni-weimar.de/en/",
@@ -9093,6 +9124,37 @@
           "language": "",
           "duration": "",
           "program_id": "hmtm-hannover--media-management--unspecified"
+        },
+        {
+          "name": "Medien und Musik",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "end": "15 June"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Research-oriented MA at the Institut für Journalistik und Kommunikationsforschung (IJK) combining communication science and musicology. Compulsory participation in at least two research projects; topics include music labels, festivals, digitalization, and cultural policy. 17 places per year; entry in winter or summer semester with admission interviews twice a year.",
+          "specializations": [
+            "Communication Research",
+            "Musicology",
+            "Music Industry",
+            "Cultural Policy"
+          ],
+          "details": {
+            "applicationUrl": "https://www.ijk.hmtm-hannover.de/de/bewerbung/master-studium-medien-und-musik/",
+            "capacity": 17,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": null,
+            "portfolioRequired": false,
+            "programUrl": "https://www.ijk.hmtm-hannover.de/de/bewerbung/master-studium-medien-und-musik/",
+            "sourceUrl": "https://www.hmtm-hannover.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "hmtm-hannover--medien-und-musik--master-of-arts"
         }
       ],
       "website": "https://www.hmtm-hannover.de/",
@@ -12202,6 +12264,530 @@
         "CILECT member (film programs)"
       ],
       "international_programs": false
+    },
+    "Leuphana Universität Lüneburg": {
+      "id": "leuphana-universitat-luneburg",
+      "coordinates": {
+        "lat": 53.2288,
+        "lng": 10.4014
+      },
+      "stats": {
+        "students": 9500,
+        "founded": 1946
+      },
+      "city": "Lüneburg",
+      "state": "Lower Saxony",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Cultural Studies: Media and Digital Cultures",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 April",
+              "end": "30 June"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Interdisciplinary cultural studies programme examining digital cultures in their dynamics and consequences. Four core modules in history, philosophy, social organization, and aesthetics are combined with electives on phenomena such as democracy, gender, organization, media technology, and urban infrastructure. Taught in German with some electives in English; 25 study places per cohort.",
+          "specializations": [
+            "Media History",
+            "Media Philosophy",
+            "Media Aesthetics",
+            "Social Organization",
+            "Digital Cultures"
+          ],
+          "details": {
+            "applicationUrl": "https://www.leuphana.de/en/graduate-school/masters-programmes/cultural-studies-media-and-digital-cultures.html",
+            "capacity": 25,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": null,
+            "portfolioRequired": false,
+            "programUrl": "https://www.leuphana.de/en/graduate-school/masters-programmes/cultural-studies-media-and-digital-cultures.html",
+            "sourceUrl": "https://www.leuphana.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts"
+        }
+      ],
+      "website": "https://www.leuphana.de/",
+      "description": "Leuphana University of Lüneburg is a public university in Lower Saxony known for its humanities and social sciences profile and its college/graduate-school model. Its cultural studies faculty has a strong focus on media theory, digital cultures, and the arts."
+    },
+    "Bergische Universität Wuppertal": {
+      "id": "bergische-universitat-wuppertal",
+      "coordinates": {
+        "lat": 51.2453,
+        "lng": 7.1495
+      },
+      "stats": {
+        "students": 21000,
+        "founded": 1972
+      },
+      "city": "Wuppertal",
+      "state": "North Rhine-Westphalia",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Mediendesign und Designtechnik (Kombi-Bachelor)",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "end": "15 October"
+            }
+          },
+          "language": "German",
+          "duration": "6 semesters",
+          "description": "Combined bachelor programme in media design and design technology, taken together with a second subject (typically toward vocational-school teaching). Covers design fundamentals, visual communication, typography, media and design technology, and design history and theory. No numerus clausus, but a passed aptitude assessment (Eignungsfeststellungsverfahren) is required; winter intake with enrolment by 15 October.",
+          "specializations": [
+            "Media Design",
+            "Design Technology",
+            "Visual Communication",
+            "Typography"
+          ],
+          "details": {
+            "applicationUrl": "https://www.uni-wuppertal.de/de/studium/studiengaenge/detail/ba-mediendesign-und-designtechnik-kombi/",
+            "capacity": null,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "programUrl": "https://www.uni-wuppertal.de/de/studium/studiengaenge/detail/ba-mediendesign-und-designtechnik-kombi/",
+            "sourceUrl": "https://www.uni-wuppertal.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts"
+        },
+        {
+          "name": "Mediendesign und Designtechnik (Kombi-Master)",
+          "degree": "Master of Education",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 April",
+              "end": "30 September"
+            },
+            "summer": {
+              "start": "1 October",
+              "end": "31 March"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Master of Education in media design and design technology combined with a second subject and educational science, preparing for teaching at vocational colleges (Berufskolleg). Open admission (zulassungsfrei); entry in winter or summer semester.",
+          "specializations": [
+            "Media Design",
+            "Design Technology",
+            "Vocational School Didactics"
+          ],
+          "details": {
+            "applicationUrl": "https://www.uni-wuppertal.de/de/studium/studiengaenge/detail/med-mediendesign-und-designtechnik-kombi/",
+            "capacity": null,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": null,
+            "portfolioRequired": false,
+            "programUrl": "https://www.uni-wuppertal.de/de/studium/studiengaenge/detail/med-mediendesign-und-designtechnik-kombi/",
+            "sourceUrl": "https://www.uni-wuppertal.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education"
+        }
+      ],
+      "website": "https://www.uni-wuppertal.de/",
+      "description": "The University of Wuppertal (Bergische Universität Wuppertal) is a public university in North Rhine-Westphalia with a strong design faculty and combined teacher-training programmes linking design disciplines with vocational education."
+    },
+    "Fachhochschule Münster": {
+      "id": "fachhochschule-munster",
+      "coordinates": {
+        "lat": 51.9668,
+        "lng": 7.6024
+      },
+      "stats": {
+        "students": 15000,
+        "founded": 1971
+      },
+      "city": "Münster",
+      "state": "North Rhine-Westphalia",
+      "type": "university_of_applied_sciences",
+      "programs": [
+        {
+          "name": "Mediendesign und Designtechnik (Lehramt an Berufskollegs)",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 August",
+              "end": "15 September"
+            }
+          },
+          "language": "German",
+          "duration": "6 semesters",
+          "description": "Cooperative teacher-training bachelor of FH Münster (Münster School of Design) and the University of Münster, preparing for teaching media design and design technology at vocational colleges. No admission restriction, but a passed design aptitude test (Eignungsprüfung) is required; students enrol at both institutions. Winter intake.",
+          "specializations": [
+            "Media Design",
+            "Design Technology",
+            "Vocational Education"
+          ],
+          "details": {
+            "applicationUrl": "https://www.fh-muenster.de/de/studiengaenge/mediendesign-und-designtechnik-lehramt-an-berufskollegs-bachelor",
+            "capacity": null,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "programUrl": "https://www.fh-muenster.de/de/studiengaenge/mediendesign-und-designtechnik-lehramt-an-berufskollegs-bachelor",
+            "sourceUrl": "https://www.fh-muenster.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts"
+        }
+      ],
+      "website": "https://www.fh-muenster.de/",
+      "description": "FH Münster is one of Germany's largest universities of applied sciences. Its Münster School of Design (MSD) on the Leonardo-Campus offers design programmes including cooperative teacher-training tracks with the University of Münster."
+    },
+    "Goethe-Universität Frankfurt am Main": {
+      "id": "goethe-universitat-frankfurt-am-main",
+      "coordinates": {
+        "lat": 50.1271,
+        "lng": 8.6682
+      },
+      "stats": {
+        "students": 42000,
+        "founded": 1914
+      },
+      "city": "Frankfurt am Main",
+      "state": "Hesse",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Theater-, Film- und Medienwissenschaft",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 April",
+              "end": "15 June"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Open-admission (zulassungsfrei) MA on forms of representation in theater, film, and media, integrating philosophical, art-theoretical, historical, sociological, and cultural-economic perspectives. Requires two modern foreign languages at A2 (or Latin/Greek plus one modern language) and at least four weeks of internship in the theater, film, or media field. Winter intake.",
+          "specializations": [
+            "Theater and Performance",
+            "Film Studies",
+            "Media Studies",
+            "Dance"
+          ],
+          "details": {
+            "applicationUrl": "https://www.uni-frankfurt.de/de/studium/studiengaenge/theater-film-medienwissenschaft-master",
+            "capacity": null,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": null,
+            "portfolioRequired": false,
+            "programUrl": "https://www.uni-frankfurt.de/de/studium/studiengaenge/theater-film-medienwissenschaft-master",
+            "sourceUrl": "https://www.uni-frankfurt.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts"
+        }
+      ],
+      "website": "https://www.uni-frankfurt.de/",
+      "description": "Goethe University Frankfurt is one of Germany's largest public research universities. Its Institute for Theater, Film and Media Studies (TFM) is a long-established center for performance and media scholarship."
+    },
+    "Hochschule Offenburg": {
+      "id": "hochschule-offenburg",
+      "coordinates": {
+        "lat": 48.4586,
+        "lng": 7.943
+      },
+      "stats": {
+        "students": 4000,
+        "founded": 1964
+      },
+      "city": "Offenburg",
+      "state": "Baden-Württemberg",
+      "type": "university_of_applied_sciences",
+      "programs": [
+        {
+          "name": "Communication and Media Engineering",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {
+              "end": "15 July"
+            }
+          },
+          "language": "English",
+          "duration": "4 semesters",
+          "description": "English-taught engineering MSc (120 ECTS) covering advanced communication technologies, IoT systems, signal processing, wireless networks, AI and machine learning applications, media systems, and IT security, with electives in hardware, software, or management. Winter intake; EU residents apply by 15 July, non-EU residents by 31 March. Non-EU students pay 1,500 EUR tuition per semester (TOEFL iBT 79 / IELTS 6.0 required).",
+          "specializations": [
+            "Communication Technologies",
+            "Media Systems",
+            "Signal Processing",
+            "IT Security"
+          ],
+          "details": {
+            "applicationUrl": "https://www.hs-offenburg.de/studium/master/communication-and-media-engineering",
+            "capacity": null,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": "TOEFL iBT 79 / IELTS 6.0",
+            "portfolioRequired": false,
+            "programUrl": "https://www.hs-offenburg.de/studium/master/communication-and-media-engineering",
+            "sourceUrl": "https://www.hs-offenburg.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "hochschule-offenburg--communication-and-media-engineering--master-of-science"
+        }
+      ],
+      "website": "https://www.hs-offenburg.de/",
+      "description": "Offenburg University of Applied Sciences is a public university of applied sciences in Baden-Württemberg known for its English-taught international graduate programmes in engineering and media."
+    },
+    "Carl von Ossietzky Universität Oldenburg": {
+      "id": "carl-von-ossietzky-universitat-oldenburg",
+      "coordinates": {
+        "lat": 53.147,
+        "lng": 8.1814
+      },
+      "stats": {
+        "students": 15500,
+        "founded": 1973
+      },
+      "city": "Oldenburg",
+      "state": "Lower Saxony",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Art and Media (Zwei-Fächer-Bachelor)",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "end": "15 October"
+            }
+          },
+          "language": "German",
+          "duration": "6 semesters",
+          "description": "Dual-subject bachelor combining theory and history of art, visual culture, and modern art and media production with aesthetic practice. Open admission (NC-free) but with an entrance examination of theoretical and practical tasks, to be submitted by 1 June of the admission year. Winter intake; taken as major (60 ECTS) or minor (30 ECTS) alongside a second subject.",
+          "specializations": [
+            "Art History",
+            "Visual Culture",
+            "Media Production",
+            "Art Education"
+          ],
+          "details": {
+            "applicationUrl": "https://uol.de/en/course-of-study/art-and-media-2s-bachelor-13",
+            "capacity": null,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "programUrl": "https://uol.de/en/course-of-study/art-and-media-2s-bachelor-13",
+            "sourceUrl": "https://uol.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts"
+        }
+      ],
+      "website": "https://uol.de/",
+      "description": "The Carl von Ossietzky University of Oldenburg is a public university in Lower Saxony. Its Institute of Art and Visual Culture combines art history, visual culture studies, and artistic media practice, with strong teacher-training tracks."
+    },
+    "Universität Bremen": {
+      "id": "universitat-bremen",
+      "coordinates": {
+        "lat": 53.107,
+        "lng": 8.852
+      },
+      "stats": {
+        "students": 18000,
+        "founded": 1971
+      },
+      "city": "Bremen",
+      "state": "Bremen",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Digital Media and Society",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 February",
+              "end": "15 March"
+            }
+          },
+          "language": "English",
+          "duration": "4 semesters",
+          "description": "English-taught MA (120 ECTS) on digitalization and datafication and their societal impact, combining digital media theory, empirical communication research methods, and practical media work. Specialization areas include digital literacy, media conception, data analysis, and project management in datafied societies. Restricted admission; winter intake.",
+          "specializations": [
+            "Digital Media Theory",
+            "Communication Research",
+            "Data Analysis",
+            "Media Conception"
+          ],
+          "details": {
+            "applicationUrl": "https://www.uni-bremen.de/en/studies/orientation-application/offered-study-program/dbs/study/122",
+            "capacity": null,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": null,
+            "portfolioRequired": false,
+            "programUrl": "https://www.uni-bremen.de/en/studies/orientation-application/offered-study-program/dbs/study/122",
+            "sourceUrl": "https://www.uni-bremen.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "universitat-bremen--digital-media-and-society--master-of-arts"
+        }
+      ],
+      "website": "https://www.uni-bremen.de/",
+      "description": "The University of Bremen is a public research university and a center for media and communication research in northern Germany, home to the ZeMKI (Centre for Media, Communication and Information Research)."
+    },
+    "Universität Hamburg": {
+      "id": "universitat-hamburg",
+      "coordinates": {
+        "lat": 53.5665,
+        "lng": 9.9846
+      },
+      "stats": {
+        "students": 42000,
+        "founded": 1919
+      },
+      "city": "Hamburg",
+      "state": "Hamburg",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Liberal Arts and Sciences",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 June",
+              "end": "15 July"
+            }
+          },
+          "language": "German/English",
+          "duration": "8 semesters",
+          "description": "Interdisciplinary liberal-arts bachelor in the Faculty of Humanities, taught in German and English over eight semesters. Admission is restricted (NC); winter intake. No tuition fees beyond the semester contribution.",
+          "specializations": [
+            "Humanities",
+            "Interdisciplinary Studies"
+          ],
+          "details": {
+            "applicationUrl": "https://www.uni-hamburg.de/campuscenter/studienangebot/studiengang.html?1687442619",
+            "capacity": null,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": null,
+            "portfolioRequired": false,
+            "programUrl": "https://www.uni-hamburg.de/campuscenter/studienangebot/studiengang.html?1687442619",
+            "sourceUrl": "https://www.uni-hamburg.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts"
+        }
+      ],
+      "website": "https://www.uni-hamburg.de/",
+      "description": "The University of Hamburg is one of Germany's largest universities, with a broad humanities faculty offering interdisciplinary programmes alongside media and cultural studies."
+    },
+    "Europa-Universität Flensburg": {
+      "id": "europa-universitat-flensburg",
+      "coordinates": {
+        "lat": 54.7762,
+        "lng": 9.4544
+      },
+      "stats": {
+        "students": 5800,
+        "founded": 1946
+      },
+      "city": "Flensburg",
+      "state": "Schleswig-Holstein",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Kultur – Sprache – Medien",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {},
+          "language": "German/English",
+          "duration": "4 semesters",
+          "description": "MA (120 ECTS) combining six disciplines: art/visual culture, cultural studies, media studies, literary studies, linguistics, and intercultural business administration, with a focus on the cultures of German-, Scandinavian-, and English-speaking countries around the Baltic, North Sea, and North Atlantic. Open admission (zulassungsfrei); German C1 required.",
+          "specializations": [
+            "Visual Culture",
+            "Media Studies",
+            "Cultural Studies",
+            "Linguistics"
+          ],
+          "details": {
+            "applicationUrl": "https://www.uni-flensburg.de/en/ksm",
+            "capacity": null,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": "German C1",
+            "portfolioRequired": false,
+            "programUrl": "https://www.uni-flensburg.de/en/ksm",
+            "sourceUrl": "https://www.uni-flensburg.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts"
+        }
+      ],
+      "website": "https://www.uni-flensburg.de/",
+      "description": "Europa-Universität Flensburg is a public university in Germany's far north with a European and intercultural profile, focusing on education, culture, language, and media studies."
+    },
+    "Heinrich-Heine-Universität Düsseldorf": {
+      "id": "heinrich-heine-universitat-dusseldorf",
+      "coordinates": {
+        "lat": 51.1882,
+        "lng": 6.7938
+      },
+      "stats": {
+        "students": 29000,
+        "founded": 1965
+      },
+      "city": "Düsseldorf",
+      "state": "North Rhine-Westphalia",
+      "type": "university",
+      "programs": [
+        {
+          "name": "Kunstvermittlung und Kulturmanagement",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "end": "31 July"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "MA (120 ECTS) in art mediation and cultural management, combining art history with practice-oriented training for museums, galleries, cultural institutions, and the art market. Admission via aptitude assessment; winter intake.",
+          "specializations": [
+            "Art Mediation",
+            "Cultural Management",
+            "Art History",
+            "Museum Studies"
+          ],
+          "details": {
+            "applicationUrl": "https://www.hhu.de/studium/studienangebot/studiengang-informationen/kunstvermittlung-und-kulturmanagement-master",
+            "capacity": null,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "faculty": [],
+            "languageRequirements": null,
+            "portfolioRequired": false,
+            "programUrl": "https://www.hhu.de/studium/studienangebot/studiengang-informationen/kunstvermittlung-und-kulturmanagement-master",
+            "sourceUrl": "https://www.hhu.de/",
+            "studentsEnrolled": null,
+            "tuitionEuroPerSemester": null
+          },
+          "program_id": "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts"
+        }
+      ],
+      "website": "https://www.hhu.de/",
+      "description": "Heinrich Heine University Düsseldorf is a public university whose art history department runs a well-known practice-oriented master in art mediation and cultural management, benefiting from Düsseldorf's dense museum and gallery landscape."
     }
   }
 }

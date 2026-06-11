@@ -1,6 +1,6 @@
 {
-  "createdAt": "2026-06-10T22:51:36.459Z",
-  "count": 758,
+  "createdAt": "2026-06-11T09:17:44.665Z",
+  "count": 771,
   "programs": [
     {
       "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
@@ -1107,6 +1107,13 @@
       "schoolName": "Bauhaus-Universität Weimar",
       "name": "Media",
       "degree": ""
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Media Ecologies",
+      "degree": "Master of Arts"
     },
     {
       "program_id": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
@@ -2577,6 +2584,13 @@
       "schoolName": "Hochschule für Musik, Theater und Medien Hannover",
       "name": "Media Management",
       "degree": ""
+    },
+    {
+      "program_id": "hmtm-hannover--medien-und-musik--master-of-arts",
+      "schoolId": "hmtm-hannover",
+      "schoolName": "Hochschule für Musik, Theater und Medien Hannover",
+      "name": "Medien und Musik",
+      "degree": "Master of Arts"
     },
     {
       "program_id": "hochschule-fur-evangelische-kirchenmusik--evangelische-kirchenmusik--bachelor-of-music",
@@ -5306,6 +5320,83 @@
       "schoolId": "fachhochschule-dortmund",
       "schoolName": "Fachhochschule Dortmund",
       "name": "Editorial Design",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts",
+      "schoolId": "leuphana-universitat-luneburg",
+      "schoolName": "Leuphana Universität Lüneburg",
+      "name": "Cultural Studies: Media and Digital Cultures",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
+      "schoolId": "bergische-universitat-wuppertal",
+      "schoolName": "Bergische Universität Wuppertal",
+      "name": "Mediendesign und Designtechnik (Kombi-Bachelor)",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education",
+      "schoolId": "bergische-universitat-wuppertal",
+      "schoolName": "Bergische Universität Wuppertal",
+      "name": "Mediendesign und Designtechnik (Kombi-Master)",
+      "degree": "Master of Education"
+    },
+    {
+      "program_id": "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts",
+      "schoolId": "fachhochschule-munster",
+      "schoolName": "Fachhochschule Münster",
+      "name": "Mediendesign und Designtechnik (Lehramt an Berufskollegs)",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts",
+      "schoolId": "goethe-universitat-frankfurt-am-main",
+      "schoolName": "Goethe-Universität Frankfurt am Main",
+      "name": "Theater-, Film- und Medienwissenschaft",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+      "schoolId": "hochschule-offenburg",
+      "schoolName": "Hochschule Offenburg",
+      "name": "Communication and Media Engineering",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts",
+      "schoolId": "carl-von-ossietzky-universitat-oldenburg",
+      "schoolName": "Carl von Ossietzky Universität Oldenburg",
+      "name": "Art and Media (Zwei-Fächer-Bachelor)",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "universitat-bremen--digital-media-and-society--master-of-arts",
+      "schoolId": "universitat-bremen",
+      "schoolName": "Universität Bremen",
+      "name": "Digital Media and Society",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts",
+      "schoolId": "universitat-hamburg",
+      "schoolName": "Universität Hamburg",
+      "name": "Liberal Arts and Sciences",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts",
+      "schoolId": "europa-universitat-flensburg",
+      "schoolName": "Europa-Universität Flensburg",
+      "name": "Kultur – Sprache – Medien",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts",
+      "schoolId": "heinrich-heine-universitat-dusseldorf",
+      "schoolName": "Heinrich-Heine-Universität Düsseldorf",
+      "name": "Kunstvermittlung und Kulturmanagement",
       "degree": "Master of Arts"
     }
   ]
