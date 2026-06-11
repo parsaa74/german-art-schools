@@ -1,8 +1,8 @@
 {
   "statistics": {
-    "last_updated": "2026-06-10",
-    "total_schools": 82,
-    "total_programs": 746
+    "last_updated": "2026-06-11",
+    "total_schools": 83,
+    "total_programs": 758
   },
   "universities": {
     "Hochschule für bildende Künste Hamburg": {
@@ -8761,38 +8761,65 @@
       "type": "kunsthochschule",
       "programs": [
         {
-          "name": "Fine Arts",
+          "name": "Freie Kunst",
           "degree": "Diploma",
-          "applicationDeadlines": {
-            "winter": {
-              "start": "1 March",
-              "end": "15 April"
-            }
-          },
+          "applicationDeadlines": {},
           "language": "German",
-          "duration": "10 semesters",
-          "description": "Comprehensive fine arts program with emphasis on individual artistic development.",
-          "specializations": [
-            "Painting",
-            "Sculpture",
-            "Graphic Arts",
-            "Photography"
-          ],
+          "duration": "",
+          "description": "Development and testing of an independent artistic practice within a chosen artistic class, in close exchange with the professor and fellow students. Graduates receive the academic degree 'Diplom' in Freie Kunst. Applications are possible for the winter semester only.",
           "portfolioRequirements": {
             "required": true,
-            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
-            "items": [
-              "15-25 original artworks",
-              "Sketchbook or work diary",
-              "Artistic CV",
-              "Letter of motivation"
-            ],
-            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
+            "description": "Artistic portfolio demonstrating creative ability and individual artistic development."
           },
-          "program_id": "khm-munchen--fine-arts--diploma"
+          "program_id": "khm-munchen--freie-kunst--diploma"
+        },
+        {
+          "name": "Kunstpädagogik",
+          "degree": "Staatsexamen",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "",
+          "description": "Double-subject degree in art and art education (Kunst und Kunstpädagogik) for teaching at Gymnasien in Bavaria — no second subject required. Artistic training follows the model of a free class, complemented by workshops and theory seminars. A Mappenforum lets applicants discuss their portfolio with the professors before applying.",
+          "program_id": "khm-munchen--kunstpadagogik--staatsexamen"
+        },
+        {
+          "name": "Innenarchitektur",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "8 semesters",
+          "description": "Four-year bachelor's program understanding interior architecture as a discipline in dialogue with the fine arts: analyzing spatial, constructive, and societal questions and developing independent concepts, with particular attention to responsible handling of existing building stock.",
+          "program_id": "khm-munchen--innenarchitektur--bachelor-of-arts"
+        },
+        {
+          "name": "Innenarchitektur",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Two-year consecutive master's program in interior architecture, deepening artistic, technical, ecological, and social design and planning of spaces.",
+          "program_id": "khm-munchen--innenarchitektur--master-of-arts"
+        },
+        {
+          "name": "Architektur und Kunst",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Design-oriented master's program for graduates with a bachelor's degree in architecture; starts each winter semester. Accredited by the Stiftung Akkreditierungsrat, enabling graduates to register with the chambers of architects.",
+          "program_id": "khm-munchen--architektur-und-kunst--master-of-arts"
+        },
+        {
+          "name": "Bildnerisches Gestalten und Therapie",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "",
+          "description": "Master's program in which artists extend their visual practice into the therapeutic dimension, building on the influence of artistic creation and reception on psychological and physical well-being.",
+          "program_id": "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts"
         }
       ],
-      "website": "https://www.kunsthochschule-muenchen.com/",
+      "website": "https://www.adbk.de",
       "description": "Kunsthochschule München is a public art school in Munich, founded in 1946. It offers programs in fine arts and design with a focus on contemporary artistic practices.",
       "contact": {
         "address": "Kaulbachstraße 40, 80539 Munich",
@@ -8818,7 +8845,9 @@
         "Ceramics atelier",
         "Printmaking studio",
         "Photography lab",
-        "New media and digital art studio"
+        "New media and digital art studio",
+        "Studienwerkstätten (study workshops)",
+        "Aktsaal (life drawing hall)"
       ],
       "application_requirements": {
         "portfolio": "Portfolio of 20–30 works",
@@ -11925,6 +11954,254 @@
           "program_id": "filmakademie-baden-wurttemberg--international-class--workshop"
         }
       ]
+    },
+    "Fachhochschule Dortmund": {
+      "id": "fachhochschule-dortmund",
+      "coordinates": {
+        "lat": 51.5021,
+        "lng": 7.4496
+      },
+      "stats": {
+        "students": 14500,
+        "founded": 1971
+      },
+      "city": "Dortmund",
+      "state": "North Rhine-Westphalia",
+      "type": "university_of_applied_sciences",
+      "programs": [
+        {
+          "name": "Film & Sound",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "mid May",
+              "end": "15 July"
+            }
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Seven-semester project-based program in which students from the two tracks Film and Sounddesign jointly realize fictional, documentary, and experimental film projects, learning audiovisual storytelling from idea to realization. Admission via aptitude assessment (Eignungsfeststellung); starts in the winter semester.",
+          "specializations": [
+            "Film",
+            "Sounddesign"
+          ],
+          "details": {
+            "programUrl": "https://www.fh-dortmund.de/studiengaenge/film-sound-bachelor.php",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "sourceUrl": "https://www.fh-dortmund.de/studiengaenge/film-sound-bachelor.php"
+          },
+          "program_id": "fachhochschule-dortmund--film-sound--bachelor-of-arts"
+        },
+        {
+          "name": "Digital Design",
+          "degree": "Master of Science",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "mid May",
+              "end": "15 July"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "description": "Master's program in the computer science faculty for students with a design or computing background, focused on holistically well-designed digital solutions across Gestaltungslehre, Baulehre, Entwurfslehre, and Materialkunde. Admission via aptitude assessment and a minimum grade of 2.5; starts in the winter semester.",
+          "details": {
+            "programUrl": "https://www.fh-dortmund.de/studiengaenge/digital-design-master.php",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "sourceUrl": "https://www.fh-dortmund.de/studiengaenge/digital-design-master.php"
+          },
+          "program_id": "fachhochschule-dortmund--digital-design--master-of-science"
+        },
+        {
+          "name": "Fotografie",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "mid May",
+              "end": "15 July"
+            }
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Seven-semester bachelor's program covering technical skills from analog photography to post-photographic and AI-assisted processes, with foundation year followed by specialization from the third semester. Admission via aptitude assessment; starts in the winter semester.",
+          "specializations": [
+            "Bildjournalismus / Dokumentarische Fotografie",
+            "Studio- / Still Life- / Foodfotografie",
+            "Werbe- / Mode- / Portraitfotografie",
+            "Künstlerisch-Konzeptuelle Fotografie"
+          ],
+          "details": {
+            "programUrl": "https://www.fh-dortmund.de/studiengaenge/fotografie-bachelor.php",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "sourceUrl": "https://www.fh-dortmund.de/studiengaenge/fotografie-bachelor.php"
+          },
+          "program_id": "fachhochschule-dortmund--fotografie--bachelor-of-arts"
+        },
+        {
+          "name": "Visuelle Kommunikation",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "mid May",
+              "end": "15 July"
+            }
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Successor to the discontinued Kommunikationsdesign program: visual design of content for analog, digital, and interactive media, including corporate design, book/magazine/poster design, campaign development, packaging, illustration, web design, game design, and interaction design. Admission via aptitude assessment; starts in the winter semester.",
+          "details": {
+            "programUrl": "https://www.fh-dortmund.de/studiengaenge/kommunikationsdesign-bachelor.php",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "sourceUrl": "https://www.fh-dortmund.de/studiengaenge/kommunikationsdesign-bachelor.php"
+          },
+          "program_id": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts"
+        },
+        {
+          "name": "Film - Hybrid & Non-Fiction",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "summer": {
+              "start": "early December",
+              "end": "15 January"
+            }
+          },
+          "language": "German",
+          "duration": "3 semesters",
+          "description": "Three-semester consecutive master's program realizing a film project from conception through production to post-production, aiming at a 'design of the real'; together with the Film & Sound bachelor it holds film school status in the international CILECT association. Admission via aptitude assessment; starts in the summer semester.",
+          "specializations": [
+            "Film (Regie, Kamera, Schnitt, Produktion, Drehbuch, Dramaturgie)",
+            "Sounddesign"
+          ],
+          "details": {
+            "programUrl": "https://www.fh-dortmund.de/studiengaenge/film-master.php",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "sourceUrl": "https://www.fh-dortmund.de/studiengaenge/film-master.php"
+          },
+          "program_id": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts"
+        },
+        {
+          "name": "Objekt- und Raumdesign",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "mid May",
+              "end": "15 July"
+            }
+          },
+          "language": "German",
+          "duration": "7 semesters",
+          "description": "Seven-semester practice-oriented project program in three-dimensional storytelling — staging spaces and objects for shops, trade fairs, interiors, film, stage, museums, and public space. Admission via aptitude assessment; starts in the winter semester.",
+          "specializations": [
+            "Objektdesign",
+            "Raumdesign",
+            "Kunst im öffentlichen Raum",
+            "Szenografie"
+          ],
+          "details": {
+            "programUrl": "https://www.fh-dortmund.de/studiengaenge/objekt-und-raumdesign-bachelor.php",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "sourceUrl": "https://www.fh-dortmund.de/studiengaenge/objekt-und-raumdesign-bachelor.php"
+          },
+          "program_id": "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts"
+        },
+        {
+          "name": "Editorial Design",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "summer": {
+              "start": "early December",
+              "end": "15 January"
+            }
+          },
+          "language": "German",
+          "duration": "3 semesters",
+          "description": "Three-semester inter- and crossmedial master's program centered on visual research, authorship, and medium-specific discourse in editorial design, integrating analog and digital print techniques, VR, photography, and film workshops. Admission via aptitude assessment; starts in the summer semester.",
+          "details": {
+            "programUrl": "https://www.fh-dortmund.de/studiengaenge/editorial-design-master.php",
+            "applicationUrl": null,
+            "faculty": [],
+            "tuitionEuroPerSemester": null,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": null,
+            "portfolioRequired": true,
+            "extractedAt": "2026-06-11T00:00:00.000Z",
+            "sourceUrl": "https://www.fh-dortmund.de/studiengaenge/editorial-design-master.php"
+          },
+          "program_id": "fachhochschule-dortmund--editorial-design--master-of-arts"
+        }
+      ],
+      "website": "https://www.fh-dortmund.de/",
+      "description": "Fachhochschule Dortmund (University of Applied Sciences and Arts) is a public university of applied sciences founded in 1971. Its design faculty offers project-based programs in film, sound, photography, visual communication, and object and spatial design; together with its consecutive film master it holds film school status in the international CILECT association.",
+      "contact": {
+        "address": "Sonnenstraße 96–100, 44139 Dortmund",
+        "phone": "+49 231 9112-0",
+        "email": "info@fh-dortmund.de"
+      },
+      "tuition_fees": {
+        "semester_contribution_eur": 346.8,
+        "note": "No tuition fees; semester contribution of €346.80 includes public transport ticket (NRW)."
+      },
+      "facilities": [
+        "Design faculty workshops for analog and digital printing techniques",
+        "Virtual reality lab",
+        "Photography studios",
+        "Film and sound production facilities (cooperation with Institut für Bewegtbildstudien at Dortmunder U)",
+        "WEISSRAUM exhibition space for three-dimensional design"
+      ],
+      "application_requirements": {
+        "portfolio": "Aptitude assessment (Eignungsfeststellung) required for design programs",
+        "entrance_exam": "Eignungsfeststellung with program-specific tasks",
+        "language": "German",
+        "interview": false,
+        "previous_degree_required": false
+      },
+      "accreditations": [
+        "State-accredited (North Rhine-Westphalia)",
+        "CILECT member (film programs)"
+      ],
+      "international_programs": false
     }
   }
 }

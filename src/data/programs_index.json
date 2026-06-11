@@ -1,6 +1,6 @@
 {
-  "createdAt": "2026-06-10T13:02:06.741Z",
-  "count": 746,
+  "createdAt": "2026-06-10T22:51:36.459Z",
+  "count": 758,
   "programs": [
     {
       "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
@@ -2467,11 +2467,46 @@
       "degree": ""
     },
     {
-      "program_id": "khm-munchen--fine-arts--diploma",
+      "program_id": "khm-munchen--freie-kunst--diploma",
       "schoolId": "khm-munchen",
       "schoolName": "Kunsthochschule München",
-      "name": "Fine Arts",
+      "name": "Freie Kunst",
       "degree": "Diploma"
+    },
+    {
+      "program_id": "khm-munchen--kunstpadagogik--staatsexamen",
+      "schoolId": "khm-munchen",
+      "schoolName": "Kunsthochschule München",
+      "name": "Kunstpädagogik",
+      "degree": "Staatsexamen"
+    },
+    {
+      "program_id": "khm-munchen--innenarchitektur--bachelor-of-arts",
+      "schoolId": "khm-munchen",
+      "schoolName": "Kunsthochschule München",
+      "name": "Innenarchitektur",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "khm-munchen--innenarchitektur--master-of-arts",
+      "schoolId": "khm-munchen",
+      "schoolName": "Kunsthochschule München",
+      "name": "Innenarchitektur",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "khm-munchen--architektur-und-kunst--master-of-arts",
+      "schoolId": "khm-munchen",
+      "schoolName": "Kunsthochschule München",
+      "name": "Architektur und Kunst",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts",
+      "schoolId": "khm-munchen",
+      "schoolName": "Kunsthochschule München",
+      "name": "Bildnerisches Gestalten und Therapie",
+      "degree": "Master of Arts"
     },
     {
       "program_id": "technische-universitat-chemnitz--human-computer-interaction--master-of-science",
@@ -5223,6 +5258,55 @@
       "schoolName": "Filmakademie Baden-Württemberg",
       "name": "International Class",
       "degree": "Workshop"
+    },
+    {
+      "program_id": "fachhochschule-dortmund--film-sound--bachelor-of-arts",
+      "schoolId": "fachhochschule-dortmund",
+      "schoolName": "Fachhochschule Dortmund",
+      "name": "Film & Sound",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "fachhochschule-dortmund--digital-design--master-of-science",
+      "schoolId": "fachhochschule-dortmund",
+      "schoolName": "Fachhochschule Dortmund",
+      "name": "Digital Design",
+      "degree": "Master of Science"
+    },
+    {
+      "program_id": "fachhochschule-dortmund--fotografie--bachelor-of-arts",
+      "schoolId": "fachhochschule-dortmund",
+      "schoolName": "Fachhochschule Dortmund",
+      "name": "Fotografie",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "schoolId": "fachhochschule-dortmund",
+      "schoolName": "Fachhochschule Dortmund",
+      "name": "Visuelle Kommunikation",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
+      "schoolId": "fachhochschule-dortmund",
+      "schoolName": "Fachhochschule Dortmund",
+      "name": "Film - Hybrid & Non-Fiction",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts",
+      "schoolId": "fachhochschule-dortmund",
+      "schoolName": "Fachhochschule Dortmund",
+      "name": "Objekt- und Raumdesign",
+      "degree": "Bachelor of Arts"
+    },
+    {
+      "program_id": "fachhochschule-dortmund--editorial-design--master-of-arts",
+      "schoolId": "fachhochschule-dortmund",
+      "schoolName": "Fachhochschule Dortmund",
+      "name": "Editorial Design",
+      "degree": "Master of Arts"
     }
   ]
 }
