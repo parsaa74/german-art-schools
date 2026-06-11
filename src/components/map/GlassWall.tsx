@@ -27,11 +27,14 @@
  * reflections keep sweeping the glass; panes under the cursor lift and tip
  * toward it; hovering turns a pane crisp and camera-facing while the rest of
  * the wall gently frosts and desaturates (focus = clarity, like the lab's
- * intent slider).
+ * intent slider). A billboarded name tag (carried over from the orbital-globe
+ * version) floats above whatever is hovered — the school's name on a pane,
+ * the program's name on an open facet.
  */
 
 import { useMemo, useRef, useState, useEffect } from 'react';
 import { useFrame, useThree, ThreeEvent } from '@react-three/fiber';
+import { Billboard, Text } from '@react-three/drei';
 import * as THREE from 'three';
 import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore';
 import { buildFractureWindow, subdivideCell, buildFacetGeometry, FacetCell } from '@/lib/glass/fracture';
@@ -355,6 +358,18 @@ export function GlassWall() {
   const facetHoverRef = useRef(-1);
   const facetRefs = useRef<(THREE.Mesh | null)[]>([]);
 
+  // Hover name tag (carried over from the orbital-globe version): the school
+  // name floats above the hovered pane; with a pane cracked open, the hovered
+  // facet shows its program instead. State mirrors the refs so the label text
+  // re-renders; position/opacity are animated per-frame without re-rendering.
+  const [hoverIdx, setHoverIdx] = useState(-1);
+  const [facetHoverIdx, setFacetHoverIdx] = useState(-1);
+  const labelRef = useRef<THREE.Group>(null);
+  const labelTitleRef = useRef<any>(null);
+  const labelSubRef = useRef<any>(null);
+  const labelOpacity = useRef(0);
+  const labelTarget = useMemo(() => new THREE.Vector3(), []);
+
   const openFacets = useMemo<OpenFacet[] | null>(() => {
     if (openIdx < 0 || openIdx >= shards.length) return null;
     const s = shards[openIdx];
@@ -398,6 +413,16 @@ export function GlassWall() {
     openFacets?.forEach((f) => { f.geometry.dispose(); f.material.dispose(); });
   }, [openFacets]);
 
+  // What the name tag says right now: a hovered program facet wins over the pane.
+  const hoverFacet = openIdx >= 0 && facetHoverIdx >= 0 ? openFacets?.[facetHoverIdx] : null;
+  const hoverShard = hoverIdx >= 0 ? shards[hoverIdx] : null;
+  const labelTitle = hoverFacet?.program?.name ?? hoverShard?.school.name ?? '';
+  const labelSub = hoverFacet
+    ? [hoverFacet.program?.degree, shards[openIdx]?.school.name].filter(Boolean).join(' · ')
+    : hoverShard
+      ? [hoverShard.school.city, hoverShard.school.state].filter(Boolean).join(', ')
+      : '';
+
   useFrame((state) => {
     const t = state.clock.getElapsedTime();
     const storm = useSchoolStore.getState().storminess;
@@ -426,6 +451,7 @@ export function GlassWall() {
       if (openT.current < 0.02) {
         openT.current = 0;
         facetHoverRef.current = -1;
+        setFacetHoverIdx(-1);
         setOpenIdx(wantIdx);
       }
     } else if (openIdx >= 0) {
@@ -553,17 +579,48 @@ export function GlassWall() {
           ATMO.facets.emissive * (isFSel ? 2.6 : isFHov ? 1.8 : 1.0) * (0.85 + 0.15 * Math.sin(t * 1.8 + f.phase));
       }
     }
+
+    // Name tag follows whatever is hovered — a program facet (if a pane is
+    // open) or a pane — easing into place and fading like the old globe labels.
+    const label = labelRef.current;
+    if (label) {
+      let anchor: THREE.Object3D | null = null;
+      let lift = 0;
+      const fj = facetHoverRef.current;
+      if (openIdx >= 0 && fj >= 0 && facetRefs.current[fj]) {
+        anchor = facetRefs.current[fj];
+        lift = shards[openIdx].size * 0.45 + 0.25;
+      } else if (hoveredRef.current >= 0 && matched[hoveredRef.current]) {
+        anchor = groupRefs.current[hoveredRef.current];
+        lift = shards[hoveredRef.current].size * 0.8 + 0.3;
+      }
+      const o = (labelOpacity.current = lerp(labelOpacity.current, anchor ? 1 : 0, 0.16));
+      label.visible = o > 0.02;
+      if (anchor) {
+        anchor.getWorldPosition(labelTarget);
+        label.parent?.worldToLocal(labelTarget);
+        labelTarget.y += lift;
+        labelTarget.z += 1.4;
+        if (o < 0.06) label.position.copy(labelTarget); // snap when (re)appearing
+        else label.position.lerp(labelTarget, 0.3);
+      }
+      label.scale.setScalar(0.92 + 0.08 * o);
+      if (labelTitleRef.current?.material) labelTitleRef.current.material.opacity = o;
+      if (labelSubRef.current?.material) labelSubRef.current.material.opacity = o * 0.85;
+    }
   });
 
   const onOver = (i: number) => (e: ThreeEvent<PointerEvent>) => {
     e.stopPropagation();
     if (!matched[i]) return;
     hoveredRef.current = i;
+    setHoverIdx(i);
     if (typeof document !== 'undefined') document.body.style.cursor = 'pointer';
   };
   const onOut = (i: number) => (e: ThreeEvent<PointerEvent>) => {
     e.stopPropagation();
     if (hoveredRef.current === i) hoveredRef.current = -1;
+    setHoverIdx((cur) => (cur === i ? -1 : cur));
     if (typeof document !== 'undefined') document.body.style.cursor = 'auto';
   };
   const onClick = (i: number) => (e: ThreeEvent<MouseEvent>) => {
@@ -578,11 +635,13 @@ export function GlassWall() {
   const onFacetOver = (j: number) => (e: ThreeEvent<PointerEvent>) => {
     e.stopPropagation();
     facetHoverRef.current = j;
+    setFacetHoverIdx(j);
     if (typeof document !== 'undefined') document.body.style.cursor = 'pointer';
   };
   const onFacetOut = (j: number) => (e: ThreeEvent<PointerEvent>) => {
     e.stopPropagation();
     if (facetHoverRef.current === j) facetHoverRef.current = -1;
+    setFacetHoverIdx((cur) => (cur === j ? -1 : cur));
     if (typeof document !== 'undefined') document.body.style.cursor = 'auto';
   };
   const onFacetClick = (j: number) => (e: ThreeEvent<MouseEvent>) => {
@@ -644,6 +703,52 @@ export function GlassWall() {
             ))}
           </group>
         ))}
+      </group>
+      {/* Hover name tag — school (or program) names appear on hover, like the
+          old orbital globe. Drawn over the glass (no depth test). */}
+      <group ref={labelRef} visible={false}>
+        <Billboard follow>
+          <Text
+            ref={labelTitleRef}
+            fontSize={0.46}
+            color="#F8FAFC"
+            anchorX="center"
+            anchorY="bottom"
+            outlineWidth={0.03}
+            outlineColor="#0B1220"
+            fontWeight="bold"
+            maxWidth={10}
+            textAlign="center"
+            material-transparent
+            material-opacity={0}
+            material-depthTest={false}
+            material-depthWrite={false}
+            renderOrder={1000}
+          >
+            {labelTitle}
+          </Text>
+          {labelSub && (
+            <Text
+              ref={labelSubRef}
+              position={[0, -0.12, 0]}
+              fontSize={0.28}
+              color="#9FC2FF"
+              anchorX="center"
+              anchorY="top"
+              outlineWidth={0.022}
+              outlineColor="#0B1220"
+              maxWidth={10}
+              textAlign="center"
+              material-transparent
+              material-opacity={0}
+              material-depthTest={false}
+              material-depthWrite={false}
+              renderOrder={1000}
+            >
+              {labelSub}
+            </Text>
+          )}
+        </Billboard>
       </group>
     </group>
   );
