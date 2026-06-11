@@ -214,16 +214,7 @@
       "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
       "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
       "hochschule-fur-kunste-bremen--musik--master-of-music",
-      "hochschule-fur-kunste-bremen--promotionsprogramm-phd--phd",
-      "hochschule-fur-kunste-bremen--musik--bachelor-master",
-      "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-      "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-      "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
-      "hochschule-fur-kunste-bremen--musik--unspecified",
-      "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified",
-      "hochschule-fur-kunste-bremen--digital-media--unspecified",
-      "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-      "hochschule-fur-kunste-bremen--integrated-design--unspecified"
+      "hochschule-fur-kunste-bremen--promotionsprogramm-phd--phd"
     ]
   },
   "staatliche-akademie-der-bildenden-kunste-stuttgart": {
@@ -406,7 +397,9 @@
       "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
       "bauhaus-universitat-weimar--architecture--unspecified",
       "bauhaus-universitat-weimar--art-and-design--unspecified",
-      "bauhaus-universitat-weimar--media--unspecified"
+      "bauhaus-universitat-weimar--media--unspecified",
+      "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
+      "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts"
     ]
   },
   "alanus-hochschule-fur-kunst-und-gesellschaft": {
@@ -1267,7 +1260,12 @@
       "founded": 1946
     },
     "program_ids": [
-      "khm-munchen--fine-arts--diploma"
+      "khm-munchen--freie-kunst--diploma",
+      "khm-munchen--kunstpadagogik--staatsexamen",
+      "khm-munchen--innenarchitektur--bachelor-of-arts",
+      "khm-munchen--innenarchitektur--master-of-arts",
+      "khm-munchen--architektur-und-kunst--master-of-arts",
+      "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts"
     ]
   },
   "technische-universitat-chemnitz": {
@@ -1349,7 +1347,8 @@
     "program_ids": [
       "hmtm-hannover--music--unspecified",
       "hmtm-hannover--acting--unspecified",
-      "hmtm-hannover--media-management--unspecified"
+      "hmtm-hannover--media-management--unspecified",
+      "hmtm-hannover--medien-und-musik--master-of-arts"
     ]
   },
   "hochschule-fur-evangelische-kirchenmusik": {
@@ -2219,6 +2218,224 @@
       "filmakademie-baden-wurttemberg--filmschauspielworkshop--workshop",
       "filmakademie-baden-wurttemberg--international-screen-acting-workshop--workshop",
       "filmakademie-baden-wurttemberg--international-class--workshop"
+    ]
+  },
+  "fachhochschule-dortmund": {
+    "id": "fachhochschule-dortmund",
+    "name": "Fachhochschule Dortmund",
+    "city": "Dortmund",
+    "state": "North Rhine-Westphalia",
+    "type": "university_of_applied_sciences",
+    "coordinates": {
+      "lat": 51.5021,
+      "lng": 7.4496
+    },
+    "stats": {
+      "students": 14500,
+      "student_staff_ratio": null,
+      "founded": 1971
+    },
+    "program_ids": [
+      "fachhochschule-dortmund--film-sound--bachelor-of-arts",
+      "fachhochschule-dortmund--digital-design--master-of-science",
+      "fachhochschule-dortmund--fotografie--bachelor-of-arts",
+      "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
+      "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts",
+      "fachhochschule-dortmund--editorial-design--master-of-arts"
+    ]
+  },
+  "leuphana-universitat-luneburg": {
+    "id": "leuphana-universitat-luneburg",
+    "name": "Leuphana Universität Lüneburg",
+    "city": "Lüneburg",
+    "state": "Lower Saxony",
+    "type": "university",
+    "coordinates": {
+      "lat": 53.2288,
+      "lng": 10.4014
+    },
+    "stats": {
+      "students": 9500,
+      "student_staff_ratio": null,
+      "founded": 1946
+    },
+    "program_ids": [
+      "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts"
+    ]
+  },
+  "bergische-universitat-wuppertal": {
+    "id": "bergische-universitat-wuppertal",
+    "name": "Bergische Universität Wuppertal",
+    "city": "Wuppertal",
+    "state": "North Rhine-Westphalia",
+    "type": "university",
+    "coordinates": {
+      "lat": 51.2453,
+      "lng": 7.1495
+    },
+    "stats": {
+      "students": 21000,
+      "student_staff_ratio": null,
+      "founded": 1972
+    },
+    "program_ids": [
+      "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
+      "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education"
+    ]
+  },
+  "fachhochschule-munster": {
+    "id": "fachhochschule-munster",
+    "name": "Fachhochschule Münster",
+    "city": "Münster",
+    "state": "North Rhine-Westphalia",
+    "type": "university_of_applied_sciences",
+    "coordinates": {
+      "lat": 51.9668,
+      "lng": 7.6024
+    },
+    "stats": {
+      "students": 15000,
+      "student_staff_ratio": null,
+      "founded": 1971
+    },
+    "program_ids": [
+      "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts"
+    ]
+  },
+  "goethe-universitat-frankfurt-am-main": {
+    "id": "goethe-universitat-frankfurt-am-main",
+    "name": "Goethe-Universität Frankfurt am Main",
+    "city": "Frankfurt am Main",
+    "state": "Hesse",
+    "type": "university",
+    "coordinates": {
+      "lat": 50.1271,
+      "lng": 8.6682
+    },
+    "stats": {
+      "students": 42000,
+      "student_staff_ratio": null,
+      "founded": 1914
+    },
+    "program_ids": [
+      "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts"
+    ]
+  },
+  "hochschule-offenburg": {
+    "id": "hochschule-offenburg",
+    "name": "Hochschule Offenburg",
+    "city": "Offenburg",
+    "state": "Baden-Württemberg",
+    "type": "university_of_applied_sciences",
+    "coordinates": {
+      "lat": 48.4586,
+      "lng": 7.943
+    },
+    "stats": {
+      "students": 4000,
+      "student_staff_ratio": null,
+      "founded": 1964
+    },
+    "program_ids": [
+      "hochschule-offenburg--communication-and-media-engineering--master-of-science"
+    ]
+  },
+  "carl-von-ossietzky-universitat-oldenburg": {
+    "id": "carl-von-ossietzky-universitat-oldenburg",
+    "name": "Carl von Ossietzky Universität Oldenburg",
+    "city": "Oldenburg",
+    "state": "Lower Saxony",
+    "type": "university",
+    "coordinates": {
+      "lat": 53.147,
+      "lng": 8.1814
+    },
+    "stats": {
+      "students": 15500,
+      "student_staff_ratio": null,
+      "founded": 1973
+    },
+    "program_ids": [
+      "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts"
+    ]
+  },
+  "universitat-bremen": {
+    "id": "universitat-bremen",
+    "name": "Universität Bremen",
+    "city": "Bremen",
+    "state": "Bremen",
+    "type": "university",
+    "coordinates": {
+      "lat": 53.107,
+      "lng": 8.852
+    },
+    "stats": {
+      "students": 18000,
+      "student_staff_ratio": null,
+      "founded": 1971
+    },
+    "program_ids": [
+      "universitat-bremen--digital-media-and-society--master-of-arts",
+      "universitat-bremen--digitale-medien--master-of-arts",
+      "universitat-bremen--digitale-medien--bachelor-of-arts"
+    ]
+  },
+  "universitat-hamburg": {
+    "id": "universitat-hamburg",
+    "name": "Universität Hamburg",
+    "city": "Hamburg",
+    "state": "Hamburg",
+    "type": "university",
+    "coordinates": {
+      "lat": 53.5665,
+      "lng": 9.9846
+    },
+    "stats": {
+      "students": 42000,
+      "student_staff_ratio": null,
+      "founded": 1919
+    },
+    "program_ids": [
+      "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts"
+    ]
+  },
+  "europa-universitat-flensburg": {
+    "id": "europa-universitat-flensburg",
+    "name": "Europa-Universität Flensburg",
+    "city": "Flensburg",
+    "state": "Schleswig-Holstein",
+    "type": "university",
+    "coordinates": {
+      "lat": 54.7762,
+      "lng": 9.4544
+    },
+    "stats": {
+      "students": 5800,
+      "student_staff_ratio": null,
+      "founded": 1946
+    },
+    "program_ids": [
+      "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts"
+    ]
+  },
+  "heinrich-heine-universitat-dusseldorf": {
+    "id": "heinrich-heine-universitat-dusseldorf",
+    "name": "Heinrich-Heine-Universität Düsseldorf",
+    "city": "Düsseldorf",
+    "state": "North Rhine-Westphalia",
+    "type": "university",
+    "coordinates": {
+      "lat": 51.1882,
+      "lng": 6.7938
+    },
+    "stats": {
+      "students": 29000,
+      "student_staff_ratio": null,
+      "founded": 1965
+    },
+    "program_ids": [
+      "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts"
     ]
   }
 }

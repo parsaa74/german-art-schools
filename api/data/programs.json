@@ -1973,7 +1973,7 @@
     "degree_level": "bachelor",
     "language": "German/English",
     "duration": "6 semesters",
-    "description": "Program focusing on digital media with emphasis on practical and theoretical knowledge.",
+    "description": "Program focusing on digital media with emphasis on practical and theoretical knowledge. Joint program of Hochschule für Künste Bremen and Universität Bremen.",
     "specializations": [
       "Interactive Media",
       "Game Design",
@@ -2030,19 +2030,22 @@
     "degree_level": "master",
     "language": "German/English",
     "duration": "4 semesters",
-    "description": "Advanced program focusing on digital media with emphasis on research and development.",
+    "description": "Joint English-taught master of Hochschule für Künste Bremen and Universität Bremen with two tracks: Media Design (HfK Bremen — media theory from a cultural-studies perspective, media art and media aesthetics, intermedial design, computer music with digital sound synthesis and processing, smart materials for artistic production) and Media Informatics (Universität Bremen — embodied interaction, entertainment computing, interactive systems, cognitive modeling, advanced computer graphics, virtual reality and physically-based simulation, massively parallel GPU algorithms, computational geometry). Master project on a problem with societal, scientific, technological, artistic or design relevance, bridging art school and university.",
     "specializations": [
-      "Interactive Media",
-      "Game Design",
-      "Media Art",
-      "Web Design"
+      "Media Design",
+      "Media Informatics",
+      "Media Theory",
+      "Computer Music",
+      "Smart Materials",
+      "Embodied Interaction",
+      "Virtual Reality"
     ],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
     "application_url": null,
     "program_url": null,
-    "source_url": null,
-    "extracted_at": null,
+    "source_url": "Module catalogue Digital Media Master (HfK Bremen / Universität Bremen, 2019-06-21)",
+    "extracted_at": "2026-06-12T00:00:00.000Z",
     "deadlines": [
       {
         "semester": "winter",
@@ -2312,203 +2315,6 @@
         "end": "31 May"
       }
     }
-  },
-  "hochschule-fur-kunste-bremen--musik--bachelor-master": {
-    "program_id": "hochschule-fur-kunste-bremen--musik--bachelor-master",
-    "school_id": "hochschule-fur-kunste-bremen",
-    "school_name": "Hochschule für Künste Bremen",
-    "name": "Musik",
-    "degree": "Bachelor/Master",
-    "degree_level": "other",
-    "language": "German",
-    "duration": "Varies",
-    "description": null,
-    "specializations": [],
-    "portfolio_required": null,
-    "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
-    "source_url": null,
-    "extracted_at": null,
-    "deadlines": [
-      {
-        "semester": "winter",
-        "start": {
-          "month": 3,
-          "day": 1
-        },
-        "end": {
-          "month": 3,
-          "day": 31
-        }
-      }
-    ],
-    "deadlines_raw": {
-      "winter": {
-        "start": "1 March",
-        "end": "31 March"
-      }
-    }
-  },
-  "hochschule-fur-kunste-bremen--digitale-medien--unspecified": {
-    "program_id": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-    "school_id": "hochschule-fur-kunste-bremen",
-    "school_name": "Hochschule für Künste Bremen",
-    "name": "Digitale Medien",
-    "degree": "",
-    "degree_level": "other",
-    "language": "",
-    "duration": "",
-    "description": null,
-    "specializations": [],
-    "portfolio_required": null,
-    "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
-    "source_url": null,
-    "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
-  },
-  "hochschule-fur-kunste-bremen--freie-kunst--unspecified": {
-    "program_id": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-    "school_id": "hochschule-fur-kunste-bremen",
-    "school_name": "Hochschule für Künste Bremen",
-    "name": "Freie Kunst",
-    "degree": "",
-    "degree_level": "other",
-    "language": "",
-    "duration": "",
-    "description": null,
-    "specializations": [],
-    "portfolio_required": null,
-    "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
-    "source_url": null,
-    "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
-  },
-  "hochschule-fur-kunste-bremen--integriertes-design--unspecified": {
-    "program_id": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
-    "school_id": "hochschule-fur-kunste-bremen",
-    "school_name": "Hochschule für Künste Bremen",
-    "name": "Integriertes Design",
-    "degree": "",
-    "degree_level": "other",
-    "language": "",
-    "duration": "",
-    "description": null,
-    "specializations": [],
-    "portfolio_required": null,
-    "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
-    "source_url": null,
-    "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
-  },
-  "hochschule-fur-kunste-bremen--musik--unspecified": {
-    "program_id": "hochschule-fur-kunste-bremen--musik--unspecified",
-    "school_id": "hochschule-fur-kunste-bremen",
-    "school_name": "Hochschule für Künste Bremen",
-    "name": "Musik",
-    "degree": "",
-    "degree_level": "other",
-    "language": "",
-    "duration": "",
-    "description": null,
-    "specializations": [],
-    "portfolio_required": null,
-    "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
-    "source_url": null,
-    "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
-  },
-  "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified": {
-    "program_id": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified",
-    "school_id": "hochschule-fur-kunste-bremen",
-    "school_name": "Hochschule für Künste Bremen",
-    "name": "Promotionsprogramm (PhD)",
-    "degree": "",
-    "degree_level": "other",
-    "language": "",
-    "duration": "",
-    "description": null,
-    "specializations": [],
-    "portfolio_required": null,
-    "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
-    "source_url": null,
-    "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
-  },
-  "hochschule-fur-kunste-bremen--digital-media--unspecified": {
-    "program_id": "hochschule-fur-kunste-bremen--digital-media--unspecified",
-    "school_id": "hochschule-fur-kunste-bremen",
-    "school_name": "Hochschule für Künste Bremen",
-    "name": "Digital Media",
-    "degree": "",
-    "degree_level": "other",
-    "language": "English",
-    "duration": "",
-    "description": null,
-    "specializations": [],
-    "portfolio_required": null,
-    "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
-    "source_url": null,
-    "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
-  },
-  "hochschule-fur-kunste-bremen--fine-arts--unspecified": {
-    "program_id": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-    "school_id": "hochschule-fur-kunste-bremen",
-    "school_name": "Hochschule für Künste Bremen",
-    "name": "Fine Arts",
-    "degree": "",
-    "degree_level": "other",
-    "language": "",
-    "duration": "",
-    "description": null,
-    "specializations": [],
-    "portfolio_required": null,
-    "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
-    "source_url": null,
-    "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
-  },
-  "hochschule-fur-kunste-bremen--integrated-design--unspecified": {
-    "program_id": "hochschule-fur-kunste-bremen--integrated-design--unspecified",
-    "school_id": "hochschule-fur-kunste-bremen",
-    "school_name": "Hochschule für Künste Bremen",
-    "name": "Integrated Design",
-    "degree": "",
-    "degree_level": "other",
-    "language": "",
-    "duration": "",
-    "description": null,
-    "specializations": [],
-    "portfolio_required": null,
-    "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
-    "source_url": null,
-    "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
   },
   "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma": {
     "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
@@ -5225,6 +5031,88 @@
     "extracted_at": null,
     "deadlines": [],
     "deadlines_raw": {}
+  },
+  "bauhaus-universitat-weimar--media-ecologies--master-of-arts": {
+    "program_id": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
+    "school_id": "bauhaus-universitat-weimar",
+    "school_name": "Bauhaus-Universität Weimar",
+    "name": "Media Ecologies",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "English",
+    "duration": "4 semesters",
+    "description": "Research-oriented, fully English-taught MA combining media studies and environmental humanities. Modules on digital environments, planetary media, and archive ecologies, with interdisciplinary electives from computer science, civil engineering, architecture, and art and design. Winter intake; EU applicants apply by 30 September, non-EU applicants by 15 July via uni-assist. English B2 required; no tuition fees.",
+    "specializations": [
+      "Digital Environments",
+      "Planetary Media",
+      "Archive Ecologies",
+      "Environmental Humanities"
+    ],
+    "portfolio_required": false,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.uni-weimar.de/de/medien/studium/media-ecologies-ma/",
+    "program_url": "https://www.uni-weimar.de/de/medien/studium/media-ecologies-ma/",
+    "source_url": "https://www.uni-weimar.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 9,
+          "day": 30
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "30 September"
+      }
+    }
+  },
+  "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts": {
+    "program_id": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts",
+    "school_id": "bauhaus-universitat-weimar",
+    "school_name": "Bauhaus-Universität Weimar",
+    "name": "Media Art and Design",
+    "degree": "Master of Fine Arts",
+    "degree_level": "master",
+    "language": "German/English",
+    "duration": "2-4 semesters",
+    "description": "Professorship-based, project-driven media art master, offered as the German-taught MFA Medienkunst/Mediengestaltung with a parallel English-taught Media Art and Design (MAD) variant. Students join one of six chairs: Acoustic Ecologies and Sound Studies, Electroacoustic Composition and Sound Art, Experimental Radio, Design of Media Environments, Interface Design, or Media Events. Topics span sound art and computer music (Max/MSP, SuperCollider), radio art and Hörspiel, sensor-based spatial interaction and computer vision, virtual space and game engines, physical computing and experimental interfaces, bioart and science & art, and performative media events. Two-semester core after a 240-ECTS bachelor, extendable with bridge semesters; winter intake, portfolio-based aptitude examination, no tuition fees. Only Interface Design is fully English-taught; most projects run in German.",
+    "specializations": [
+      "Acoustic Ecologies and Sound Studies",
+      "Electroacoustic Composition and Sound Art",
+      "Experimental Radio",
+      "Design of Media Environments",
+      "Interface Design",
+      "Media Events"
+    ],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": 0,
+    "application_url": "http://www.uni-weimar.de/campusportal/bewerbung",
+    "program_url": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/medienkunstmediengestaltung/medienkunstmediengestaltung-mfa/",
+    "source_url": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/medienkunstmediengestaltung/medienkunstmediengestaltung-mfa/",
+    "extracted_at": "2026-06-12T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 2,
+          "day": 2
+        },
+        "end": {
+          "month": 3,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "2 February",
+        "end": "31 March"
+      }
+    }
   },
   "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts": {
     "program_id": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
@@ -12290,47 +12178,125 @@
     "deadlines": [],
     "deadlines_raw": {}
   },
-  "khm-munchen--fine-arts--diploma": {
-    "program_id": "khm-munchen--fine-arts--diploma",
+  "khm-munchen--freie-kunst--diploma": {
+    "program_id": "khm-munchen--freie-kunst--diploma",
     "school_id": "khm-munchen",
     "school_name": "Kunsthochschule München",
-    "name": "Fine Arts",
+    "name": "Freie Kunst",
     "degree": "Diploma",
     "degree_level": "diploma",
     "language": "German",
-    "duration": "10 semesters",
-    "description": "Comprehensive fine arts program with emphasis on individual artistic development.",
-    "specializations": [
-      "Painting",
-      "Sculpture",
-      "Graphic Arts",
-      "Photography"
-    ],
+    "duration": "",
+    "description": "Development and testing of an independent artistic practice within a chosen artistic class, in close exchange with the professor and fellow students. Graduates receive the academic degree 'Diplom' in Freie Kunst. Applications are possible for the winter semester only.",
+    "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [
-      {
-        "semester": "winter",
-        "start": {
-          "month": 3,
-          "day": 1
-        },
-        "end": {
-          "month": 4,
-          "day": 15
-        }
-      }
-    ],
-    "deadlines_raw": {
-      "winter": {
-        "start": "1 March",
-        "end": "15 April"
-      }
-    }
+    "deadlines": [],
+    "deadlines_raw": {}
+  },
+  "khm-munchen--kunstpadagogik--staatsexamen": {
+    "program_id": "khm-munchen--kunstpadagogik--staatsexamen",
+    "school_id": "khm-munchen",
+    "school_name": "Kunsthochschule München",
+    "name": "Kunstpädagogik",
+    "degree": "Staatsexamen",
+    "degree_level": "other",
+    "language": "German",
+    "duration": "",
+    "description": "Double-subject degree in art and art education (Kunst und Kunstpädagogik) for teaching at Gymnasien in Bavaria — no second subject required. Artistic training follows the model of a free class, complemented by workshops and theory seminars. A Mappenforum lets applicants discuss their portfolio with the professors before applying.",
+    "specializations": [],
+    "portfolio_required": null,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": null,
+    "source_url": null,
+    "extracted_at": null,
+    "deadlines": [],
+    "deadlines_raw": {}
+  },
+  "khm-munchen--innenarchitektur--bachelor-of-arts": {
+    "program_id": "khm-munchen--innenarchitektur--bachelor-of-arts",
+    "school_id": "khm-munchen",
+    "school_name": "Kunsthochschule München",
+    "name": "Innenarchitektur",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
+    "language": "German",
+    "duration": "8 semesters",
+    "description": "Four-year bachelor's program understanding interior architecture as a discipline in dialogue with the fine arts: analyzing spatial, constructive, and societal questions and developing independent concepts, with particular attention to responsible handling of existing building stock.",
+    "specializations": [],
+    "portfolio_required": null,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": null,
+    "source_url": null,
+    "extracted_at": null,
+    "deadlines": [],
+    "deadlines_raw": {}
+  },
+  "khm-munchen--innenarchitektur--master-of-arts": {
+    "program_id": "khm-munchen--innenarchitektur--master-of-arts",
+    "school_id": "khm-munchen",
+    "school_name": "Kunsthochschule München",
+    "name": "Innenarchitektur",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "German",
+    "duration": "4 semesters",
+    "description": "Two-year consecutive master's program in interior architecture, deepening artistic, technical, ecological, and social design and planning of spaces.",
+    "specializations": [],
+    "portfolio_required": null,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": null,
+    "source_url": null,
+    "extracted_at": null,
+    "deadlines": [],
+    "deadlines_raw": {}
+  },
+  "khm-munchen--architektur-und-kunst--master-of-arts": {
+    "program_id": "khm-munchen--architektur-und-kunst--master-of-arts",
+    "school_id": "khm-munchen",
+    "school_name": "Kunsthochschule München",
+    "name": "Architektur und Kunst",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "German",
+    "duration": "4 semesters",
+    "description": "Design-oriented master's program for graduates with a bachelor's degree in architecture; starts each winter semester. Accredited by the Stiftung Akkreditierungsrat, enabling graduates to register with the chambers of architects.",
+    "specializations": [],
+    "portfolio_required": null,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": null,
+    "source_url": null,
+    "extracted_at": null,
+    "deadlines": [],
+    "deadlines_raw": {}
+  },
+  "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts": {
+    "program_id": "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts",
+    "school_id": "khm-munchen",
+    "school_name": "Kunsthochschule München",
+    "name": "Bildnerisches Gestalten und Therapie",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "German",
+    "duration": "",
+    "description": "Master's program in which artists extend their visual practice into the therapeutic dimension, building on the influence of artistic creation and reception on psychological and physical well-being.",
+    "specializations": [],
+    "portfolio_required": null,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": null,
+    "source_url": null,
+    "extracted_at": null,
+    "deadlines": [],
+    "deadlines_raw": {}
   },
   "technische-universitat-chemnitz--human-computer-interaction--master-of-science": {
     "program_id": "technische-universitat-chemnitz--human-computer-interaction--master-of-science",
@@ -12569,6 +12535,44 @@
     "extracted_at": null,
     "deadlines": [],
     "deadlines_raw": {}
+  },
+  "hmtm-hannover--medien-und-musik--master-of-arts": {
+    "program_id": "hmtm-hannover--medien-und-musik--master-of-arts",
+    "school_id": "hmtm-hannover",
+    "school_name": "Hochschule für Musik, Theater und Medien Hannover",
+    "name": "Medien und Musik",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "German",
+    "duration": "4 semesters",
+    "description": "Research-oriented MA at the Institut für Journalistik und Kommunikationsforschung (IJK) combining communication science and musicology. Compulsory participation in at least two research projects; topics include music labels, festivals, digitalization, and cultural policy. 17 places per year; entry in winter or summer semester with admission interviews twice a year.",
+    "specializations": [
+      "Communication Research",
+      "Musicology",
+      "Music Industry",
+      "Cultural Policy"
+    ],
+    "portfolio_required": false,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.ijk.hmtm-hannover.de/de/bewerbung/master-studium-medien-und-musik/",
+    "program_url": "https://www.ijk.hmtm-hannover.de/de/bewerbung/master-studium-medien-und-musik/",
+    "source_url": "https://www.hmtm-hannover.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 6,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 June"
+      }
+    }
   },
   "hochschule-fur-evangelische-kirchenmusik--evangelische-kirchenmusik--bachelor-of-music": {
     "program_id": "hochschule-fur-evangelische-kirchenmusik--evangelische-kirchenmusik--bachelor-of-music",
@@ -20363,5 +20367,823 @@
     "extracted_at": null,
     "deadlines": [],
     "deadlines_raw": {}
+  },
+  "fachhochschule-dortmund--film-sound--bachelor-of-arts": {
+    "program_id": "fachhochschule-dortmund--film-sound--bachelor-of-arts",
+    "school_id": "fachhochschule-dortmund",
+    "school_name": "Fachhochschule Dortmund",
+    "name": "Film & Sound",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
+    "language": "German",
+    "duration": "7 semesters",
+    "description": "Seven-semester project-based program in which students from the two tracks Film and Sounddesign jointly realize fictional, documentary, and experimental film projects, learning audiovisual storytelling from idea to realization. Admission via aptitude assessment (Eignungsfeststellung); starts in the winter semester.",
+    "specializations": [
+      "Film",
+      "Sounddesign"
+    ],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": "https://www.fh-dortmund.de/studiengaenge/film-sound-bachelor.php",
+    "source_url": "https://www.fh-dortmund.de/studiengaenge/film-sound-bachelor.php",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 5,
+          "day": 15
+        },
+        "end": {
+          "month": 7,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "mid May",
+        "end": "15 July"
+      }
+    }
+  },
+  "fachhochschule-dortmund--digital-design--master-of-science": {
+    "program_id": "fachhochschule-dortmund--digital-design--master-of-science",
+    "school_id": "fachhochschule-dortmund",
+    "school_name": "Fachhochschule Dortmund",
+    "name": "Digital Design",
+    "degree": "Master of Science",
+    "degree_level": "master",
+    "language": "German",
+    "duration": "4 semesters",
+    "description": "Master's program in the computer science faculty for students with a design or computing background, focused on holistically well-designed digital solutions across Gestaltungslehre, Baulehre, Entwurfslehre, and Materialkunde. Admission via aptitude assessment and a minimum grade of 2.5; starts in the winter semester.",
+    "specializations": [],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": "https://www.fh-dortmund.de/studiengaenge/digital-design-master.php",
+    "source_url": "https://www.fh-dortmund.de/studiengaenge/digital-design-master.php",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 5,
+          "day": 15
+        },
+        "end": {
+          "month": 7,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "mid May",
+        "end": "15 July"
+      }
+    }
+  },
+  "fachhochschule-dortmund--fotografie--bachelor-of-arts": {
+    "program_id": "fachhochschule-dortmund--fotografie--bachelor-of-arts",
+    "school_id": "fachhochschule-dortmund",
+    "school_name": "Fachhochschule Dortmund",
+    "name": "Fotografie",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
+    "language": "German",
+    "duration": "7 semesters",
+    "description": "Seven-semester bachelor's program covering technical skills from analog photography to post-photographic and AI-assisted processes, with foundation year followed by specialization from the third semester. Admission via aptitude assessment; starts in the winter semester.",
+    "specializations": [
+      "Bildjournalismus / Dokumentarische Fotografie",
+      "Studio- / Still Life- / Foodfotografie",
+      "Werbe- / Mode- / Portraitfotografie",
+      "Künstlerisch-Konzeptuelle Fotografie"
+    ],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": "https://www.fh-dortmund.de/studiengaenge/fotografie-bachelor.php",
+    "source_url": "https://www.fh-dortmund.de/studiengaenge/fotografie-bachelor.php",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 5,
+          "day": 15
+        },
+        "end": {
+          "month": 7,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "mid May",
+        "end": "15 July"
+      }
+    }
+  },
+  "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts": {
+    "program_id": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+    "school_id": "fachhochschule-dortmund",
+    "school_name": "Fachhochschule Dortmund",
+    "name": "Visuelle Kommunikation",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
+    "language": "German",
+    "duration": "7 semesters",
+    "description": "Successor to the discontinued Kommunikationsdesign program: visual design of content for analog, digital, and interactive media, including corporate design, book/magazine/poster design, campaign development, packaging, illustration, web design, game design, and interaction design. Admission via aptitude assessment; starts in the winter semester.",
+    "specializations": [],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": "https://www.fh-dortmund.de/studiengaenge/kommunikationsdesign-bachelor.php",
+    "source_url": "https://www.fh-dortmund.de/studiengaenge/kommunikationsdesign-bachelor.php",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 5,
+          "day": 15
+        },
+        "end": {
+          "month": 7,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "mid May",
+        "end": "15 July"
+      }
+    }
+  },
+  "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts": {
+    "program_id": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
+    "school_id": "fachhochschule-dortmund",
+    "school_name": "Fachhochschule Dortmund",
+    "name": "Film - Hybrid & Non-Fiction",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "German",
+    "duration": "3 semesters",
+    "description": "Three-semester consecutive master's program realizing a film project from conception through production to post-production, aiming at a 'design of the real'; together with the Film & Sound bachelor it holds film school status in the international CILECT association. Admission via aptitude assessment; starts in the summer semester.",
+    "specializations": [
+      "Film (Regie, Kamera, Schnitt, Produktion, Drehbuch, Dramaturgie)",
+      "Sounddesign"
+    ],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": "https://www.fh-dortmund.de/studiengaenge/film-master.php",
+    "source_url": "https://www.fh-dortmund.de/studiengaenge/film-master.php",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 12,
+          "day": 5
+        },
+        "end": {
+          "month": 1,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "early December",
+        "end": "15 January"
+      }
+    }
+  },
+  "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts": {
+    "program_id": "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts",
+    "school_id": "fachhochschule-dortmund",
+    "school_name": "Fachhochschule Dortmund",
+    "name": "Objekt- und Raumdesign",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
+    "language": "German",
+    "duration": "7 semesters",
+    "description": "Seven-semester practice-oriented project program in three-dimensional storytelling — staging spaces and objects for shops, trade fairs, interiors, film, stage, museums, and public space. Admission via aptitude assessment; starts in the winter semester.",
+    "specializations": [
+      "Objektdesign",
+      "Raumdesign",
+      "Kunst im öffentlichen Raum",
+      "Szenografie"
+    ],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": "https://www.fh-dortmund.de/studiengaenge/objekt-und-raumdesign-bachelor.php",
+    "source_url": "https://www.fh-dortmund.de/studiengaenge/objekt-und-raumdesign-bachelor.php",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 5,
+          "day": 15
+        },
+        "end": {
+          "month": 7,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "mid May",
+        "end": "15 July"
+      }
+    }
+  },
+  "fachhochschule-dortmund--editorial-design--master-of-arts": {
+    "program_id": "fachhochschule-dortmund--editorial-design--master-of-arts",
+    "school_id": "fachhochschule-dortmund",
+    "school_name": "Fachhochschule Dortmund",
+    "name": "Editorial Design",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "German",
+    "duration": "3 semesters",
+    "description": "Three-semester inter- and crossmedial master's program centered on visual research, authorship, and medium-specific discourse in editorial design, integrating analog and digital print techniques, VR, photography, and film workshops. Admission via aptitude assessment; starts in the summer semester.",
+    "specializations": [],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": "https://www.fh-dortmund.de/studiengaenge/editorial-design-master.php",
+    "source_url": "https://www.fh-dortmund.de/studiengaenge/editorial-design-master.php",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 12,
+          "day": 5
+        },
+        "end": {
+          "month": 1,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "early December",
+        "end": "15 January"
+      }
+    }
+  },
+  "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts": {
+    "program_id": "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts",
+    "school_id": "leuphana-universitat-luneburg",
+    "school_name": "Leuphana Universität Lüneburg",
+    "name": "Cultural Studies: Media and Digital Cultures",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "German",
+    "duration": "4 semesters",
+    "description": "Interdisciplinary cultural studies programme examining digital cultures in their dynamics and consequences. Four core modules in history, philosophy, social organization, and aesthetics are combined with electives on phenomena such as democracy, gender, organization, media technology, and urban infrastructure. Taught in German with some electives in English; 25 study places per cohort.",
+    "specializations": [
+      "Media History",
+      "Media Philosophy",
+      "Media Aesthetics",
+      "Social Organization",
+      "Digital Cultures"
+    ],
+    "portfolio_required": false,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.leuphana.de/en/graduate-school/masters-programmes/cultural-studies-media-and-digital-cultures.html",
+    "program_url": "https://www.leuphana.de/en/graduate-school/masters-programmes/cultural-studies-media-and-digital-cultures.html",
+    "source_url": "https://www.leuphana.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 4,
+          "day": 1
+        },
+        "end": {
+          "month": 6,
+          "day": 30
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 April",
+        "end": "30 June"
+      }
+    }
+  },
+  "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts": {
+    "program_id": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
+    "school_id": "bergische-universitat-wuppertal",
+    "school_name": "Bergische Universität Wuppertal",
+    "name": "Mediendesign und Designtechnik (Kombi-Bachelor)",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
+    "language": "German",
+    "duration": "6 semesters",
+    "description": "Combined bachelor programme in media design and design technology, taken together with a second subject (typically toward vocational-school teaching). Covers design fundamentals, visual communication, typography, media and design technology, and design history and theory. No numerus clausus, but a passed aptitude assessment (Eignungsfeststellungsverfahren) is required; winter intake with enrolment by 15 October.",
+    "specializations": [
+      "Media Design",
+      "Design Technology",
+      "Visual Communication",
+      "Typography"
+    ],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.uni-wuppertal.de/de/studium/studiengaenge/detail/ba-mediendesign-und-designtechnik-kombi/",
+    "program_url": "https://www.uni-wuppertal.de/de/studium/studiengaenge/detail/ba-mediendesign-und-designtechnik-kombi/",
+    "source_url": "https://www.uni-wuppertal.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 October"
+      }
+    }
+  },
+  "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education": {
+    "program_id": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education",
+    "school_id": "bergische-universitat-wuppertal",
+    "school_name": "Bergische Universität Wuppertal",
+    "name": "Mediendesign und Designtechnik (Kombi-Master)",
+    "degree": "Master of Education",
+    "degree_level": "master",
+    "language": "German",
+    "duration": "4 semesters",
+    "description": "Master of Education in media design and design technology combined with a second subject and educational science, preparing for teaching at vocational colleges (Berufskolleg). Open admission (zulassungsfrei); entry in winter or summer semester.",
+    "specializations": [
+      "Media Design",
+      "Design Technology",
+      "Vocational School Didactics"
+    ],
+    "portfolio_required": false,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.uni-wuppertal.de/de/studium/studiengaenge/detail/med-mediendesign-und-designtechnik-kombi/",
+    "program_url": "https://www.uni-wuppertal.de/de/studium/studiengaenge/detail/med-mediendesign-und-designtechnik-kombi/",
+    "source_url": "https://www.uni-wuppertal.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 4,
+          "day": 1
+        },
+        "end": {
+          "month": 9,
+          "day": 30
+        }
+      },
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1
+        },
+        "end": {
+          "month": 3,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 April",
+        "end": "30 September"
+      },
+      "summer": {
+        "start": "1 October",
+        "end": "31 March"
+      }
+    }
+  },
+  "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts": {
+    "program_id": "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts",
+    "school_id": "fachhochschule-munster",
+    "school_name": "Fachhochschule Münster",
+    "name": "Mediendesign und Designtechnik (Lehramt an Berufskollegs)",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
+    "language": "German",
+    "duration": "6 semesters",
+    "description": "Cooperative teacher-training bachelor of FH Münster (Münster School of Design) and the University of Münster, preparing for teaching media design and design technology at vocational colleges. No admission restriction, but a passed design aptitude test (Eignungsprüfung) is required; students enrol at both institutions. Winter intake.",
+    "specializations": [
+      "Media Design",
+      "Design Technology",
+      "Vocational Education"
+    ],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.fh-muenster.de/de/studiengaenge/mediendesign-und-designtechnik-lehramt-an-berufskollegs-bachelor",
+    "program_url": "https://www.fh-muenster.de/de/studiengaenge/mediendesign-und-designtechnik-lehramt-an-berufskollegs-bachelor",
+    "source_url": "https://www.fh-muenster.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 8,
+          "day": 1
+        },
+        "end": {
+          "month": 9,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 August",
+        "end": "15 September"
+      }
+    }
+  },
+  "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts": {
+    "program_id": "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts",
+    "school_id": "goethe-universitat-frankfurt-am-main",
+    "school_name": "Goethe-Universität Frankfurt am Main",
+    "name": "Theater-, Film- und Medienwissenschaft",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "German",
+    "duration": "4 semesters",
+    "description": "Open-admission (zulassungsfrei) MA on forms of representation in theater, film, and media, integrating philosophical, art-theoretical, historical, sociological, and cultural-economic perspectives. Requires two modern foreign languages at A2 (or Latin/Greek plus one modern language) and at least four weeks of internship in the theater, film, or media field. Winter intake.",
+    "specializations": [
+      "Theater and Performance",
+      "Film Studies",
+      "Media Studies",
+      "Dance"
+    ],
+    "portfolio_required": false,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.uni-frankfurt.de/de/studium/studiengaenge/theater-film-medienwissenschaft-master",
+    "program_url": "https://www.uni-frankfurt.de/de/studium/studiengaenge/theater-film-medienwissenschaft-master",
+    "source_url": "https://www.uni-frankfurt.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 4,
+          "day": 1
+        },
+        "end": {
+          "month": 6,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 April",
+        "end": "15 June"
+      }
+    }
+  },
+  "hochschule-offenburg--communication-and-media-engineering--master-of-science": {
+    "program_id": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+    "school_id": "hochschule-offenburg",
+    "school_name": "Hochschule Offenburg",
+    "name": "Communication and Media Engineering",
+    "degree": "Master of Science",
+    "degree_level": "master",
+    "language": "English",
+    "duration": "4 semesters",
+    "description": "English-taught engineering MSc (120 ECTS) covering advanced communication technologies, IoT systems, signal processing, wireless networks, AI and machine learning applications, media systems, and IT security, with electives in hardware, software, or management. Winter intake; EU residents apply by 15 July, non-EU residents by 31 March. Non-EU students pay 1,500 EUR tuition per semester (TOEFL iBT 79 / IELTS 6.0 required).",
+    "specializations": [
+      "Communication Technologies",
+      "Media Systems",
+      "Signal Processing",
+      "IT Security"
+    ],
+    "portfolio_required": false,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.hs-offenburg.de/studium/master/communication-and-media-engineering",
+    "program_url": "https://www.hs-offenburg.de/studium/master/communication-and-media-engineering",
+    "source_url": "https://www.hs-offenburg.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 7,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 July"
+      }
+    }
+  },
+  "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts": {
+    "program_id": "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts",
+    "school_id": "carl-von-ossietzky-universitat-oldenburg",
+    "school_name": "Carl von Ossietzky Universität Oldenburg",
+    "name": "Art and Media (Zwei-Fächer-Bachelor)",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
+    "language": "German",
+    "duration": "6 semesters",
+    "description": "Dual-subject bachelor combining theory and history of art, visual culture, and modern art and media production with aesthetic practice. Open admission (NC-free) but with an entrance examination of theoretical and practical tasks, to be submitted by 1 June of the admission year. Winter intake; taken as major (60 ECTS) or minor (30 ECTS) alongside a second subject.",
+    "specializations": [
+      "Art History",
+      "Visual Culture",
+      "Media Production",
+      "Art Education"
+    ],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://uol.de/en/course-of-study/art-and-media-2s-bachelor-13",
+    "program_url": "https://uol.de/en/course-of-study/art-and-media-2s-bachelor-13",
+    "source_url": "https://uol.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 October"
+      }
+    }
+  },
+  "universitat-bremen--digital-media-and-society--master-of-arts": {
+    "program_id": "universitat-bremen--digital-media-and-society--master-of-arts",
+    "school_id": "universitat-bremen",
+    "school_name": "Universität Bremen",
+    "name": "Digital Media and Society",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "English",
+    "duration": "4 semesters",
+    "description": "English-taught MA (120 ECTS) on digitalization and datafication and their societal impact, combining digital media theory, empirical communication research methods, and practical media work. Specialization areas include digital literacy, media conception, data analysis, and project management in datafied societies. Restricted admission; winter intake.",
+    "specializations": [
+      "Digital Media Theory",
+      "Communication Research",
+      "Data Analysis",
+      "Media Conception"
+    ],
+    "portfolio_required": false,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.uni-bremen.de/en/studies/orientation-application/offered-study-program/dbs/study/122",
+    "program_url": "https://www.uni-bremen.de/en/studies/orientation-application/offered-study-program/dbs/study/122",
+    "source_url": "https://www.uni-bremen.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 2,
+          "day": 1
+        },
+        "end": {
+          "month": 3,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 February",
+        "end": "15 March"
+      }
+    }
+  },
+  "universitat-bremen--digitale-medien--master-of-arts": {
+    "program_id": "universitat-bremen--digitale-medien--master-of-arts",
+    "school_id": "universitat-bremen",
+    "school_name": "Universität Bremen",
+    "name": "Digitale Medien",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "German/English",
+    "duration": "4 semesters",
+    "description": "Joint English-taught master of Hochschule für Künste Bremen and Universität Bremen with two tracks: Media Design (HfK Bremen — media theory from a cultural-studies perspective, media art and media aesthetics, intermedial design, computer music with digital sound synthesis and processing, smart materials for artistic production) and Media Informatics (Universität Bremen — embodied interaction, entertainment computing, interactive systems, cognitive modeling, advanced computer graphics, virtual reality and physically-based simulation, massively parallel GPU algorithms, computational geometry). Master project on a problem with societal, scientific, technological, artistic or design relevance, bridging art school and university. Offered jointly with Hochschule für Künste Bremen. Distinct from Universität Bremen's separate MA Digital Media and Society, which focuses on digitalization, datafication and their societal impact.",
+    "specializations": [
+      "Media Design",
+      "Media Informatics",
+      "Media Theory",
+      "Computer Music",
+      "Smart Materials",
+      "Embodied Interaction",
+      "Virtual Reality"
+    ],
+    "portfolio_required": true,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": null,
+    "source_url": "Module catalogue Digital Media Master (HfK Bremen / Universität Bremen, 2019-06-21)",
+    "extracted_at": "2026-06-12T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 4,
+          "day": 1
+        },
+        "end": {
+          "month": 5,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 April",
+        "end": "31 May"
+      }
+    }
+  },
+  "universitat-bremen--digitale-medien--bachelor-of-arts": {
+    "program_id": "universitat-bremen--digitale-medien--bachelor-of-arts",
+    "school_id": "universitat-bremen",
+    "school_name": "Universität Bremen",
+    "name": "Digitale Medien",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
+    "language": "German/English",
+    "duration": "6 semesters",
+    "description": "Program focusing on digital media with emphasis on practical and theoretical knowledge. Joint program of Hochschule für Künste Bremen and Universität Bremen. Offered jointly with Hochschule für Künste Bremen.",
+    "specializations": [
+      "Interactive Media",
+      "Game Design",
+      "Media Art",
+      "Web Design"
+    ],
+    "portfolio_required": null,
+    "tuition_eur_per_semester": null,
+    "application_url": null,
+    "program_url": null,
+    "source_url": null,
+    "extracted_at": null,
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 2,
+          "day": 1
+        },
+        "end": {
+          "month": 5,
+          "day": 15
+        }
+      },
+      {
+        "semester": "summer",
+        "start": {
+          "month": 8,
+          "day": 1
+        },
+        "end": {
+          "month": 11,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 February",
+        "end": "15 May"
+      },
+      "summer": {
+        "start": "1 August",
+        "end": "15 November"
+      }
+    }
+  },
+  "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts": {
+    "program_id": "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts",
+    "school_id": "universitat-hamburg",
+    "school_name": "Universität Hamburg",
+    "name": "Liberal Arts and Sciences",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
+    "language": "German/English",
+    "duration": "8 semesters",
+    "description": "Interdisciplinary liberal-arts bachelor in the Faculty of Humanities, taught in German and English over eight semesters. Admission is restricted (NC); winter intake. No tuition fees beyond the semester contribution.",
+    "specializations": [
+      "Humanities",
+      "Interdisciplinary Studies"
+    ],
+    "portfolio_required": false,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.uni-hamburg.de/campuscenter/studienangebot/studiengang.html?1687442619",
+    "program_url": "https://www.uni-hamburg.de/campuscenter/studienangebot/studiengang.html?1687442619",
+    "source_url": "https://www.uni-hamburg.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 6,
+          "day": 1
+        },
+        "end": {
+          "month": 7,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 June",
+        "end": "15 July"
+      }
+    }
+  },
+  "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts": {
+    "program_id": "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts",
+    "school_id": "europa-universitat-flensburg",
+    "school_name": "Europa-Universität Flensburg",
+    "name": "Kultur – Sprache – Medien",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "German/English",
+    "duration": "4 semesters",
+    "description": "MA (120 ECTS) combining six disciplines: art/visual culture, cultural studies, media studies, literary studies, linguistics, and intercultural business administration, with a focus on the cultures of German-, Scandinavian-, and English-speaking countries around the Baltic, North Sea, and North Atlantic. Open admission (zulassungsfrei); German C1 required.",
+    "specializations": [
+      "Visual Culture",
+      "Media Studies",
+      "Cultural Studies",
+      "Linguistics"
+    ],
+    "portfolio_required": false,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.uni-flensburg.de/en/ksm",
+    "program_url": "https://www.uni-flensburg.de/en/ksm",
+    "source_url": "https://www.uni-flensburg.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [],
+    "deadlines_raw": {}
+  },
+  "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts": {
+    "program_id": "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts",
+    "school_id": "heinrich-heine-universitat-dusseldorf",
+    "school_name": "Heinrich-Heine-Universität Düsseldorf",
+    "name": "Kunstvermittlung und Kulturmanagement",
+    "degree": "Master of Arts",
+    "degree_level": "master",
+    "language": "German",
+    "duration": "4 semesters",
+    "description": "MA (120 ECTS) in art mediation and cultural management, combining art history with practice-oriented training for museums, galleries, cultural institutions, and the art market. Admission via aptitude assessment; winter intake.",
+    "specializations": [
+      "Art Mediation",
+      "Cultural Management",
+      "Art History",
+      "Museum Studies"
+    ],
+    "portfolio_required": false,
+    "tuition_eur_per_semester": null,
+    "application_url": "https://www.hhu.de/studium/studienangebot/studiengang-informationen/kunstvermittlung-und-kulturmanagement-master",
+    "program_url": "https://www.hhu.de/studium/studienangebot/studiengang-informationen/kunstvermittlung-und-kulturmanagement-master",
+    "source_url": "https://www.hhu.de/",
+    "extracted_at": "2026-06-11T00:00:00.000Z",
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 7,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "31 July"
+      }
+    }
   }
 }

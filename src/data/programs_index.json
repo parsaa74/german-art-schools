@@ -1,6 +1,6 @@
 {
-  "createdAt": "2026-06-11T09:17:44.665Z",
-  "count": 771,
+  "createdAt": "2026-06-11T23:24:08.671Z",
+  "count": 765,
   "programs": [
     {
       "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
@@ -519,69 +519,6 @@
       "schoolName": "Hochschule für Künste Bremen",
       "name": "Promotionsprogramm (PhD)",
       "degree": "PhD"
-    },
-    {
-      "program_id": "hochschule-fur-kunste-bremen--musik--bachelor-master",
-      "schoolId": "hochschule-fur-kunste-bremen",
-      "schoolName": "Hochschule für Künste Bremen",
-      "name": "Musik",
-      "degree": "Bachelor/Master"
-    },
-    {
-      "program_id": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-      "schoolId": "hochschule-fur-kunste-bremen",
-      "schoolName": "Hochschule für Künste Bremen",
-      "name": "Digitale Medien",
-      "degree": ""
-    },
-    {
-      "program_id": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-      "schoolId": "hochschule-fur-kunste-bremen",
-      "schoolName": "Hochschule für Künste Bremen",
-      "name": "Freie Kunst",
-      "degree": ""
-    },
-    {
-      "program_id": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
-      "schoolId": "hochschule-fur-kunste-bremen",
-      "schoolName": "Hochschule für Künste Bremen",
-      "name": "Integriertes Design",
-      "degree": ""
-    },
-    {
-      "program_id": "hochschule-fur-kunste-bremen--musik--unspecified",
-      "schoolId": "hochschule-fur-kunste-bremen",
-      "schoolName": "Hochschule für Künste Bremen",
-      "name": "Musik",
-      "degree": ""
-    },
-    {
-      "program_id": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified",
-      "schoolId": "hochschule-fur-kunste-bremen",
-      "schoolName": "Hochschule für Künste Bremen",
-      "name": "Promotionsprogramm (PhD)",
-      "degree": ""
-    },
-    {
-      "program_id": "hochschule-fur-kunste-bremen--digital-media--unspecified",
-      "schoolId": "hochschule-fur-kunste-bremen",
-      "schoolName": "Hochschule für Künste Bremen",
-      "name": "Digital Media",
-      "degree": ""
-    },
-    {
-      "program_id": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-      "schoolId": "hochschule-fur-kunste-bremen",
-      "schoolName": "Hochschule für Künste Bremen",
-      "name": "Fine Arts",
-      "degree": ""
-    },
-    {
-      "program_id": "hochschule-fur-kunste-bremen--integrated-design--unspecified",
-      "schoolId": "hochschule-fur-kunste-bremen",
-      "schoolName": "Hochschule für Künste Bremen",
-      "name": "Integrated Design",
-      "degree": ""
     },
     {
       "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
@@ -1114,6 +1051,13 @@
       "schoolName": "Bauhaus-Universität Weimar",
       "name": "Media Ecologies",
       "degree": "Master of Arts"
+    },
+    {
+      "program_id": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts",
+      "schoolId": "bauhaus-universitat-weimar",
+      "schoolName": "Bauhaus-Universität Weimar",
+      "name": "Media Art and Design",
+      "degree": "Master of Fine Arts"
     },
     {
       "program_id": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
@@ -5377,6 +5321,20 @@
       "schoolName": "Universität Bremen",
       "name": "Digital Media and Society",
       "degree": "Master of Arts"
+    },
+    {
+      "program_id": "universitat-bremen--digitale-medien--master-of-arts",
+      "schoolId": "universitat-bremen",
+      "schoolName": "Universität Bremen",
+      "name": "Digitale Medien",
+      "degree": "Master of Arts"
+    },
+    {
+      "program_id": "universitat-bremen--digitale-medien--bachelor-of-arts",
+      "schoolId": "universitat-bremen",
+      "schoolName": "Universität Bremen",
+      "name": "Digitale Medien",
+      "degree": "Bachelor of Arts"
     },
     {
       "program_id": "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts",

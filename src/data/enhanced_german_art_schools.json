@@ -1253,14 +1253,17 @@
           },
           "language": "German/English",
           "duration": "6 semesters",
-          "description": "Program focusing on digital media with emphasis on practical and theoretical knowledge.",
+          "description": "Program focusing on digital media with emphasis on practical and theoretical knowledge. Joint program of Hochschule für Künste Bremen and Universität Bremen.",
           "specializations": [
             "Interactive Media",
             "Game Design",
             "Media Art",
             "Web Design"
           ],
-          "program_id": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts"
+          "program_id": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
+          "jointWith": [
+            "universitat-bremen"
+          ]
         },
         {
           "name": "Digitale Medien",
@@ -1273,14 +1276,28 @@
           },
           "language": "German/English",
           "duration": "4 semesters",
-          "description": "Advanced program focusing on digital media with emphasis on research and development.",
+          "description": "Joint English-taught master of Hochschule für Künste Bremen and Universität Bremen with two tracks: Media Design (HfK Bremen — media theory from a cultural-studies perspective, media art and media aesthetics, intermedial design, computer music with digital sound synthesis and processing, smart materials for artistic production) and Media Informatics (Universität Bremen — embodied interaction, entertainment computing, interactive systems, cognitive modeling, advanced computer graphics, virtual reality and physically-based simulation, massively parallel GPU algorithms, computational geometry). Master project on a problem with societal, scientific, technological, artistic or design relevance, bridging art school and university.",
           "specializations": [
-            "Interactive Media",
-            "Game Design",
-            "Media Art",
-            "Web Design"
+            "Media Design",
+            "Media Informatics",
+            "Media Theory",
+            "Computer Music",
+            "Smart Materials",
+            "Embodied Interaction",
+            "Virtual Reality"
           ],
-          "program_id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts"
+          "program_id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
+          "details": {
+            "faculty": [
+              "Prof. Dr. Andrea Sick (Media Theory)"
+            ],
+            "portfolioRequired": true,
+            "extractedAt": "2026-06-12T00:00:00.000Z",
+            "sourceUrl": "Module catalogue Digital Media Master (HfK Bremen / Universität Bremen, 2019-06-21)"
+          },
+          "jointWith": [
+            "universitat-bremen"
+          ]
         },
         {
           "name": "Freie Kunst",
@@ -1399,83 +1416,6 @@
             "Music Theory"
           ],
           "program_id": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--phd"
-        },
-        {
-          "name": "Musik",
-          "degree": "Bachelor/Master",
-          "applicationDeadlines": {
-            "winter": {
-              "start": "1 March",
-              "end": "31 March"
-            }
-          },
-          "language": "German",
-          "duration": "Varies",
-          "program_id": "hochschule-fur-kunste-bremen--musik--bachelor-master"
-        },
-        {
-          "name": "Digitale Medien",
-          "degree": "",
-          "applicationDeadlines": {},
-          "language": "",
-          "duration": "",
-          "program_id": "hochschule-fur-kunste-bremen--digitale-medien--unspecified"
-        },
-        {
-          "name": "Freie Kunst",
-          "degree": "",
-          "applicationDeadlines": {},
-          "language": "",
-          "duration": "",
-          "program_id": "hochschule-fur-kunste-bremen--freie-kunst--unspecified"
-        },
-        {
-          "name": "Integriertes Design",
-          "degree": "",
-          "applicationDeadlines": {},
-          "language": "",
-          "duration": "",
-          "program_id": "hochschule-fur-kunste-bremen--integriertes-design--unspecified"
-        },
-        {
-          "name": "Musik",
-          "degree": "",
-          "applicationDeadlines": {},
-          "language": "",
-          "duration": "",
-          "program_id": "hochschule-fur-kunste-bremen--musik--unspecified"
-        },
-        {
-          "name": "Promotionsprogramm (PhD)",
-          "degree": "",
-          "applicationDeadlines": {},
-          "language": "",
-          "duration": "",
-          "program_id": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified"
-        },
-        {
-          "name": "Digital Media",
-          "degree": "",
-          "applicationDeadlines": {},
-          "language": "English",
-          "duration": "",
-          "program_id": "hochschule-fur-kunste-bremen--digital-media--unspecified"
-        },
-        {
-          "name": "Fine Arts",
-          "degree": "",
-          "applicationDeadlines": {},
-          "language": "",
-          "duration": "",
-          "program_id": "hochschule-fur-kunste-bremen--fine-arts--unspecified"
-        },
-        {
-          "name": "Integrated Design",
-          "degree": "",
-          "applicationDeadlines": {},
-          "language": "",
-          "duration": "",
-          "program_id": "hochschule-fur-kunste-bremen--integrated-design--unspecified"
         }
       ],
       "website": "https://www.hfk-bremen.de/",
@@ -3321,6 +3261,47 @@
             "tuitionEuroPerSemester": null
           },
           "program_id": "bauhaus-universitat-weimar--media-ecologies--master-of-arts"
+        },
+        {
+          "name": "Media Art and Design",
+          "degree": "Master of Fine Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "2 February",
+              "end": "31 March"
+            }
+          },
+          "language": "German/English",
+          "duration": "2-4 semesters",
+          "description": "Professorship-based, project-driven media art master, offered as the German-taught MFA Medienkunst/Mediengestaltung with a parallel English-taught Media Art and Design (MAD) variant. Students join one of six chairs: Acoustic Ecologies and Sound Studies, Electroacoustic Composition and Sound Art, Experimental Radio, Design of Media Environments, Interface Design, or Media Events. Topics span sound art and computer music (Max/MSP, SuperCollider), radio art and Hörspiel, sensor-based spatial interaction and computer vision, virtual space and game engines, physical computing and experimental interfaces, bioart and science & art, and performative media events. Two-semester core after a 240-ECTS bachelor, extendable with bridge semesters; winter intake, portfolio-based aptitude examination, no tuition fees. Only Interface Design is fully English-taught; most projects run in German.",
+          "specializations": [
+            "Acoustic Ecologies and Sound Studies",
+            "Electroacoustic Composition and Sound Art",
+            "Experimental Radio",
+            "Design of Media Environments",
+            "Interface Design",
+            "Media Events"
+          ],
+          "details": {
+            "programUrl": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/medienkunstmediengestaltung/medienkunstmediengestaltung-mfa/",
+            "applicationUrl": "http://www.uni-weimar.de/campusportal/bewerbung",
+            "faculty": [
+              "Jun.-Prof. Kerstin Ergenzinger (Acoustic Ecologies and Sound Studies)",
+              "Prof. Maximilian Marcoll (Electroacoustic Composition and Sound Art)",
+              "Prof. Nathalie Singer (Experimentelles Radio)",
+              "Prof. Ursula Damm (Gestaltung Medialer Umgebungen)",
+              "Prof. Martin Hesselmeier (Interface Design)",
+              "Prof. Wolfgang Kissel (Medien-Ereignisse)"
+            ],
+            "tuitionEuroPerSemester": 0,
+            "capacity": null,
+            "studentsEnrolled": null,
+            "languageRequirements": "German variant: German C2. English variant (MAD): German A2 + English C1 (TOEFL >= 95 / IELTS >= 7.0)",
+            "portfolioRequired": true,
+            "extractedAt": "2026-06-12T00:00:00.000Z",
+            "sourceUrl": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/medienkunstmediengestaltung/medienkunstmediengestaltung-mfa/"
+          },
+          "program_id": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts"
         }
       ],
       "website": "https://www.uni-weimar.de/en/",
@@ -12642,6 +12623,67 @@
             "tuitionEuroPerSemester": null
           },
           "program_id": "universitat-bremen--digital-media-and-society--master-of-arts"
+        },
+        {
+          "name": "Digitale Medien",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 April",
+              "end": "31 May"
+            }
+          },
+          "language": "German/English",
+          "duration": "4 semesters",
+          "description": "Joint English-taught master of Hochschule für Künste Bremen and Universität Bremen with two tracks: Media Design (HfK Bremen — media theory from a cultural-studies perspective, media art and media aesthetics, intermedial design, computer music with digital sound synthesis and processing, smart materials for artistic production) and Media Informatics (Universität Bremen — embodied interaction, entertainment computing, interactive systems, cognitive modeling, advanced computer graphics, virtual reality and physically-based simulation, massively parallel GPU algorithms, computational geometry). Master project on a problem with societal, scientific, technological, artistic or design relevance, bridging art school and university. Offered jointly with Hochschule für Künste Bremen. Distinct from Universität Bremen's separate MA Digital Media and Society, which focuses on digitalization, datafication and their societal impact.",
+          "specializations": [
+            "Media Design",
+            "Media Informatics",
+            "Media Theory",
+            "Computer Music",
+            "Smart Materials",
+            "Embodied Interaction",
+            "Virtual Reality"
+          ],
+          "details": {
+            "faculty": [
+              "Prof. Dr. Andrea Sick (Media Theory)"
+            ],
+            "portfolioRequired": true,
+            "extractedAt": "2026-06-12T00:00:00.000Z",
+            "sourceUrl": "Module catalogue Digital Media Master (HfK Bremen / Universität Bremen, 2019-06-21)"
+          },
+          "jointWith": [
+            "hochschule-fur-kunste-bremen"
+          ],
+          "program_id": "universitat-bremen--digitale-medien--master-of-arts"
+        },
+        {
+          "name": "Digitale Medien",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 February",
+              "end": "15 May"
+            },
+            "summer": {
+              "start": "1 August",
+              "end": "15 November"
+            }
+          },
+          "language": "German/English",
+          "duration": "6 semesters",
+          "description": "Program focusing on digital media with emphasis on practical and theoretical knowledge. Joint program of Hochschule für Künste Bremen and Universität Bremen. Offered jointly with Hochschule für Künste Bremen.",
+          "specializations": [
+            "Interactive Media",
+            "Game Design",
+            "Media Art",
+            "Web Design"
+          ],
+          "jointWith": [
+            "hochschule-fur-kunste-bremen"
+          ],
+          "program_id": "universitat-bremen--digitale-medien--bachelor-of-arts"
         }
       ],
       "website": "https://www.uni-bremen.de/",

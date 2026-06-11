@@ -1,10 +1,10 @@
 {
-  "createdAt": "2026-06-10T13:02:13.512Z",
+  "createdAt": "2026-06-11T23:26:44.160Z",
   "model": "gemini-embedding-2-preview",
   "k": 6,
   "threshold": 0.55,
-  "nodeCount": 749,
-  "edgeCount": 2950,
+  "nodeCount": 765,
+  "edgeCount": 3029,
   "edges": [
     {
       "src": "hochschule-fur-musik-und-tanz-koln--musikpadagogik--master-of-music",
@@ -50,11 +50,6 @@
       "src": "hochschule-fur-musik-und-tanz-koln--evangelische-kirchenmusik--bachelor-of-music",
       "dst": "hochschule-fur-musik-und-tanz-koln--katholische-kirchenmusik--bachelor-of-music",
       "weight": 0.9916
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--integrated-design--unspecified",
-      "weight": 0.9913
     },
     {
       "src": "hochschule-fur-grafik-und-buchkunst-leipzig--book-design-graphic-design--diploma",
@@ -170,11 +165,6 @@
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
       "dst": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
       "weight": 0.9885
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-      "weight": 0.9883
     },
     {
       "src": "kunstakademie-dusseldorf--fine-arts--unspecified",
@@ -612,11 +602,6 @@
       "weight": 0.9815
     },
     {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--digital-media--unspecified",
-      "weight": 0.9814
-    },
-    {
       "src": "hochschule-fur-musik-und-tanz-koln--chordirigieren--bachelor-of-music",
       "dst": "hochschule-fur-musik-und-tanz-koln--dirigieren-chor--master-of-music",
       "weight": 0.9813
@@ -1002,11 +987,6 @@
       "weight": 0.9772
     },
     {
-      "src": "akademie-munchen--fine-arts--diploma",
-      "dst": "khm-munchen--fine-arts--diploma",
-      "weight": 0.9771
-    },
-    {
       "src": "hochschule-fur-musik-und-tanz-koln--instrumentale-komposition--master-of-music",
       "dst": "hochschule-fur-musik-und-tanz-koln--elektronische-komposition--master-of-music",
       "weight": 0.9771
@@ -1262,11 +1242,6 @@
       "weight": 0.9754
     },
     {
-      "src": "hochschule-fur-kunste-bremen--musik--bachelor-master",
-      "dst": "hochschule-fur-kunste-bremen--musik--unspecified",
-      "weight": 0.9753
-    },
-    {
       "src": "hochschule-fur-musik-und-tanz-koln--orgel--bachelor-of-music",
       "dst": "hochschule-fur-musik-und-tanz-koln--evangelische-kirchenmusik--bachelor-of-music",
       "weight": 0.9753
@@ -1495,11 +1470,6 @@
       "src": "hochschule-fur-musik-und-theater-rostock--lehramt-theater-darstellendes-spiel--staatsexamen",
       "dst": "hochschule-fur-musik-und-theater-rostock--quereinstieg-theater-unterrichten--master-of-arts",
       "weight": 0.9739
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
-      "weight": 0.9738
     },
     {
       "src": "hochschule-fur-musik-dresden--kunstlerische-ausbildung--master-of-music",
@@ -1760,11 +1730,6 @@
       "src": "hochschule-fur-musik-und-theater-rostock--opernstudio--master-of-music",
       "dst": "hochschule-fur-musik-und-theater-rostock--orchesterdirigieren-korrepetition--master-of-music",
       "weight": 0.9719
-    },
-    {
-      "src": "hochschule-fur-musik-und-theater-rostock--music--bachelor-of-music",
-      "dst": "hochschule-fur-musik-und-theater-rostock--kunstlerische-ausbildung--bachelor-of-music",
-      "weight": 0.9718
     },
     {
       "src": "hdm-stuttgart--medieninformatik--bachelor-of-science",
@@ -2062,6 +2027,11 @@
       "weight": 0.9704
     },
     {
+      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
+      "dst": "universitat-bremen--digitale-medien--bachelor-of-arts",
+      "weight": 0.9704
+    },
+    {
       "src": "universitat-der-kunste-berlin--art-and-media--unspecified",
       "dst": "universitat-der-kunste-berlin--visual-communication--unspecified",
       "weight": 0.9703
@@ -2167,11 +2137,6 @@
       "weight": 0.9698
     },
     {
-      "src": "hochschule-fur-musik-und-theater-rostock--music--bachelor-of-music",
-      "dst": "hochschule-fur-musik-und-theater-rostock--instrumental-und-gesangspadagogik--bachelor-of-music",
-      "weight": 0.9697
-    },
-    {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--master-of-arts",
       "dst": "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--bachelor-of-arts",
       "weight": 0.9697
@@ -2205,11 +2170,6 @@
       "src": "filmakademie-baden-wurttemberg--produktion--diploma",
       "dst": "filmakademie-baden-wurttemberg--animation--diploma",
       "weight": 0.9695
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
-      "weight": 0.9694
     },
     {
       "src": "bauhaus-universitat-weimar--architecture--unspecified",
@@ -2287,14 +2247,14 @@
       "weight": 0.9691
     },
     {
+      "src": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
+      "dst": "universitat-bremen--digitale-medien--master-of-arts",
+      "weight": 0.9691
+    },
+    {
       "src": "hochschule-fur-musik-und-theater-rostock--opernstudio--master-of-music",
       "dst": "hochschule-fur-musik-und-theater-rostock--instrumental-und-gesangspadagogik--master-of-music",
       "weight": 0.969
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
-      "weight": 0.9689
     },
     {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--bachelor-of-arts",
@@ -2727,11 +2687,6 @@
       "weight": 0.9673
     },
     {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--digital-media--unspecified",
-      "weight": 0.9672
-    },
-    {
       "src": "robert-schumann-hochschule--komposition--master-of-music",
       "dst": "robert-schumann-hochschule--kunstlerische-musikproduktion--master-of-music",
       "weight": 0.9672
@@ -3067,16 +3022,6 @@
       "weight": 0.9661
     },
     {
-      "src": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-      "weight": 0.966
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--integrated-design--unspecified",
-      "weight": 0.966
-    },
-    {
       "src": "hochschule-fur-musik-und-tanz-koln--streichinstrumente--master-of-music",
       "dst": "hochschule-fur-musik-und-tanz-koln--kammermusik--master-of-music",
       "weight": 0.966
@@ -3200,11 +3145,6 @@
       "src": "filmakademie-baden-wurttemberg--regie-journalistischer-film--diploma",
       "dst": "filmakademie-baden-wurttemberg--produktion--diploma",
       "weight": 0.9656
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-      "weight": 0.9655
     },
     {
       "src": "robert-schumann-hochschule--gesang--bachelor-of-music",
@@ -3660,11 +3600,6 @@
       "src": "hochschule-fur-musik-und-theater-rostock--musikwissenschaft--master-of-arts",
       "dst": "hochschule-fur-musik-und-theater-rostock--quereinstieg-musik-unterrichten--master-of-arts",
       "weight": 0.9642
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--integrated-design--unspecified",
-      "weight": 0.9641
     },
     {
       "src": "fachhochschule-potsdam--interface-design--bachelor-of-arts",
@@ -4247,11 +4182,6 @@
       "weight": 0.9624
     },
     {
-      "src": "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
-      "dst": "hochschule-fur-kunste-bremen--musik--bachelor-master",
-      "weight": 0.9623
-    },
-    {
       "src": "hdm-stuttgart--digital-und-medienwirtschaft--bachelor-of-arts",
       "dst": "hdm-stuttgart--wirtschaftsingenieurwesen-medien--bachelor-of-engineering",
       "weight": 0.9623
@@ -4424,11 +4354,6 @@
     {
       "src": "kunstakademie-dusseldorf--fine-arts--diploma",
       "dst": "kunstakademie-dusseldorf--fine-arts--unspecified",
-      "weight": 0.9617
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--integrated-design--unspecified",
       "weight": 0.9617
     },
     {
@@ -4682,11 +4607,6 @@
       "weight": 0.961
     },
     {
-      "src": "hfbk-dresden--fine-arts--diploma",
-      "dst": "hfbk-dresden--fine-arts--unspecified",
-      "weight": 0.961
-    },
-    {
       "src": "robert-schumann-hochschule--gesang--master-of-music",
       "dst": "hochschule-fur-musik-und-tanz-koln--gesang-lied-konzert--master-of-music",
       "weight": 0.961
@@ -4790,11 +4710,6 @@
       "src": "hochschule-fur-musik-weimar--kunstlerische-instrumentalausbildung--master-of-music",
       "dst": "hochschule-fur-musik-weimar--alte-musik-historische-instrumente--master-of-music",
       "weight": 0.9608
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-      "weight": 0.9607
     },
     {
       "src": "technische-hochschule-ingolstadt--user-experience-design--master-of-arts",
@@ -4985,11 +4900,6 @@
       "src": "musikhochschule-lubeck--komposition--bachelor-of-music",
       "dst": "musikhochschule-lubeck--musiktheorie--master-of-music",
       "weight": 0.9601
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-      "weight": 0.96
     },
     {
       "src": "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts",
@@ -5282,6 +5192,11 @@
       "weight": 0.9592
     },
     {
+      "src": "hochschule-fur-musik-und-theater-rostock--instrumental-und-gesangspadagogik--bachelor-of-music",
+      "dst": "hochschule-fur-musik-und-theater-rostock--orchesterdirigieren-korrepetition--bachelor-of-music",
+      "weight": 0.9592
+    },
+    {
       "src": "kunsthochschule-fur-medien-koln--media-arts--unspecified",
       "dst": "kunsthochschule-fur-medien-koln--animation--unspecified",
       "weight": 0.9591
@@ -5327,16 +5242,6 @@
       "weight": 0.9591
     },
     {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts",
-      "weight": 0.959
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--integrated-design--unspecified",
-      "weight": 0.959
-    },
-    {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
       "dst": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--unspecified",
       "weight": 0.959
@@ -5380,11 +5285,6 @@
       "src": "filmakademie-baden-wurttemberg--werbefilm-regie-producing--diploma",
       "dst": "filmakademie-baden-wurttemberg--animation-effects-producing--diploma",
       "weight": 0.959
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--phd",
-      "dst": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified",
-      "weight": 0.9589
     },
     {
       "src": "hdm-stuttgart--crossmedia-redaktion-public-relations--bachelor-of-arts",
@@ -5437,11 +5337,6 @@
       "weight": 0.9588
     },
     {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
-      "weight": 0.9587
-    },
-    {
       "src": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--diploma",
       "dst": "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--unspecified",
       "weight": 0.9587
@@ -5485,11 +5380,6 @@
       "src": "filmakademie-baden-wurttemberg--regie-dokumentarfilm--diploma",
       "dst": "filmakademie-baden-wurttemberg--drehbuch--diploma",
       "weight": 0.9587
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--digital-media--unspecified",
-      "weight": 0.9586
     },
     {
       "src": "kunsthochschule-fur-medien-koln--media-arts-postgraduate--diploma",
@@ -5657,11 +5547,6 @@
       "weight": 0.9581
     },
     {
-      "src": "hfbk-dresden--fine-arts--unspecified",
-      "dst": "hfbk-dresden--art-technology-preservation-and-restoration-of-artistic-and-cultural-assets--diploma",
-      "weight": 0.9581
-    },
-    {
       "src": "hochschule-fur-musik-dresden--dirigieren-korrepetition--bachelor-of-music",
       "dst": "hochschule-fur-musik-dresden--kunstlerische-ausbildung--master-of-music",
       "weight": 0.9581
@@ -5770,11 +5655,6 @@
       "src": "hochschule-fur-musik-saar--kunstlerisches-profil-instrument--bachelor-of-music",
       "dst": "hochschule-fur-musik-saar--q-master-lehramt-musik--master-of-education",
       "weight": 0.9579
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--digital-media--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--integrated-design--unspecified",
-      "weight": 0.9578
     },
     {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstpadagogik--master-of-education",
@@ -5982,6 +5862,11 @@
       "weight": 0.9574
     },
     {
+      "src": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts",
+      "dst": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
+      "weight": 0.9573
+    },
+    {
       "src": "muthesius-kunsthochschule-kiel--communication-design--bachelor-of-arts",
       "dst": "muthesius-kunsthochschule-kiel--communication-design--master-of-arts",
       "weight": 0.9573
@@ -6009,11 +5894,6 @@
     {
       "src": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
       "dst": "universitat-der-kunste-berlin--design--bachelor-of-arts",
-      "weight": 0.9572
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
       "weight": 0.9572
     },
     {
@@ -6100,11 +5980,6 @@
       "src": "hochschule-fur-kirchenmusik-rottenburg--katholische-kirchenmusik--bachelor-of-music",
       "dst": "hochschule-fur-kirchenmusik-tubingen--ka-aufbaustudiengang-orgel--kunstlerische-ausbildung",
       "weight": 0.957
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--musik--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-      "weight": 0.9569
     },
     {
       "src": "robert-schumann-hochschule--klavier--master-of-music",
@@ -6257,6 +6132,11 @@
       "weight": 0.9565
     },
     {
+      "src": "khm-munchen--innenarchitektur--master-of-arts",
+      "dst": "khm-munchen--architektur-und-kunst--master-of-arts",
+      "weight": 0.9565
+    },
+    {
       "src": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kunstlerische-ausbildung-musik-kam--master-of-music",
       "dst": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--komposition--bachelor-of-music",
       "weight": 0.9564
@@ -6360,11 +6240,6 @@
       "src": "haw-hamburg--kommunikationsdesign--master-of-arts",
       "dst": "haw-hamburg--games--master-of-arts",
       "weight": 0.9562
-    },
-    {
-      "src": "hochschule-fur-musik-und-theater-rostock--music--bachelor-of-music",
-      "dst": "hochschule-fur-musik-und-theater-rostock--lehramt-musik--staatsexamen",
-      "weight": 0.9561
     },
     {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--bachelor-of-arts",
@@ -6479,11 +6354,6 @@
     {
       "src": "hochschule-darmstadt--expanded-realities--master-of-arts",
       "dst": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.9559
-    },
-    {
-      "src": "hfbk-dresden--fine-arts--unspecified",
-      "dst": "hfbk-dresden--meisterschuler-master-class--meisterschuler",
       "weight": 0.9559
     },
     {
@@ -6672,11 +6542,6 @@
       "weight": 0.9554
     },
     {
-      "src": "hochschule-fur-musik-und-theater-rostock--music--bachelor-of-music",
-      "dst": "hochschule-fur-musik-und-theater-rostock--popularmusik-mit-klassik--bachelor-of-music",
-      "weight": 0.9553
-    },
-    {
       "src": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma",
       "dst": "hochschule-fur-gestaltung-offenbach--visual-communication--master-of-arts",
       "weight": 0.9553
@@ -6777,11 +6642,6 @@
       "weight": 0.9552
     },
     {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--digital-media--unspecified",
-      "weight": 0.9551
-    },
-    {
       "src": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphic-arts--diploma",
       "dst": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--unspecified",
       "weight": 0.9551
@@ -6795,11 +6655,6 @@
       "src": "hochschule-fur-musik-und-theater-rostock--klavier-solo-klavierduo--master-of-music",
       "dst": "hochschule-fur-musik-und-theater-rostock--opernstudio--master-of-music",
       "weight": 0.9551
-    },
-    {
-      "src": "hochschule-fur-musik-und-theater-rostock--music--bachelor-of-music",
-      "dst": "hochschule-fur-musik-und-theater-rostock--musiktheorie-komposition--bachelor-of-music",
-      "weight": 0.955
     },
     {
       "src": "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--diploma",
@@ -6854,11 +6709,6 @@
     {
       "src": "hochschule-fur-bildende-kunste-hamburg--art-education--master-of-education",
       "dst": "hochschule-fur-bildende-kunste-braunschweig--art-education--master-of-education",
-      "weight": 0.9549
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--digital-media--unspecified",
       "weight": 0.9549
     },
     {
@@ -7004,6 +6854,11 @@
     {
       "src": "hochschule-fur-musik-und-theater-rostock--musiktheorie-komposition--bachelor-of-music",
       "dst": "hochschule-fur-musik-und-theater-rostock--elementare-musikpadagogik-emp--zertifikat",
+      "weight": 0.9546
+    },
+    {
+      "src": "khm-munchen--innenarchitektur--master-of-arts",
+      "dst": "khm-munchen--innenarchitektur--bachelor-of-arts",
       "weight": 0.9546
     },
     {
@@ -7257,18 +7112,8 @@
       "weight": 0.9538
     },
     {
-      "src": "hochschule-fur-musik-und-theater-rostock--music--bachelor-of-music",
-      "dst": "hochschule-fur-musik-und-theater-rostock--orchesterinstrumente--master-of-music",
-      "weight": 0.9537
-    },
-    {
       "src": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
       "dst": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.9537
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--digital-media--unspecified",
       "weight": 0.9537
     },
     {
@@ -7352,11 +7197,6 @@
       "weight": 0.9534
     },
     {
-      "src": "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
-      "dst": "hochschule-fur-kunste-bremen--musik--unspecified",
-      "weight": 0.9534
-    },
-    {
       "src": "filmuniversitat-babelsberg-konrad-wolf--film-directing--diploma",
       "dst": "filmuniversitat-babelsberg-konrad-wolf--cinematography--diploma",
       "weight": 0.9534
@@ -7422,18 +7262,8 @@
       "weight": 0.9533
     },
     {
-      "src": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--musik--unspecified",
-      "weight": 0.9532
-    },
-    {
       "src": "hdm-stuttgart--informationsdesign--bachelor-of-arts",
       "dst": "hdm-stuttgart--medieninformatik--bachelor-of-science",
-      "weight": 0.9532
-    },
-    {
-      "src": "haw-hamburg--design--bachelor",
-      "dst": "haw-hamburg--kommunikationsdesign--bachelor-of-arts",
       "weight": 0.9532
     },
     {
@@ -7660,11 +7490,6 @@
       "src": "filmakademie-baden-wurttemberg--regie-szenischer-film--diploma",
       "dst": "filmakademie-baden-wurttemberg--produktion-creative-series-producing--diploma",
       "weight": 0.9525
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--freie-kunst--diploma",
-      "dst": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-      "weight": 0.9524
     },
     {
       "src": "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--diploma",
@@ -8292,6 +8117,11 @@
       "weight": 0.9504
     },
     {
+      "src": "fachhochschule-dortmund--film-sound--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
+      "weight": 0.9504
+    },
+    {
       "src": "bauhaus-universitat-weimar--visual-communication--master-of-arts",
       "dst": "bauhaus-universitat-weimar--media-art-and-design--bachelor-of-fine-arts",
       "weight": 0.9503
@@ -8482,6 +8312,11 @@
       "weight": 0.9499
     },
     {
+      "src": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
+      "dst": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education",
+      "weight": 0.9499
+    },
+    {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstwissenschaften-restaurierung--bachelor-of-arts",
       "dst": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
       "weight": 0.9498
@@ -8494,6 +8329,11 @@
     {
       "src": "hdm-stuttgart--crossmedia-redaktion-public-relations--bachelor-of-arts",
       "dst": "hdm-stuttgart--unternehmenskommunikation--master-of-arts",
+      "weight": 0.9498
+    },
+    {
+      "src": "akademie-munchen--fine-arts--diploma",
+      "dst": "khm-munchen--freie-kunst--diploma",
       "weight": 0.9498
     },
     {
@@ -8747,13 +8587,8 @@
       "weight": 0.9488
     },
     {
-      "src": "akademie-nurnberg--fine-arts--diploma-in-fine-arts",
-      "dst": "khm-munchen--fine-arts--diploma",
-      "weight": 0.9488
-    },
-    {
-      "src": "hfbk-dresden--fine-arts--unspecified",
-      "dst": "hfbk-dresden--art-therapy-postgraduate--postgraduate-diploma",
+      "src": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphics--diploma",
+      "dst": "hfbk-dresden--fine-arts--diploma",
       "weight": 0.9488
     },
     {
@@ -9047,11 +8882,6 @@
       "weight": 0.9476
     },
     {
-      "src": "akademie-nurnberg--fine-arts--diploma",
-      "dst": "khm-munchen--fine-arts--diploma",
-      "weight": 0.9476
-    },
-    {
       "src": "hochschule-fur-musik-freiburg--konzertexamen-meisterklasse--konzertexamen",
       "dst": "hochschule-fur-musik-und-darstellende-kunst-mannheim--solistische-ausbildung--konzertexamen",
       "weight": 0.9476
@@ -9080,11 +8910,6 @@
       "src": "hochschule-fur-musik-saar--kunstlerisches-profil-jazz--master-of-music",
       "dst": "hochschule-fur-musik-weimar--jazz--master-of-music",
       "weight": 0.9475
-    },
-    {
-      "src": "haw-hamburg--design--bachelor",
-      "dst": "haw-hamburg--mode-kostum-und-textildesign--bachelor-of-arts",
-      "weight": 0.9474
     },
     {
       "src": "hochschule-fur-musik-berlin--orchesterdirigieren--bachelor-of-music",
@@ -9212,11 +9037,6 @@
       "weight": 0.9469
     },
     {
-      "src": "hfbk-dresden--fine-arts--unspecified",
-      "dst": "hfbk-dresden--stage-setting-and-costume-design--diploma",
-      "weight": 0.9469
-    },
-    {
       "src": "hochschule-fur-evangelische-kirchenmusik--chorleitung--bachelor-of-music",
       "dst": "hochschule-fur-evangelische-kirchenmusik--evangelische-kirchenmusik--master-of-music",
       "weight": 0.9469
@@ -9277,11 +9097,6 @@
       "weight": 0.9467
     },
     {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--musik--unspecified",
-      "weight": 0.9466
-    },
-    {
       "src": "muthesius-kunsthochschule-kiel--design--diploma",
       "dst": "muthesius-kunsthochschule-kiel--communication-design--unspecified",
       "weight": 0.9466
@@ -9305,11 +9120,6 @@
       "src": "hochschule-fur-kirchenmusik-rottenburg--gesang-gesangspadagogik--master-of-music",
       "dst": "hochschule-fur-kirchenmusik-tubingen--evangelische-kirchenmusik-a--master-of-music",
       "weight": 0.9466
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--musik--master-of-music",
-      "dst": "hochschule-fur-kunste-bremen--musik--bachelor-master",
-      "weight": 0.9465
     },
     {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--bachelor-of-science",
@@ -9379,6 +9189,11 @@
     {
       "src": "hochschule-fur-musik-berlin--chordirigieren--bachelor-of-music",
       "dst": "hochschule-fur-musik-berlin--musiktheater-regie--bachelor",
+      "weight": 0.9462
+    },
+    {
+      "src": "hfbk-dresden--fine-arts--diploma",
+      "dst": "hfbk-dresden--stage-setting-and-costume-design--diploma",
       "weight": 0.9462
     },
     {
@@ -9494,6 +9309,11 @@
     {
       "src": "staatliche-hochschule-fur-musik-trossingen--creative-arts-practice--master-of-music",
       "dst": "staatliche-hochschule-fur-musik-trossingen--musik-und-bewegung--bachelor-of-music",
+      "weight": 0.9458
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
+      "dst": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
       "weight": 0.9458
     },
     {
@@ -9872,8 +9692,8 @@
       "weight": 0.9438
     },
     {
-      "src": "hfbk-dresden--fine-arts--unspecified",
-      "dst": "hfbk-dresden--theatre-design-scenic-painting--diploma",
+      "src": "akademie-nurnberg--fine-arts--diploma",
+      "dst": "hfbk-dresden--fine-arts--diploma",
       "weight": 0.9438
     },
     {
@@ -10002,11 +9822,6 @@
       "weight": 0.9432
     },
     {
-      "src": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--musik--unspecified",
-      "weight": 0.9431
-    },
-    {
       "src": "muthesius-kunsthochschule-kiel--communication-design--master-of-arts",
       "dst": "muthesius-kunsthochschule-kiel--communication-design--unspecified",
       "weight": 0.9431
@@ -10042,11 +9857,6 @@
       "weight": 0.9429
     },
     {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-      "weight": 0.9429
-    },
-    {
       "src": "muthesius-kunsthochschule-kiel--fine-arts--diploma",
       "dst": "muthesius-kunsthochschule-kiel--communication-design--unspecified",
       "weight": 0.9429
@@ -10054,11 +9864,6 @@
     {
       "src": "filmuniversitat-babelsberg-konrad-wolf--film-directing--diploma",
       "dst": "filmuniversitat-babelsberg-konrad-wolf--animation--diploma",
-      "weight": 0.9429
-    },
-    {
-      "src": "hfbk-dresden--fine-arts--diploma",
-      "dst": "khm-munchen--fine-arts--diploma",
       "weight": 0.9429
     },
     {
@@ -10145,11 +9950,6 @@
       "src": "staatliche-hochschule-fur-musik-trossingen--rhythmik-mit-elementarer-musikpadagogik--bachelor-of-music",
       "dst": "staatliche-hochschule-fur-musik-trossingen--creative-arts-practice--master-of-music",
       "weight": 0.9425
-    },
-    {
-      "src": "haw-hamburg--design--bachelor",
-      "dst": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
-      "weight": 0.9424
     },
     {
       "src": "hochschule-fur-musik-berlin--orchesterdirigieren--master-of-music",
@@ -10337,6 +10137,11 @@
       "weight": 0.9415
     },
     {
+      "src": "hochschule-fur-musik-und-theater-rostock--popularmusik-mit-klassik--bachelor-of-music",
+      "dst": "hochschule-fur-musik-und-theater-rostock--orchesterdirigieren-korrepetition--bachelor-of-music",
+      "weight": 0.9415
+    },
+    {
       "src": "filmuniversitat-babelsberg-konrad-wolf--cinematography--diploma",
       "dst": "filmuniversitat-babelsberg-konrad-wolf--editing--diploma",
       "weight": 0.9414
@@ -10372,11 +10177,6 @@
       "weight": 0.9412
     },
     {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
-      "weight": 0.9412
-    },
-    {
       "src": "hochschule-darmstadt--motion-pictures--bachelor-of-arts",
       "dst": "hochschule-darmstadt--interactive-media-design--bachelor-of-arts",
       "weight": 0.9412
@@ -10390,11 +10190,6 @@
       "src": "musikhochschule-lubeck--lehramt-gymnasium-musik-vermitteln--master-of-education",
       "dst": "musikhochschule-lubeck--sound-arts-and-creative-music-technology--master-of-music",
       "weight": 0.9412
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--freie-kunst--diploma",
-      "dst": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-      "weight": 0.9411
     },
     {
       "src": "hdm-stuttgart--deutsch-chinesischer-studiengang-medien-und-technologie--bachelor-of-science",
@@ -10445,11 +10240,6 @@
       "src": "hochschule-pforzheim--visuelle-kommunikation--bachelor-of-arts",
       "dst": "hochschule-pforzheim--creative-communication-and-brand-management--master-of-arts",
       "weight": 0.941
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--integrated-design--unspecified",
-      "weight": 0.9409
     },
     {
       "src": "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts",
@@ -10574,11 +10364,6 @@
     {
       "src": "hochschule-fur-gestaltung-schwabisch-gmund--kommunikationsgestaltung--bachelor-of-arts",
       "dst": "hochschule-fur-gestaltung-schwabisch-gmund--strategische-gestaltung--master-of-arts",
-      "weight": 0.9401
-    },
-    {
-      "src": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
-      "dst": "khm-munchen--fine-arts--diploma",
       "weight": 0.9401
     },
     {
@@ -10747,6 +10532,11 @@
       "weight": 0.9393
     },
     {
+      "src": "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
+      "dst": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
+      "weight": 0.9392
+    },
+    {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--bachelor-of-arts",
       "dst": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--unspecified",
       "weight": 0.9392
@@ -10877,11 +10667,6 @@
       "weight": 0.9386
     },
     {
-      "src": "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified",
-      "dst": "hfbk-dresden--fine-arts--unspecified",
-      "weight": 0.9385
-    },
-    {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--master-of-science",
       "dst": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstwissenschaften-restaurierung--master-of-arts",
       "weight": 0.9385
@@ -10955,11 +10740,6 @@
       "src": "hochschule-fur-evangelische-kirchenmusik--instrumental-vokalpadagogik--master-of-music",
       "dst": "hochschule-fur-musik-nurnberg--meisterklasse--meisterklassendiplom",
       "weight": 0.9382
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--musik--master-of-music",
-      "weight": 0.9381
     },
     {
       "src": "hochschule-fur-bildende-kunste-hamburg--art-education--master-of-education",
@@ -11062,11 +10842,6 @@
       "weight": 0.9377
     },
     {
-      "src": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
-      "weight": 0.9376
-    },
-    {
       "src": "hochschule-der-bildenden-kunste-saar--fine-arts--diploma",
       "dst": "hfbk-dresden--fine-arts--diploma",
       "weight": 0.9375
@@ -11089,11 +10864,6 @@
     {
       "src": "kunstakademie-munster--freie-kunst--akademiebrief-diplom",
       "dst": "kunstakademie-munster--art-education--master-of-education",
-      "weight": 0.9374
-    },
-    {
-      "src": "haw-hamburg--design--bachelor",
-      "dst": "haw-hamburg--medientechnik--bachelor-of-science",
       "weight": 0.9374
     },
     {
@@ -11167,11 +10937,6 @@
       "weight": 0.937
     },
     {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--freie-kunst--diploma",
-      "weight": 0.9369
-    },
-    {
       "src": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
       "dst": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
       "weight": 0.9369
@@ -11199,11 +10964,6 @@
     {
       "src": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
       "dst": "hochschule-fur-kunste-bremen--musik--master-of-music",
-      "weight": 0.9367
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--musik--bachelor-master",
-      "dst": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
       "weight": 0.9367
     },
     {
@@ -11262,11 +11022,6 @@
       "weight": 0.9365
     },
     {
-      "src": "haw-hamburg--design--bachelor",
-      "dst": "haw-hamburg--kommunikationsdesign--master-of-arts",
-      "weight": 0.9365
-    },
-    {
       "src": "hochschule-fur-grafik-und-buchkunst-leipzig--cultures-of-the-curatorial--master-of-arts",
       "dst": "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--unspecified",
       "weight": 0.9364
@@ -11314,6 +11069,11 @@
     {
       "src": "filmakademie-baden-wurttemberg--regie-szenischer-film--diploma",
       "dst": "filmakademie-baden-wurttemberg--filmmusik--diploma",
+      "weight": 0.9362
+    },
+    {
+      "src": "haw-hamburg--kommunikationsdesign--bachelor-of-arts",
+      "dst": "haw-hamburg--digitale-kommunikation--master-of-arts",
       "weight": 0.9362
     },
     {
@@ -11387,11 +11147,6 @@
       "weight": 0.9359
     },
     {
-      "src": "hochschule-fur-kunste-bremen--musik--bachelor-master",
-      "dst": "hochschule-fur-kunste-bremen--digital-media--unspecified",
-      "weight": 0.9358
-    },
-    {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--textildesign--master-of-arts",
       "dst": "hochschule-reutlingen--textile-design--master-of-arts",
       "weight": 0.9358
@@ -11410,11 +11165,6 @@
       "src": "hochschule-der-bildenden-kunste-saar--communication-design--diploma",
       "dst": "kunsthochschule-kassel--visual-communication--diploma",
       "weight": 0.9357
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
-      "weight": 0.9356
     },
     {
       "src": "technische-hochschule-augsburg--communication-design--bachelor-of-arts",
@@ -11497,11 +11247,6 @@
       "weight": 0.9353
     },
     {
-      "src": "kunsthochschule-kassel--fine-arts--unspecified",
-      "dst": "hfbk-dresden--fine-arts--unspecified",
-      "weight": 0.9353
-    },
-    {
       "src": "hochschule-pforzheim--mode--bachelor-of-arts",
       "dst": "hochschule-pforzheim--creative-direction--master-of-arts",
       "weight": 0.9352
@@ -11514,6 +11259,11 @@
     {
       "src": "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified",
       "dst": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
+      "weight": 0.9351
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
+      "dst": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
       "weight": 0.9351
     },
     {
@@ -11554,6 +11304,11 @@
     {
       "src": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
       "dst": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
+      "weight": 0.9346
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--freie-kunst--diploma",
+      "dst": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
       "weight": 0.9346
     },
     {
@@ -11617,11 +11372,6 @@
       "weight": 0.9344
     },
     {
-      "src": "hochschule-fur-musik-und-theater-rostock--music--bachelor-of-music",
-      "dst": "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
-      "weight": 0.9343
-    },
-    {
       "src": "technische-hochschule-ingolstadt--user-experience-design--unspecified",
       "dst": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
       "weight": 0.9343
@@ -11642,8 +11392,8 @@
       "weight": 0.9343
     },
     {
-      "src": "hochschule-fur-kunste-bremen--musik--master-of-music",
-      "dst": "hochschule-fur-kunste-bremen--musik--unspecified",
+      "src": "hochschule-fur-kunste-bremen--freie-kunst--diploma",
+      "dst": "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
       "weight": 0.9342
     },
     {
@@ -11687,11 +11437,6 @@
       "weight": 0.9338
     },
     {
-      "src": "kunsthochschule-mainz--fine-arts--diploma",
-      "dst": "khm-munchen--fine-arts--diploma",
-      "weight": 0.9338
-    },
-    {
       "src": "hochschule-fur-musik-und-tanz-koln--gesang--bachelor-of-music",
       "dst": "hochschule-fur-musik-und-tanz-koln--tanz--bachelor-of-arts",
       "weight": 0.9338
@@ -11700,11 +11445,6 @@
       "src": "filmakademie-baden-wurttemberg--drehbuch--diploma",
       "dst": "filmakademie-baden-wurttemberg--filmschauspielworkshop--workshop",
       "weight": 0.9338
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--musik--bachelor-master",
-      "dst": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-      "weight": 0.9337
     },
     {
       "src": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphics--diploma",
@@ -11767,6 +11507,11 @@
       "weight": 0.9334
     },
     {
+      "src": "khm-munchen--innenarchitektur--master-of-arts",
+      "dst": "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts",
+      "weight": 0.9334
+    },
+    {
       "src": "hochschule-fur-gestaltung-offenbach--postgraduate-studies-meisterschuler--meisterschuler",
       "dst": "hochschule-fur-gestaltung-offenbach--product-design--bachelor-of-arts",
       "weight": 0.9333
@@ -11779,11 +11524,6 @@
     {
       "src": "hochschule-pforzheim--industrial-design--bachelor-of-arts",
       "dst": "hochschule-pforzheim--creative-communication-and-brand-management--master-of-arts",
-      "weight": 0.9331
-    },
-    {
-      "src": "hfbk-dresden--fine-arts--unspecified",
-      "dst": "hfbk-dresden--theatre-design--diploma",
       "weight": 0.9331
     },
     {
@@ -11802,6 +11542,11 @@
       "weight": 0.933
     },
     {
+      "src": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts",
+      "dst": "koln-international-school-of-design--integrated-design--bachelor-of-arts",
+      "weight": 0.9329
+    },
+    {
       "src": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
       "dst": "bauhaus-universitat-weimar--media--unspecified",
       "weight": 0.9329
@@ -11812,8 +11557,8 @@
       "weight": 0.9329
     },
     {
-      "src": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts",
-      "dst": "koln-international-school-of-design--integrated-design--bachelor-of-arts",
+      "src": "fachhochschule-dortmund--digital-design--master-of-science",
+      "dst": "fachhochschule-dortmund--editorial-design--master-of-arts",
       "weight": 0.9329
     },
     {
@@ -11932,11 +11677,6 @@
       "weight": 0.932
     },
     {
-      "src": "burg-giebichenstein--fine-arts--unspecified",
-      "dst": "hfbk-dresden--fine-arts--unspecified",
-      "weight": 0.932
-    },
-    {
       "src": "staatliche-hochschule-fur-musik-trossingen--audio-experience-design--master-of-music",
       "dst": "staatliche-hochschule-fur-musik-trossingen--rhythmik-mit-elementarer-musikpadagogik--bachelor-of-music",
       "weight": 0.932
@@ -11944,11 +11684,6 @@
     {
       "src": "universitat-der-kunste-berlin--fine-arts--master-of-fine-arts",
       "dst": "universitat-der-kunste-berlin--design--bachelor-of-arts",
-      "weight": 0.9319
-    },
-    {
-      "src": "akademie-munchen--fine-arts--unspecified",
-      "dst": "hfbk-dresden--fine-arts--unspecified",
       "weight": 0.9319
     },
     {
@@ -11987,11 +11722,6 @@
       "weight": 0.9315
     },
     {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts",
-      "weight": 0.9315
-    },
-    {
       "src": "filmakademie-baden-wurttemberg--produktion-international-producing--diploma",
       "dst": "filmakademie-baden-wurttemberg--masterclass-atelier-ludwigsburg-paris--masterclass-weiterbildung",
       "weight": 0.9315
@@ -12015,11 +11745,6 @@
       "src": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--musik--bachelor-of-music",
       "dst": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--schauspiel--bachelor-of-arts",
       "weight": 0.9314
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-      "weight": 0.9312
     },
     {
       "src": "academy-of-visual-arts-frankfurt--fine-arts--diploma",
@@ -12167,6 +11892,11 @@
       "weight": 0.9303
     },
     {
+      "src": "haw-hamburg--medientechnik--bachelor-of-science",
+      "dst": "haw-hamburg--illustration--master-of-arts",
+      "weight": 0.9303
+    },
+    {
       "src": "technische-universitat-munchen--informatics-games-engineering--bachelor-of-science",
       "dst": "technische-universitat-munchen--management-and-technology-with-focus-on-digital-technologies--master-of-science",
       "weight": 0.9302
@@ -12180,6 +11910,11 @@
       "src": "hochschule-pforzheim--mode--bachelor-of-arts",
       "dst": "hochschule-pforzheim--transportation-design--master-of-arts",
       "weight": 0.9301
+    },
+    {
+      "src": "kunsthochschule-mainz--fine-arts--diploma",
+      "dst": "hfbk-dresden--fine-arts--diploma",
+      "weight": 0.93
     },
     {
       "src": "hochschule-der-bildenden-kunste-saar--communication-design--diploma",
@@ -12222,8 +11957,8 @@
       "weight": 0.9297
     },
     {
-      "src": "haw-hamburg--design--bachelor",
-      "dst": "haw-hamburg--illustration--bachelor-of-arts",
+      "src": "hfbk-dresden--theatre-design--diploma",
+      "dst": "hfbk-dresden--meisterschuler-master-class--meisterschuler",
       "weight": 0.9297
     },
     {
@@ -12260,11 +11995,6 @@
       "src": "kunsthochschule-mainz--fine-arts--diploma",
       "dst": "stadelschule-frankfurt--fine-arts--master",
       "weight": 0.9294
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--freie-kunst--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified",
-      "weight": 0.9293
     },
     {
       "src": "academy-of-visual-arts-frankfurt--visual-arts--bachelor-of-arts",
@@ -12372,11 +12102,6 @@
       "weight": 0.9286
     },
     {
-      "src": "akademie-nurnberg--fine-arts--unspecified",
-      "dst": "hfbk-dresden--fine-arts--unspecified",
-      "weight": 0.9285
-    },
-    {
       "src": "hochschule-fur-schauspielkunst-berlin--zeitgenossische-puppenspielkunst--diplom",
       "dst": "hochschule-fur-schauspielkunst-berlin--dramaturgie--master-of-arts",
       "weight": 0.9285
@@ -12414,6 +12139,11 @@
     {
       "src": "hochschule-fur-musik-weimar--kunstlerische-instrumentalausbildung--bachelor-of-music",
       "dst": "hochschule-fur-musik-weimar--komposition--bachelor-of-music",
+      "weight": 0.9283
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
+      "dst": "universitat-bremen--digitale-medien--bachelor-of-arts",
       "weight": 0.9283
     },
     {
@@ -12462,6 +12192,11 @@
       "weight": 0.9281
     },
     {
+      "src": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts",
+      "weight": 0.9281
+    },
+    {
       "src": "musikhochschule-lubeck--musikplus-grundschule--master-of-education",
       "dst": "musikhochschule-lubeck--weiterbildung-darstellendes-spiel--certificate-of-advanced-studies",
       "weight": 0.928
@@ -12477,18 +12212,13 @@
       "weight": 0.9279
     },
     {
-      "src": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
-      "dst": "hfbk-dresden--fine-arts--unspecified",
+      "src": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
+      "dst": "koln-international-school-of-design--integrated-design-research--master-of-arts",
       "weight": 0.9278
     },
     {
       "src": "filmuniversitat-babelsberg-konrad-wolf--film-and-television-production--diploma",
       "dst": "filmuniversitat-babelsberg-konrad-wolf--media-studies--master-of-arts",
-      "weight": 0.9278
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
-      "dst": "koln-international-school-of-design--integrated-design-research--master-of-arts",
       "weight": 0.9278
     },
     {
@@ -12522,6 +12252,11 @@
       "weight": 0.9276
     },
     {
+      "src": "bauhaus-universitat-weimar--media-art-and-design--bachelor-of-fine-arts",
+      "dst": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts",
+      "weight": 0.9276
+    },
+    {
       "src": "akademie-munchen--fine-arts--unspecified",
       "dst": "akademie-nurnberg--graphic-design--unspecified",
       "weight": 0.9275
@@ -12547,6 +12282,11 @@
       "weight": 0.9273
     },
     {
+      "src": "universitat-bremen--digitale-medien--master-of-arts",
+      "dst": "universitat-bremen--digitale-medien--bachelor-of-arts",
+      "weight": 0.9273
+    },
+    {
       "src": "fachhochschule-potsdam--communication-design--bachelor-of-arts",
       "dst": "hochschule-pforzheim--visuelle-kommunikation--bachelor-of-arts",
       "weight": 0.9272
@@ -12554,6 +12294,11 @@
     {
       "src": "filmakademie-baden-wurttemberg--regie-szenischer-film--diploma",
       "dst": "filmakademie-baden-wurttemberg--international-screen-acting-workshop--workshop",
+      "weight": 0.9272
+    },
+    {
+      "src": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
+      "dst": "haw-hamburg--zeitabhangige-medien-sound-vision--master-of-arts",
       "weight": 0.9272
     },
     {
@@ -12582,11 +12327,6 @@
       "weight": 0.9269
     },
     {
-      "src": "hochschule-fur-kunste-bremen--musik--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified",
-      "weight": 0.9268
-    },
-    {
       "src": "hochschule-der-bildenden-kunste-essen--fine-arts--unspecified",
       "dst": "kunstakademie-munster--fine-arts--unspecified",
       "weight": 0.9268
@@ -12594,6 +12334,16 @@
     {
       "src": "universitat-der-kunste-berlin--fine-arts--diploma",
       "dst": "kunsthochschule-berlin-weissensee--fine-arts--diploma",
+      "weight": 0.9268
+    },
+    {
+      "src": "khm-munchen--kunstpadagogik--staatsexamen",
+      "dst": "khm-munchen--freie-kunst--diploma",
+      "weight": 0.9268
+    },
+    {
+      "src": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--editorial-design--master-of-arts",
       "weight": 0.9268
     },
     {
@@ -12624,6 +12374,11 @@
     {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--art-education--unspecified",
       "dst": "akademie-munchen--art-education--unspecified",
+      "weight": 0.9266
+    },
+    {
+      "src": "universitat-bremen--digital-media-and-society--master-of-arts",
+      "dst": "universitat-bremen--digitale-medien--master-of-arts",
       "weight": 0.9266
     },
     {
@@ -12687,6 +12442,11 @@
       "weight": 0.9261
     },
     {
+      "src": "universitat-bremen--digital-media-and-society--master-of-arts",
+      "dst": "universitat-bremen--digitale-medien--bachelor-of-arts",
+      "weight": 0.9261
+    },
+    {
       "src": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
       "dst": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
       "weight": 0.926
@@ -12705,11 +12465,6 @@
       "src": "universitat-trier--media-studies--master-of-arts",
       "dst": "universitat-siegen--media-studies--master-of-arts",
       "weight": 0.9258
-    },
-    {
-      "src": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--fine-arts--unspecified",
-      "weight": 0.9257
     },
     {
       "src": "merz-akademie--design-art-and-media--bachelor-of-arts",
@@ -12822,6 +12577,11 @@
       "weight": 0.9249
     },
     {
+      "src": "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts",
+      "dst": "khm-munchen--architektur-und-kunst--master-of-arts",
+      "weight": 0.9249
+    },
+    {
       "src": "staatliche-hochschule-fur-gestaltung-karlsruhe--art-research-and-media-philosophy--master-of-arts",
       "dst": "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--unspecified",
       "weight": 0.9248
@@ -12857,11 +12617,6 @@
       "weight": 0.9245
     },
     {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified",
-      "weight": 0.9244
-    },
-    {
       "src": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
       "dst": "hochschule-der-bildenden-kunste-essen--fine-arts--diploma",
       "weight": 0.9244
@@ -12875,6 +12630,16 @@
       "src": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
       "dst": "hochschule-der-bildenden-kunste-essen--fine-arts--bachelor-of-fine-arts",
       "weight": 0.9243
+    },
+    {
+      "src": "fachhochschule-dortmund--film-sound--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts",
+      "weight": 0.9243
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts",
+      "dst": "universitat-bremen--digitale-medien--bachelor-of-arts",
+      "weight": 0.9242
     },
     {
       "src": "robert-schumann-hochschule--musikpadagogik--master-of-music",
@@ -12930,6 +12695,11 @@
       "src": "staatliche-hochschule-fur-musik-trossingen--musik--bachelor-of-music",
       "dst": "staatliche-hochschule-fur-musik-trossingen--musikdesign--bachelor-of-music",
       "weight": 0.9239
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--freie-kunst--diploma",
+      "dst": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
+      "weight": 0.9238
     },
     {
       "src": "bauhaus-universitat-weimar--visual-communication--master-of-arts",
@@ -13007,6 +12777,11 @@
       "weight": 0.9232
     },
     {
+      "src": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
+      "dst": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts",
+      "weight": 0.9232
+    },
+    {
       "src": "hochschule-fur-gestaltung-offenbach--integrative-design--master-of-arts",
       "dst": "hochschule-fur-gestaltung-offenbach--product-design--unspecified",
       "weight": 0.923
@@ -13017,8 +12792,18 @@
       "weight": 0.923
     },
     {
+      "src": "hochschule-fur-bildende-kunste-hamburg--design--unspecified",
+      "dst": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
+      "weight": 0.9229
+    },
+    {
       "src": "kunstakademie-dusseldorf--architecture--master-of-architecture",
       "dst": "kunstakademie-dusseldorf--painting--unspecified",
+      "weight": 0.9229
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
+      "dst": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
       "weight": 0.9229
     },
     {
@@ -13067,6 +12852,16 @@
       "weight": 0.9222
     },
     {
+      "src": "bauhaus-universitat-weimar--architecture--master",
+      "dst": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
+      "weight": 0.9222
+    },
+    {
+      "src": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
+      "dst": "fachhochschule-dortmund--editorial-design--master-of-arts",
+      "weight": 0.9222
+    },
+    {
       "src": "hochschule-fur-kunste-bremen--musik--master-of-music",
       "dst": "folkwang-essen--music--master",
       "weight": 0.9221
@@ -13084,6 +12879,11 @@
     {
       "src": "hochschule-darmstadt--expanded-realities--master-of-arts",
       "dst": "hochschule-darmstadt--digital-media--unspecified",
+      "weight": 0.922
+    },
+    {
+      "src": "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified",
+      "dst": "burg-giebichenstein--fine-arts--unspecified",
       "weight": 0.922
     },
     {
@@ -13124,6 +12924,11 @@
     {
       "src": "musikhochschule-lubeck--lehramt-gymnasium-umstieg--master-of-education",
       "dst": "musikhochschule-lubeck--weiterbildung-darstellendes-spiel--certificate-of-advanced-studies",
+      "weight": 0.9218
+    },
+    {
+      "src": "fachhochschule-dortmund--film-sound--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
       "weight": 0.9218
     },
     {
@@ -13182,6 +12987,11 @@
       "weight": 0.9211
     },
     {
+      "src": "bauhaus-universitat-weimar--media-art-and-design--bachelor-of-fine-arts",
+      "dst": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
+      "weight": 0.9211
+    },
+    {
       "src": "hmt-leipzig--music-education--unspecified",
       "dst": "hochschule-fur-musik-dresden--musiktheorie--bachelor-of-music",
       "weight": 0.921
@@ -13197,6 +13007,11 @@
       "weight": 0.9207
     },
     {
+      "src": "akademie-munchen--art-education--unspecified",
+      "dst": "khm-munchen--kunstpadagogik--staatsexamen",
+      "weight": 0.9207
+    },
+    {
       "src": "universitat-siegen--human-computer-interaction--master-of-science--2",
       "dst": "universitat-wurzburg--human-computer-interaction--master-of-science",
       "weight": 0.9206
@@ -13205,6 +13020,11 @@
       "src": "hochschule-fur-musik-berlin--kunstlerische-instrumentalausbildung--bachelor-of-music",
       "dst": "hochschule-fur-musik-dresden--kunstlerische-ausbildung--bachelor-of-music",
       "weight": 0.9206
+    },
+    {
+      "src": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
+      "dst": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
+      "weight": 0.9205
     },
     {
       "src": "universitat-siegen--human-computer-interaction--master-of-science",
@@ -13357,9 +13177,9 @@
       "weight": 0.9189
     },
     {
-      "src": "hochschule-fur-kunste-bremen--integriertes-design--unspecified",
-      "dst": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--unspecified",
-      "weight": 0.9188
+      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
+      "dst": "universitat-bremen--digitale-medien--master-of-arts",
+      "weight": 0.9189
     },
     {
       "src": "hochschule-fur-gestaltung-offenbach--integrative-design--master-of-arts",
@@ -13369,6 +13189,11 @@
     {
       "src": "hochschule-fur-musik-wurzburg--elementare-musikpadagogik--bachelor-of-music",
       "dst": "hochschule-fur-musik-wurzburg--kunstlerisch-padagogische-masterstudiengange--master-of-music",
+      "weight": 0.9188
+    },
+    {
+      "src": "khm-munchen--freie-kunst--diploma",
+      "dst": "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts",
       "weight": 0.9188
     },
     {
@@ -13402,6 +13227,11 @@
       "weight": 0.9184
     },
     {
+      "src": "fachhochschule-dortmund--film-sound--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--fotografie--bachelor-of-arts",
+      "weight": 0.9184
+    },
+    {
       "src": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
       "dst": "bauhaus-universitat-weimar--media--unspecified",
       "weight": 0.9183
@@ -13420,6 +13250,11 @@
       "src": "hochschule-fur-musik-nurnberg--kunstlerisch-padagogischer-bachelor--bachelor-of-music",
       "dst": "hochschule-fur-musik-wurzburg--kunstlerische-ausbildung--bachelor-of-music",
       "weight": 0.9182
+    },
+    {
+      "src": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--fotografie--bachelor-of-arts",
+      "weight": 0.9181
     },
     {
       "src": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--musikpadagogik--master-of-music",
@@ -13464,6 +13299,11 @@
     {
       "src": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--contemporary-dance-education--master-of-arts",
       "dst": "hochschule-fur-musik-und-tanz-koln--tanz--bachelor-of-arts",
+      "weight": 0.9177
+    },
+    {
+      "src": "khm-munchen--innenarchitektur--bachelor-of-arts",
+      "dst": "khm-munchen--architektur-und-kunst--master-of-arts",
       "weight": 0.9177
     },
     {
@@ -13527,6 +13367,11 @@
       "weight": 0.9168
     },
     {
+      "src": "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
+      "dst": "hochschule-fur-musik-und-theater-rostock--kunstlerische-ausbildung--bachelor-of-music",
+      "weight": 0.9166
+    },
+    {
       "src": "hochschule-rhein-waal--sustainable-design--master-of-arts",
       "dst": "koln-international-school-of-design--integrated-design-research--master-of-arts",
       "weight": 0.9166
@@ -13539,6 +13384,11 @@
     {
       "src": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kunstlerische-ausbildung-musik-kam--bachelor-of-music",
       "dst": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--lehramt-musik--staatsexamen",
+      "weight": 0.9166
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
+      "dst": "universitat-bremen--digital-media-and-society--master-of-arts",
       "weight": 0.9166
     },
     {
@@ -13567,11 +13417,6 @@
       "weight": 0.9161
     },
     {
-      "src": "hochschule-anhalt--design-integrated-design--bachelor-of-arts",
-      "dst": "haw-hamburg--design--bachelor",
-      "weight": 0.916
-    },
-    {
       "src": "technische-hochschule-augsburg--interactive-media--bachelor-of-arts",
       "dst": "technische-universitat-munchen--media-engineering--bachelor-of-science",
       "weight": 0.916
@@ -13580,6 +13425,26 @@
       "src": "akademie-munchen--art-education--unspecified",
       "dst": "akademie-nurnberg--graphic-design--unspecified",
       "weight": 0.9158
+    },
+    {
+      "src": "hochschule-darmstadt--digital-media--master-of-science",
+      "dst": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
+      "weight": 0.9158
+    },
+    {
+      "src": "bauhaus-universitat-weimar--visual-communication--master-of-arts",
+      "dst": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
+      "weight": 0.9157
+    },
+    {
+      "src": "haw-hamburg--illustration--bachelor-of-arts",
+      "dst": "haw-hamburg--medientechnik--bachelor-of-science",
+      "weight": 0.9156
+    },
+    {
+      "src": "fachhochschule-dortmund--digital-design--master-of-science",
+      "dst": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
+      "weight": 0.9156
     },
     {
       "src": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--phd",
@@ -13632,6 +13497,11 @@
       "weight": 0.9149
     },
     {
+      "src": "haw-hamburg--medientechnik--bachelor-of-science",
+      "dst": "haw-hamburg--mode-kostum-und-textildesign--bachelor-of-arts",
+      "weight": 0.9149
+    },
+    {
       "src": "hochschule-macromedia--media-design--bachelor-of-arts",
       "dst": "technische-hochschule-augsburg--interactive-media--bachelor-of-arts",
       "weight": 0.9147
@@ -13645,6 +13515,11 @@
       "src": "hochschule-fur-evangelische-kirchenmusik--orgel--bachelor-of-music",
       "dst": "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik--katholische-kirchenmusik--master-of-music",
       "weight": 0.9147
+    },
+    {
+      "src": "akademie-nurnberg--fine-arts--diploma",
+      "dst": "khm-munchen--freie-kunst--diploma",
+      "weight": 0.9146
     },
     {
       "src": "hochschule-fur-gestaltung-offenbach--art-education-secondary-schools--state-examination",
@@ -13697,6 +13572,11 @@
       "weight": 0.9139
     },
     {
+      "src": "akademie-munchen--fine-arts--diploma",
+      "dst": "khm-munchen--kunstpadagogik--staatsexamen",
+      "weight": 0.9139
+    },
+    {
       "src": "hochschule-rhein-waal--media-communication-and-computer-science--bachelor-of-science",
       "dst": "rwth-aachen-university--human-technology-interaction-and-communication--master-of-science",
       "weight": 0.9138
@@ -13719,6 +13599,11 @@
     {
       "src": "rwth-aachen-university--media-informatics--bachelor-of-science",
       "dst": "technische-universitat-munchen--media-engineering--bachelor-of-science",
+      "weight": 0.9135
+    },
+    {
+      "src": "akademie-munchen--fine-arts--unspecified",
+      "dst": "khm-munchen--freie-kunst--diploma",
       "weight": 0.9135
     },
     {
@@ -13762,6 +13647,11 @@
       "weight": 0.9127
     },
     {
+      "src": "hochschule-anhalt--design-integrated-design--bachelor-of-arts",
+      "dst": "hochschule-reutlingen--integrated-design--bachelor-of-arts",
+      "weight": 0.9126
+    },
+    {
       "src": "haw-hamburg--mode-kostum-und-textildesign--master-of-arts",
       "dst": "haw-hamburg--digitale-transformation-der-informations-und-medienwirtschaft--master-of-arts",
       "weight": 0.9124
@@ -13797,6 +13687,11 @@
       "weight": 0.9113
     },
     {
+      "src": "bauhaus-universitat-weimar--product-design--master-of-arts",
+      "dst": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
+      "weight": 0.9113
+    },
+    {
       "src": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--musik--master-of-music",
       "dst": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--schauspiel--bachelor-of-arts",
       "weight": 0.9112
@@ -13822,8 +13717,18 @@
       "weight": 0.911
     },
     {
+      "src": "khm-munchen--kunstpadagogik--staatsexamen",
+      "dst": "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts",
+      "weight": 0.911
+    },
+    {
       "src": "bauhaus-universitat-weimar--product-design--master",
       "dst": "bauhaus-universitat-weimar--architecture--unspecified",
+      "weight": 0.9109
+    },
+    {
+      "src": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--digital-design--master-of-science",
       "weight": 0.9109
     },
     {
@@ -13837,14 +13742,19 @@
       "weight": 0.9107
     },
     {
-      "src": "burg-giebichenstein--communication-design--unspecified",
-      "dst": "hfbk-dresden--fine-arts--unspecified",
-      "weight": 0.9104
+      "src": "koln-international-school-of-design--communication-design--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "weight": 0.9105
     },
     {
       "src": "hmtm-hannover--acting--unspecified",
       "dst": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--schauspiel--bachelor-of-arts",
       "weight": 0.9104
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--musik--master-of-music",
+      "dst": "hochschule-fur-musik-und-theater-rostock--kammermusik--master-of-music",
+      "weight": 0.9103
     },
     {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstpadagogik--master-of-education",
@@ -13854,6 +13764,11 @@
     {
       "src": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
       "dst": "kunsthochschule-fur-medien-koln--film--unspecified",
+      "weight": 0.9102
+    },
+    {
+      "src": "hochschule-darmstadt--digital-media--master-of-science",
+      "dst": "fachhochschule-dortmund--digital-design--master-of-science",
       "weight": 0.9102
     },
     {
@@ -13867,9 +13782,19 @@
       "weight": 0.9099
     },
     {
+      "src": "kunsthochschule-kassel--fine-arts--unspecified",
+      "dst": "burg-giebichenstein--communication-design--unspecified",
+      "weight": 0.9099
+    },
+    {
       "src": "palucca-hochschule-fur-tanz--tanz--bachelor-of-arts",
       "dst": "hochschule-fur-musik-und-darstellende-kunst-mannheim--tanz-tanzpadagogik--bachelor-of-arts",
       "weight": 0.9099
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--musik--master-of-music",
+      "dst": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
+      "weight": 0.9098
     },
     {
       "src": "hochschule-rhein-waal--media-communication-and-computer-science--bachelor-of-science",
@@ -13927,6 +13852,11 @@
       "weight": 0.9093
     },
     {
+      "src": "hfbk-dresden--fine-arts--diploma",
+      "dst": "khm-munchen--freie-kunst--diploma",
+      "weight": 0.9093
+    },
+    {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--textildesign--bachelor-of-arts",
       "dst": "hochschule-reutlingen--textile-design--master-of-arts",
       "weight": 0.9091
@@ -13937,6 +13867,16 @@
       "weight": 0.9091
     },
     {
+      "src": "bauhaus-universitat-weimar--visual-communication--master-of-arts",
+      "dst": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts",
+      "weight": 0.909
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--freie-kunst--diploma",
+      "dst": "hochschule-fur-kunste-bremen--musik--master-of-music",
+      "weight": 0.9089
+    },
+    {
       "src": "hochschule-fur-schauspielkunst-berlin--schauspiel--diplom",
       "dst": "hochschule-fur-schauspielkunst-berlin--spiel-und-objekt--master-of-arts",
       "weight": 0.9089
@@ -13944,6 +13884,11 @@
     {
       "src": "filmakademie-baden-wurttemberg--animation--diploma",
       "dst": "filmakademie-baden-wurttemberg--international-class--workshop",
+      "weight": 0.9089
+    },
+    {
+      "src": "akademie-munchen--architecture--unspecified",
+      "dst": "khm-munchen--architektur-und-kunst--master-of-arts",
       "weight": 0.9089
     },
     {
@@ -13967,8 +13912,18 @@
       "weight": 0.9084
     },
     {
+      "src": "fachhochschule-dortmund--fotografie--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts",
+      "weight": 0.9083
+    },
+    {
       "src": "hochschule-fur-musik-weimar--jazz--bachelor-of-music",
       "dst": "hochschule-fur-musik-wurzburg--jazz--bachelor-of-music",
+      "weight": 0.908
+    },
+    {
+      "src": "khm-munchen--freie-kunst--diploma",
+      "dst": "khm-munchen--architektur-und-kunst--master-of-arts",
       "weight": 0.908
     },
     {
@@ -13995,6 +13950,11 @@
       "src": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma",
       "dst": "hochschule-fur-gestaltung-offenbach--doctoral-studies-phd--dr-phil",
       "weight": 0.9075
+    },
+    {
+      "src": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
+      "dst": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts",
+      "weight": 0.9073
     },
     {
       "src": "fachhochschule-potsdam--interface-design--bachelor-of-arts",
@@ -14045,6 +14005,11 @@
       "src": "technische-hochschule-augsburg--interactive-media--bachelor-of-arts",
       "dst": "universitat-passau--digital-humanities--bachelor-of-arts",
       "weight": 0.9066
+    },
+    {
+      "src": "akademie-munchen--fine-arts--diploma",
+      "dst": "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts",
+      "weight": 0.9065
     },
     {
       "src": "hochschule-fur-gestaltung-offenbach--doctoral-studies-phd--dr-phil",
@@ -14117,6 +14082,11 @@
       "weight": 0.9056
     },
     {
+      "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstpadagogik--master-of-education",
+      "dst": "khm-munchen--kunstpadagogik--staatsexamen",
+      "weight": 0.9055
+    },
+    {
       "src": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
       "dst": "kunsthochschule-berlin-weissensee--fine-arts--diploma",
       "weight": 0.9054
@@ -14137,14 +14107,19 @@
       "weight": 0.9052
     },
     {
+      "src": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
+      "dst": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts",
+      "weight": 0.9051
+    },
+    {
+      "src": "khm-munchen--innenarchitektur--master-of-arts",
+      "dst": "khm-munchen--freie-kunst--diploma",
+      "weight": 0.9051
+    },
+    {
       "src": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
       "dst": "technische-universitat-munchen--management-and-technology-with-focus-on-digital-technologies--master-of-science",
       "weight": 0.905
-    },
-    {
-      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
-      "dst": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--phd",
-      "weight": 0.9047
     },
     {
       "src": "hochschule-fur-musik-berlin--kunstlerische-instrumentalausbildung--bachelor-of-music",
@@ -14182,8 +14157,8 @@
       "weight": 0.9039
     },
     {
-      "src": "hochschule-fur-musik-und-theater-rostock--music--bachelor-of-music",
-      "dst": "hochschule-fur-musik-und-theater-rostock--schauspiel--diplom",
+      "src": "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
+      "dst": "universitat-bremen--digitale-medien--bachelor-of-arts",
       "weight": 0.9038
     },
     {
@@ -14195,6 +14170,16 @@
       "src": "kunstakademie-dusseldorf--painting--unspecified",
       "dst": "kunstakademie-munster--fine-arts--unspecified",
       "weight": 0.9036
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--phd",
+      "dst": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
+      "weight": 0.9035
+    },
+    {
+      "src": "bauhaus-universitat-weimar--media--unspecified",
+      "dst": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts",
+      "weight": 0.9035
     },
     {
       "src": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
@@ -14229,6 +14214,11 @@
     {
       "src": "kunstakademie-dusseldorf--sculpture--unspecified",
       "dst": "kunstakademie-munster--fine-arts--unspecified",
+      "weight": 0.9022
+    },
+    {
+      "src": "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--editorial-design--master-of-arts",
       "weight": 0.9022
     },
     {
@@ -14272,14 +14262,34 @@
       "weight": 0.9013
     },
     {
+      "src": "hochschule-fur-kunste-bremen--musik--master-of-music",
+      "dst": "hochschule-fur-kunste-bremen--promotionsprogramm-phd--phd",
+      "weight": 0.9012
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
+      "dst": "universitat-bremen--digital-media-and-society--master-of-arts",
+      "weight": 0.9012
+    },
+    {
       "src": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--lehramt-musik--staatsexamen",
       "dst": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--konzertexamen--konzertexamen",
+      "weight": 0.9011
+    },
+    {
+      "src": "akademie-munchen--fine-arts--diploma",
+      "dst": "khm-munchen--innenarchitektur--bachelor-of-arts",
       "weight": 0.9011
     },
     {
       "src": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kirchenmusik--bachelor-of-music",
       "dst": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--lehramt-musik--staatsexamen",
       "weight": 0.901
+    },
+    {
+      "src": "khm-munchen--freie-kunst--diploma",
+      "dst": "khm-munchen--innenarchitektur--bachelor-of-arts",
+      "weight": 0.9007
     },
     {
       "src": "hochschule-fur-musik-wurzburg--gesang-konzert-operngesang--master-of-music",
@@ -14302,6 +14312,16 @@
       "weight": 0.8993
     },
     {
+      "src": "fachhochschule-dortmund--fotografie--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--editorial-design--master-of-arts",
+      "weight": 0.899
+    },
+    {
+      "src": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education",
+      "dst": "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts",
+      "weight": 0.8987
+    },
+    {
       "src": "fachhochschule-potsdam--european-media-studies-with-university-of-potsdam--master-of-arts",
       "dst": "hochschule-darmstadt--digital-media--master-of-science",
       "weight": 0.8985
@@ -14312,13 +14332,33 @@
       "weight": 0.8985
     },
     {
+      "src": "akademie-munchen--fine-arts--diploma",
+      "dst": "khm-munchen--innenarchitektur--master-of-arts",
+      "weight": 0.8985
+    },
+    {
       "src": "hochschule-rhein-waal--design-and-communication--bachelor-of-arts",
       "dst": "rwth-aachen-university--communication-engineering--master-of-science",
       "weight": 0.8984
     },
     {
+      "src": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
+      "dst": "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts",
+      "weight": 0.8984
+    },
+    {
       "src": "hochschule-fur-fernsehen-und-film-munchen--screenwriting--unspecified",
       "dst": "filmuniversitat-babelsberg-konrad-wolf--screenwriting-dramaturgy--diploma",
+      "weight": 0.898
+    },
+    {
+      "src": "muthesius-kunsthochschule-kiel--spatial-strategies--master-of-arts",
+      "dst": "khm-munchen--innenarchitektur--master-of-arts",
+      "weight": 0.898
+    },
+    {
+      "src": "khm-munchen--innenarchitektur--bachelor-of-arts",
+      "dst": "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts",
       "weight": 0.898
     },
     {
@@ -14335,6 +14375,16 @@
       "src": "hochschule-fur-musik-und-theater-rostock--lehramt-musik--staatsexamen",
       "dst": "hochschule-fur-musik-und-theater-rostock--schauspiel--diplom",
       "weight": 0.8978
+    },
+    {
+      "src": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
+      "dst": "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts",
+      "weight": 0.8976
+    },
+    {
+      "src": "haw-hamburg--digital-reality--master-of-science",
+      "dst": "fachhochschule-dortmund--digital-design--master-of-science",
+      "weight": 0.8975
     },
     {
       "src": "hochschule-macromedia--media-design--bachelor-of-arts",
@@ -14354,6 +14404,11 @@
     {
       "src": "palucca-hochschule-fur-tanz--kunstlerische-meisterklasse--meisterklassenexamen",
       "dst": "hochschule-fur-musik-und-tanz-koln--tanz--bachelor-of-arts",
+      "weight": 0.8971
+    },
+    {
+      "src": "hochschule-fur-bildende-kunste-braunschweig--art-education--master-of-education",
+      "dst": "khm-munchen--kunstpadagogik--staatsexamen",
       "weight": 0.8971
     },
     {
@@ -14387,6 +14442,21 @@
       "weight": 0.8963
     },
     {
+      "src": "khm-munchen--kunstpadagogik--staatsexamen",
+      "dst": "khm-munchen--architektur-und-kunst--master-of-arts",
+      "weight": 0.8963
+    },
+    {
+      "src": "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts",
+      "dst": "universitat-bremen--digital-media-and-society--master-of-arts",
+      "weight": 0.8963
+    },
+    {
+      "src": "fachhochschule-dortmund--film-sound--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--editorial-design--master-of-arts",
+      "weight": 0.8962
+    },
+    {
       "src": "rwth-aachen-university--media-informatics--bachelor-of-science",
       "dst": "technische-universitat-munchen--informatics-games-engineering--bachelor-of-science",
       "weight": 0.8961
@@ -14397,14 +14467,29 @@
       "weight": 0.8961
     },
     {
+      "src": "hochschule-darmstadt--digital-media--master-of-science",
+      "dst": "universitat-bremen--digital-media-and-society--master-of-arts",
+      "weight": 0.896
+    },
+    {
       "src": "universitat-trier--media-studies--master-of-arts",
       "dst": "universitat-siegen--media-studies--bachelor-of-arts",
+      "weight": 0.8957
+    },
+    {
+      "src": "hochschule-fur-musik-und-theater-rostock--buhnengesang--master-of-music",
+      "dst": "hochschule-fur-musik-und-theater-rostock--schauspiel--diplom",
       "weight": 0.8957
     },
     {
       "src": "rwth-aachen-university--media-informatics--master-of-science",
       "dst": "technische-universitat-munchen--informatics-games-engineering--bachelor-of-science",
       "weight": 0.8956
+    },
+    {
+      "src": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
+      "weight": 0.8953
     },
     {
       "src": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--lehramt-gymnasium-mit-dem-fach-musik--master",
@@ -14420,6 +14505,11 @@
       "src": "hochschule-fur-musik-und-tanz-koln--jazz-pop--bachelor-of-music",
       "dst": "hochschule-fur-musik-weimar--jazz--bachelor-of-music",
       "weight": 0.8939
+    },
+    {
+      "src": "akademie-munchen--architecture--unspecified",
+      "dst": "khm-munchen--innenarchitektur--bachelor-of-arts",
+      "weight": 0.8937
     },
     {
       "src": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--sprechkunst--master-of-arts",
@@ -14467,14 +14557,59 @@
       "weight": 0.892
     },
     {
+      "src": "kunstakademie-dusseldorf--art-education--master-of-education",
+      "dst": "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts",
+      "weight": 0.8917
+    },
+    {
       "src": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--master-of-arts",
       "dst": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--sprechkunst--master-of-arts",
       "weight": 0.8915
     },
     {
+      "src": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "dst": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
+      "weight": 0.8912
+    },
+    {
+      "src": "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts",
+      "dst": "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts",
+      "weight": 0.8912
+    },
+    {
+      "src": "hochschule-darmstadt--digital-media--master-of-science",
+      "dst": "universitat-bremen--digitale-medien--master-of-arts",
+      "weight": 0.8911
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
+      "dst": "universitat-bremen--digitale-medien--master-of-arts",
+      "weight": 0.891
+    },
+    {
+      "src": "fachhochschule-dortmund--digital-design--master-of-science",
+      "dst": "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts",
+      "weight": 0.8909
+    },
+    {
+      "src": "fachhochschule-dortmund--film-sound--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--digital-design--master-of-science",
+      "weight": 0.8908
+    },
+    {
       "src": "hochschule-reutlingen--textile-design--master-of-arts",
       "dst": "hochschule-pforzheim--mode--bachelor-of-arts",
       "weight": 0.8907
+    },
+    {
+      "src": "hochschule-fur-grafik-und-buchkunst-leipzig--photography--diploma",
+      "dst": "fachhochschule-dortmund--fotografie--bachelor-of-arts",
+      "weight": 0.8904
+    },
+    {
+      "src": "fachhochschule-dortmund--fotografie--bachelor-of-arts",
+      "dst": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
+      "weight": 0.8904
     },
     {
       "src": "hmtm-hannover--acting--unspecified",
@@ -14485,6 +14620,41 @@
       "src": "universitat-der-kunste-berlin--design--unspecified",
       "dst": "kunsthochschule-berlin-weissensee--fine-arts--unspecified",
       "weight": 0.8901
+    },
+    {
+      "src": "hochschule-rhein-waal--design-and-communication--bachelor-of-arts",
+      "dst": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
+      "weight": 0.8893
+    },
+    {
+      "src": "technische-universitat-berlin--audiovisual-media-culture-and-communication--master-of-arts",
+      "dst": "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts",
+      "weight": 0.8889
+    },
+    {
+      "src": "hochschule-fur-grafik-und-buchkunst-leipzig--cultures-of-the-curatorial--master-of-arts",
+      "dst": "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts",
+      "weight": 0.8886
+    },
+    {
+      "src": "universitat-passau--digital-humanities--bachelor-of-arts",
+      "dst": "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts",
+      "weight": 0.8886
+    },
+    {
+      "src": "koln-international-school-of-design--communication-design--bachelor-of-arts",
+      "dst": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
+      "weight": 0.8878
+    },
+    {
+      "src": "fachhochschule-potsdam--european-media-studies-with-university-of-potsdam--master-of-arts",
+      "dst": "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts",
+      "weight": 0.8878
+    },
+    {
+      "src": "alanus-hochschule-fur-kunst-und-gesellschaft--art-education--master-of-education",
+      "dst": "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts",
+      "weight": 0.8874
     },
     {
       "src": "hochschule-fur-musik-saar--advanced-education-in-music-pedagogy--master-of-education",
@@ -14502,6 +14672,11 @@
       "weight": 0.8869
     },
     {
+      "src": "kunstakademie-munster--art-education--unspecified",
+      "dst": "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts",
+      "weight": 0.8866
+    },
+    {
       "src": "hochschule-fur-evangelische-kirchenmusik--evangelische-kirchenmusik--bachelor-of-music",
       "dst": "hochschule-fur-kirchenmusik-dresden--kirchenmusik-b--diplom",
       "weight": 0.8853
@@ -14512,9 +14687,39 @@
       "weight": 0.8853
     },
     {
+      "src": "kunstakademie-munster--art-education--master-of-education",
+      "dst": "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts",
+      "weight": 0.885
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
+      "dst": "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts",
+      "weight": 0.885
+    },
+    {
+      "src": "rwth-aachen-university--communication-engineering--master-of-science",
+      "dst": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+      "weight": 0.8848
+    },
+    {
+      "src": "kunstakademie-munster--art-education--master-of-education",
+      "dst": "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts",
+      "weight": 0.8847
+    },
+    {
       "src": "evangelische-hochschule-fur-kirchenmusik-halle--kirchenmusik--bachelor-of-music",
       "dst": "evangelische-hochschule-fur-kirchenmusik-halle--lehramt-musik--master-of-education",
       "weight": 0.8838
+    },
+    {
+      "src": "fachhochschule-dortmund--digital-design--master-of-science",
+      "dst": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education",
+      "weight": 0.8836
+    },
+    {
+      "src": "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts",
+      "dst": "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts",
+      "weight": 0.8831
     },
     {
       "src": "evangelische-hochschule-fur-kirchenmusik-halle--chor-und-orchesterleitung--master-of-music",
@@ -14532,6 +14737,11 @@
       "weight": 0.8826
     },
     {
+      "src": "muthesius-kunsthochschule-kiel--communication-design--bachelor-of-arts",
+      "dst": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
+      "weight": 0.8822
+    },
+    {
       "src": "kunsthochschule-mainz--fine-arts--unspecified",
       "dst": "kunsthochschule-berlin-weissensee--fine-arts--unspecified",
       "weight": 0.8821
@@ -14540,6 +14750,16 @@
       "src": "hochschule-rhein-waal--international-relations--bachelor-of-arts",
       "dst": "koln-international-school-of-design--communication-design--bachelor-of-arts",
       "weight": 0.882
+    },
+    {
+      "src": "fachhochschule-potsdam--european-media-studies-with-university-of-potsdam--master-of-arts",
+      "dst": "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts",
+      "weight": 0.882
+    },
+    {
+      "src": "hdm-stuttgart--computer-science-and-media--master-of-science",
+      "dst": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+      "weight": 0.8806
     },
     {
       "src": "hochschule-fur-musik-saar--kunstlerisches-profil-orchesterinstrument-orchesterakademie--master-of-music",
@@ -14562,9 +14782,29 @@
       "weight": 0.8803
     },
     {
+      "src": "bard-college-berlin--humanities-the-arts-and-social-thought--bachelor-of-arts",
+      "dst": "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts",
+      "weight": 0.8799
+    },
+    {
       "src": "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-orchesterleitung--master-of-music",
       "dst": "hochschule-fur-musik-saar--kulturmanagement--master-of-arts",
       "weight": 0.8797
+    },
+    {
+      "src": "hochschule-fur-bildende-kunste-braunschweig--art-education--master-of-education",
+      "dst": "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts",
+      "weight": 0.8796
+    },
+    {
+      "src": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
+      "dst": "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts",
+      "weight": 0.8795
+    },
+    {
+      "src": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--diploma",
+      "dst": "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts",
+      "weight": 0.8794
     },
     {
       "src": "hochschule-rhein-waal--international-relations--bachelor-of-arts",
@@ -14575,6 +14815,11 @@
       "src": "hmt-leipzig--drama--unspecified",
       "dst": "hochschule-fur-musik-dresden--kunstlerische-ausbildung--master-of-music",
       "weight": 0.8793
+    },
+    {
+      "src": "kunstakademie-munster--art-education--master-of-education",
+      "dst": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education",
+      "weight": 0.879
     },
     {
       "src": "universitat-trier--digital-humanities--master-of-arts",
@@ -14592,9 +14837,19 @@
       "weight": 0.8786
     },
     {
+      "src": "kunstakademie-munster--freie-kunst--akademiebrief-diplom",
+      "dst": "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts",
+      "weight": 0.8783
+    },
+    {
       "src": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
       "dst": "bard-college-berlin--humanities-the-arts-and-social-thought--bachelor-of-arts",
       "weight": 0.8781
+    },
+    {
+      "src": "alanus-hochschule-fur-kunst-und-gesellschaft--art-education--master-of-education",
+      "dst": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education",
+      "weight": 0.878
     },
     {
       "src": "hochschule-darmstadt--digital-media--master-of-science",
@@ -14617,6 +14872,11 @@
       "weight": 0.8771
     },
     {
+      "src": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
+      "dst": "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts",
+      "weight": 0.8768
+    },
+    {
       "src": "evangelische-hochschule-fur-kirchenmusik-halle--konzert-und-oratoriengesang--master-of-music",
       "dst": "evangelische-hochschule-fur-kirchenmusik-halle--lehramt-musik--master-of-education",
       "weight": 0.8761
@@ -14627,14 +14887,84 @@
       "weight": 0.8757
     },
     {
+      "src": "hochschule-fur-bildende-kunste-hamburg--art-education--master-of-education",
+      "dst": "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts",
+      "weight": 0.8757
+    },
+    {
+      "src": "stadelschule-frankfurt--fine-arts--master",
+      "dst": "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts",
+      "weight": 0.8756
+    },
+    {
       "src": "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-neue-musik--master-of-music",
       "dst": "hochschule-fur-musik-saar--kulturmanagement--master-of-arts",
       "weight": 0.8754
     },
     {
+      "src": "hochschule-fur-grafik-und-buchkunst-leipzig--cultures-of-the-curatorial--master-of-arts",
+      "dst": "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts",
+      "weight": 0.8751
+    },
+    {
+      "src": "fachhochschule-dortmund--editorial-design--master-of-arts",
+      "dst": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education",
+      "weight": 0.8746
+    },
+    {
+      "src": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
+      "dst": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+      "weight": 0.8745
+    },
+    {
+      "src": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "dst": "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts",
+      "weight": 0.8742
+    },
+    {
+      "src": "stadelschule-frankfurt--fine-arts--master",
+      "dst": "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts",
+      "weight": 0.8739
+    },
+    {
+      "src": "universitat-bremen--digital-media-and-society--master-of-arts",
+      "dst": "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts",
+      "weight": 0.8734
+    },
+    {
       "src": "hochschule-fur-kirchenmusik-dresden--kirchenmusik-b--diplom",
       "dst": "evangelische-hochschule-fur-kirchenmusik-halle--kirchenmusik--bachelor-of-music",
       "weight": 0.8733
+    },
+    {
+      "src": "hochschule-fur-kunste-bremen--musik--master-of-music",
+      "dst": "hmtm-hannover--medien-und-musik--master-of-arts",
+      "weight": 0.8731
+    },
+    {
+      "src": "filmuniversitat-babelsberg-konrad-wolf--media-studies--master-of-arts",
+      "dst": "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts",
+      "weight": 0.8729
+    },
+    {
+      "src": "hochschule-darmstadt--digital-media--master-of-science",
+      "dst": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+      "weight": 0.8727
+    },
+    {
+      "src": "hmtm-hannover--media-management--unspecified",
+      "dst": "hmtm-hannover--medien-und-musik--master-of-arts",
+      "weight": 0.8726
+    },
+    {
+      "src": "muthesius-kunsthochschule-kiel--communication-design--master-of-arts",
+      "dst": "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts",
+      "weight": 0.8717
+    },
+    {
+      "src": "hochschule-fur-musik-und-theater-rostock--musikwissenschaft--master-of-arts",
+      "dst": "hmtm-hannover--medien-und-musik--master-of-arts",
+      "weight": 0.8713
     },
     {
       "src": "merz-akademie--design-art-and-media--bachelor-of-arts",
@@ -14657,11 +14987,6 @@
       "weight": 0.8709
     },
     {
-      "src": "universitat-der-kunste-berlin--design--bachelor-of-arts",
-      "dst": "bard-college-berlin--humanities-the-arts-and-social-thought--bachelor-of-arts",
-      "weight": 0.8707
-    },
-    {
       "src": "hmtm-hannover--media-management--unspecified",
       "dst": "musikhochschule-lubeck--musik-vermitteln-sonstige-instrumente--bachelor-of-arts",
       "weight": 0.8705
@@ -14672,14 +14997,19 @@
       "weight": 0.8697
     },
     {
+      "src": "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts",
+      "dst": "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts",
+      "weight": 0.869
+    },
+    {
       "src": "hochschule-fur-musik-saar--kunstlerisch-padagogisches-profil--bachelor-of-music",
       "dst": "hochschule-fur-musik-saar--cultural-studies-und-management--bachelor-of-arts",
       "weight": 0.8688
     },
     {
-      "src": "hmtm-hannover--media-management--unspecified",
-      "dst": "hochschule-fur-musik-detmold--musikubertragung-tonmeister--bachelor-of-music",
-      "weight": 0.8682
+      "src": "filmuniversitat-babelsberg-konrad-wolf--media-studies--master-of-arts",
+      "dst": "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts",
+      "weight": 0.8683
     },
     {
       "src": "bard-college-berlin--economics-politics-and-social-thought--bachelor-of-arts",
@@ -14689,6 +15019,11 @@
     {
       "src": "hochschule-fur-musik-saar--kunstlerisches-profil-orchester-und-ensemblemusik--bachelor-of-music",
       "dst": "hochschule-fur-musik-saar--cultural-studies-und-management--bachelor-of-arts",
+      "weight": 0.8664
+    },
+    {
+      "src": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
+      "dst": "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts",
       "weight": 0.8664
     },
     {
@@ -14702,9 +15037,24 @@
       "weight": 0.8654
     },
     {
+      "src": "hmtm-hannover--medien-und-musik--master-of-arts",
+      "dst": "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts",
+      "weight": 0.8653
+    },
+    {
       "src": "hochschule-fur-evangelische-kirchenmusik--orgel--bachelor-of-music",
       "dst": "hochschule-fur-kirchenmusik-dresden--kirchenmusik-b--diplom",
       "weight": 0.8645
+    },
+    {
+      "src": "hdm-stuttgart--master-of-media-research--master-of-arts",
+      "dst": "hmtm-hannover--medien-und-musik--master-of-arts",
+      "weight": 0.8644
+    },
+    {
+      "src": "hdm-stuttgart--medienmanagement--master-of-arts",
+      "dst": "hmtm-hannover--medien-und-musik--master-of-arts",
+      "weight": 0.8644
     },
     {
       "src": "merz-akademie--design-art-and-media--bachelor-of-arts",
@@ -14712,9 +15062,34 @@
       "weight": 0.8642
     },
     {
+      "src": "hdm-stuttgart--audiovisual-media-creation-and-technology--master-of-arts",
+      "dst": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+      "weight": 0.864
+    },
+    {
+      "src": "universitat-siegen--media-studies--master-of-arts",
+      "dst": "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts",
+      "weight": 0.8635
+    },
+    {
+      "src": "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts",
+      "dst": "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts",
+      "weight": 0.8627
+    },
+    {
+      "src": "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts",
+      "dst": "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts",
+      "weight": 0.8625
+    },
+    {
       "src": "hochschule-fur-musik-saar--cultural-studies-und-management--bachelor-of-arts",
       "dst": "hochschule-fur-musik-saar--elementare-musikpadagogik--bachelor-of-music",
       "weight": 0.8621
+    },
+    {
+      "src": "technische-universitat-munchen--computational-science-and-engineering--master-of-science",
+      "dst": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+      "weight": 0.8619
     },
     {
       "src": "universitat-der-kunste-berlin--performing-arts--bachelor-of-arts",
@@ -14737,8 +15112,28 @@
       "weight": 0.8566
     },
     {
+      "src": "universitat-der-kunste-berlin--performing-arts--bachelor-of-arts",
+      "dst": "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts",
+      "weight": 0.8543
+    },
+    {
+      "src": "universitat-passau--digital-humanities--bachelor-of-arts",
+      "dst": "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts",
+      "weight": 0.8525
+    },
+    {
+      "src": "hochschule-rhein-waal--international-relations--bachelor-of-arts",
+      "dst": "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts",
+      "weight": 0.8507
+    },
+    {
       "src": "technische-universitat-chemnitz--human-computer-interaction--unspecified",
       "dst": "hochschule-fur-musik-dresden--kunstlerisch-padagogische-ausbildung--bachelor-of-music",
+      "weight": 0.8506
+    },
+    {
+      "src": "bard-college-berlin--economics-politics-and-social-thought--bachelor-of-arts",
+      "dst": "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts",
       "weight": 0.8506
     },
     {

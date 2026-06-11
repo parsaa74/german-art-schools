@@ -1,0 +1,111 @@
+{
+  "program_id": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts",
+  "schoolId": "bauhaus-universitat-weimar",
+  "name": "Medienkunst / Mediengestaltung (Media Art and Design)",
+  "degree": "Master of Fine Arts",
+  "status_note": "Program missing from enhanced_german_art_schools.json — only the BFA variant exists there. Needs to be added. Note: runs as two parallel variants — German-taught MFA Medienkunst/Mediengestaltung and English-taught MFA Media Art and Design (MAD).",
+  "sources": [
+    {
+      "type": "modulhandbuch",
+      "file": "Modulhandbuch_MfA_MKG.pdf",
+      "document_date": "2022-04-05",
+      "extracted_at": "2026-06-11"
+    },
+    {
+      "type": "program_page",
+      "url": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/medienkunstmediengestaltung/medienkunstmediengestaltung-mfa/",
+      "extracted_at": "2026-06-12"
+    },
+    {
+      "type": "program_page",
+      "url": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/medienkunstmediengestaltung/medienkunstmediengestaltung-mfa/media-art-and-design-mfa/",
+      "extracted_at": "2026-06-12"
+    }
+  ],
+  "details": {
+    "programUrl": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/medienkunstmediengestaltung/medienkunstmediengestaltung-mfa/",
+    "applicationUrl": "http://www.uni-weimar.de/campusportal/bewerbung",
+    "tuitionEuroPerSemester": 0,
+    "tuitionNote": "No tuition fees; semester contribution (Semesterbeitrag) only",
+    "portfolioRequired": true,
+    "languageRequirements": "German variant: German C2. English variant (MAD): German A2 + English C1 (TOEFL >= 95 or IELTS >= 7.0); a large portion of projects and Fachmodule are taught in German even in the English variant — only Interface Design is fully English-taught",
+    "intake": "Winter semester only",
+    "applicationWindow": { "start": "2 February", "end": "31 March" },
+    "enrollmentDeadline": "30 September",
+    "admission": "First professional degree (e.g. BFA in media art/design or equivalent) plus aptitude examination based on artistic portfolio; artistic approval valid for 2 academic years",
+    "applicationDocuments": ["artistic portfolio (PDF max 20MB or hosted links)", "motivation letter (one A4 page, stating specialization)", "CV", "transcripts", "internship/exhibition/publication documentation", "language certificates"],
+    "advising": "Jason Langheim, mkg-info[at]gestaltung.uni-weimar.de"
+  },
+  "languages_of_instruction": ["German", "English"],
+  "structure": "Professorship-based (Klassenprinzip): 2-semester core for holders of an 8-semester / 240-ECTS bachelor (semester 1: master project module at a chosen Professur, 18 ECTS, plus two Fachmodule; semester 2: master thesis, 30 ECTS, plus master colloquium), extended by 1 bridge semester for 210-ECTS and 2 bridge semesters for 180-ECTS bachelors, drawing on the BFA module catalogues (Medienkunst/Mediengestaltung, Visuelle Kommunikation, Produktdesign).",
+  "chairs": [
+    {
+      "name": "Acoustic Ecologies and Sound Studies",
+      "professor": "Jun.-Prof. Kerstin Ergenzinger",
+      "focus": "Sound studies and acoustic ecologies (chair added after the 2022 module handbook; not yet reflected there)",
+      "modules": []
+    },
+    {
+      "name": "Elektroakustische Komposition und Klangkunst (Electroacoustic Composition and Sound Art)",
+      "professor": "Prof. Maximilian Marcoll",
+      "focus": "Electroacoustic and acousmatic music, sound installation, live electronics, net music, sound art, multimedia; computer as instrument shaped by the composer-performer",
+      "modules": ["Klangwerkstatt B", "Spezialkurs Computermusik", "Einführung in Max/MSP/SuperCollider", "Aufnahme- und Tonstudiotechnik I+II (with HfM Franz Liszt Weimar)"]
+    },
+    {
+      "name": "Experimentelles Radio (Experimental Radio)",
+      "professor": "Prof. Nathalie Singer",
+      "focus": "Radio art and radio practice: live radio plays (Hörspiel), radio installations, festival radios and radio events in urban space, cooperation with public broadcasters; multichannel production, ambisonics, sound in VR",
+      "modules": ["Radio Aktion", "Experimentelle Radiokunst", "Baukasten III", "Klangräume und Raumklänge"]
+    },
+    {
+      "name": "Gestaltung Medialer Umgebungen (Design of Media Environments)",
+      "professor": "Prof. Ursula Damm",
+      "focus": "Sensor-based spatial interaction, motion tracking and computer vision, data streams in image and sound, surveillance and the social impact of data collection, virtual/generated environments, science & art, bioart, art-technology, ethics of new technologies",
+      "modules": ["Raum-Zeitliche Prozesse", "Science & Art", "Raumbasierte Interaktion", "Virtueller Raum"]
+    },
+    {
+      "name": "Interface Design",
+      "professor": "Prof. Martin Hesselmeier",
+      "focus": "Experimental and interactive interfaces, interactive room installations, AR and mobile interaction, ubiquitous and networked technologies, prototyping, physical computing, user- and task-centered design methods, artistic research; linked to the Media Architecture program of the Faculty of Architecture and Urbanism; the only fully English-taught chair",
+      "modules": ["Interaktion und Experimentelle Interfaces", "Elektronische Interfaces", "Virtuelle Interfaces"]
+    },
+    {
+      "name": "Medien-Ereignisse (Media Events)",
+      "professor": "Prof. Wolfgang Kissel",
+      "focus": "Designing media events: PR and art actions, festivals, social interventions staged publicly; performative-scenographic approaches plus journalistic-documentary formats for web, TV, cinema, exhibition",
+      "modules": ["Medienereignisse und ihre Gestaltung", "Individual Digital Producing"]
+    },
+    {
+      "name": "Kunst und soziale Praxis / Kunst und sozialer Raum",
+      "professor": null,
+      "focus": "Professionalization of artistic careers (artist statement, portfolio); collection, inventory and exhibition practices, archives, encyclopedias, Wunderkammern, museography, institutional critique. Present in the 2022 module handbook but no longer listed among the six chairs on the current program page.",
+      "modules": ["Professional Practice", "Inventory and Display"]
+    }
+  ],
+  "topics": [
+    "electroacoustic composition", "acousmatic music", "sound art", "sound installation",
+    "sound studies", "acoustic ecology", "live electronics", "net music", "computer music",
+    "radio art", "Hörspiel", "experimental radio", "spatial audio", "ambisonics", "sound in VR",
+    "interactive installation", "sensor-based interaction", "motion tracking",
+    "computer vision", "surveillance critique", "data streams", "datafication ethics",
+    "virtual space", "3D modeling and animation", "real-time environments", "game engines",
+    "augmented reality", "experimental interfaces", "physical computing",
+    "ubiquitous computing", "science and art", "bioart", "art and technology",
+    "media events", "performative intervention", "social intervention",
+    "documentary formats", "archives and collections", "museography",
+    "institutional critique", "artistic research", "professional artistic practice"
+  ],
+  "tools_technologies": [
+    "Max/MSP", "SuperCollider", "CSound", "Pure Data", "Arduino", "C", "JavaScript",
+    "node.js", "microcontrollers", "sensors and actuators", "game engines",
+    "3D graphics software", "multitrack studio recording", "ambisonics systems"
+  ],
+  "theoretical_orientation": [
+    "art-historical contextualization of one's own artistic position",
+    "ethical and socio-political reflection of technology",
+    "interdisciplinary dialogue between art and science",
+    "everyday culture and new publics"
+  ],
+  "pedagogy": "Project-based studio work in professor-led classes (18 SWS project modules, 540h workload), plenums and colloquia, public presentation and documentation of artistic work required in nearly every module; modules from other programs of the university can be integrated; cooperation with Hochschule für Musik Franz Liszt Weimar for studio technique.",
+  "embedding_text": "MFA Medienkunst/Mediengestaltung (Media Art and Design) at Bauhaus-Universität Weimar, offered as a German-taught and a parallel English-taught (MAD) variant. A professorship-based, project-driven media art master where students join one of six chairs: Acoustic Ecologies and Sound Studies (Kerstin Ergenzinger), Electroacoustic Composition and Sound Art (Maximilian Marcoll — acousmatic music, sound installation, live electronics, net music, computer music with Max/MSP, SuperCollider, CSound), Experimental Radio (Nathalie Singer — radio art, live Hörspiel, radio events in urban space, ambisonics, sound in VR), Design of Media Environments (Ursula Damm — sensor-based spatial interaction, motion tracking, computer vision, surveillance and datafication critique, virtual space and game engines, science & art and bioart), Interface Design (Martin Hesselmeier — experimental interfaces, interactive room installations, augmented reality, physical computing with Arduino, web-based interaction, ubiquitous technologies, artistic research), and Media Events (Wolfgang Kissel — performative public events, PR and art actions, social interventions, documentary formats for web, TV, cinema and exhibition). Teaching is studio- and project-based with public presentation, art-historical contextualization, and ethical reflection of new technologies. Two-semester core after a 240-ECTS bachelor, extendable with bridge semesters; winter intake, portfolio-based aptitude examination, no tuition fees."
+}

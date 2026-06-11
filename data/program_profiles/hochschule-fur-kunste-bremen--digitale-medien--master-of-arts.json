@@ -1,0 +1,50 @@
+{
+  "program_id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
+  "schoolId": "hochschule-fur-kunste-bremen",
+  "name": "Digitale Medien (Digital Media)",
+  "degree": "Master of Arts",
+  "status_note": "Exists in enhanced_german_art_schools.json but with a generic placeholder description; dataset also contains duplicate thin entries (digitale-medien--unspecified, digital-media--unspecified) that should be merged.",
+  "source": {
+    "type": "modulkatalog",
+    "file": "Master-Module-Descriptions.pdf",
+    "document_date": "2019-06-21",
+    "extracted_at": "2026-06-11"
+  },
+  "languages_of_instruction": ["English"],
+  "structure": "Joint degree of Hochschule für Künste Bremen and Universität Bremen with two tracks: Media Design (HfK, M.A.) and Media Informatics (Uni Bremen, M.Sc.). Compulsory media theory plus track-specific electives, free electives across both universities, a master project on a problem with societal/scientific/technological/artistic relevance, and a thesis with colloquium.",
+  "tracks": [
+    {
+      "name": "Media Design (HfK Bremen)",
+      "modules": ["Media Theory", "Media Art / Media Aesthetics", "Media Design", "Forms of Intermedial Design", "Introduction to Computer Music", "Smart Materials"]
+    },
+    {
+      "name": "Media Informatics (Universität Bremen)",
+      "modules": ["Entertainment Computing", "Embodied Interaction", "Current Topics of Interactive Systems", "Cognitive Modeling", "Design of Information Systems", "Advanced Computer Graphics", "Virtual Reality and Physically-Based Simulation", "Massively-Parallel Algorithms", "Computational Geometry", "IT-Management"]
+    }
+  ],
+  "faculty": [
+    { "name": "Prof. Dr. Andrea Sick", "area": "Media theory, media history, media analysis (cultural-studies perspective)" }
+  ],
+  "topics": [
+    "media theory", "media history", "media analysis", "media philosophy",
+    "media aesthetics", "media art", "intermedial design", "computer music",
+    "digital sound analysis", "sound synthesis", "sound processing",
+    "smart materials", "thermochromatic and electroluminescent materials",
+    "embodied interaction", "human-computer interaction", "interactive systems",
+    "entertainment computing", "cognitive modeling", "information system design",
+    "computer graphics", "virtual reality", "physically-based simulation",
+    "massively parallel algorithms", "GPU computing", "computational geometry",
+    "IT management"
+  ],
+  "tools_technologies": [
+    "CUDA C", "UML", "real-time rendering", "GPU architectures",
+    "sound synthesis software", "smart materials (nitinol wires, thermochromatic colours, electroluminescent surfaces)"
+  ],
+  "theoretical_orientation": [
+    "cultural studies and media studies perspective on technology",
+    "responsible engagement with technological development",
+    "research-question-driven project work bridging art, design and informatics"
+  ],
+  "pedagogy": "Seminar- and lecture-based modules across an art school and a university, free electives from both institutions, team-based master project culminating in a research-oriented thesis. English-taught.",
+  "embedding_text": "MA Digitale Medien (Digital Media) at Hochschule für Künste Bremen, a joint English-taught program with Universität Bremen combining a Media Design track and a Media Informatics track. Media Design covers media theory from a cultural-studies perspective (media history, media analysis, media philosophy with Prof. Andrea Sick), media art and media aesthetics, intermedial design, computer music (digital sound analysis, sound synthesis and processing), and smart materials for artistic production (thermochromatic colours, nitinol wires, electroluminescent surfaces). Media Informatics covers embodied interaction, entertainment computing, interactive systems, cognitive modeling, advanced computer graphics, virtual reality and physically-based simulation, massively parallel GPU algorithms with CUDA, computational geometry, information system design with UML, and IT management. Students complete a master project on a problem with societal, scientific, technological, artistic or design relevance, bridging art school and university."
+}

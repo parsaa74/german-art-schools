@@ -388,7 +388,7 @@ function main() {
   // ----- sanity assertions -----
   const schoolCount = Object.keys(schools).length;
   const programCount = Object.keys(programs).length;
-  if (schoolCount !== 82) fail(`expected 82 schools, got ${schoolCount}`);
+  if (schoolCount !== 93) fail(`expected 93 schools, got ${schoolCount}`);
   if (programCount < 700) fail(`expected >= 700 programs, got ${programCount}`);
   for (const p of Object.values(programs)) {
     if (!schools[p.school_id]) fail(`program ${p.program_id} references unknown school ${p.school_id}`);
