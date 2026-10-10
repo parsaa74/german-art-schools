@@ -1,4 +1,17 @@
+# Dependencies
 node_modules
+
+# Build output
+dist/
+out/
+.next/
+tsconfig.tsbuildinfo
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+.env.sentry-build-plugin
 
 # Python
 __pycache__/
@@ -6,53 +19,38 @@ __pycache__/
 *$py.class
 venv/
 env/
-.env
 
-# IDE
+# Editors and OS
 .vscode/
 .idea/
-
-# System files
 .DS_Store
 Thumbs.db
 
-# Sentry Config File
-.env.sentry-build-plugin
+# AI tools and local agent config
+.cursor/
+.cursorignore
+.roo/
+.roomodes
+mcp_servers.json
+.pi/
+.claude/
+.playwright-mcp/
 
-# Build outputs
-.next/
-dist/
-out/
-
-# Environment files
-.env.local
-.env.*.local
-
-# Generated/temporary files
+# Local working files (kept on disk, not published)
+.dev/
+scratch/
+missing programs/
+.sentry-native/
+Generated Image*.png
 temp*.html
 *_data.html
 *.log
 *.tmp
-tsconfig.tsbuildinfo
 
 # Build-only embedding artifacts (large, not shipped to client)
 /data/program_embeddings.json
 
-# Generated screenshots
-Generated Image*.png
-
-# AI/Cursor and Roo configuration
-.cursor/
-.cursorignore
-.roo/
-mcp_servers.json
-.roomodes
-
-# Ignore documentation except README and LICENSE
+# Documentation lives in README.md and LICENSE only
 *.md
 !README.md
 !LICENSE
-
-# Browser session artifacts
-.playwright-mcp/
-scratch/
