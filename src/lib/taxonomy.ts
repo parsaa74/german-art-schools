@@ -65,6 +65,27 @@ export function matchScore(text: string, query: string): number {
   return total / qWords.length;
 }
 
+/** Search real degrees by their official aliases and nested classes/areas too.
+ * A class match opens its parent degree; it must never become a fake programme. */
+export function programSearchMatch(p: {
+  name: string;
+  searchAliases?: string[];
+  specializations?: string[];
+  teachingAreas?: Array<{ name: string }>;
+}, query: string): { score: number; area?: string } {
+  let score = Math.max(matchScore(p.name, query), ...(p.searchAliases ?? []).map((a) => matchScore(a, query)));
+  let area: string | undefined;
+  for (const a of p.teachingAreas ?? []) {
+    const hit = Math.max(0, matchScore(a.name, query) - 10);
+    if (hit > score) { score = hit; area = a.name; }
+  }
+  for (const s of p.specializations ?? []) {
+    const hit = Math.max(0, matchScore(s, query) - 15);
+    if (hit > score) { score = hit; area = s; }
+  }
+  return { score, area };
+}
+
 // ---------------------------------------------------------------- subjects --
 
 export const SUBJECT_GROUPS = [
@@ -146,7 +167,7 @@ export function degreeAbbrev(degree: string | undefined): string {
   const known: Record<string, string> = {
     'Bachelor of Arts': 'BA', 'Master of Arts': 'MA', 'Bachelor of Music': 'BMus', 'Master of Music': 'MMus',
     'Bachelor of Science': 'BSc', 'Master of Science': 'MSc', 'Bachelor of Fine Arts': 'BFA', 'Master of Fine Arts': 'MFA',
-    'Master of Education': 'MEd', 'Bachelor of Engineering': 'BEng', 'Master of Architecture': 'MArch',
+    'Master of Education': 'MEd', 'Bachelor of Engineering': 'BEng', 'Master of Engineering': 'MEng', 'Master of Architecture': 'MArch',
   };
   if (known[d]) return known[d];
   const g = degreeGroupOf(d);
@@ -181,10 +202,11 @@ const ART_SCHOOL_TYPES = new Set(['art_academy', 'music_academy', 'film_universi
  * Their academic programs (musicology, management, …) stay unknown.
  */
 export function admissionOf(
-  p: { name: string; admission?: string; details?: { portfolioRequired?: boolean | null } | null },
+  p: { name: string; status?: { status: string }; admission?: string; details?: { portfolioRequired?: boolean | null } | null },
   schoolType: string
 ): Admission | undefined {
-  // researched grade-restricted programs are known not to be NC-free — no art-school fallback
+  if (p.status?.status === 'not-matched' || p.status?.status === 'discontinued') return undefined;
+  // Explicit restrictions block the NC-free fallback, even when a portfolio is required.
   if (p.admission) return p.admission === 'aptitude' || p.admission === 'open' ? p.admission : undefined;
   if (p.details?.portfolioRequired) return 'aptitude';
   if (ART_SCHOOL_TYPES.has(schoolType) && subjectGroupOf(p.name) !== 'Theory, Curating & Management') return 'aptitude';

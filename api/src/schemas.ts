@@ -88,6 +88,13 @@ export const ProgramSchema = z
     duration: z.string().nullable(),
     description: z.string().nullable(),
     specializations: z.array(z.string()),
+    search_aliases: z.array(z.string()).optional(),
+    teaching_areas: z.array(z.object({ name: z.string(), kind: z.string(), source: z.string() })).optional(),
+    joint_with: z.array(z.string()).optional(),
+    joint_program_id: z.string().nullable().optional(),
+    joint_profile: z.string().nullable().optional(),
+    intakes: z.array(z.string()).optional(),
+    status: z.object({ status: z.string(), notes: z.string().optional() }).nullable().optional(),
     portfolio_required: z.boolean().nullable(),
     tuition_eur_per_semester: z.number().nullable(),
     application_url: z.string().nullable(),
@@ -110,7 +117,7 @@ export const ProgramSummarySchema = z
   })
   .openapi('ProgramSummary');
 
-/** Strict YYYY-MM-DD with a real month/day (year is ignored — windows are year-agnostic). */
+/** Strict YYYY-MM-DD with a real month/day. Published single-round windows retain their year. */
 export const IsoDateSchema = z
   .string()
   .regex(/^\d{4}-\d{2}-\d{2}$/, 'must be an ISO date (YYYY-MM-DD)')
@@ -135,11 +142,11 @@ export const ProgramsQuerySchema = z.object({
   state: z.string().optional().openapi({ description: "Filter via the program's school state." }),
   q: z.string().optional().openapi({
     description:
-      'Case-insensitive keyword search over name + description + specializations. All whitespace-separated tokens must match.',
+      'Case-insensitive keyword search over name + description + specializations + official aliases + nested teaching areas. All whitespace-separated tokens must match.',
   }),
   open_on: IsoDateSchema.optional().openapi({
     description:
-      'ISO date (YYYY-MM-DD). Matches programs with ANY deadline window containing that month/day. Windows are year-agnostic and may wrap the year boundary (start > end). Windows with a null start (or null end) are never matched.',
+      'ISO date (YYYY-MM-DD). Matches programs with ANY deadline window containing the date. Dated windows match only their published round; recurring windows use month/day and may wrap the year boundary (start > end). Windows with a null start (or null end) are never matched.',
     example: '2026-06-10',
   }),
   limit: z.coerce.number().int().min(1).max(200).default(50),

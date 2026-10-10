@@ -1,12 +1,8 @@
 {
   "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts": [
     {
-      "id": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.67
-    },
-    {
       "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.59
+      "weight": 0.6
     },
     {
       "id": "akademie-munchen--fine-arts--diploma",
@@ -21,12 +17,12 @@
       "weight": 0.5
     },
     {
-      "id": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
+      "id": "hfbk-dresden--fine-arts--diploma",
       "weight": 0.5
     },
     {
-      "id": "hfbk-dresden--fine-arts--diploma",
-      "weight": 0.5
+      "id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--diploma",
+      "weight": 0.47
     },
     {
       "id": "hochschule-der-bildenden-kunste-essen--fine-arts--bachelor-of-fine-arts",
@@ -41,80 +37,50 @@
       "weight": 0.42
     }
   ],
-  "kunstakademie-munster--fine-arts--bachelor-of-fine-arts": [
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.67
-    },
-    {
-      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.52
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--diploma",
-      "weight": 0.47
-    },
-    {
-      "id": "akademie-nurnberg--fine-arts--diploma-in-fine-arts",
-      "weight": 0.47
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
-      "weight": 0.44
-    },
-    {
-      "id": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
-      "weight": 0.43
-    },
-    {
-      "id": "hochschule-der-bildenden-kunste-essen--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.4
-    }
-  ],
   "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts": [
     {
-      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.59
-    },
-    {
-      "id": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
-      "weight": 0.59
-    },
-    {
       "id": "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.58
+      "weight": 0.61
+    },
+    {
+      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
+      "weight": 0.6
     },
     {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
-      "weight": 0.55
-    },
-    {
-      "id": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.52
+      "weight": 0.59
     },
     {
       "id": "hfbk-dresden--fine-arts--diploma",
+      "weight": 0.54
+    },
+    {
+      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
+      "weight": 0.52
+    },
+    {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
       "weight": 0.52
     },
     {
       "id": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.48
+      "weight": 0.49
     },
     {
       "id": "hochschule-der-bildenden-kunste-essen--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.48
+      "weight": 0.46
     },
     {
-      "id": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
-      "weight": 0.47
+      "id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphic-arts--diploma",
+      "weight": 0.4
     },
     {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphics--diploma",
-      "weight": 0.38
+      "weight": 0.39
     },
     {
       "id": "academy-of-visual-arts-frankfurt--visual-arts--bachelor-of-arts",
-      "weight": 0.35
+      "weight": 0.36
     }
   ],
   "akademie-munchen--fine-arts--diploma": [
@@ -197,22 +163,14 @@
       "weight": 0.51
     },
     {
-      "id": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.47
-    },
-    {
       "id": "kunstakademie-dusseldorf--fine-arts--diploma",
       "weight": 0.46
     }
   ],
   "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts": [
     {
-      "id": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
-      "weight": 0.74
-    },
-    {
       "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.58
+      "weight": 0.61
     },
     {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
@@ -231,6 +189,10 @@
       "weight": 0.5
     },
     {
+      "id": "hochschule-der-bildenden-kunste-saar--fine-arts--diploma",
+      "weight": 0.5
+    },
+    {
       "id": "academy-of-visual-arts-frankfurt--visual-arts--bachelor-of-arts",
       "weight": 0.45
     },
@@ -243,29 +205,17 @@
       "weight": 0.41
     }
   ],
-  "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts": [
+  "hfbk-dresden--fine-arts--diploma": [
     {
-      "id": "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.74
-    },
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
-      "weight": 0.61
-    },
-    {
-      "id": "hochschule-fur-kunste-bremen--freie-kunst--diploma",
+      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
       "weight": 0.6
     },
     {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
+      "weight": 0.57
+    },
+    {
       "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.59
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--diploma",
-      "weight": 0.55
-    },
-    {
-      "id": "hochschule-der-bildenden-kunste-saar--fine-arts--diploma",
       "weight": 0.54
     },
     {
@@ -273,18 +223,52 @@
       "weight": 0.5
     },
     {
-      "id": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.46
+      "id": "akademie-munchen--fine-arts--diploma",
+      "weight": 0.47
     },
     {
-      "id": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.43
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
+      "weight": 0.45
+    }
+  ],
+  "hochschule-fur-bildende-kunste-braunschweig--fine-arts--diploma": [
+    {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
+      "weight": 0.7
+    },
+    {
+      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
+      "weight": 0.66
+    },
+    {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
+      "weight": 0.66
+    },
+    {
+      "id": "hochschule-der-bildenden-kunste-saar--fine-arts--diploma",
+      "weight": 0.63
+    },
+    {
+      "id": "burg-giebichenstein--fine-arts--diploma",
+      "weight": 0.55
+    },
+    {
+      "id": "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts",
+      "weight": 0.54
+    },
+    {
+      "id": "akademie-nurnberg--fine-arts--diploma-in-fine-arts",
+      "weight": 0.51
+    },
+    {
+      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
+      "weight": 0.47
     }
   ],
   "hochschule-fur-bildende-kunste-hamburg--fine-arts--master-of-fine-arts": [
     {
       "id": "universitat-der-kunste-berlin--fine-arts--master-of-fine-arts",
-      "weight": 0.77
+      "weight": 0.76
     },
     {
       "id": "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts",
@@ -303,34 +287,30 @@
       "weight": 0.57
     },
     {
-      "id": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
-      "weight": 0.52
-    },
-    {
       "id": "hochschule-fur-gestaltung-offenbach--postgraduate-studies-meisterschuler--meisterschuler",
       "weight": 0.48
     }
   ],
   "universitat-der-kunste-berlin--fine-arts--master-of-fine-arts": [
     {
-      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--master-of-fine-arts",
+      "id": "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts",
       "weight": 0.77
     },
     {
-      "id": "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts",
+      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--master-of-fine-arts",
       "weight": 0.76
     },
     {
-      "id": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
-      "weight": 0.69
+      "id": "stadelschule-frankfurt--fine-arts--master",
+      "weight": 0.59
     },
     {
-      "id": "stadelschule-frankfurt--fine-arts--master",
-      "weight": 0.61
+      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--master-of-arts",
+      "weight": 0.5
     },
     {
       "id": "hochschule-fur-gestaltung-offenbach--postgraduate-studies-meisterschuler--meisterschuler",
-      "weight": 0.46
+      "weight": 0.45
     },
     {
       "id": "staatliche-hochschule-fur-musik-trossingen--creative-arts-practice--master-of-music",
@@ -340,11 +320,7 @@
   "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts": [
     {
       "id": "universitat-der-kunste-berlin--fine-arts--master-of-fine-arts",
-      "weight": 0.76
-    },
-    {
-      "id": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
-      "weight": 0.75
+      "weight": 0.77
     },
     {
       "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--master-of-fine-arts",
@@ -361,6 +337,10 @@
     {
       "id": "staatliche-hochschule-fur-musik-trossingen--creative-arts-practice--master-of-music",
       "weight": 0.42
+    },
+    {
+      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--master-of-arts",
+      "weight": 0.41
     }
   ],
   "stadelschule-frankfurt--fine-arts--master": [
@@ -374,15 +354,15 @@
     },
     {
       "id": "universitat-der-kunste-berlin--fine-arts--master-of-fine-arts",
-      "weight": 0.61
+      "weight": 0.59
+    },
+    {
+      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--master-of-arts",
+      "weight": 0.51
     },
     {
       "id": "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts",
       "weight": 0.51
-    },
-    {
-      "id": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
-      "weight": 0.36
     },
     {
       "id": "akademie-nurnberg--fine-arts--diploma",
@@ -411,12 +391,16 @@
       "weight": 0.58
     },
     {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--strategische-gestaltung--master-of-arts",
-      "weight": 0.44
+      "id": "stadelschule-frankfurt--fine-arts--master",
+      "weight": 0.51
     },
     {
-      "id": "kunsthochschule-mainz--visual-communication--diploma",
-      "weight": 0.43
+      "id": "universitat-der-kunste-berlin--fine-arts--master-of-fine-arts",
+      "weight": 0.5
+    },
+    {
+      "id": "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts",
+      "weight": 0.41
     }
   ],
   "folkwang-essen--music--master": [
@@ -438,45 +422,33 @@
     },
     {
       "id": "universitat-der-kunste-berlin--music--bachelor-of-music",
-      "weight": 0.5
+      "weight": 0.47
     },
     {
       "id": "robert-schumann-hochschule--kammermusik--master-of-music",
       "weight": 0.46
     }
   ],
-  "bauhaus-universitat-weimar--fine-art--master-of-fine-arts": [
+  "hochschule-fur-gestaltung-offenbach--postgraduate-studies-meisterschuler--meisterschuler": [
     {
-      "id": "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts",
-      "weight": 0.75
+      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--master-of-fine-arts",
+      "weight": 0.48
     },
     {
       "id": "universitat-der-kunste-berlin--fine-arts--master-of-fine-arts",
-      "weight": 0.69
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--master-of-fine-arts",
-      "weight": 0.52
-    },
-    {
-      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.47
-    },
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
       "weight": 0.45
     },
     {
-      "id": "kunsthochschule-kassel--fine-arts--diploma",
-      "weight": 0.44
+      "id": "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts",
+      "weight": 0.45
+    },
+    {
+      "id": "hfbk-dresden--meisterschuler-master-class--meisterschuler",
+      "weight": 0.4
     },
     {
       "id": "stadelschule-frankfurt--fine-arts--master",
-      "weight": 0.36
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--postgraduate-studies-meisterschuler--meisterschuler",
-      "weight": 0.34
+      "weight": 0.35
     }
   ],
   "hochschule-fur-bildende-kunste-hamburg--art-education--master-of-education": [
@@ -502,7 +474,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.64
+      "weight": 0.61
     },
     {
       "id": "hochschule-fur-musik-saar--advanced-education-in-music-pedagogy--master-of-education",
@@ -556,7 +528,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.57
+      "weight": 0.54
     },
     {
       "id": "akademie-munchen--art-education--unspecified",
@@ -614,7 +586,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.61
+      "weight": 0.57
     },
     {
       "id": "alanus-hochschule-fur-kunst-und-gesellschaft--art-education--master-of-education",
@@ -694,7 +666,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.57
+      "weight": 0.54
     },
     {
       "id": "hochschule-fur-musik-wurzburg--kunstlerisch-padagogische-masterstudiengange--master-of-music",
@@ -732,7 +704,11 @@
     },
     {
       "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.56
+      "weight": 0.55
+    },
+    {
+      "id": "akademie-munchen--art-education--unspecified",
+      "weight": 0.51
     },
     {
       "id": "hochschule-fur-musik-saar--advanced-education-in-music-pedagogy--master-of-education",
@@ -749,56 +725,56 @@
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--lehramt-musik-an-gymnasien--master",
       "weight": 0.45
-    },
-    {
-      "id": "khm-munchen--kunstpadagogik--staatsexamen",
-      "weight": 0.42
     }
   ],
   "universitat-der-kunste-berlin--art-education--bachelor-of-arts": [
     {
       "id": "hochschule-fur-bildende-kunste-hamburg--art-education--master-of-education",
-      "weight": 0.64
-    },
-    {
-      "id": "hochschule-der-bildenden-kunste-saar--art-education--master-of-education",
       "weight": 0.61
     },
     {
       "id": "hochschule-fur-gestaltung-offenbach--art-education-secondary-schools--state-examination",
-      "weight": 0.6
+      "weight": 0.61
     },
     {
-      "id": "hochschule-fur-bildende-kunste-braunschweig--art-education--master-of-education",
-      "weight": 0.57
-    },
-    {
-      "id": "kunstakademie-dusseldorf--art-education--master-of-education",
+      "id": "hochschule-der-bildenden-kunste-saar--art-education--master-of-education",
       "weight": 0.57
     },
     {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstpadagogik--master-of-education",
-      "weight": 0.56
-    },
-    {
-      "id": "akademie-munchen--art-education--unspecified",
       "weight": 0.55
     },
     {
+      "id": "hochschule-fur-bildende-kunste-braunschweig--art-education--master-of-education",
+      "weight": 0.54
+    },
+    {
+      "id": "kunstakademie-dusseldorf--art-education--master-of-education",
+      "weight": 0.54
+    },
+    {
+      "id": "akademie-munchen--art-education--unspecified",
+      "weight": 0.54
+    },
+    {
       "id": "alanus-hochschule-fur-kunst-und-gesellschaft--art-education--master-of-education",
-      "weight": 0.48
+      "weight": 0.47
     },
     {
       "id": "hochschule-fur-musik-nurnberg--kunstlerisch-padagogischer-bachelor--bachelor-of-music",
-      "weight": 0.45
+      "weight": 0.46
     },
     {
-      "id": "hmt-leipzig--music-education--unspecified",
-      "weight": 0.41
+      "id": "khm-munchen--kunstpadagogik--staatsexamen",
+      "weight": 0.43
+    },
+    {
+      "id": "akademie-nurnberg--art-education--unspecified",
+      "weight": 0.39
     },
     {
       "id": "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts",
-      "weight": 0.35
+      "weight": 0.34
     }
   ],
   "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma": [
@@ -851,6 +827,10 @@
       "weight": 0.53
     },
     {
+      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
+      "weight": 0.52
+    },
+    {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphic-arts--diploma",
       "weight": 0.47
     },
@@ -859,50 +839,8 @@
       "weight": 0.44
     },
     {
-      "id": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.44
-    },
-    {
       "id": "khm-munchen--freie-kunst--diploma",
       "weight": 0.42
-    }
-  ],
-  "hochschule-fur-bildende-kunste-braunschweig--fine-arts--diploma": [
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
-      "weight": 0.7
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
-      "weight": 0.66
-    },
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
-      "weight": 0.66
-    },
-    {
-      "id": "hochschule-der-bildenden-kunste-saar--fine-arts--diploma",
-      "weight": 0.63
-    },
-    {
-      "id": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
-      "weight": 0.55
-    },
-    {
-      "id": "burg-giebichenstein--fine-arts--diploma",
-      "weight": 0.55
-    },
-    {
-      "id": "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.54
-    },
-    {
-      "id": "akademie-nurnberg--fine-arts--diploma-in-fine-arts",
-      "weight": 0.51
-    },
-    {
-      "id": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.47
     }
   ],
   "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma": [
@@ -923,8 +861,8 @@
       "weight": 0.62
     },
     {
-      "id": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
-      "weight": 0.61
+      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
+      "weight": 0.59
     },
     {
       "id": "burg-giebichenstein--fine-arts--diploma",
@@ -933,10 +871,6 @@
     {
       "id": "hfbk-dresden--fine-arts--diploma",
       "weight": 0.57
-    },
-    {
-      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.55
     },
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--diploma",
@@ -949,10 +883,6 @@
     {
       "id": "khm-munchen--freie-kunst--diploma",
       "weight": 0.52
-    },
-    {
-      "id": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
-      "weight": 0.45
     },
     {
       "id": "kunsthochschule-berlin-weissensee--fine-arts--diploma",
@@ -1017,32 +947,6 @@
       "weight": 0.36
     }
   ],
-  "hfbk-dresden--fine-arts--diploma": [
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
-      "weight": 0.6
-    },
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
-      "weight": 0.57
-    },
-    {
-      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.52
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.5
-    },
-    {
-      "id": "akademie-munchen--fine-arts--diploma",
-      "weight": 0.47
-    },
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
-      "weight": 0.45
-    }
-  ],
   "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma": [
     {
       "id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--diploma",
@@ -1073,12 +977,12 @@
       "weight": 0.53
     },
     {
-      "id": "hfbk-dresden--fine-arts--diploma",
-      "weight": 0.45
+      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
+      "weight": 0.52
     },
     {
-      "id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphic-arts--diploma",
-      "weight": 0.38
+      "id": "hfbk-dresden--fine-arts--diploma",
+      "weight": 0.45
     }
   ],
   "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified": [
@@ -1115,8 +1019,16 @@
       "weight": 0.63
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
+      "id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
       "weight": 0.62
+    },
+    {
+      "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
+      "weight": 0.6
+    },
+    {
+      "id": "technische-hochschule-ingolstadt--user-experience-design--unspecified",
+      "weight": 0.59
     },
     {
       "id": "akademie-nurnberg--fine-arts--unspecified",
@@ -1165,10 +1077,6 @@
       "weight": 0.7
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
-      "weight": 0.68
-    },
-    {
       "id": "kunsthochschule-kassel--fine-arts--unspecified",
       "weight": 0.65
     },
@@ -1185,10 +1093,6 @@
       "weight": 0.62
     },
     {
-      "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
-      "weight": 0.61
-    },
-    {
       "id": "technische-hochschule-ingolstadt--user-experience-design--unspecified",
       "weight": 0.61
     },
@@ -1197,12 +1101,12 @@
       "weight": 0.6
     },
     {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified",
+      "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
       "weight": 0.6
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--media--unspecified",
-      "weight": 0.59
+      "id": "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified",
+      "weight": 0.6
     },
     {
       "id": "hochschule-der-bildenden-kunste-essen--fine-arts--unspecified",
@@ -1215,6 +1119,14 @@
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified",
       "weight": 0.56
+    },
+    {
+      "id": "muthesius-kunsthochschule-kiel--communication-design--unspecified",
+      "weight": 0.56
+    },
+    {
+      "id": "universitat-der-kunste-berlin--art-and-media--unspecified",
+      "weight": 0.51
     },
     {
       "id": "akademie-munchen--fine-arts--unspecified",
@@ -1299,16 +1211,16 @@
       "weight": 0.58
     },
     {
-      "id": "hochschule-darmstadt--digital-media--unspecified",
-      "weight": 0.58
-    },
-    {
       "id": "universitat-wurzburg--human-computer-interaction--unspecified",
       "weight": 0.57
     },
     {
       "id": "hochschule-fur-gestaltung-schwabisch-gmund--product-design--unspecified",
       "weight": 0.56
+    },
+    {
+      "id": "universitat-der-kunste-berlin--art-and-media--unspecified",
+      "weight": 0.52
     },
     {
       "id": "bauhaus-universitat-weimar--art-and-design--unspecified",
@@ -1342,7 +1254,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
-      "weight": 0.72
+      "weight": 0.73
     },
     {
       "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified",
@@ -1354,10 +1266,6 @@
     },
     {
       "id": "kunstakademie-dusseldorf--fine-arts--unspecified",
-      "weight": 0.64
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
       "weight": 0.64
     },
     {
@@ -1373,6 +1281,10 @@
       "weight": 0.59
     },
     {
+      "id": "universitat-wurzburg--human-computer-interaction--unspecified",
+      "weight": 0.56
+    },
+    {
       "id": "akademie-munchen--fine-arts--unspecified",
       "weight": 0.52
     },
@@ -1382,7 +1294,7 @@
     },
     {
       "id": "kunsthochschule-berlin-weissensee--fine-arts--unspecified",
-      "weight": 0.41
+      "weight": 0.42
     }
   ],
   "kunsthochschule-mainz--fine-arts--unspecified": [
@@ -1437,6 +1349,10 @@
     {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--art-education--unspecified",
       "weight": 0.6
+    },
+    {
+      "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
+      "weight": 0.59
     },
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified",
@@ -1494,7 +1410,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--art-and-media--unspecified",
-      "weight": 0.52
+      "weight": 0.53
     },
     {
       "id": "bauhaus-universitat-weimar--art-and-design--unspecified",
@@ -1600,7 +1516,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--visual-communication--unspecified",
-      "weight": 0.51
+      "weight": 0.52
     },
     {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-design-graphic-design--unspecified",
@@ -1618,15 +1534,15 @@
     },
     {
       "id": "folkwang-essen--design--unspecified",
-      "weight": 0.63
+      "weight": 0.62
     },
     {
       "id": "hochschule-fur-gestaltung-offenbach--product-design--unspecified",
-      "weight": 0.59
+      "weight": 0.6
     },
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--unspecified",
-      "weight": 0.58
+      "weight": 0.59
     },
     {
       "id": "muthesius-kunsthochschule-kiel--industrial-design--unspecified",
@@ -1634,7 +1550,7 @@
     },
     {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-design-graphic-design--unspecified",
-      "weight": 0.55
+      "weight": 0.56
     },
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--unspecified",
@@ -1647,12 +1563,12 @@
       "weight": 0.68
     },
     {
-      "id": "universitat-der-kunste-berlin--design--unspecified",
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--design--unspecified",
       "weight": 0.63
     },
     {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--design--unspecified",
-      "weight": 0.63
+      "id": "universitat-der-kunste-berlin--design--unspecified",
+      "weight": 0.62
     },
     {
       "id": "akademie-nurnberg--graphic-design--unspecified",
@@ -1664,7 +1580,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--design--bachelor-of-arts",
-      "weight": 0.45
+      "weight": 0.44
     },
     {
       "id": "hochschule-reutlingen--integrated-design--bachelor-of-arts",
@@ -1694,7 +1610,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--design--unspecified",
-      "weight": 0.59
+      "weight": 0.6
     },
     {
       "id": "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified",
@@ -1741,11 +1657,11 @@
       "weight": 0.57
     },
     {
-      "id": "hochschule-fur-bildende-kunste-hamburg--design--unspecified",
-      "weight": 0.55
+      "id": "universitat-der-kunste-berlin--design--unspecified",
+      "weight": 0.56
     },
     {
-      "id": "universitat-der-kunste-berlin--design--unspecified",
+      "id": "hochschule-fur-bildende-kunste-hamburg--design--unspecified",
       "weight": 0.55
     },
     {
@@ -1759,13 +1675,13 @@
     {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--design--unspecified",
       "weight": 0.5
+    },
+    {
+      "id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--unspecified",
+      "weight": 0.43
     }
   ],
   "hochschule-fur-bildende-kunste-hamburg--film--unspecified": [
-    {
-      "id": "kunsthochschule-fur-medien-koln--film--unspecified",
-      "weight": 0.64
-    },
     {
       "id": "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified",
       "weight": 0.47
@@ -1785,20 +1701,6 @@
     {
       "id": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
       "weight": 0.34
-    }
-  ],
-  "kunsthochschule-fur-medien-koln--film--unspecified": [
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
-      "weight": 0.64
-    },
-    {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified",
-      "weight": 0.45
-    },
-    {
-      "id": "hochschule-darmstadt--motion-pictures--bachelor-of-arts",
-      "weight": 0.35
     }
   ],
   "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified": [
@@ -1829,10 +1731,6 @@
     {
       "id": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
       "weight": 0.47
-    },
-    {
-      "id": "kunsthochschule-fur-medien-koln--film--unspecified",
-      "weight": 0.45
     }
   ],
   "robert-schumann-hochschule--musikfilmregie--master-of-music": [
@@ -1875,10 +1773,6 @@
     {
       "id": "robert-schumann-hochschule--musikfilmregie--master-of-music",
       "weight": 0.37
-    },
-    {
-      "id": "kunsthochschule-fur-medien-koln--film--unspecified",
-      "weight": 0.35
     }
   ],
   "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts": [
@@ -1921,12 +1815,12 @@
       "weight": 0.57
     },
     {
-      "id": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
-      "weight": 0.54
-    },
-    {
       "id": "akademie-nurnberg--fine-arts--diploma",
       "weight": 0.53
+    },
+    {
+      "id": "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts",
+      "weight": 0.5
     },
     {
       "id": "kunstakademie-munster--freie-kunst--akademiebrief-diplom",
@@ -1961,10 +1855,6 @@
     {
       "id": "burg-giebichenstein--fine-arts--diploma",
       "weight": 0.54
-    },
-    {
-      "id": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
-      "weight": 0.44
     }
   ],
   "kunsthochschule-mainz--fine-arts--diploma": [
@@ -2023,16 +1913,16 @@
       "weight": 0.6
     },
     {
-      "id": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
-      "weight": 0.6
-    },
-    {
       "id": "folkwang-essen--fine-arts--diploma",
       "weight": 0.54
     },
     {
       "id": "khm-munchen--freie-kunst--diploma",
       "weight": 0.54
+    },
+    {
+      "id": "muthesius-kunsthochschule-kiel--fine-arts--diploma",
+      "weight": 0.53
     },
     {
       "id": "kunsthochschule-berlin-weissensee--fine-arts--diploma",
@@ -2078,7 +1968,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--design--bachelor-of-arts",
-      "weight": 0.46
+      "weight": 0.44
     },
     {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-art-graphic-design--diploma",
@@ -2135,10 +2025,6 @@
       "weight": 0.5
     },
     {
-      "id": "universitat-der-kunste-berlin--design--bachelor-of-arts",
-      "weight": 0.47
-    },
-    {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-art-graphic-design--diploma",
       "weight": 0.42
     },
@@ -2191,10 +2077,6 @@
     {
       "id": "burg-giebichenstein--design--diploma",
       "weight": 0.44
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--master-of-arts",
-      "weight": 0.43
     },
     {
       "id": "hochschule-macromedia--media-design--bachelor-of-arts",
@@ -2391,10 +2273,6 @@
       "weight": 0.43
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma",
-      "weight": 0.41
-    },
-    {
       "id": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
       "weight": 0.35
     }
@@ -2484,7 +2362,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
-      "weight": 0.62
+      "weight": 0.63
     },
     {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--art-education--unspecified",
@@ -2575,10 +2453,6 @@
       "weight": 0.59
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--product-design--diploma",
-      "weight": 0.58
-    },
-    {
       "id": "hochschule-fur-gestaltung-offenbach--product-design--bachelor-of-arts",
       "weight": 0.57
     },
@@ -2641,6 +2515,10 @@
       "weight": 0.52
     },
     {
+      "id": "hochschule-fur-gestaltung-schwabisch-gmund--produktgestaltung--bachelor-of-arts",
+      "weight": 0.5
+    },
+    {
       "id": "hdm-stuttgart--technisches-produktmanagement-technisches-design--bachelor-of-science",
       "weight": 0.48
     }
@@ -2673,10 +2551,6 @@
     {
       "id": "hochschule-fur-gestaltung-schwabisch-gmund--produktgestaltung--bachelor-of-arts",
       "weight": 0.57
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--product-design--diploma",
-      "weight": 0.56
     }
   ],
   "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--diploma": [
@@ -2691,10 +2565,6 @@
     {
       "id": "hochschule-fur-gestaltung-offenbach--product-design--bachelor-of-arts",
       "weight": 0.67
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--product-design--diploma",
-      "weight": 0.65
     },
     {
       "id": "bauhaus-universitat-weimar--product-design--master",
@@ -2755,10 +2625,6 @@
       "weight": 0.63
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--product-design--diploma",
-      "weight": 0.6
-    },
-    {
       "id": "hochschule-fur-bildende-kunste-braunschweig--industrial-design--diploma",
       "weight": 0.59
     },
@@ -2773,32 +2639,6 @@
     {
       "id": "hdm-stuttgart--technisches-produktmanagement-technisches-design--bachelor-of-science",
       "weight": 0.57
-    }
-  ],
-  "hochschule-fur-gestaltung-offenbach--product-design--diploma": [
-    {
-      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--diploma",
-      "weight": 0.65
-    },
-    {
-      "id": "bauhaus-universitat-weimar--product-design--bachelor-of-arts",
-      "weight": 0.6
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-braunschweig--industrial-design--diploma",
-      "weight": 0.58
-    },
-    {
-      "id": "muthesius-kunsthochschule-kiel--industrial-design--bachelor-of-arts",
-      "weight": 0.56
-    },
-    {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--produktgestaltung--bachelor-of-arts",
-      "weight": 0.56
-    },
-    {
-      "id": "fachhochschule-potsdam--product-design--bachelor-of-arts",
-      "weight": 0.53
     }
   ],
   "hochschule-fur-gestaltung-offenbach--product-design--bachelor-of-arts": [
@@ -2833,6 +2673,40 @@
     {
       "id": "hochschule-pforzheim--industrial-design--bachelor-of-arts",
       "weight": 0.56
+    }
+  ],
+  "hochschule-pforzheim--industrial-design--bachelor-of-arts": [
+    {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--bachelor-of-arts",
+      "weight": 0.69
+    },
+    {
+      "id": "muthesius-kunsthochschule-kiel--industrial-design--bachelor-of-arts",
+      "weight": 0.68
+    },
+    {
+      "id": "fachhochschule-potsdam--product-design--bachelor-of-arts",
+      "weight": 0.61
+    },
+    {
+      "id": "bauhaus-universitat-weimar--product-design--bachelor-of-arts",
+      "weight": 0.59
+    },
+    {
+      "id": "hochschule-fur-bildende-kunste-braunschweig--industrial-design--diploma",
+      "weight": 0.56
+    },
+    {
+      "id": "hochschule-fur-gestaltung-offenbach--product-design--bachelor-of-arts",
+      "weight": 0.56
+    },
+    {
+      "id": "hdm-stuttgart--integriertes-produktdesign--bachelor-of-arts",
+      "weight": 0.55
+    },
+    {
+      "id": "hdm-stuttgart--technisches-produktmanagement-technisches-design--bachelor-of-science",
+      "weight": 0.48
     }
   ],
   "hochschule-fur-musik-und-theater-rostock--kunstlerische-ausbildung--bachelor-of-music": [
@@ -3440,7 +3314,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.45
+      "weight": 0.46
     },
     {
       "id": "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts",
@@ -5105,6 +4979,10 @@
     {
       "id": "hochschule-fur-musik-und-theater-rostock--opernstudio--master-of-music",
       "weight": 0.6
+    },
+    {
+      "id": "folkwang-essen--theatre--unspecified",
+      "weight": 0.42
     }
   ],
   "hochschule-fur-musik-weimar--gesang-musiktheater--master-of-music": [
@@ -5439,8 +5317,8 @@
       "weight": 0.42
     },
     {
-      "id": "hmt-leipzig--music-education--unspecified",
-      "weight": 0.4
+      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--lehramt-gymnasium-mit-dem-fach-musik--master",
+      "weight": 0.38
     }
   ],
   "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--musikpadagogik--master-of-music": [
@@ -5467,10 +5345,6 @@
     {
       "id": "palucca-hochschule-fur-tanz--tanzpadagogik--master-of-arts",
       "weight": 0.48
-    },
-    {
-      "id": "hmt-leipzig--music-education--unspecified",
-      "weight": 0.47
     },
     {
       "id": "hochschule-fur-evangelische-kirchenmusik--instrumental-vokalpadagogik--master-of-music",
@@ -6897,15 +6771,15 @@
       "weight": 0.48
     },
     {
-      "id": "hmt-leipzig--drama--unspecified",
-      "weight": 0.44
-    },
-    {
       "id": "hmtm-hannover--acting--unspecified",
       "weight": 0.35
     },
     {
       "id": "hochschule-fur-schauspielkunst-berlin--schauspielregie--diplom",
+      "weight": 0.35
+    },
+    {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--regie--bachelor-of-arts",
       "weight": 0.35
     },
     {
@@ -6921,10 +6795,6 @@
     {
       "id": "hmtm-hannover--acting--unspecified",
       "weight": 0.68
-    },
-    {
-      "id": "hmt-leipzig--drama--unspecified",
-      "weight": 0.61
     },
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--regie--bachelor-of-arts",
@@ -6952,7 +6822,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--performing-arts--bachelor-of-arts",
-      "weight": 0.39
+      "weight": 0.4
     },
     {
       "id": "filmuniversitat-babelsberg-konrad-wolf--acting--unspecified",
@@ -6971,10 +6841,6 @@
     {
       "id": "hmtm-hannover--acting--unspecified",
       "weight": 0.67
-    },
-    {
-      "id": "hmt-leipzig--drama--unspecified",
-      "weight": 0.64
     },
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--sprechkunst-sprecherziehung--bachelor-of-arts",
@@ -7001,12 +6867,12 @@
       "weight": 0.42
     },
     {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--acting--unspecified",
+      "id": "universitat-der-kunste-berlin--performing-arts--bachelor-of-arts",
       "weight": 0.41
     },
     {
-      "id": "universitat-der-kunste-berlin--performing-arts--bachelor-of-arts",
-      "weight": 0.39
+      "id": "filmuniversitat-babelsberg-konrad-wolf--acting--unspecified",
+      "weight": 0.41
     },
     {
       "id": "filmakademie-baden-wurttemberg--filmschauspielworkshop--workshop",
@@ -7039,48 +6905,6 @@
       "weight": 0.37
     }
   ],
-  "hmt-leipzig--drama--unspecified": [
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--schauspiel--bachelor-of-arts",
-      "weight": 0.64
-    },
-    {
-      "id": "hmtm-hannover--acting--unspecified",
-      "weight": 0.63
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--schauspiel--bachelor-of-arts",
-      "weight": 0.61
-    },
-    {
-      "id": "folkwang-essen--theatre--unspecified",
-      "weight": 0.53
-    },
-    {
-      "id": "hochschule-fur-musik-und-theater-rostock--schauspiel--diplom",
-      "weight": 0.44
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--regie--bachelor-of-arts",
-      "weight": 0.43
-    },
-    {
-      "id": "universitat-der-kunste-berlin--performing-arts--bachelor-of-arts",
-      "weight": 0.4
-    },
-    {
-      "id": "hochschule-fur-musik-berlin--musiktheater-regie--bachelor",
-      "weight": 0.39
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--sprechkunst-sprecherziehung--bachelor-of-arts",
-      "weight": 0.39
-    },
-    {
-      "id": "hochschule-fur-musik-berlin--produktionsdramaturgie-fur-musiktheater--master",
-      "weight": 0.35
-    }
-  ],
   "hmtm-hannover--acting--unspecified": [
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--schauspiel--bachelor-of-arts",
@@ -7095,16 +6919,16 @@
       "weight": 0.63
     },
     {
-      "id": "hmt-leipzig--drama--unspecified",
-      "weight": 0.63
-    },
-    {
       "id": "folkwang-essen--theatre--unspecified",
       "weight": 0.58
     },
     {
       "id": "filmakademie-baden-wurttemberg--filmschauspielworkshop--workshop",
       "weight": 0.5
+    },
+    {
+      "id": "hochschule-fur-musik-weimar--gesang-musiktheater--bachelor-of-music",
+      "weight": 0.48
     },
     {
       "id": "hochschule-fur-schauspielkunst-berlin--schauspiel--diplom",
@@ -7117,12 +6941,46 @@
     {
       "id": "hochschule-fur-musik-und-theater-rostock--schauspiel--diplom",
       "weight": 0.35
+    },
+    {
+      "id": "universitat-der-kunste-berlin--performing-arts--bachelor-of-arts",
+      "weight": 0.35
     }
   ],
   "hochschule-fur-schauspielkunst-berlin--schauspielregie--diplom": [
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--regie--bachelor-of-arts",
       "weight": 0.4
+    },
+    {
+      "id": "hochschule-fur-musik-und-theater-rostock--schauspiel--diplom",
+      "weight": 0.35
+    }
+  ],
+  "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--regie--bachelor-of-arts": [
+    {
+      "id": "hochschule-fur-musik-berlin--musiktheater-regie--bachelor",
+      "weight": 0.73
+    },
+    {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--schauspiel--bachelor-of-arts",
+      "weight": 0.53
+    },
+    {
+      "id": "hochschule-fur-schauspielkunst-berlin--schauspielregie--diplom",
+      "weight": 0.4
+    },
+    {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--figurentheater--bachelor-of-arts",
+      "weight": 0.4
+    },
+    {
+      "id": "folkwang-essen--theatre--unspecified",
+      "weight": 0.38
+    },
+    {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--sprechkunst-sprecherziehung--bachelor-of-arts",
+      "weight": 0.37
     },
     {
       "id": "hochschule-fur-musik-und-theater-rostock--schauspiel--diplom",
@@ -7651,10 +7509,6 @@
     {
       "id": "palucca-hochschule-fur-tanz--dance-teacher-berufsbegleitend--master-of-arts",
       "weight": 0.42
-    },
-    {
-      "id": "hmt-leipzig--music-education--unspecified",
-      "weight": 0.4
     }
   ],
   "musikhochschule-lubeck--lehramt-grundschule-umstieg--master-of-education": [
@@ -8131,12 +7985,12 @@
   ],
   "kunstakademie-dusseldorf--architecture--master-of-architecture": [
     {
-      "id": "universitat-der-kunste-berlin--architecture--bachelor-of-arts",
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--master-of-science",
       "weight": 0.64
     },
     {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--master-of-science",
-      "weight": 0.64
+      "id": "universitat-der-kunste-berlin--architecture--bachelor-of-arts",
+      "weight": 0.61
     },
     {
       "id": "bauhaus-universitat-weimar--architecture--master",
@@ -8167,40 +8021,6 @@
       "weight": 0.34
     }
   ],
-  "universitat-der-kunste-berlin--architecture--bachelor-of-arts": [
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--bachelor-of-science",
-      "weight": 0.69
-    },
-    {
-      "id": "kunstakademie-dusseldorf--architecture--master-of-architecture",
-      "weight": 0.64
-    },
-    {
-      "id": "akademie-munchen--architecture--unspecified",
-      "weight": 0.56
-    },
-    {
-      "id": "bauhaus-universitat-weimar--architecture--master",
-      "weight": 0.53
-    },
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--master-of-science",
-      "weight": 0.48
-    },
-    {
-      "id": "khm-munchen--architektur-und-kunst--master-of-arts",
-      "weight": 0.42
-    },
-    {
-      "id": "hochschule-anhalt--architecture-dessau-international-architecture-graduate-school-dia--master-of-arts",
-      "weight": 0.41
-    },
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architecture--unspecified",
-      "weight": 0.35
-    }
-  ],
   "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--master-of-science": [
     {
       "id": "kunstakademie-dusseldorf--architecture--master-of-architecture",
@@ -8220,7 +8040,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--architecture--bachelor-of-arts",
-      "weight": 0.48
+      "weight": 0.45
     },
     {
       "id": "akademie-munchen--architecture--unspecified",
@@ -8235,6 +8055,40 @@
       "weight": 0.36
     }
   ],
+  "universitat-der-kunste-berlin--architecture--bachelor-of-arts": [
+    {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--bachelor-of-science",
+      "weight": 0.69
+    },
+    {
+      "id": "kunstakademie-dusseldorf--architecture--master-of-architecture",
+      "weight": 0.61
+    },
+    {
+      "id": "akademie-munchen--architecture--unspecified",
+      "weight": 0.55
+    },
+    {
+      "id": "bauhaus-universitat-weimar--architecture--master",
+      "weight": 0.52
+    },
+    {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--master-of-science",
+      "weight": 0.45
+    },
+    {
+      "id": "hochschule-anhalt--architecture-dessau-international-architecture-graduate-school-dia--master-of-arts",
+      "weight": 0.4
+    },
+    {
+      "id": "khm-munchen--architektur-und-kunst--master-of-arts",
+      "weight": 0.4
+    },
+    {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architecture--unspecified",
+      "weight": 0.35
+    }
+  ],
   "bauhaus-universitat-weimar--architecture--master": [
     {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--architektur--master-of-science",
@@ -8246,7 +8100,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--architecture--bachelor-of-arts",
-      "weight": 0.53
+      "weight": 0.52
     },
     {
       "id": "hochschule-anhalt--architecture-dessau-international-architecture-graduate-school-dia--master-of-arts",
@@ -8268,7 +8122,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--architecture--bachelor-of-arts",
-      "weight": 0.56
+      "weight": 0.55
     },
     {
       "id": "kunstakademie-dusseldorf--architecture--master-of-architecture",
@@ -8318,7 +8172,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--architecture--bachelor-of-arts",
-      "weight": 0.42
+      "weight": 0.4
     },
     {
       "id": "hochschule-anhalt--architecture-dessau-international-architecture-graduate-school-dia--master-of-arts",
@@ -8339,12 +8193,12 @@
       "weight": 0.44
     },
     {
-      "id": "universitat-der-kunste-berlin--architecture--bachelor-of-arts",
+      "id": "akademie-munchen--architecture--unspecified",
       "weight": 0.41
     },
     {
-      "id": "akademie-munchen--architecture--unspecified",
-      "weight": 0.41
+      "id": "universitat-der-kunste-berlin--architecture--bachelor-of-arts",
+      "weight": 0.4
     },
     {
       "id": "khm-munchen--architektur-und-kunst--master-of-arts",
@@ -8434,7 +8288,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
-      "weight": 0.41
+      "weight": 0.42
     }
   ],
   "hochschule-fur-grafik-und-buchkunst-leipzig--painting-printmaking--unspecified": [
@@ -8459,72 +8313,50 @@
       "weight": 0.48
     },
     {
-      "id": "academy-of-visual-arts-frankfurt--fine-arts--unspecified",
+      "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
       "weight": 0.47
     }
   ],
   "universitat-der-kunste-berlin--fine-arts--unspecified": [
     {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--unspecified",
-      "weight": 0.72
+      "weight": 0.73
     },
     {
       "id": "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified",
       "weight": 0.66
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
-      "weight": 0.62
-    },
-    {
       "id": "muthesius-kunsthochschule-kiel--fine-arts--unspecified",
-      "weight": 0.62
+      "weight": 0.63
     },
     {
-      "id": "hochschule-darmstadt--digital-media--unspecified",
-      "weight": 0.62
+      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified",
+      "weight": 0.6
     },
     {
       "id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
-      "weight": 0.61
+      "weight": 0.6
+    },
+    {
+      "id": "kunsthochschule-mainz--fine-arts--unspecified",
+      "weight": 0.59
     },
     {
       "id": "folkwang-essen--fine-arts--unspecified",
-      "weight": 0.48
+      "weight": 0.49
+    },
+    {
+      "id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-printmaking--unspecified",
+      "weight": 0.47
     },
     {
       "id": "kunsthochschule-berlin-weissensee--fine-arts--unspecified",
-      "weight": 0.42
+      "weight": 0.43
     },
     {
       "id": "kunstakademie-dusseldorf--painting--unspecified",
-      "weight": 0.41
-    }
-  ],
-  "hochschule-fur-gestaltung-offenbach--postgraduate-studies-meisterschuler--meisterschuler": [
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--master-of-fine-arts",
-      "weight": 0.48
-    },
-    {
-      "id": "universitat-der-kunste-berlin--fine-arts--master-of-fine-arts",
-      "weight": 0.46
-    },
-    {
-      "id": "muthesius-kunsthochschule-kiel--fine-arts--master-of-fine-arts",
-      "weight": 0.45
-    },
-    {
-      "id": "hfbk-dresden--meisterschuler-master-class--meisterschuler",
-      "weight": 0.4
-    },
-    {
-      "id": "stadelschule-frankfurt--fine-arts--master",
-      "weight": 0.35
-    },
-    {
-      "id": "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
-      "weight": 0.34
+      "weight": 0.42
     }
   ],
   "staatliche-hochschule-fur-musik-trossingen--creative-arts-practice--master-of-music": [
@@ -8558,14 +8390,10 @@
   "universitat-der-kunste-berlin--design--bachelor-of-arts": [
     {
       "id": "burg-giebichenstein--design--diploma",
-      "weight": 0.54
+      "weight": 0.53
     },
     {
-      "id": "academy-of-visual-arts-frankfurt--communication-design--bachelor-of-arts",
-      "weight": 0.47
-    },
-    {
-      "id": "hochschule-der-bildenden-kunste-saar--communication-design--diploma",
+      "id": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts",
       "weight": 0.46
     },
     {
@@ -8573,15 +8401,15 @@
       "weight": 0.46
     },
     {
+      "id": "hochschule-der-bildenden-kunste-saar--communication-design--diploma",
+      "weight": 0.44
+    },
+    {
       "id": "folkwang-essen--design--unspecified",
-      "weight": 0.45
+      "weight": 0.44
     },
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--diploma",
-      "weight": 0.43
-    },
-    {
-      "id": "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts",
       "weight": 0.43
     },
     {
@@ -8590,15 +8418,11 @@
     },
     {
       "id": "hochschule-reutlingen--integrated-design--bachelor-of-arts",
-      "weight": 0.38
-    },
-    {
-      "id": "hochschule-macromedia--media-design--bachelor-of-arts",
-      "weight": 0.35
+      "weight": 0.37
     },
     {
       "id": "muthesius-kunsthochschule-kiel--design--diploma",
-      "weight": 0.34
+      "weight": 0.35
     }
   ],
   "burg-giebichenstein--design--diploma": [
@@ -8608,7 +8432,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--design--bachelor-of-arts",
-      "weight": 0.54
+      "weight": 0.53
     },
     {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-design-graphic-design--diploma",
@@ -8625,6 +8449,32 @@
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--diploma",
       "weight": 0.43
+    }
+  ],
+  "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts": [
+    {
+      "id": "hdm-stuttgart--integriertes-produktdesign--bachelor-of-arts",
+      "weight": 0.63
+    },
+    {
+      "id": "hochschule-reutlingen--integrated-design--bachelor-of-arts",
+      "weight": 0.6
+    },
+    {
+      "id": "koln-international-school-of-design--integrated-design--bachelor-of-arts",
+      "weight": 0.57
+    },
+    {
+      "id": "hochschule-anhalt--design-integrated-design--bachelor-of-arts",
+      "weight": 0.53
+    },
+    {
+      "id": "universitat-der-kunste-berlin--design--bachelor-of-arts",
+      "weight": 0.46
+    },
+    {
+      "id": "folkwang-essen--design--unspecified",
+      "weight": 0.46
     }
   ],
   "hochschule-fur-grafik-und-buchkunst-leipzig--book-design-graphic-design--diploma": [
@@ -8664,7 +8514,7 @@
   "universitat-der-kunste-berlin--music--bachelor-of-music": [
     {
       "id": "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
-      "weight": 0.67
+      "weight": 0.7
     },
     {
       "id": "folkwang-essen--music--unspecified",
@@ -8672,29 +8522,25 @@
     },
     {
       "id": "hochschule-fur-kunste-bremen--musik--master-of-music",
-      "weight": 0.52
+      "weight": 0.51
     },
     {
       "id": "folkwang-essen--music--master",
-      "weight": 0.5
+      "weight": 0.47
     },
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--musik--bachelor-of-music",
-      "weight": 0.42
+      "weight": 0.44
     },
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--musik--bachelor-of-music",
-      "weight": 0.38
-    },
-    {
-      "id": "hmt-leipzig--music--unspecified",
-      "weight": 0.34
+      "weight": 0.39
     }
   ],
   "hochschule-fur-kunste-bremen--musik--bachelor-of-music": [
     {
       "id": "universitat-der-kunste-berlin--music--bachelor-of-music",
-      "weight": 0.67
+      "weight": 0.7
     },
     {
       "id": "folkwang-essen--music--unspecified",
@@ -8727,10 +8573,6 @@
       "weight": 0.55
     },
     {
-      "id": "hmt-leipzig--music--unspecified",
-      "weight": 0.51
-    },
-    {
       "id": "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
       "weight": 0.5
     },
@@ -8754,7 +8596,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--music--bachelor-of-music",
-      "weight": 0.52
+      "weight": 0.51
     },
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--musik--master-of-music",
@@ -8808,11 +8650,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--music--bachelor-of-music",
-      "weight": 0.42
-    },
-    {
-      "id": "hmt-leipzig--music--unspecified",
-      "weight": 0.36
+      "weight": 0.44
     },
     {
       "id": "hmtm-hannover--music--unspecified",
@@ -8838,7 +8676,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--music--bachelor-of-music",
-      "weight": 0.38
+      "weight": 0.39
     },
     {
       "id": "hochschule-fur-musik-saar--kunstlerisches-profil-orchester-und-ensemblemusik--bachelor-of-music",
@@ -8846,10 +8684,6 @@
     },
     {
       "id": "folkwang-essen--music--unspecified",
-      "weight": 0.36
-    },
-    {
-      "id": "hmt-leipzig--music--unspecified",
       "weight": 0.36
     }
   ],
@@ -8859,26 +8693,22 @@
       "weight": 0.45
     },
     {
-      "id": "hmt-leipzig--drama--unspecified",
-      "weight": 0.4
-    },
-    {
       "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--schauspiel--bachelor-of-arts",
-      "weight": 0.39
+      "weight": 0.41
     },
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--schauspiel--bachelor-of-arts",
-      "weight": 0.39
+      "weight": 0.4
+    },
+    {
+      "id": "hmtm-hannover--acting--unspecified",
+      "weight": 0.35
     }
   ],
   "folkwang-essen--theatre--unspecified": [
     {
       "id": "hmtm-hannover--acting--unspecified",
       "weight": 0.58
-    },
-    {
-      "id": "hmt-leipzig--drama--unspecified",
-      "weight": 0.53
     },
     {
       "id": "filmuniversitat-babelsberg-konrad-wolf--acting--unspecified",
@@ -8897,6 +8727,10 @@
       "weight": 0.45
     },
     {
+      "id": "hochschule-fur-musik-und-tanz-koln--gesang-musiktheater--master-of-music",
+      "weight": 0.42
+    },
+    {
       "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--regie--bachelor-of-arts",
       "weight": 0.38
     }
@@ -8908,7 +8742,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.6
+      "weight": 0.61
     },
     {
       "id": "khm-munchen--kunstpadagogik--staatsexamen",
@@ -8930,22 +8764,22 @@
   "universitat-der-kunste-berlin--fine-arts--diploma": [
     {
       "id": "muthesius-kunsthochschule-kiel--fine-arts--diploma",
-      "weight": 0.67
-    },
-    {
-      "id": "academy-of-visual-arts-frankfurt--fine-arts--diploma",
-      "weight": 0.65
+      "weight": 0.68
     },
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--diploma",
-      "weight": 0.63
+      "weight": 0.65
     },
     {
-      "id": "hochschule-der-bildenden-kunste-essen--fine-arts--diploma",
-      "weight": 0.6
+      "id": "academy-of-visual-arts-frankfurt--fine-arts--diploma",
+      "weight": 0.64
     },
     {
       "id": "folkwang-essen--fine-arts--diploma",
+      "weight": 0.59
+    },
+    {
+      "id": "hochschule-der-bildenden-kunste-essen--fine-arts--diploma",
       "weight": 0.58
     },
     {
@@ -8957,26 +8791,26 @@
       "weight": 0.54
     },
     {
+      "id": "kunsthochschule-berlin-weissensee--fine-arts--diploma",
+      "weight": 0.5
+    },
+    {
       "id": "stadelschule-frankfurt--fine-arts--diploma",
       "weight": 0.48
     },
     {
-      "id": "kunsthochschule-berlin-weissensee--fine-arts--diploma",
-      "weight": 0.48
-    },
-    {
       "id": "khm-munchen--freie-kunst--diploma",
-      "weight": 0.42
+      "weight": 0.43
     }
   ],
   "muthesius-kunsthochschule-kiel--fine-arts--diploma": [
     {
-      "id": "academy-of-visual-arts-frankfurt--fine-arts--diploma",
+      "id": "universitat-der-kunste-berlin--fine-arts--diploma",
       "weight": 0.68
     },
     {
-      "id": "universitat-der-kunste-berlin--fine-arts--diploma",
-      "weight": 0.67
+      "id": "academy-of-visual-arts-frankfurt--fine-arts--diploma",
+      "weight": 0.68
     },
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--diploma",
@@ -9003,38 +8837,12 @@
       "weight": 0.55
     },
     {
-      "id": "kunsthochschule-berlin-weissensee--fine-arts--diploma",
-      "weight": 0.43
-    }
-  ],
-  "academy-of-visual-arts-frankfurt--fine-arts--diploma": [
-    {
-      "id": "muthesius-kunsthochschule-kiel--fine-arts--diploma",
-      "weight": 0.68
-    },
-    {
-      "id": "universitat-der-kunste-berlin--fine-arts--diploma",
-      "weight": 0.65
-    },
-    {
-      "id": "hochschule-der-bildenden-kunste-essen--fine-arts--diploma",
-      "weight": 0.61
-    },
-    {
-      "id": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--diploma",
-      "weight": 0.54
-    },
-    {
-      "id": "burg-giebichenstein--fine-arts--diploma",
-      "weight": 0.54
-    },
-    {
-      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--diploma",
+      "id": "hochschule-fur-kunste-bremen--freie-kunst--diploma",
       "weight": 0.53
     },
     {
-      "id": "stadelschule-frankfurt--fine-arts--diploma",
-      "weight": 0.49
+      "id": "kunsthochschule-berlin-weissensee--fine-arts--diploma",
+      "weight": 0.43
     }
   ],
   "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--diploma": [
@@ -9043,12 +8851,12 @@
       "weight": 0.67
     },
     {
-      "id": "burg-giebichenstein--fine-arts--diploma",
+      "id": "universitat-der-kunste-berlin--fine-arts--diploma",
       "weight": 0.65
     },
     {
-      "id": "universitat-der-kunste-berlin--fine-arts--diploma",
-      "weight": 0.63
+      "id": "burg-giebichenstein--fine-arts--diploma",
+      "weight": 0.65
     },
     {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--diploma",
@@ -9071,29 +8879,33 @@
       "weight": 0.41
     }
   ],
-  "hochschule-der-bildenden-kunste-essen--fine-arts--diploma": [
-    {
-      "id": "stadelschule-frankfurt--fine-arts--diploma",
-      "weight": 0.63
-    },
+  "academy-of-visual-arts-frankfurt--fine-arts--diploma": [
     {
       "id": "muthesius-kunsthochschule-kiel--fine-arts--diploma",
-      "weight": 0.61
-    },
-    {
-      "id": "academy-of-visual-arts-frankfurt--fine-arts--diploma",
-      "weight": 0.61
+      "weight": 0.68
     },
     {
       "id": "universitat-der-kunste-berlin--fine-arts--diploma",
-      "weight": 0.6
+      "weight": 0.64
+    },
+    {
+      "id": "hochschule-der-bildenden-kunste-essen--fine-arts--diploma",
+      "weight": 0.61
     },
     {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--diploma",
-      "weight": 0.51
+      "weight": 0.54
     },
     {
-      "id": "folkwang-essen--fine-arts--diploma",
+      "id": "burg-giebichenstein--fine-arts--diploma",
+      "weight": 0.54
+    },
+    {
+      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--diploma",
+      "weight": 0.53
+    },
+    {
+      "id": "stadelschule-frankfurt--fine-arts--diploma",
       "weight": 0.49
     }
   ],
@@ -9104,7 +8916,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--fine-arts--diploma",
-      "weight": 0.58
+      "weight": 0.59
     },
     {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--diploma",
@@ -9137,103 +8949,41 @@
     {
       "id": "hochschule-der-bildenden-kunste-essen--fine-arts--diploma",
       "weight": 0.49
+    },
+    {
+      "id": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
+      "weight": 0.36
     }
   ],
-  "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified": [
+  "hochschule-der-bildenden-kunste-essen--fine-arts--diploma": [
     {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--unspecified",
-      "weight": 0.71
+      "id": "stadelschule-frankfurt--fine-arts--diploma",
+      "weight": 0.63
     },
     {
-      "id": "muthesius-kunsthochschule-kiel--communication-design--unspecified",
-      "weight": 0.7
+      "id": "muthesius-kunsthochschule-kiel--fine-arts--diploma",
+      "weight": 0.61
     },
     {
-      "id": "universitat-der-kunste-berlin--visual-communication--unspecified",
-      "weight": 0.68
+      "id": "academy-of-visual-arts-frankfurt--fine-arts--diploma",
+      "weight": 0.61
     },
     {
-      "id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
-      "weight": 0.68
-    },
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--unspecified",
-      "weight": 0.64
-    },
-    {
-      "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
-      "weight": 0.62
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified",
-      "weight": 0.62
-    },
-    {
-      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--unspecified",
-      "weight": 0.59
-    },
-    {
-      "id": "hochschule-darmstadt--digital-media--unspecified",
-      "weight": 0.59
-    }
-  ],
-  "hochschule-darmstadt--digital-media--unspecified": [
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--unspecified",
-      "weight": 0.68
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
-      "weight": 0.67
-    },
-    {
-      "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
-      "weight": 0.62
-    },
-    {
-      "id": "universitat-der-kunste-berlin--art-and-media--unspecified",
-      "weight": 0.59
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
-      "weight": 0.59
-    },
-    {
-      "id": "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified",
+      "id": "universitat-der-kunste-berlin--fine-arts--diploma",
       "weight": 0.58
     },
     {
-      "id": "universitat-wurzburg--human-computer-interaction--unspecified",
-      "weight": 0.58
-    },
-    {
-      "id": "bauhaus-universitat-weimar--media--unspecified",
-      "weight": 0.54
-    },
-    {
-      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--unspecified",
-      "weight": 0.54
-    },
-    {
-      "id": "rwth-aachen-university--human-technology-interaction-and-communication--unspecified",
-      "weight": 0.53
-    },
-    {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
+      "id": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--diploma",
       "weight": 0.51
+    },
+    {
+      "id": "folkwang-essen--fine-arts--diploma",
+      "weight": 0.49
     }
   ],
   "universitat-der-kunste-berlin--art-and-media--unspecified": [
     {
-      "id": "hochschule-fur-gestaltung-offenbach--media--unspecified",
-      "weight": 0.65
-    },
-    {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified",
-      "weight": 0.64
-    },
-    {
-      "id": "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--unspecified",
       "weight": 0.62
     },
     {
@@ -9241,56 +8991,26 @@
       "weight": 0.59
     },
     {
-      "id": "hochschule-darmstadt--digital-media--unspecified",
-      "weight": 0.59
+      "id": "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--unspecified",
+      "weight": 0.58
     },
     {
       "id": "kunstakademie-munster--fine-arts--unspecified",
+      "weight": 0.53
+    },
+    {
+      "id": "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified",
       "weight": 0.52
-    }
-  ],
-  "hochschule-fur-gestaltung-offenbach--media--unspecified": [
-    {
-      "id": "bauhaus-universitat-weimar--media--unspecified",
-      "weight": 0.73
-    },
-    {
-      "id": "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--unspecified",
-      "weight": 0.67
-    },
-    {
-      "id": "universitat-der-kunste-berlin--art-and-media--unspecified",
-      "weight": 0.65
-    },
-    {
-      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified",
-      "weight": 0.65
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
-      "weight": 0.6
     },
     {
       "id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
-      "weight": 0.59
-    },
-    {
-      "id": "haw-hamburg--medientechnik--bachelor-of-science",
-      "weight": 0.44
-    },
-    {
-      "id": "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts",
-      "weight": 0.37
+      "weight": 0.51
     }
   ],
   "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified": [
     {
-      "id": "hochschule-fur-gestaltung-offenbach--media--unspecified",
-      "weight": 0.65
-    },
-    {
       "id": "universitat-der-kunste-berlin--art-and-media--unspecified",
-      "weight": 0.64
+      "weight": 0.62
     },
     {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--unspecified",
@@ -9313,40 +9033,14 @@
       "weight": 0.34
     }
   ],
-  "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--unspecified": [
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--media--unspecified",
-      "weight": 0.67
-    },
-    {
-      "id": "universitat-der-kunste-berlin--art-and-media--unspecified",
-      "weight": 0.62
-    },
-    {
-      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified",
-      "weight": 0.6
-    },
-    {
-      "id": "kunsthochschule-fur-medien-koln--media-arts--unspecified",
-      "weight": 0.33
-    }
-  ],
   "bauhaus-universitat-weimar--media--unspecified": [
     {
-      "id": "hochschule-fur-gestaltung-offenbach--media--unspecified",
-      "weight": 0.73
-    },
-    {
       "id": "universitat-der-kunste-berlin--art-and-media--unspecified",
       "weight": 0.59
     },
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified",
       "weight": 0.59
-    },
-    {
-      "id": "hochschule-darmstadt--digital-media--unspecified",
-      "weight": 0.54
     },
     {
       "id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
@@ -9357,15 +9051,37 @@
       "weight": 0.51
     },
     {
+      "id": "universitat-wurzburg--human-computer-interaction--unspecified",
+      "weight": 0.45
+    },
+    {
+      "id": "rwth-aachen-university--human-technology-interaction-and-communication--unspecified",
+      "weight": 0.44
+    },
+    {
+      "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
+      "weight": 0.37
+    },
+    {
       "id": "haw-hamburg--medientechnik--bachelor-of-science",
       "weight": 0.35
     }
   ],
-  "universitat-der-kunste-berlin--visual-communication--unspecified": [
+  "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--unspecified": [
     {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
-      "weight": 0.68
+      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified",
+      "weight": 0.6
     },
+    {
+      "id": "universitat-der-kunste-berlin--art-and-media--unspecified",
+      "weight": 0.58
+    },
+    {
+      "id": "kunsthochschule-fur-medien-koln--media-arts--unspecified",
+      "weight": 0.33
+    }
+  ],
+  "universitat-der-kunste-berlin--visual-communication--unspecified": [
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--unspecified",
       "weight": 0.67
@@ -9376,15 +9092,19 @@
     },
     {
       "id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--unspecified",
-      "weight": 0.56
+      "weight": 0.57
     },
     {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--design--unspecified",
-      "weight": 0.51
+      "weight": 0.52
     },
     {
       "id": "burg-giebichenstein--communication-design--unspecified",
-      "weight": 0.47
+      "weight": 0.46
+    },
+    {
+      "id": "hochschule-pforzheim--visuelle-kommunikation--bachelor-of-arts",
+      "weight": 0.45
     }
   ],
   "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--unspecified": [
@@ -9405,10 +9125,6 @@
       "weight": 0.64
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
-      "weight": 0.59
-    },
-    {
       "id": "universitat-der-kunste-berlin--design--unspecified",
       "weight": 0.51
     },
@@ -9421,10 +9137,6 @@
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--unspecified",
       "weight": 0.73
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
-      "weight": 0.7
     },
     {
       "id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--unspecified",
@@ -9443,15 +9155,15 @@
       "weight": 0.57
     },
     {
+      "id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
+      "weight": 0.56
+    },
+    {
       "id": "akademie-nurnberg--graphic-design--unspecified",
       "weight": 0.5
     }
   ],
   "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--unspecified": [
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
-      "weight": 0.71
-    },
     {
       "id": "muthesius-kunsthochschule-kiel--communication-design--unspecified",
       "weight": 0.7
@@ -9461,16 +9173,20 @@
       "weight": 0.64
     },
     {
+      "id": "universitat-der-kunste-berlin--visual-communication--unspecified",
+      "weight": 0.57
+    },
+    {
       "id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
       "weight": 0.57
     },
     {
-      "id": "universitat-der-kunste-berlin--visual-communication--unspecified",
-      "weight": 0.56
-    },
-    {
       "id": "burg-giebichenstein--communication-design--unspecified",
       "weight": 0.5
+    },
+    {
+      "id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-design-graphic-design--unspecified",
+      "weight": 0.43
     }
   ],
   "burg-giebichenstein--communication-design--unspecified": [
@@ -9500,7 +9216,283 @@
     },
     {
       "id": "universitat-der-kunste-berlin--visual-communication--unspecified",
+      "weight": 0.46
+    }
+  ],
+  "hochschule-pforzheim--visuelle-kommunikation--bachelor-of-arts": [
+    {
+      "id": "bauhaus-universitat-weimar--visual-communication--bachelor-of-arts",
+      "weight": 0.65
+    },
+    {
+      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--bachelor-of-arts",
+      "weight": 0.64
+    },
+    {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--bachelor-of-arts",
+      "weight": 0.63
+    },
+    {
+      "id": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "weight": 0.61
+    },
+    {
+      "id": "fachhochschule-potsdam--communication-design--bachelor-of-arts",
+      "weight": 0.58
+    },
+    {
+      "id": "koln-international-school-of-design--communication-design--bachelor-of-arts",
+      "weight": 0.56
+    },
+    {
+      "id": "hochschule-anhalt--design-integrated-design--bachelor-of-arts",
+      "weight": 0.49
+    },
+    {
+      "id": "universitat-der-kunste-berlin--visual-communication--unspecified",
+      "weight": 0.45
+    },
+    {
+      "id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--bachelor-of-arts",
+      "weight": 0.35
+    }
+  ],
+  "universitat-der-kunste-berlin--design-and-computation--master-of-arts": [
+    {
+      "id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
+      "weight": 0.44
+    },
+    {
+      "id": "technische-universitat-chemnitz--human-computer-interaction--master-of-science",
+      "weight": 0.41
+    },
+    {
+      "id": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+      "weight": 0.41
+    },
+    {
+      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
+      "weight": 0.39
+    },
+    {
+      "id": "fachhochschule-dortmund--digital-design--master-of-science",
+      "weight": 0.38
+    },
+    {
+      "id": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
+      "weight": 0.36
+    },
+    {
+      "id": "hochschule-rhein-waal--media-communication-and-computer-science--bachelor-of-science",
+      "weight": 0.33
+    }
+  ],
+  "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts": [
+    {
+      "id": "universitat-der-kunste-berlin--design-and-computation--master-of-arts",
+      "weight": 0.44
+    },
+    {
+      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
+      "weight": 0.44
+    },
+    {
+      "id": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+      "weight": 0.44
+    },
+    {
+      "id": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
+      "weight": 0.42
+    },
+    {
+      "id": "fachhochschule-dortmund--digital-design--master-of-science",
+      "weight": 0.4
+    },
+    {
+      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
+      "weight": 0.37
+    }
+  ],
+  "technische-universitat-chemnitz--human-computer-interaction--master-of-science": [
+    {
+      "id": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
+      "weight": 0.63
+    },
+    {
+      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
+      "weight": 0.53
+    },
+    {
+      "id": "universitat-wurzburg--human-computer-interaction--master-of-science",
       "weight": 0.47
+    },
+    {
+      "id": "universitat-siegen--human-computer-interaction--master-of-science--2",
+      "weight": 0.46
+    },
+    {
+      "id": "technische-universitat-berlin--human-computer-interaction--master-of-science",
+      "weight": 0.45
+    },
+    {
+      "id": "universitat-wurzburg--human-computer-systems--master-of-science",
+      "weight": 0.44
+    },
+    {
+      "id": "universitat-der-kunste-berlin--design-and-computation--master-of-arts",
+      "weight": 0.41
+    }
+  ],
+  "hochschule-offenburg--communication-and-media-engineering--master-of-science": [
+    {
+      "id": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
+      "weight": 0.46
+    },
+    {
+      "id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
+      "weight": 0.44
+    },
+    {
+      "id": "rwth-aachen-university--communication-engineering--master-of-science",
+      "weight": 0.42
+    },
+    {
+      "id": "universitat-der-kunste-berlin--design-and-computation--master-of-arts",
+      "weight": 0.41
+    },
+    {
+      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
+      "weight": 0.37
+    },
+    {
+      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
+      "weight": 0.37
+    }
+  ],
+  "hdm-stuttgart--computer-science-and-media--master-of-science": [
+    {
+      "id": "fachhochschule-dortmund--digital-design--master-of-science",
+      "weight": 0.51
+    },
+    {
+      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
+      "weight": 0.5
+    },
+    {
+      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
+      "weight": 0.48
+    },
+    {
+      "id": "universitat-wurzburg--human-computer-systems--master-of-science",
+      "weight": 0.46
+    },
+    {
+      "id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
+      "weight": 0.44
+    },
+    {
+      "id": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
+      "weight": 0.43
+    },
+    {
+      "id": "technische-universitat-munchen--computational-science-and-engineering--master-of-science",
+      "weight": 0.4
+    },
+    {
+      "id": "universitat-der-kunste-berlin--design-and-computation--master-of-arts",
+      "weight": 0.39
+    },
+    {
+      "id": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+      "weight": 0.37
+    },
+    {
+      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
+      "weight": 0.35
+    }
+  ],
+  "fachhochschule-dortmund--digital-design--master-of-science": [
+    {
+      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
+      "weight": 0.51
+    },
+    {
+      "id": "hdm-stuttgart--digital-design--master-of-arts",
+      "weight": 0.5
+    },
+    {
+      "id": "hdm-stuttgart--wirtschaftsinformatik--master-of-science",
+      "weight": 0.47
+    },
+    {
+      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
+      "weight": 0.42
+    },
+    {
+      "id": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
+      "weight": 0.41
+    },
+    {
+      "id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
+      "weight": 0.4
+    },
+    {
+      "id": "universitat-der-kunste-berlin--design-and-computation--master-of-arts",
+      "weight": 0.38
+    }
+  ],
+  "bauhaus-universitat-weimar--human-computer-interaction--master-of-science": [
+    {
+      "id": "universitat-siegen--human-computer-interaction--master-of-science--2",
+      "weight": 0.66
+    },
+    {
+      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
+      "weight": 0.66
+    },
+    {
+      "id": "technische-universitat-berlin--human-computer-interaction--master-of-science",
+      "weight": 0.63
+    },
+    {
+      "id": "technische-universitat-chemnitz--human-computer-interaction--master-of-science",
+      "weight": 0.63
+    },
+    {
+      "id": "universitat-wurzburg--human-computer-interaction--master-of-science",
+      "weight": 0.6
+    },
+    {
+      "id": "universitat-siegen--human-computer-interaction--master-of-science",
+      "weight": 0.59
+    },
+    {
+      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
+      "weight": 0.49
+    },
+    {
+      "id": "universitat-wurzburg--human-computer-systems--master-of-science",
+      "weight": 0.49
+    },
+    {
+      "id": "rwth-aachen-university--human-technology-interaction-and-communication--master-of-science",
+      "weight": 0.45
+    },
+    {
+      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
+      "weight": 0.43
+    },
+    {
+      "id": "fachhochschule-dortmund--digital-design--master-of-science",
+      "weight": 0.41
+    },
+    {
+      "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaktionsgestaltung--bachelor-of-arts",
+      "weight": 0.38
+    },
+    {
+      "id": "universitat-der-kunste-berlin--design-and-computation--master-of-arts",
+      "weight": 0.36
     }
   ],
   "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--unspecified": [
@@ -9521,12 +9513,12 @@
       "weight": 0.67
     },
     {
-      "id": "fachhochschule-potsdam--product-design--bachelor-of-arts",
+      "id": "universitat-der-kunste-berlin--design--unspecified",
       "weight": 0.59
     },
     {
-      "id": "universitat-der-kunste-berlin--design--unspecified",
-      "weight": 0.58
+      "id": "fachhochschule-potsdam--product-design--bachelor-of-arts",
+      "weight": 0.59
     },
     {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--design--unspecified",
@@ -9679,16 +9671,38 @@
       "weight": 0.55
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--product-design--diploma",
-      "weight": 0.53
-    },
-    {
       "id": "bauhaus-universitat-weimar--product-design--master-of-arts",
       "weight": 0.53
     },
     {
       "id": "bauhaus-universitat-weimar--product-design--master",
       "weight": 0.52
+    }
+  ],
+  "bauhaus-universitat-weimar--product-design--master-of-arts": [
+    {
+      "id": "hochschule-fur-gestaltung-offenbach--product-design--master-of-arts",
+      "weight": 0.71
+    },
+    {
+      "id": "muthesius-kunsthochschule-kiel--industrial-design--master-of-arts",
+      "weight": 0.64
+    },
+    {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--master-of-arts",
+      "weight": 0.62
+    },
+    {
+      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--diploma",
+      "weight": 0.61
+    },
+    {
+      "id": "fachhochschule-potsdam--product-design--bachelor-of-arts",
+      "weight": 0.53
+    },
+    {
+      "id": "hochschule-fur-bildende-kunste-braunschweig--industrial-design--diploma",
+      "weight": 0.49
     }
   ],
   "bauhaus-universitat-weimar--visual-communication--bachelor-of-arts": [
@@ -9725,10 +9739,6 @@
       "weight": 0.56
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma",
-      "weight": 0.54
-    },
-    {
       "id": "koln-international-school-of-design--communication-design--bachelor-of-arts",
       "weight": 0.54
     },
@@ -9755,6 +9765,10 @@
     {
       "id": "hdm-stuttgart--informationsdesign--bachelor-of-arts",
       "weight": 0.36
+    },
+    {
+      "id": "hochschule-macromedia--media-design--bachelor-of-arts",
+      "weight": 0.35
     }
   ],
   "staatliche-hochschule-fur-gestaltung-karlsruhe--art-research-and-media-philosophy--master-of-arts": [
@@ -9873,16 +9887,16 @@
       "weight": 0.57
     },
     {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-arts",
-      "weight": 0.55
-    },
-    {
       "id": "filmuniversitat-babelsberg-konrad-wolf--media-studies--master-of-arts",
       "weight": 0.44
     },
     {
       "id": "universitat-trier--media-studies--master-of-arts",
       "weight": 0.43
+    },
+    {
+      "id": "hdm-stuttgart--medienmanagement--master-of-arts",
+      "weight": 0.42
     },
     {
       "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--art-research-and-media-philosophy--master-of-arts",
@@ -10065,14 +10079,28 @@
       "weight": 0.47
     }
   ],
+  "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts": [
+    {
+      "id": "universitat-bremen--digitale-medien--master-of-arts",
+      "weight": 0.57
+    },
+    {
+      "id": "musikhochschule-lubeck--sound-arts-and-creative-music-technology--master-of-music",
+      "weight": 0.4
+    },
+    {
+      "id": "robert-schumann-hochschule--klang-und-realitat--master-of-music",
+      "weight": 0.37
+    },
+    {
+      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified",
+      "weight": 0.34
+    }
+  ],
   "hochschule-fur-kunste-bremen--digitale-medien--bachelor-of-arts": [
     {
       "id": "filmakademie-baden-wurttemberg--interaktive-medien--diploma",
       "weight": 0.43
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--media--unspecified",
-      "weight": 0.37
     },
     {
       "id": "hdm-stuttgart--digital-und-medienwirtschaft--bachelor-of-arts",
@@ -10123,16 +10151,16 @@
     {
       "id": "haw-hamburg--medientechnik--bachelor-of-science",
       "weight": 0.35
+    },
+    {
+      "id": "universitat-der-kunste-berlin--design-and-computation--master-of-arts",
+      "weight": 0.33
     }
   ],
   "universitat-bremen--digitale-medien--bachelor-of-arts": [
     {
       "id": "technische-hochschule-augsburg--interactive-media--bachelor-of-arts",
       "weight": 0.45
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--design-and-user-experience--bachelor-of-arts",
-      "weight": 0.44
     },
     {
       "id": "rwth-aachen-university--media-informatics--bachelor-of-science",
@@ -10161,10 +10189,6 @@
       "weight": 0.44
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--media--unspecified",
-      "weight": 0.44
-    },
-    {
       "id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
       "weight": 0.37
     },
@@ -10185,156 +10209,6 @@
       "weight": 0.34
     }
   ],
-  "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts": [
-    {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.48
-    },
-    {
-      "id": "universitat-bremen--digitale-medien--master-of-arts",
-      "weight": 0.48
-    },
-    {
-      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
-      "weight": 0.44
-    },
-    {
-      "id": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
-      "weight": 0.44
-    },
-    {
-      "id": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
-      "weight": 0.42
-    },
-    {
-      "id": "fachhochschule-dortmund--digital-design--master-of-science",
-      "weight": 0.4
-    }
-  ],
-  "hochschule-darmstadt--digital-media--master-of-science": [
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.68
-    },
-    {
-      "id": "fachhochschule-dortmund--digital-design--master-of-science",
-      "weight": 0.63
-    },
-    {
-      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
-      "weight": 0.61
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
-      "weight": 0.57
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
-      "weight": 0.52
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-arts",
-      "weight": 0.51
-    },
-    {
-      "id": "hdm-stuttgart--wirtschaftsinformatik--master-of-science",
-      "weight": 0.51
-    },
-    {
-      "id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
-      "weight": 0.48
-    },
-    {
-      "id": "rwth-aachen-university--media-informatics--master-of-science",
-      "weight": 0.46
-    },
-    {
-      "id": "hdm-stuttgart--digital-design--master-of-arts",
-      "weight": 0.42
-    },
-    {
-      "id": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
-      "weight": 0.39
-    },
-    {
-      "id": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
-      "weight": 0.39
-    }
-  ],
-  "universitat-bremen--digitale-medien--master-of-arts": [
-    {
-      "id": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts",
-      "weight": 0.57
-    },
-    {
-      "id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
-      "weight": 0.48
-    }
-  ],
-  "hdm-stuttgart--computer-science-and-media--master-of-science": [
-    {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.61
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.56
-    },
-    {
-      "id": "fachhochschule-dortmund--digital-design--master-of-science",
-      "weight": 0.51
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
-      "weight": 0.5
-    },
-    {
-      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
-      "weight": 0.48
-    },
-    {
-      "id": "universitat-wurzburg--human-computer-systems--master-of-science",
-      "weight": 0.46
-    },
-    {
-      "id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
-      "weight": 0.44
-    },
-    {
-      "id": "technische-universitat-munchen--computational-science-and-engineering--master-of-science",
-      "weight": 0.4
-    },
-    {
-      "id": "rwth-aachen-university--media-informatics--master-of-science",
-      "weight": 0.38
-    }
-  ],
-  "hochschule-offenburg--communication-and-media-engineering--master-of-science": [
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.47
-    },
-    {
-      "id": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
-      "weight": 0.46
-    },
-    {
-      "id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
-      "weight": 0.44
-    },
-    {
-      "id": "rwth-aachen-university--communication-engineering--master-of-science",
-      "weight": 0.42
-    },
-    {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.39
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
-      "weight": 0.37
-    }
-  ],
   "bauhaus-universitat-weimar--media-ecologies--master-of-arts": [
     {
       "id": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
@@ -10345,46 +10219,54 @@
       "weight": 0.42
     },
     {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.39
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.37
-    },
-    {
       "id": "universitat-bremen--digital-media-and-society--master-of-arts",
       "weight": 0.36
     }
   ],
-  "fachhochschule-dortmund--digital-design--master-of-science": [
+  "technische-hochschule-ingolstadt--user-experience-design--master-of-science": [
     {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.63
-    },
-    {
-      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
+      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
       "weight": 0.51
     },
     {
-      "id": "hdm-stuttgart--digital-design--master-of-arts",
+      "id": "universitat-wurzburg--human-computer-systems--master-of-science",
+      "weight": 0.51
+    },
+    {
+      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
       "weight": 0.5
     },
     {
-      "id": "hdm-stuttgart--wirtschaftsinformatik--master-of-science",
-      "weight": 0.47
+      "id": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
+      "weight": 0.49
     },
     {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.45
+      "id": "universitat-wurzburg--human-computer-interaction--master-of-science",
+      "weight": 0.43
     },
     {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
+      "id": "technische-universitat-berlin--human-computer-interaction--master-of-science",
+      "weight": 0.42
+    },
+    {
+      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
+      "weight": 0.42
+    },
+    {
+      "id": "fachhochschule-dortmund--digital-design--master-of-science",
       "weight": 0.42
     },
     {
       "id": "hochschule-fur-kunste-bremen--digitale-medien--master-of-arts",
-      "weight": 0.4
+      "weight": 0.37
+    },
+    {
+      "id": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
+      "weight": 0.37
+    },
+    {
+      "id": "rwth-aachen-university--human-technology-interaction-and-communication--master-of-science",
+      "weight": 0.35
     }
   ],
   "khm-munchen--freie-kunst--diploma": [
@@ -10405,38 +10287,12 @@
       "weight": 0.43
     },
     {
+      "id": "universitat-der-kunste-berlin--fine-arts--diploma",
+      "weight": 0.43
+    },
+    {
       "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
       "weight": 0.42
-    },
-    {
-      "id": "universitat-der-kunste-berlin--fine-arts--diploma",
-      "weight": 0.42
-    }
-  ],
-  "hochschule-fur-kunste-bremen--integriertes-design--bachelor-of-arts": [
-    {
-      "id": "hdm-stuttgart--integriertes-produktdesign--bachelor-of-arts",
-      "weight": 0.63
-    },
-    {
-      "id": "hochschule-reutlingen--integrated-design--bachelor-of-arts",
-      "weight": 0.6
-    },
-    {
-      "id": "koln-international-school-of-design--integrated-design--bachelor-of-arts",
-      "weight": 0.57
-    },
-    {
-      "id": "hochschule-anhalt--design-integrated-design--bachelor-of-arts",
-      "weight": 0.53
-    },
-    {
-      "id": "folkwang-essen--design--unspecified",
-      "weight": 0.46
-    },
-    {
-      "id": "universitat-der-kunste-berlin--design--bachelor-of-arts",
-      "weight": 0.43
     }
   ],
   "hdm-stuttgart--integriertes-produktdesign--bachelor-of-arts": [
@@ -10475,15 +10331,15 @@
       "weight": 0.38
     },
     {
-      "id": "universitat-der-kunste-berlin--design--bachelor-of-arts",
-      "weight": 0.38
-    },
-    {
       "id": "folkwang-essen--design--unspecified",
       "weight": 0.38
     },
     {
       "id": "koln-international-school-of-design--integrated-design--bachelor-of-arts",
+      "weight": 0.37
+    },
+    {
+      "id": "universitat-der-kunste-berlin--design--bachelor-of-arts",
       "weight": 0.37
     },
     {
@@ -10537,10 +10393,6 @@
       "weight": 0.43
     },
     {
-      "id": "hochschule-rhein-waal--sustainable-design--master-of-arts",
-      "weight": 0.43
-    },
-    {
       "id": "muthesius-kunsthochschule-kiel--communication-design--master-of-arts",
       "weight": 0.4
     },
@@ -10565,24 +10417,6 @@
     {
       "id": "hochschule-fur-gestaltung-schwabisch-gmund--strategische-gestaltung--master-of-arts",
       "weight": 0.36
-    }
-  ],
-  "hochschule-rhein-waal--sustainable-design--master-of-arts": [
-    {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--strategische-gestaltung--master-of-arts",
-      "weight": 0.46
-    },
-    {
-      "id": "hochschule-anhalt--design-master--master-of-arts",
-      "weight": 0.45
-    },
-    {
-      "id": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
-      "weight": 0.43
-    },
-    {
-      "id": "hochschule-pforzheim--design-future-making--master-of-arts",
-      "weight": 0.33
     }
   ],
   "muthesius-kunsthochschule-kiel--communication-design--master-of-arts": [
@@ -10636,10 +10470,6 @@
     }
   ],
   "hochschule-anhalt--design-master--master-of-arts": [
-    {
-      "id": "hochschule-rhein-waal--sustainable-design--master-of-arts",
-      "weight": 0.45
-    },
     {
       "id": "hochschule-fur-kunste-bremen--integriertes-design--master-of-arts",
       "weight": 0.4
@@ -10771,10 +10601,6 @@
     {
       "id": "staatliche-hochschule-fur-musik-trossingen--musik--master-of-music",
       "weight": 0.41
-    },
-    {
-      "id": "hmt-leipzig--music--unspecified",
-      "weight": 0.37
     }
   ],
   "staatliche-hochschule-fur-musik-trossingen--musik--master-of-music": [
@@ -10923,40 +10749,6 @@
       "weight": 0.38
     }
   ],
-  "hochschule-pforzheim--industrial-design--bachelor-of-arts": [
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--bachelor-of-arts",
-      "weight": 0.69
-    },
-    {
-      "id": "muthesius-kunsthochschule-kiel--industrial-design--bachelor-of-arts",
-      "weight": 0.68
-    },
-    {
-      "id": "fachhochschule-potsdam--product-design--bachelor-of-arts",
-      "weight": 0.61
-    },
-    {
-      "id": "bauhaus-universitat-weimar--product-design--bachelor-of-arts",
-      "weight": 0.59
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-braunschweig--industrial-design--diploma",
-      "weight": 0.56
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--product-design--bachelor-of-arts",
-      "weight": 0.56
-    },
-    {
-      "id": "hdm-stuttgart--integriertes-produktdesign--bachelor-of-arts",
-      "weight": 0.55
-    },
-    {
-      "id": "hdm-stuttgart--technisches-produktmanagement-technisches-design--bachelor-of-science",
-      "weight": 0.48
-    }
-  ],
   "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--master-of-arts": [
     {
       "id": "muthesius-kunsthochschule-kiel--industrial-design--master-of-arts",
@@ -11047,32 +10839,6 @@
       "weight": 0.45
     }
   ],
-  "bauhaus-universitat-weimar--product-design--master-of-arts": [
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--product-design--master-of-arts",
-      "weight": 0.71
-    },
-    {
-      "id": "muthesius-kunsthochschule-kiel--industrial-design--master-of-arts",
-      "weight": 0.64
-    },
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--master-of-arts",
-      "weight": 0.62
-    },
-    {
-      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--diploma",
-      "weight": 0.61
-    },
-    {
-      "id": "fachhochschule-potsdam--product-design--bachelor-of-arts",
-      "weight": 0.53
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-braunschweig--industrial-design--diploma",
-      "weight": 0.49
-    }
-  ],
   "hochschule-fur-gestaltung-offenbach--visual-communication--bachelor-of-arts": [
     {
       "id": "bauhaus-universitat-weimar--visual-communication--bachelor-of-arts",
@@ -11101,48 +10867,6 @@
     {
       "id": "koln-international-school-of-design--communication-design--bachelor-of-arts",
       "weight": 0.58
-    },
-    {
-      "id": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
-      "weight": 0.5
-    }
-  ],
-  "hochschule-pforzheim--visuelle-kommunikation--bachelor-of-arts": [
-    {
-      "id": "bauhaus-universitat-weimar--visual-communication--bachelor-of-arts",
-      "weight": 0.65
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--bachelor-of-arts",
-      "weight": 0.64
-    },
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--bachelor-of-arts",
-      "weight": 0.63
-    },
-    {
-      "id": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
-      "weight": 0.61
-    },
-    {
-      "id": "fachhochschule-potsdam--communication-design--bachelor-of-arts",
-      "weight": 0.58
-    },
-    {
-      "id": "koln-international-school-of-design--communication-design--bachelor-of-arts",
-      "weight": 0.56
-    },
-    {
-      "id": "hochschule-anhalt--design-integrated-design--bachelor-of-arts",
-      "weight": 0.49
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma",
-      "weight": 0.46
-    },
-    {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--bachelor-of-arts",
-      "weight": 0.35
     }
   ],
   "bauhaus-universitat-weimar--visual-communication--master-of-arts": [
@@ -11343,10 +11067,6 @@
       "weight": 0.75
     },
     {
-      "id": "hochschule-darmstadt--digital-media--unspecified",
-      "weight": 0.67
-    },
-    {
       "id": "rwth-aachen-university--human-technology-interaction-and-communication--unspecified",
       "weight": 0.66
     },
@@ -11363,12 +11083,12 @@
       "weight": 0.63
     },
     {
-      "id": "universitat-wurzburg--human-computer-interaction--unspecified",
+      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified",
       "weight": 0.62
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--media--unspecified",
-      "weight": 0.6
+      "id": "universitat-wurzburg--human-computer-interaction--unspecified",
+      "weight": 0.62
     },
     {
       "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
@@ -11435,10 +11155,6 @@
       "weight": 0.64
     },
     {
-      "id": "hmt-leipzig--music-education--unspecified",
-      "weight": 0.35
-    },
-    {
       "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--lehramt-gymnasium-mit-dem-fach-musik--bachelor",
       "weight": 0.34
     }
@@ -11461,12 +11177,12 @@
       "weight": 0.43
     },
     {
-      "id": "hmt-leipzig--music-education--unspecified",
-      "weight": 0.43
-    },
-    {
       "id": "hochschule-der-bildenden-kunste-saar--art-education--master-of-education",
       "weight": 0.4
+    },
+    {
+      "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
+      "weight": 0.39
     }
   ],
   "akademie-munchen--art-education--unspecified": [
@@ -11484,14 +11200,14 @@
     },
     {
       "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.55
-    },
-    {
-      "id": "hmt-leipzig--music-education--unspecified",
-      "weight": 0.52
+      "weight": 0.54
     },
     {
       "id": "hochschule-fur-bildende-kunste-braunschweig--art-education--master-of-education",
+      "weight": 0.51
+    },
+    {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstpadagogik--master-of-education",
       "weight": 0.51
     },
     {
@@ -11505,145 +11221,35 @@
       "weight": 0.33
     }
   ],
-  "kunsthochschule-fur-medien-koln--animation--unspecified": [
+  "khm-munchen--kunstpadagogik--staatsexamen": [
     {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified",
-      "weight": 0.71
+      "id": "hochschule-fur-gestaltung-offenbach--art-education-secondary-schools--state-examination",
+      "weight": 0.57
     },
     {
-      "id": "filmakademie-baden-wurttemberg--animation--diploma",
-      "weight": 0.6
-    },
-    {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--diploma",
-      "weight": 0.51
-    },
-    {
-      "id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
-      "weight": 0.43
-    },
-    {
-      "id": "filmakademie-baden-wurttemberg--animation-effects-producing--diploma",
-      "weight": 0.4
-    }
-  ],
-  "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified": [
-    {
-      "id": "kunsthochschule-fur-medien-koln--animation--unspecified",
-      "weight": 0.71
-    },
-    {
-      "id": "filmakademie-baden-wurttemberg--animation--diploma",
-      "weight": 0.6
-    },
-    {
-      "id": "filmakademie-baden-wurttemberg--animation-effects-producing--diploma",
-      "weight": 0.38
-    },
-    {
-      "id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
-      "weight": 0.37
-    }
-  ],
-  "filmakademie-baden-wurttemberg--animation--diploma": [
-    {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--diploma",
-      "weight": 0.73
-    },
-    {
-      "id": "kunsthochschule-fur-medien-koln--animation--unspecified",
-      "weight": 0.6
-    },
-    {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified",
-      "weight": 0.6
-    },
-    {
-      "id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
-      "weight": 0.49
-    }
-  ],
-  "filmuniversitat-babelsberg-konrad-wolf--animation--diploma": [
-    {
-      "id": "filmakademie-baden-wurttemberg--animation--diploma",
-      "weight": 0.73
-    },
-    {
-      "id": "kunsthochschule-fur-medien-koln--animation--unspecified",
-      "weight": 0.51
-    },
-    {
-      "id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
-      "weight": 0.5
-    },
-    {
-      "id": "filmakademie-baden-wurttemberg--animation-effects-producing--diploma",
-      "weight": 0.37
-    }
-  ],
-  "hochschule-darmstadt--animation-and-game--bachelor-of-arts": [
-    {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--diploma",
-      "weight": 0.5
-    },
-    {
-      "id": "technische-universitat-munchen--informatics-games-engineering--bachelor-of-science",
-      "weight": 0.49
-    },
-    {
-      "id": "filmakademie-baden-wurttemberg--animation--diploma",
-      "weight": 0.49
-    },
-    {
-      "id": "kunsthochschule-fur-medien-koln--animation--unspecified",
-      "weight": 0.43
-    },
-    {
-      "id": "haw-hamburg--games--master-of-arts",
-      "weight": 0.43
-    },
-    {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified",
-      "weight": 0.37
-    }
-  ],
-  "filmakademie-baden-wurttemberg--animation-effects-producing--diploma": [
-    {
-      "id": "kunsthochschule-fur-medien-koln--animation--unspecified",
-      "weight": 0.4
-    },
-    {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified",
-      "weight": 0.38
-    },
-    {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--diploma",
-      "weight": 0.37
-    }
-  ],
-  "hochschule-fur-gestaltung-offenbach--visual-communication--diploma": [
-    {
-      "id": "bauhaus-universitat-weimar--visual-communication--bachelor-of-arts",
-      "weight": 0.54
-    },
-    {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--kommunikationsgestaltung--bachelor-of-arts",
+      "id": "hochschule-fur-musik-weimar--schulmusik-lehramt-an-gymnasien--staatsexamen",
       "weight": 0.52
     },
     {
-      "id": "fachhochschule-potsdam--communication-design--bachelor-of-arts",
-      "weight": 0.49
+      "id": "hochschule-fur-musik-und-theater-rostock--lehramt-musik--staatsexamen",
+      "weight": 0.48
     },
     {
-      "id": "hochschule-pforzheim--visuelle-kommunikation--bachelor-of-arts",
-      "weight": 0.46
+      "id": "hochschule-fur-musik-karlsruhe--kunstlerisches-lehramt-an-gymnasien-schulmusik--lehramt",
+      "weight": 0.44
     },
     {
-      "id": "muthesius-kunsthochschule-kiel--communication-design--bachelor-of-arts",
-      "weight": 0.41
+      "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
+      "weight": 0.43
     },
     {
-      "id": "koln-international-school-of-design--communication-design--bachelor-of-arts",
+      "id": "akademie-munchen--art-education--unspecified",
+      "weight": 0.43
+    }
+  ],
+  "hfbk-dresden--meisterschuler-master-class--meisterschuler": [
+    {
+      "id": "hochschule-fur-gestaltung-offenbach--postgraduate-studies-meisterschuler--meisterschuler",
       "weight": 0.4
     }
   ],
@@ -11671,10 +11277,6 @@
     {
       "id": "fachhochschule-potsdam--communication-design--bachelor-of-arts",
       "weight": 0.56
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma",
-      "weight": 0.52
     },
     {
       "id": "haw-hamburg--kommunikationsdesign--bachelor-of-arts",
@@ -11723,10 +11325,6 @@
       "weight": 0.55
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma",
-      "weight": 0.49
-    },
-    {
       "id": "hochschule-rhein-waal--design-and-communication--bachelor-of-arts",
       "weight": 0.46
     },
@@ -11737,40 +11335,6 @@
     {
       "id": "haw-hamburg--illustration--bachelor-of-arts",
       "weight": 0.37
-    }
-  ],
-  "koln-international-school-of-design--communication-design--bachelor-of-arts": [
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--bachelor-of-arts",
-      "weight": 0.59
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--bachelor-of-arts",
-      "weight": 0.58
-    },
-    {
-      "id": "fachhochschule-potsdam--communication-design--bachelor-of-arts",
-      "weight": 0.57
-    },
-    {
-      "id": "hochschule-pforzheim--visuelle-kommunikation--bachelor-of-arts",
-      "weight": 0.56
-    },
-    {
-      "id": "muthesius-kunsthochschule-kiel--communication-design--bachelor-of-arts",
-      "weight": 0.54
-    },
-    {
-      "id": "bauhaus-universitat-weimar--visual-communication--bachelor-of-arts",
-      "weight": 0.54
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma",
-      "weight": 0.4
-    },
-    {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--bachelor-of-arts",
-      "weight": 0.36
     }
   ],
   "hochschule-fur-gestaltung-schwabisch-gmund--produktgestaltung--bachelor-of-arts": [
@@ -11795,40 +11359,8 @@
       "weight": 0.57
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--product-design--diploma",
-      "weight": 0.56
-    }
-  ],
-  "khm-munchen--kunstpadagogik--staatsexamen": [
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--art-education-secondary-schools--state-examination",
-      "weight": 0.57
-    },
-    {
-      "id": "hochschule-fur-musik-weimar--schulmusik-lehramt-an-gymnasien--staatsexamen",
-      "weight": 0.52
-    },
-    {
-      "id": "hochschule-fur-musik-und-theater-rostock--lehramt-musik--staatsexamen",
-      "weight": 0.48
-    },
-    {
-      "id": "hochschule-fur-musik-karlsruhe--kunstlerisches-lehramt-an-gymnasien-schulmusik--lehramt",
-      "weight": 0.44
-    },
-    {
-      "id": "akademie-munchen--art-education--unspecified",
-      "weight": 0.43
-    },
-    {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kunstpadagogik--master-of-education",
-      "weight": 0.42
-    }
-  ],
-  "hfbk-dresden--meisterschuler-master-class--meisterschuler": [
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--postgraduate-studies-meisterschuler--meisterschuler",
-      "weight": 0.4
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--industrial-design--bachelor-of-arts",
+      "weight": 0.5
     }
   ],
   "hochschule-fur-gestaltung-schwabisch-gmund--strategische-gestaltung--master-of-arts": [
@@ -11837,16 +11369,8 @@
       "weight": 0.58
     },
     {
-      "id": "hochschule-rhein-waal--sustainable-design--master-of-arts",
-      "weight": 0.46
-    },
-    {
       "id": "muthesius-kunsthochschule-kiel--communication-design--master-of-arts",
       "weight": 0.45
-    },
-    {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--master-of-arts",
-      "weight": 0.44
     },
     {
       "id": "hochschule-anhalt--design-master--master-of-arts",
@@ -11879,16 +11403,16 @@
       "weight": 0.42
     },
     {
+      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
+      "weight": 0.39
+    },
+    {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
       "weight": 0.39
     },
     {
       "id": "kunsthochschule-mainz--fine-arts--diploma",
       "weight": 0.39
-    },
-    {
-      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.38
     }
   ],
   "hochschule-fur-grafik-und-buchkunst-leipzig--photography--diploma": [
@@ -12065,12 +11589,12 @@
       "weight": 0.41
     },
     {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
+      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
       "weight": 0.4
     },
     {
-      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--freie-kunst--diploma",
-      "weight": 0.38
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
+      "weight": 0.4
     }
   ],
   "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--unspecified": [
@@ -12143,10 +11667,6 @@
     {
       "id": "stadelschule-frankfurt--fine-arts--unspecified",
       "weight": 0.54
-    },
-    {
-      "id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-printmaking--unspecified",
-      "weight": 0.47
     }
   ],
   "hochschule-fur-grafik-und-buchkunst-leipzig--photography--unspecified": [
@@ -12224,7 +11744,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--design--bachelor-of-arts",
-      "weight": 0.34
+      "weight": 0.35
     },
     {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-art-graphic-design--diploma",
@@ -12243,52 +11763,6 @@
     {
       "id": "hochschule-fur-musik-berlin--elektroakustische-musik--master-of-music",
       "weight": 0.33
-    }
-  ],
-  "bauhaus-universitat-weimar--human-computer-interaction--master-of-science": [
-    {
-      "id": "universitat-siegen--human-computer-interaction--master-of-science--2",
-      "weight": 0.66
-    },
-    {
-      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
-      "weight": 0.66
-    },
-    {
-      "id": "technische-universitat-berlin--human-computer-interaction--master-of-science",
-      "weight": 0.63
-    },
-    {
-      "id": "technische-universitat-chemnitz--human-computer-interaction--master-of-science",
-      "weight": 0.63
-    },
-    {
-      "id": "universitat-wurzburg--human-computer-interaction--master-of-science",
-      "weight": 0.6
-    },
-    {
-      "id": "universitat-siegen--human-computer-interaction--master-of-science",
-      "weight": 0.59
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
-      "weight": 0.49
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.49
-    },
-    {
-      "id": "universitat-wurzburg--human-computer-systems--master-of-science",
-      "weight": 0.49
-    },
-    {
-      "id": "rwth-aachen-university--human-technology-interaction-and-communication--master-of-science",
-      "weight": 0.45
-    },
-    {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaktionsgestaltung--bachelor-of-arts",
-      "weight": 0.38
     }
   ],
   "universitat-siegen--human-computer-interaction--master-of-science--2": [
@@ -12357,6 +11831,14 @@
     {
       "id": "rwth-aachen-university--human-technology-interaction-and-communication--master-of-science",
       "weight": 0.38
+    },
+    {
+      "id": "hdm-stuttgart--digital-design--master-of-arts",
+      "weight": 0.37
+    },
+    {
+      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
+      "weight": 0.33
     }
   ],
   "technische-universitat-berlin--human-computer-interaction--master-of-science": [
@@ -12382,41 +11864,19 @@
     },
     {
       "id": "technische-universitat-chemnitz--human-computer-interaction--master-of-science",
-      "weight": 0.44
+      "weight": 0.45
     },
     {
       "id": "rwth-aachen-university--human-technology-interaction-and-communication--master-of-science",
       "weight": 0.43
     },
     {
+      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
+      "weight": 0.42
+    },
+    {
       "id": "hdm-stuttgart--digital-design--master-of-arts",
       "weight": 0.37
-    }
-  ],
-  "technische-universitat-chemnitz--human-computer-interaction--master-of-science": [
-    {
-      "id": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
-      "weight": 0.63
-    },
-    {
-      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
-      "weight": 0.53
-    },
-    {
-      "id": "universitat-wurzburg--human-computer-interaction--master-of-science",
-      "weight": 0.47
-    },
-    {
-      "id": "universitat-siegen--human-computer-interaction--master-of-science--2",
-      "weight": 0.46
-    },
-    {
-      "id": "technische-universitat-berlin--human-computer-interaction--master-of-science",
-      "weight": 0.44
-    },
-    {
-      "id": "universitat-wurzburg--human-computer-systems--master-of-science",
-      "weight": 0.44
     }
   ],
   "universitat-wurzburg--human-computer-interaction--master-of-science": [
@@ -12445,6 +11905,10 @@
       "weight": 0.47
     },
     {
+      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
+      "weight": 0.43
+    },
+    {
       "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaktionsgestaltung--bachelor-of-arts",
       "weight": 0.4
     },
@@ -12455,6 +11919,10 @@
     {
       "id": "hdm-stuttgart--digital-design--master-of-arts",
       "weight": 0.4
+    },
+    {
+      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
+      "weight": 0.34
     }
   ],
   "universitat-siegen--human-computer-interaction--master-of-science": [
@@ -12523,10 +11991,6 @@
       "weight": 0.69
     },
     {
-      "id": "hochschule-darmstadt--digital-media--unspecified",
-      "weight": 0.68
-    },
-    {
       "id": "universitat-wurzburg--human-computer-interaction--unspecified",
       "weight": 0.67
     },
@@ -12537,6 +12001,10 @@
     {
       "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--unspecified",
       "weight": 0.61
+    },
+    {
+      "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified",
+      "weight": 0.59
     },
     {
       "id": "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified",
@@ -12551,82 +12019,80 @@
       "weight": 0.51
     }
   ],
-  "technische-hochschule-augsburg--interactive-media-systems--master-of-science": [
+  "universitat-wurzburg--human-computer-interaction--unspecified": [
     {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.68
+      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--unspecified",
+      "weight": 0.7
     },
     {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
+      "id": "technische-hochschule-ingolstadt--user-experience-design--unspecified",
+      "weight": 0.67
+    },
+    {
+      "id": "rwth-aachen-university--human-technology-interaction-and-communication--unspecified",
       "weight": 0.66
     },
     {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-arts",
+      "id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
+      "weight": 0.62
+    },
+    {
+      "id": "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified",
       "weight": 0.57
     },
     {
-      "id": "universitat-wurzburg--human-computer-systems--master-of-science",
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--unspecified",
       "weight": 0.56
     },
     {
-      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
-      "weight": 0.56
+      "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
+      "weight": 0.54
     },
     {
-      "id": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
-      "weight": 0.49
-    },
-    {
-      "id": "rwth-aachen-university--media-informatics--master-of-science",
-      "weight": 0.48
-    },
-    {
-      "id": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
-      "weight": 0.47
-    },
-    {
-      "id": "fachhochschule-dortmund--digital-design--master-of-science",
+      "id": "bauhaus-universitat-weimar--media--unspecified",
       "weight": 0.45
     },
     {
-      "id": "hdm-stuttgart--wirtschaftsinformatik--master-of-science",
-      "weight": 0.41
+      "id": "technische-universitat-chemnitz--human-computer-interaction--unspecified",
+      "weight": 0.34
+    }
+  ],
+  "rwth-aachen-university--human-technology-interaction-and-communication--unspecified": [
+    {
+      "id": "technische-hochschule-ingolstadt--user-experience-design--unspecified",
+      "weight": 0.69
     },
     {
-      "id": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
-      "weight": 0.37
+      "id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
+      "weight": 0.66
     },
     {
-      "id": "universitat-bremen--digital-media-and-society--master-of-arts",
-      "weight": 0.35
+      "id": "universitat-wurzburg--human-computer-interaction--unspecified",
+      "weight": 0.66
+    },
+    {
+      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--unspecified",
+      "weight": 0.57
+    },
+    {
+      "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
+      "weight": 0.48
+    },
+    {
+      "id": "bauhaus-universitat-weimar--media--unspecified",
+      "weight": 0.44
     }
   ],
   "universitat-bremen--digital-media-and-society--master-of-arts": [
     {
       "id": "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
       "weight": 0.36
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.35
     }
   ],
-  "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts": [
+  "universitat-bremen--digitale-medien--master-of-arts": [
     {
-      "id": "universitat-bremen--digitale-medien--master-of-arts",
+      "id": "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts",
       "weight": 0.57
-    },
-    {
-      "id": "musikhochschule-lubeck--sound-arts-and-creative-music-technology--master-of-music",
-      "weight": 0.4
-    },
-    {
-      "id": "robert-schumann-hochschule--klang-und-realitat--master-of-music",
-      "weight": 0.37
-    },
-    {
-      "id": "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified",
-      "weight": 0.34
     }
   ],
   "musikhochschule-lubeck--sound-arts-and-creative-music-technology--master-of-music": [
@@ -12700,11 +12166,7 @@
   "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts": [
     {
       "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.48
-    },
-    {
-      "id": "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
-      "weight": 0.46
+      "weight": 0.49
     },
     {
       "id": "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts",
@@ -12723,8 +12185,12 @@
       "weight": 0.36
     },
     {
-      "id": "merz-akademie--design-art-and-media--bachelor-of-arts",
+      "id": "folkwang-essen--fine-arts--diploma",
       "weight": 0.36
+    },
+    {
+      "id": "merz-akademie--design-art-and-media--bachelor-of-arts",
+      "weight": 0.35
     },
     {
       "id": "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts",
@@ -12750,7 +12216,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
-      "weight": 0.48
+      "weight": 0.49
     },
     {
       "id": "hochschule-fur-grafik-und-buchkunst-leipzig--fine-arts--unspecified",
@@ -12775,11 +12241,11 @@
       "weight": 0.51
     },
     {
-      "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.48
+      "id": "hochschule-fur-bildende-kunste-braunschweig--art-education--master-of-education",
+      "weight": 0.47
     },
     {
-      "id": "hochschule-fur-bildende-kunste-braunschweig--art-education--master-of-education",
+      "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
       "weight": 0.47
     },
     {
@@ -12816,7 +12282,7 @@
   "hochschule-der-bildenden-kunste-essen--fine-arts--bachelor-of-fine-arts": [
     {
       "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.48
+      "weight": 0.46
     },
     {
       "id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
@@ -12829,10 +12295,6 @@
     {
       "id": "muthesius-kunsthochschule-kiel--fine-arts--bachelor-of-fine-arts",
       "weight": 0.41
-    },
-    {
-      "id": "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.4
     },
     {
       "id": "akademie-munchen--fine-arts--diploma",
@@ -12861,11 +12323,21 @@
       "weight": 0.38
     },
     {
-      "id": "akademie-nurnberg--fine-arts--diploma",
+      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
       "weight": 0.36
     },
     {
-      "id": "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
+      "id": "akademie-nurnberg--fine-arts--diploma",
+      "weight": 0.36
+    }
+  ],
+  "merz-akademie--design-art-and-media--bachelor-of-arts": [
+    {
+      "id": "hochschule-der-bildenden-kunste-essen--fine-arts--bachelor-of-fine-arts",
+      "weight": 0.36
+    },
+    {
+      "id": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
       "weight": 0.35
     }
   ],
@@ -12917,22 +12389,12 @@
       "weight": 0.36
     },
     {
-      "id": "universitat-der-kunste-berlin--design--bachelor-of-arts",
+      "id": "bauhaus-universitat-weimar--visual-communication--bachelor-of-arts",
       "weight": 0.35
     },
     {
       "id": "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
       "weight": 0.35
-    }
-  ],
-  "merz-akademie--design-art-and-media--bachelor-of-arts": [
-    {
-      "id": "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.36
-    },
-    {
-      "id": "hochschule-der-bildenden-kunste-essen--fine-arts--bachelor-of-fine-arts",
-      "weight": 0.36
     }
   ],
   "hochschule-fur-fernsehen-und-film-munchen--film-and-television--diploma": [
@@ -13101,6 +12563,62 @@
       "weight": 0.34
     }
   ],
+  "filmuniversitat-babelsberg-konrad-wolf--animation--diploma": [
+    {
+      "id": "filmakademie-baden-wurttemberg--animation--diploma",
+      "weight": 0.73
+    },
+    {
+      "id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
+      "weight": 0.5
+    },
+    {
+      "id": "filmakademie-baden-wurttemberg--animation-effects-producing--diploma",
+      "weight": 0.37
+    }
+  ],
+  "filmakademie-baden-wurttemberg--animation--diploma": [
+    {
+      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--diploma",
+      "weight": 0.73
+    },
+    {
+      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified",
+      "weight": 0.6
+    },
+    {
+      "id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
+      "weight": 0.49
+    }
+  ],
+  "hochschule-darmstadt--animation-and-game--bachelor-of-arts": [
+    {
+      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--diploma",
+      "weight": 0.5
+    },
+    {
+      "id": "filmakademie-baden-wurttemberg--animation--diploma",
+      "weight": 0.49
+    },
+    {
+      "id": "haw-hamburg--games--master-of-arts",
+      "weight": 0.43
+    },
+    {
+      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified",
+      "weight": 0.37
+    }
+  ],
+  "filmakademie-baden-wurttemberg--animation-effects-producing--diploma": [
+    {
+      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified",
+      "weight": 0.38
+    },
+    {
+      "id": "filmuniversitat-babelsberg-konrad-wolf--animation--diploma",
+      "weight": 0.37
+    }
+  ],
   "filmuniversitat-babelsberg-konrad-wolf--sound--diploma": [
     {
       "id": "filmakademie-baden-wurttemberg--filmton-sounddesign--diploma",
@@ -13127,6 +12645,20 @@
     {
       "id": "filmuniversitat-babelsberg-konrad-wolf--editing--diploma",
       "weight": 0.66
+    }
+  ],
+  "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified": [
+    {
+      "id": "filmakademie-baden-wurttemberg--animation--diploma",
+      "weight": 0.6
+    },
+    {
+      "id": "filmakademie-baden-wurttemberg--animation-effects-producing--diploma",
+      "weight": 0.38
+    },
+    {
+      "id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
+      "weight": 0.37
     }
   ],
   "filmuniversitat-babelsberg-konrad-wolf--acting--unspecified": [
@@ -13231,10 +12763,6 @@
       "weight": 0.44
     },
     {
-      "id": "technische-hochschule-ingolstadt--design-and-user-experience--bachelor-of-arts",
-      "weight": 0.38
-    },
-    {
       "id": "universitat-bremen--digitale-medien--bachelor-of-arts",
       "weight": 0.37
     }
@@ -13250,10 +12778,6 @@
     }
   ],
   "technische-hochschule-augsburg--interactive-media--bachelor-of-arts": [
-    {
-      "id": "technische-hochschule-ingolstadt--design-and-user-experience--bachelor-of-arts",
-      "weight": 0.51
-    },
     {
       "id": "rwth-aachen-university--media-informatics--bachelor-of-science",
       "weight": 0.5
@@ -13273,6 +12797,10 @@
     {
       "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaktionsgestaltung--bachelor-of-arts",
       "weight": 0.36
+    },
+    {
+      "id": "technische-universitat-berlin--media-technology--bachelor-of-science",
+      "weight": 0.34
     }
   ],
   "hochschule-pforzheim--creative-direction--master-of-arts": [
@@ -13283,6 +12811,12 @@
     {
       "id": "muthesius-kunsthochschule-kiel--communication-design--master-of-arts",
       "weight": 0.34
+    }
+  ],
+  "hochschule-pforzheim--design-future-making--master-of-arts": [
+    {
+      "id": "hochschule-fur-gestaltung-schwabisch-gmund--strategische-gestaltung--master-of-arts",
+      "weight": 0.37
     }
   ],
   "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--bachelor-of-arts": [
@@ -13305,6 +12839,36 @@
     {
       "id": "technische-hochschule-augsburg--communication-design--bachelor-of-arts",
       "weight": 0.33
+    }
+  ],
+  "koln-international-school-of-design--communication-design--bachelor-of-arts": [
+    {
+      "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--kommunikationsdesign--bachelor-of-arts",
+      "weight": 0.59
+    },
+    {
+      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--bachelor-of-arts",
+      "weight": 0.58
+    },
+    {
+      "id": "fachhochschule-potsdam--communication-design--bachelor-of-arts",
+      "weight": 0.57
+    },
+    {
+      "id": "hochschule-pforzheim--visuelle-kommunikation--bachelor-of-arts",
+      "weight": 0.56
+    },
+    {
+      "id": "muthesius-kunsthochschule-kiel--communication-design--bachelor-of-arts",
+      "weight": 0.54
+    },
+    {
+      "id": "bauhaus-universitat-weimar--visual-communication--bachelor-of-arts",
+      "weight": 0.54
+    },
+    {
+      "id": "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--bachelor-of-arts",
+      "weight": 0.36
     }
   ],
   "technische-hochschule-augsburg--communication-design--bachelor-of-arts": [
@@ -13337,6 +12901,10 @@
       "weight": 0.52
     },
     {
+      "id": "fachhochschule-dortmund--visuelle-kommunikation--bachelor-of-arts",
+      "weight": 0.47
+    },
+    {
       "id": "haw-hamburg--kommunikationsdesign--bachelor-of-arts",
       "weight": 0.45
     },
@@ -13367,12 +12935,12 @@
       "weight": 0.54
     },
     {
-      "id": "hochschule-darmstadt--digital-media--unspecified",
-      "weight": 0.51
-    },
-    {
       "id": "rwth-aachen-university--human-technology-interaction-and-communication--unspecified",
       "weight": 0.48
+    },
+    {
+      "id": "bauhaus-universitat-weimar--media--unspecified",
+      "weight": 0.37
     },
     {
       "id": "technische-universitat-chemnitz--human-computer-interaction--unspecified",
@@ -13401,72 +12969,8 @@
       "weight": 0.56
     },
     {
-      "id": "hochschule-darmstadt--digital-media--unspecified",
-      "weight": 0.54
-    },
-    {
       "id": "technische-universitat-chemnitz--human-computer-interaction--unspecified",
       "weight": 0.41
-    }
-  ],
-  "universitat-wurzburg--human-computer-interaction--unspecified": [
-    {
-      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--unspecified",
-      "weight": 0.7
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--unspecified",
-      "weight": 0.67
-    },
-    {
-      "id": "rwth-aachen-university--human-technology-interaction-and-communication--unspecified",
-      "weight": 0.66
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
-      "weight": 0.62
-    },
-    {
-      "id": "hochschule-darmstadt--digital-media--unspecified",
-      "weight": 0.58
-    },
-    {
-      "id": "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified",
-      "weight": 0.57
-    },
-    {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
-      "weight": 0.54
-    },
-    {
-      "id": "technische-universitat-chemnitz--human-computer-interaction--unspecified",
-      "weight": 0.34
-    }
-  ],
-  "rwth-aachen-university--human-technology-interaction-and-communication--unspecified": [
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--unspecified",
-      "weight": 0.69
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
-      "weight": 0.66
-    },
-    {
-      "id": "universitat-wurzburg--human-computer-interaction--unspecified",
-      "weight": 0.66
-    },
-    {
-      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--unspecified",
-      "weight": 0.57
-    },
-    {
-      "id": "hochschule-darmstadt--digital-media--unspecified",
-      "weight": 0.53
-    },
-    {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
-      "weight": 0.48
     }
   ],
   "bard-college-berlin--humanities-the-arts-and-social-thought--bachelor-of-arts": [
@@ -13577,6 +13081,10 @@
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--theater-und-orchestermanagement--master-of-arts",
       "weight": 0.43
+    },
+    {
+      "id": "koln-international-school-of-design--integrated-design-research--master-of-arts",
+      "weight": 0.42
     }
   ],
   "universitat-siegen--media-studies--master-of-arts": [
@@ -13605,190 +13113,10 @@
       "weight": 0.39
     }
   ],
-  "hochschule-darmstadt--media-and-communication--bachelor-of-arts": [
-    {
-      "id": "universitat-passau--media-and-communication--bachelor-of-arts",
-      "weight": 0.51
-    },
-    {
-      "id": "universitat-wurzburg--media-communication--bachelor-of-arts",
-      "weight": 0.51
-    },
-    {
-      "id": "universitat-siegen--media-studies--bachelor-of-arts",
-      "weight": 0.45
-    },
-    {
-      "id": "hdm-stuttgart--crossmedia-redaktion-public-relations--bachelor-of-arts",
-      "weight": 0.44
-    },
-    {
-      "id": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
-      "weight": 0.42
-    },
-    {
-      "id": "universitat-trier--media-studies--bachelor-of-arts",
-      "weight": 0.38
-    }
-  ],
-  "universitat-passau--media-and-communication--bachelor-of-arts": [
-    {
-      "id": "universitat-wurzburg--media-communication--bachelor-of-arts",
-      "weight": 0.77
-    },
-    {
-      "id": "universitat-siegen--media-studies--bachelor-of-arts",
-      "weight": 0.71
-    },
-    {
-      "id": "universitat-trier--media-studies--bachelor-of-arts",
-      "weight": 0.63
-    },
-    {
-      "id": "hochschule-darmstadt--media-and-communication--bachelor-of-arts",
-      "weight": 0.51
-    },
-    {
-      "id": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
-      "weight": 0.46
-    }
-  ],
-  "universitat-wurzburg--media-communication--bachelor-of-arts": [
-    {
-      "id": "universitat-siegen--media-studies--bachelor-of-arts",
-      "weight": 0.81
-    },
-    {
-      "id": "universitat-passau--media-and-communication--bachelor-of-arts",
-      "weight": 0.77
-    },
-    {
-      "id": "universitat-trier--media-studies--bachelor-of-arts",
-      "weight": 0.65
-    },
-    {
-      "id": "hochschule-darmstadt--media-and-communication--bachelor-of-arts",
-      "weight": 0.51
-    },
-    {
-      "id": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
-      "weight": 0.44
-    }
-  ],
-  "universitat-siegen--media-studies--bachelor-of-arts": [
-    {
-      "id": "universitat-wurzburg--media-communication--bachelor-of-arts",
-      "weight": 0.81
-    },
-    {
-      "id": "universitat-trier--media-studies--bachelor-of-arts",
-      "weight": 0.71
-    },
-    {
-      "id": "universitat-passau--media-and-communication--bachelor-of-arts",
-      "weight": 0.71
-    },
-    {
-      "id": "technische-universitat-berlin--media-technology--bachelor-of-science",
-      "weight": 0.55
-    },
-    {
-      "id": "hochschule-darmstadt--media-and-communication--bachelor-of-arts",
-      "weight": 0.45
-    },
-    {
-      "id": "universitat-passau--digital-humanities--bachelor-of-arts",
-      "weight": 0.36
-    },
-    {
-      "id": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
-      "weight": 0.36
-    },
-    {
-      "id": "hdm-stuttgart--mediapublishing--bachelor-of-arts",
-      "weight": 0.33
-    }
-  ],
-  "hdm-stuttgart--crossmedia-redaktion-public-relations--bachelor-of-arts": [
-    {
-      "id": "hochschule-darmstadt--media-and-communication--bachelor-of-arts",
-      "weight": 0.44
-    }
-  ],
-  "haw-hamburg--medien-und-kommunikation--bachelor-of-arts": [
-    {
-      "id": "universitat-passau--media-and-communication--bachelor-of-arts",
-      "weight": 0.46
-    },
-    {
-      "id": "universitat-trier--media-studies--bachelor-of-arts",
-      "weight": 0.45
-    },
-    {
-      "id": "universitat-wurzburg--media-communication--bachelor-of-arts",
-      "weight": 0.44
-    },
-    {
-      "id": "hochschule-darmstadt--media-and-communication--bachelor-of-arts",
-      "weight": 0.42
-    },
-    {
-      "id": "universitat-siegen--media-studies--bachelor-of-arts",
-      "weight": 0.36
-    }
-  ],
-  "universitat-trier--media-studies--bachelor-of-arts": [
-    {
-      "id": "universitat-siegen--media-studies--bachelor-of-arts",
-      "weight": 0.71
-    },
-    {
-      "id": "universitat-wurzburg--media-communication--bachelor-of-arts",
-      "weight": 0.65
-    },
-    {
-      "id": "universitat-passau--media-and-communication--bachelor-of-arts",
-      "weight": 0.63
-    },
-    {
-      "id": "technische-universitat-munchen--media-engineering--bachelor-of-science",
-      "weight": 0.57
-    },
-    {
-      "id": "technische-universitat-berlin--media-technology--bachelor-of-science",
-      "weight": 0.56
-    },
-    {
-      "id": "hochschule-anhalt--design-integrated-design--bachelor-of-arts",
-      "weight": 0.55
-    },
-    {
-      "id": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
-      "weight": 0.45
-    },
-    {
-      "id": "hochschule-darmstadt--media-and-communication--bachelor-of-arts",
-      "weight": 0.38
-    }
-  ],
-  "technische-universitat-munchen--informatics-games-engineering--bachelor-of-science": [
-    {
-      "id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
-      "weight": 0.49
-    },
-    {
-      "id": "haw-hamburg--games--master-of-arts",
-      "weight": 0.37
-    }
-  ],
   "haw-hamburg--games--master-of-arts": [
     {
       "id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
       "weight": 0.43
-    },
-    {
-      "id": "technische-universitat-munchen--informatics-games-engineering--bachelor-of-science",
-      "weight": 0.37
     }
   ],
   "hochschule-darmstadt--communication-design--bachelor-of-arts": [
@@ -13855,8 +13183,8 @@
       "weight": 0.5
     },
     {
-      "id": "hochschule-fur-gestaltung-offenbach--visual-communication--bachelor-of-arts",
-      "weight": 0.5
+      "id": "technische-hochschule-augsburg--communication-design--bachelor-of-arts",
+      "weight": 0.47
     },
     {
       "id": "hochschule-rhein-waal--design-and-communication--bachelor-of-arts",
@@ -13869,142 +13197,6 @@
     {
       "id": "hdm-stuttgart--informationsdesign--bachelor-of-arts",
       "weight": 0.38
-    }
-  ],
-  "hochschule-darmstadt--expanded-realities--master-of-arts": [
-    {
-      "id": "haw-hamburg--digital-reality--master-of-science",
-      "weight": 0.53
-    }
-  ],
-  "haw-hamburg--digital-reality--master-of-science": [
-    {
-      "id": "hochschule-darmstadt--expanded-realities--master-of-arts",
-      "weight": 0.53
-    }
-  ],
-  "technische-hochschule-ingolstadt--design-and-user-experience--bachelor-of-arts": [
-    {
-      "id": "rwth-aachen-university--media-informatics--bachelor-of-science",
-      "weight": 0.52
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media--bachelor-of-arts",
-      "weight": 0.51
-    },
-    {
-      "id": "universitat-bremen--digitale-medien--bachelor-of-arts",
-      "weight": 0.44
-    },
-    {
-      "id": "hochschule-darmstadt--interactive-media-design--bachelor-of-arts",
-      "weight": 0.38
-    },
-    {
-      "id": "technische-universitat-berlin--media-technology--bachelor-of-science",
-      "weight": 0.38
-    }
-  ],
-  "technische-hochschule-ingolstadt--user-experience-design--master-of-science": [
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.66
-    },
-    {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.57
-    },
-    {
-      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
-      "weight": 0.51
-    },
-    {
-      "id": "universitat-wurzburg--human-computer-systems--master-of-science",
-      "weight": 0.51
-    },
-    {
-      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
-      "weight": 0.5
-    },
-    {
-      "id": "bauhaus-universitat-weimar--human-computer-interaction--master-of-science",
-      "weight": 0.49
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
-      "weight": 0.42
-    },
-    {
-      "id": "fachhochschule-dortmund--digital-design--master-of-science",
-      "weight": 0.42
-    },
-    {
-      "id": "rwth-aachen-university--media-informatics--master-of-science",
-      "weight": 0.4
-    },
-    {
-      "id": "hochschule-offenburg--communication-and-media-engineering--master-of-science",
-      "weight": 0.37
-    },
-    {
-      "id": "rwth-aachen-university--human-technology-interaction-and-communication--master-of-science",
-      "weight": 0.35
-    }
-  ],
-  "technische-hochschule-augsburg--interactive-media-systems--master-of-arts": [
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-arts",
-      "weight": 0.57
-    },
-    {
-      "id": "koln-international-school-of-design--integrated-design-research--master-of-arts",
-      "weight": 0.57
-    },
-    {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.52
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
-      "weight": 0.42
-    },
-    {
-      "id": "rwth-aachen-university--media-informatics--master-of-science",
-      "weight": 0.42
-    },
-    {
-      "id": "universitat-wurzburg--human-computer-systems--master-of-science",
-      "weight": 0.41
-    }
-  ],
-  "technische-hochschule-ingolstadt--user-experience-design--master-of-arts": [
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.57
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
-      "weight": 0.57
-    },
-    {
-      "id": "koln-international-school-of-design--integrated-design-research--master-of-arts",
-      "weight": 0.55
-    },
-    {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.51
-    },
-    {
-      "id": "rwth-aachen-university--media-informatics--master-of-science",
-      "weight": 0.41
-    },
-    {
-      "id": "hdm-stuttgart--digital-design--master-of-arts",
-      "weight": 0.38
-    },
-    {
-      "id": "hdm-stuttgart--wirtschaftsinformatik--master-of-science",
-      "weight": 0.35
     }
   ],
   "hochschule-rhein-waal--design-and-communication--bachelor-of-arts": [
@@ -14047,16 +13239,6 @@
       "weight": 0.43
     }
   ],
-  "hochschule-pforzheim--design-future-making--master-of-arts": [
-    {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--strategische-gestaltung--master-of-arts",
-      "weight": 0.37
-    },
-    {
-      "id": "hochschule-rhein-waal--sustainable-design--master-of-arts",
-      "weight": 0.33
-    }
-  ],
   "technische-universitat-berlin--media-technology--bachelor-of-science": [
     {
       "id": "universitat-trier--media-studies--bachelor-of-arts",
@@ -14083,12 +13265,72 @@
       "weight": 0.43
     },
     {
-      "id": "technische-hochschule-ingolstadt--design-and-user-experience--bachelor-of-arts",
+      "id": "hdm-stuttgart--wirtschaftsingenieurwesen-medien--bachelor-of-engineering",
       "weight": 0.38
     },
     {
-      "id": "hdm-stuttgart--wirtschaftsingenieurwesen-medien--bachelor-of-engineering",
-      "weight": 0.38
+      "id": "technische-hochschule-augsburg--interactive-media--bachelor-of-arts",
+      "weight": 0.34
+    }
+  ],
+  "universitat-trier--media-studies--bachelor-of-arts": [
+    {
+      "id": "universitat-siegen--media-studies--bachelor-of-arts",
+      "weight": 0.71
+    },
+    {
+      "id": "universitat-wurzburg--media-communication--bachelor-of-arts",
+      "weight": 0.65
+    },
+    {
+      "id": "universitat-passau--media-and-communication--bachelor-of-arts",
+      "weight": 0.63
+    },
+    {
+      "id": "technische-universitat-munchen--media-engineering--bachelor-of-science",
+      "weight": 0.57
+    },
+    {
+      "id": "technische-universitat-berlin--media-technology--bachelor-of-science",
+      "weight": 0.56
+    },
+    {
+      "id": "hochschule-anhalt--design-integrated-design--bachelor-of-arts",
+      "weight": 0.55
+    },
+    {
+      "id": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
+      "weight": 0.45
+    }
+  ],
+  "universitat-siegen--media-studies--bachelor-of-arts": [
+    {
+      "id": "universitat-wurzburg--media-communication--bachelor-of-arts",
+      "weight": 0.81
+    },
+    {
+      "id": "universitat-trier--media-studies--bachelor-of-arts",
+      "weight": 0.71
+    },
+    {
+      "id": "universitat-passau--media-and-communication--bachelor-of-arts",
+      "weight": 0.71
+    },
+    {
+      "id": "technische-universitat-berlin--media-technology--bachelor-of-science",
+      "weight": 0.55
+    },
+    {
+      "id": "universitat-passau--digital-humanities--bachelor-of-arts",
+      "weight": 0.36
+    },
+    {
+      "id": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
+      "weight": 0.36
+    },
+    {
+      "id": "hdm-stuttgart--mediapublishing--bachelor-of-arts",
+      "weight": 0.33
     }
   ],
   "technische-universitat-munchen--media-engineering--bachelor-of-science": [
@@ -14118,10 +13360,6 @@
     }
   ],
   "rwth-aachen-university--media-informatics--bachelor-of-science": [
-    {
-      "id": "technische-hochschule-ingolstadt--design-and-user-experience--bachelor-of-arts",
-      "weight": 0.52
-    },
     {
       "id": "technische-hochschule-augsburg--interactive-media--bachelor-of-arts",
       "weight": 0.5
@@ -14195,6 +13433,42 @@
     {
       "id": "technische-universitat-berlin--audiovisual-media-culture-and-communication--master-of-arts",
       "weight": 0.35
+    }
+  ],
+  "universitat-wurzburg--media-communication--bachelor-of-arts": [
+    {
+      "id": "universitat-siegen--media-studies--bachelor-of-arts",
+      "weight": 0.81
+    },
+    {
+      "id": "universitat-passau--media-and-communication--bachelor-of-arts",
+      "weight": 0.77
+    },
+    {
+      "id": "universitat-trier--media-studies--bachelor-of-arts",
+      "weight": 0.65
+    },
+    {
+      "id": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
+      "weight": 0.44
+    }
+  ],
+  "universitat-passau--media-and-communication--bachelor-of-arts": [
+    {
+      "id": "universitat-wurzburg--media-communication--bachelor-of-arts",
+      "weight": 0.77
+    },
+    {
+      "id": "universitat-siegen--media-studies--bachelor-of-arts",
+      "weight": 0.71
+    },
+    {
+      "id": "universitat-trier--media-studies--bachelor-of-arts",
+      "weight": 0.63
+    },
+    {
+      "id": "haw-hamburg--medien-und-kommunikation--bachelor-of-arts",
+      "weight": 0.46
     }
   ],
   "universitat-trier--media-studies--master-of-arts": [
@@ -14299,14 +13573,28 @@
       "weight": 0.36
     }
   ],
+  "haw-hamburg--medien-und-kommunikation--bachelor-of-arts": [
+    {
+      "id": "universitat-passau--media-and-communication--bachelor-of-arts",
+      "weight": 0.46
+    },
+    {
+      "id": "universitat-trier--media-studies--bachelor-of-arts",
+      "weight": 0.45
+    },
+    {
+      "id": "universitat-wurzburg--media-communication--bachelor-of-arts",
+      "weight": 0.44
+    },
+    {
+      "id": "universitat-siegen--media-studies--bachelor-of-arts",
+      "weight": 0.36
+    }
+  ],
   "universitat-wurzburg--human-computer-systems--master-of-science": [
     {
       "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
       "weight": 0.58
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.56
     },
     {
       "id": "universitat-siegen--human-computer-interaction--master-of-science",
@@ -14347,50 +13635,20 @@
       "weight": 0.42
     },
     {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.42
-    },
-    {
       "id": "universitat-wurzburg--human-computer-interaction--master-of-science",
       "weight": 0.4
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-arts",
-      "weight": 0.38
     },
     {
       "id": "technische-universitat-berlin--human-computer-interaction--master-of-science",
       "weight": 0.37
     },
     {
+      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
+      "weight": 0.37
+    },
+    {
       "id": "haw-hamburg--digitale-kommunikation--master-of-arts",
       "weight": 0.36
-    }
-  ],
-  "rwth-aachen-university--media-informatics--master-of-science": [
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.48
-    },
-    {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.46
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
-      "weight": 0.42
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-arts",
-      "weight": 0.41
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
-      "weight": 0.4
-    },
-    {
-      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
-      "weight": 0.38
     }
   ],
   "technische-hochschule-ingolstadt--mobility-and-transportation-design--bachelor-of-arts": [
@@ -14403,6 +13661,32 @@
     {
       "id": "technische-hochschule-ingolstadt--mobility-and-transportation-design--bachelor-of-arts",
       "weight": 0.56
+    }
+  ],
+  "technische-hochschule-augsburg--interactive-media-systems--master-of-arts": [
+    {
+      "id": "koln-international-school-of-design--integrated-design-research--master-of-arts",
+      "weight": 0.57
+    },
+    {
+      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
+      "weight": 0.42
+    },
+    {
+      "id": "universitat-wurzburg--human-computer-systems--master-of-science",
+      "weight": 0.41
+    },
+    {
+      "id": "hdm-stuttgart--computer-science-and-media--master-of-science",
+      "weight": 0.35
+    },
+    {
+      "id": "universitat-wurzburg--human-computer-interaction--master-of-science",
+      "weight": 0.34
+    },
+    {
+      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
+      "weight": 0.33
     }
   ],
   "hdm-stuttgart--unternehmenskommunikation--master-of-arts": [
@@ -14421,6 +13705,26 @@
     {
       "id": "fachhochschule-potsdam--european-media-studies-with-university-of-potsdam--master-of-arts",
       "weight": 0.35
+    }
+  ],
+  "technische-universitat-chemnitz--human-computer-interaction--unspecified": [
+    {
+      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--unspecified",
+      "weight": 0.41
+    },
+    {
+      "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
+      "weight": 0.36
+    },
+    {
+      "id": "universitat-wurzburg--human-computer-interaction--unspecified",
+      "weight": 0.34
+    }
+  ],
+  "hdm-stuttgart--wirtschaftsinformatik-und-digitale-medien--bachelor-of-science": [
+    {
+      "id": "rwth-aachen-university--media-informatics--bachelor-of-science",
+      "weight": 0.4
     }
   ],
   "rwth-aachen-university--communication-engineering--master-of-science": [
@@ -14709,12 +14013,6 @@
       "weight": 0.58
     }
   ],
-  "hdm-stuttgart--wirtschaftsinformatik-und-digitale-medien--bachelor-of-science": [
-    {
-      "id": "rwth-aachen-university--media-informatics--bachelor-of-science",
-      "weight": 0.4
-    }
-  ],
   "haw-hamburg--zeitabhangige-medien-sound-vision--master-of-arts": [
     {
       "id": "hdm-stuttgart--audiovisual-media-creation-and-technology--master-of-arts",
@@ -14729,26 +14027,20 @@
       "weight": 0.37
     }
   ],
-  "hdm-stuttgart--wirtschaftsinformatik--master-of-science": [
+  "haw-hamburg--digitale-kommunikation--master-of-arts": [
     {
-      "id": "hochschule-darmstadt--digital-media--master-of-science",
-      "weight": 0.51
-    },
+      "id": "hdm-stuttgart--digital-design--master-of-arts",
+      "weight": 0.36
+    }
+  ],
+  "hdm-stuttgart--wirtschaftsinformatik--master-of-science": [
     {
       "id": "fachhochschule-dortmund--digital-design--master-of-science",
       "weight": 0.47
     },
     {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
-      "weight": 0.41
-    },
-    {
       "id": "haw-hamburg--digitale-transformation-der-informations-und-medienwirtschaft--master-of-arts",
       "weight": 0.4
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--master-of-arts",
-      "weight": 0.35
     }
   ],
   "hochschule-fur-musik-saar--advanced-education-in-music-pedagogy--master-of-education": [
@@ -14793,36 +14085,6 @@
       "weight": 0.44
     }
   ],
-  "hmt-leipzig--music-education--unspecified": [
-    {
-      "id": "akademie-munchen--art-education--unspecified",
-      "weight": 0.52
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--musikpadagogik--master-of-music",
-      "weight": 0.47
-    },
-    {
-      "id": "akademie-nurnberg--art-education--unspecified",
-      "weight": 0.43
-    },
-    {
-      "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.41
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--instrumentalpadagogik--master-of-music",
-      "weight": 0.4
-    },
-    {
-      "id": "musikhochschule-lubeck--lehramt-gymnasium-musik-vermitteln--master-of-education",
-      "weight": 0.4
-    },
-    {
-      "id": "kunstakademie-munster--art-education--unspecified",
-      "weight": 0.35
-    }
-  ],
   "hochschule-fur-musik-und-darstellende-kunst-stuttgart--lehramt-gymnasium-mit-dem-fach-musik--bachelor": [
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--lehramt-musik-an-gymnasien--bachelor",
@@ -14853,37 +14115,7 @@
       "weight": 0.34
     }
   ],
-  "hmt-leipzig--music--unspecified": [
-    {
-      "id": "hmtm-hannover--music--unspecified",
-      "weight": 0.59
-    },
-    {
-      "id": "folkwang-essen--music--unspecified",
-      "weight": 0.51
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--musik--master-of-music",
-      "weight": 0.37
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--musik--bachelor-of-music",
-      "weight": 0.36
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--musik--bachelor-of-music",
-      "weight": 0.36
-    },
-    {
-      "id": "universitat-der-kunste-berlin--music--bachelor-of-music",
-      "weight": 0.34
-    }
-  ],
   "hmtm-hannover--music--unspecified": [
-    {
-      "id": "hmt-leipzig--music--unspecified",
-      "weight": 0.59
-    },
     {
       "id": "folkwang-essen--music--unspecified",
       "weight": 0.49
@@ -14903,6 +14135,10 @@
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--musik--bachelor-of-music",
       "weight": 0.36
+    },
+    {
+      "id": "hochschule-fur-musik-saar--kunstlerisches-profil-instrument--master-of-music",
+      "weight": 0.34
     }
   ],
   "folkwang-essen--dance--unspecified": [
@@ -14985,6 +14221,10 @@
     {
       "id": "palucca-hochschule-fur-tanz--tanz--bachelor-of-arts",
       "weight": 0.39
+    },
+    {
+      "id": "hochschule-fur-musik-berlin--musiktheater-regie--bachelor",
+      "weight": 0.38
     },
     {
       "id": "hochschule-fur-schauspielkunst-berlin--choreographie--master-of-arts",
@@ -15101,12 +14341,6 @@
       "weight": 0.37
     }
   ],
-  "haw-hamburg--digitale-kommunikation--master-of-arts": [
-    {
-      "id": "hdm-stuttgart--digital-design--master-of-arts",
-      "weight": 0.36
-    }
-  ],
   "hfbk-dresden--art-therapy-postgraduate--postgraduate-diploma": [
     {
       "id": "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts",
@@ -15151,20 +14385,6 @@
       "weight": 0.38
     }
   ],
-  "technische-universitat-chemnitz--human-computer-interaction--unspecified": [
-    {
-      "id": "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--unspecified",
-      "weight": 0.41
-    },
-    {
-      "id": "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
-      "weight": 0.36
-    },
-    {
-      "id": "universitat-wurzburg--human-computer-interaction--unspecified",
-      "weight": 0.34
-    }
-  ],
   "kunsthochschule-berlin-weissensee--fine-arts--diploma": [
     {
       "id": "folkwang-essen--fine-arts--diploma",
@@ -15172,7 +14392,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--fine-arts--diploma",
-      "weight": 0.48
+      "weight": 0.5
     },
     {
       "id": "hochschule-fur-kunste-bremen--freie-kunst--diploma",
@@ -15194,11 +14414,11 @@
   "kunsthochschule-berlin-weissensee--fine-arts--unspecified": [
     {
       "id": "universitat-der-kunste-berlin--fine-arts--unspecified",
-      "weight": 0.42
+      "weight": 0.43
     },
     {
       "id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--unspecified",
-      "weight": 0.41
+      "weight": 0.42
     },
     {
       "id": "muthesius-kunsthochschule-kiel--fine-arts--unspecified",
@@ -15211,36 +14431,6 @@
     {
       "id": "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified",
       "weight": 0.33
-    }
-  ],
-  "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--regie--bachelor-of-arts": [
-    {
-      "id": "hochschule-fur-musik-berlin--musiktheater-regie--bachelor",
-      "weight": 0.73
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--schauspiel--bachelor-of-arts",
-      "weight": 0.53
-    },
-    {
-      "id": "hmt-leipzig--drama--unspecified",
-      "weight": 0.43
-    },
-    {
-      "id": "hochschule-fur-schauspielkunst-berlin--schauspielregie--diplom",
-      "weight": 0.4
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--figurentheater--bachelor-of-arts",
-      "weight": 0.4
-    },
-    {
-      "id": "folkwang-essen--theatre--unspecified",
-      "weight": 0.38
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--sprechkunst-sprecherziehung--bachelor-of-arts",
-      "weight": 0.37
     }
   ],
   "hochschule-fur-musik-saar--kunstlerisches-profil-instrument--bachelor-of-music": [
@@ -15295,6 +14485,90 @@
     {
       "id": "hochschule-fur-musik-und-tanz-koln--gitarre--bachelor-of-music",
       "weight": 0.34
+    }
+  ],
+  "hochschule-fur-musik-saar--kunstlerisches-profil-instrument--master-of-music": [
+    {
+      "id": "hochschule-fur-musik-detmold--kunstlerische-ausbildung--master-of-music",
+      "weight": 0.58
+    },
+    {
+      "id": "hochschule-fur-musik-wurzburg--kunstlerische-ausbildung--master-of-music",
+      "weight": 0.58
+    },
+    {
+      "id": "robert-schumann-hochschule--orchesterinstrumente--master-of-music",
+      "weight": 0.57
+    },
+    {
+      "id": "hochschule-fur-musik-weimar--kunstlerische-instrumentalausbildung--master-of-music",
+      "weight": 0.55
+    },
+    {
+      "id": "hochschule-fur-musik-berlin--kunstlerische-instrumentalausbildung--master-of-music",
+      "weight": 0.52
+    },
+    {
+      "id": "hochschule-fur-musik-berlin--kammermusik--master-of-music",
+      "weight": 0.5
+    },
+    {
+      "id": "hochschule-fur-musik-und-tanz-koln--orchesterspiel--master-of-music",
+      "weight": 0.47
+    },
+    {
+      "id": "hochschule-fur-musik-und-tanz-koln--streichinstrumente--master-of-music",
+      "weight": 0.43
+    },
+    {
+      "id": "hochschule-fur-musik-und-tanz-koln--blasinstrumente--master-of-music",
+      "weight": 0.42
+    },
+    {
+      "id": "hmtm-hannover--music--unspecified",
+      "weight": 0.34
+    }
+  ],
+  "hochschule-fur-musik-weimar--gesang-musiktheater--bachelor-of-music": [
+    {
+      "id": "hochschule-fur-musik-und-tanz-koln--gesang--bachelor-of-music",
+      "weight": 0.84
+    },
+    {
+      "id": "hochschule-fur-musik-saar--kunstlerisches-profil-gesang--bachelor-of-music",
+      "weight": 0.82
+    },
+    {
+      "id": "robert-schumann-hochschule--gesang--bachelor-of-music",
+      "weight": 0.79
+    },
+    {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--gesang--bachelor-of-music",
+      "weight": 0.77
+    },
+    {
+      "id": "hochschule-fur-musik-berlin--gesang--bachelor-of-music",
+      "weight": 0.74
+    },
+    {
+      "id": "musikhochschule-lubeck--vokal--bachelor-of-music",
+      "weight": 0.74
+    },
+    {
+      "id": "hochschule-fur-musik-und-tanz-koln--gesang-musiktheater--master-of-music",
+      "weight": 0.72
+    },
+    {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--oper--master-of-music",
+      "weight": 0.63
+    },
+    {
+      "id": "hmtm-hannover--acting--unspecified",
+      "weight": 0.48
+    },
+    {
+      "id": "hochschule-fur-musik-berlin--musiktheater-regie--bachelor",
+      "weight": 0.43
     }
   ],
   "hmtm-hannover--media-management--unspecified": [
@@ -17179,44 +16453,6 @@
       "weight": 0.74
     }
   ],
-  "hochschule-fur-musik-weimar--gesang-musiktheater--bachelor-of-music": [
-    {
-      "id": "hochschule-fur-musik-und-tanz-koln--gesang--bachelor-of-music",
-      "weight": 0.84
-    },
-    {
-      "id": "hochschule-fur-musik-saar--kunstlerisches-profil-gesang--bachelor-of-music",
-      "weight": 0.82
-    },
-    {
-      "id": "robert-schumann-hochschule--gesang--bachelor-of-music",
-      "weight": 0.79
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--gesang--bachelor-of-music",
-      "weight": 0.77
-    },
-    {
-      "id": "hochschule-fur-musik-berlin--gesang--bachelor-of-music",
-      "weight": 0.74
-    },
-    {
-      "id": "musikhochschule-lubeck--vokal--bachelor-of-music",
-      "weight": 0.74
-    },
-    {
-      "id": "hochschule-fur-musik-und-tanz-koln--gesang-musiktheater--master-of-music",
-      "weight": 0.72
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart--oper--master-of-music",
-      "weight": 0.63
-    },
-    {
-      "id": "hochschule-fur-musik-berlin--musiktheater-regie--bachelor",
-      "weight": 0.43
-    }
-  ],
   "musikhochschule-lubeck--vokal--bachelor-of-music": [
     {
       "id": "hochschule-fur-musik-saar--kunstlerisches-profil-gesang--bachelor-of-music",
@@ -17627,8 +16863,8 @@
       "weight": 0.41
     },
     {
-      "id": "hmt-leipzig--drama--unspecified",
-      "weight": 0.39
+      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--tanz--bachelor-of-arts",
+      "weight": 0.38
     }
   ],
   "hochschule-fur-musik-und-darstellende-kunst-stuttgart--figurentheater--bachelor-of-arts": [
@@ -17657,10 +16893,6 @@
     {
       "id": "hochschule-fur-schauspielkunst-berlin--dramaturgie--master-of-arts",
       "weight": 0.39
-    },
-    {
-      "id": "hmt-leipzig--drama--unspecified",
-      "weight": 0.35
     }
   ],
   "hochschule-fur-schauspielkunst-berlin--dramaturgie--master-of-arts": [
@@ -18131,44 +17363,6 @@
     {
       "id": "hochschule-fur-musik-dresden--kunstlerische-ausbildung--bachelor-of-music",
       "weight": 0.56
-    }
-  ],
-  "hochschule-fur-musik-saar--kunstlerisches-profil-instrument--master-of-music": [
-    {
-      "id": "hochschule-fur-musik-detmold--kunstlerische-ausbildung--master-of-music",
-      "weight": 0.58
-    },
-    {
-      "id": "hochschule-fur-musik-wurzburg--kunstlerische-ausbildung--master-of-music",
-      "weight": 0.58
-    },
-    {
-      "id": "robert-schumann-hochschule--orchesterinstrumente--master-of-music",
-      "weight": 0.57
-    },
-    {
-      "id": "hochschule-fur-musik-weimar--kunstlerische-instrumentalausbildung--master-of-music",
-      "weight": 0.55
-    },
-    {
-      "id": "hochschule-fur-musik-berlin--kunstlerische-instrumentalausbildung--master-of-music",
-      "weight": 0.52
-    },
-    {
-      "id": "hochschule-fur-musik-berlin--kammermusik--master-of-music",
-      "weight": 0.5
-    },
-    {
-      "id": "hochschule-fur-musik-und-tanz-koln--orchesterspiel--master-of-music",
-      "weight": 0.47
-    },
-    {
-      "id": "hochschule-fur-musik-und-tanz-koln--streichinstrumente--master-of-music",
-      "weight": 0.43
-    },
-    {
-      "id": "hochschule-fur-musik-und-tanz-koln--blasinstrumente--master-of-music",
-      "weight": 0.42
     }
   ],
   "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-chorleitung--master-of-music": [
@@ -20047,6 +19241,36 @@
       "weight": 0.36
     }
   ],
+  "hochschule-fur-musik-und-darstellende-kunst-stuttgart--lehramt-gymnasium-mit-dem-fach-musik--master": [
+    {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--lehramt-musik-an-gymnasien--master",
+      "weight": 0.64
+    },
+    {
+      "id": "musikhochschule-lubeck--lehramt-gymnasium-musik-vermitteln--master-of-education",
+      "weight": 0.53
+    },
+    {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--musikpadagogik--master-of-music",
+      "weight": 0.43
+    },
+    {
+      "id": "hochschule-fur-musik-freiburg--lehramt-musik--lehramt",
+      "weight": 0.43
+    },
+    {
+      "id": "hochschule-fur-musik-und-theater-rostock--instrumental-und-gesangspadagogik--master-of-music",
+      "weight": 0.42
+    },
+    {
+      "id": "hochschule-fur-evangelische-kirchenmusik--instrumental-vokalpadagogik--master-of-music",
+      "weight": 0.42
+    },
+    {
+      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--instrumentalpadagogik--master-of-music",
+      "weight": 0.38
+    }
+  ],
   "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--bigband-spielen-schreiben-leiten--master-of-music": [
     {
       "id": "hochschule-fur-musik-weimar--jazz--master-of-music",
@@ -20199,10 +19423,6 @@
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--schauspiel--bachelor-of-arts",
       "weight": 0.52
-    },
-    {
-      "id": "hmt-leipzig--drama--unspecified",
-      "weight": 0.39
     },
     {
       "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--regie--bachelor-of-arts",
@@ -20758,7 +19978,7 @@
     },
     {
       "id": "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
-      "weight": 0.35
+      "weight": 0.34
     },
     {
       "id": "evangelische-hochschule-fur-kirchenmusik-halle--lehramt-musik--master-of-education",
@@ -21237,32 +20457,6 @@
     {
       "id": "musikhochschule-lubeck--musikplus-grundschule--master-of-education",
       "weight": 0.43
-    }
-  ],
-  "hochschule-fur-musik-und-darstellende-kunst-stuttgart--lehramt-gymnasium-mit-dem-fach-musik--master": [
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-mannheim--lehramt-musik-an-gymnasien--master",
-      "weight": 0.64
-    },
-    {
-      "id": "musikhochschule-lubeck--lehramt-gymnasium-musik-vermitteln--master-of-education",
-      "weight": 0.53
-    },
-    {
-      "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--musikpadagogik--master-of-music",
-      "weight": 0.43
-    },
-    {
-      "id": "hochschule-fur-musik-freiburg--lehramt-musik--lehramt",
-      "weight": 0.43
-    },
-    {
-      "id": "hochschule-fur-musik-und-theater-rostock--instrumental-und-gesangspadagogik--master-of-music",
-      "weight": 0.42
-    },
-    {
-      "id": "hochschule-fur-evangelische-kirchenmusik--instrumental-vokalpadagogik--master-of-music",
-      "weight": 0.42
     }
   ],
   "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik--katholische-kirchenmusik--master-of-music": [

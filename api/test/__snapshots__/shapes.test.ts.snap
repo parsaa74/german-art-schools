@@ -18,6 +18,10 @@ exports[`response shape snapshots (additive-only contract) > /v1/programs/{id} s
   "description",
   "duration",
   "extracted_at",
+  "intakes[]",
+  "joint_profile",
+  "joint_program_id",
+  "joint_with[]",
   "language",
   "name",
   "portfolio_required",
@@ -25,8 +29,11 @@ exports[`response shape snapshots (additive-only contract) > /v1/programs/{id} s
   "program_url",
   "school_id",
   "school_name",
+  "search_aliases[]",
   "source_url",
   "specializations[]",
+  "status",
+  "teaching_areas[]",
   "tuition_eur_per_semester",
 ]
 `;

@@ -2,7 +2,7 @@
   "statistics": {
     "last_updated": "2026-10-10",
     "total_schools": 93,
-    "total_programs": 765
+    "total_programs": 780
   },
   "universities": {
     "Hochschule für bildende Künste Hamburg": {
@@ -1458,11 +1458,232 @@
         },
         {
           "name": "Visual Communication",
-          "degree": "",
-          "applicationDeadlines": {},
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "15 January",
+              "end": "15 February"
+            }
+          },
           "language": "",
-          "duration": "",
-          "program_id": "universitat-der-kunste-berlin--visual-communication--unspecified"
+          "duration": "8 semesters",
+          "program_id": "universitat-der-kunste-berlin--visual-communication--unspecified",
+          "sources": {
+            "degree": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+            "duration": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+            "applicationDeadlines.winter": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+            "details.languageNotes": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+            "details.portfolioRequired": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+            "otherDeadlines": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+            "searchAliases": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+            "teachingAreas": "https://www.udk-berlin.de/en/courses/visual-communication/news/legacy-lectures/",
+            "details.programUrl": "https://www.udk-berlin.de/studium/visuelle-kommunikation/",
+            "details.applicationUrl": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+            "description": "https://www.udk-berlin.de/en/courses/visual-communication/new-media/",
+            "admission": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+            "fees": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+            "applicationRoute": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "languageNotes": [
+              "German C1 is listed for international applicants; application is also possible with B2. Check the linked language-proof FAQ for timing and exceptions."
+            ],
+            "portfolioRequired": true,
+            "programUrl": "https://www.udk-berlin.de/studium/visuelle-kommunikation/",
+            "applicationUrl": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/"
+          },
+          "otherDeadlines": [
+            {
+              "kind": "portfolio",
+              "semester": "winter",
+              "start": "02-01",
+              "end": "03-15",
+              "recurring": true,
+              "cycle": null,
+              "scope": "all applicants"
+            }
+          ],
+          "searchAliases": [
+            "Visuelle Kommunikation"
+          ],
+          "teachingAreas": [
+            {
+              "name": "New Media (formerly Digitale Klasse)",
+              "kind": "class",
+              "source": "https://www.udk-berlin.de/en/courses/visual-communication/new-media/"
+            }
+          ],
+          "description": "Visual Communication degree programme with a project-based New Media class. The class is not a separately awarded degree.",
+          "admission": "aptitude",
+          "admissionSource": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+          "fees": [
+            {
+              "kind": "application",
+              "euros": 30,
+              "period": "once",
+              "appliesTo": "each application",
+              "notes": "Foreign bank-transfer charges are additional."
+            }
+          ],
+          "applicationRoute": {
+            "method": "UdK portal + portfolio",
+            "notes": "Apply in my.udk-berlin.de and upload the portfolio separately in Bemus. A uni-assist VPD may be needed; check the applicant-specific FAQ.",
+            "url": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-bachelor/",
+            "scope": "Visual Communication applicants"
+          }
+        },
+        {
+          "name": "Visual Communication",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "15 January",
+              "end": "15 February"
+            }
+          },
+          "language": "",
+          "duration": "2 semesters",
+          "program_id": "universitat-der-kunste-berlin--visual-communication--master-of-arts",
+          "sources": {
+            "degree": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "duration": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "applicationDeadlines.winter": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "details.languageNotes": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "details.portfolioRequired": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "otherDeadlines": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "searchAliases": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "teachingAreas": "https://www.udk-berlin.de/en/courses/visual-communication/news/legacy-lectures/",
+            "details.programUrl": "https://www.udk-berlin.de/studium/visuelle-kommunikation/",
+            "details.applicationUrl": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "description": "https://www.udk-berlin.de/en/courses/visual-communication/new-media/",
+            "admission": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "fees": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "applicationRoute": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "requirements": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "languageNotes": [
+              "German C1 is listed for international applicants; application is also possible with B2. Check the linked language-proof FAQ for timing and exceptions."
+            ],
+            "portfolioRequired": true,
+            "programUrl": "https://www.udk-berlin.de/studium/visuelle-kommunikation/",
+            "applicationUrl": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/"
+          },
+          "otherDeadlines": [
+            {
+              "kind": "portfolio",
+              "semester": "winter",
+              "start": "02-01",
+              "end": "03-15",
+              "recurring": true,
+              "cycle": null,
+              "scope": "all applicants"
+            }
+          ],
+          "searchAliases": [
+            "Visuelle Kommunikation"
+          ],
+          "teachingAreas": [
+            {
+              "name": "New Media (formerly Digitale Klasse)",
+              "kind": "class",
+              "source": "https://www.udk-berlin.de/en/courses/visual-communication/new-media/"
+            }
+          ],
+          "description": "Visual Communication degree programme with a project-based New Media class. The class is not a separately awarded degree.",
+          "admission": "aptitude",
+          "admissionSource": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+          "fees": [
+            {
+              "kind": "application",
+              "euros": 30,
+              "period": "once",
+              "appliesTo": "each application",
+              "notes": "Foreign bank-transfer charges are additional."
+            }
+          ],
+          "applicationRoute": {
+            "method": "UdK portal + portfolio",
+            "notes": "Apply in my.udk-berlin.de and upload the portfolio separately in Bemus. A uni-assist VPD may be needed; check the applicant-specific FAQ.",
+            "url": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/visuelle-kommunikation-master/",
+            "scope": "Visual Communication applicants"
+          },
+          "requirements": [
+            {
+              "label": "first degree",
+              "text": "A Visual Communication bachelor at UdK Berlin (240 ECTS) or a comparable degree. Applicants with 180 or 210 ECTS must complete an adjustment course adding 60 or 30 ECTS, within up to two semesters, after passing the admission examination."
+            }
+          ]
+        },
+        {
+          "name": "Design & Computation",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "1 April 2026",
+              "end": "15 May 2026",
+              "cycle": "WiSe 2026/27"
+            }
+          },
+          "language": "German",
+          "duration": "4 semesters",
+          "program_id": "universitat-der-kunste-berlin--design-and-computation--master-of-arts",
+          "sources": {
+            "name": "https://www.newpractice.net/study",
+            "degree": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a",
+            "duration": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a",
+            "language": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a",
+            "applicationDeadlines.winter": "https://www.udk-berlin.de/studium/design-and-computation/",
+            "jointProgramId": "https://www.newpractice.net/study",
+            "searchAliases": "https://www.udk-berlin.de/studium/design-and-computation/",
+            "description": "https://www.newpractice.net/study",
+            "admission": "https://www.newpractice.net/application",
+            "details.portfolioRequired": "https://www.newpractice.net/application",
+            "details.languageNotes": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a",
+            "details.programUrl": "https://www.udk-berlin.de/studium/design-and-computation/",
+            "details.applicationUrl": "https://www.newpractice.net/application",
+            "applicationRoute": "https://www.newpractice.net/application",
+            "requirements": "https://www.newpractice.net/application",
+            "jointWith": "https://www.newpractice.net/study"
+          },
+          "researched": "2026-10-10",
+          "jointProgramId": "technische-universitat-berlin--design-and-computation--master-of-science",
+          "searchAliases": [
+            "Design and Computation"
+          ],
+          "description": "Joint UdK Berlin / TU Berlin master's programme at the intersection of art, science, society and technology. Both school listings describe the same programme and application, not two separate degrees.",
+          "admission": "aptitude-and-restricted",
+          "admissionSource": "https://www.newpractice.net/application",
+          "details": {
+            "portfolioRequired": true,
+            "languageNotes": [
+              "International applicants need German C1 proof at enrolment, not necessarily when applying. Permission to submit it by the end of the first semester can be granted on request."
+            ],
+            "programUrl": "https://www.udk-berlin.de/studium/design-and-computation/",
+            "applicationUrl": "https://www.newpractice.net/application"
+          },
+          "applicationRoute": {
+            "method": "TU Berlin portal + portfolio",
+            "notes": "Apply through TU Berlin (TuPort), then upload work samples using the programme’s portfolio form. Selected applicants are invited to interview. Foreign qualifications may require additional credential checks; confirm those with TU Berlin.",
+            "url": "https://www.newpractice.net/application",
+            "scope": "Design & Computation applicants"
+          },
+          "requirements": [
+            {
+              "label": "first degree",
+              "text": "A first professionally qualifying university degree in art/design, humanities, education, social sciences, natural sciences, mathematics, computer science, engineering, economics, law, medicine or a closely related field."
+            },
+            {
+              "label": "selection",
+              "text": "Submit a motivation letter (maximum two A4 pages) and work samples. Selected applicants are invited to an interview. Work samples may include writing, artistic/design work, audio, film or interactive websites."
+            }
+          ],
+          "specializations": [],
+          "jointWith": [
+            "technische-universitat-berlin"
+          ]
         },
         {
           "name": "Design",
@@ -1817,7 +2038,7 @@
           },
           "language": "English",
           "duration": "4 semesters",
-          "description": "Joint English-taught master of Hochschule für Künste Bremen and Universität Bremen with two tracks: Media Design (HfK Bremen — media theory from a cultural-studies perspective, media art and media aesthetics, intermedial design, computer music with digital sound synthesis and processing, smart materials for artistic production) and Media Informatics (Universität Bremen — embodied interaction, entertainment computing, interactive systems, cognitive modeling, advanced computer graphics, virtual reality and physically-based simulation, massively parallel GPU algorithms, computational geometry). Master project on a problem with societal, scientific, technological, artistic or design relevance, bridging art school and university.",
+          "description": "Joint English-taught Digital Media master of HfK Bremen and Universität Bremen. This listing is the Media Design (Mediengestaltung) profile, awarded as Master of Arts. Apply for the chosen profile at its respective institution; the partner profile has a different award.",
           "specializations": [
             "Media Design",
             "Media Informatics",
@@ -1835,21 +2056,55 @@
             "portfolioRequired": true,
             "extractedAt": "2026-06-12T00:00:00.000Z",
             "sourceUrl": "Module catalogue Digital Media Master (HfK Bremen / Universität Bremen, 2019-06-21)",
-            "programUrl": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5"
+            "programUrl": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5",
+            "languageNotes": [
+              "English C1. An English-taught university entrance qualification or professionally qualifying degree also satisfies the language-proof requirement. For conditional applications with an unfinished first degree, the language and completion requirements must be fulfilled by two weeks after teaching begins; consult the regulations for document deadlines."
+            ]
           },
           "jointWith": [
             "universitat-bremen"
           ],
           "sources": {
-            "duration": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5",
-            "language": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5",
+            "duration": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "language": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
             "details.programUrl": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5",
-            "status": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5"
+            "status": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5",
+            "degree": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "jointWith": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5",
+            "jointProgramId": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5",
+            "jointProfile": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "details.portfolioRequired": "https://www.uni-bremen.de/fileadmin/studydata/DBS/Dokumente/Ordnungen/Zulassungsordnungen/AO-Digital-Media-12-25.pdf",
+            "admission": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "description": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "requirements": "https://www.uni-bremen.de/fileadmin/studydata/DBS/Dokumente/Ordnungen/Zulassungsordnungen/AO-Digital-Media-12-25.pdf",
+            "details.languageNotes": "https://www.uni-bremen.de/fileadmin/studydata/DBS/Dokumente/Ordnungen/Zulassungsordnungen/AO-Digital-Media-12-25.pdf",
+            "applicationDeadlines.winter": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "applicationRoute": "https://www.uni-bremen.de/fileadmin/studydata/DBS/Dokumente/Ordnungen/Zulassungsordnungen/AO-Digital-Media-12-25.pdf"
           },
           "researched": "2026-10-10",
           "status": {
             "status": "active",
             "notes": "Active joint Master program between HfK Bremen and University of Bremen."
+          },
+          "jointProgramId": "bremen-digital-media-master",
+          "jointProfile": "Media Design (Mediengestaltung)",
+          "admission": "aptitude-and-restricted",
+          "admissionSource": "https://www.uni-bremen.de/fileadmin/studydata/DBS/Dokumente/Ordnungen/Zulassungsordnungen/AO-Digital-Media-12-25.pdf",
+          "requirements": [
+            {
+              "label": "first degree",
+              "text": "At least 180 ECTS in digital media, computer science, design, media technology, media studies or a related/comparable programme. Conditional applications are possible with at least 150 ECTS already completed."
+            },
+            {
+              "label": "selection",
+              "text": "An overall assessment of 2.5 or better under the admission regulations, plus a motivation letter and a portfolio of relevant work. The 2.5 threshold refers to the regulated overall assessment, not just the bachelor grade."
+            }
+          ],
+          "applicationRoute": {
+            "method": "profile-specific portal",
+            "notes": "Apply electronically through the portal of the institution awarding your chosen profile: HfK Bremen for Media Design (M.A.), Universität Bremen for Media Informatics (M.Sc.). Include the required work samples and motivation letter. Confirm any foreign-credential checks with that institution.",
+            "url": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5",
+            "scope": "Digital Media master applicants"
           }
         },
         {
@@ -2547,11 +2802,23 @@
             "details.languageNotes": "https://www.khm.de/bewerbung_medialekuenste/",
             "degree": "https://www.khm.de/Studium/",
             "duration": "https://www.khm.de/Studium/",
-            "admission": "https://www.khm.de/Studium/"
+            "admission": "https://www.khm.de/Studium/",
+            "teachingAreas": "https://www.khm.de/fg_exmedia/",
+            "searchAliases": "https://www.khm.de/Studium/"
           },
           "researched": "2026-10-10",
           "admission": "aptitude",
-          "admissionSource": "https://www.khm.de/Studium/"
+          "admissionSource": "https://www.khm.de/Studium/",
+          "teachingAreas": [
+            {
+              "name": "Experimentelle Informatik (Experimental Informatics)",
+              "kind": "working-field",
+              "source": "https://www.khm.de/fg_exmedia/"
+            }
+          ],
+          "searchAliases": [
+            "Mediale Künste"
+          ]
         },
         {
           "name": "Media Arts (Postgraduate)",
@@ -2600,11 +2867,23 @@
             "details.languageNotes": "https://www.khm.de/bewerbung_medialekuenste/",
             "degree": "https://www.khm.de/Studium/",
             "duration": "https://www.khm.de/Studium/",
-            "admission": "https://www.khm.de/Studium/"
+            "admission": "https://www.khm.de/Studium/",
+            "teachingAreas": "https://www.khm.de/fg_exmedia/",
+            "searchAliases": "https://www.khm.de/Studium/"
           },
           "researched": "2026-10-10",
           "admission": "aptitude",
-          "admissionSource": "https://www.khm.de/Studium/"
+          "admissionSource": "https://www.khm.de/Studium/",
+          "teachingAreas": [
+            {
+              "name": "Experimentelle Informatik (Experimental Informatics)",
+              "kind": "working-field",
+              "source": "https://www.khm.de/fg_exmedia/"
+            }
+          ],
+          "searchAliases": [
+            "Mediale Künste"
+          ]
         },
         {
           "name": "Media Arts",
@@ -2772,16 +3051,7 @@
         {
           "name": "Visual Communication",
           "degree": "Diploma",
-          "applicationDeadlines": {
-            "winter": {
-              "start": "1 April",
-              "end": "1 June"
-            },
-            "summer": {
-              "start": "1 October",
-              "end": "1 December"
-            }
-          },
+          "applicationDeadlines": {},
           "language": "German",
           "duration": "10 semesters",
           "description": "Program covering art, electronic media, film, photography, stage/space design, and theory.",
@@ -2793,17 +3063,20 @@
             "Stage/Space Design",
             "Theory"
           ],
-          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma"
+          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--diploma",
+          "status": {
+            "status": "discontinued",
+            "notes": "Replaced for new entrants by bachelor’s/master’s programmes in winter 2022/23. Existing diploma students may continue; this is not a current application option."
+          },
+          "sources": {
+            "status": "https://www.hfg-offenbach.de/de/pages/diplom-laeuft-aus"
+          },
+          "researched": "2026-10-10"
         },
         {
           "name": "Product Design",
           "degree": "Diploma",
-          "applicationDeadlines": {
-            "winter": {
-              "start": "1 April",
-              "end": "1 June"
-            }
-          },
+          "applicationDeadlines": {},
           "language": "German",
           "duration": "10 semesters",
           "description": "Program focusing on integrated design, interface design, materials/technology, and theory.",
@@ -2813,7 +3086,15 @@
             "Materials/Technology",
             "Theory"
           ],
-          "program_id": "hochschule-fur-gestaltung-offenbach--product-design--diploma"
+          "program_id": "hochschule-fur-gestaltung-offenbach--product-design--diploma",
+          "status": {
+            "status": "discontinued",
+            "notes": "Replaced for new entrants by bachelor’s/master’s programmes in winter 2022/23. Existing diploma students may continue; this is not a current application option."
+          },
+          "sources": {
+            "status": "https://www.hfg-offenbach.de/de/pages/diplom-laeuft-aus"
+          },
+          "researched": "2026-10-10"
         },
         {
           "name": "Art Education (Secondary Schools)",
@@ -2891,68 +3172,90 @@
           }
         },
         {
-          "name": "Visual Communication",
-          "degree": "Bachelor of Arts",
+          "name": "Art (Kunst)",
+          "degree": "Bachelor of Fine Arts",
           "applicationDeadlines": {
             "winter": {
-              "start": "1 June",
-              "end": "15 July"
+              "start": "1 April 2027",
+              "end": "15 April 2027",
+              "cycle": "WiSe 2027/28"
             }
           },
           "language": "German",
           "duration": "8 semesters",
-          "description": "Program covering all aspects of visual communication and design with emphasis on practical and theoretical knowledge.",
-          "specializations": [
-            "Graphic Design",
-            "Typography",
-            "Digital Media",
-            "Illustration",
-            "Photography"
-          ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
-            "items": [
-              "15-20 design works",
-              "Process documentation/sketches",
-              "Project descriptions",
-              "Letter of motivation"
-            ],
-            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          "description": "Art (Kunst) degree programme combining artistic and design practice with theory, interdisciplinary work and independent project development.",
+          "specializations": [],
+          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--bachelor-of-arts",
+          "sources": {
+            "name": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-kunst",
+            "degree": "https://www.hfg-offenbach.de/system/downloads/files/69d4a95b31636234e9060000/original/bfa_kunst_studien-_und_pruefungsordnung_mit_anlagen.pdf?1775544666",
+            "duration": "https://www.hfg-offenbach.de/system/downloads/files/69d4a95b31636234e9060000/original/bfa_kunst_studien-_und_pruefungsordnung_mit_anlagen.pdf?1775544666",
+            "language": "https://www.hfg-offenbach.de/system/downloads/files/69d4a95b31636234e9060000/original/bfa_kunst_studien-_und_pruefungsordnung_mit_anlagen.pdf?1775544666",
+            "details.languageNotes": "https://www.hfg-offenbach.de/system/downloads/files/69d4a95b31636234e9060000/original/bfa_kunst_studien-_und_pruefungsordnung_mit_anlagen.pdf?1775544666",
+            "applicationDeadlines.winter": "https://www.hfg-offenbach.de/de/pages/bewerbung-und-studienberatung",
+            "teachingAreas": "https://www.hfg-offenbach.de/de/pages/elektronische-medien",
+            "details.programUrl": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-kunst",
+            "details.applicationUrl": "https://www.hfg-offenbach.de/de/pages/bewerbung-und-studienberatung",
+            "description": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-kunst"
           },
-          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--bachelor-of-arts"
+          "researched": "2026-10-10",
+          "details": {
+            "languageNotes": [
+              "The programme and examinations are in German. Individual classes and examinations may be in English by agreement of everyone involved."
+            ],
+            "programUrl": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-kunst",
+            "applicationUrl": "https://www.hfg-offenbach.de/de/pages/bewerbung-und-studienberatung"
+          },
+          "teachingAreas": [
+            {
+              "name": "Elektronische Medien (Electronic Media)",
+              "kind": "teaching-area",
+              "source": "https://www.hfg-offenbach.de/de/pages/elektronische-medien"
+            }
+          ]
         },
         {
-          "name": "Visual Communication",
-          "degree": "Master of Arts",
+          "name": "Art (Kunst)",
+          "degree": "Master of Fine Arts",
           "applicationDeadlines": {
             "winter": {
-              "start": "1 June",
-              "end": "15 July"
+              "start": "1 April 2027",
+              "end": "15 April 2027",
+              "cycle": "WiSe 2027/28"
             }
           },
           "language": "German",
           "duration": "4 semesters",
-          "description": "Advanced program focusing on visual communication with emphasis on research and development.",
-          "specializations": [
-            "Graphic Design",
-            "Typography",
-            "Digital Media",
-            "Illustration",
-            "Photography"
-          ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
-            "items": [
-              "15-20 design works",
-              "Process documentation/sketches",
-              "Project descriptions",
-              "Letter of motivation"
-            ],
-            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
+          "description": "Art (Kunst) degree programme combining artistic and design practice with theory, interdisciplinary work and independent project development.",
+          "specializations": [],
+          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--master-of-arts",
+          "sources": {
+            "name": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-kunst",
+            "degree": "https://www.hfg-offenbach.de/system/downloads/files/69d4a8d2316362b76f010000/original/mfa_kunst_studien-_und_pruefungsordnung_mit_anhang.pdf?1775544530",
+            "duration": "https://www.hfg-offenbach.de/system/downloads/files/69d4a8d2316362b76f010000/original/mfa_kunst_studien-_und_pruefungsordnung_mit_anhang.pdf?1775544530",
+            "language": "https://www.hfg-offenbach.de/system/downloads/files/69d4a8d2316362b76f010000/original/mfa_kunst_studien-_und_pruefungsordnung_mit_anhang.pdf?1775544530",
+            "details.languageNotes": "https://www.hfg-offenbach.de/system/downloads/files/69d4a8d2316362b76f010000/original/mfa_kunst_studien-_und_pruefungsordnung_mit_anhang.pdf?1775544530",
+            "applicationDeadlines.winter": "https://www.hfg-offenbach.de/de/pages/bewerbung-und-studienberatung",
+            "teachingAreas": "https://www.hfg-offenbach.de/de/pages/elektronische-medien",
+            "details.programUrl": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-kunst",
+            "details.applicationUrl": "https://www.hfg-offenbach.de/de/pages/bewerbung-und-studienberatung",
+            "description": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-kunst"
           },
-          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--master-of-arts"
+          "researched": "2026-10-10",
+          "details": {
+            "languageNotes": [
+              "The programme and examinations are in German. Individual classes and examinations may be in English by agreement of everyone involved."
+            ],
+            "programUrl": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-kunst",
+            "applicationUrl": "https://www.hfg-offenbach.de/de/pages/bewerbung-und-studienberatung"
+          },
+          "teachingAreas": [
+            {
+              "name": "Elektronische Medien (Electronic Media)",
+              "kind": "teaching-area",
+              "source": "https://www.hfg-offenbach.de/de/pages/elektronische-medien"
+            }
+          ]
         },
         {
           "name": "Product Design",
@@ -3053,7 +3356,15 @@
           "applicationDeadlines": {},
           "language": "",
           "duration": "",
-          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified"
+          "program_id": "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
+          "status": {
+            "status": "not-matched",
+            "notes": "Generic/historical subject label with no verified separate degree. Use the current Art (Kunst) BFA/MFA entries; artistic/design teaching areas are within that programme."
+          },
+          "sources": {
+            "status": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-kunst"
+          },
+          "researched": "2026-10-10"
         },
         {
           "name": "Product Design",
@@ -3069,11 +3380,19 @@
           "applicationDeadlines": {},
           "language": "",
           "duration": "",
-          "program_id": "hochschule-fur-gestaltung-offenbach--media--unspecified"
+          "program_id": "hochschule-fur-gestaltung-offenbach--media--unspecified",
+          "status": {
+            "status": "not-matched",
+            "notes": "Generic/historical subject label with no verified separate degree. Use the current Art (Kunst) BFA/MFA entries; artistic/design teaching areas are within that programme."
+          },
+          "sources": {
+            "status": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-kunst"
+          },
+          "researched": "2026-10-10"
         }
       ],
       "website": "https://www.hfg-offenbach.de/en/",
-      "description": "The Offenbach University of Art and Design (HfG Offenbach) is a state art college in Hesse, Germany. It offers diploma programs in Visual Communication and Product Design, as well as teacher training and doctoral studies. It emphasizes the integration of theory and practice.",
+      "description": "HfG Offenbach offers bachelor’s and master’s programmes in Art (Kunst) and Design. New entrants moved to these programmes in winter 2022/23; existing diploma students can continue in the phased-out diploma programmes.",
       "address": {
         "street": "Schloßstraße 31",
         "postalCode": "63065",
@@ -3088,7 +3407,8 @@
         "checked": "2026-10-09"
       },
       "sources": {
-        "stats.students": "https://www.hfg-offenbach.de/de/pages/promotion"
+        "stats.students": "https://www.hfg-offenbach.de/de/pages/promotion",
+        "description": "https://www.hfg-offenbach.de/de/pages/diplom-laeuft-aus"
       },
       "researched": "2026-10-10"
     },
@@ -4089,9 +4409,13 @@
           "admissionSource": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/informationen-fuer-studienbewerberinnen/bewerbung/",
           "sources": {
             "degree": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/uebersicht-der-studiengaenge/",
-            "duration": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/uebersicht-der-studiengaenge/"
+            "duration": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/uebersicht-der-studiengaenge/",
+            "searchAliases": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/uebersicht-der-studiengaenge/"
           },
-          "researched": "2026-10-10"
+          "researched": "2026-10-10",
+          "searchAliases": [
+            "Medienkunst/Mediengestaltung"
+          ]
         },
         {
           "name": "Product Design",
@@ -4287,9 +4611,13 @@
           "sources": {
             "degree": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/uebersicht-der-studiengaenge/",
             "duration": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/uebersicht-der-studiengaenge/",
-            "details.programUrl": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/medienkunstmediengestaltung/medienkunstmediengestaltung-mfa/"
+            "details.programUrl": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/medienkunstmediengestaltung/medienkunstmediengestaltung-mfa/",
+            "searchAliases": "https://www.uni-weimar.de/de/kunst-und-gestaltung/studium/uebersicht-der-studiengaenge/"
           },
-          "researched": "2026-10-10"
+          "researched": "2026-10-10",
+          "searchAliases": [
+            "Medienkunst/Mediengestaltung"
+          ]
         }
       ],
       "website": "https://www.uni-weimar.de/en/",
@@ -5856,7 +6184,7 @@
             }
           },
           "language": "German",
-          "duration": "7 semesters",
+          "duration": "8 semesters",
           "description": "Program in interface design, user experience, interaction design, and digital media.",
           "specializations": [
             "Interface Design",
@@ -5869,9 +6197,15 @@
           "admissionSource": "https://www.fh-potsdam.de/studium-weiterbildung/fachbereiche/design/studium-lehre",
           "sources": {
             "admission": "https://www.fh-potsdam.de/studium-weiterbildung/fachbereiche/design/studium-lehre",
-            "language": "https://www.fh-potsdam.de/studium-weiterbildung/fachbereiche/design/studium-lehre",
-            "otherDeadlines": "https://www.fh-potsdam.de/studium-weiterbildung/fachbereiche/design/studium-lehre",
-            "applicationDeadlines.winter": "https://www.fh-potsdam.de/studium-weiterbildung/fachbereiche/design/studium-lehre"
+            "language": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/interfacedesign-ba",
+            "otherDeadlines": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/interfacedesign-ba",
+            "applicationDeadlines.winter": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/interfacedesign-ba",
+            "duration": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/interfacedesign-ba",
+            "degree": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/interfacedesign-ba",
+            "searchAliases": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/interfacedesign-ba",
+            "details.programUrl": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/interfacedesign-ba",
+            "details.applicationUrl": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/interfacedesign-ba",
+            "requirements": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/interfacedesign-ba"
           },
           "researched": "2026-10-10",
           "otherDeadlines": [
@@ -5883,6 +6217,19 @@
               "recurring": true,
               "cycle": null,
               "scope": "all applicants"
+            }
+          ],
+          "searchAliases": [
+            "Interfacedesign"
+          ],
+          "details": {
+            "programUrl": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/interfacedesign-ba",
+            "applicationUrl": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/interfacedesign-ba"
+          },
+          "requirements": [
+            {
+              "label": "admission",
+              "text": "A general or subject-specific university entrance qualification, or a recognised equivalent professional qualification, plus a passed artistic/design aptitude examination."
             }
           ]
         },
@@ -6030,12 +6377,7 @@
         {
           "name": "Media and Communication",
           "degree": "Bachelor of Arts",
-          "applicationDeadlines": {
-            "winter": {
-              "start": "1 April",
-              "end": "31 July"
-            }
-          },
+          "applicationDeadlines": {},
           "language": "German",
           "duration": "6 semesters",
           "description": "Program in media, communication, and digital culture, with a focus on journalism, PR, and digital storytelling.",
@@ -6044,17 +6386,20 @@
             "Communication",
             "Digital Storytelling"
           ],
-          "program_id": "hochschule-darmstadt--media-and-communication--bachelor-of-arts"
+          "program_id": "hochschule-darmstadt--media-and-communication--bachelor-of-arts",
+          "status": {
+            "status": "not-matched",
+            "notes": "No exact programme under this title was matched in the current official catalogue. The catalogue separately lists Onlinejournalismus B.A. and Onlinekommunikation B.Sc.; they are not interchangeable names."
+          },
+          "sources": {
+            "status": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design"
+          },
+          "researched": "2026-10-10"
         },
         {
           "name": "Animation and Game",
           "degree": "Bachelor of Arts",
-          "applicationDeadlines": {
-            "winter": {
-              "start": "1 April",
-              "end": "31 July"
-            }
-          },
+          "applicationDeadlines": {},
           "language": "English",
           "duration": "7 semesters",
           "description": "Practice-oriented program in animation, game design, and interactive media.",
@@ -6065,14 +6410,21 @@
           ],
           "program_id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
           "admission": "aptitude",
-          "admissionSource": "https://h-da.de/studium/studienangebot/bewerbung/kuenstlerische-eignungspruefung/",
+          "admissionSource": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
           "details": {
-            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba"
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba"
           },
           "sources": {
             "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
             "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
-            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba"
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
+            "admission": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba"
           },
           "researched": "2026-10-10",
           "requirements": [
@@ -6083,19 +6435,21 @@
             {
               "label": "selection",
               "text": "Aptitude examination in the chosen Technology or Art and Design specialization; simultaneous application for both is not possible."
+            },
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 01.04. - 01.06. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
             }
+          ],
+          "intakes": [
+            "winter"
           ]
         },
         {
           "name": "Motion Pictures",
           "degree": "Bachelor of Arts",
-          "applicationDeadlines": {
-            "winter": {
-              "start": "1 April",
-              "end": "31 July"
-            }
-          },
-          "language": "German",
+          "applicationDeadlines": {},
+          "language": "English",
           "duration": "7 semesters",
           "description": "Covers film, television, and digital video production, including directing, editing, and production management.",
           "specializations": [
@@ -6105,28 +6459,41 @@
           ],
           "program_id": "hochschule-darmstadt--motion-pictures--bachelor-of-arts",
           "admission": "aptitude",
-          "admissionSource": "https://h-da.de/studium/studienangebot/bewerbung/kuenstlerische-eignungspruefung/",
+          "admissionSource": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
           "details": {
             "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
-            "portfolioRequired": true
+            "portfolioRequired": true,
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba"
           },
           "sources": {
             "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
-            "details.portfolioRequired": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba"
+            "details.portfolioRequired": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
+            "admission": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba"
           },
-          "researched": "2026-10-10"
+          "researched": "2026-10-10",
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 01.04. - 01.06. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "intakes": [
+            "winter"
+          ]
         },
         {
           "name": "Communication Design",
-          "degree": "Bachelor of Arts",
-          "applicationDeadlines": {
-            "winter": {
-              "start": "1 April",
-              "end": "31 July"
-            }
-          },
+          "degree": "Diploma (FH)",
+          "applicationDeadlines": {},
           "language": "German",
-          "duration": "7 semesters",
+          "duration": "8 semesters",
           "description": "Program in visual communication, graphic design, and branding.",
           "specializations": [
             "Graphic Design",
@@ -6135,17 +6502,41 @@
           ],
           "program_id": "hochschule-darmstadt--communication-design--bachelor-of-arts",
           "admission": "aptitude",
-          "admissionSource": "https://h-da.de/studium/studienangebot/bewerbung/kuenstlerische-eignungspruefung/"
+          "admissionSource": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl",
+            "admission": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl",
+            "searchAliases": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/kommunikationsdesign-dipl"
+          },
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 01.04. - 01.06. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "searchAliases": [
+            "Kommunikationsdesign"
+          ],
+          "intakes": [
+            "winter"
+          ]
         },
         {
           "name": "Expanded Realities",
           "degree": "Master of Arts",
-          "applicationDeadlines": {
-            "winter": {
-              "start": "1 April",
-              "end": "31 July"
-            }
-          },
+          "applicationDeadlines": {},
           "language": "English",
           "duration": "3 semesters",
           "description": "Advanced program in virtual, augmented, and mixed reality for media and design professionals.",
@@ -6154,17 +6545,20 @@
             "Augmented Reality",
             "Mixed Reality"
           ],
-          "program_id": "hochschule-darmstadt--expanded-realities--master-of-arts"
+          "program_id": "hochschule-darmstadt--expanded-realities--master-of-arts",
+          "status": {
+            "status": "not-matched",
+            "notes": "Expanded Realities is a study track within Expanded Media M.A., not a standalone master degree in the current catalogue."
+          },
+          "sources": {
+            "status": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/expanded-media-ma"
+          },
+          "researched": "2026-10-10"
         },
         {
-          "name": "Interactive Media Design",
+          "name": "User Experience Design",
           "degree": "Bachelor of Arts",
-          "applicationDeadlines": {
-            "winter": {
-              "start": "1 April",
-              "end": "31 July"
-            }
-          },
+          "applicationDeadlines": {},
           "language": "German",
           "duration": "7 semesters",
           "description": "Focuses on interactive design, user experience, and digital product development.",
@@ -6173,17 +6567,43 @@
             "User Experience",
             "Digital Product Design"
           ],
-          "program_id": "hochschule-darmstadt--interactive-media-design--bachelor-of-arts"
+          "program_id": "hochschule-darmstadt--interactive-media-design--bachelor-of-arts",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba",
+            "admission": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba",
+            "searchAliases": "https://mediencampus.h-da.de/studium",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba"
+          },
+          "admission": "aptitude",
+          "admissionSource": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/user-experience-design-ba",
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 01.04. - 15.06. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "searchAliases": [
+            "Interactive Media Design"
+          ],
+          "intakes": [
+            "winter"
+          ]
         },
         {
           "name": "Digital Media",
           "degree": "Master of Science",
-          "applicationDeadlines": {
-            "winter": {
-              "start": "1 June",
-              "end": "15 July"
-            }
-          },
+          "applicationDeadlines": {},
           "language": "English",
           "duration": "4 semesters",
           "description": "The program focuses on media informatics, human-computer interaction, and digital media technologies. Combines technical and creative aspects of digital media.",
@@ -6192,7 +6612,15 @@
             "Human-Computer Interaction",
             "Interactive Media"
           ],
-          "program_id": "hochschule-darmstadt--digital-media--master-of-science"
+          "program_id": "hochschule-darmstadt--digital-media--master-of-science",
+          "status": {
+            "status": "not-matched",
+            "notes": "No standalone Digital Media M.Sc. was matched in the current official catalogue. Do not confuse the broad media subject area with the listed Expanded Media M.A. or Media, Technology and Society M.Sc."
+          },
+          "sources": {
+            "status": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design"
+          },
+          "researched": "2026-10-10"
         },
         {
           "name": "Digital Media",
@@ -6200,11 +6628,501 @@
           "applicationDeadlines": {},
           "language": "",
           "duration": "",
-          "program_id": "hochschule-darmstadt--digital-media--unspecified"
+          "program_id": "hochschule-darmstadt--digital-media--unspecified",
+          "status": {
+            "status": "not-matched",
+            "notes": "Generic media-area label; not matched to a separately awarded degree in the current official catalogue."
+          },
+          "sources": {
+            "status": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design"
+          },
+          "researched": "2026-10-10"
+        },
+        {
+          "name": "Animation and Game",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {},
+          "language": "English",
+          "duration": "2/3/4 semesters",
+          "program_id": "hochschule-darmstadt--animation-and-game--master-of-arts",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-direction-ma",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-direction-ma",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-direction-ma",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-direction-ma",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-direction-ma",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-direction-ma",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-direction-ma",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-direction-ma"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-direction-ma",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-direction-ma"
+          },
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 01.02./01.08. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "intakes": [
+            "winter",
+            "summer"
+          ]
+        },
+        {
+          "name": "Augmented and Virtual Reality Design",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {},
+          "language": "English",
+          "duration": "7 semesters",
+          "program_id": "hochschule-darmstadt--augmented-and-virtual-reality-design--bachelor-of-arts",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba",
+            "admission": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba"
+          },
+          "admission": "aptitude",
+          "admissionSource": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/augmented-and-virtual-reality-design-ba",
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 01.04. - 01.09. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "intakes": [
+            "winter"
+          ]
+        },
+        {
+          "name": "Expanded Media",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {},
+          "language": "English",
+          "duration": "3/4 semesters",
+          "program_id": "hochschule-darmstadt--expanded-media--master-of-arts",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/expanded-media-ma",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/expanded-media-ma",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/expanded-media-ma",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/expanded-media-ma",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/expanded-media-ma",
+            "details.applicationUrl": "https://mediencampus.h-da.de/en/studying/study-programmes/masters/expanded-media/application",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/expanded-media-ma",
+            "specializations": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/expanded-media-ma",
+            "otherDeadlines": "https://mediencampus.h-da.de/en/studying/study-programmes/masters/expanded-media/application",
+            "description": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/expanded-media-ma",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/expanded-media-ma"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/expanded-media-ma",
+            "applicationUrl": "https://mediencampus.h-da.de/en/studying/study-programmes/masters/expanded-media/application"
+          },
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 01.02./01.08. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "specializations": [
+            "Expanded Storyworlds",
+            "Expanded Sound & Music",
+            "Expanded Realities"
+          ],
+          "otherDeadlines": [
+            {
+              "kind": "application",
+              "semester": "winter",
+              "start": null,
+              "end": "06-01",
+              "recurring": true,
+              "cycle": null,
+              "scope": "international applicants"
+            },
+            {
+              "kind": "application",
+              "semester": "winter",
+              "start": null,
+              "end": "08-01",
+              "recurring": true,
+              "cycle": null,
+              "scope": "German applicants"
+            },
+            {
+              "kind": "application",
+              "semester": "summer",
+              "start": null,
+              "end": "12-01",
+              "recurring": true,
+              "cycle": null,
+              "scope": "international applicants"
+            },
+            {
+              "kind": "application",
+              "semester": "summer",
+              "start": null,
+              "end": "02-01",
+              "recurring": true,
+              "cycle": null,
+              "scope": "German applicants"
+            }
+          ],
+          "description": "English-taught master in transmedial media experiences with three tracks: Expanded Storyworlds, Expanded Sound & Music, and Expanded Realities.",
+          "intakes": [
+            "winter",
+            "summer"
+          ]
+        },
+        {
+          "name": "Industrial Design",
+          "degree": "Diploma (FH)",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "8 semesters",
+          "program_id": "hochschule-darmstadt--industrial-design--diploma-fh",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl",
+            "admission": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl",
+            "searchAliases": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl"
+          },
+          "admission": "aptitude",
+          "admissionSource": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/industriedesign-dipl",
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 01.04. - 01.06. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "searchAliases": [
+            "Industriedesign"
+          ],
+          "intakes": [
+            "winter"
+          ]
+        },
+        {
+          "name": "International Media Cultural Work",
+          "degree": "Master of Arts",
+          "applicationDeadlines": {},
+          "language": "English",
+          "duration": "3/4 semesters",
+          "program_id": "hochschule-darmstadt--international-media-cultural-work--master-of-arts",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/international-media-cultural-work-imc-ma",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/international-media-cultural-work-imc-ma",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/international-media-cultural-work-imc-ma",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/international-media-cultural-work-imc-ma",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/international-media-cultural-work-imc-ma",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/international-media-cultural-work-imc-ma",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/international-media-cultural-work-imc-ma"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/international-media-cultural-work-imc-ma",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/international-media-cultural-work-imc-ma"
+          },
+          "intakes": [
+            "winter",
+            "summer"
+          ]
+        },
+        {
+          "name": "Media, Technology and Society",
+          "degree": "Master of Science",
+          "applicationDeadlines": {},
+          "language": "English",
+          "duration": "3/4 semesters",
+          "program_id": "hochschule-darmstadt--media-technology-and-society--master-of-science",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/media-technology-and-society-msc",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/media-technology-and-society-msc",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/media-technology-and-society-msc",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/media-technology-and-society-msc",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/media-technology-and-society-msc",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/media-technology-and-society-msc",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/media-technology-and-society-msc"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/media-technology-and-society-msc",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/media-technology-and-society-msc"
+          },
+          "intakes": [
+            "winter",
+            "summer"
+          ]
+        },
+        {
+          "name": "Onlinejournalismus",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "7 semesters",
+          "program_id": "hochschule-darmstadt--onlinejournalismus--bachelor-of-arts",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba",
+            "admission": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba"
+          },
+          "admission": "restricted",
+          "admissionSource": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinejournalismus-ba",
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 15.07. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "intakes": [
+            "winter"
+          ]
+        },
+        {
+          "name": "Onlinekommunikation",
+          "degree": "Bachelor of Science",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "7 semesters",
+          "program_id": "hochschule-darmstadt--onlinekommunikation--bachelor-of-science",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc",
+            "admission": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc"
+          },
+          "admission": "restricted",
+          "admissionSource": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/onlinekommunikation-bsc",
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 15.07. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "intakes": [
+            "winter"
+          ]
+        },
+        {
+          "name": "Sound, Music and Production",
+          "degree": "Bachelor of Arts",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "7 semesters",
+          "program_id": "hochschule-darmstadt--sound-music-and-production--bachelor-of-arts",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba",
+            "admission": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba"
+          },
+          "admission": "aptitude",
+          "admissionSource": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/sound-music-and-production-ba",
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 01.04. - 01.06. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "intakes": [
+            "winter"
+          ]
+        },
+        {
+          "name": "Architecture",
+          "degree": "Bachelor of Engineering",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "6 semesters",
+          "program_id": "hochschule-darmstadt--architecture--bachelor-of-engineering",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng",
+            "admission": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng"
+          },
+          "admission": "restricted",
+          "admissionSource": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-beng",
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 15.07. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "intakes": [
+            "winter"
+          ]
+        },
+        {
+          "name": "Architecture",
+          "degree": "Master of Engineering",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "4 semesters",
+          "program_id": "hochschule-darmstadt--architecture--master-of-engineering",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-meng",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-meng",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-meng",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-meng",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-meng",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-meng",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-meng",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-meng"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-meng",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/architektur-meng"
+          },
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 01.08. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "intakes": [
+            "winter"
+          ]
+        },
+        {
+          "name": "Interior Architecture",
+          "degree": "Bachelor of Engineering",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "6 semesters",
+          "program_id": "hochschule-darmstadt--interior-architecture--bachelor-of-engineering",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng",
+            "admission": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng"
+          },
+          "admission": "restricted",
+          "admissionSource": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-beng",
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 15.07. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "intakes": [
+            "winter"
+          ]
+        },
+        {
+          "name": "Interior Architecture",
+          "degree": "Master of Engineering",
+          "applicationDeadlines": {},
+          "language": "German",
+          "duration": "4 semesters",
+          "program_id": "hochschule-darmstadt--interior-architecture--master-of-engineering",
+          "sources": {
+            "name": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-meng",
+            "degree": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-meng",
+            "duration": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-meng",
+            "language": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-meng",
+            "details.programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-meng",
+            "details.applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-meng",
+            "requirements": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-meng",
+            "intakes": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-meng"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-meng",
+            "applicationUrl": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/innenarchitektur-meng"
+          },
+          "requirements": [
+            {
+              "label": "deadline scope",
+              "text": "The programme page lists 01.08. for applicants with German qualifications. Foreign-qualification deadlines may differ; check the application page for your route and intake."
+            }
+          ],
+          "intakes": [
+            "winter"
+          ]
         }
       ],
       "website": "https://www.h-da.de/",
-      "description": "Hochschule Darmstadt (h_da) is one of Germany's leading universities of applied sciences, located in Hesse. It is renowned for its innovative programs in media, animation, communication design, and interactive media. The university offers a wide range of bachelor's and master's degrees, combining creative practice with technical expertise and strong industry connections. Its graduates are highly regarded in the creative industries, especially in animation, film, and digital media.",
+      "description": "Hochschule Darmstadt offers programmes in architecture, media and design. Its current catalogue includes Animation and Game, Expanded Media, Motion Pictures, User Experience Design, Sound, Music and Production, Communication Design and Industrial Design, alongside architecture and interior architecture programmes.",
+      "sources": {
+        "description": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design"
+      },
+      "researched": "2026-10-10",
       "applicationMethod": "uni-assist",
       "applicationMethodSource": {
         "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
@@ -6453,33 +7371,72 @@
           "program_id": "technische-universitat-berlin--human-computer-interaction--master-of-science"
         },
         {
-          "name": "Design and Computation",
+          "name": "Design & Computation",
           "degree": "Master of Arts",
           "applicationDeadlines": {
             "winter": {
-              "start": "1 April",
-              "end": "31 July"
+              "start": "1 April 2026",
+              "end": "15 May 2026",
+              "cycle": "WiSe 2026/27"
             }
           },
-          "language": "German/English",
+          "language": "German",
           "duration": "4 semesters",
-          "description": "Interdisciplinary program merging design with computational methods for innovative solutions in architecture, media, and art.",
-          "specializations": [
-            "Computational Design",
-            "Digital Fabrication",
-            "Media Architecture"
-          ],
+          "description": "Joint UdK Berlin / TU Berlin master's programme at the intersection of art, science, society and technology. Both school listings describe the same programme and application, not two separate degrees.",
+          "specializations": [],
           "program_id": "technische-universitat-berlin--design-and-computation--master-of-science",
-          "admission": "aptitude",
-          "admissionSource": "https://www.tu.berlin/studierendensekretariat/bewerbung-einschreibung-master/bewerbung/bewerbung-fuer-absolventinnen-deutscher-hochschulen",
+          "admission": "aptitude-and-restricted",
+          "admissionSource": "https://www.newpractice.net/application",
           "sources": {
             "degree": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a",
-            "details.programUrl": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a"
+            "details.programUrl": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a",
+            "name": "https://www.newpractice.net/study",
+            "duration": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a",
+            "language": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a",
+            "applicationDeadlines.winter": "https://www.udk-berlin.de/studium/design-and-computation/",
+            "jointProgramId": "https://www.newpractice.net/study",
+            "searchAliases": "https://www.udk-berlin.de/studium/design-and-computation/",
+            "description": "https://www.newpractice.net/study",
+            "admission": "https://www.newpractice.net/application",
+            "details.portfolioRequired": "https://www.newpractice.net/application",
+            "details.languageNotes": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a",
+            "details.applicationUrl": "https://www.newpractice.net/application",
+            "applicationRoute": "https://www.newpractice.net/application",
+            "requirements": "https://www.newpractice.net/application",
+            "jointWith": "https://www.newpractice.net/study"
           },
           "researched": "2026-10-10",
           "details": {
-            "programUrl": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a"
-          }
+            "programUrl": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a",
+            "portfolioRequired": true,
+            "languageNotes": [
+              "International applicants need German C1 proof at enrolment, not necessarily when applying. Permission to submit it by the end of the first semester can be granted on request."
+            ],
+            "applicationUrl": "https://www.newpractice.net/application"
+          },
+          "jointProgramId": "technische-universitat-berlin--design-and-computation--master-of-science",
+          "searchAliases": [
+            "Design and Computation"
+          ],
+          "applicationRoute": {
+            "method": "TU Berlin portal + portfolio",
+            "notes": "Apply through TU Berlin (TuPort), then upload work samples using the programme’s portfolio form. Selected applicants are invited to interview. Foreign qualifications may require additional credential checks; confirm those with TU Berlin.",
+            "url": "https://www.newpractice.net/application",
+            "scope": "Design & Computation applicants"
+          },
+          "requirements": [
+            {
+              "label": "first degree",
+              "text": "A first professionally qualifying university degree in art/design, humanities, education, social sciences, natural sciences, mathematics, computer science, engineering, economics, law, medicine or a closely related field."
+            },
+            {
+              "label": "selection",
+              "text": "Submit a motivation letter (maximum two A4 pages) and work samples. Selected applicants are invited to an interview. Work samples may include writing, artistic/design work, audio, film or interactive websites."
+            }
+          ],
+          "jointWith": [
+            "universitat-der-kunste-berlin"
+          ]
         },
         {
           "name": "Audiovisual Media Culture and Communication",
@@ -18923,16 +19880,16 @@
         },
         {
           "name": "Digitale Medien",
-          "degree": "Master of Arts",
+          "degree": "Master of Science",
           "applicationDeadlines": {
             "winter": {
               "start": "1 April",
               "end": "31 May"
             }
           },
-          "language": "German/English",
+          "language": "English",
           "duration": "4 semesters",
-          "description": "Joint English-taught master of Hochschule für Künste Bremen and Universität Bremen with two tracks: Media Design (HfK Bremen — media theory from a cultural-studies perspective, media art and media aesthetics, intermedial design, computer music with digital sound synthesis and processing, smart materials for artistic production) and Media Informatics (Universität Bremen — embodied interaction, entertainment computing, interactive systems, cognitive modeling, advanced computer graphics, virtual reality and physically-based simulation, massively parallel GPU algorithms, computational geometry). Master project on a problem with societal, scientific, technological, artistic or design relevance, bridging art school and university. Offered jointly with Hochschule für Künste Bremen. Distinct from Universität Bremen's separate MA Digital Media and Society, which focuses on digitalization, datafication and their societal impact.",
+          "description": "Joint English-taught Digital Media master of HfK Bremen and Universität Bremen. This listing is the Media Informatics (Medieninformatik) profile, awarded as Master of Science. Apply for the chosen profile at its respective institution; the partner profile has a different award.",
           "specializations": [
             "Media Design",
             "Media Informatics",
@@ -18948,31 +19905,64 @@
             ],
             "portfolioRequired": true,
             "extractedAt": "2026-06-12T00:00:00.000Z",
-            "sourceUrl": "Module catalogue Digital Media Master (HfK Bremen / Universität Bremen, 2019-06-21)"
+            "sourceUrl": "Module catalogue Digital Media Master (HfK Bremen / Universität Bremen, 2019-06-21)",
+            "programUrl": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "languageNotes": [
+              "English C1. An English-taught university entrance qualification or professionally qualifying degree also satisfies the language-proof requirement. For conditional applications with an unfinished first degree, the language and completion requirements must be fulfilled by two weeks after teaching begins; consult the regulations for document deadlines."
+            ]
           },
           "jointWith": [
             "hochschule-fur-kunste-bremen"
           ],
           "program_id": "universitat-bremen--digitale-medien--master-of-arts",
           "sources": {
-            "applicationDeadlines.winter": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master"
+            "applicationDeadlines.winter": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "degree": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "jointWith": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5",
+            "jointProgramId": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5",
+            "jointProfile": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "language": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "duration": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "details.programUrl": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "details.portfolioRequired": "https://www.uni-bremen.de/fileadmin/studydata/DBS/Dokumente/Ordnungen/Zulassungsordnungen/AO-Digital-Media-12-25.pdf",
+            "admission": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "description": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "requirements": "https://www.uni-bremen.de/fileadmin/studydata/DBS/Dokumente/Ordnungen/Zulassungsordnungen/AO-Digital-Media-12-25.pdf",
+            "details.languageNotes": "https://www.uni-bremen.de/fileadmin/studydata/DBS/Dokumente/Ordnungen/Zulassungsordnungen/AO-Digital-Media-12-25.pdf",
+            "applicationRoute": "https://www.uni-bremen.de/fileadmin/studydata/DBS/Dokumente/Ordnungen/Zulassungsordnungen/AO-Digital-Media-12-25.pdf"
           },
-          "researched": "2026-10-10"
+          "researched": "2026-10-10",
+          "jointProgramId": "bremen-digital-media-master",
+          "jointProfile": "Media Informatics (Medieninformatik)",
+          "admission": "restricted",
+          "admissionSource": "https://www.uni-bremen.de/fileadmin/studydata/DBS/Dokumente/Ordnungen/Zulassungsordnungen/AO-Digital-Media-12-25.pdf",
+          "requirements": [
+            {
+              "label": "first degree",
+              "text": "At least 180 ECTS in digital media, computer science, design, media technology, media studies or a related/comparable programme. Conditional applications are possible with at least 150 ECTS already completed."
+            },
+            {
+              "label": "selection",
+              "text": "An overall assessment of 2.5 or better under the admission regulations, plus a motivation letter and a portfolio of relevant work. The 2.5 threshold refers to the regulated overall assessment, not just the bachelor grade."
+            }
+          ],
+          "applicationRoute": {
+            "method": "profile-specific portal",
+            "notes": "Apply electronically through the portal of the institution awarding your chosen profile: HfK Bremen for Media Design (M.A.), Universität Bremen for Media Informatics (M.Sc.). Include the required work samples and motivation letter. Confirm any foreign-credential checks with that institution.",
+            "url": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digital-media-media-informatics-media-design-master",
+            "scope": "Digital Media master applicants"
+          }
         },
         {
           "name": "Digitale Medien",
-          "degree": "Bachelor of Arts",
+          "degree": "Bachelor of Science",
           "applicationDeadlines": {
             "winter": {
-              "start": "1 February",
-              "end": "15 May"
-            },
-            "summer": {
-              "start": "1 August",
-              "end": "15 November"
+              "start": "1 May",
+              "end": "15 July"
             }
           },
-          "language": "German/English",
+          "language": "German",
           "duration": "6 semesters",
           "description": "Program focusing on digital media with emphasis on practical and theoretical knowledge. Joint program of Hochschule für Künste Bremen and Universität Bremen. Offered jointly with Hochschule für Künste Bremen.",
           "specializations": [
@@ -18984,7 +19974,21 @@
           "jointWith": [
             "hochschule-fur-kunste-bremen"
           ],
-          "program_id": "universitat-bremen--digitale-medien--bachelor-of-arts"
+          "program_id": "universitat-bremen--digitale-medien--bachelor-of-arts",
+          "sources": {
+            "degree": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digitale-medien-bachelor",
+            "duration": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digitale-medien-bachelor",
+            "language": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digitale-medien-bachelor",
+            "details.programUrl": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digitale-medien-bachelor",
+            "applicationDeadlines.winter": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digitale-medien-bachelor",
+            "admission": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digitale-medien-bachelor"
+          },
+          "researched": "2026-10-10",
+          "details": {
+            "programUrl": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digitale-medien-bachelor"
+          },
+          "admission": "open",
+          "admissionSource": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digitale-medien-bachelor"
         }
       ],
       "website": "https://www.uni-bremen.de/",

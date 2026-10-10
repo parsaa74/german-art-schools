@@ -1,7 +1,7 @@
 {
   "model": "gemini-embedding-2-preview",
   "dim": 3072,
-  "count": 765,
+  "count": 766,
   "scale": 127,
   "ids": [
     "academy-of-visual-arts-frankfurt--communication-design--bachelor-of-arts",
@@ -744,6 +744,7 @@
     "universitat-der-kunste-berlin--art-education--bachelor-of-arts",
     "universitat-der-kunste-berlin--design--bachelor-of-arts",
     "universitat-der-kunste-berlin--design--unspecified",
+    "universitat-der-kunste-berlin--design-and-computation--master-of-arts",
     "universitat-der-kunste-berlin--fine-arts--bachelor-of-fine-arts",
     "universitat-der-kunste-berlin--fine-arts--diploma",
     "universitat-der-kunste-berlin--fine-arts--master-of-fine-arts",
@@ -769,5 +770,11 @@
     "universitat-wurzburg--human-computer-systems--master-of-science",
     "universitat-wurzburg--media-communication--bachelor-of-arts",
     "universitat-wurzburg--media-communication--master-of-arts"
-  ]
+  ],
+  "reused_embeddings": {
+    "universitat-der-kunste-berlin--design-and-computation--master-of-arts": {
+      "sourceProgramId": "technische-universitat-berlin--design-and-computation--master-of-science",
+      "reason": "The identical joint UdK Berlin / TU Berlin Design & Computation M.A., not an unrelated programme or a different degree profile."
+    }
+  }
 }

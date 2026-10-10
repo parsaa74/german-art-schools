@@ -31,7 +31,7 @@ export interface ProgramFilters {
   /** Case-insensitive exact match on the school's state (resolved via school_id). */
   state?: string;
   /**
-   * Case-insensitive keyword search over name + description + specializations.
+   * Case-insensitive keyword search over names, descriptions, specializations, aliases and teaching areas.
    * The query is split on whitespace; every token must appear somewhere in
    * the combined text (AND semantics).
    */
@@ -69,7 +69,7 @@ export function windowContains(w: DeadlineWindow, d: MonthDay): boolean {
 }
 
 function programText(p: Program): string {
-  return [p.name, p.description ?? '', ...p.specializations].join(' ').toLowerCase();
+  return [p.name, p.description ?? '', ...p.specializations, ...(p.search_aliases ?? []), ...(p.teaching_areas ?? []).map((a) => a.name)].join(' ').toLowerCase();
 }
 
 export function listPrograms(

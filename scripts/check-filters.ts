@@ -6,7 +6,7 @@ import data from '../src/data/enhanced_german_art_schools.json';
 import { passesFilters, countMatches, Filters } from '../src/lib/glass/filter';
 import { checkProgram, EMPTY_PROFILE, UNI_ASSIST_LEAD_DAYS } from '../src/lib/applicationCheck';
 import { parseDeadlineDate, getDeadlineStatus } from '../src/utils/deadlineUtils';
-import { normalizeSchoolType, degreeGroupOf, subjectGroupOf, fold, admissionOf, matchScore, uniAssistFee } from '../src/lib/taxonomy';
+import { normalizeSchoolType, degreeGroupOf, subjectGroupOf, fold, admissionOf, matchScore, programSearchMatch, uniAssistFee } from '../src/lib/taxonomy';
 
 const unis = Object.entries((data as any).universities).map(([name, d]: [string, any]) => ({
   id: d.id, name, state: d.state, city: d.city, description: d.description || '',
@@ -21,19 +21,20 @@ let failed = 0;
 const check = (ok: boolean, msg: string) => { console.log(`${ok ? 'ok  ' : 'FAIL'} ${msg}`); if (!ok) failed++; };
 
 // program-level filters must hold on one and the same program
-const englishBachelor = unis.filter((u) => u.programs.some((p: any) => p.language?.includes('English') && degreeGroupOf(p.degree) === 'Bachelor')).length;
+const available = (p: any) => p.status?.status !== 'not-matched' && p.status?.status !== 'discontinued';
+const englishBachelor = unis.filter((u) => u.programs.some((p: any) => available(p) && p.language?.includes('English') && degreeGroupOf(p.degree) === 'Bachelor')).length;
 check(count({ language: 'English', degree: 'Bachelor' }) === englishBachelor, `English + Bachelor = ${englishBachelor} schools with an English-taught bachelor`);
 check(count({ language: 'English' }) > count({ language: 'English', degree: 'Bachelor' }), 'adding a degree narrows the English results');
 
 // bilingual programs count as English
-const anyEnglish = unis.filter((u) => u.programs.some((p: any) => p.language?.includes('English'))).length;
+const anyEnglish = unis.filter((u) => u.programs.some((p: any) => available(p) && p.language?.includes('English'))).length;
 check(count({ language: 'English' }) === anyEnglish, `English includes German/English programs (${anyEnglish})`);
 
 // unknown data never passes an active filter
 // NC-free is per program: aptitude/open admission must hold on a program that also passes the other program filters
 const ncFree = unis.filter((u) => u.programs.some((p: any) => admissionOf(p, u.type))).length;
 check(count({ nc: true }) === ncFree, `NC-free = ${ncFree} schools with an aptitude-test or open-admission program`);
-const ncEnglishMaster = unis.filter((u) => u.programs.some((p: any) => admissionOf(p, u.type) && p.language?.includes('English') && degreeGroupOf(p.degree) === 'Master')).length;
+const ncEnglishMaster = unis.filter((u) => u.programs.some((p: any) => available(p) && admissionOf(p, u.type) && p.language?.includes('English') && degreeGroupOf(p.degree) === 'Master')).length;
 check(count({ nc: true, language: 'English', degree: 'Master' }) === ncEnglishMaster, `NC-free + English + Master = ${ncEnglishMaster} (same program)`);
 const thi = unis.find((u) => u.name === 'Technische Hochschule Ingolstadt');
 check(!passesFilters(thi, { ...none, nc: true }), 'unconfirmed university programs are not claimed NC-free (THI)');
@@ -85,5 +86,38 @@ check(admissionOf(prog(tub, /Media Technology/), 'art_academy') === undefined, '
 check(degreeGroupOf('State Exam in Interdisciplinary Communication, Design or Arts (B.A. equivalent)') === 'Bachelor' && degreeGroupOf('Absolvent*in der Universität der Künste Berlin (A)') === 'Diploma', 'researched degree labels land in the right group');
 const gone = unis.flatMap((u) => u.programs.map((p: any) => [u, p])).find(([, p]: any) => p.status?.status === 'discontinued');
 check(!!gone && checkProgram(gone[1], gone[0], EMPTY_PROFILE).checks[0].level === 'warn', 'discontinued program is flagged first');
+
+// Official-catalogue follow-up: joint offerings and nested classes are not extra degrees.
+const udk = school('Universität der Künste Berlin');
+const udkDc = prog(udk, /Design & Computation/);
+const tuDc = prog(tub, /Design & Computation/);
+check(udkDc.degree === 'Master of Arts' && udkDc.language === 'German' && udkDc.jointProgramId === tuDc.jointProgramId, 'D&C is the same joint UdK/TU MA, taught in German');
+check(getDeadlineStatus(udkDc.applicationDeadlines.winter)?.status === 'closed' && tuDc.applicationDeadlines.winter.end === '15 May 2026', 'D&C keeps its passed 2026/27 round, not an invented annual deadline');
+check(!checkProgram(udkDc, udk, nonEu).steps.some((s) => s.text.startsWith('Send to uni-assist')), 'sourced programme portal instructions override a school-membership route guess');
+check(!checkProgram(udkDc, udk, EMPTY_PROFILE).checks.some((c) => c.text.includes('grades count')), 'restricted admission alone does not imply a grade-based NC');
+const vk = prog(udk, /Visual Communication Bachelor/);
+const vkMaster = prog(udk, /Visual Communication Master/);
+check(vk.duration === '8 semesters' && vkMaster.duration === '2 semesters', 'UdK Visual Communication BA/MA have verified durations');
+check(!vk.language && vk.details.languageNotes[0].includes('B2'), 'a German certificate rule does not invent teaching language, and the B2 application option is retained');
+check(programSearchMatch(vk, 'Digitale Klasse').area?.includes('New Media') === true, 'Digitale Klasse search opens its actual Visual Communication parent');
+check(passesFilters(udk, { ...none, search: 'Digitale Klasse', degree: 'Master' }) && !passesFilters(udk, { ...none, search: 'Digitale Klasse', language: 'English' }), 'class search and degree/language filters must match the same parent programme');
+const offenbach = school('Hochschule für Gestaltung Offenbach');
+const art = prog(offenbach, /Art \(Kunst\) Bachelor/);
+check(art.degree === 'Bachelor of Fine Arts' && programSearchMatch(art, 'Elektronische Medien').score > 0, 'Offenbach electronic media belongs to Art BFA, not a standalone degree');
+check(!offenbach.programs.filter((p: any) => p.degree === 'Diploma').some((p: any) => Object.keys(p.applicationDeadlines).length || admissionOf(p, offenbach.type)), 'phased-out Offenbach diploma intakes have no future windows or NC-free claim');
+const bremen = school('Universität Bremen');
+const bremenMaster = prog(bremen, /Digitale Medien Master/);
+check(bremenMaster.degree === 'Master of Science' && bremenMaster.language === 'English' && bremenMaster.jointProfile.includes('Informatics'), 'Bremen university joint master is the informatics MSc, not HfK’s design MA');
+check(prog(bremen, /Digitale Medien Bachelor/).degree === 'Bachelor of Science', 'Bremen university bachelor award is BSc; its immutable ID is preserved');
+const hda = school('Hochschule Darmstadt');
+const expanded = prog(hda, /Expanded Media Master/);
+check(expanded.specializations.includes('Expanded Realities') && expanded.duration === '3/4 semesters', 'h_da Expanded Realities is a track within Expanded Media MA');
+check(hda.programs.filter(available).length === 17, 'h_da current Architecture/Media/Design catalogue is covered by 17 verified entries');
+check(prog(hda, /Communication Design/).degree === 'Diploma (FH)' && prog(hda, /Motion Pictures/).language === 'English', 'h_da Communication Design degree and Motion Pictures language are corrected');
+check(programSearchMatch(prog(hda, /User Experience Design/), 'Interactive Media Design').score === 100, 'h_da former Interactive Media Design searches the current User Experience Design programme');
+check(!passesFilters(hda, { ...none, search: 'Digital Media', degree: 'Master', language: 'English' }), 'unsupported h_da Digital Media MSc does not satisfy active programme filters');
+check(passesFilters(hda, { ...none, search: 'Expanded Media', semester: 'summer', degree: 'Master' }), 'verified intake survives filters even without a universal application window');
+check(expanded.otherDeadlines.some((d: any) => d.semester === 'winter' && d.scope === 'international applicants' && d.end === '06-01') && Object.keys(expanded.applicationDeadlines).length === 0, 'h_da international/domestic deadlines remain scoped, not a universal annual window');
+check(fhp.programs.find((p: any) => p.name === 'Interface Design').duration === '8 semesters', 'FH Potsdam Interface Design is eight semesters');
 
 if (failed) process.exit(1);

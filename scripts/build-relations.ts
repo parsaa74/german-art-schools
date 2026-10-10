@@ -37,12 +37,16 @@ const data = JSON.parse(readFileSync(DATA_PATH, 'utf8'));
 const ids: string[] = [];
 const schoolOf: string[] = [];
 const group: string[] = [];
+const jointProgramme: Array<string | undefined> = [];
+const eligible: boolean[] = [];
 for (const school of Object.values<any>(data.universities)) {
   for (const p of school.programs ?? []) {
     if (!emb[p.program_id]) continue;
     ids.push(p.program_id);
     schoolOf.push(school.id);
     group.push(subjectGroupOf(p.name));
+    jointProgramme.push(p.jointProgramId);
+    eligible.push(p.status?.status !== 'not-matched' && p.status?.status !== 'discontinued');
   }
 }
 const n = ids.length;
@@ -87,7 +91,8 @@ for (let i = 0; i < n; i++) {
 }
 const S = (i: number, j: number) => sim[i * n + j];
 const similar = (i: number, j: number) =>
-  schoolOf[i] !== schoolOf[j] &&
+  eligible[i] && eligible[j] && schoolOf[i] !== schoolOf[j] &&
+  !(jointProgramme[i] && jointProgramme[i] === jointProgramme[j]) &&
   ((group[i] === group[j] && group[i] !== 'Other' && S(i, j) >= SAME_GROUP_MIN) || S(i, j) >= CROSS_GROUP_MIN);
 
 // program → top-K similar programs at other schools

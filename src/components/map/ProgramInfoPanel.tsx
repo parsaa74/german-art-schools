@@ -91,7 +91,7 @@ export function ProgramInfoPanel() {
           aria-modal="false"
           aria-labelledby="program-name-heading"
           className={cn(
-            'fixed top-4 left-4 z-[500] w-[min(22rem,calc(100vw-2rem))] ui-organic text-gray-100',
+            'fixed top-4 left-4 z-[500] w-[min(22rem,calc(100vw-2rem))] ui-organic text-gray-100 !bg-slate-950/95 !bg-none',
             'max-h-[calc(100vh-2rem)] overflow-y-auto overflow-x-hidden',
             'scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent hover:scrollbar-thumb-white/50',
           )}
@@ -157,6 +157,38 @@ export function ProgramInfoPanel() {
               </Section>
             )}
 
+            {!!program.jointWith?.length && (
+              <Section title="Joint programme">
+                {program.jointProfile && <p className="mb-1">This profile: {program.jointProfile} · {program.degree}</p>}
+                <p className="text-gray-400">Offered together with:</p>
+                {program.jointWith.map((schoolId: string) => {
+                  const partner = universityById.get(schoolId)
+                  return partner ? <button key={schoolId} className="block text-blue-300 hover:underline text-left" onClick={() => { setSelectedProgramId(null); setSelectedUniversity(partner) }}>{partner.name}</button> : null
+                })}
+                {program.jointProfile && <p className="mt-1 text-gray-400">The partner profile has a different degree; apply through the institution for your chosen profile.</p>}
+              </Section>
+            )}
+
+            {!!program.teachingAreas?.length && (
+              <Section title="Classes & teaching areas">
+                <p className="text-gray-400 mb-1">Within this programme — not separately awarded degrees.</p>
+                {program.teachingAreas.map((a: { name: string; source: string }, i: number) => <a key={i} href={a.source} target="_blank" rel="noopener noreferrer" className="block text-blue-300 hover:underline">{a.name}</a>)}
+              </Section>
+            )}
+
+            {!!program.intakes?.length && (
+              <Section title="Intake">
+                <p>{program.intakes.join(' / ')} semester. Application dates may depend on your qualification and route.</p>
+              </Section>
+            )}
+
+            {program.applicationRoute && (
+              <Section title="Application route">
+                <p>{program.applicationRoute.notes}</p>
+                {program.applicationRoute.url && <a href={program.applicationRoute.url} target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:underline">Official application instructions</a>}
+              </Section>
+            )}
+
             {program.specializations && program.specializations.length > 0 && (
               <Section title="Specializations">
                 <div className="flex flex-wrap gap-1">
@@ -198,9 +230,9 @@ export function ProgramInfoPanel() {
               </Section>
             )}
 
-            {admission && (
+            {(admission || program.admission === 'restricted' || program.admission === 'aptitude-and-restricted') && (
               <Section title="Admission">
-                <p>{ADMISSION_LABELS[admission]}.</p>
+                <p>{admission ? ADMISSION_LABELS[admission] : 'Restricted admission — check the programme’s selection criteria'}{program.admission === 'aptitude-and-restricted' ? '; also requires artistic aptitude / work samples' : ''}.</p>
                 {program.admissionSource && (
                   <a href={program.admissionSource} target="_blank" rel="noopener noreferrer" className="text-[0.65rem] text-blue-300 hover:underline">Source</a>
                 )}

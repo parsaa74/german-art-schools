@@ -191,7 +191,7 @@ describe('tools/call — get_program', () => {
 });
 
 describe('tools/call — list_open_deadlines', () => {
-  it('finds the 19 english master programs open on 2026-06-10', async () => {
+  it('finds the 16 english master programs open on 2026-06-10', async () => {
     const payload = payloadOf(
       await callTool('list_open_deadlines', {
         on_date: '2026-06-10',
@@ -200,11 +200,12 @@ describe('tools/call — list_open_deadlines', () => {
       }),
     );
     expect(payload.on_date).toBe('2026-06-10');
-    // 19 since the 2026-10-10 research: Anhalt DIA closes 31 May, FH Potsdam EMW 1 June,
-    // RWTH Media Informatics takes no new applicants (official pages)
-    expect(payload.total_open).toBe(19);
-    expect(payload.returned).toBe(19); // fits inside the default limit of 25
-    expect(payload.programs).toHaveLength(19);
+    // 19 after the initial research; this catalogue check removes three false matches:
+    // D&C is German-taught with a dated 2026 window, and h_da's standalone Digital Media
+    // MSc / Expanded Realities MA were not matched to current degrees (no invented windows).
+    expect(payload.total_open).toBe(16);
+    expect(payload.returned).toBe(16); // fits inside the default limit of 25
+    expect(payload.programs).toHaveLength(16);
     for (const p of payload.programs) {
       expect(p.degree_level).toBe('master');
       expect(p.language.toLowerCase()).toContain('english');

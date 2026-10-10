@@ -42,7 +42,7 @@ const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'Ju
 const mdText = (s: string) => { const [a, b, c] = s.split('-').map(Number); return c ? `${c} ${MONTH_NAMES[b - 1]} ${a}` : `${b} ${MONTH_NAMES[a - 1]}`; };
 
 function languageCheck(language: string | undefined, p: Profile, requirement?: string | null): Check {
-  if (!language) return { level: 'info', text: 'Teaching language not in our data — check the program page.' };
+  if (!language) return { level: 'info', text: `Teaching language not in our data — check the program page.${requirement ? ` Language-proof rules: ${requirement}` : ''}` };
   const german = language.includes('German'), english = language.includes('English');
   // the user can follow it in either language a bilingual program offers
   const levels = [german ? p.german : null, english ? p.english : null].filter((l): l is Level => !!l);
@@ -50,7 +50,7 @@ function languageCheck(language: string | undefined, p: Profile, requirement?: s
   const req = requirement ? ` Required: ${requirement.replace(/\.+$/, '')}.` : ' Check the level this program requires.';
   if (!best) return { level: 'info', text: `Taught in ${language}.${req}` };
   if (best === 'c1') return { level: 'ok', text: `Taught in ${language} — your level is C1 or more.` };
-  if (best === 'none' || best === 'a') return { level: 'warn', text: `Taught in ${language} — you'll need a language certificate before you start.${req}` };
+  if (best === 'none' || best === 'a') return { level: 'warn', text: `Taught in ${language} — check the required language level, proof and submission timing.${req}` };
   return { level: 'info', text: `Taught in ${language} — your level is ${LEVEL_LABELS[best]}.${req}` };
 }
 
@@ -112,11 +112,15 @@ export function checkProgram(program: Program, school: ProcessedUniversity, p: P
   } else if (admission === 'open') {
     checks.push({ level: 'ok', text: 'Open admission — the school states grades aren’t a cut-off.', source: program.admissionSource });
   } else if (program.admission === 'restricted' || program.admission === 'aptitude-and-restricted') {
-    checks.push({ level: 'info', text: `Places are limited and grades count in selection (NC)${program.admission === 'aptitude-and-restricted' ? ', on top of an aptitude test' : ''}.`, source: program.admissionSource });
+    checks.push({ level: 'info', text: `Restricted admission — check the programme’s selection criteria${program.admission === 'aptitude-and-restricted' ? '; artistic aptitude / work samples are also required' : ''}.`, source: program.admissionSource });
   }
 
   // application route
-  if (p.certificate === 'foreign' && school.applicationMethod === 'uni-assist') {
+  if (program.applicationRoute) {
+    checks.push({ level: 'info', text: program.applicationRoute.notes, source: program.applicationRoute.url });
+    // A sourced programme route wins over a broad membership-based school guess.
+    // A portal instruction alone does not prove that foreign-credential/VPD fees are waived.
+  } else if (p.certificate === 'foreign' && school.applicationMethod === 'uni-assist') {
     checks.push({ level: 'info', text: 'With a non-German certificate you’ll likely apply via uni-assist — send it at least 8 weeks before the deadline.', source: UNI_ASSIST_TIMING });
     if (deadline) steps.push({ date: new Date(deadline.getTime() - UNI_ASSIST_LEAD_DAYS * 864e5), text: `Send to uni-assist — ${name}, ${school.name}` });
   } else if (p.certificate && school.applicationMethod === 'direct') {

@@ -44,6 +44,13 @@ export interface ProcessedUniversity {
     duration: string;
     description?: string;
     specializations?: string[];
+    intakes?: Array<'winter' | 'summer'>; // sourced independently of deadline coverage
+    searchAliases?: string[]; // official names / former names, not additional degrees
+    teachingAreas?: Array<{ name: string; kind: string; source: string }>;
+    jointWith?: string[]; // partner school IDs
+    jointProgramId?: string; // groups listings of the same joint programme
+    jointProfile?: string; // e.g. Media Design MA vs Media Informatics MSc
+    applicationRoute?: { method: string; notes: string; url?: string; scope?: string };
     admission?: 'aptitude' | 'open' | 'restricted' | 'aptitude-and-restricted';   // researched; see taxonomy.admissionOf
     admissionSource?: string;
     status?: { status: string; notes?: string };

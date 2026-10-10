@@ -6,7 +6,7 @@ import { useSchoolStore } from '@/stores/schoolStore';
 import { Command, CommandInput, CommandList, CommandGroup, CommandItem } from '@/components/ui/command';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { MapPin, GraduationCap, Building2, Shapes, Users, CheckCircle, Snowflake, Sun, Globe } from 'lucide-react';
-import { fold, matchScore as score, SUBJECT_GROUPS, subjectGroupOf, degreeAbbrev, SCHOOL_TYPES, typeLabel } from '@/lib/taxonomy';
+import { fold, matchScore as score, programSearchMatch, SUBJECT_GROUPS, subjectGroupOf, degreeAbbrev, SCHOOL_TYPES, typeLabel } from '@/lib/taxonomy';
 import { METHOD_LABELS } from './FilterControls';
 
 interface SearchModalProps {
@@ -55,9 +55,12 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
     });
 
     const programs: Result[] = [...s.programById.entries()].flatMap(([id, { schoolId, schoolName, program }]) => {
-      const sc = score(program.name, q);
+      const match = programSearchMatch(program, q);
+      const sc = match.score;
       const u = s.universityById.get(schoolId);
-      return sc && u ? [{ key: id, title: [program.name, degreeAbbrev(program.degree)].filter(Boolean).join(' · '), detail: schoolName,
+      const archived = program.status?.status === 'not-matched' || program.status?.status === 'discontinued';
+      const detail = [match.area && `Class/area: ${match.area}`, schoolName, archived && 'Catalogue warning — check before applying'].filter(Boolean).join(' · ');
+      return sc && u ? [{ key: id, title: [program.name, degreeAbbrev(program.degree)].filter(Boolean).join(' · '), detail,
         icon: <Building2 className="h-4 w-4 text-emerald-400" />, score: sc,
         action: done(() => { st.setSelectedUniversity(u); st.setSelectedProgramId(id); }) }] : [];
     });

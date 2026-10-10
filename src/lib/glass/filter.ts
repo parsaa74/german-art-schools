@@ -13,7 +13,7 @@
  */
 
 import { ProcessedUniversity } from '@/stores/schoolStore';
-import { fold, subjectGroupOf, degreeGroupOf, taughtIn, admissionOf } from '@/lib/taxonomy';
+import { fold, subjectGroupOf, degreeGroupOf, taughtIn, admissionOf, programSearchMatch } from '@/lib/taxonomy';
 
 export interface Filters {
   search: string;
@@ -31,11 +31,12 @@ export interface Filters {
 type Program = NonNullable<ProcessedUniversity['programs']>[number];
 
 function programPasses(p: Program, f: Filters, schoolType: string): boolean {
+  if (p.status?.status === 'not-matched' || p.status?.status === 'discontinued') return false;
   if (f.program && subjectGroupOf(p.name) !== f.program) return false;
   if (f.nc && !admissionOf(p as any, schoolType)) return false;
   if (f.degree && degreeGroupOf(p.degree) !== f.degree) return false;
   if (f.language && !taughtIn(p.language, f.language)) return false;
-  if (f.semester && !(p.applicationDeadlines as any)?.[f.semester]) return false;
+  if (f.semester && !p.intakes?.some((s) => s === f.semester) && !(p.applicationDeadlines as any)?.[f.semester] && !p.otherDeadlines?.some((d) => d.kind === 'application' && d.semester === f.semester)) return false;
   return true;
 }
 
@@ -49,8 +50,10 @@ export function matchingPrograms(uni: ProcessedUniversity, f: Filters): Program[
 export function passesFilters(uni: ProcessedUniversity, f: Filters): boolean {
   if (f.search && f.search.trim()) {
     const q = fold(f.search.trim());
-    const hay = fold([uni.name, uni.state, uni.city || '', uni.description || '', ...(uni.programTypes || [])].join(' '));
-    if (!hay.includes(q)) return false;
+    // A generic school description must not satisfy a specific programme search
+    // when degree/language/etc. filters are active (e.g. a nonexistent MSc).
+    const hay = fold([uni.name, uni.state, uni.city || '', hasProgramFilter(f) ? '' : uni.description || ''].join(' '));
+    if (!hay.includes(q) && !(uni.programs ?? []).some((p) => programPasses(p, f, uni.type) && programSearchMatch(p, f.search).score > 0)) return false;
   }
   if (f.state && uni.state !== f.state) return false;
   if (f.type && uni.type !== f.type) return false;

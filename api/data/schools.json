@@ -161,6 +161,8 @@
       "universitat-der-kunste-berlin--fine-arts--unspecified",
       "universitat-der-kunste-berlin--art-and-media--unspecified",
       "universitat-der-kunste-berlin--visual-communication--unspecified",
+      "universitat-der-kunste-berlin--visual-communication--master-of-arts",
+      "universitat-der-kunste-berlin--design-and-computation--master-of-arts",
       "universitat-der-kunste-berlin--design--unspecified"
     ]
   },
@@ -647,7 +649,20 @@
       "hochschule-darmstadt--expanded-realities--master-of-arts",
       "hochschule-darmstadt--interactive-media-design--bachelor-of-arts",
       "hochschule-darmstadt--digital-media--master-of-science",
-      "hochschule-darmstadt--digital-media--unspecified"
+      "hochschule-darmstadt--digital-media--unspecified",
+      "hochschule-darmstadt--animation-and-game--master-of-arts",
+      "hochschule-darmstadt--augmented-and-virtual-reality-design--bachelor-of-arts",
+      "hochschule-darmstadt--expanded-media--master-of-arts",
+      "hochschule-darmstadt--industrial-design--diploma-fh",
+      "hochschule-darmstadt--international-media-cultural-work--master-of-arts",
+      "hochschule-darmstadt--media-technology-and-society--master-of-science",
+      "hochschule-darmstadt--onlinejournalismus--bachelor-of-arts",
+      "hochschule-darmstadt--onlinekommunikation--bachelor-of-science",
+      "hochschule-darmstadt--sound-music-and-production--bachelor-of-arts",
+      "hochschule-darmstadt--architecture--bachelor-of-engineering",
+      "hochschule-darmstadt--architecture--master-of-engineering",
+      "hochschule-darmstadt--interior-architecture--bachelor-of-engineering",
+      "hochschule-darmstadt--interior-architecture--master-of-engineering"
     ]
   },
   "hochschule-rhein-waal": {

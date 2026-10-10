@@ -58,6 +58,13 @@ export interface Program {
   duration: string | null;
   description: string | null;
   specializations: string[];
+  search_aliases?: string[];
+  teaching_areas?: Array<{ name: string; kind: string; source: string }>;
+  joint_with?: string[];
+  joint_program_id?: string | null;
+  joint_profile?: string | null;
+  intakes?: string[];
+  status?: { status: string; notes?: string } | null;
   portfolio_required: boolean | null;
   tuition_eur_per_semester: number | null;
   application_url: string | null;

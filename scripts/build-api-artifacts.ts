@@ -25,6 +25,13 @@ interface RawProgram {
   duration?: string | null;
   description?: string | null;
   specializations?: string[] | null;
+  searchAliases?: string[];
+  teachingAreas?: Array<{ name: string; kind: string; source: string }>;
+  jointWith?: string[];
+  jointProgramId?: string;
+  jointProfile?: string;
+  intakes?: string[];
+  status?: { status: string; notes?: string };
   program_id?: string;
   details?: {
     programUrl?: string | null;
@@ -65,6 +72,7 @@ interface EmbeddingsFile {
   model: string;
   dim: number;
   embeddings: Record<string, number[]>;
+  reusedEmbeddings?: Record<string, { sourceProgramId: string; reason: string }>;
 }
 
 // ---------- output shapes ----------
@@ -92,6 +100,13 @@ interface OutProgram {
   duration: string | null;
   description: string | null;
   specializations: string[];
+  search_aliases?: string[];
+  teaching_areas?: Array<{ name: string; kind: string; source: string }>;
+  joint_with?: string[];
+  joint_program_id?: string | null;
+  joint_profile?: string | null;
+  intakes?: string[];
+  status?: { status: string; notes?: string } | null;
   portfolio_required: boolean | null;
   tuition_eur_per_semester: number | null;
   application_url: string | null;
@@ -295,6 +310,13 @@ function main() {
         duration: prog.duration ?? null,
         description: prog.description ?? null,
         specializations: prog.specializations ?? [],
+        search_aliases: prog.searchAliases ?? [],
+        teaching_areas: prog.teachingAreas ?? [],
+        joint_with: prog.jointWith ?? [],
+        joint_program_id: prog.jointProgramId ?? null,
+        joint_profile: prog.jointProfile ?? null,
+        intakes: prog.intakes ?? [],
+        status: prog.status ?? null,
         portfolio_required: details?.portfolioRequired ?? null,
         tuition_eur_per_semester: details?.tuitionEuroPerSemester ?? null,
         application_url: details?.applicationUrl ?? null,
@@ -433,6 +455,9 @@ function main() {
     count: vectorIds.length,
     scale: SCALE,
     ids: vectorIds,
+    // Only exact joint-programme counterparts may reuse an existing vector.
+    // New unrelated programmes stay unembedded rather than borrowing misleading vectors.
+    reused_embeddings: embFile.reusedEmbeddings ?? {},
   });
 
   const edgeCount = seenPairs.size;

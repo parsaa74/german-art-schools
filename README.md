@@ -1,6 +1,6 @@
 # German Art Schools
 
-An interactive guide to art, design, film, music and media programs at German universities. Compare 93 schools and 765 programs, see how programs relate across schools, and plan applications around real deadlines, language rules and costs.
+An interactive guide to art, design, film, music and media programs at German universities. Compare 93 schools and 780 program records, see how programs relate across schools, and plan applications around real deadlines, language rules and costs.
 
 **Live:** https://parsaa74.github.io/german-art-schools/
 
