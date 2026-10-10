@@ -151,8 +151,7 @@ function parseDeadlineDate(dateStr: string): Date | null {
   const monthStr = parts[1].toLowerCase();
   const month = months[monthStr];
   if (isNaN(day) || month === undefined) return null;
-  const now = new Date();
-  const year = now.getFullYear();
+  const year = parts[2] ? parseInt(parts[2]) : new Date().getFullYear(); // dated cycles keep their year
   return new Date(year, month, day);
 }
 

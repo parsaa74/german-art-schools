@@ -3,12 +3,15 @@
 import { useEffect, useRef, useMemo } from 'react'
 import { XMarkIcon } from '@heroicons/react/24/solid'
 import { motion, AnimatePresence } from 'framer-motion'
-import type { ProcessedUniversity } from '@/stores/schoolStore'
+import { shallow } from 'zustand/shallow'
+import { useShortlist } from '@/stores/shortlistStore'
+import { useSchoolStore, type ProcessedUniversity } from '@/stores/schoolStore'
 import { cn } from '@/lib/utils'
-import { getNextDeadline } from '@/utils/deadlineUtils'
+import { getNextDeadline, getAllUpcomingDeadlines } from '@/utils/deadlineUtils'
 import { generateSchoolICalFile, downloadICalFile } from '@/utils/icalExport'
 import { getLogoForSchool } from '@/data/universityLogos'
-import { getImageForSchool } from '@/data/universityImages'
+import { typeLabel, typeColor, degreeAbbrev, admissionOf, feeLine, KIN_COLOR, TIER_LABELS, TIER_OPACITY } from '@/lib/taxonomy'
+import { filtersFromState, matchingPrograms } from '@/lib/glass/filter'
 
 // Define the props interface for InfoPanel
 interface InfoPanelProps {
@@ -58,34 +61,28 @@ export default function InfoPanel({
   className = ''
 }: InfoPanelProps) {
   const panelRef = useRef<HTMLDivElement>(null)
+  const selectedProgramId = useSchoolStore((s) => s.selectedProgramId)
+  const keptIds = useShortlist((s) => s.ids)
+  const setSelectedProgramId = useSchoolStore((s) => s.setSelectedProgramId)
+  // programs that satisfy the active filters get highlighted
+  const filters = useSchoolStore((s) => filtersFromState(s), shallow)
+  const programFiltered = !!(filters.program || filters.degree || filters.language || filters.semester || filters.nc)
+  const matched = useMemo(
+    () => new Set(programFiltered && school ? matchingPrograms(school, filters).map((p: any) => p.program_id) : []),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [school, programFiltered, filters.program, filters.degree, filters.language, filters.semester, filters.nc]
+  )
 
-  // Handle close button click - simplified
-  const handleClose = () => {
-    onClose()
-  }
+  const handleClose = onClose
 
-  // Add keyboard event listener for Escape key
+  // Escape closes the program panel first (it has its own handler), then this one.
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) {
-        handleClose()
-      }
+      if (e.key === 'Escape' && isOpen && !useSchoolStore.getState().selectedProgramId) handleClose()
     }
     window.addEventListener('keydown', handleKeyDown)
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [isOpen, handleClose])
-
-  // Get a more artistic color scheme for type badges
-  const getTypeStyles = (type: string): string => {
-    switch (type) {
-      case 'university': return 'border-blue-400/50 text-blue-300 bg-blue-500/20'
-      case 'art_academy': return 'border-emerald-400/50 text-emerald-300 bg-emerald-500/20'
-      case 'design_school': return 'border-cyan-400/50 text-cyan-300 bg-cyan-500/20'
-      case 'music_academy': return 'border-purple-400/50 text-purple-300 bg-purple-500/20'
-      case 'film_school': return 'border-amber-400/50 text-amber-300 bg-amber-500/20'
-      default: return 'border-gray-400/50 text-gray-300 bg-gray-500/20'
-    }
-  }
 
   return (
     <AnimatePresence>
@@ -114,6 +111,7 @@ export default function InfoPanel({
             <img
               src={getLogoForSchool(school.id)}
               alt={`${school.name} logo`}
+              onError={(e) => { e.currentTarget.style.display = 'none' }}
               className="w-10 h-10 object-contain flex-shrink-0 rounded bg-white/90 p-1"
             />
           )}
@@ -132,30 +130,13 @@ export default function InfoPanel({
           </button>
         </div>
           <span
-              className={cn(
-                'inline-block px-3 py-1.5 text-[0.6rem] font-medium rounded-pill border',
-                'tracking-wide uppercase',
-                getTypeStyles(school.type)
-              )}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 text-[0.6rem] font-medium rounded-pill border border-white/20 bg-white/5 tracking-wide uppercase text-gray-200"
           >
-            {school.type.replace('_', ' ')}
+            <span className="h-2 w-2 rounded-full" style={{ background: typeColor(school.type) }} aria-hidden />
+            {typeLabel(school.type)}
           </span>
       </div>
 
-          <motion.div
-            className="relative mx-4 mt-2 rounded-soft overflow-hidden border border-white/10 aspect-[5/2] bg-black/40"
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.25, delay: 0.05 }}
-          >
-            <img
-              src={getImageForSchool(school.id, school.type)}
-              alt={`${school.name} placeholder image`}
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
-          </motion.div>
 
           <div className="px-4 pb-4 pt-2 space-y-0">
             <PanelSection title="Location" icon={<LocationIcon />} delay={0}>
@@ -187,27 +168,70 @@ export default function InfoPanel({
               </PanelSection>
         )}
 
-        {school.programTypes && school.programTypes.length > 0 && (
-              <PanelSection title={`Programs (${school.programCount || school.programTypes.length})`} icon={<ProgramIcon />} delay={3}>
+        {school.programs && school.programs.length > 0 && (
+              <PanelSection title={`Programs (${school.programs.length})${programFiltered ? ` · ${matched.size} match your filters` : ''}`} icon={<ProgramIcon />} delay={3}>
                 <div className="flex flex-wrap gap-1">
-                  {school.programTypes.map((prog, index) => (
-                  <span
-                    key={index}
-                      className="px-2 py-1 border border-white/20 rounded-soft text-[0.65rem] text-gray-200 bg-white/10 hover:bg-white/20 transition-all duration-300 hover:scale-105"
-                  >
-                    {prog}
-                  </span>
-                ))}
-              </div>
+                  {school.programs.map((prog: any) => {
+                    const deg = degreeAbbrev(prog.degree)
+                    const isOpenProgram = selectedProgramId === prog.program_id
+                    return (
+                      <button
+                        key={prog.program_id}
+                        onClick={() => setSelectedProgramId(isOpenProgram ? null : prog.program_id)}
+                        aria-pressed={isOpenProgram}
+                        className={cn(
+                          'px-2 py-1 border rounded-soft text-[0.65rem] text-left transition-colors duration-200',
+                          isOpenProgram ? 'border-cyan-300/80 bg-cyan-400/20 text-white'
+                            : matched.has(prog.program_id) ? 'border-cyan-300/50 bg-cyan-400/10 text-gray-100 hover:bg-cyan-400/20'
+                            : 'border-white/20 bg-white/10 text-gray-200 hover:bg-white/20'
+                        )}
+                      >
+                        {keptIds.includes(prog.program_id) && <span className="text-cyan-300" aria-label="kept">★ </span>}
+                        {prog.name}{deg && <span className="text-gray-400"> · {deg}</span>}
+                      </button>
+                    )
+                  })}
+                </div>
+              </PanelSection>
+            )}
+
+            <PanelSection title="How to apply" icon={<ApplyIcon />} delay={4}>
+              {school.applicationMethod === 'uni-assist' ? (
+                <p>International applicants may need to go through <a className="text-blue-400 hover:underline" href="https://www.uni-assist.de/en/" target="_blank" rel="noopener noreferrer">uni-assist</a> (€75 first program, €30 each extra) — check the program page.</p>
+              ) : school.applicationMethod === 'direct' ? (
+                <p>Apply directly to the school — not a uni-assist member, so no uni-assist fee.</p>
+              ) : (
+                <p className="text-gray-400">Application route unknown.</p>
+              )}
+              {school.applicationRoute?.notes && (
+                <p className="mt-1 text-gray-300">
+                  {school.applicationRoute.notes}
+                  {school.applicationRoute.scope && school.applicationRoute.scope !== 'all applicants' && <span className="text-gray-500"> ({school.applicationRoute.scope})</span>}
+                  {school.sources?.applicationRoute && <> · <a className="text-blue-400 hover:underline" href={school.sources.applicationRoute} target="_blank" rel="noopener noreferrer">source</a></>}
+                </p>
+              )}
+              <AdmissionSummary school={school} />
+            </PanelSection>
+
+            {!!school.fees?.length && (
+              <PanelSection title="Costs" icon={<StatsIcon />} delay={4}>
+                <ul className="space-y-0.5">
+                  {school.fees.map((f, i) => <li key={i}>{feeLine(f)}</li>)}
+                </ul>
+                {school.sources?.fees && (
+                  <a className="text-[0.65rem] text-blue-400 hover:underline" href={school.sources.fees} target="_blank" rel="noopener noreferrer">Source</a>
+                )}
               </PanelSection>
             )}
 
             {school.programs && school.programs.length > 0 && (
-              <DeadlineSection school={school} delay={4} />
+              <DeadlineSection school={school} delay={5} />
             )}
 
+            <SimilarSchools school={school} />
+
             {school.website && (
-              <PanelSection title="Website" icon={<WebsiteIcon />} delay={5}>
+              <PanelSection title="Website" icon={<WebsiteIcon />} delay={7}>
             <a
               href={school.website}
               target="_blank"
@@ -217,6 +241,12 @@ export default function InfoPanel({
                   {school.website.replace(/^https?:\/\//, '')}
                   <span className="inline-block ml-1 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all">→</span>
                 </a>
+                {school.contact && (
+                  <div className="mt-1 text-gray-300">
+                    {school.contact.email && <a className="text-blue-400 hover:underline mr-3" href={`mailto:${school.contact.email}`}>{school.contact.email}</a>}
+                    {school.contact.phone && <a className="text-blue-400 hover:underline" href={`tel:${school.contact.phone.replace(/[^+\d]/g, '')}`}>{school.contact.phone}</a>}
+                  </div>
+                )}
               </PanelSection>
             )}
           </div>
@@ -228,24 +258,20 @@ export default function InfoPanel({
 
 // --- Deadline Section Component ---
 function DeadlineSection({ school, delay }: { school: ProcessedUniversity; delay: number }) {
-  const nextDeadline = useMemo(() => {
-    if (!school.programs || school.programs.length === 0) return null;
-    // Find the best deadline across all programs
-    for (const prog of school.programs) {
-      if (prog.applicationDeadlines) {
-        const result = getNextDeadline(prog.applicationDeadlines);
-        if (result && result.status.status !== 'closed') return { ...result, programName: prog.name };
-      }
+  const { nextDeadline, more } = useMemo(() => {
+    const programs = school.programs ?? [];
+    // most urgent open/upcoming window across all programs
+    const upcoming = getAllUpcomingDeadlines([{ name: school.name, programs }]);
+    if (upcoming.length) {
+      const u = upcoming[0];
+      return { nextDeadline: { semester: u.semester, deadline: u.deadline, status: u.status, programName: u.programName }, more: upcoming.length - 1 };
     }
-    // If all are closed, just return the first one
-    for (const prog of school.programs) {
-      if (prog.applicationDeadlines) {
-        const result = getNextDeadline(prog.applicationDeadlines);
-        if (result) return { ...result, programName: prog.name };
-      }
+    for (const prog of programs) {
+      const result = prog.applicationDeadlines && getNextDeadline(prog.applicationDeadlines);
+      if (result) return { nextDeadline: { ...result, programName: prog.name }, more: 0 };
     }
-    return null;
-  }, [school.programs]);
+    return { nextDeadline: null, more: 0 };
+  }, [school.name, school.programs]);
 
   const handleDownloadICal = () => {
     const icalContent = generateSchoolICalFile({
@@ -260,7 +286,7 @@ function DeadlineSection({ school, delay }: { school: ProcessedUniversity; delay
   if (!nextDeadline) return null;
 
   return (
-    <PanelSection title="Application Deadline" icon={<DeadlineIcon />} delay={delay}>
+    <PanelSection title="Next deadline" icon={<DeadlineIcon />} delay={delay}>
       <div className="space-y-2">
         <div className="flex items-center gap-2">
           <span
@@ -277,6 +303,7 @@ function DeadlineSection({ school, delay }: { school: ProcessedUniversity; delay
         </div>
         <div className="text-[0.7rem] text-gray-300">
           {nextDeadline.programName}: {nextDeadline.deadline.start ? `${nextDeadline.deadline.start} — ` : 'until '}{nextDeadline.deadline.end}
+          {more > 0 && <span className="text-gray-500"> · {more} more open or upcoming</span>}
         </div>
         <button
           onClick={handleDownloadICal}
@@ -288,6 +315,88 @@ function DeadlineSection({ school, delay }: { school: ProcessedUniversity; delay
       </div>
     </PanelSection>
   );
+}
+
+// --- NC-free admission across the school's programs (taxonomy.admissionOf) ---
+function AdmissionSummary({ school }: { school: ProcessedUniversity }) {
+  const programs = school.programs ?? []
+  const routes = programs.map((p) => admissionOf(p as any, school.type))
+  const aptitude = routes.filter((r) => r === 'aptitude').length
+  const open = routes.filter((r) => r === 'open').length
+  if (!aptitude && !open) return <p className="mt-1 text-gray-400">NC (grade cut-off): not known — check the program pages.</p>
+  const all = aptitude + open === programs.length
+  return (
+    <p className="mt-1">
+      NC-free {all ? 'for all programs' : `for ${aptitude + open} of ${programs.length} programs`}
+      {aptitude > 0 && ` — admission by portfolio / aptitude test${open ? ` (${aptitude})` : ''}`}
+      {open > 0 && `${aptitude ? ', ' : ' — '}open admission${aptitude ? ` (${open})` : ''}`}.
+    </p>
+  )
+}
+
+// --- Similar schools: related through programs that closely match ---
+function SimilarSchools({ school }: { school: ProcessedUniversity }) {
+  const relations = useSchoolStore((s) => s.schoolRelations.get(school.id))
+  const universityById = useSchoolStore((s) => s.universityById)
+  const programById = useSchoolStore((s) => s.programById)
+  const setSelectedUniversity = useSchoolStore((s) => s.setSelectedUniversity)
+  const setSelectedProgramId = useSchoolStore((s) => s.setSelectedProgramId)
+  if (!relations?.length) return null
+  const progName = (id: string) => programById.get(id)?.program.name ?? id
+
+  return (
+    <PanelSection title="Similar schools" icon={<LinkIcon />} delay={6}>
+      <p className="text-[0.65rem] text-gray-400 mb-1.5 flex flex-wrap gap-x-3 gap-y-0.5">
+        {[3, 2, 1].map((t) => (
+          <span key={t} className="inline-flex items-center gap-1">
+            <span className="h-2 w-2 rounded-full" style={{ background: KIN_COLOR, opacity: TIER_OPACITY[t] }} />{TIER_LABELS[t]}
+          </span>
+        ))}
+        <span>— glowing on the wall</span>
+      </p>
+      <ul className="space-y-1">
+        {relations.map((r) => {
+          const other = universityById.get(r.schoolId)
+          if (!other) return null
+          return (
+            <li key={r.schoolId} className="rounded-soft hover:bg-white/5 px-1.5 py-1">
+              <button onClick={() => setSelectedUniversity(other)} className="flex items-center gap-2 w-full text-left group">
+                <span className="h-2 w-2 rounded-full flex-shrink-0" style={{ background: KIN_COLOR, opacity: TIER_OPACITY[r.tier] }} title={TIER_LABELS[r.tier]} />
+                <span className="flex-1 text-gray-100 group-hover:text-white">{other.name}</span>
+                <span className="text-[0.6rem] text-gray-400 flex-shrink-0">{r.total} similar</span>
+              </button>
+              <div className="pl-4 text-[0.65rem] text-gray-400 leading-snug">
+                {r.pairs.slice(0, 2).map(([mine, theirs], i) => (
+                  <span key={i}>
+                    {i > 0 && ' · '}
+                    <button className="hover:text-gray-200 underline-offset-2 hover:underline" onClick={() => setSelectedProgramId(mine)}>{progName(mine)}</button>
+                    {' ↔ '}
+                    <button className="hover:text-gray-200 underline-offset-2 hover:underline" onClick={() => { setSelectedUniversity(other); setSelectedProgramId(theirs) }}>{progName(theirs)}</button>
+                  </span>
+                ))}
+              </div>
+            </li>
+          )
+        })}
+      </ul>
+    </PanelSection>
+  )
+}
+
+function LinkIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+    </svg>
+  )
+}
+
+function ApplyIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m6.75 12-3-3m0 0-3 3m3-3v6m-1.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+    </svg>
+  )
 }
 
 // --- SVG Icons (Refined Minimalist Style) ---

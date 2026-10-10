@@ -46,8 +46,8 @@ const MONTHS = [
   'July', 'August', 'September', 'October', 'November', 'December',
 ];
 
-function formatMonthDay(md: { month: number; day: number }): string {
-  return `${md.day} ${MONTHS[md.month - 1] ?? `month ${md.month}`}`;
+function formatMonthDay(md: { month: number; day: number; year?: number }): string {
+  return `${md.day} ${MONTHS[md.month - 1] ?? `month ${md.month}`}${md.year ? ` ${md.year}` : ''}`;
 }
 
 /** "1 March – 15 April (winter)" — year-agnostic, human-readable. */
@@ -217,6 +217,7 @@ export function buildMcpServer(env: SearchEnv): McpServer {
       const open_on = {
         month: Number(date.slice(5, 7)),
         day: Number(date.slice(8, 10)),
+        year: Number(date.slice(0, 4)),
       };
       const page = listPrograms(
         {
@@ -256,8 +257,9 @@ export function buildMcpServer(env: SearchEnv): McpServer {
     'find_similar_programs',
     {
       description:
-        'List the programs most similar to a given program (precomputed content-similarity ' +
-        'graph, weights 0–1, sorted desc). Use to suggest alternatives once a user likes a program. ' +
+        'List programs at OTHER schools most similar to a given program (precomputed; each ' +
+        "school's shared description is factored out, so weights ~0.3–1 measure the program " +
+        'itself, sorted desc). Use to suggest alternatives once a user likes a program. ' +
         'Follow up with get_program for deadlines and application details.',
       inputSchema: {
         program_id: z.string().min(1).describe('Program id to find neighbors for.'),

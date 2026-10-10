@@ -88,7 +88,7 @@ app.get('/', (c) =>
     <li><code>GET /v1/schools/{id}</code> — one school</li>
     <li><code>GET /v1/programs</code> — list programs (<code>degree_level</code>, <code>language</code>, <code>school</code>, <code>portfolio_required</code>, <code>state</code>, <code>q</code>, <code>open_on</code>, <code>limit</code>, <code>offset</code>)</li>
     <li><code>GET /v1/programs/{id}</code> — one program</li>
-    <li><code>GET /v1/programs/{id}/similar</code> — similar programs (<code>limit</code>, <code>min_weight</code>)</li>
+    <li><code>GET /v1/programs/{id}/similar</code> — similar programs at other schools (<code>limit</code>, <code>min_weight</code>)</li>
     <li><code>GET /v1/graph</code> — full similarity graph</li>
     <li><code>GET /v1/search</code> — semantic search over program embeddings (<code>q</code>, <code>degree_level</code>, <code>language</code>, <code>min_score</code>, <code>limit</code>)</li>
     <li><code>POST /mcp</code> — MCP server (streamable HTTP, stateless); tools: <code>search_programs</code>, <code>list_open_deadlines</code>, <code>list_schools</code>, <code>get_school</code>, <code>get_program</code>, <code>find_similar_programs</code></li>

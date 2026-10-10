@@ -1,662 +1,158 @@
-/* eslint-disable no-console */
 'use client'
 
 import React, { useState, useEffect, useMemo } from 'react';
+import { shallow } from 'zustand/shallow';
 import { useSchoolStore } from '@/stores/schoolStore';
-import {
-  Command,
-  CommandInput,
-  CommandList,
-  CommandEmpty,
-  CommandGroup,
-} from '@/components/ui/command';
+import { Command, CommandInput, CommandList, CommandGroup, CommandItem } from '@/components/ui/command';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
-import { Search, MapPin, GraduationCap, Building2, Users, CheckCircle, XCircle, Snowflake, Sun, Globe, University } from 'lucide-react';
+import { MapPin, GraduationCap, Building2, Shapes, Users, CheckCircle, Snowflake, Sun, Globe } from 'lucide-react';
+import { fold, matchScore as score, SUBJECT_GROUPS, subjectGroupOf, degreeAbbrev, SCHOOL_TYPES, typeLabel } from '@/lib/taxonomy';
+import { METHOD_LABELS } from './FilterControls';
 
 interface SearchModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-interface SearchResult {
-  type: 'university' | 'state' | 'program' | 'type' | 'nc' | 'semester' | 'applicationMethod';
-  name: string;
-  displayName: string;
-  description?: string;
-  action: () => void;
+interface Result {
+  key: string;
+  title: string;
+  detail?: string;
   icon: React.ReactNode;
-  priority: number; // For sorting
+  score: number;
+  action: () => void;
 }
+
+const OPTION_TERMS: Array<{ key: string; terms: string[]; title: string; detail: string; icon: React.ReactNode; apply: () => void }> = [
+  { key: 'nc', terms: ['nc', 'nc-free', 'numerus clausus'], title: 'NC-free programs', detail: 'Portfolio, aptitude test or open admission instead of a grade cut-off', icon: <CheckCircle className="h-4 w-4 text-green-400" />, apply: () => useSchoolStore.getState().setActiveNcFilter(true) },
+  { key: 'direct', terms: ['direct', 'uni-assist', 'uniassist', 'apply', 'fee'], title: METHOD_LABELS.direct, detail: 'Schools you apply to directly', icon: <Globe className="h-4 w-4 text-orange-300" />, apply: () => useSchoolStore.getState().setActiveApplicationMethodFilter('direct') },
+  { key: 'uni-assist', terms: ['uni-assist', 'uniassist', 'apply'], title: METHOD_LABELS['uni-assist'], detail: 'Schools that use uni-assist for international applicants', icon: <Globe className="h-4 w-4 text-orange-400" />, apply: () => useSchoolStore.getState().setActiveApplicationMethodFilter('uni-assist') },
+  { key: 'winter', terms: ['winter', 'semester'], title: 'Winter semester intake', detail: 'Programs with a winter application window', icon: <Snowflake className="h-4 w-4 text-blue-300" />, apply: () => useSchoolStore.getState().setActiveSemesterFilter('winter') },
+  { key: 'summer', terms: ['summer', 'semester'], title: 'Summer semester intake', detail: 'Programs with a summer application window', icon: <Sun className="h-4 w-4 text-yellow-300" />, apply: () => useSchoolStore.getState().setActiveSemesterFilter('summer') },
+];
 
 export function SearchModal({ isOpen, onClose }: SearchModalProps) {
   const [search, setSearch] = useState('');
-  const [isMobile, setIsMobile] = useState(false);
-  
-  const {
-    processedUniversities,
-    uniqueStates,
-    uniqueProgramTypes,
-    setActiveStateFilter,
-    setActiveProgramFilter,
-    setActiveTypeFilter,
-    setActiveSemesterFilter,
-    setActiveNcFilter,
-    setActiveApplicationMethodFilter,
-    setSelectedUniversity,
-    setSearchQuery,
-    activeProgramFilter,
-    activeStateFilter,
-    activeTypeFilter,
-    activeSemesterFilter,
-    activeNcFilter,
-    activeApplicationMethodFilter,
-  } = useSchoolStore();
+  const s = useSchoolStore((st) => ({
+    processedUniversities: st.processedUniversities,
+    uniqueStates: st.uniqueStates,
+    programById: st.programById,
+    universityById: st.universityById,
+    setSearchQuery: st.setSearchQuery,
+  }), shallow);
 
-  // Check if device is mobile
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
+  const groups = useMemo(() => {
+    const q = search.trim();
+    if (!q) return [];
+    const st = useSchoolStore.getState();
+    const done = (fn: () => void) => () => { fn(); onClose(); };
+    const count = (n: number, what: string) => `${n} ${what}${n === 1 ? '' : 's'}`;
 
-  // Enhanced fuzzy search function with scoring
-  const fuzzyMatch = (text: string, query: string): { matches: boolean; score: number } => {
-    if (!query.trim()) return { matches: true, score: 0 };
-    const normalizedText = text.toLowerCase();
-    const normalizedQuery = query.toLowerCase();
-    
-    // Exact match gets highest priority
-    if (normalizedText === normalizedQuery) return { matches: true, score: 100 };
-    if (normalizedText.includes(normalizedQuery)) return { matches: true, score: 80 };
-    
-    // Word-based fuzzy matching for better partial matches
-    const textWords = normalizedText.split(/\s+/);
-    const queryWords = normalizedQuery.split(/\s+/);
-    
-    // Check if all query words are found in text (order doesn't matter)
-    let matchedWords = 0;
-    let totalScore = 0;
-    
-    for (const queryWord of queryWords) {
-      let bestWordScore = 0;
-      for (const textWord of textWords) {
-        if (textWord.includes(queryWord)) {
-          // Full word contains query word - high score
-          bestWordScore = Math.max(bestWordScore, 90);
-        } else if (queryWord.includes(textWord)) {
-          // Query word contains text word - medium score  
-          bestWordScore = Math.max(bestWordScore, 70);
-        } else {
-          // Word-level levenshtein for cross-language variants (e.g. "media" → "medien")
-          const wordLev = levenshtein(textWord, queryWord);
-          const editThreshold = Math.min(2, Math.ceil(queryWord.length / 3));
-          if (wordLev <= editThreshold && wordLev < queryWord.length) {
-            bestWordScore = Math.max(bestWordScore, (1 - wordLev / queryWord.length) * 65);
-          } else {
-            // Character-by-character fuzzy match as fallback
-            let charMatchScore = 0;
-            let queryIndex = 0;
-            for (let i = 0; i < textWord.length && queryIndex < queryWord.length; i++) {
-              if (textWord[i] === queryWord[queryIndex]) {
-                queryIndex++;
-                charMatchScore++;
-              }
-            }
-            if (queryIndex === queryWord.length) {
-              bestWordScore = Math.max(bestWordScore, (charMatchScore / queryWord.length) * 50);
-            }
-          }
-        }
-      }
-      
-      if (bestWordScore > 0) {
-        matchedWords++;
-        totalScore += bestWordScore;
-      }
-    }
-    
-    // All query words must be matched
-    const isMatch = matchedWords === queryWords.length;
-    const finalScore = isMatch ? totalScore / queryWords.length : 0;
-    return { matches: isMatch, score: finalScore };
-  };
-
-  // Levenshtein distance for typo-tolerant matching
-  function levenshtein(a: string, b: string): number {
-    const matrix = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
-    for (let i = 0; i <= a.length; i++) matrix[i][0] = i;
-    for (let j = 0; j <= b.length; j++) matrix[0][j] = j;
-    for (let i = 1; i <= a.length; i++) {
-      for (let j = 1; j <= b.length; j++) {
-        if (a[i - 1].toLowerCase() === b[j - 1].toLowerCase()) {
-          matrix[i][j] = matrix[i - 1][j - 1];
-        } else {
-          matrix[i][j] = 1 + Math.min(
-            matrix[i - 1][j],
-            matrix[i][j - 1],
-            matrix[i - 1][j - 1]
-          );
-        }
-      }
-    }
-    return matrix[a.length][b.length];
-  }
-
-  // Generate unified search results
-  const searchResults = useMemo((): SearchResult[] => {
-    const results: SearchResult[] = [];
-
-    if (search.trim()) {
-      // Search universities (keep fuzzyMatch logic)
-      processedUniversities.forEach(uni => {
-        const nameMatch = fuzzyMatch(uni.name, search);
-        const cityMatch = fuzzyMatch(uni.city || '', search);
-        const descMatch = fuzzyMatch(uni.description || '', search);
-        const programMatch = uni.programTypes.some(p => fuzzyMatch(p, search).matches);
-        if (nameMatch.matches || cityMatch.matches || descMatch.matches || programMatch) {
-          const maxScore = Math.max(nameMatch.score, cityMatch.score, descMatch.score);
-          results.push({
-            type: 'university',
-            name: uni.name,
-            displayName: uni.name,
-            description: `${uni.city || ''}, ${uni.state}`,
-            action: () => {
-              setSelectedUniversity(uni);
-              onClose();
-            },
-            icon: <GraduationCap className="h-4 w-4 text-blue-400" />,
-            priority: maxScore + 10
-          });
-        }
-      });
-
-      // Search states (force substring match)
-      uniqueStates.forEach(state => {
-        const match = fuzzyMatch(state, search);
-        const lev = levenshtein(state.toLowerCase(), search.toLowerCase());
-        const isSubstring = state.toLowerCase().includes(search.toLowerCase());
-        if (match.score > 0 || lev <= 2 || isSubstring) {
-          const schoolCount = processedUniversities.filter(u => u.state === state).length;
-          results.push({
-            type: 'state',
-            name: state,
-            displayName: state,
-            description: `${schoolCount} schools in this state`,
-            action: () => {
-              setActiveStateFilter(state);
-              onClose();
-            },
-            icon: <MapPin className="h-4 w-4 text-cyan-400" />,
-            priority: isSubstring ? 100 : Math.max(match.score, 30 - lev) + 8 // Force high priority if substring
-          });
-        }
-      });
-
-      // Search programs (force substring match)
-      uniqueProgramTypes.forEach(program => {
-        const match = fuzzyMatch(program, search);
-        const lev = levenshtein(program.toLowerCase(), search.toLowerCase());
-        const isSubstring = program.toLowerCase().includes(search.toLowerCase());
-        if (match.score > 0 || lev <= 2 || isSubstring) {
-          const schoolCount = processedUniversities.filter(u => u.programTypes.includes(program)).length;
-          results.push({
-            type: 'program',
-            name: program,
-            displayName: program,
-            description: `${schoolCount} schools offer this program`,
-            action: () => {
-              setActiveProgramFilter(program);
-              onClose();
-            },
-            icon: <Building2 className="h-4 w-4 text-emerald-400" />,
-            priority: isSubstring ? 100 : Math.max(match.score, 30 - lev) + 6
-          });
-        }
-      });
-
-      // Search school types (force substring match)
-      const uniqueTypes = Array.from(new Set(processedUniversities.map(u => u.type)));
-      uniqueTypes.forEach(type => {
-        const displayType = type.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-        const match = fuzzyMatch(displayType, search);
-        const lev = levenshtein(displayType.toLowerCase(), search.toLowerCase());
-        const isSubstring = displayType.toLowerCase().includes(search.toLowerCase());
-        if (match.score > 0 || lev <= 2 || isSubstring) {
-          const schoolCount = processedUniversities.filter(u => u.type === type).length;
-          results.push({
-            type: 'type',
-            name: type,
-            displayName: displayType,
-            description: `${schoolCount} schools of this type`,
-            action: () => {
-              setActiveTypeFilter(type);
-              onClose();
-            },
-            icon: <Users className="h-4 w-4 text-purple-400" />,
-            priority: isSubstring ? 100 : Math.max(match.score, 30 - lev) + 4
-          });
-        }
-      });
-
-      // Search NC-free options (force substring match)
-      const ncTerms = ['NC-free', 'numerus clausus', 'nc'];
-      const ncIsSubstring = ncTerms.some(term => term.toLowerCase().includes(search.toLowerCase()));
-      if (ncTerms.some(term => fuzzyMatch(term, search).score > 0 || levenshtein(term.toLowerCase(), search.toLowerCase()) <= 2 || ncIsSubstring)) {
-        results.push({
-          type: 'nc',
-          name: 'nc-yes',
-          displayName: 'NC-free Schools',
-          description: 'Show only schools without Numerus Clausus',
-          action: () => {
-            setActiveNcFilter(true);
-            onClose();
-          },
-          icon: <CheckCircle className="h-4 w-4 text-green-400" />,
-          priority: ncIsSubstring ? 100 : 50
-        });
-        results.push({
-          type: 'nc',
-          name: 'nc-no',
-          displayName: 'Schools with NC',
-          description: 'Show only schools with Numerus Clausus',
-          action: () => {
-            setActiveNcFilter(false);
-            onClose();
-          },
-          icon: <XCircle className="h-4 w-4 text-red-400" />,
-          priority: ncIsSubstring ? 99 : 49
-        });
-      }
-
-      // Search application method options
-      const appMethodTerms = ['uni-assist', 'uniassist', 'direct', 'portal', 'application method', 'apply'];
-      const appMethodIsSubstring = appMethodTerms.some(term => term.toLowerCase().includes(search.toLowerCase()));
-      if (appMethodTerms.some(term => fuzzyMatch(term, search).score > 0 || levenshtein(term.toLowerCase(), search.toLowerCase()) <= 2 || appMethodIsSubstring)) {
-        results.push({
-          type: 'applicationMethod',
-          name: 'uni-assist',
-          displayName: 'Apply via uni-assist',
-          description: 'Show schools using the uni-assist portal',
-          action: () => {
-            setActiveApplicationMethodFilter('uni-assist');
-            onClose();
-          },
-          icon: <Globe className="h-4 w-4 text-orange-400" />,
-          priority: appMethodIsSubstring ? 100 : 48
-        });
-        results.push({
-          type: 'applicationMethod',
-          name: 'direct',
-          displayName: 'Apply directly to university',
-          description: 'Show schools with direct application portal',
-          action: () => {
-            setActiveApplicationMethodFilter('direct');
-            onClose();
-          },
-          icon: <University className="h-4 w-4 text-amber-400" />,
-          priority: appMethodIsSubstring ? 99 : 47
-        });
-      }
-
-      // Search semester options (force substring match)
-      const semesterTerms = ['semester', 'winter', 'summer'];
-      const semesterIsSubstring = semesterTerms.some(term => term.toLowerCase().includes(search.toLowerCase()));
-      if (semesterTerms.some(term => fuzzyMatch(term, search).score > 0 || levenshtein(term.toLowerCase(), search.toLowerCase()) <= 2 || semesterIsSubstring)) {
-        results.push({
-          type: 'semester',
-          name: 'winter',
-          displayName: 'Winter Semester',
-          description: 'Show schools accepting winter applications',
-          action: () => {
-            setActiveSemesterFilter('winter');
-            onClose();
-          },
-          icon: <Snowflake className="h-4 w-4 text-blue-400" />,
-          priority: semesterIsSubstring ? 100 : 48
-        });
-        results.push({
-          type: 'semester',
-          name: 'summer',
-          displayName: 'Summer Semester',
-          description: 'Show schools accepting summer applications',
-          action: () => {
-            setActiveSemesterFilter('summer');
-            onClose();
-          },
-          icon: <Sun className="h-4 w-4 text-yellow-400" />,
-          priority: semesterIsSubstring ? 99 : 47
-        });
-      }
-    }
-
-    // Sort by priority (highest first), then by type preference
-    // TEMP DEBUG LOG
-    if (typeof window !== 'undefined' && search.trim()) {
-      // Only log in browser and when searching
-      // console.log('SEARCH RESULTS:', results.map(r => ({type: r.type, name: r.name, displayName: r.displayName, priority: r.priority})));
-    }
-    // Cap universities at 8 so programs/states/types always visible
-    const unis = results.filter(r => r.type === 'university')
-      .sort((a, b) => b.priority - a.priority)
-      .slice(0, 8);
-    const others = results.filter(r => r.type !== 'university')
-      .sort((a, b) => b.priority - a.priority);
-    return [...unis, ...others];
-  }, [search, processedUniversities, uniqueStates, uniqueProgramTypes, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setActiveApplicationMethodFilter, setSelectedUniversity, onClose]);
-
-  // Update search query in store
-  useEffect(() => {
-    setSearchQuery(search);
-  }, [search, setSearchQuery]);
-
-  // Reset search when modal closes
-  useEffect(() => {
-    if (!isOpen) {
-      setSearch('');
-      setSearchQuery('');
-    }
-  }, [isOpen, setSearchQuery]);
-
-  // Group results by type for display
-  const groupedResults = useMemo(() => {
-    const groups: Record<string, SearchResult[]> = {};
-    searchResults.forEach(result => {
-      if (!groups[result.type]) groups[result.type] = [];
-      groups[result.type].push(result);
+    const schools: Result[] = s.processedUniversities.flatMap((u) => {
+      const sc = Math.max(score(u.name, q), score(u.city || '', q) - 5, fold(u.description || '').includes(fold(q)) ? 40 : 0);
+      return sc ? [{ key: u.id, title: u.name, detail: [u.city, u.state].filter(Boolean).join(', '), icon: <GraduationCap className="h-4 w-4 text-blue-400" />, score: sc,
+        action: done(() => st.setSelectedUniversity(u)) }] : [];
     });
-    return groups;
-  }, [searchResults]);
 
-  // Active filters display
-  const activeFilters = useMemo(() => {
-    const filters = [];
-    if (activeStateFilter) filters.push({ type: 'State', value: activeStateFilter, clear: () => setActiveStateFilter(null) });
-    if (activeProgramFilter) filters.push({ type: 'Program', value: activeProgramFilter, clear: () => setActiveProgramFilter(null) });
-    if (activeTypeFilter) filters.push({ type: 'Type', value: activeTypeFilter.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '), clear: () => setActiveTypeFilter(null) });
-    if (activeSemesterFilter) filters.push({ type: 'Semester', value: activeSemesterFilter, clear: () => setActiveSemesterFilter(null) });
-    if (activeNcFilter !== null) filters.push({ type: 'NC-free', value: activeNcFilter ? 'Yes' : 'No', clear: () => setActiveNcFilter(null) });
-    if (activeApplicationMethodFilter !== null) filters.push({ type: 'Apply via', value: activeApplicationMethodFilter === 'uni-assist' ? 'uni-assist' : 'Direct portal', clear: () => setActiveApplicationMethodFilter(null) });
-    return filters;
-  }, [activeStateFilter, activeProgramFilter, activeTypeFilter, activeSemesterFilter, activeNcFilter, activeApplicationMethodFilter, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setActiveApplicationMethodFilter]);
+    const programs: Result[] = [...s.programById.entries()].flatMap(([id, { schoolId, schoolName, program }]) => {
+      const sc = score(program.name, q);
+      const u = s.universityById.get(schoolId);
+      return sc && u ? [{ key: id, title: [program.name, degreeAbbrev(program.degree)].filter(Boolean).join(' · '), detail: schoolName,
+        icon: <Building2 className="h-4 w-4 text-emerald-400" />, score: sc,
+        action: done(() => { st.setSelectedUniversity(u); st.setSelectedProgramId(id); }) }] : [];
+    });
+
+    // subject groups: by name, or by what the query itself would be filed under ("Kommunikationsdesign")
+    const guessed = subjectGroupOf(q);
+    const subjects: Result[] = SUBJECT_GROUPS.flatMap((g) => {
+      const sc = Math.max(score(g, q), g === guessed ? 75 : 0);
+      if (!sc) return [];
+      const n = s.processedUniversities.filter((u) => u.programs?.some((p) => subjectGroupOf(p.name) === g)).length;
+      return [{ key: g, title: g, detail: `Show the ${count(n, 'school')} teaching this`, icon: <Shapes className="h-4 w-4 text-teal-300" />, score: sc,
+        action: done(() => st.setActiveProgramFilter(g)) }];
+    });
+
+    const states: Result[] = s.uniqueStates.flatMap((state) => {
+      const sc = score(state, q);
+      const n = s.processedUniversities.filter((u) => u.state === state).length;
+      return sc ? [{ key: state, title: state, detail: `Show the ${count(n, 'school')} in ${state}`, icon: <MapPin className="h-4 w-4 text-cyan-400" />, score: sc,
+        action: done(() => st.setActiveStateFilter(state)) }] : [];
+    });
+
+    const types: Result[] = Object.keys(SCHOOL_TYPES).flatMap((t) => {
+      const sc = score(typeLabel(t), q);
+      const n = s.processedUniversities.filter((u) => u.type === t).length;
+      return sc ? [{ key: t, title: typeLabel(t), detail: `Show ${count(n, 'school')} of this type`, icon: <Users className="h-4 w-4 text-purple-400" />, score: sc,
+        action: done(() => st.setActiveTypeFilter(t)) }] : [];
+    });
+
+    const options: Result[] = q.length < 2 ? [] : OPTION_TERMS.flatMap((o) =>
+      o.terms.some((t) => t.startsWith(fold(q)) || fold(q).startsWith(t))
+        ? [{ key: o.key, title: o.title, detail: o.detail, icon: o.icon, score: 50, action: done(o.apply) }] : []);
+
+    const top = (list: Result[], n: number) => list.sort((a, b) => b.score - a.score).slice(0, n);
+    return [
+      { heading: 'Schools', items: top(schools, 8) },
+      { heading: 'Subjects', items: top(subjects, 3) },
+      { heading: 'Programs', items: top(programs, 12) },
+      { heading: 'States', items: top(states, 3) },
+      { heading: 'School types', items: top(types, 3) },
+      { heading: 'Filters', items: options },
+    ].filter((g) => g.items.length);
+  }, [search, s, onClose]);
+
+  // the wall filters live as you type; closing the search clears it again
+  useEffect(() => { s.setSearchQuery(search); }, [search, s]);
+  useEffect(() => {
+    if (!isOpen) { setSearch(''); s.setSearchQuery(''); }
+  }, [isOpen, s]);
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="overflow-hidden p-0 shadow-2xl max-w-2xl w-[95vw] top-[15%] translate-y-0 border-white/10" aria-describedby={undefined}>
-        <DialogTitle className="sr-only">Search Schools</DialogTitle>
-        <DialogDescription className="sr-only">Search for universities, programs, states, and school types</DialogDescription>
-      <Command shouldFilter={false} className={`${isMobile ? 'ui-mobile' : 'ui-organic'} min-h-[400px] md:min-h-[400px] max-h-[80vh] md:max-h-none`}>
-        {/* Header with active filters */}
-        {activeFilters.length > 0 && (
-          <div className="flex flex-wrap gap-2 px-4 pt-4 pb-2">
-            <span className="text-xs text-cyan-300 font-medium">Active filters:</span>
-            {activeFilters.map((filter, index) => (
-              <span key={index} className="bg-cyan-700/80 text-white text-xs px-3 py-1.5 rounded-pill font-medium flex items-center gap-1 transition-all duration-300 hover:bg-cyan-600/90 hover:scale-105">
-                {filter.type}: {filter.value}
-                <button
-                  className="ml-1 text-xs text-white/80 hover:text-white focus:outline-none"
-                  onClick={filter.clear}
-                  aria-label={`Clear ${filter.type} filter`}
-                >
-                  ×
-                </button>
-              </span>
-            ))}
-          </div>
-        )}
-
-        {/* Search input */}
-        <div className={`flex items-center border-b border-white/10 px-4 bg-slate-800/30 ${isMobile ? 'py-1' : ''}`}>
-          <Search className="mr-3 h-4 w-4 shrink-0 text-cyan-400" />
+      <DialogContent className="overflow-hidden p-0 shadow-2xl max-w-2xl w-[95vw] top-[12%] translate-y-0 border-white/10" aria-describedby={undefined}>
+        <DialogTitle className="sr-only">Search</DialogTitle>
+        <DialogDescription className="sr-only">Search schools, programs, subjects and states</DialogDescription>
+        <Command shouldFilter={false} loop className="ui-organic max-h-[80vh]">
           <CommandInput
-            placeholder={isMobile ? "Search schools, programs..." : "Search or browse universities, programs, states, school types..."}
+            placeholder="Search schools, programs, subjects, cities…"
             value={search}
             onValueChange={setSearch}
-            className={`flex w-full rounded-md bg-transparent text-white outline-none placeholder:text-slate-400 disabled:cursor-not-allowed disabled:opacity-50 mobile-input ${
-              isMobile ? 'h-14 py-4 text-base' : 'h-12 py-3 text-sm'
-            }`}
+            className="h-12 text-base sm:text-sm text-white placeholder:text-slate-400"
           />
-        </div>
-
-        {/* Results */}
-        <CommandList className="max-h-[450px] overflow-y-auto bg-slate-900/95 px-2">
-          {search && searchResults.length === 0 && (
-            <CommandEmpty className="text-slate-400 py-8 text-center">
-              <div className="flex flex-col items-center gap-2">
-                <Search className="h-8 w-8 text-slate-500" />
-                <p>No results found for "{search}"</p>
-                <p className="text-xs text-slate-500">Try searching for universities, programs, states, or school types</p>
+          <CommandList className="max-h-[60vh] overflow-y-auto bg-slate-900/95 px-2 pb-2">
+            {search.trim() && groups.length === 0 && (
+              <p className="text-slate-400 py-8 text-center text-sm">
+                Nothing found for “{search}”. Try a school, a city, or a subject like “photography”.
+              </p>
+            )}
+            {groups.map((g) => (
+              <CommandGroup key={g.heading} heading={g.heading} className="text-cyan-300 text-xs font-semibold tracking-wide [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:pt-3 [&_[cmdk-group-heading]]:pb-1">
+                {g.items.map((r) => (
+                  <CommandItem
+                    key={g.heading + r.key}
+                    value={g.heading + r.key}
+                    onSelect={r.action}
+                    className="flex items-center gap-3 px-3 py-2.5 cursor-pointer rounded-soft text-white aria-selected:bg-slate-700/70"
+                  >
+                    {r.icon}
+                    <span className="flex flex-col flex-1 min-w-0">
+                      <span className="font-medium text-sm truncate">{r.title}</span>
+                      {r.detail && <span className="text-xs font-normal text-slate-400 truncate">{r.detail}</span>}
+                    </span>
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+            ))}
+            {!search.trim() && (
+              <div className="px-6 py-8 text-center text-sm text-slate-400 space-y-2">
+                <p className="text-white">Find a school, a program or a subject</p>
+                <p>“UdK” · “Leipzig” · “Kommunikationsdesign” · “photography” · “uni-assist”</p>
+                <p className="text-xs text-slate-500 pt-2">↑↓ to move · Enter to open · Esc to close</p>
               </div>
-            </CommandEmpty>
-          )}
-          
-          {/* Universities */}
-          {groupedResults.university && (
-            <CommandGroup heading="Universities" className="text-cyan-300 text-sm font-semibold tracking-tight mb-2">
-              {groupedResults.university.map(result => (
-                <button
-                  key={result.name}
-                  type="button"
-                  onClick={() => result.action()}
-                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02] w-full text-left"
-                >
-                  {result.icon}
-                  <div className="flex flex-col flex-1 min-w-0">
-                    <span className="font-medium truncate">{result.displayName}</span>
-                    {result.description && (
-                      <span className="text-xs text-slate-400 truncate">{result.description}</span>
-                    )}
-                  </div>
-                </button>
-              ))}
-            </CommandGroup>
-          )}
-
-          {/* Programs */}
-          {groupedResults.program && (
-            <CommandGroup heading="Programs" className="text-emerald-300 text-sm font-semibold tracking-tight mb-2">
-              {groupedResults.program.map(result => (
-                <button
-                  key={result.name}
-                  type="button"
-                  onClick={() => result.action()}
-                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-emerald-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02] w-full text-left"
-                >
-                  {result.icon}
-                  <div className="flex flex-col flex-1 min-w-0">
-                    <span className="font-medium truncate">{result.displayName}</span>
-                    {result.description && (
-                      <span className="text-xs text-slate-400 truncate">Filter by {result.description}</span>
-                    )}
-                  </div>
-                </button>
-              ))}
-            </CommandGroup>
-          )}
-
-          {/* States */}
-          {groupedResults.state && (
-            <CommandGroup heading="States" className="text-cyan-300 text-sm font-semibold tracking-tight mb-2">
-              {groupedResults.state.map(result => (
-                <button
-                  key={result.name}
-                  type="button"
-                  onClick={() => result.action()}
-                  className="flex items-center gap-3 px-4 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-cyan-500/40 text-white rounded-soft mx-1 my-0.5 transition-all duration-300 hover:scale-[1.02] w-full text-left"
-                >
-                  {result.icon}
-                  <div className="flex flex-col flex-1 min-w-0">
-                    <span className="font-medium truncate">{result.displayName}</span>
-                    {result.description && (
-                      <span className="text-xs text-slate-400 truncate">Filter by {result.description}</span>
-                    )}
-                  </div>
-                </button>
-              ))}
-            </CommandGroup>
-          )}
-
-          {/* School Types */}
-          {groupedResults.type && (
-            <CommandGroup heading="School Types" className="text-purple-300 text-sm font-semibold tracking-tight mb-2">
-              {groupedResults.type.map(result => (
-                <button
-                  key={result.name}
-                  type="button"
-                  onClick={() => result.action()}
-                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-purple-500/40 text-white rounded-md mx-1 my-0.5 transition-all w-full text-left"
-                >
-                  {result.icon}
-                  <div className="flex flex-col flex-1 min-w-0">
-                    <span className="font-medium truncate">{result.displayName}</span>
-                    {result.description && (
-                      <span className="text-xs text-slate-400 truncate">Filter by {result.description}</span>
-                    )}
-                  </div>
-                </button>
-              ))}
-            </CommandGroup>
-          )}
-
-          {/* NC-free Options */}
-          {groupedResults.nc && (
-            <CommandGroup heading="NC-free Options" className="text-green-300 text-sm font-semibold tracking-tight mb-2">
-              {groupedResults.nc.map(result => (
-                <button
-                  key={result.name}
-                  type="button"
-                  onClick={() => result.action()}
-                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-green-500/40 text-white rounded-md mx-1 my-0.5 transition-all w-full text-left"
-                >
-                  {result.icon}
-                  <div className="flex flex-col flex-1 min-w-0">
-                    <span className="font-medium truncate">{result.displayName}</span>
-                    {result.description && (
-                      <span className="text-xs text-slate-400 truncate">{result.description}</span>
-                    )}
-                  </div>
-                </button>
-              ))}
-            </CommandGroup>
-          )}
-
-          {/* Application Method Options */}
-          {groupedResults.applicationMethod && (
-            <CommandGroup heading="Application Method" className="text-orange-300 text-sm font-semibold tracking-tight mb-2">
-              {groupedResults.applicationMethod.map(result => (
-                <button
-                  key={result.name}
-                  type="button"
-                  onClick={() => result.action()}
-                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-orange-500/40 text-white rounded-md mx-1 my-0.5 transition-all w-full text-left"
-                >
-                  {result.icon}
-                  <div className="flex flex-col flex-1 min-w-0">
-                    <span className="font-medium truncate">{result.displayName}</span>
-                    {result.description && (
-                      <span className="text-xs text-slate-400 truncate">{result.description}</span>
-                    )}
-                  </div>
-                </button>
-              ))}
-            </CommandGroup>
-          )}
-
-          {/* Semester Options */}
-          {groupedResults.semester && (
-            <CommandGroup heading="Semester Options" className="text-yellow-300 text-sm font-semibold tracking-tight mb-2">
-              {groupedResults.semester.map(result => (
-                <button
-                  key={result.name}
-                  type="button"
-                  onClick={() => result.action()}
-                  className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-yellow-500/40 text-white rounded-md mx-1 my-0.5 transition-all w-full text-left"
-                >
-                  {result.icon}
-                  <div className="flex flex-col flex-1 min-w-0">
-                    <span className="font-medium truncate">{result.displayName}</span>
-                    {result.description && (
-                      <span className="text-xs text-slate-400 truncate">{result.description}</span>
-                    )}
-                  </div>
-                </button>
-              ))}
-            </CommandGroup>
-          )}
-
-          {/* Instructions when no search */}
-          {!search && (
-            <div className="px-6 py-8 text-center">
-              <Search className="h-12 w-12 text-slate-600 mx-auto mb-4" />
-              <h3 className="text-white font-medium mb-2">Search Schools</h3>
-              <p className="text-sm text-slate-400 mb-6">Find universities, programs, states, or school types</p>
-              
-              <div className="max-w-sm mx-auto space-y-3 text-left">
-                <div className="flex items-center gap-3 text-xs">
-                  <GraduationCap className="h-4 w-4 text-blue-400 flex-shrink-0" />
-                  <span className="text-slate-300">Universities:</span>
-                  <span className="text-slate-400">"Bremen Academy" • "UdK Berlin"</span>
-                </div>
-                
-                <div className="flex items-center gap-3 text-xs">
-                  <MapPin className="h-4 w-4 text-cyan-400 flex-shrink-0" />
-                  <span className="text-slate-300">States:</span>
-                  <span className="text-slate-400">"Bremen" • "Bavaria" • "Berlin"</span>
-                </div>
-                
-                <div className="flex items-center gap-3 text-xs">
-                  <Building2 className="h-4 w-4 text-emerald-400 flex-shrink-0" />
-                  <span className="text-slate-300">Programs:</span>
-                  <span className="text-slate-400">"Fine Arts" • "Design" • "Architecture"</span>
-                </div>
-                
-                <div className="flex items-center gap-3 text-xs">
-                  <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
-                  <span className="text-slate-300">Options:</span>
-                  <span className="text-slate-400">"NC-free" • "Winter" • "University"</span>
-                </div>
-
-                <div className="flex items-center gap-3 text-xs">
-                  <Globe className="h-4 w-4 text-orange-400 flex-shrink-0" />
-                  <span className="text-slate-300">Application:</span>
-                  <span className="text-slate-400">"uni-assist" • "direct" • "portal"</span>
-                </div>
-              </div>
-              
-              <div className="text-xs text-slate-500 mt-6">
-                <p>↑↓ navigate • Enter select • Esc close</p>
-              </div>
-            </div>
-          )}
-
-          {/* Clear all filters option */}
-          {activeFilters.length > 0 && !search && (
-            <CommandGroup heading="Quick Actions" className="text-slate-400 text-sm font-semibold tracking-tight mb-2">
-              <button
-                type="button"
-                onClick={() => {
-                  setActiveStateFilter(null);
-                  setActiveProgramFilter(null);
-                  setActiveTypeFilter(null);
-                  setActiveSemesterFilter(null);
-                  setActiveNcFilter(null);
-                  setActiveApplicationMethodFilter(null);
-                  setSelectedUniversity(null);
-                  onClose();
-                }}
-                className="flex items-center gap-3 px-3 py-3 cursor-pointer hover:bg-slate-700/60 hover:border hover:border-slate-500/40 text-white rounded-md mx-1 my-0.5 transition-all w-full text-left"
-              >
-                <Search className="h-4 w-4" />
-                <span>Clear all filters</span>
-              </button>
-            </CommandGroup>
-          )}
-        </CommandList>
-      </Command>
+            )}
+          </CommandList>
+        </Command>
       </DialogContent>
     </Dialog>
   );
-} 
+}

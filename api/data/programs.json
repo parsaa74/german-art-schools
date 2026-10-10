@@ -26,19 +26,22 @@
       {
         "semester": "winter",
         "start": {
-          "month": 3,
-          "day": 1
+          "month": 2,
+          "day": 4,
+          "year": 2027
         },
         "end": {
-          "month": 4,
-          "day": 15
+          "month": 3,
+          "day": 5,
+          "year": 2027
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 March",
-        "end": "15 April"
+        "start": "4 February 2027",
+        "end": "5 March 2027",
+        "cycle": "WiSe 2027/28"
       }
     }
   },
@@ -67,19 +70,22 @@
       {
         "semester": "winter",
         "start": {
-          "month": 3,
-          "day": 1
+          "month": 2,
+          "day": 4,
+          "year": 2027
         },
         "end": {
-          "month": 4,
-          "day": 15
+          "month": 3,
+          "day": 5,
+          "year": 2027
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 March",
-        "end": "15 April"
+        "start": "4 February 2027",
+        "end": "5 March 2027",
+        "cycle": "WiSe 2027/28"
       }
     }
   },
@@ -245,7 +251,7 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://www.hbksaar.de/bewerbung-informationen",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -277,7 +283,7 @@
     "degree": "Diploma",
     "degree_level": "diploma",
     "language": "German",
-    "duration": "8 semesters",
+    "duration": "10 semesters",
     "description": "Program in visual communication, graphic design, and digital media.",
     "specializations": [
       "Graphic Design",
@@ -287,7 +293,7 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://www.hbksaar.de/bewerbung-informationen",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -482,19 +488,19 @@
       {
         "semester": "winter",
         "start": {
-          "month": 3,
+          "month": 6,
           "day": 1
         },
         "end": {
-          "month": 4,
-          "day": 30
+          "month": 7,
+          "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 March",
-        "end": "30 April"
+        "start": "1 June",
+        "end": "15 July"
       }
     }
   },
@@ -543,8 +549,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--popularmusik-mit-klassik--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--popularmusik-mit-klassik--bachelor-of-music",
@@ -570,8 +593,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--instrumental-und-gesangspadagogik--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--instrumental-und-gesangspadagogik--bachelor-of-music",
@@ -599,8 +639,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--orchesterdirigieren-korrepetition--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--orchesterdirigieren-korrepetition--bachelor-of-music",
@@ -610,7 +667,7 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -639,8 +696,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--orchesterinstrumente--master-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--orchesterinstrumente--master-of-music",
@@ -664,8 +738,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--kammermusik--master-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--kammermusik--master-of-music",
@@ -687,8 +778,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--klavier-solo-klavierduo--master-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--klavier-solo-klavierduo--master-of-music",
@@ -707,8 +815,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--gitarre-solo--master-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--gitarre-solo--master-of-music",
@@ -727,8 +852,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--buhnengesang--master-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--buhnengesang--master-of-music",
@@ -747,8 +889,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--konzertgesang--master-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--konzertgesang--master-of-music",
@@ -767,8 +926,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--opernstudio--master-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--opernstudio--master-of-music",
@@ -787,8 +963,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 10,
+          "day": 1
+        },
+        "end": {
+          "month": 11,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 October",
+        "end": "15 November"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--instrumental-und-gesangspadagogik--master-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--instrumental-und-gesangspadagogik--master-of-music",
@@ -807,8 +1000,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--orchesterdirigieren-korrepetition--master-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--orchesterdirigieren-korrepetition--master-of-music",
@@ -847,8 +1057,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--musiktheorie--master-of-music": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--musiktheorie--master-of-music",
@@ -867,8 +1094,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--musikwissenschaft--master-of-arts": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--musikwissenschaft--master-of-arts",
@@ -887,8 +1131,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--konzertexamen--konzertexamen": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--konzertexamen--konzertexamen",
@@ -898,7 +1159,7 @@
     "degree": "Konzertexamen",
     "degree_level": "other",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [
       "Streichinstrumente",
@@ -918,8 +1179,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--schauspiel--diplom": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--schauspiel--diplom",
@@ -977,8 +1255,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--lehramt-theater-darstellendes-spiel--staatsexamen": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--lehramt-theater-darstellendes-spiel--staatsexamen",
@@ -997,8 +1292,25 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "month": 4,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "1 March",
+        "end": "15 April"
+      }
+    }
   },
   "hochschule-fur-musik-und-theater-rostock--quereinstieg-musik-unterrichten--master-of-arts": {
     "program_id": "hochschule-fur-musik-und-theater-rostock--quereinstieg-musik-unterrichten--master-of-arts",
@@ -1358,9 +1670,9 @@
       "Architectural Design",
       "Urban Planning"
     ],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/architektur-bachelor/",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -1399,9 +1711,9 @@
       "Product Design",
       "Fashion Design"
     ],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/design-mode-und-produkt-bachelor/",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -1409,11 +1721,11 @@
       {
         "semester": "winter",
         "start": {
-          "month": 3,
-          "day": 1
+          "month": 1,
+          "day": 15
         },
         "end": {
-          "month": 4,
+          "month": 2,
           "day": 15
         }
       },
@@ -1431,8 +1743,8 @@
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 March",
-        "end": "15 April"
+        "start": "15 January",
+        "end": "15 February"
       },
       "summer": {
         "start": "1 September",
@@ -1607,15 +1919,15 @@
     "school_id": "universitat-der-kunste-berlin",
     "school_name": "Universität der Künste Berlin",
     "name": "Fine Arts",
-    "degree": "",
+    "degree": "Absolvent*in der Universität der Künste Berlin (A)",
     "degree_level": "other",
     "language": "",
-    "duration": "",
+    "duration": "10 semesters",
     "description": null,
     "specializations": [],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://www.udk-berlin.de/bewerbung/bewerbungsguide/bildende-kunst-absolventin-mit-der-option-auf-meisterschuelerin/",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -1690,7 +2002,7 @@
     "degree": "Diploma",
     "degree_level": "diploma",
     "language": "German",
-    "duration": "10 semesters",
+    "duration": "9 semesters",
     "description": "Program focusing on media art with emphasis on practical and theoretical knowledge. The combination of teaching, research, and exhibition institutions addresses the given artistic and pedagogic task of relating traditional arts to media technology and electronic production processes.",
     "specializations": [
       "Film",
@@ -1698,10 +2010,10 @@
       "Sound",
       "Exhibition Design"
     ],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
+    "application_url": "https://hfg-karlsruhe.de/studium/bewerbung/bewerbungsverfahren/",
+    "program_url": "https://hfg-karlsruhe.de/studium/fachgruppen-und-studiengange/medienkunst/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -1713,14 +2025,14 @@
         },
         "end": {
           "month": 4,
-          "day": 1
+          "day": 30
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
         "start": "1 March",
-        "end": "1 April"
+        "end": "30 April"
       }
     }
   },
@@ -1732,17 +2044,17 @@
     "degree": "Diploma",
     "degree_level": "diploma",
     "language": "German",
-    "duration": "10 semesters",
+    "duration": "9 semesters",
     "description": "Program focusing on product design with emphasis on practical and theoretical knowledge.",
     "specializations": [
       "Industrial Design",
       "Furniture Design",
       "Exhibition Design"
     ],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
+    "application_url": "https://hfg-karlsruhe.de/studium/bewerbung/bewerbungsverfahren/",
+    "program_url": "https://hfg-karlsruhe.de/studium/fachgruppen-und-studiengange/produktdesign/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -1754,14 +2066,14 @@
         },
         "end": {
           "month": 4,
-          "day": 1
+          "day": 30
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
         "start": "1 March",
-        "end": "1 April"
+        "end": "30 April"
       }
     }
   },
@@ -1773,17 +2085,17 @@
     "degree": "Diploma",
     "degree_level": "diploma",
     "language": "German",
-    "duration": "10 semesters",
+    "duration": "9 semesters",
     "description": "Program focusing on communication design with emphasis on practical and theoretical knowledge.",
     "specializations": [
       "Graphic Design",
       "Typography",
       "Digital Media"
     ],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
+    "application_url": "https://hfg-karlsruhe.de/studium/bewerbung/bewerbungsverfahren/",
+    "program_url": "https://hfg-karlsruhe.de/studium/fachgruppen-und-studiengange/kommunikationsdesign/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -1795,14 +2107,14 @@
         },
         "end": {
           "month": 4,
-          "day": 1
+          "day": 30
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
         "start": "1 March",
-        "end": "1 April"
+        "end": "30 April"
       }
     }
   },
@@ -1971,7 +2283,7 @@
     "name": "Digitale Medien",
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
-    "language": "German/English",
+    "language": "German",
     "duration": "6 semesters",
     "description": "Program focusing on digital media with emphasis on practical and theoretical knowledge. Joint program of Hochschule für Künste Bremen and Universität Bremen.",
     "specializations": [
@@ -1983,7 +2295,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digitale-medien-b-a/4",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -2028,7 +2340,7 @@
     "name": "Digitale Medien",
     "degree": "Master of Arts",
     "degree_level": "master",
-    "language": "German/English",
+    "language": "English",
     "duration": "4 semesters",
     "description": "Joint English-taught master of Hochschule für Künste Bremen and Universität Bremen with two tracks: Media Design (HfK Bremen — media theory from a cultural-studies perspective, media art and media aesthetics, intermedial design, computer music with digital sound synthesis and processing, smart materials for artistic production) and Media Informatics (Universität Bremen — embodied interaction, entertainment computing, interactive systems, cognitive modeling, advanced computer graphics, virtual reality and physically-based simulation, massively parallel GPU algorithms, computational geometry). Master project on a problem with societal, scientific, technological, artistic or design relevance, bridging art school and university.",
     "specializations": [
@@ -2043,7 +2355,7 @@
     "portfolio_required": true,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digital-media-m-a/5",
     "source_url": "Module catalogue Digital Media Master (HfK Bremen / Universität Bremen, 2019-06-21)",
     "extracted_at": "2026-06-12T00:00:00.000Z",
     "deadlines": [
@@ -2085,7 +2397,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bremen.de/de/studium/kunst-und-design/freie-kunst-diplom/6",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -2093,18 +2405,21 @@
         "semester": "winter",
         "start": {
           "month": 2,
-          "day": 1
+          "day": 1,
+          "year": 2027
         },
         "end": {
           "month": 4,
-          "day": 15
+          "day": 15,
+          "year": 2027
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 February",
-        "end": "15 April"
+        "start": "1 February 2027",
+        "end": "15 April 2027",
+        "cycle": "2027/28"
       }
     }
   },
@@ -2116,7 +2431,7 @@
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
     "language": "German",
-    "duration": "6 semesters",
+    "duration": "7 semesters",
     "description": "Program focusing on integrated design with emphasis on practical and theoretical knowledge.",
     "specializations": [
       "Product Design",
@@ -2126,7 +2441,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bremen.de/de/studium/kunst-und-design/integriertes-design-b-a/2",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -2134,18 +2449,21 @@
         "semester": "winter",
         "start": {
           "month": 2,
-          "day": 1
+          "day": 1,
+          "year": 2027
         },
         "end": {
           "month": 4,
-          "day": 30
+          "day": 30,
+          "year": 2027
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 February",
-        "end": "30 April"
+        "start": "1 February 2027",
+        "end": "30 April 2027",
+        "cycle": "2027/28"
       }
     }
   },
@@ -2157,7 +2475,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": "German",
-    "duration": "4 semesters",
+    "duration": "3 semesters",
     "description": "Advanced program focusing on integrated design with emphasis on research and development.",
     "specializations": [
       "Product Design",
@@ -2167,7 +2485,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bremen.de/de/studium/kunst-und-design/integriertes-design-m-a/3",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -2175,18 +2493,39 @@
         "semester": "winter",
         "start": {
           "month": 4,
-          "day": 1
+          "day": 1,
+          "year": 2027
         },
         "end": {
           "month": 5,
-          "day": 15
+          "day": 15,
+          "year": 2027
+        }
+      },
+      {
+        "semester": "summer",
+        "start": {
+          "month": 12,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 1,
+          "day": 11,
+          "year": 2027
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "15 May"
+        "start": "1 April 2027",
+        "end": "15 May 2027",
+        "cycle": "2027/28"
+      },
+      "summer": {
+        "start": "1 December 2026",
+        "end": "11 January 2027",
+        "cycle": "2027"
       }
     }
   },
@@ -2281,8 +2620,8 @@
     "name": "Promotionsprogramm (PhD)",
     "degree": "PhD",
     "degree_level": "phd",
-    "language": "German/English",
-    "duration": "6-8 semesters",
+    "language": "English",
+    "duration": "8 semesters",
     "description": "Doctoral program focusing on research in arts and design.",
     "specializations": [
       "Art Theory",
@@ -2293,7 +2632,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bremen.de/de/forschung/binational-artistic-phd-program",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -2324,7 +2663,7 @@
     "degree": "Diploma",
     "degree_level": "diploma",
     "language": "German",
-    "duration": "10 semesters",
+    "duration": "10 Semesters",
     "description": "Comprehensive program in fine arts, covering various disciplines like painting, sculpture, graphic arts, and media art.",
     "specializations": [
       "Painting",
@@ -2364,7 +2703,7 @@
     "school_id": "staatliche-akademie-der-bildenden-kunste-stuttgart",
     "school_name": "Staatliche Akademie der Bildenden Künste Stuttgart",
     "name": "Architektur",
-    "degree": "Bachelor of Science",
+    "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
     "language": "German",
     "duration": "6 semesters",
@@ -2406,7 +2745,7 @@
     "school_id": "staatliche-akademie-der-bildenden-kunste-stuttgart",
     "school_name": "Staatliche Akademie der Bildenden Künste Stuttgart",
     "name": "Architektur",
-    "degree": "Master of Science",
+    "degree": "Master of Arts",
     "degree_level": "master",
     "language": "German",
     "duration": "4 semesters",
@@ -2788,7 +3127,7 @@
     "degree": "Diploma",
     "degree_level": "diploma",
     "language": "German",
-    "duration": "10 semesters",
+    "duration": "10 Semesters",
     "description": "Program focusing on the design of sets and costumes for theatre, opera, and film.",
     "specializations": [
       "Stage Design",
@@ -3373,7 +3712,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfg-offenbach.de/de/pages/promotion",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -4103,7 +4442,7 @@
     "degree": "Bachelor of Fine Arts",
     "degree_level": "bachelor",
     "language": "German",
-    "duration": "6 semesters",
+    "duration": "8 semesters",
     "description": "Studio-based program covering painting, sculpture, ceramics, and media art.",
     "specializations": [
       "Painting",
@@ -4187,7 +4526,7 @@
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
     "language": "German",
-    "duration": "6 semesters",
+    "duration": "8 semesters",
     "description": "Covers graphic design, typography, illustration, interaction design, and photography.",
     "specializations": [
       "Graphic Design",
@@ -4199,7 +4538,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://muthesius-kunsthochschule.de/kommunikationsdesign/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -4241,7 +4580,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://muthesius-kunsthochschule.de/kommunikationsdesign/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -4272,7 +4611,7 @@
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
     "language": "German",
-    "duration": "6 semesters",
+    "duration": "8 semesters",
     "description": "Focuses on product design, interface design, and design theory.",
     "specializations": [
       "Product Design",
@@ -4661,7 +5000,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": "German",
-    "duration": "4 semesters",
+    "duration": "2 semesters",
     "description": "Advanced program focusing on design research, innovation, and sustainability.",
     "specializations": [
       "Design Research",
@@ -4745,7 +5084,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": "German",
-    "duration": "4 semesters",
+    "duration": "2 semesters",
     "description": "Advanced program focusing on conceptual and experimental visual communication.",
     "specializations": [
       "Information Design",
@@ -5078,7 +5417,7 @@
     "degree": "Master of Fine Arts",
     "degree_level": "master",
     "language": "German/English",
-    "duration": "2-4 semesters",
+    "duration": "2 semesters",
     "description": "Professorship-based, project-driven media art master, offered as the German-taught MFA Medienkunst/Mediengestaltung with a parallel English-taught Media Art and Design (MAD) variant. Students join one of six chairs: Acoustic Ecologies and Sound Studies, Electroacoustic Composition and Sound Art, Experimental Radio, Design of Media Environments, Interface Design, or Media Events. Topics span sound art and computer music (Max/MSP, SuperCollider), radio art and Hörspiel, sensor-based spatial interaction and computer vision, virtual space and game engines, physical computing and experimental interfaces, bioart and science & art, and performative media events. Two-semester core after a 240-ECTS bachelor, extendable with bridge semesters; winter intake, portfolio-based aptitude examination, no tuition fees. Only Interface Design is fully English-taught; most projects run in German.",
     "specializations": [
       "Acoustic Ecologies and Sound Studies",
@@ -5210,7 +5549,7 @@
       "Sculpture",
       "Media Art"
     ],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
     "application_url": null,
     "program_url": null,
@@ -5308,7 +5647,7 @@
       "Animation",
       "Digital Media"
     ],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
     "application_url": null,
     "program_url": null,
@@ -5553,10 +5892,10 @@
     "school_id": "filmuniversitat-babelsberg-konrad-wolf",
     "school_name": "Filmuniversität Babelsberg KONRAD WOLF",
     "name": "Screenwriting/Dramaturgy",
-    "degree": "Diploma",
-    "degree_level": "diploma",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
     "language": "German",
-    "duration": "8 semesters",
+    "duration": "6 semesters",
     "description": "Focuses on writing for film, television, and new media.",
     "specializations": [
       "Screenwriting",
@@ -5675,10 +6014,10 @@
     "school_id": "filmuniversitat-babelsberg-konrad-wolf",
     "school_name": "Filmuniversität Babelsberg KONRAD WOLF",
     "name": "Film and Television Production",
-    "degree": "Diploma",
-    "degree_level": "diploma",
+    "degree": "Bachelor of Arts",
+    "degree_level": "bachelor",
     "language": "German",
-    "duration": "8 semesters",
+    "duration": "6 semesters",
     "description": "Focuses on producing for film, television, and digital media.",
     "specializations": [
       "Production",
@@ -5718,7 +6057,7 @@
     "degree": "Diploma",
     "degree_level": "diploma",
     "language": "German",
-    "duration": "8 semesters",
+    "duration": "6 semesters",
     "description": "Covers sound design, recording, and mixing for film and media.",
     "specializations": [
       "Sound Design",
@@ -6229,7 +6568,7 @@
       "Art History and Visual Culture",
       "Social and Political Thought"
     ],
-    "portfolio_required": null,
+    "portfolio_required": false,
     "tuition_eur_per_semester": null,
     "application_url": "https://berlin.bard.edu/admissions/how-to-apply/",
     "program_url": "https://berlin.bard.edu/academics/humanities-the-arts-and-social-thought/",
@@ -6270,7 +6609,7 @@
       "Social Theory",
       "International Relations"
     ],
-    "portfolio_required": null,
+    "portfolio_required": false,
     "tuition_eur_per_semester": null,
     "application_url": "https://berlin.bard.edu/admissions/how-to-apply/",
     "program_url": "https://berlin.bard.edu/academics/economics-politics-and-social-thought/",
@@ -6344,10 +6683,10 @@
     "school_id": "academy-of-visual-arts-frankfurt",
     "school_name": "Academy of Visual Arts Frankfurt",
     "name": "Communication Design",
-    "degree": "Bachelor of Arts",
-    "degree_level": "bachelor",
-    "language": "German",
-    "duration": "6 semesters",
+    "degree": "State Exam in Interdisciplinary Communication, Design or Arts (B.A. equivalent)",
+    "degree_level": "other",
+    "language": "German/English",
+    "duration": "8 semesters",
     "description": "Program focused on graphic design, typography, illustration, and digital communication.",
     "specializations": [
       "Graphic Design",
@@ -6358,7 +6697,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://academy-of-visual-arts.com/study-at-ava/study-at-ava-ba-interdisciplinary-communication-design/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -6464,19 +6803,19 @@
       {
         "semester": "winter",
         "start": {
-          "month": 4,
-          "day": 1
+          "month": 6,
+          "day": 15
         },
         "end": {
           "month": 7,
-          "day": 31
+          "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "31 July"
+        "start": "15 June",
+        "end": "15 July"
       }
     }
   },
@@ -6506,19 +6845,19 @@
       {
         "semester": "winter",
         "start": {
-          "month": 4,
-          "day": 1
+          "month": 5,
+          "day": 15
         },
         "end": {
           "month": 7,
-          "day": 31
+          "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "31 July"
+        "start": "15 May",
+        "end": "15 July"
       }
     }
   },
@@ -6547,19 +6886,19 @@
       {
         "semester": "winter",
         "start": {
-          "month": 4,
-          "day": 1
+          "month": 6,
+          "day": 15
         },
         "end": {
           "month": 7,
-          "day": 31
+          "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "31 July"
+        "start": "15 June",
+        "end": "15 July"
       }
     }
   },
@@ -6570,7 +6909,7 @@
     "name": "European Media Studies (with University of Potsdam)",
     "degree": "Master of Arts",
     "degree_level": "master",
-    "language": "German/English",
+    "language": "German",
     "duration": "4 semesters",
     "description": "Interdisciplinary MA program focusing on media culture, theory, and analysis in a European context, offered jointly with the University of Potsdam.",
     "specializations": [
@@ -6581,26 +6920,22 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.fh-potsdam.de/studium-weiterbildung/studiengaenge/europaeische-medienwissenschaft-ma",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 4,
-          "day": 1
-        },
+        "start": null,
         "end": {
-          "month": 7,
-          "day": 31
+          "month": 6,
+          "day": 1
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "31 July"
+        "end": "1 June"
       }
     }
   },
@@ -6652,7 +6987,7 @@
     "name": "Animation and Game",
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
-    "language": "German/English",
+    "language": "English",
     "duration": "7 semesters",
     "description": "Practice-oriented program in animation, game design, and interactive media.",
     "specializations": [
@@ -6663,7 +6998,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/animation-and-game-ba",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -6701,10 +7036,10 @@
       "Television",
       "Digital Video"
     ],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design/motion-pictures-ba",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -7109,7 +7444,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/medientechnik-b-sc",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -7178,7 +7513,7 @@
     "school_id": "technische-universitat-berlin",
     "school_name": "Technische Universität Berlin",
     "name": "Design and Computation",
-    "degree": "Master of Science",
+    "degree": "Master of Arts",
     "degree_level": "master",
     "language": "German/English",
     "duration": "4 semesters",
@@ -7191,7 +7526,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.tu.berlin/studieren/studienangebot/gesamtes-studienangebot/studiengang/design-computation-m-a",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -7274,26 +7609,26 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hs-anhalt.de/studiengaenge/des.html",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
       {
         "semester": "winter",
         "start": {
-          "month": 4,
-          "day": 1
+          "month": 1,
+          "day": 15
         },
         "end": {
-          "month": 7,
-          "day": 31
+          "month": 4,
+          "day": 30
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "31 July"
+        "start": "15 January",
+        "end": "30 April"
       }
     }
   },
@@ -7363,19 +7698,19 @@
       {
         "semester": "winter",
         "start": {
-          "month": 4,
-          "day": 1
+          "month": 1,
+          "day": 15
         },
         "end": {
-          "month": 7,
+          "month": 5,
           "day": 31
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "31 July"
+        "start": "15 January",
+        "end": "31 May"
       }
     }
   },
@@ -7467,7 +7802,7 @@
     "school_id": "universitat-trier",
     "school_name": "Universität Trier",
     "name": "Digital Humanities",
-    "degree": "Master of Arts",
+    "degree": "Master of Science",
     "degree_level": "master",
     "language": "German/English",
     "duration": "4 semesters",
@@ -7594,7 +7929,7 @@
     "degree": "Master of Science",
     "degree_level": "master",
     "language": "English",
-    "duration": "4 semesters",
+    "duration": "4 Semesters",
     "description": "Interdisciplinary program on the design and evaluation of interactive systems, user experience, and digital innovation.",
     "specializations": [
       "Interaction Design",
@@ -7635,7 +7970,7 @@
     "degree": "Master of Science",
     "degree_level": "master",
     "language": "English",
-    "duration": "4 semesters",
+    "duration": "4 Semesters",
     "description": "The program focuses on interactive technologies, user-centered design, and usability engineering.",
     "specializations": [
       "Interactive Technologies",
@@ -7824,7 +8159,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.thi.de/informatik/studiengaenge/user-experience-design-msc/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -7832,11 +8167,13 @@
         "semester": "summer",
         "start": {
           "month": 10,
-          "day": 15
+          "day": 15,
+          "year": 2026
         },
         "end": {
-          "month": 11,
-          "day": 15
+          "month": 1,
+          "day": 15,
+          "year": 2027
         }
       },
       {
@@ -7853,8 +8190,9 @@
     ],
     "deadlines_raw": {
       "summer": {
-        "start": "15 October",
-        "end": "15 November"
+        "start": "15 October 2026",
+        "end": "15 January 2027",
+        "cycle": "2027"
       },
       "winter": {
         "start": "2 May",
@@ -7890,7 +8228,7 @@
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
     "language": "German",
-    "duration": "7 semesters",
+    "duration": "7 Semesters",
     "description": "Program in interactive media, design, and digital communication, with a focus on interdisciplinary teamwork and digital innovation.",
     "specializations": [
       "Interactive Media",
@@ -7900,7 +8238,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.tha.de/en/university/faculties/design/academic-programs/interaktive-medien/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -7941,7 +8279,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.tha.de/hochschule/fakultaet/gestaltung/studienangebot/kommunikationsdesign/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -8013,7 +8351,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": "German/English",
-    "duration": "4 semesters",
+    "duration": "3 Semesters",
     "description": "Focuses on the conception, design, and technical implementation of interactive media systems.",
     "specializations": [
       "Interactive Media",
@@ -8023,7 +8361,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.tha.de/hochschule/fakultaet/gestaltung/studienangebot/interaktive-mediensysteme/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -8031,10 +8369,25 @@
         "semester": "winter",
         "start": null,
         "end": null
+      },
+      {
+        "semester": "summer",
+        "start": {
+          "month": 12,
+          "day": 1
+        },
+        "end": {
+          "month": 12,
+          "day": 23
+        }
       }
     ],
     "deadlines_raw": {
-      "winter": {}
+      "winter": {},
+      "summer": {
+        "start": "1 December",
+        "end": "23 December"
+      }
     }
   },
   "technische-hochschule-augsburg--interactive-media-systems--unspecified": {
@@ -8076,7 +8429,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.uni-passau.de/bachelor-medien",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -8248,7 +8601,7 @@
     "school_id": "universitat-wurzburg",
     "school_name": "Universität Würzburg",
     "name": "Media Communication",
-    "degree": "Bachelor of Arts",
+    "degree": "Bachelor of Science",
     "degree_level": "bachelor",
     "language": "German",
     "duration": "6 semesters",
@@ -8487,28 +8840,11 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://sc.informatik.rwth-aachen.de/en/studium/master/media-informatics/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [
-      {
-        "semester": "winter",
-        "start": {
-          "month": 4,
-          "day": 1
-        },
-        "end": {
-          "month": 7,
-          "day": 31
-        }
-      }
-    ],
-    "deadlines_raw": {
-      "winter": {
-        "start": "1 April",
-        "end": "31 July"
-      }
-    }
+    "deadlines": [],
+    "deadlines_raw": null
   },
   "rwth-aachen-university--communication-engineering--master-of-science": {
     "program_id": "rwth-aachen-university--communication-engineering--master-of-science",
@@ -8667,25 +9003,8 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [
-      {
-        "semester": "winter",
-        "start": {
-          "month": 4,
-          "day": 1
-        },
-        "end": {
-          "month": 7,
-          "day": 31
-        }
-      }
-    ],
-    "deadlines_raw": {
-      "winter": {
-        "start": "1 April",
-        "end": "31 July"
-      }
-    }
+    "deadlines": [],
+    "deadlines_raw": null
   },
   "technische-universitat-munchen--computational-science-and-engineering--master-of-science": {
     "program_id": "technische-universitat-munchen--computational-science-and-engineering--master-of-science",
@@ -8705,8 +9024,8 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
+    "application_url": "https://www.cit.tum.de/en/cit/studies/degree-programs/master-computational-science-engineering/",
+    "program_url": "https://www.tum.de/en/studies/degree-programs/detail/computational-science-and-engineering-cse-master-of-science-msc",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -8778,7 +9097,7 @@
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
     "language": "German/English",
-    "duration": "8 semesters",
+    "duration": "6 semesters",
     "description": "Program focusing on integrated design approaches, combining product design, communication design, and spatial design in an interdisciplinary curriculum.",
     "specializations": [
       "Product Design",
@@ -8789,7 +9108,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": "https://kisd.de/en/application/bachelor-integrated-design-en/",
-    "program_url": null,
+    "program_url": "https://kisd.de/en/application/bachelor-integrated-design-en/",
     "source_url": "https://kisd.de/en/",
     "extracted_at": "2026-04-19T16:07:21.335Z",
     "deadlines": [
@@ -8831,7 +9150,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": "https://kisd.de/en/application/ma-integrated-design/",
-    "program_url": null,
+    "program_url": "https://kisd.de/en/application/ma-integrated-design/",
     "source_url": "https://kisd.de/en/",
     "extracted_at": "2026-04-19T16:07:21.335Z",
     "deadlines": [
@@ -8957,7 +9276,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.tex.reutlingen-university.de/master/master-design/master-design-schwerpunkte-bewerbung/",
     "source_url": "https://www.reutlingen-university.de/",
     "extracted_at": "2026-04-19T16:07:55.172Z",
     "deadlines": [
@@ -8971,12 +9290,23 @@
           "month": 5,
           "day": 15
         }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 1,
+          "day": 15
+        }
       }
     ],
     "deadlines_raw": {
       "winter": {
         "start": "1 April",
         "end": "15 May"
+      },
+      "summer": {
+        "end": "15 January"
       }
     }
   },
@@ -8988,7 +9318,7 @@
     "degree": "Diploma",
     "degree_level": "diploma",
     "language": "German",
-    "duration": "10 semesters",
+    "duration": "9 semesters to Diplom",
     "description": "Program focusing on fine arts with emphasis on individual artistic development.",
     "specializations": [
       "Painting",
@@ -8998,7 +9328,7 @@
     ],
     "portfolio_required": true,
     "tuition_eur_per_semester": null,
-    "application_url": "https://kunsthochschule-mainz.de/bewerbung/freie-bildende-kunst/bewerbung-freie-bildende-kunst/",
+    "application_url": "https://kunsthochschule-mainz.de/bewerbung/bewerben/",
     "program_url": "https://kunsthochschule-mainz.de/studium/freie-bildende-kunst-2/studiengang-freie-bildende-kunst/",
     "source_url": "https://kunsthochschule-mainz.de/",
     "extracted_at": "2026-04-19T16:08:41.054Z",
@@ -9013,12 +9343,25 @@
           "month": 4,
           "day": 15
         }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 31,
+          "year": 2026
+        }
       }
     ],
     "deadlines_raw": {
       "winter": {
         "start": "1 March",
         "end": "15 April"
+      },
+      "summer": {
+        "end": "31 October 2026",
+        "cycle": "summer 2027"
       }
     }
   },
@@ -9089,8 +9432,8 @@
     "school_id": "kunsthochschule-kassel",
     "school_name": "Kunsthochschule Kassel",
     "name": "Fine Arts",
-    "degree": "Diploma",
-    "degree_level": "diploma",
+    "degree": "Künstlerischer Abschluss (Master-Äquivalent)",
+    "degree_level": "master",
     "language": "German",
     "duration": "10 semesters",
     "description": "Program focusing on fine arts with emphasis on individual artistic development and experimental approaches.",
@@ -9109,20 +9452,27 @@
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 3,
-          "day": 1
-        },
+        "start": null,
         "end": {
           "month": 4,
-          "day": 15
+          "day": 30
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 12,
+          "day": 1
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 March",
-        "end": "15 April"
+        "end": "30 April"
+      },
+      "summer": {
+        "end": "1 December"
       }
     }
   },
@@ -9131,10 +9481,10 @@
     "school_id": "kunsthochschule-kassel",
     "school_name": "Kunsthochschule Kassel",
     "name": "Visual Communication",
-    "degree": "Diploma",
-    "degree_level": "diploma",
+    "degree": "Künstlerischer Abschluss (Master-Äquivalent)",
+    "degree_level": "master",
     "language": "German",
-    "duration": "8 semesters",
+    "duration": "10 semesters",
     "description": "Program focusing on visual communication, graphic design, and media arts.",
     "specializations": [
       "Graphic Design",
@@ -9142,7 +9492,7 @@
       "Illustration",
       "Media Art"
     ],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
     "application_url": null,
     "program_url": null,
@@ -9151,20 +9501,16 @@
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 3,
-          "day": 1
-        },
+        "start": null,
         "end": {
           "month": 4,
-          "day": 15
+          "day": 1
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 March",
-        "end": "15 April"
+        "end": "1 April"
       }
     }
   },
@@ -9205,7 +9551,7 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://designpf.hs-pforzheim.de/bewerben_fuer_ba",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -9246,7 +9592,7 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://designpf.hs-pforzheim.de/bewerben_fuer_ba",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -9287,7 +9633,7 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://designpf.hs-pforzheim.de/bewerben_fuer_ba",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -9328,7 +9674,7 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://designpf.hs-pforzheim.de/bewerben_fuer_ba",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -9369,7 +9715,7 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://designpf.hs-pforzheim.de/bewerben_fuer_ba",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -9400,7 +9746,7 @@
     "name": "Transportation Design",
     "degree": "Master of Arts",
     "degree_level": "master",
-    "language": "German/English",
+    "language": "English",
     "duration": "3 semesters",
     "description": "Advanced program focusing on innovative transportation design and mobility solutions.",
     "specializations": [
@@ -9410,7 +9756,7 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://designpf.hs-pforzheim.de/bewerben_ma",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -9482,7 +9828,7 @@
     "name": "Creative Direction",
     "degree": "Master of Arts",
     "degree_level": "master",
-    "language": "German/English",
+    "language": "German",
     "duration": "3 semesters",
     "description": "Advanced program focusing on creative direction, art direction, and design leadership.",
     "specializations": [
@@ -9492,7 +9838,7 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://designpf.hs-pforzheim.de/bewerben_ma",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -9523,7 +9869,7 @@
     "name": "Design & Future Making",
     "degree": "Master of Arts",
     "degree_level": "master",
-    "language": "German/English",
+    "language": "English",
     "duration": "3 semesters",
     "description": "Advanced program focusing on experimental design, future-oriented design, and innovation.",
     "specializations": [
@@ -9533,7 +9879,7 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://designpf.hs-pforzheim.de/bewerben_ma",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -10360,20 +10706,16 @@
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 4,
-          "day": 1
-        },
+        "start": null,
         "end": {
-          "month": 5,
+          "month": 7,
           "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "15 May"
+        "end": "15 July"
       }
     }
   },
@@ -10401,20 +10743,16 @@
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 4,
-          "day": 1
-        },
+        "start": null,
         "end": {
-          "month": 5,
+          "month": 7,
           "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "15 May"
+        "end": "15 July"
       }
     }
   },
@@ -10442,20 +10780,16 @@
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 4,
-          "day": 1
-        },
+        "start": null,
         "end": {
-          "month": 5,
+          "month": 7,
           "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "15 May"
+        "end": "15 July"
       }
     }
   },
@@ -10524,20 +10858,16 @@
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 4,
-          "day": 1
-        },
+        "start": null,
         "end": {
-          "month": 5,
+          "month": 7,
           "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "15 May"
+        "end": "15 July"
       }
     }
   },
@@ -10565,20 +10895,16 @@
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 4,
-          "day": 1
-        },
+        "start": null,
         "end": {
-          "month": 5,
+          "month": 7,
           "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "15 May"
+        "end": "15 July"
       }
     }
   },
@@ -10606,20 +10932,16 @@
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 4,
-          "day": 1
-        },
+        "start": null,
         "end": {
-          "month": 5,
+          "month": 7,
           "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "15 May"
+        "end": "15 July"
       }
     }
   },
@@ -10647,20 +10969,16 @@
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 4,
-          "day": 1
-        },
+        "start": null,
         "end": {
-          "month": 5,
+          "month": 7,
           "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "15 May"
+        "end": "15 July"
       }
     }
   },
@@ -10688,20 +11006,16 @@
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 4,
-          "day": 1
-        },
+        "start": null,
         "end": {
-          "month": 5,
+          "month": 7,
           "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 April",
-        "end": "15 May"
+        "end": "15 July"
       }
     }
   },
@@ -10879,7 +11193,7 @@
     "degree": "Diploma",
     "degree_level": "diploma",
     "language": "German",
-    "duration": "10 semesters",
+    "duration": "9 semesters",
     "description": "Program focusing on fine arts with emphasis on individual artistic development.",
     "specializations": [
       "Painting",
@@ -10889,7 +11203,7 @@
     ],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
+    "application_url": "https://bewerbung.adbk.de/",
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
@@ -10898,18 +11212,18 @@
         "semester": "winter",
         "start": {
           "month": 3,
-          "day": 1
+          "day": 15
         },
         "end": {
-          "month": 4,
+          "month": 5,
           "day": 15
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 March",
-        "end": "15 April"
+        "start": "15 March",
+        "end": "15 May"
       }
     }
   },
@@ -11083,7 +11397,7 @@
     "degree": "",
     "degree_level": "other",
     "language": "",
-    "duration": "",
+    "duration": "9 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -11170,7 +11484,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.burg-halle.de/institution/fachbereich-kunst",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -11445,7 +11759,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/bachelor-illustration",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -11482,7 +11796,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/bachelor-kommunikationsdesign",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -11519,7 +11833,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/bachelor-mode-kostuem-textildesign/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -11556,7 +11870,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/bachelor-medientechnik",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -11608,7 +11922,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/bachelor-medien-und-kommunikation/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -11645,7 +11959,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/master-illustration/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -11682,7 +11996,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/master-kommunikationsdesign/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -11719,7 +12033,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/master-mode-kostuem-textildesign/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -11756,7 +12070,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/master-digital-reality/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -11776,7 +12090,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/master-digitale-kommunikation/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -11796,7 +12110,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/master-digitale-transformation/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -11816,7 +12130,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/master-games/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -11836,11 +12150,28 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.haw-hamburg.de/master-zeitabhaengige-medien-sound-vision/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 12,
+          "day": 1
+        },
+        "end": {
+          "month": 1,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 December",
+        "end": "15 January"
+      }
+    }
   },
   "hfbk-dresden--fine-arts--diploma": {
     "program_id": "hfbk-dresden--fine-arts--diploma",
@@ -11954,13 +12285,13 @@
     "degree": "Diploma",
     "degree_level": "diploma",
     "language": "German",
-    "duration": null,
+    "duration": "10 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfbk-dresden.de/lehre-forschung/studiengaenge/buehnen-und-kostuembild",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -11993,7 +12324,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfbk-dresden.de/lehre-forschung/studiengaenge/restaurierung",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -12059,7 +12390,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfbk-dresden.de/bewerbung-meisterschuelerstudium",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [
@@ -12226,7 +12557,7 @@
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
     "language": "German",
-    "duration": "8 semesters",
+    "duration": "8 Semesters",
     "description": "Four-year bachelor's program understanding interior architecture as a discipline in dialogue with the fine arts: analyzing spatial, constructive, and societal questions and developing independent concepts, with particular attention to responsible handling of existing building stock.",
     "specializations": [],
     "portfolio_required": null,
@@ -12246,7 +12577,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": "German",
-    "duration": "4 semesters",
+    "duration": "4 Semesters",
     "description": "Two-year consecutive master's program in interior architecture, deepening artistic, technical, ecological, and social design and planning of spaces.",
     "specializations": [],
     "portfolio_required": null,
@@ -12286,7 +12617,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": "German",
-    "duration": "",
+    "duration": "4 Semesters",
     "description": "Master's program in which artists extend their visual practice into the therapeutic dimension, building on the influence of artistic creation and reception on psychological and physical well-being.",
     "specializations": [],
     "portfolio_required": null,
@@ -12379,20 +12710,18 @@
     "deadlines": [
       {
         "semester": "winter",
-        "start": {
-          "month": 5,
-          "day": 1
-        },
+        "start": null,
         "end": {
-          "month": 6,
-          "day": 15
+          "month": 1,
+          "day": 5,
+          "year": 2027
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
-        "start": "1 May",
-        "end": "15 June"
+        "end": "5 January 2027",
+        "cycle": "2027/28"
       }
     }
   },
@@ -12588,11 +12917,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bayreuth.de/studieren/bachelorstudiengaenge/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 February"
+      }
+    }
   },
   "hochschule-fur-evangelische-kirchenmusik--chorleitung--bachelor-of-music": {
     "program_id": "hochschule-fur-evangelische-kirchenmusik--chorleitung--bachelor-of-music",
@@ -12608,11 +12950,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bayreuth.de/studieren/bachelorstudiengaenge/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 February"
+      }
+    }
   },
   "hochschule-fur-evangelische-kirchenmusik--orgel--bachelor-of-music": {
     "program_id": "hochschule-fur-evangelische-kirchenmusik--orgel--bachelor-of-music",
@@ -12628,11 +12983,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bayreuth.de/studieren/bachelorstudiengaenge/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 February"
+      }
+    }
   },
   "hochschule-fur-evangelische-kirchenmusik--klavierpadagogik--bachelor-of-music": {
     "program_id": "hochschule-fur-evangelische-kirchenmusik--klavierpadagogik--bachelor-of-music",
@@ -12648,11 +13016,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bayreuth.de/studieren/bachelorstudiengaenge/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 February"
+      }
+    }
   },
   "hochschule-fur-evangelische-kirchenmusik--evangelische-kirchenmusik--master-of-music": {
     "program_id": "hochschule-fur-evangelische-kirchenmusik--evangelische-kirchenmusik--master-of-music",
@@ -12668,11 +13049,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bayreuth.de/studieren/masterstudiengaenge/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 February"
+      }
+    }
   },
   "hochschule-fur-evangelische-kirchenmusik--instrumental-vokalpadagogik--master-of-music": {
     "program_id": "hochschule-fur-evangelische-kirchenmusik--instrumental-vokalpadagogik--master-of-music",
@@ -12688,11 +13082,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bayreuth.de/studieren/masterstudiengaenge/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 February"
+      }
+    }
   },
   "hochschule-fur-evangelische-kirchenmusik--musikleitung-instrumental-vokal--master-of-music": {
     "program_id": "hochschule-fur-evangelische-kirchenmusik--musikleitung-instrumental-vokal--master-of-music",
@@ -12708,11 +13115,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bayreuth.de/studieren/masterstudiengaenge/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 February"
+      }
+    }
   },
   "hochschule-fur-evangelische-kirchenmusik--kunstlerisches-orgelspiel--master-of-music": {
     "program_id": "hochschule-fur-evangelische-kirchenmusik--kunstlerisches-orgelspiel--master-of-music",
@@ -12728,11 +13148,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-bayreuth.de/studieren/masterstudiengaenge/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 February"
+      }
+    }
   },
   "hochschule-fur-musik-berlin--kunstlerische-instrumentalausbildung--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-berlin--kunstlerische-instrumentalausbildung--bachelor-of-music",
@@ -12799,8 +13232,8 @@
     "name": "Gesang",
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
-    "language": null,
-    "duration": null,
+    "language": "German",
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -12820,7 +13253,7 @@
     "degree": "Master of Music",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -12886,7 +13319,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfm-berlin.de/bewerbung/studienangebot/orchesterdirigieren/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -12906,7 +13339,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfm-berlin.de/bewerbung/studienangebot/orchesterdirigieren/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -12986,7 +13419,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfm-berlin.de/bewerbung/studienangebot/produktionsdramaturgie-fuer-musiktheater/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -13129,8 +13562,28 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 5,
+          "day": 29,
+          "year": 2026
+        },
+        "end": {
+          "month": 10,
+          "day": 12,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "29 May 2026",
+        "end": "12 October 2026",
+        "cycle": "2027 SoSe"
+      }
+    }
   },
   "hochschule-fur-schauspielkunst-berlin--dramaturgie--master-of-arts": {
     "program_id": "hochschule-fur-schauspielkunst-berlin--dramaturgie--master-of-arts",
@@ -13445,10 +13898,10 @@
     "school_id": "hochschule-fur-kirchenmusik-dresden",
     "school_name": "Hochschule für Kirchenmusik der Evangelisch-Lutherischen Landeskirche Sachsens",
     "name": "Kirchenmusik (B)",
-    "degree": "Diplom",
+    "degree": "Diploma",
     "degree_level": "diploma",
     "language": null,
-    "duration": "8 semesters",
+    "duration": "8 Semesters",
     "description": "Diplomstudiengang für den hauptamtlichen kirchenmusikalischen Dienst, für evangelische und katholische Studierende.",
     "specializations": [],
     "portfolio_required": null,
@@ -13457,8 +13910,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 28
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "28 February"
+      }
+    }
   },
   "hochschule-fur-musik-dresden--kunstlerische-ausbildung--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-dresden--kunstlerische-ausbildung--bachelor-of-music",
@@ -13746,7 +14212,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://palucca.eu/studienangebot/tanz/bachelor-studiengang-tanz",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -13760,13 +14226,13 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://palucca.eu/studienangebot/master-studiengang-choreografie",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -13806,7 +14272,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://palucca.eu/studienangebot/master-studiengang-tanzpaedagogik",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -13826,7 +14292,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://palucca.eu/studienangebot/kuenstlerische-meisterklasse",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -13869,8 +14335,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      },
+      "summer": {
+        "end": "31 October"
+      }
+    }
   },
   "robert-schumann-hochschule--klavier--bachelor-of-music": {
     "program_id": "robert-schumann-hochschule--klavier--bachelor-of-music",
@@ -13909,8 +14399,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      },
+      "summer": {
+        "end": "31 October"
+      }
+    }
   },
   "robert-schumann-hochschule--gesang--bachelor-of-music": {
     "program_id": "robert-schumann-hochschule--gesang--bachelor-of-music",
@@ -13949,8 +14463,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      },
+      "summer": {
+        "end": "31 October"
+      }
+    }
   },
   "robert-schumann-hochschule--gitarre--bachelor-of-music": {
     "program_id": "robert-schumann-hochschule--gitarre--bachelor-of-music",
@@ -13989,8 +14527,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      },
+      "summer": {
+        "end": "31 October"
+      }
+    }
   },
   "robert-schumann-hochschule--orgel--bachelor-of-music": {
     "program_id": "robert-schumann-hochschule--orgel--bachelor-of-music",
@@ -14029,8 +14591,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      },
+      "summer": {
+        "end": "31 October"
+      }
+    }
   },
   "robert-schumann-hochschule--chorleitung--bachelor-of-music": {
     "program_id": "robert-schumann-hochschule--chorleitung--bachelor-of-music",
@@ -14069,8 +14655,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      },
+      "summer": {
+        "end": "31 October"
+      }
+    }
   },
   "robert-schumann-hochschule--orchesterleitung--bachelor-of-music": {
     "program_id": "robert-schumann-hochschule--orchesterleitung--bachelor-of-music",
@@ -14109,8 +14719,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      },
+      "summer": {
+        "end": "31 October"
+      }
+    }
   },
   "robert-schumann-hochschule--kirchenmusik--bachelor-of-music": {
     "program_id": "robert-schumann-hochschule--kirchenmusik--bachelor-of-music",
@@ -14149,8 +14783,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      },
+      "summer": {
+        "end": "31 October"
+      }
+    }
   },
   "robert-schumann-hochschule--komposition--bachelor-of-music": {
     "program_id": "robert-schumann-hochschule--komposition--bachelor-of-music",
@@ -14189,8 +14847,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      },
+      "summer": {
+        "end": "31 October"
+      }
+    }
   },
   "robert-schumann-hochschule--musik-und-medien--bachelor-of-music": {
     "program_id": "robert-schumann-hochschule--musik-und-medien--bachelor-of-music",
@@ -14269,8 +14951,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "robert-schumann-hochschule--musiktheorie-und-horerziehung--bachelor-of-music": {
     "program_id": "robert-schumann-hochschule--musiktheorie-und-horerziehung--bachelor-of-music",
@@ -14329,8 +15024,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 8,
+          "day": 15
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 August"
+      },
+      "summer": {
+        "end": "15 February"
+      }
+    }
   },
   "robert-schumann-hochschule--klang-und-realitat--master-of-music": {
     "program_id": "robert-schumann-hochschule--klang-und-realitat--master-of-music",
@@ -14349,8 +15068,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 10,
+          "day": 31
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "31 October"
+      }
+    }
   },
   "robert-schumann-hochschule--kunstlerische-musikproduktion--master-of-music": {
     "program_id": "robert-schumann-hochschule--kunstlerische-musikproduktion--master-of-music",
@@ -14369,8 +15101,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "robert-schumann-hochschule--musikfilmregie--master-of-music": {
     "program_id": "robert-schumann-hochschule--musikfilmregie--master-of-music",
@@ -14573,8 +15318,28 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 12,
+          "day": 1,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 October 2026",
+        "end": "1 December 2026",
+        "cycle": "2027"
+      }
+    }
   },
   "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--komposition--master-of-music": {
     "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--komposition--master-of-music",
@@ -14593,8 +15358,28 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 12,
+          "day": 1,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 October 2026",
+        "end": "1 December 2026",
+        "cycle": "2027"
+      }
+    }
   },
   "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kirchenmusik--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kirchenmusik--bachelor-of-music",
@@ -14613,8 +15398,28 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 12,
+          "day": 1,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 October 2026",
+        "end": "1 December 2026",
+        "cycle": "2027"
+      }
+    }
   },
   "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kirchenmusik--master-of-music": {
     "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kirchenmusik--master-of-music",
@@ -14633,8 +15438,28 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 12,
+          "day": 1,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 October 2026",
+        "end": "1 December 2026",
+        "cycle": "2027"
+      }
+    }
   },
   "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--historische-interpretationspraxis-hip--master-of-music": {
     "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--historische-interpretationspraxis-hip--master-of-music",
@@ -14653,8 +15478,28 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 12,
+          "day": 1,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 October 2026",
+        "end": "1 December 2026",
+        "cycle": "2027"
+      }
+    }
   },
   "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kammermusik--master-of-music": {
     "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kammermusik--master-of-music",
@@ -14693,8 +15538,28 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 12,
+          "day": 1,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 October 2026",
+        "end": "1 December 2026",
+        "cycle": "2027"
+      }
+    }
   },
   "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--musikpadagogik--master-of-music": {
     "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--musikpadagogik--master-of-music",
@@ -14878,8 +15743,28 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": {
+          "month": 11,
+          "day": 15,
+          "year": 2026
+        },
+        "end": {
+          "month": 2,
+          "day": 1,
+          "year": 2027
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "start": "15 November 2026",
+        "end": "1 February 2027",
+        "cycle": "2027/2028"
+      }
+    }
   },
   "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--contemporary-dance-education--master-of-arts": {
     "program_id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--contemporary-dance-education--master-of-arts",
@@ -14955,11 +15840,31 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-freiburg.de/studium/studienangebot/bachelor-musik",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 11,
+          "day": 1,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 October 2026",
+        "end": "1 November 2026",
+        "cycle": "2027"
+      }
+    }
   },
   "hochschule-fur-musik-freiburg--musik--master-of-music": {
     "program_id": "hochschule-fur-musik-freiburg--musik--master-of-music",
@@ -14975,11 +15880,31 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-freiburg.de/studium/studienangebot/master-musik",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 11,
+          "day": 1,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 October 2026",
+        "end": "1 November 2026",
+        "cycle": "2027"
+      }
+    }
   },
   "hochschule-fur-musik-freiburg--kirchenmusik--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-freiburg--kirchenmusik--bachelor-of-music",
@@ -14989,13 +15914,13 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-freiburg.de/studium/studienangebot/bachelor-kirchenmusik",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -15009,13 +15934,13 @@
     "degree": "Master of Music",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-freiburg.de/studium/studienangebot/master-kirchenmusik",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -15069,17 +15994,37 @@
     "degree": "Konzertexamen",
     "degree_level": "other",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-freiburg.de/studium/studienangebot/konzertexamen-meisterklasse",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 11,
+          "day": 1,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 October 2026",
+        "end": "1 November 2026",
+        "cycle": "2027"
+      }
+    }
   },
   "evangelische-hochschule-fur-kirchenmusik-halle--kirchenmusik--bachelor-of-music": {
     "program_id": "evangelische-hochschule-fur-kirchenmusik-halle--kirchenmusik--bachelor-of-music",
@@ -15095,7 +16040,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://ehk-halle.de/studiengaenge",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -15115,7 +16060,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://ehk-halle.de/studiengaenge",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -15249,17 +16194,41 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-heidelberg.de/studium/studiengaenge/bachelor-evangelische-kirchenmusik/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 5,
+          "day": 15
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 12,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 May"
+      },
+      "summer": {
+        "end": "15 December"
+      }
+    }
   },
   "hochschule-fur-kirchenmusik-heidelberg--evangelische-kirchenmusik--master-of-music": {
     "program_id": "hochschule-fur-kirchenmusik-heidelberg--evangelische-kirchenmusik--master-of-music",
@@ -15275,11 +16244,35 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-heidelberg.de/studium/studiengaenge/master-evangelische-kirchenmusik/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 5,
+          "day": 15
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 12,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 May"
+      },
+      "summer": {
+        "end": "15 December"
+      }
+    }
   },
   "hochschule-fur-kirchenmusik-heidelberg--popularkirchenmusik--bachelor-of-music": {
     "program_id": "hochschule-fur-kirchenmusik-heidelberg--popularkirchenmusik--bachelor-of-music",
@@ -15289,17 +16282,41 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-heidelberg.de/studium/studiengaenge/bachelor-popularkirchenmusik/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 5,
+          "day": 15
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 12,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 May"
+      },
+      "summer": {
+        "end": "15 December"
+      }
+    }
   },
   "hochschule-fur-kirchenmusik-heidelberg--popularkirchenmusik--master-of-music": {
     "program_id": "hochschule-fur-kirchenmusik-heidelberg--popularkirchenmusik--master-of-music",
@@ -15329,17 +16346,41 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfk-heidelberg.de/studium/studiengaenge/bachelor-posaunenwart/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 5,
+          "day": 15
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 12,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 May"
+      },
+      "summer": {
+        "end": "15 December"
+      }
+    }
   },
   "hochschule-fur-kirchenmusik-heidelberg--erganzungsstudiengang-fur-schulmusiker-innen--zertifikat": {
     "program_id": "hochschule-fur-kirchenmusik-heidelberg--erganzungsstudiengang-fur-schulmusiker-innen--zertifikat",
@@ -15358,8 +16399,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 5,
+          "day": 15
+        }
+      },
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 12,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 May"
+      },
+      "summer": {
+        "end": "15 December"
+      }
+    }
   },
   "hochschule-fur-musik-karlsruhe--musik--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-karlsruhe--musik--bachelor-of-music",
@@ -15375,11 +16440,31 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://hfm-karlsruhe.de/studieren/studienangebote/bachelor",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 11,
+          "day": 1,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 October 2026",
+        "end": "1 November 2026",
+        "cycle": "Sommersemester 2027"
+      }
+    }
   },
   "hochschule-fur-musik-karlsruhe--musik--master-of-music": {
     "program_id": "hochschule-fur-musik-karlsruhe--musik--master-of-music",
@@ -15395,11 +16480,31 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://hfm-karlsruhe.de/studieren/studienangebote/master",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": {
+          "month": 10,
+          "day": 1,
+          "year": 2026
+        },
+        "end": {
+          "month": 11,
+          "day": 1,
+          "year": 2026
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "start": "1 October 2026",
+        "end": "1 November 2026",
+        "cycle": "Sommersemester 2027"
+      }
+    }
   },
   "hochschule-fur-musik-karlsruhe--kunstlerisches-lehramt-an-gymnasien-schulmusik--lehramt": {
     "program_id": "hochschule-fur-musik-karlsruhe--kunstlerisches-lehramt-an-gymnasien-schulmusik--lehramt",
@@ -15435,7 +16540,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://hfm-karlsruhe.de/studieren/studienangebote/solistenexamen-konzertexamen",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -15478,8 +16583,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--blechblaser--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--blechblaser--bachelor-of-music",
@@ -15498,8 +16616,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--blasinstrumente--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--blasinstrumente--master-of-music",
@@ -15518,8 +16649,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--streichinstrumente--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--streichinstrumente--bachelor-of-music",
@@ -15538,8 +16682,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--streichinstrumente--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--streichinstrumente--master-of-music",
@@ -15558,8 +16715,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--klavier--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--klavier--bachelor-of-music",
@@ -15578,8 +16748,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--klavier--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--klavier--master-of-music",
@@ -15598,8 +16781,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--orgel--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--orgel--bachelor-of-music",
@@ -15618,8 +16814,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--orgel--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--orgel--master-of-music",
@@ -15638,8 +16847,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--gitarre--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--gitarre--bachelor-of-music",
@@ -15658,8 +16880,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--gitarre--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--gitarre--master-of-music",
@@ -15678,8 +16913,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--harfe--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--harfe--bachelor-of-music",
@@ -15698,8 +16946,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--harfe--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--harfe--master-of-music",
@@ -15718,8 +16979,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--mandoline--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--mandoline--bachelor-of-music",
@@ -15738,8 +17012,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--mandoline--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--mandoline--master-of-music",
@@ -15758,8 +17045,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--schlagzeug--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--schlagzeug--bachelor-of-music",
@@ -15778,8 +17078,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--schlagzeug--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--schlagzeug--master-of-music",
@@ -15798,8 +17111,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--gesang--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--gesang--bachelor-of-music",
@@ -15818,8 +17144,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--gesang-lied-konzert--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--gesang-lied-konzert--master-of-music",
@@ -15838,8 +17177,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--gesang-musiktheater--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--gesang-musiktheater--master-of-music",
@@ -15858,8 +17210,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--chordirigieren--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--chordirigieren--bachelor-of-music",
@@ -15878,8 +17243,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--dirigieren-chor--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--dirigieren-chor--master-of-music",
@@ -15898,8 +17276,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--dirigieren-orchester--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--dirigieren-orchester--master-of-music",
@@ -15918,8 +17309,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--dirigieren-musiktheater--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--dirigieren-musiktheater--master-of-music",
@@ -15938,8 +17342,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--orchesterdirigieren--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--orchesterdirigieren--bachelor-of-music",
@@ -15958,8 +17375,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--instrumentale-komposition--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--instrumentale-komposition--bachelor-of-music",
@@ -15978,8 +17408,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--instrumentale-komposition--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--instrumentale-komposition--master-of-music",
@@ -15998,8 +17441,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--elektronische-komposition--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--elektronische-komposition--bachelor-of-music",
@@ -16018,8 +17474,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--elektronische-komposition--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--elektronische-komposition--master-of-music",
@@ -16038,8 +17507,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--jazz-pop--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--jazz-pop--bachelor-of-music",
@@ -16058,8 +17540,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--jazz-pop-instrumental-vokal--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--jazz-pop-instrumental-vokal--master-of-music",
@@ -16078,8 +17573,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--jazz-komposition-arrangement--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--jazz-komposition-arrangement--master-of-music",
@@ -16098,8 +17606,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--historische-instrumente--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--historische-instrumente--bachelor-of-music",
@@ -16118,8 +17639,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--historische-instrumente-und-barockgesang--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--historische-instrumente-und-barockgesang--master-of-music",
@@ -16138,8 +17672,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--elementare-musikpadagogik--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--elementare-musikpadagogik--bachelor-of-music",
@@ -16158,8 +17705,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--instrumental-gesangspadagogik--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--instrumental-gesangspadagogik--bachelor-of-music",
@@ -16178,8 +17738,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--musikpadagogik--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--musikpadagogik--master-of-music",
@@ -16198,8 +17771,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--musikpadagogik--master-of-arts": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--musikpadagogik--master-of-arts",
@@ -16209,7 +17795,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -16218,8 +17804,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 6,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 June"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--evangelische-kirchenmusik--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--evangelische-kirchenmusik--bachelor-of-music",
@@ -16238,8 +17837,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--evangelische-kirchenmusik--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--evangelische-kirchenmusik--master-of-music",
@@ -16258,8 +17870,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--katholische-kirchenmusik--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--katholische-kirchenmusik--bachelor-of-music",
@@ -16278,8 +17903,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--katholische-kirchenmusik--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--katholische-kirchenmusik--master-of-music",
@@ -16298,8 +17936,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--kammermusik--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--kammermusik--master-of-music",
@@ -16318,8 +17969,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--liedgestaltung-klavier--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--liedgestaltung-klavier--master-of-music",
@@ -16338,8 +18002,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--opernkorrepetition--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--opernkorrepetition--master-of-music",
@@ -16358,8 +18035,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--interpretation-neue-musik--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--interpretation-neue-musik--master-of-music",
@@ -16378,8 +18068,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--neue-klaviermusik--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--neue-klaviermusik--master-of-music",
@@ -16398,8 +18101,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--orchesterspiel--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--orchesterspiel--master-of-music",
@@ -16418,8 +18134,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--production--master-of-music": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--production--master-of-music",
@@ -16438,8 +18167,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--musikwissenschaft--master-of-arts": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--musikwissenschaft--master-of-arts",
@@ -16449,7 +18191,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -16469,7 +18211,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -16529,7 +18271,7 @@
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -16549,7 +18291,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -16558,8 +18300,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 3,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 March"
+      }
+    }
   },
   "hochschule-fur-musik-und-tanz-koln--tanzwissenschaft--master-of-arts": {
     "program_id": "hochschule-fur-musik-und-tanz-koln--tanzwissenschaft--master-of-arts",
@@ -16569,7 +18324,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -16578,8 +18333,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 6,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 June"
+      }
+    }
   },
   "musikhochschule-lubeck--instrumental-blasinstrumente--bachelor-of-music": {
     "program_id": "musikhochschule-lubeck--instrumental-blasinstrumente--bachelor-of-music",
@@ -16875,7 +18643,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-luebeck.de/studiengang/komposition-bachelor-music",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17029,13 +18797,13 @@
     "degree": "Master of Music",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-luebeck.de/studiengang/kammermusik-master-music",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17055,7 +18823,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-luebeck.de/studiengang/korrepetition-master-music",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17129,13 +18897,13 @@
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "6 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-luebeck.de/studiengang/musikplus-grundschule-bachelor-arts",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17169,13 +18937,13 @@
     "degree": "Master of Education",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-luebeck.de/studiengang/lehramt-gymnasium-musik-vermitteln-master-education",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17215,7 +18983,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-luebeck.de/studiengang/lehramt-grundschule-umstieg-master-education",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17229,13 +18997,13 @@
     "degree": "Master of Music",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-luebeck.de/studiengang/sound-arts-and-creative-music-technology-master-music",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17246,16 +19014,16 @@
     "school_id": "musikhochschule-lubeck",
     "school_name": "Musikhochschule Lübeck",
     "name": "Konzertexamen",
-    "degree": "Konzertexamen",
+    "degree": "Konzertexamen (Zertifikat)",
     "degree_level": "other",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.mh-luebeck.de/studiengang/konzertexamen-konzertexamen",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17334,8 +19102,8 @@
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
+    "application_url": "https://www.muho-mannheim.de/bewerbung/anmeldung/",
+    "program_url": "https://www.muho-mannheim.de/studienangebote/bachelor-of-music-jazz-/-popularmusik/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17354,8 +19122,8 @@
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
+    "application_url": "https://www.muho-mannheim.de/bewerbung/anmeldung/",
+    "program_url": "https://www.muho-mannheim.de/studienangebote/master-of-music-jazz-/-popularmusik/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17374,8 +19142,8 @@
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
+    "application_url": "https://www.muho-mannheim.de/bewerbung/anmeldung/",
+    "program_url": "https://www.muho-mannheim.de/studienangebote/bachelor-of-arts-tanz-/-tanzpaedagogik/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17394,8 +19162,8 @@
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
+    "application_url": "https://www.muho-mannheim.de/bewerbung/anmeldung/",
+    "program_url": "https://www.muho-mannheim.de/studienangebote/master-of-arts-tanz-/-tanzpaedagogik/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17414,8 +19182,8 @@
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
+    "application_url": "https://www.muho-mannheim.de/bewerbung/anmeldung/",
+    "program_url": "https://www.muho-mannheim.de/studienangebote/bachelor-lehramt-musik-an-gymnasien/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17434,8 +19202,8 @@
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
-    "application_url": null,
-    "program_url": null,
+    "application_url": "https://www.muho-mannheim.de/bewerbung/anmeldung/",
+    "program_url": "https://www.muho-mannheim.de/studienangebote/master-lehramt-musik-an-gymnasien/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17565,7 +19333,7 @@
     "degree": "Meisterklassendiplom",
     "degree_level": "other",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -17591,11 +19359,26 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfkm-regensburg.de/studium/bachelor-studiengaenge/katholische-kirchenmusik/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 4,
+          "day": 30,
+          "year": 2027
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "30 April 2027",
+        "cycle": "2027/2028"
+      }
+    }
   },
   "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik--katholische-kirchenmusik--master-of-music": {
     "program_id": "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik--katholische-kirchenmusik--master-of-music",
@@ -17611,11 +19394,26 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfkm-regensburg.de/studium/master-studiengaenge/katholische-kirchenmusik/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 4,
+          "day": 30,
+          "year": 2027
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "30 April 2027",
+        "cycle": "2027/2028"
+      }
+    }
   },
   "hochschule-fur-kirchenmusik-rottenburg--katholische-kirchenmusik--bachelor-of-music": {
     "program_id": "hochschule-fur-kirchenmusik-rottenburg--katholische-kirchenmusik--bachelor-of-music",
@@ -17631,7 +19429,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.kirchenmusik-hochschule.org/bachelor/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17651,7 +19449,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.kirchenmusik-hochschule.org/master-katholische-kirchenmusik/",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -17665,7 +19463,7 @@
     "degree": "Master of Music",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -17685,7 +19483,7 @@
     "degree": "Master of Music",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -17705,7 +19503,7 @@
     "degree": "Master of Music",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -17725,7 +19523,7 @@
     "degree": "Master of Music",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -17745,7 +19543,7 @@
     "degree": "Master of Music",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -17771,11 +19569,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.kirchenmusik-hochschule.org/c-ausbildung/",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 5,
+          "day": 2
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "2 May"
+      }
+    }
   },
   "hochschule-fur-musik-saar--kunstlerisches-profil-instrument--bachelor-of-music": {
     "program_id": "hochschule-fur-musik-saar--kunstlerisches-profil-instrument--bachelor-of-music",
@@ -18005,7 +19816,7 @@
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "6 semesters",
     "description": "In Kooperation mit der Universität des Saarlandes.",
     "specializations": [],
     "portfolio_required": null,
@@ -18693,8 +20504,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 4,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 April"
+      }
+    }
   },
   "staatliche-hochschule-fur-musik-trossingen--musik--master-of-music": {
     "program_id": "staatliche-hochschule-fur-musik-trossingen--musik--master-of-music",
@@ -18713,8 +20537,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 4,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 April"
+      }
+    }
   },
   "staatliche-hochschule-fur-musik-trossingen--musikdesign--bachelor-of-music": {
     "program_id": "staatliche-hochschule-fur-musik-trossingen--musikdesign--bachelor-of-music",
@@ -18727,14 +20564,27 @@
     "duration": null,
     "description": null,
     "specializations": [],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfm-trossingen.de/bachelor-musikdesign",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 4,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 April"
+      }
+    }
   },
   "staatliche-hochschule-fur-musik-trossingen--audio-experience-design--master-of-music": {
     "program_id": "staatliche-hochschule-fur-musik-trossingen--audio-experience-design--master-of-music",
@@ -18747,14 +20597,27 @@
     "duration": null,
     "description": null,
     "specializations": [],
-    "portfolio_required": null,
+    "portfolio_required": true,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hfm-trossingen.de/master-audio-experience-design",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 4,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 April"
+      }
+    }
   },
   "staatliche-hochschule-fur-musik-trossingen--creative-arts-practice--master-of-music": {
     "program_id": "staatliche-hochschule-fur-musik-trossingen--creative-arts-practice--master-of-music",
@@ -18773,8 +20636,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 4,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 April"
+      }
+    }
   },
   "staatliche-hochschule-fur-musik-trossingen--rhythmik-mit-elementarer-musikpadagogik--bachelor-of-music": {
     "program_id": "staatliche-hochschule-fur-musik-trossingen--rhythmik-mit-elementarer-musikpadagogik--bachelor-of-music",
@@ -18793,8 +20669,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 4,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 April"
+      }
+    }
   },
   "staatliche-hochschule-fur-musik-trossingen--musik-und-bewegung--bachelor-of-music": {
     "program_id": "staatliche-hochschule-fur-musik-trossingen--musik-und-bewegung--bachelor-of-music",
@@ -18813,8 +20702,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 4,
+          "day": 1
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "1 April"
+      }
+    }
   },
   "hochschule-fur-kirchenmusik-tubingen--evangelische-kirchenmusik-b--bachelor-of-music": {
     "program_id": "hochschule-fur-kirchenmusik-tubingen--evangelische-kirchenmusik-b--bachelor-of-music",
@@ -18833,8 +20735,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 12,
+          "day": 1
+        }
+      },
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 5,
+          "day": 2
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 December"
+      },
+      "winter": {
+        "end": "2 May"
+      }
+    }
   },
   "hochschule-fur-kirchenmusik-tubingen--evangelische-popular-kirchenmusik--bachelor-of-music": {
     "program_id": "hochschule-fur-kirchenmusik-tubingen--evangelische-popular-kirchenmusik--bachelor-of-music",
@@ -18853,8 +20779,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 12,
+          "day": 1
+        }
+      },
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 5,
+          "day": 2
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 December"
+      },
+      "winter": {
+        "end": "2 May"
+      }
+    }
   },
   "hochschule-fur-kirchenmusik-tubingen--evangelische-kirchenmusik-a--master-of-music": {
     "program_id": "hochschule-fur-kirchenmusik-tubingen--evangelische-kirchenmusik-a--master-of-music",
@@ -18873,8 +20823,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 12,
+          "day": 1
+        }
+      },
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 5,
+          "day": 2
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 December"
+      },
+      "winter": {
+        "end": "2 May"
+      }
+    }
   },
   "hochschule-fur-kirchenmusik-tubingen--kirchliche-popularmusik--master-of-music": {
     "program_id": "hochschule-fur-kirchenmusik-tubingen--kirchliche-popularmusik--master-of-music",
@@ -18893,8 +20867,32 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": null
+    "deadlines": [
+      {
+        "semester": "summer",
+        "start": null,
+        "end": {
+          "month": 12,
+          "day": 1
+        }
+      },
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 5,
+          "day": 2
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "summer": {
+        "end": "1 December"
+      },
+      "winter": {
+        "end": "2 May"
+      }
+    }
   },
   "hochschule-fur-kirchenmusik-tubingen--ka-aufbaustudiengang-orgel--kunstlerische-ausbildung": {
     "program_id": "hochschule-fur-kirchenmusik-tubingen--ka-aufbaustudiengang-orgel--kunstlerische-ausbildung",
@@ -18924,7 +20922,7 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [
       "Violine",
@@ -18983,7 +20981,7 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -19023,7 +21021,7 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [
       "Klavier (Jazz)",
@@ -19074,7 +21072,7 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [
       "Barockvioline",
@@ -19122,7 +21120,7 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -19162,7 +21160,7 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -19202,7 +21200,7 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -19242,7 +21240,7 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -19282,7 +21280,7 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -19322,7 +21320,7 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -19362,7 +21360,7 @@
     "degree": "Bachelor of Arts",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "6 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -19382,7 +21380,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -19402,7 +21400,7 @@
     "degree": "Master of Arts",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
@@ -19482,13 +21480,13 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hochschule-kirchenmusik.de/studium/bachelor-klassisch",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -19502,13 +21500,13 @@
     "degree": "Bachelor of Music",
     "degree_level": "bachelor",
     "language": null,
-    "duration": null,
+    "duration": "8 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hochschule-kirchenmusik.de/studium/bachelor-popular",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -19522,13 +21520,13 @@
     "degree": "Master of Music",
     "degree_level": "master",
     "language": null,
-    "duration": null,
+    "duration": "4 semesters",
     "description": null,
     "specializations": [],
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.hochschule-kirchenmusik.de/studium/master-klassisch",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -19902,11 +21900,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/regie-szenischer-film",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--regie-dokumentarfilm--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--regie-dokumentarfilm--diploma",
@@ -19922,11 +21933,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/regie-dokumentarfilm",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--regie-journalistischer-film--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--regie-journalistischer-film--diploma",
@@ -19942,11 +21966,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/regie-journalistischer-film",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--werbefilm-regie-producing--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--werbefilm-regie-producing--diploma",
@@ -19962,11 +21999,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/werbefilm-regie-producing",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--drehbuch--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--drehbuch--diploma",
@@ -19985,8 +22035,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--bildgestaltung-kamera--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--bildgestaltung-kamera--diploma",
@@ -20002,11 +22065,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/bildgestaltung-kamera",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--montage-schnitt--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--montage-schnitt--diploma",
@@ -20025,8 +22101,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--produktion--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--produktion--diploma",
@@ -20042,11 +22131,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/produktion",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--produktion-creative-series-producing--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--produktion-creative-series-producing--diploma",
@@ -20062,11 +22164,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/produktion-creative-series-producing",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--produktion-executive-line-producing--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--produktion-executive-line-producing--diploma",
@@ -20082,11 +22197,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/produktion-executive-line-producing",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--produktion-international-producing--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--produktion-international-producing--diploma",
@@ -20102,11 +22230,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/produktion-international-producing",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--animation--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--animation--diploma",
@@ -20125,8 +22266,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--animation-effects-producing--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--animation-effects-producing--diploma",
@@ -20142,11 +22296,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/animation-effects-producing",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--visual-effects--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--visual-effects--diploma",
@@ -20165,8 +22332,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--interaktive-medien--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--interaktive-medien--diploma",
@@ -20185,8 +22365,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--szenenbild-production-design--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--szenenbild-production-design--diploma",
@@ -20202,11 +22395,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/szenenbild",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--filmmusik--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--filmmusik--diploma",
@@ -20225,8 +22431,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--filmton-sounddesign--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--filmton-sounddesign--diploma",
@@ -20242,11 +22461,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/filmton-sounddesign",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--motion-design--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--motion-design--diploma",
@@ -20265,8 +22497,21 @@
     "program_url": null,
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--technical-directing--diploma": {
     "program_id": "filmakademie-baden-wurttemberg--technical-directing--diploma",
@@ -20282,11 +22527,24 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/technical-directing",
     "source_url": null,
     "extracted_at": null,
-    "deadlines": [],
-    "deadlines_raw": {}
+    "deadlines": [
+      {
+        "semester": "winter",
+        "start": null,
+        "end": {
+          "month": 2,
+          "day": 15
+        }
+      }
+    ],
+    "deadlines_raw": {
+      "winter": {
+        "end": "15 February"
+      }
+    }
   },
   "filmakademie-baden-wurttemberg--masterclass-atelier-ludwigsburg-paris--masterclass-weiterbildung": {
     "program_id": "filmakademie-baden-wurttemberg--masterclass-atelier-ludwigsburg-paris--masterclass-weiterbildung",
@@ -20302,7 +22560,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/de/studium/studienangebote/masterclass-atelier-ludwigsburg-paris",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -20362,7 +22620,7 @@
     "portfolio_required": null,
     "tuition_eur_per_semester": null,
     "application_url": null,
-    "program_url": null,
+    "program_url": "https://www.filmakademie.de/en/studies/study-programmes/workshop-international-class",
     "source_url": null,
     "extracted_at": null,
     "deadlines": [],
@@ -20662,7 +22920,7 @@
     ],
     "portfolio_required": false,
     "tuition_eur_per_semester": null,
-    "application_url": "https://www.leuphana.de/en/graduate-school/masters-programmes/cultural-studies-media-and-digital-cultures.html",
+    "application_url": "https://www.leuphana.de/en/graduate-school/masters-programmes/cultural-studies-media-and-digital-cultures/admission-and-requirements.html",
     "program_url": "https://www.leuphana.de/en/graduate-school/masters-programmes/cultural-studies-media-and-digital-cultures.html",
     "source_url": "https://www.leuphana.de/",
     "extracted_at": "2026-06-11T00:00:00.000Z",
@@ -20839,7 +23097,7 @@
     ],
     "portfolio_required": false,
     "tuition_eur_per_semester": null,
-    "application_url": "https://www.uni-frankfurt.de/de/studium/studiengaenge/theater-film-medienwissenschaft-master",
+    "application_url": "https://www.uni-frankfurt.de/de/studium/studiengaenge/theater-film-medienwissenschaft-master/bewerbung-zulassung",
     "program_url": "https://www.uni-frankfurt.de/de/studium/studiengaenge/theater-film-medienwissenschaft-master",
     "source_url": "https://www.uni-frankfurt.de/",
     "extracted_at": "2026-06-11T00:00:00.000Z",
@@ -20851,15 +23109,15 @@
           "day": 1
         },
         "end": {
-          "month": 6,
-          "day": 15
+          "month": 5,
+          "day": 31
         }
       }
     ],
     "deadlines_raw": {
       "winter": {
         "start": "1 April",
-        "end": "15 June"
+        "end": "31 May"
       }
     }
   },
@@ -20881,8 +23139,8 @@
     ],
     "portfolio_required": false,
     "tuition_eur_per_semester": null,
-    "application_url": "https://www.hs-offenburg.de/studium/master/communication-and-media-engineering",
-    "program_url": "https://www.hs-offenburg.de/studium/master/communication-and-media-engineering",
+    "application_url": "https://www.hs-offenburg.de/en/studies/masters-programs/communication-and-media-engineering",
+    "program_url": "https://www.hs-offenburg.de/en/studies/masters-programs/communication-and-media-engineering",
     "source_url": "https://www.hs-offenburg.de/",
     "extracted_at": "2026-06-11T00:00:00.000Z",
     "deadlines": [
@@ -21166,7 +23424,7 @@
     ],
     "portfolio_required": false,
     "tuition_eur_per_semester": null,
-    "application_url": "https://www.hhu.de/studium/studienangebot/studiengang-informationen/kunstvermittlung-und-kulturmanagement-master",
+    "application_url": "https://www.kuk.hhu.de/bewerbung",
     "program_url": "https://www.hhu.de/studium/studienangebot/studiengang-informationen/kunstvermittlung-und-kulturmanagement-master",
     "source_url": "https://www.hhu.de/",
     "extracted_at": "2026-06-11T00:00:00.000Z",

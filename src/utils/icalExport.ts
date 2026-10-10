@@ -22,10 +22,10 @@ function parseDeadlineDateToICal(dateStr: string, year?: number): string {
   }
 
   const now = new Date();
-  let resolvedYear = year ?? now.getFullYear();
+  let resolvedYear = parts[2] ? parseInt(parts[2], 10) : year ?? now.getFullYear(); // "1 May 2027" keeps its year
   const date = new Date(resolvedYear, month, day);
 
-  if (year === undefined && date < now) {
+  if (!parts[2] && year === undefined && date < now) {
     resolvedYear += 1;
   }
 

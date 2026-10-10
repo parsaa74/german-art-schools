@@ -288,7 +288,7 @@
       "lng": 8.7615
     },
     "stats": {
-      "students": 750,
+      "students": 600,
       "student_staff_ratio": 11,
       "founded": 1832
     },
@@ -1010,7 +1010,7 @@
     "name": "Hochschule für Medien Stuttgart",
     "city": "Stuttgart",
     "state": "Baden-Württemberg",
-    "type": "university_of_arts",
+    "type": "university_of_applied_sciences",
     "coordinates": {
       "lat": 48.714,
       "lng": 9.102
@@ -1416,7 +1416,7 @@
     "name": "Hochschule für Schauspielkunst Ernst Busch",
     "city": "Berlin",
     "state": "Berlin",
-    "type": "academy",
+    "type": "performing_arts_academy",
     "coordinates": {
       "lat": 52.52,
       "lng": 13.405
@@ -1520,7 +1520,7 @@
     "name": "Palucca Hochschule für Tanz Dresden",
     "city": "Dresden",
     "state": "Saxony",
-    "type": "academy",
+    "type": "performing_arts_academy",
     "coordinates": {
       "lat": 51.0504,
       "lng": 13.7373
@@ -1543,7 +1543,7 @@
     "name": "Robert Schumann Hochschule Düsseldorf",
     "city": "Düsseldorf",
     "state": "North Rhine-Westphalia",
-    "type": "kunsthochschule",
+    "type": "music_academy",
     "coordinates": {
       "lat": 51.2277,
       "lng": 6.7735
@@ -1961,7 +1961,7 @@
       "lng": 6.9969
     },
     "stats": {
-      "students": 487,
+      "students": 560,
       "student_staff_ratio": null,
       "founded": 1947
     },

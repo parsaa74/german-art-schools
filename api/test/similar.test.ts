@@ -22,6 +22,11 @@ describe('GET /v1/programs/{id}/similar', () => {
     expect(weights).toEqual([...weights].sort((a, b) => b - a));
   });
 
+  it('only lists programs at other schools', async () => {
+    const body = await (await app.request(`/v1/programs/${HFBK_BFA}/similar?limit=200`)).json() as any;
+    for (const s of body.similar) expect(s.program.school_id).not.toBe('hochschule-fur-bildende-kunste-hamburg');
+  });
+
   it('matches the adjacency in graph.json', async () => {
     const res = await app.request(`/v1/programs/${HFBK_BFA}/similar?limit=3`);
     const body = await res.json() as any;
@@ -41,11 +46,12 @@ describe('GET /v1/programs/{id}/similar', () => {
   });
 
   it('respects min_weight', async () => {
-    const res = await app.request(`/v1/programs/${HFBK_BFA}/similar?min_weight=0.95&limit=200`);
+    const cut = (graphJson as any)[HFBK_BFA][1].weight; // keeps the top neighbors only
+    const res = await app.request(`/v1/programs/${HFBK_BFA}/similar?min_weight=${cut}&limit=200`);
     const body = await res.json() as any;
     expect(body.similar.length).toBeGreaterThan(0);
-    for (const s of body.similar) expect(s.weight).toBeGreaterThanOrEqual(0.95);
-    const all = (graphJson as any)[HFBK_BFA].filter((n: any) => n.weight >= 0.95);
+    for (const s of body.similar) expect(s.weight).toBeGreaterThanOrEqual(cut);
+    const all = (graphJson as any)[HFBK_BFA].filter((n: any) => n.weight >= cut);
     expect(body.similar).toHaveLength(all.length);
   });
 

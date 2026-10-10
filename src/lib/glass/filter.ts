@@ -2,45 +2,64 @@
  * Shared school-filter predicate.
  *
  * One source of truth for "does this school survive the current filters",
- * used by both the GlassWall (which panes break) and the FilterWizard (live
- * remaining count).
+ * used by the GlassWall (which panes break), the 2D graph, the FilterWizard
+ * and the filter panel (live counts).
+ *
+ * School-level filters (state, type, application route) test the school.
+ * Program-level filters (subject, degree, language, semester, NC-free) must all hold
+ * for the SAME program — "English + Master" means an English-taught master,
+ * not an English bachelor next to a German master. Missing data never passes
+ * an active filter.
  */
 
 import { ProcessedUniversity } from '@/stores/schoolStore';
+import { fold, subjectGroupOf, degreeGroupOf, taughtIn, admissionOf } from '@/lib/taxonomy';
 
 export interface Filters {
   search: string;
   state: string | null;
-  program: string | null;
+  program: string | null;   // subject group (SUBJECT_GROUPS)
   type: string | null;
-  semester: string | null;
-  nc: boolean | null;
+  semester: string | null;  // 'winter' | 'summer'
+  nc: boolean | null;       // true = NC-free: admission by portfolio/aptitude test or open (taxonomy.admissionOf)
   method: 'uni-assist' | 'direct' | null;
-  language: string | null;
-  degree: string | null;
+  language: string | null;  // 'German' | 'English'
+  degree: string | null;    // degree group (DEGREE_GROUPS)
   timeline: [number, number] | null;
+}
+
+type Program = NonNullable<ProcessedUniversity['programs']>[number];
+
+function programPasses(p: Program, f: Filters, schoolType: string): boolean {
+  if (f.program && subjectGroupOf(p.name) !== f.program) return false;
+  if (f.nc && !admissionOf(p as any, schoolType)) return false;
+  if (f.degree && degreeGroupOf(p.degree) !== f.degree) return false;
+  if (f.language && !taughtIn(p.language, f.language)) return false;
+  if (f.semester && !(p.applicationDeadlines as any)?.[f.semester]) return false;
+  return true;
+}
+
+const hasProgramFilter = (f: Filters) => !!(f.program || f.degree || f.language || f.semester || f.nc);
+
+/** Programs of `uni` that satisfy every program-level filter. */
+export function matchingPrograms(uni: ProcessedUniversity, f: Filters): Program[] {
+  return (uni.programs ?? []).filter((p) => programPasses(p, f, uni.type));
 }
 
 export function passesFilters(uni: ProcessedUniversity, f: Filters): boolean {
   if (f.search && f.search.trim()) {
-    const q = f.search.toLowerCase();
-    const hay = [uni.name, uni.state, uni.city || '', uni.description || '', ...(uni.programTypes || [])]
-      .join(' ').toLowerCase();
+    const q = fold(f.search.trim());
+    const hay = fold([uni.name, uni.state, uni.city || '', uni.description || '', ...(uni.programTypes || [])].join(' '));
     if (!hay.includes(q)) return false;
   }
   if (f.state && uni.state !== f.state) return false;
-  if (f.program && !uni.programTypes.includes(f.program)) return false;
   if (f.type && uni.type !== f.type) return false;
-  const progs = (uni as any).programs || [];
-  if (f.semester && !progs.some((p: any) => p.applicationDeadlines && p.applicationDeadlines[f.semester!])) return false;
-  if (f.nc != null && (uni as any).ncFrei !== undefined && (uni as any).ncFrei !== f.nc) return false;
-  if (f.method != null && (uni as any).applicationMethod !== undefined && (uni as any).applicationMethod !== f.method) return false;
-  if (f.language != null && !progs.some((p: any) => p.language === f.language)) return false;
-  if (f.degree != null && !progs.some((p: any) => p.degree === f.degree)) return false;
+  if (f.method != null && uni.applicationMethod !== f.method) return false;
   if (f.timeline) {
     const y = uni.founded ? parseInt(uni.founded) : NaN;
     if (isNaN(y) || y < f.timeline[0] || y > f.timeline[1]) return false;
   }
+  if (hasProgramFilter(f) && !(uni.programs ?? []).some((p) => programPasses(p, f, uni.type))) return false;
   return true;
 }
 
@@ -75,4 +94,14 @@ export function countMatches(unis: ProcessedUniversity[], f: Filters): number {
   let n = 0;
   for (const u of unis) if (passesFilters(u, f)) n++;
   return n;
+}
+
+/** How many schools would remain if `key` were set to each value (other filters kept). */
+export function optionCounts<K extends keyof Filters>(
+  unis: ProcessedUniversity[],
+  f: Filters,
+  key: K,
+  values: readonly Filters[K][]
+): Map<Filters[K], number> {
+  return new Map(values.map((v) => [v, countMatches(unis, { ...f, [key]: v })]));
 }

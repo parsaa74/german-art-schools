@@ -12,7 +12,9 @@
     "validate-deadlines": "node scripts/validateDeadlines.js",
     "build:program-ids": "tsx scripts/build-program-ids.ts",
     "build:program-embeddings": "tsx --env-file=.env.local scripts/build-program-embeddings.ts",
-    "build:program-graph": "tsx scripts/build-program-graph.ts",
+    "build:relations": "tsx scripts/build-relations.ts",
+    "apply:uni-assist": "tsx scripts/apply-uni-assist.ts",
+    "check:filters": "tsx scripts/check-filters.ts",
     "build:api-artifacts": "tsx scripts/build-api-artifacts.ts",
     "scrape:program-details": "tsx --env-file=.env.local scripts/scrape-program-details.ts"
   },

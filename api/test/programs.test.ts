@@ -20,7 +20,7 @@ describe('GET /v1/programs', () => {
     const { res, body } = await fetchJson('/v1/programs');
     expect(res.status).toBe(200);
     expect(body.total).toBe(programCount);
-    expect(programCount).toBe(746);
+    expect(programCount).toBe(765);
     expect(body.limit).toBe(50);
     expect(body.offset).toBe(0);
     expect(body.items).toHaveLength(50);

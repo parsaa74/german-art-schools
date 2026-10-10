@@ -10,6 +10,9 @@ interface CollapsibleControlPanelProps {
   triggerIcon?: React.ReactNode
   position?: 'top-right' | 'top-left' | 'bottom-right' | 'bottom-left'
   panelTitle?: string
+  // optional controlled mode, so other UI (the wizard) can open the panel
+  isOpen?: boolean
+  onOpenChange?: (open: boolean) => void
 }
 
 const panelVariants = {
@@ -39,8 +42,12 @@ export function CollapsibleControlPanel({
   triggerIcon = <SlidersHorizontal size={18} />, // Changed default icon
   position = 'top-right', // Default position
   panelTitle = 'Controls',
+  isOpen: controlledOpen,
+  onOpenChange,
 }: CollapsibleControlPanelProps) {
-  const [isOpen, setIsOpen] = useState(false)
+  const [uncontrolledOpen, setUncontrolledOpen] = useState(false)
+  const isOpen = controlledOpen ?? uncontrolledOpen
+  const setIsOpen = onOpenChange ?? setUncontrolledOpen
   const [isMobile, setIsMobile] = useState(false)
 
   // Check if device is mobile
@@ -99,7 +106,7 @@ export function CollapsibleControlPanel({
             animate="visible"
             exit="exit"
             transition={{ duration: 0.4, ease: [0.2, 0.8, 0.2, 1] }}
-            className={`mt-2 ${isMobile ? 'w-72 ui-mobile' : 'w-64 ui-organic'} overflow-hidden`}
+            className={`mt-2 w-72 max-w-[calc(100vw-2rem)] ${isMobile ? 'ui-mobile' : 'ui-organic'} max-h-[calc(100vh-10rem)] overflow-y-auto overflow-x-hidden`}
             style={{ originX: position.includes('right') ? 1 : 0 }}
           >
             <div className="p-3">

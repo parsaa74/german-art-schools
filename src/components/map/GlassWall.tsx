@@ -37,24 +37,16 @@ import { useFrame, useThree, ThreeEvent } from '@react-three/fiber';
 import { Billboard, Text } from '@react-three/drei';
 import * as THREE from 'three';
 import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore';
+import { useMapStore } from '@/stores/mapStore';
 import { buildFractureWindow, subdivideCell, buildFacetGeometry, FacetCell } from '@/lib/glass/fracture';
 import { Filters, passesFilters } from '@/lib/glass/filter';
 import { daysUntilClosestDeadline } from '@/lib/glass/deadline';
-import { ATMO } from './atmosphere/config';
+import { ATMO, REDUCED_MOTION } from './atmosphere/config';
+import { typeColor, KIN_COLOR, TIER_OPACITY } from '@/lib/taxonomy';
 
 const lerp = THREE.MathUtils.lerp;
 const smoothstep = THREE.MathUtils.smoothstep;
 
-function getTypeColor(type: string): string {
-  switch (type) {
-    case 'art_academy':
-    case 'kunsthochschule': return '#EF4444';
-    case 'design_school': return '#10B981';
-    case 'university_of_arts': return '#8B5CF6';
-    case 'film_university': return '#F59E0B';
-    default: return '#3B82F6';
-  }
-}
 
 // Degree colour language carried over from the old ProgramSatellites.
 const DEGREE_COLORS: Record<string, string> = {
@@ -114,7 +106,10 @@ function hash(s: string): number {
 }
 
 export function GlassWall() {
-  const { camera } = useThree();
+  const { camera, size } = useThree();
+  const wizardOpen = useMapStore((m) => m.wizardOpen);
+  const wallRef = useRef<THREE.Group>(null);
+  const wallGoal = useRef({ y: 0, scale: 1 });
   const processedUniversities = useSchoolStore((s) => s.processedUniversities);
   const selectedUniversity = useSchoolStore((s) => s.selectedUniversity);
   const setSelectedUniversity = useSchoolStore((s) => s.setSelectedUniversity);
@@ -133,14 +128,6 @@ export function GlassWall() {
   const aDegree = useSchoolStore((s) => s.activeDegreeFilter);
   const timeline = useSchoolStore((s) => s.timelineFilter);
 
-  // Lock camera to a frontal view of the field (once).
-  useEffect(() => {
-    const z = ATMO.wall.cameraZ;
-    camera.position.set(0, 0, z);
-    camera.lookAt(0, 0, 0);
-    setCameraPosition([0, 0, z]);
-    setCameraTarget([0, 0, 0]);
-  }, [camera, setCameraPosition, setCameraTarget]);
 
   const shards = useMemo<ShardData[]>(() => {
     const win = buildFractureWindow(Math.max(processedUniversities.length, 1), {
@@ -189,7 +176,7 @@ export function GlassWall() {
     return processedUniversities.map((school) => {
       const idx = cellIdxFor.get(school.name) ?? 0;
       const cell = win.cells[idx % win.cells.length];
-      const tint = new THREE.Color(getTypeColor(school.type));
+      const tint = new THREE.Color(typeColor(school.type));
       const material = new THREE.MeshPhysicalMaterial({
         color: '#ffffff', metalness: 0,
         roughness: ATMO.glass.roughness,
@@ -267,31 +254,50 @@ export function GlassWall() {
     });
   }, [processedUniversities]);
 
+  // Lock camera to a frontal view of the field, backing off on narrow
+  // (portrait) screens until the whole wall fits the width.
+  useEffect(() => {
+    const halfW = Math.max(1, ...shards.map((sh) => Math.abs(sh.base.x) + sh.size));
+    const tanHalf = Math.tan(THREE.MathUtils.degToRad((camera as THREE.PerspectiveCamera).fov ?? 50) / 2);
+    const fitZ = (halfW * 1.08) / (tanHalf * (size.width / Math.max(size.height, 1)));
+    const z = Math.max(ATMO.wall.cameraZ, fitZ);
+    // While the wizard card covers the bottom of the screen, the wall moves
+    // into the strip between the top bar and the card and shrinks to fit it
+    // (eased in useFrame). Pixel margins → NDC: top bar ≈ 80px, card ≤ 55%.
+    const topPx = wizardOpen ? 80 : 0;
+    const bottomPx = wizardOpen ? Math.min(440, size.height * 0.55) : 0;
+    const top = 1 - (2 * topPx) / size.height, bottom = -1 + (2 * bottomPx) / size.height;
+    const halfVisible = z * tanHalf;
+    const halfH = Math.max(1, ...shards.map((sh) => Math.abs(sh.base.y) + sh.size));
+    wallGoal.current = {
+      y: ((top + bottom) / 2) * halfVisible,
+      scale: Math.min(1, (((top - bottom) / 2) * halfVisible * 0.94) / halfH),
+    };
+    camera.position.set(0, 0, z);
+    camera.lookAt(0, 0, 0);
+    setCameraPosition([0, 0, z]);
+    setCameraTarget([0, 0, 0]);
+  }, [camera, shards, size.width, size.height, wizardOpen, setCameraPosition, setCameraTarget]);
+
   const nameToIdx = useMemo(
     () => new Map(shards.map((s, i) => [s.school.name, i] as const)),
     [shards]
   );
 
-  // Kinship: same type weighs most, then shared specializations, then same state.
-  // These panes "catch the same light" when one of them is hovered/selected.
-  const kin = useMemo<number[][]>(() => {
-    const specs = shards.map((s) => new Set(s.school.specializationVector ?? []));
-    return shards.map((s, i) => {
-      const scored: [number, number][] = [];
-      for (let j = 0; j < shards.length; j++) {
-        if (j === i) continue;
-        let score = 0;
-        if (shards[j].school.type === s.school.type) score += 2;
-        if (s.school.state && shards[j].school.state === s.school.state) score += 1;
-        let shared = 0;
-        specs[i].forEach((sp) => { if (specs[j].has(sp)) shared++; });
-        score += Math.min(shared, 3) * 0.8;
-        if (score >= 2) scored.push([score, j]);
-      }
-      scored.sort((a, b) => b[0] - a[0]);
-      return scored.slice(0, ATMO.kin.maxSiblings).map(([, j]) => j);
-    });
-  }, [shards]);
+  // Kinship: schools whose programs closely match (scripts/build-relations.ts)
+  // catch the same gold light when one of them is hovered/selected — brighter
+  // for stronger tiers, exactly as listed under "Similar schools" in the panel.
+  const schoolRelations = useSchoolStore((s) => s.schoolRelations);
+  const kin = useMemo<Array<Map<number, number>>>(() => {
+    const idToIdx = new Map(shards.map((s, i) => [s.school.id, i] as const));
+    return shards.map((s) => new Map(
+      (schoolRelations.get(s.school.id) ?? []).flatMap((r) => {
+        const j = idToIdx.get(r.schoolId);
+        return j == null ? [] : [[j, TIER_OPACITY[r.tier]] as [number, number]];
+      })
+    ));
+  }, [shards, schoolRelations]);
+  const kinColor = useMemo(() => new THREE.Color(KIN_COLOR), []);
 
   const monoColor = useMemo(() => new THREE.Color(ATMO.glass.monoColor), []);
   const frostColor = useMemo(() => new THREE.Color(ATMO.glass.frostColor), []);
@@ -433,16 +439,22 @@ export function GlassWall() {
     // idle sway (storm-ramped) so reflections keep sweeping across the glass.
     const I = ATMO.interact;
     const ptr = state.pointer;
-    const swayY = Math.sin(t * 0.22) * lerp(I.swayYawCalm, I.swayYawStorm, storm);
-    const swayX = Math.sin(t * 0.16) * lerp(I.swayPitchCalm, I.swayPitchStorm, storm);
-    fieldYaw.current = lerp(fieldYaw.current, ptr.x * I.parallaxYaw + swayY, I.followLerp);
-    fieldPitch.current = lerp(fieldPitch.current, -ptr.y * I.parallaxPitch + swayX, I.followLerp);
+    const motion = REDUCED_MOTION ? 0 : 1;
+    const swayY = motion * Math.sin(t * 0.22) * lerp(I.swayYawCalm, I.swayYawStorm, storm);
+    const swayX = motion * Math.sin(t * 0.16) * lerp(I.swayPitchCalm, I.swayPitchStorm, storm);
+    fieldYaw.current = lerp(fieldYaw.current, motion * ptr.x * I.parallaxYaw + swayY, I.followLerp);
+    fieldPitch.current = lerp(fieldPitch.current, motion * -ptr.y * I.parallaxPitch + swayX, I.followLerp);
     if (fieldRef.current) {
       fieldRef.current.rotation.y = fieldYaw.current;
       fieldRef.current.rotation.x = fieldPitch.current;
     }
+    if (wallRef.current) {
+      const k = REDUCED_MOTION ? 1 : 0.08;
+      wallRef.current.position.y = lerp(wallRef.current.position.y, wallGoal.current.y, k);
+      wallRef.current.scale.setScalar(lerp(wallRef.current.scale.x, wallGoal.current.scale, k));
+    }
     // Where the cursor ray meets the wall plane — drives the local ripple.
-    const hasCursor = state.raycaster.ray.intersectPlane(wallPlane, cursorPoint) !== null;
+    const hasCursor = !REDUCED_MOTION && state.raycaster.ray.intersectPlane(wallPlane, cursorPoint) !== null;
 
     // Crack-open state machine: reseal the current pane before opening the next.
     const wantIdx = selIdx >= 0 && matched[selIdx] ? selIdx : -1;
@@ -466,7 +478,7 @@ export function GlassWall() {
 
     // Kinship light follows the hovered pane, falling back to the selected one.
     const focusIdx = hoveredRef.current >= 0 ? hoveredRef.current : selIdx;
-    const kinList = focusIdx >= 0 && focusIdx < kin.length ? kin[focusIdx] : null;
+    const kinMap = focusIdx >= 0 && focusIdx < kin.length ? kin[focusIdx] : null;
 
     for (let i = 0; i < shards.length; i++) {
       const group = groupRefs.current[i];
@@ -481,13 +493,14 @@ export function GlassWall() {
 
       const isSel = selName === s.school.name;
       const isHov = hoveredRef.current === i;
-      const isKin = !!kinList && i !== focusIdx && kinList.includes(i);
-      const kg = (kinGlow.current[i] = lerp(kinGlow.current[i], isKin ? 1 : 0, 0.08));
+      const kinStrength = (i !== focusIdx && kinMap?.get(i)) || 0;
+      const isKin = kinStrength > 0;
+      const kg = (kinGlow.current[i] = lerp(kinGlow.current[i], kinStrength, 0.08));
       const hv = (hoverT.current[i] = lerp(hoverT.current[i], isHov ? 1 : 0, I.hoverEase));
       // non-focused panes frost while something is hovered/selected (kin stay lit)
       const frostTarget = focusIdx >= 0 && i !== focusIdx && !isKin && !isSel ? 1 : 0;
       const ft = (frostT.current[i] = lerp(frostT.current[i], frostTarget, I.frostEase));
-      const rattle = storm * 0.05 * s.size; // panes tremble only as the storm builds
+      const rattle = REDUCED_MOTION ? 0 : storm * 0.05 * s.size; // panes tremble only as the storm builds
 
       // cursor ripple — panes near the pointer lift and tip toward it
       let ripple = 0, rdx = 0, rdy = 0;
@@ -542,7 +555,7 @@ export function GlassWall() {
 
       // intact → uniform mono glass; shattering → this school's type colour;
       // frosted panes drift toward the washed-out cold tone
-      tmpColor.copy(monoColor).lerp(s.tint, reveal).lerp(frostColor, frost * 0.7);
+      tmpColor.copy(monoColor).lerp(s.tint, reveal).lerp(frostColor, frost * 0.7).lerp(kinColor, kg * 0.85);
       m.attenuationColor.copy(tmpColor);
       m.emissive.copy(tmpColor);
 
@@ -653,7 +666,7 @@ export function GlassWall() {
   };
 
   return (
-    <group name="glassWall">
+    <group name="glassWall" ref={wallRef}>
       {/* Bright structure behind the glass so the scene bends richly through each shard */}
       <points geometry={backdropPoints}>
         <pointsMaterial

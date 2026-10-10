@@ -3,6 +3,7 @@ import { StateCreator } from 'zustand/vanilla';
 import * as THREE from 'three';
 // Ensure geo utilities are imported
 import { latLngToVector3, MAP_CONFIG } from '@/lib/geo/index'; 
+import { normalizeSchoolType, type Fee } from '@/lib/taxonomy';
 
 // Interface for the processed university data used within the app
 export interface ProcessedUniversity {
@@ -20,22 +21,37 @@ export interface ProcessedUniversity {
   founded?: string;
   students?: string;
   coordinates?: { lat: number | null; lng: number | null };
-  // NC-frei status
-  ncFrei?: boolean;
   // Application method
   applicationMethod?: 'uni-assist' | 'direct';
+  applicationMethodSource?: { url: string; checked: string };
+  // tuition for non-EU students where known (perSemester null = charged, amount not published by us)
+  nonEuTuition?: { perSemester: string | null; source: string; checked: string };
+  // Researched on official pages (see data/research/): costs, route details, contact
+  fees?: Fee[];
+  applicationRoute?: { method: string; notes: string; url?: string; scope?: string };
+  contact?: { email?: string; phone?: string; url?: string };
+  sources?: Record<string, string>;   // field -> official page it came from
+  researched?: string;                // date those pages were checked
   // Enhanced data properties
   programs?: Array<{
     name: string;
     degree: string;
     applicationDeadlines: {
-      winter?: { start: string; end: string };
-      summer?: { start: string; end: string };
+      winter?: { start?: string; end: string; cycle?: string };   // a year in the date = one published round
+      summer?: { start?: string; end: string; cycle?: string };
     };
     language: string;
     duration: string;
     description?: string;
     specializations?: string[];
+    admission?: 'aptitude' | 'open' | 'restricted' | 'aptitude-and-restricted';   // researched; see taxonomy.admissionOf
+    admissionSource?: string;
+    status?: { status: string; notes?: string };
+    otherDeadlines?: Array<{ kind: string; semester: string | null; start: string | null; end: string; recurring: boolean; cycle?: string | null; scope?: string }>;
+    requirements?: Array<{ label: string; text: string }>;
+    fees?: Fee[];
+    sources?: Record<string, string>;
+    researched?: string;
   }>;
   // Enhanced statistical data for visualizations
   ranking?: {
@@ -61,6 +77,14 @@ export interface ProgramEdge {
   src: string;
   dst: string;
   weight: number;
+}
+
+/** A school related to another through programs that closely match (see scripts/build-relations.ts). */
+export interface SchoolRelation {
+  schoolId: string;
+  tier: 1 | 2 | 3;              // 3 very similar · 2 similar · 1 some overlap
+  total: number;                // matched program pairs
+  pairs: Array<[string, string]>; // [this school's program_id, other school's program_id]
 }
 
 // Interface for the store's state and actions
@@ -99,6 +123,9 @@ export interface SchoolStore {
   selectedProgramId: string | null;
   programEdges: ProgramEdge[];
   programById: Map<string, { schoolName: string; schoolId: string; program: any }>;
+  similarPrograms: Map<string, Array<{ id: string; score: number }>>; // cross-school only
+  schoolRelations: Map<string, SchoolRelation[]>;                       // keyed by school id
+  universityById: Map<string, ProcessedUniversity>;
 
   // Atmosphere (shattered-glass weather/mood system)
   storminess: number;       // 0 calm … 1 storm — driven by application deadlines
@@ -172,6 +199,9 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   selectedProgramId: null,
   programEdges: [],
   programById: new Map(),
+  similarPrograms: new Map(),
+  schoolRelations: new Map(),
+  universityById: new Map(),
 
   // Atmosphere
   storminess: 0.12,
@@ -204,9 +234,11 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
   setNodePositions: (positions) => set({ nodePositions: positions }),
   setShowPrograms: (show) => set({ showPrograms: show, selectedProgramId: null }),
   setSelectedProgramId: (id) => set({ selectedProgramId: id }),
-  setStorminess: (v) => set({ storminess: v }),
-  setIntent: (v) => set({ intent: v }),
-  setLightningFlash: (v) => set({ lightningFlash: v }),
+  // Written every frame by the Atmosphere driver: skip no-op writes so React
+  // subscribers aren't notified 60×/s once the values have settled.
+  setStorminess: (v) => set((s) => (s.storminess === v ? s : { storminess: v })),
+  setIntent: (v) => set((s) => (s.intent === v ? s : { intent: v })),
+  setLightningFlash: (v) => set((s) => (s.lightningFlash === v ? s : { lightningFlash: v })),
   setAtmosphereAuto: (v) => set({ atmosphereAuto: v }),
 
   // --- Initialization Action ---
@@ -228,19 +260,14 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
         const degrees = new Set<string>();
 
         const { default: enhancedData } = await import('../data/enhanced_german_art_schools.json');
-        const { default: programGraph } = await import('../data/program_graph.json');
+        const { default: relations } = await import('../data/relations.json');
         const programByIdMap = new Map<string, { schoolName: string; schoolId: string; program: any }>();
         processedList = Object.entries(enhancedData.universities).map(([name, data]: [string, any]) => {
                 if (!data.coordinates?.lat || !data.coordinates?.lng) {
                     console.warn(`SchoolStore WARN: Missing coordinates for ${name}`);
                 }
 
-                let type = data.type || 'university';
-                if (type === 'academy' || type === 'kunsthochschule' || type === 'university_of_arts') {
-                    type = 'art_academy';
-                } else if (type.includes('design')) {
-                    type = 'design_school';
-                }
+                const type = normalizeSchoolType(data.type);
                 // Extract specializations from programs for similarity calculations
                 const allSpecializations: string[] = [];
                 data.programs?.forEach((program: any) => {
@@ -282,8 +309,14 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
                     students: data.stats?.students ? data.stats.students.toString() : undefined,
                     programs: data.programs || [],
                     coordinates: data.coordinates,
-                    ncFrei: data.ncFrei,
                     applicationMethod: data.applicationMethod,
+                    applicationMethodSource: data.applicationMethodSource,
+                    nonEuTuition: data.nonEuTuition,
+                    fees: data.fees,
+                    applicationRoute: data.applicationRoute,
+                    contact: data.contact,
+                    sources: data.sources,
+                    researched: data.researched,
                     // Enhanced fields
                     ranking: data.ranking,
                     stats: data.stats,
@@ -344,8 +377,9 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
             isLoading: false,
             controlsEnabled: true,
             nodePositions: positions, // Use the calculated positions map
-            programEdges: (programGraph as any).edges as ProgramEdge[],
+            ...buildRelations(relations as unknown as RelationsFile),
             programById: programByIdMap,
+            universityById: new Map(processedList.map((u) => [u.id, u])),
         });
 
     } catch (error) {
@@ -355,5 +389,22 @@ const schoolStoreCreator: StateCreator<SchoolStore> = (set, get) => ({
     }
   },
 });
+
+interface RelationsFile {
+  ids: string[];
+  programs: Array<Array<[number, number]>>;
+  schools: Record<string, Array<{ s: string; t: 1 | 2 | 3; total: number; p: Array<[number, number]> }>>;
+}
+
+function buildRelations(r: RelationsFile) {
+  const similarPrograms = new Map(r.ids.map((id, i) => [id, r.programs[i].map(([j, score]) => ({ id: r.ids[j], score }))]));
+  const schoolRelations = new Map(Object.entries(r.schools).map(([id, rels]) => [
+    id,
+    rels.map((x) => ({ schoolId: x.s, tier: x.t, total: x.total, pairs: x.p.map(([a, b]) => [r.ids[a], r.ids[b]] as [string, string]) })),
+  ]));
+  const programEdges: ProgramEdge[] = [];
+  similarPrograms.forEach((hits, src) => hits.forEach((h) => programEdges.push({ src, dst: h.id, weight: h.score })));
+  return { similarPrograms, schoolRelations, programEdges };
+}
 
 export const useSchoolStore = create<SchoolStore>(schoolStoreCreator);

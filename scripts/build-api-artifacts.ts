@@ -3,7 +3,8 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 const SCHOOLS_PATH = resolve(process.cwd(), 'src/data/enhanced_german_art_schools.json');
-const GRAPH_PATH = resolve(process.cwd(), 'src/data/program_graph.json');
+// cross-school similarity (scripts/build-relations.ts), not raw cosine — see that script's header
+const RELATIONS_PATH = resolve(process.cwd(), 'src/data/relations.json');
 const EMB_PATH = resolve(process.cwd(), 'data/program_embeddings.json');
 const OUT_DIR = resolve(process.cwd(), 'api/data');
 
@@ -54,9 +55,10 @@ interface RawData {
   universities: Record<string, RawSchool>;
 }
 
-interface GraphFile {
-  model: string;
-  edges: Array<{ src: string; dst: string; weight: number }>;
+interface RelationsFile {
+  method: string;
+  ids: string[];
+  programs: Array<Array<[number, number]>>; // per id: [neighbor index, score]
 }
 
 interface EmbeddingsFile {
@@ -70,6 +72,7 @@ interface EmbeddingsFile {
 interface MonthDay {
   month: number;
   day: number;
+  year?: number; // only for a date published for one round
 }
 
 interface Deadline {
@@ -134,7 +137,13 @@ function normalizeMonthWord(word: string): string {
 }
 
 function parseDeadlineString(raw: string): MonthDay | null {
-  const s = raw.trim();
+  let s = raw.trim();
+  // "4 February 2027" — a date published for one round only; keep its year
+  const dated = s.match(/^(.*\S)\s+(\d{4})$/);
+  if (dated) {
+    const md = parseDeadlineString(dated[1]);
+    return md && { ...md, year: Number(dated[2]) };
+  }
   // "1 March" / "15. März"
   let m = s.match(/^(\d{1,2})\.?\s+([A-Za-zÄÖÜäöüß]+)$/);
   if (m) {
@@ -216,7 +225,7 @@ function main() {
   }
 
   const raw = JSON.parse(readFileSync(SCHOOLS_PATH, 'utf8')) as RawData;
-  const graphFile = JSON.parse(readFileSync(GRAPH_PATH, 'utf8')) as GraphFile;
+  const relations = JSON.parse(readFileSync(RELATIONS_PATH, 'utf8')) as RelationsFile;
   console.log('loading embeddings (29MB)...');
   const embFile = JSON.parse(readFileSync(EMB_PATH, 'utf8')) as EmbeddingsFile;
 
@@ -320,7 +329,9 @@ function main() {
   const seenPairs = new Set<string>();
   let droppedEdges = 0;
   const staleGraphIds = new Set<string>();
-  for (const { src, dst, weight } of graphFile.edges) {
+  const relationEdges = relations.programs.flatMap((hits, i) =>
+    hits.map(([j, weight]) => ({ src: relations.ids[i], dst: relations.ids[j], weight })));
+  for (const { src, dst, weight } of relationEdges) {
     if (!programs[src] || !programs[dst]) {
       droppedEdges++;
       if (!programs[src]) staleGraphIds.add(src);
@@ -369,18 +380,25 @@ function main() {
     console.warn(`warning: ${programsWithoutVectors.length} programs have no embedding (kept in programs.json, absent from vectors)`);
   }
 
-  // ----- spot-check: int8 cosine vs edge weights -----
-  console.log('spot-checking int8 cosine against graph edge weights:');
+  // ----- spot-check: int8 cosine vs float cosine (quantization error) -----
+  // Edge weights are residual similarities, not raw cosine, so compare against the floats.
+  console.log('spot-checking int8 cosine against float cosine:');
+  const floatCosine = (a: number[], b: number[]) => {
+    let dot = 0, na = 0, nb = 0;
+    for (let i = 0; i < a.length; i++) { dot += a[i] * b[i]; na += a[i] * a[i]; nb += b[i] * b[i]; }
+    return dot / (Math.sqrt(na) * Math.sqrt(nb) || 1);
+  };
   let checked = 0;
-  for (const { src, dst, weight } of graphFile.edges) {
+  for (const { src, dst } of relationEdges) {
     if (checked >= 3) break;
     const a = quantized.get(src);
     const b = quantized.get(dst);
     if (!a || !b) continue;
     const cos = int8Cosine(a, b);
-    const diff = Math.abs(cos - weight);
-    console.log(`  ${src} <-> ${dst}: edge=${weight} int8=${cos.toFixed(4)} diff=${diff.toFixed(4)}`);
-    if (diff > 0.02) fail(`int8 cosine deviates from edge weight by ${diff.toFixed(4)} (> 0.02)`);
+    const exact = floatCosine(embFile.embeddings[src], embFile.embeddings[dst]);
+    const diff = Math.abs(cos - exact);
+    console.log(`  ${src} <-> ${dst}: float=${exact.toFixed(4)} int8=${cos.toFixed(4)} diff=${diff.toFixed(4)}`);
+    if (diff > 0.02) fail(`int8 cosine deviates from float cosine by ${diff.toFixed(4)} (> 0.02)`);
     checked++;
   }
   if (checked < 3) fail('fewer than 3 edges available for spot-check');
@@ -435,6 +453,7 @@ function main() {
     },
     data_hash: dataHash,
     embedding_model: embFile.model,
+    similarity_method: relations.method,
     license: 'TBD',
   });
 

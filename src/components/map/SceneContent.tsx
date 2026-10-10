@@ -107,7 +107,7 @@ export function SceneContent(_props: SceneContentProps) {
         enableRotate={false}
         enablePan={false}
         minDistance={12}
-        maxDistance={24}
+        maxDistance={Math.max(24, cameraPosition[2] + 2)}
         enableZoom={!isLoading && controlsEnabled}
         enabled={controlsEnabled}
         target={new THREE.Vector3(...cameraTarget)}

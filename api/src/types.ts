@@ -38,6 +38,7 @@ export type DegreeLevel = 'bachelor' | 'master' | 'diploma' | 'phd' | 'other';
 export interface DeadlineMonthDay {
   month: number;
   day: number;
+  year?: number; // set only for a date published for one round (never annual)
 }
 
 export interface DeadlineWindow {

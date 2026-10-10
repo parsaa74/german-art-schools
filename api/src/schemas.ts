@@ -70,8 +70,9 @@ export const DegreeLevelSchema = z.enum([
 export const DeadlineWindowSchema = z
   .object({
     semester: z.string(),
-    start: z.object({ month: z.number(), day: z.number() }).nullable(),
-    end: z.object({ month: z.number(), day: z.number() }).nullable(),
+    // year is set only for dates published for a single round (never annual)
+    start: z.object({ month: z.number(), day: z.number(), year: z.number().optional() }).nullable(),
+    end: z.object({ month: z.number(), day: z.number(), year: z.number().optional() }).nullable(),
   })
   .openapi('DeadlineWindow');
 

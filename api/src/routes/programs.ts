@@ -14,7 +14,7 @@ import type { MonthDay } from '../services';
 
 /** open_on is validated as YYYY-MM-DD upstream; windows are year-agnostic so only month/day matter. */
 function toMonthDay(iso: string): MonthDay {
-  return { month: Number(iso.slice(5, 7)), day: Number(iso.slice(8, 10)) };
+  return { month: Number(iso.slice(5, 7)), day: Number(iso.slice(8, 10)), year: Number(iso.slice(0, 4)) };
 }
 
 const router = createRouter();

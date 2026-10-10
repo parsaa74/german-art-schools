@@ -20,7 +20,7 @@ import { useFrame, useThree } from '@react-three/fiber';
 import { Environment, Lightformer } from '@react-three/drei';
 import * as THREE from 'three';
 import { useSchoolStore } from '@/stores/schoolStore';
-import { ATMO } from './config';
+import { ATMO, REDUCED_MOTION } from './config';
 import { MoodySky } from './MoodySky';
 
 const lerp = THREE.MathUtils.lerp;
@@ -101,7 +101,7 @@ function Rain() {
   useFrame(({ clock }) => {
     const m = obj.material as THREE.ShaderMaterial;
     m.uniforms.uTime.value = clock.elapsedTime;
-    m.uniforms.uWeather.value = useSchoolStore.getState().storminess;
+    m.uniforms.uWeather.value = REDUCED_MOTION ? 0 : useSchoolStore.getState().storminess;
   });
   return <primitive object={obj} />;
 }
@@ -172,7 +172,7 @@ export function Atmosphere() {
 
     // --- lightning
     let flash = flashRef.current * ATMO.lightning.decay;
-    if (W > ATMO.lightning.threshold && Math.random() < ATMO.lightning.chancePerFrame * W) {
+    if (!REDUCED_MOTION && W > ATMO.lightning.threshold && Math.random() < ATMO.lightning.chancePerFrame * W) {
       flash = 0.7 + Math.random() * 0.5;
     }
     flashRef.current = flash;

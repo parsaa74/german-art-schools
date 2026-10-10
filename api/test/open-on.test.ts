@@ -3,9 +3,11 @@ import app from '../src/index';
 import { windowContains } from '../src/services';
 
 // Real fixtures from api/data/programs.json:
-// - HFBK_BFA has a plain winter window 03-01 .. 04-15
+// - ROSTOCK_BMUS has a plain winter window 03-01 .. 04-15
+// - HFBK_BFA has a window dated for one round only: 2027-02-04 .. 2027-03-05
 // - KHM_DIPLOMA has a wrap-around winter window 12-01 .. 01-15
 // - DRESDEN_DIPLOMA has a single window with start=null, end=03-15
+const ROSTOCK_BMUS = 'hochschule-fur-musik-und-theater-rostock--kunstlerische-ausbildung--bachelor-of-music';
 const HFBK_BFA = 'hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts';
 const KHM_DIPLOMA = 'kunsthochschule-fur-medien-koln--media-arts--diploma';
 const DRESDEN_DIPLOMA = 'hfbk-dresden--fine-arts--diploma';
@@ -25,18 +27,25 @@ async function idsOpenOn(date: string): Promise<string[]> {
 
 describe('open_on filter', () => {
   it('matches a date inside a plain window', async () => {
-    expect(await idsOpenOn('2026-03-15')).toContain(HFBK_BFA);
+    expect(await idsOpenOn('2026-03-15')).toContain(ROSTOCK_BMUS);
   });
 
   it('does not match a date outside the window', async () => {
-    expect(await idsOpenOn('2026-07-04')).not.toContain(HFBK_BFA);
+    expect(await idsOpenOn('2026-07-04')).not.toContain(ROSTOCK_BMUS);
   });
 
   it('boundary days are inclusive (start and end)', async () => {
-    expect(await idsOpenOn('2026-03-01')).toContain(HFBK_BFA);
-    expect(await idsOpenOn('2026-04-15')).toContain(HFBK_BFA);
-    expect(await idsOpenOn('2026-04-16')).not.toContain(HFBK_BFA);
-    expect(await idsOpenOn('2026-02-28')).not.toContain(HFBK_BFA);
+    expect(await idsOpenOn('2026-03-01')).toContain(ROSTOCK_BMUS);
+    expect(await idsOpenOn('2026-04-15')).toContain(ROSTOCK_BMUS);
+    expect(await idsOpenOn('2026-04-16')).not.toContain(ROSTOCK_BMUS);
+    expect(await idsOpenOn('2026-02-28')).not.toContain(ROSTOCK_BMUS);
+  });
+
+  it('a dated window matches only inside its own round', async () => {
+    expect(await idsOpenOn('2027-02-04')).toContain(HFBK_BFA);
+    expect(await idsOpenOn('2027-03-05')).toContain(HFBK_BFA);
+    expect(await idsOpenOn('2026-02-20')).not.toContain(HFBK_BFA); // same month/day, other year
+    expect(await idsOpenOn('2028-02-20')).not.toContain(HFBK_BFA);
   });
 
   it('handles wrap-around windows (Dec 1 -> Jan 15)', async () => {
@@ -78,7 +87,7 @@ describe('open_on filter', () => {
     const res = await app.request('/v1/programs?open_on=2026-03-15&degree_level=bachelor&limit=200');
     const body = await res.json() as any;
     for (const p of body.items) expect(p.degree_level).toBe('bachelor');
-    expect(body.items.map((p: any) => p.program_id)).toContain(HFBK_BFA);
+    expect(body.items.map((p: any) => p.program_id)).toContain(ROSTOCK_BMUS);
   });
 });
 

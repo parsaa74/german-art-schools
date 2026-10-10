@@ -132,3 +132,8 @@ export const ATMO = {
 export function rattleAmplitude(storminess: number, clarity: number): number {
   return storminess * (R * 0.0015 + (1 - clarity) * R * 0.004);
 }
+
+/** Users who ask the OS for less motion get a still wall: no sway, ripple, rain or lightning.
+ *  ponytail: read once at load — a reload picks up a changed OS setting. */
+export const REDUCED_MOTION =
+  typeof window !== 'undefined' && !!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;

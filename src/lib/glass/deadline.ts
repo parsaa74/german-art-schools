@@ -21,7 +21,7 @@ function parseDeadlineDate(dateStr?: string): Date | null {
   const day = parseInt(parts[0], 10);
   const month = MONTHS[parts[1].toLowerCase()];
   if (isNaN(day) || month === undefined) return null;
-  return new Date(new Date().getFullYear(), month, day);
+  return new Date(parts[2] ? parseInt(parts[2], 10) : new Date().getFullYear(), month, day); // dated cycles keep their year
 }
 
 /** Days until the closest still-open deadline, or null if none. */

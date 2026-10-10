@@ -13,6 +13,7 @@ import type {
 export interface MonthDay {
   month: number;
   day: number;
+  year?: number;
 }
 
 export interface ProgramFilters {
@@ -54,6 +55,12 @@ export interface Pagination {
 /** Inclusive containment check on a year-agnostic month/day window. */
 export function windowContains(w: DeadlineWindow, d: MonthDay): boolean {
   if (w.start === null || w.end === null) return false;
+  // a window dated for one round matches only inside that round
+  if (w.start.year && w.end.year) {
+    if (d.year === undefined) return false;
+    const day = (m: { month: number; day: number; year?: number }) => m.year! * 10000 + m.month * 100 + m.day;
+    return day(w.start) <= day(d) && day(d) <= day(w.end);
+  }
   const s = w.start.month * 100 + w.start.day;
   const e = w.end.month * 100 + w.end.day;
   const x = d.month * 100 + d.day;

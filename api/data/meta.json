@@ -1,13 +1,14 @@
 {
   "snapshot_date": "2026-06-11",
-  "generated_at": "2026-06-11T23:27:36.483Z",
+  "generated_at": "2026-10-10T20:17:17.414Z",
   "counts": {
     "schools": 93,
     "programs": 765,
-    "edges": 3029,
+    "edges": 2493,
     "vectors": 765
   },
-  "data_hash": "5988bd9077f9",
+  "data_hash": "d4696488da72",
   "embedding_model": "gemini-embedding-2-preview",
+  "similarity_method": "school-mean-removed cosine; similar if same subject group & >= 0.33, or >= 0.55",
   "license": "TBD"
 }

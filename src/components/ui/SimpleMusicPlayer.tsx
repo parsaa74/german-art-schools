@@ -139,7 +139,7 @@ const SimpleMusicPlayer: React.FC = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
-            className="fixed top-4 left-20 z-30"
+            className="fixed bottom-4 right-4 sm:bottom-auto sm:right-auto sm:top-4 sm:left-20 z-30"
           >
             <motion.button
               onClick={() => setIsExpanded(true)}
@@ -170,7 +170,7 @@ const SimpleMusicPlayer: React.FC = () => {
             initial={{ opacity: 0, scale: 0.9, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: -20 }}
-            className="fixed top-4 left-20 z-30 w-72"
+            className="fixed bottom-4 right-4 sm:bottom-auto sm:right-auto sm:top-4 sm:left-20 z-30 w-72 max-w-[calc(100vw-2rem)]"
           >
             <div className="ui-organic p-4 text-white">
               {/* Header with close button */}

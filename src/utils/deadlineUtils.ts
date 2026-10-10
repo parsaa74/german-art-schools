@@ -27,9 +27,13 @@ const MONTHS: Record<string, number> = {
   september: 8, october: 9, november: 10, december: 11,
 };
 
+/** "4 February 2027" belongs to one published cycle; "4 February" recurs every year. */
+export const isDated = (dateStr?: string) => /\d{4}$/.test(dateStr?.trim() ?? '');
+
 /**
  * Parse deadline date strings like "1 May", "15 June" into Date objects.
  * If the date has already passed this year, returns next year's date.
+ * A date with its own year ("1 May 2027") is never moved to another year.
  */
 export function parseDeadlineDate(dateStr: string, year?: number): Date {
   const parts = dateStr.trim().split(/\s+/);
@@ -42,6 +46,7 @@ export function parseDeadlineDate(dateStr: string, year?: number): Date {
   if (isNaN(day) || month === undefined) {
     throw new Error(`Cannot parse deadline date: "${dateStr}"`);
   }
+  if (parts[2]) return new Date(parseInt(parts[2], 10), month, day);
 
   const now = new Date();
   const resolvedYear = year ?? now.getFullYear();
@@ -54,6 +59,13 @@ export function parseDeadlineDate(dateStr: string, year?: number): Date {
 
   return date;
 }
+
+const PASSED_CYCLE: DeadlineStatus = {
+  status: 'closed',
+  daysRemaining: 0,
+  label: 'Closed — next dates not published yet',
+  color: 'text-gray-400 bg-gray-500/20 border-gray-500/50',
+};
 
 function daysBetween(a: Date, b: Date): number {
   const msPerDay = 1000 * 60 * 60 * 24;
@@ -84,6 +96,7 @@ export function getDeadlineStatus(deadline: DeadlineWindow): DeadlineStatus | nu
     let endOnly = tryParseDeadlineDate(deadline.end);
     if (!endOnly) return null;
     const days = daysBetween(now, endOnly);
+    if (days < 0) return PASSED_CYCLE;
     if (days <= 14) {
       return {
         status: 'closing-soon',
@@ -117,6 +130,9 @@ export function getDeadlineStatus(deadline: DeadlineWindow): DeadlineStatus | nu
   if (endDate <= startDate) {
     endDate = parseDeadlineDate(deadline.end!, currentYear + 1);
   }
+
+  // A dated cycle that has passed says nothing about next year's dates
+  if (now > endDate && isDated(deadline.end)) return PASSED_CYCLE;
 
   // If the entire window has passed, shift both to next cycle
   if (now > endDate) {
@@ -159,11 +175,11 @@ export function getDeadlineStatus(deadline: DeadlineWindow): DeadlineStatus | nu
     };
   }
 
-  // Closed / far future
+  // This round is over; the next window opens more than 90 days from now
   return {
     status: 'closed',
     daysRemaining: daysUntilStart > 0 ? daysUntilStart : 0,
-    label: 'Closed',
+    label: `Next window opens ${deadline.start}`,
     color: 'text-gray-400 bg-gray-500/20 border-gray-500/50',
   };
 }

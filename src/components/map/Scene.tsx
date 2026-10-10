@@ -7,7 +7,8 @@ import { LineMaterial } from 'three-stdlib';
 import dynamic from 'next/dynamic';
 import * as THREE from 'three';
 import { useParams } from 'next/navigation';
-import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore';
+import { useSchoolStore } from '@/stores/schoolStore';
+import { shallow } from 'zustand/shallow';
 import InfoPanel from './InfoPanel';
 import type { ProcessedUniversity as ProcessedUniversityType } from '@/stores/schoolStore';
 import { useMapStore } from '@/stores/mapStore';
@@ -17,17 +18,18 @@ import { FiHelpCircle, FiGithub } from 'react-icons/fi'
 import { useSpring, animated } from '@react-spring/web'
 import { CollapsibleControlPanel } from '@/components/ui/CollapsibleControlPanel';
 import { FilterWizard } from '@/components/ui/FilterWizard';
-import { SlidersHorizontal, X } from 'lucide-react';
+import { SlidersHorizontal } from 'lucide-react';
 import { ViewModeToggle } from './ViewModeToggle'; // Import the new toggle
-import { ProgramsToggle } from './ProgramsToggle';
 import { ProgramInfoPanel } from './ProgramInfoPanel';
 import { motion } from 'framer-motion';
 
 import { IntroSequence } from './IntroSequence'; // Import the new component
 import { SearchModal } from '@/components/ui/SearchModal';
 import { SearchButton } from '@/components/ui/SearchButton';
-import { SearchTooltip } from '@/components/ui/SearchTooltip';
-import { RelationshipLegend } from '@/components/ui/relationship-legend';
+import { Shortlist } from '@/components/ui/Shortlist';
+import { FilterControls } from '@/components/ui/FilterControls';
+import { SCHOOL_TYPES } from '@/lib/taxonomy';
+import { ATMO } from './atmosphere/config';
 // import { TypeLegend } from '@/components/ui/type-legend'; // Moved to help modal
 import SimpleMusicPlayer from '@/components/ui/SimpleMusicPlayer';
 
@@ -260,6 +262,15 @@ function SceneEventHandler({
     return null;
 }
 
+function HelpBlock({ title, children }: { title: string; children: React.ReactNode }) {
+    return (
+        <div>
+            <h3 className="text-xs uppercase tracking-wider text-cyan-300 mb-1.5">{title}</h3>
+            <ul className="space-y-1.5 leading-snug">{children}</ul>
+        </div>
+    );
+}
+
 // --- START: Scene Component ---
 interface SceneProps {
     lang?: string;
@@ -290,31 +301,33 @@ export function Scene({ lang, dict }: SceneProps) {
         setSelectedUniversity,
         setConnectionLines,
         activeStateFilter,
-        setActiveStateFilter,
         activeProgramFilter,
-        setActiveProgramFilter,
         activeTypeFilter,
-        setActiveTypeFilter,
         activeSemesterFilter,
-        setActiveSemesterFilter,
         activeNcFilter,
-        setActiveNcFilter,
         activeApplicationMethodFilter,
-        setActiveApplicationMethodFilter,
         activeCourseLanguageFilter,
-        setActiveCourseLanguageFilter,
         activeDegreeFilter,
-        setActiveDegreeFilter,
-        uniqueStates,
-        uniqueProgramTypes,
-        uniqueCourseLanguages,
-        uniqueDegreeTypes,
         visualizationMode,
         searchQuery,
-        setSearchQuery
-    } = useSchoolStore();
+    } = useSchoolStore((st) => ({
+        processedUniversities: st.processedUniversities,
+        selectedUniversity: st.selectedUniversity,
+        setSelectedUniversity: st.setSelectedUniversity,
+        setConnectionLines: st.setConnectionLines,
+        activeStateFilter: st.activeStateFilter,
+        activeProgramFilter: st.activeProgramFilter,
+        activeTypeFilter: st.activeTypeFilter,
+        activeSemesterFilter: st.activeSemesterFilter,
+        activeNcFilter: st.activeNcFilter,
+        activeApplicationMethodFilter: st.activeApplicationMethodFilter,
+        activeCourseLanguageFilter: st.activeCourseLanguageFilter,
+        activeDegreeFilter: st.activeDegreeFilter,
+        visualizationMode: st.visualizationMode,
+        searchQuery: st.searchQuery,
+    }), shallow);
 
-    const { activePanel, setActivePanel } = useMapStore();
+    const { activePanel, setActivePanel, wizardOpen } = useMapStore();
     const [isClient, setIsClient] = useState(false);
     const initializeSchoolStore = useSchoolStore((state) => state.initializeStore);
     const [showHelp, setShowHelp] = useState(false);
@@ -394,30 +407,22 @@ export function Scene({ lang, dict }: SceneProps) {
         config: { mass: 1, tension: 280, friction: 30 }
       })
 
-    // Derive unique list of school types for the type filter UI
-    const uniqueTypes = useMemo<string[]>(() => {
-        if (!processedUniversities?.length) return []
-        const typeSet = new Set<string>()
-        processedUniversities.forEach((u: ProcessedUniversity) => typeSet.add(u.type))
-        return Array.from(typeSet).sort()
-      }, [processedUniversities]);
 
-    // Handlers for UI OUTSIDE the canvas
-    // Handle close panel AND clear all filters for a complete reset
-    const handleClosePanel = useCallback(() => { 
-        setSelectedUniversity(null); 
+    // Closing a school only deselects it — the user's filters stay put, so they
+    // can step through the schools of a filtered set one by one.
+    const handleClosePanel = useCallback(() => {
+        setSelectedUniversity(null);
         setConnectionLines([]);
-        // Also clear all filters when closing the info panel
-        setActiveStateFilter(null);
-        setActiveProgramFilter(null);
-        setActiveTypeFilter(null);
-        setActiveSemesterFilter(null);
-        setActiveNcFilter(null);
-        setActiveCourseLanguageFilter(null);
-        setActiveDegreeFilter(null);
-        setSearchQuery('');
-    }, [setSelectedUniversity, setConnectionLines, setActiveStateFilter, setActiveProgramFilter, setActiveTypeFilter, setActiveSemesterFilter, setActiveNcFilter, setActiveApplicationMethodFilter, setActiveCourseLanguageFilter, setActiveDegreeFilter, setSearchQuery]);
-    
+    }, [setSelectedUniversity, setConnectionLines]);
+
+    const anyFilter = !!(activeStateFilter || activeProgramFilter || activeTypeFilter || activeSemesterFilter ||
+        activeNcFilter !== null || activeApplicationMethodFilter || activeCourseLanguageFilter || activeDegreeFilter || searchQuery);
+    // First-visit caption: says what the wall is until the user starts exploring.
+    const [explored, setExplored] = useState(false);
+    useEffect(() => {
+        if (selectedUniversity || anyFilter || wizardOpen || activePanel) setExplored(true);
+    }, [selectedUniversity, anyFilter, wizardOpen, activePanel]);
+
     // Define animation variants for the main view cross-fade
     const visVariants = {
         hidden: { opacity: 0, transition: { duration: 0.6, ease: "easeInOut" } },
@@ -518,26 +523,25 @@ export function Scene({ lang, dict }: SceneProps) {
                 <div className="flex items-center gap-1 sm:gap-2 invisible pointer-events-none" aria-hidden="true">
                     <div className="w-10 h-10 sm:w-12 sm:h-12" />
                     <div className="w-10 h-10 sm:w-12 sm:h-12" />
+                    <div className="hidden sm:block w-12 h-12" />
                 </div>
 
                 {/* Center: search */}
                 <div className="flex-1 flex justify-center relative">
                     {!showIntroSeq && (
-                        <>
-                            <SearchButton onClick={() => setShowSearchModal(true)} />
-                            <SearchTooltip />
-                        </>
+                        <SearchButton onClick={() => setShowSearchModal(true)} />
                     )}
                 </div>
 
-                {/* Right: GitHub + Help */}
+                {/* Right: shortlist + GitHub + Help */}
                 <div className="flex items-center gap-1 sm:gap-2">
+                    {!showIntroSeq && <Shortlist />}
                     <animated.a
                         style={githubButtonSpring}
                         href="https://github.com/parsaa74/german-art-schools"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 ui-organic text-white hover:text-white transition-all duration-300"
+                        className="hidden sm:flex items-center justify-center w-12 h-12 ui-organic text-white hover:text-white transition-all duration-300"
                         aria-label="View Source on GitHub"
                     >
                         <FiGithub size={18} />
@@ -553,146 +557,56 @@ export function Scene({ lang, dict }: SceneProps) {
                 </div>
             </div>
             {showHelp && (
-                <div className="fixed inset-0 z-40 flex items-center justify-center">
+                <div className="fixed inset-0 z-40 flex items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="help-heading">
                    <div className="absolute inset-0 bg-black/80 backdrop-blur-md"
                         onClick={() => setShowHelp(false)}></div>
                    <animated.div
                        style={modalSpring}
                        className="relative max-w-2xl w-full mx-3 sm:mx-4 overflow-hidden"
                        >
-                       <div className="relative ui-organic p-4 sm:p-6 overflow-y-auto max-h-[85vh]">
-                           {/* Decorative elements */}
-                           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600/0 via-blue-400 to-cyan-400/0"></div>
-                           <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-r from-cyan-400/0 via-blue-400 to-blue-600/0"></div>
-                           <div className="absolute top-[10%] -left-20 w-40 h-40 rounded-full bg-blue-500/10 blur-3xl"></div>
-                           <div className="absolute bottom-[10%] -right-20 w-60 h-60 rounded-full bg-cyan-500/10 blur-3xl"></div>
-
-                           <h2 className="font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-200 to-blue-400 text-lg mb-3 text-center">
-                               NAVIGATING THE CONSTELLATION
+                       <div className="relative ui-organic p-4 sm:p-6 overflow-y-auto overflow-x-hidden max-h-[85vh]">
+                           <h2 id="help-heading" className="font-bold tracking-wider text-cyan-100 text-lg mb-1 text-center">
+                               HOW TO READ THE WALL
                            </h2>
+                           <p className="text-sm text-slate-300 text-center mb-4">
+                               Every pane of glass is one of {processedUniversities.length} art, design, film and music schools in Germany,
+                               placed roughly where it is on the map — north at the top. The fine cracks inside a pane are its programs.
+                           </p>
 
-                           <div className="space-y-2 relative z-10">
-                               {/* ... Help content ... */}
-                               <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-4">
-                                 <div className="col-span-1 flex flex-col">
-                                   <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Interaction</span>
-                                   <ul className="space-y-1.5 text-sm text-slate-200">
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span><span className="font-medium text-white">Drag:</span> Orbit camera</span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span><span className="font-medium text-white">Scroll:</span> Zoom in/out</span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span><span className="font-medium text-white">Click:</span> Select node</span>
-                                     </li>
-                                   </ul>
-                                 </div>
-
-                                 <div className="col-span-1 flex flex-col">
-                                   <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Node Colors</span>
-                                   <ul className="space-y-1.5 text-sm text-slate-200">
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-red-500 rounded-full"></div>
-                                       <span><span className="font-medium text-red-400">Art Academy</span></span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-green-500 rounded-full"></div>
-                                       <span><span className="font-medium text-green-400">Design School</span></span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-purple-500 rounded-full"></div>
-                                       <span><span className="font-medium text-purple-400">Arts University</span></span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-amber-500 rounded-full"></div>
-                                       <span><span className="font-medium text-amber-400">Film University</span></span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-blue-500 rounded-full"></div>
-                                       <span><span className="font-medium text-blue-400">General</span></span>
-                                     </li>
-                                   </ul>
-                                 </div>
-
-                                 <div className="col-span-1 flex flex-col">
-                                   <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Node Sizes</span>
-                                   <ul className="space-y-1.5 text-sm text-slate-200">
-                                     <li className="flex items-start">
-                                       <div className="w-2 h-2 mt-1 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span><span className="font-medium text-white">Students:</span> More = Larger</span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span><span className="font-medium text-white">Ranking:</span> #1-10 = Largest</span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1 h-1 mt-2 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span><span className="font-medium text-white">Programs:</span> More = Bigger</span>
-                                     </li>
-                                   </ul>
-                                 </div>
-
-                                 <div className="col-span-1 sm:col-span-2 flex flex-col">
-                                   <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">When Node Selected</span>
-                                   <ul className="space-y-1.5 text-sm text-slate-200">
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-green-500 rounded-full"></div>
-                                       <span><span className="font-medium text-green-400">Green:</span> Very Strong relationship (70%+)</span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-yellow-500 rounded-full"></div>
-                                       <span><span className="font-medium text-yellow-400">Yellow:</span> Moderate relationship (30-50%)</span>
-                                     </li>
-                                     <li className="flex items-start">
-                                       <div className="w-1.5 h-1.5 mt-1.5 mr-2 bg-gray-500 rounded-full"></div>
-                                       <span><span className="font-medium text-gray-400">Gray:</span> Minimal relationship (&lt; 15%)</span>
-                                     </li>
-                                   </ul>
-                                 </div>
-
-                                 <div className="col-span-1 sm:col-span-3 mt-2 sm:mt-4 flex flex-col">
-                                   <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">UI Elements</span>
-                                   <div className="flex flex-wrap gap-x-8 gap-y-2">
-                                     <div className="flex items-center">
-                                       <div className="w-1.5 h-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span className="text-sm text-slate-200"><span className="font-medium text-white">Search (Top Center):</span> Find schools, states, programs</span>
-                                     </div>
-                                     <div className="flex items-center">
-                                       <div className="w-1.5 h-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span className="text-sm text-slate-200"><span className="font-medium text-white">Legends (Bottom):</span> Color coding guides</span>
-                                     </div>
-                                     <div className="flex items-center">
-                                       <div className="w-1.5 h-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span className="text-sm text-slate-200"><span className="font-medium text-white">Filters (Top Left):</span> Narrow down results</span>
-                                     </div>
-                                   </div>
-                                 </div>
-
-                                 <div className="col-span-1 sm:col-span-3 mt-2 flex flex-col">
-                                   <span className="text-xs uppercase tracking-wider text-blue-300 mb-1">Keyboard Shortcuts</span>
-                                   <div className="flex flex-wrap gap-x-8 gap-y-2">
-                                     <div className="flex items-center">
-                                       <div className="w-1.5 h-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span className="text-sm text-slate-200"><span className="font-medium text-white">Cmd/Ctrl + K:</span> Open search</span>
-                                     </div>
-                                     <div className="flex items-center">
-                                       <div className="w-1.5 h-1.5 mr-2 bg-cyan-400 rounded-full"></div>
-                                       <span className="text-sm text-slate-200"><span className="font-medium text-white">Escape:</span> Close modals</span>
-                                     </div>
-                                   </div>
-                                 </div>
-                               </div>
-                               <animated.button
-                                   onClick={() => setShowHelp(false)}
-                                   className="mt-6 w-full ui-button-organic text-white font-semibold tracking-wider"
-                               >
-                                   RETURN TO CONSTELLATION
-                               </animated.button>
+                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 text-sm text-slate-200">
+                             <HelpBlock title="Explore">
+                               <li><b className="text-white">Hover</b> a pane to see the school&apos;s name.</li>
+                               <li><b className="text-white">Click</b> it to open the school — the pane cracks into its programs. Click a fragment, or a program in the panel, for details.</li>
+                               <li><b className="text-white">Scroll</b> to zoom. The 2D button (bottom left) shows the same schools as a network.</li>
+                             </HelpBlock>
+                             <HelpBlock title="Narrow down">
+                               <li><b className="text-white">✦ Guide me</b> asks one question at a time.</li>
+                               <li><b className="text-white">Filters</b> (top left) has every option and lists the matching schools.</li>
+                               <li>Schools that don&apos;t match break away from the wall; clear the filter and they come back.</li>
+                               <li><b className="text-white">Keep</b> a program to add it to your shortlist (bookmark, top right). Fill in your situation there for a personal check: what to prepare, by when, and what it costs. It stays on your device.</li>
+                             </HelpBlock>
+                             <HelpBlock title="Colours (appear once you filter)">
+                               {Object.values(SCHOOL_TYPES).map((t) => (
+                                 <li key={t.label} className="flex items-center gap-2">
+                                   <span className="h-2 w-2 rounded-full flex-shrink-0" style={{ background: t.color }} />{t.label}
+                                 </li>
+                               ))}
+                             </HelpBlock>
+                             <HelpBlock title="Light & cracks">
+                               <li><span className="text-amber-300">Gold-lit panes</span> are schools with similar programs to the one you hover or open — brighter means more in common. The school panel lists them with the matching programs.</li>
+                               <li>Cracks pulse <span className="text-amber-300">amber</span> when an application deadline is under {ATMO.deadlineStorm.approachingDays} days away, <span className="text-red-400">red</span> under {ATMO.deadlineStorm.urgentDays}.</li>
+                             </HelpBlock>
+                             <HelpBlock title="Keyboard">
+                               <li><b className="text-white">{typeof navigator !== 'undefined' && /Mac|iPhone|iPad/.test(navigator.platform) ? '⌘' : 'Ctrl'} + K</b> — search schools, programs and states</li>
+                               <li><b className="text-white">Esc</b> — close the open panel</li>
+                             </HelpBlock>
                            </div>
+                           <button
+                               onClick={() => setShowHelp(false)}
+                               className="mt-6 w-full ui-button-organic text-white font-semibold tracking-wider"
+                           >
+                               BACK TO THE WALL
+                           </button>
                        </div>
                    </animated.div>
                </div>
@@ -708,144 +622,13 @@ export function Scene({ lang, dict }: SceneProps) {
                         position="top-left"
                         panelTitle="Filters"
                         triggerIcon={<SlidersHorizontal size={18} />}
+                        isOpen={activePanel === 'filters'}
+                        onOpenChange={(open) => setActivePanel(open ? 'filters' : null)}
                     >
-                        {/* State Filter */}
-                        <div className="mb-1">
-                          <label htmlFor="state-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">State</label>
-                          <select
-                            id="state-filter-scene"
-                            value={activeStateFilter || ''}
-                            onChange={(e) => { setActiveStateFilter(e.target.value || null); }}
-                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
-                          >
-                            <option value="">All States</option>
-                            {uniqueStates.sort().map((state: string) => <option key={state} value={state}>{state}</option>)}
-                          </select>
-                        </div>
-                        {/* Program Filter */}
-                        <div className="mb-1">
-                          <label htmlFor="program-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Subject Groups</label>
-                          <select
-                            id="program-filter-scene"
-                            value={activeProgramFilter || ''}
-                            onChange={(e) => { setActiveProgramFilter(e.target.value || null); }}
-                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
-                          >
-                            <option value="">All Programs</option>
-                            {uniqueProgramTypes.sort().map((program: string) => <option key={program} value={program}>{program}</option>)}
-                          </select>
-                        </div>
-                        {/* School Type Filter */}
-                        <div className="mb-1">
-                          <label htmlFor="type-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">School Type</label>
-                          <select
-                            id="type-filter-scene"
-                            value={activeTypeFilter || ''}
-                            onChange={(e) => setActiveTypeFilter(e.target.value || null)}
-                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
-                          >
-                            <option value="">All Types</option>
-                            {uniqueTypes.map((type: string) => (
-                              <option key={type} value={type}>
-                                {type.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')}
-                              </option>
-                            ))}
-                          </select>
-                        </div>
-                        {/* Semester Filter */}
-                        <div className="mb-1">
-                          <label htmlFor="semester-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Semester</label>
-                          <select
-                            id="semester-filter-scene"
-                            value={activeSemesterFilter || ''}
-                            onChange={(e) => setActiveSemesterFilter(e.target.value || null)}
-                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
-                          >
-                            <option value="">All Semesters</option>
-                            <option value="winter">Winter</option>
-                            <option value="summer">Summer</option>
-                          </select>
-                        </div>
-                        {/* NC-free Filter */}
-                        <div className="mb-1">
-                          <label htmlFor="nc-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">NC-free</label>
-                          <select
-                            id="nc-filter-scene"
-                            value={activeNcFilter === null ? '' : (activeNcFilter ? 'yes' : 'no')}
-                            onChange={(e) => setActiveNcFilter(e.target.value === '' ? null : e.target.value === 'yes')}
-                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
-                          >
-                            <option value="">All</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                          </select>
-                        </div>
-                        {/* Application Method Filter */}
-                        <div className="mb-1">
-                          <label htmlFor="appmethod-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Application Method</label>
-                          <select
-                            id="appmethod-filter-scene"
-                            value={activeApplicationMethodFilter || ''}
-                            onChange={(e) => setActiveApplicationMethodFilter((e.target.value || null) as 'uni-assist' | 'direct' | null)}
-                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
-                          >
-                            <option value="">All</option>
-                            <option value="uni-assist">uni-assist</option>
-                            <option value="direct">Direct portal</option>
-                          </select>
-                        </div>
-                        {/* Course Language Filter */}
-                        <div className="mb-1">
-                          <label htmlFor="language-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Course Language</label>
-                          <select
-                            id="language-filter-scene"
-                            value={activeCourseLanguageFilter || ''}
-                            onChange={(e) => setActiveCourseLanguageFilter(e.target.value || null)}
-                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
-                          >
-                            <option value="">All Languages</option>
-                            {uniqueCourseLanguages.map((lang: string) => <option key={lang} value={lang}>{lang}</option>)}
-                          </select>
-                        </div>
-                        {/* Degree Type Filter */}
-                        <div className="mb-1">
-                          <label htmlFor="degree-filter-scene" className="block text-xs font-medium text-cyan-200 mb-1">Degree Type</label>
-                          <select
-                            id="degree-filter-scene"
-                            value={activeDegreeFilter || ''}
-                            onChange={(e) => setActiveDegreeFilter(e.target.value || null)}
-                            className="w-full bg-gray-800/50 border border-white/20 text-gray-100 text-xs rounded-soft focus:ring-cyan-400/50 focus:border-cyan-400/50 p-2 appearance-none custom-select transition-all duration-300 hover:border-white/30 focus:bg-gray-700/60"
-                          >
-                            <option value="">All Degrees</option>
-                            {uniqueDegreeTypes.map((deg: string) => <option key={deg} value={deg}>{deg}</option>)}
-                          </select>
-                        </div>
-                        {/* Reset All Button */}
-                        {(activeStateFilter || activeProgramFilter || activeTypeFilter || activeSemesterFilter || activeNcFilter !== null || activeApplicationMethodFilter !== null || activeCourseLanguageFilter !== null || activeDegreeFilter !== null || selectedUniversity) && (
-                          <button
-                            onClick={() => {
-                                setActiveStateFilter(null);
-                                setActiveProgramFilter(null);
-                                setActiveTypeFilter(null);
-                                setActiveSemesterFilter(null);
-                                setActiveNcFilter(null);
-                                setActiveApplicationMethodFilter(null);
-                                setActiveCourseLanguageFilter(null);
-                                setActiveDegreeFilter(null);
-                                setSelectedUniversity(null);
-                                setConnectionLines([]);
-                                setSearchQuery('');
-                            }}
-                            className="w-full mt-2 py-2 px-3 bg-red-500/20 hover:bg-red-500/40 border border-red-500/50 text-red-300 text-xs font-medium rounded-soft transition-all duration-300 flex items-center justify-center gap-2"
-                          >
-                            <X size={14} />
-                            Reset All
-                          </button>
-                        )}
+                        <FilterControls />
                     </CollapsibleControlPanel>
 
                      <ViewModeToggle />
-                     <ProgramsToggle />
 
                      {/* Info Panel */}
                      {selectedUniversity && (
@@ -857,12 +640,12 @@ export function Scene({ lang, dict }: SceneProps) {
                      )}
                      <ProgramInfoPanel />
 
-                     {/* Relationship Legend - Show when a university is selected */}
-                     <RelationshipLegend 
-                         isVisible={!!selectedUniversity}
-                         selectedUniversityName={selectedUniversity?.name || ''}
-                     />
-
+                     {!explored && (
+                        <p className="fixed inset-x-0 bottom-20 z-20 px-6 text-center text-sm text-slate-200/90 pointer-events-none [text-shadow:0_1px_8px_rgba(0,0,0,0.8)]">
+                            {processedUniversities.length} art, design, film &amp; music schools in Germany — each pane is one school.
+                            <span className="hidden sm:inline"> Hover to read a name, click to open it.</span>
+                        </p>
+                     )}
                      {/* Type Legend moved to help modal for cleaner UI */}
                 </>
             )}

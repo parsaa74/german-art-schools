@@ -15,10 +15,14 @@ import {
   select,
   zoom,
   drag,
+  color as d3color,
   easeCubicInOut,
   type D3DragEvent,
 } from 'd3'
+import { shallow } from 'zustand/shallow'
 import { useSchoolStore, ProcessedUniversity } from '@/stores/schoolStore'
+import { Filters, filtersFromState, passesFilters } from '@/lib/glass/filter'
+import { typeColor, KIN_COLOR, TIER_OPACITY } from '@/lib/taxonomy'
 // --- Interfaces ---
 // Ensure ProcessedUniversity includes coordinates or adjust access
 // REMOVE temporary interface
@@ -72,7 +76,6 @@ const TRANSITION_DURATION = 250 // Slightly faster transitions
 const EASING_FUNCTION = easeCubicInOut // Consistent easing
 
 // --- Base Colors (Align with 3D view if possible) ---
-const COLOR_DEFAULT = '#06b6d4' // cyan-500
 const COLOR_HOVER = '#ffffff'   // white
 const COLOR_SELECTED = '#22d3ee' // cyan-400 (Brighter)
 const COLOR_STROKE_DEFAULT = '#5eead4' // teal-300
@@ -80,7 +83,6 @@ const COLOR_STROKE_HOVER = '#ffffff' // white
 const COLOR_STROKE_SELECTED = '#99f6e4' // teal-200
 const COLOR_LABEL = '#e5e7eb' // gray-200
 const COLOR_LINK_DEFAULT = '#4b5563' // gray-600
-const COLOR_LINK_ACTIVE = '#9ca3af' // gray-400
 const COLOR_FILTERED_OUT = '#374151' // gray-700
 
 const OPACITY_NODE_DEFAULT = 0.9
@@ -92,25 +94,9 @@ const OPACITY_LINK_DEFAULT = 0.15
 const OPACITY_LINK_ACTIVE = 0.6
 const OPACITY_LINK_HIDDEN = 0.05
 
-// Type-based node colors
-const TYPE_COLORS: Record<string, string> = {
-  university: '#06b6d4',    // cyan-500
-  art_academy: '#a855f7',   // purple-500
-  design_school: '#f59e0b', // amber-500
-  music_academy: '#ec4899', // pink-500
-  film_school: '#10b981',   // emerald-500
-}
-
-const TYPE_STROKE_COLORS: Record<string, string> = {
-  university: '#5eead4',    // teal-300
-  art_academy: '#d8b4fe',   // purple-300
-  design_school: '#fcd34d', // amber-300
-  music_academy: '#f9a8d4', // pink-300
-  film_school: '#6ee7b7',   // emerald-300
-}
-
-const getTypeColor = (node: D3Node): string => TYPE_COLORS[node.type] || COLOR_DEFAULT
-const getTypeStrokeColor = (node: D3Node): string => TYPE_STROKE_COLORS[node.type] || COLOR_STROKE_DEFAULT
+// Type colours — the same palette as the glass wall and the help modal
+const getTypeColor = (node: D3Node): string => typeColor(node.type)
+const getTypeStrokeColor = (node: D3Node): string => d3color(typeColor(node.type))?.brighter(1).formatHex() ?? COLOR_STROKE_DEFAULT
 
 // --- Helper Functions ---
 const getNodeRadius = (node: D3Node): number => {
@@ -138,30 +124,8 @@ const getNodeRadius = (node: D3Node): number => {
   return Math.min(NODE_MAX_RADIUS, Math.max(NODE_BASE_RADIUS, combinedRadius));
 }
 
-// Helper to check if a node matches all active filters
-function doesNodeMatchFilters(
-    node: D3Node,
-    timelineFilter: [number, number] | null,
-    stateFilter: string | null,
-    programFilter: string | null
-): boolean {
-    // Timeline Check
-    if (timelineFilter) {
-        const foundedYear = node.university.founded ? parseInt(node.university.founded) : null;
-        if (foundedYear === null || foundedYear < timelineFilter[0] || foundedYear > timelineFilter[1]) {
-            return false;
-        }
-    }
-    // State Check
-    if (stateFilter && node.state !== stateFilter) {
-        return false;
-    }
-    // Program Check
-    if (programFilter && !node.university.programTypes?.some(pt => pt === programFilter)) {
-         return false;
-    }
-    return true; // Matches all active filters or no filters active
-}
+// Same predicate as the glass wall (src/lib/glass/filter.ts)
+const doesNodeMatchFilters = (node: D3Node, filters: Filters): boolean => passesFilters(node.university, filters)
 
 // --- Component ---
 export default function D3NetworkGraph({
@@ -184,19 +148,19 @@ export default function D3NetworkGraph({
     setSelectedUniversity,
     hoverUniversityName, // Get hover state from store
     setHoverUniversityName, // Set hover state in store
-    timelineFilter,
-    activeStateFilter,
-    activeProgramFilter,
+    schoolRelations,
+    universityById,
   } = useSchoolStore(state => ({
     processedUniversities: state.processedUniversities,
     selectedUniversity: state.selectedUniversity,
     setSelectedUniversity: state.setSelectedUniversity,
     hoverUniversityName: state.hoverUniversityName, // Subscribe to hover changes
     setHoverUniversityName: state.setHoverUniversityName,
-    timelineFilter: state.timelineFilter,
-    activeStateFilter: state.activeStateFilter,
-    activeProgramFilter: state.activeProgramFilter,
-  }));
+    schoolRelations: state.schoolRelations,
+    universityById: state.universityById,
+  }), shallow);
+  const filters = useSchoolStore((state) => filtersFromState(state), shallow);
+  const filterKey = JSON.stringify(filters);
 
   const [nodes, setNodes] = useState<D3Node[]>([])
   const [links, setLinks] = useState<D3Link[]>([]) // State for dynamic links
@@ -417,7 +381,7 @@ export default function D3NetworkGraph({
         .attr('dy', '0.35em')
         .attr('text-anchor', 'middle')
         .attr('font-family', 'Inter, sans-serif')
-        .attr('font-size', d => `${Math.max(14, 32 / zoomScale)}px`) // Dynamic font size
+        .attr('font-size', d => `${Math.max(11, 16 / zoomScale)}px`) // Dynamic font size
         .attr('font-weight', 'bold') // Make text bolder
         .attr('stroke', '#222') // Add dark stroke for contrast
         .attr('stroke-width', 0.8)
@@ -442,7 +406,7 @@ export default function D3NetworkGraph({
 
     // Update font size on zoom
     nodeEnter.merge(nodeSelection).select('text.node-label')
-      .attr('font-size', d => `${Math.max(14, 32 / zoomScale)}px`)
+      .attr('font-size', d => `${Math.max(11, 16 / zoomScale)}px`)
       .attr('font-weight', 'bold')
       .attr('stroke', '#222')
       .attr('stroke-width', 0.8)
@@ -484,90 +448,15 @@ export default function D3NetworkGraph({
     const selectedNodeId = selectedUniversity?.name;
     const selectedNodeData = selectedNodeId ? nodeMapRef.current.get(selectedNodeId) : null;
 
-    // Function to Calculate Shared Program Links for the selected node
+    // Links = related schools (programs that closely match), value = tier 1..3
     const calculateLinks = (selectedNode: D3Node | null | undefined): D3Link[] => {
-        if (!selectedNode?.university?.programTypes) return [];
-
-        const newLinks: D3Link[] = [];
-        const selectedPrograms = new Set(selectedNode.university.programTypes);
-        const selectedSpecializations = new Set(selectedNode.university.specializationVector || []);
-        const selectedStats = selectedNode.university.stats;
-        const selectedRanking = selectedNode.university.ranking;
-
-        nodes.forEach(targetNode => {
-            if (!targetNode || targetNode.id === selectedNode.id || !targetNode.university?.programTypes) return;
-
-            // Check if target node matches filters before creating link
-            if (!doesNodeMatchFilters(targetNode, timelineFilter, activeStateFilter, activeProgramFilter)) {
-              return;
-            }
-
-            let connectionStrength = 0;
-            
-            // 1. Program similarity (base connection)
-            let sharedProgramCount = 0;
-            targetNode.university.programTypes.forEach(program => {
-                if (selectedPrograms.has(program)) {
-                    sharedProgramCount++;
-                }
-            });
-            
-            // 2. Specialization similarity (enhanced connection)
-            let sharedSpecializations = 0;
-            if (targetNode.university.specializationVector) {
-                targetNode.university.specializationVector.forEach(spec => {
-                    if (selectedSpecializations.has(spec)) {
-                        sharedSpecializations++;
-                    }
-                });
-            }
-            
-            // 3. Ranking similarity (prestige clusters)
-            let rankingSimilarity = 0;
-            if (selectedRanking?.national && targetNode.university.ranking?.national) {
-                const rankingDiff = Math.abs(selectedRanking.national - targetNode.university.ranking.national);
-                rankingSimilarity = Math.max(0, 20 - rankingDiff) / 20; // Normalize to 0-1
-            }
-            
-            // 4. Student body similarity (size and selectivity)
-            let studentSimilarity = 0;
-            if (selectedStats?.students && targetNode.university.stats?.students) {
-                const studentRatio = Math.min(selectedStats.students, targetNode.university.stats.students) / 
-                                   Math.max(selectedStats.students, targetNode.university.stats.students);
-                studentSimilarity = studentRatio;
-            }
-            
-            // 5. Acceptance rate similarity (selectivity clusters)
-            let selectivitySimilarity = 0;
-            if (selectedStats?.acceptance_rate && targetNode.university.stats?.acceptance_rate) {
-                const rateDiff = Math.abs(selectedStats.acceptance_rate - targetNode.university.stats.acceptance_rate);
-                selectivitySimilarity = Math.max(0, 0.3 - rateDiff) / 0.3; // Normalize to 0-1
-            }
-            
-            // Combine all similarity metrics with weights
-            connectionStrength = (
-                sharedProgramCount * 3.0 +           // Programs are most important
-                sharedSpecializations * 2.0 +        // Specializations are secondary
-                rankingSimilarity * 1.5 +            // Ranking similarity
-                studentSimilarity * 1.0 +            // Student body similarity
-                selectivitySimilarity * 1.2          // Selectivity similarity
-            );
-
-            // Only create link if there's meaningful connection
-            if (connectionStrength > 1.0) {
-                newLinks.push({
-                    source: selectedNode.id,
-                    target: targetNode.id,
-                    value: connectionStrength,
-                    type: 'program'
-                });
-            }
+        if (!selectedNode) return [];
+        return (schoolRelations.get(selectedNode.university.id) ?? []).flatMap((r) => {
+            const other = universityById.get(r.schoolId);
+            if (!other || !nodeMapRef.current.has(other.name)) return [];
+            if (!doesNodeMatchFilters(nodeMapRef.current.get(other.name)!, filters)) return [];
+            return [{ source: selectedNode.id, target: other.name, value: r.tier, type: 'program' } as D3Link];
         });
-        
-        // Sort links by strength and limit to top connections to avoid visual clutter
-        return newLinks
-            .sort((a, b) => b.value - a.value)
-            .slice(0, 15); // Show top 15 connections
     }
 
     const newDynamicLinks = calculateLinks(selectedNodeData);
@@ -585,7 +474,8 @@ export default function D3NetworkGraph({
     });
     setNeighborMap(newNeighborMap);
 
-  }, [selectedUniversity, nodes, timelineFilter, activeStateFilter, activeProgramFilter]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedUniversity, nodes, schoolRelations, universityById, filterKey]);
 
 
   // --- Effect for Handling Selection, Hover, Filter Updates, and Link Drawing ---
@@ -612,7 +502,7 @@ export default function D3NetworkGraph({
 
         const isSelected = d.id === selectedNodeId;
         const isHovered = d.id === hoveredNodeId;
-        const matchesFilters = doesNodeMatchFilters(d, timelineFilter, activeStateFilter, activeProgramFilter);
+        const matchesFilters = doesNodeMatchFilters(d, filters);
         const isNeighborOfSelected = !!(selectedNodeId && neighborsOfSelected?.has(d.id));
         const isNeighborOfHovered = !!(hoveredNodeId && neighborsOfHovered?.has(d.id)); // Check if neighbor of hovered
 
@@ -701,11 +591,8 @@ export default function D3NetworkGraph({
     // Enter new links
     const linkEnter = linkSelection.enter().append('line')
         .attr('class', 'link') // Add class
-        .attr('stroke-width', (d: D3Link) => {
-          const norm = Math.min(1, d.value / 12);
-          return 0.8 + norm * 3.2;
-        })
-        .attr('stroke', COLOR_LINK_ACTIVE) // Start with active color during transition
+        .attr('stroke-width', (d: D3Link) => d.value)
+        .attr('stroke', KIN_COLOR)
         .attr('stroke-opacity', 0) // Start transparent
         .attr('x1', d => {
           const n = typeof d.source === 'string' ? nodeMapRef.current.get(d.source) : d.source as D3Node;
@@ -727,25 +614,18 @@ export default function D3NetworkGraph({
     // Update + Enter links (style update)
     linkEnter.merge(linkSelection)
         .transition('linkStyle').duration(TRANSITION_DURATION).ease(EASING_FUNCTION)
-        .attr('stroke', COLOR_LINK_ACTIVE)
-        .attr('stroke-opacity', (d: D3Link) => {
-          const norm = Math.min(1, d.value / 12);
-          return 0.3 + norm * 0.5;
-        })
-        .attr('stroke-width', (d: D3Link) => {
-          const norm = Math.min(1, d.value / 12);
-          return 0.8 + norm * 3.2;
-        }); // Fade in/update active links
+        .attr('stroke', KIN_COLOR)
+        .attr('stroke-opacity', (d: D3Link) => TIER_OPACITY[d.value] * 0.9)
+        .attr('stroke-width', (d: D3Link) => d.value); // Fade in/update active links
         // Default/dimmed link styles are handled by the base group attributes
         // We only explicitly style the *active* links when a node is selected
 
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
       selectedUniversity,
       hoverUniversityName,
-      timelineFilter,
-      activeStateFilter,
-      activeProgramFilter,
+      filterKey,
       nodes, // Re-run if nodes change (for filter checks mainly)
       links, // Re-run when links state changes
       neighborMap // Re-run when neighbor map changes
