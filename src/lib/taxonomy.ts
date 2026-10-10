@@ -120,7 +120,7 @@ const SUBJECT_RULES: Array<[SubjectGroup, RegExp]> = [
   ['Media Art & Sound', /musikproduktion|medien und musik|musik und medien/],
   ['Theatre, Acting & Dance', /schauspiel|acting|dramaturgie fur musiktheater/],
   ['Animation, Games & VFX', /animation|game|visual effects|vfx|technical directing|expanded realit|digital reality|motion design/],
-  ['Film & Television', /film|screen|kamera|cinemat|montage|schnitt|editing|drehbuch|production|produktion|producing|fernseh|television|motion pictures|bildgestaltung|szenenbild|ton und bild|atelier ludwigsburg/],
+  ['Film & Television', /film|screen|kamera|cinemat|montage|schnitt|editing|drehbuch|production|produktion|producing|fernseh|television|motion pictures|serial storytelling|bildgestaltung|szenenbild|ton und bild|atelier ludwigsburg/],
   ['Architecture, Interior & Stage Design', /archit|innenarch|interior|buhnen-? und kostum|buhnenbild|stage|theatre design|raum|spatial|scenic/],
   ['Theatre, Acting & Dance', /drama|regie|theat|tanz|dance|choreo|puppen|figurentheater|spiel und objekt|sprechkunst|performing arts|opernstudio|buhnengesang/],
   ['Photography', /foto|photo/],
@@ -150,6 +150,8 @@ export type DegreeGroup = (typeof DEGREE_GROUPS)[number] | null;
 export function degreeGroupOf(degree: string | undefined): DegreeGroup {
   const d = fold(degree || '');
   if (!d) return null;
+  // DFFB’s institutional diploma is not an academic Diplom or degree equivalent.
+  if (/dffb.*non-state/.test(d)) return 'Certificate / short course';
   if (/b\.a\. equivalent/.test(d)) return 'Bachelor'; // AVA Frankfurt's state exam is not a teaching degree
   if (/education|lehramt|staatsexamen|state exam/.test(d)) return 'Teaching degree';
   if (/phd|dr\.|doctor|promotion/.test(d)) return 'Doctorate';
@@ -165,6 +167,7 @@ export function degreeGroupOf(degree: string | undefined): DegreeGroup {
 export function degreeAbbrev(degree: string | undefined): string {
   const d = degree || '';
   const known: Record<string, string> = {
+    'DFFB diploma (non-state qualification)': 'DFFB',
     'Bachelor of Arts': 'BA', 'Master of Arts': 'MA', 'Bachelor of Music': 'BMus', 'Master of Music': 'MMus',
     'Bachelor of Science': 'BSc', 'Master of Science': 'MSc', 'Bachelor of Fine Arts': 'BFA', 'Master of Fine Arts': 'MFA',
     'Master of Education': 'MEd', 'Bachelor of Engineering': 'BEng', 'Master of Engineering': 'MEng', 'Master of Architecture': 'MArch',
@@ -222,17 +225,18 @@ export const ADMISSION_LABELS: Record<Admission, string> = {
 
 // -------------------------------------------------------------------- fees --
 
-export interface Fee { kind: string; euros: number | null; period: string; appliesTo: string; notes?: string; cycle?: string | null }
+export interface Fee { kind: string; euros: number | null; period: string; appliesTo: string; notes?: string; cycle?: string | null; approximate?: boolean }
 
 const FEE_KINDS: Record<string, string> = {
   tuition: 'Tuition', 'non-eu-tuition': 'Tuition (non-EU)', 'semester-contribution': 'Semester contribution',
-  application: 'Application fee', 'aptitude-test': 'Aptitude test fee',
+  application: 'Application fee', 'aptitude-test': 'Aptitude test fee', enrolment: 'Enrolment fee',
+  'enrolment-equipment': 'Enrolment & equipment insurance', 'semester-ticket': 'Semester transport ticket',
 };
 const PERIODS: Record<string, string> = { semester: '/semester', month: '/month', year: '/year', once: '', credit: '/credit' };
 
 /** "Semester contribution: €346.80/semester (all students, 2026/27)" */
 export function feeLine(f: Fee): string {
-  const amount = f.euros == null ? 'amount not published' : f.euros === 0 ? 'none' : `€${f.euros.toLocaleString('en-GB')}${PERIODS[f.period] ?? ''}`;
+  const amount = f.euros == null ? 'amount not verified' : f.euros === 0 ? 'none' : `${f.approximate ? 'about ' : ''}€${f.euros.toLocaleString('en-GB')}${PERIODS[f.period] ?? ''}`;
   const scope = [f.appliesTo, f.cycle].filter(Boolean).join(', ');
   return `${FEE_KINDS[f.kind] ?? f.kind}: ${amount}${scope ? ` (${scope})` : ''}`;
 }

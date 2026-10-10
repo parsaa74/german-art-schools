@@ -275,7 +275,7 @@ export function ProgramInfoPanel() {
                   {!!program.fees?.length && (
                     <div className="col-span-2">
                       <div className="text-[0.6rem] text-gray-400 uppercase tracking-wide">Costs</div>
-                      {program.fees.map((f: Fee, i: number) => <div key={i}>{feeLine(f)}</div>)}
+                      {program.fees.map((f: Fee, i: number) => <div key={i}>{feeLine(f)}{f.notes && <p className="text-xs text-slate-400">{f.notes}</p>}</div>)}
                     </div>
                   )}
                 </div>

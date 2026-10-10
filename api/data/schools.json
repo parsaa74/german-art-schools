@@ -2452,5 +2452,51 @@
     "program_ids": [
       "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts"
     ]
+  },
+  "deutsche-film-und-fernsehakademie-berlin": {
+    "id": "deutsche-film-und-fernsehakademie-berlin",
+    "name": "Deutsche Film- und Fernsehakademie Berlin (DFFB)",
+    "city": "Berlin",
+    "state": "Berlin",
+    "type": "film_school",
+    "coordinates": {
+      "lat": 52.5167,
+      "lng": 13.3833
+    },
+    "stats": {
+      "students": null,
+      "student_staff_ratio": null,
+      "founded": 1966
+    },
+    "program_ids": [
+      "deutsche-film-und-fernsehakademie-berlin--film-directing--dffb-diploma-non-state-qualification",
+      "deutsche-film-und-fernsehakademie-berlin--screenwriting--dffb-diploma-non-state-qualification",
+      "deutsche-film-und-fernsehakademie-berlin--cinematography--dffb-diploma-non-state-qualification",
+      "deutsche-film-und-fernsehakademie-berlin--producing--dffb-diploma-non-state-qualification",
+      "deutsche-film-und-fernsehakademie-berlin--editing-sound--dffb-diploma-non-state-qualification"
+    ]
+  },
+  "ifs-internationale-filmschule-koln": {
+    "id": "ifs-internationale-filmschule-koln",
+    "name": "ifs Internationale Filmschule Köln",
+    "city": "Cologne",
+    "state": "North Rhine-Westphalia",
+    "type": "film_school",
+    "coordinates": {
+      "lat": 50.9375,
+      "lng": 6.9603
+    },
+    "stats": {
+      "students": null,
+      "student_staff_ratio": null,
+      "founded": 2000
+    },
+    "program_ids": [
+      "ifs-internationale-filmschule-koln--film--bachelor-of-arts",
+      "ifs-internationale-filmschule-koln--serial-storytelling--master-of-arts",
+      "ifs-internationale-filmschule-koln--digital-narratives--master-of-arts",
+      "ifs-internationale-filmschule-koln--3d-animation-for-film-games--master-of-arts",
+      "ifs-internationale-filmschule-koln--entertainment-producing--master-of-arts"
+    ]
   }
 }

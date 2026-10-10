@@ -16,7 +16,7 @@ import { SUBJECT_GROUPS, DEGREE_GROUPS, LANGUAGES, SCHOOL_TYPES, typeLabel, type
 export const SEMESTER_LABELS: Record<string, string> = { winter: 'Winter semester intake', summer: 'Summer semester intake' };
 export const LANGUAGE_LABELS: Record<string, string> = { German: 'Taught in German', English: 'Taught in English (incl. bilingual)' };
 export const METHOD_LABELS: Record<string, string> = {
-  direct: 'Direct to the school — no uni-assist fee',
+  direct: 'Direct to the school — check validation fees',
   'uni-assist': 'Via uni-assist (€75 first, €30 each extra)',
 };
 
@@ -176,7 +176,7 @@ export function FilterControls() {
       <FilterSelect id="method-filter" label="How you apply (international certificates)" anyLabel="Any route"
         value={s.activeApplicationMethodFilter} options={opts(['direct', 'uni-assist'], (v) => METHOD_LABELS[v]) as any}
         counts={counts.method} onChange={s.setActiveApplicationMethodFilter as any}
-        note={<>uni-assist schools may route some programs through it — check the program page.{checked && <> Source: <a className="underline hover:text-slate-200" href="https://www.uni-assist.de/tools/uni-assist-hochschulen/" target="_blank" rel="noopener noreferrer">uni-assist list</a>, checked {checked}.</>}</>} />
+        note={<>Verified programme routes override school membership. Direct submission does not guarantee foreign-qualification validation is free; check the programme notes.{checked && <> Source: <a className="underline hover:text-slate-200" href="https://www.uni-assist.de/tools/uni-assist-hochschulen/" target="_blank" rel="noopener noreferrer">uni-assist list</a>, checked {checked}.</>}</>} />
       <div className="mb-1">
         <label htmlFor="nc-filter" className="block text-xs font-medium text-cyan-200 mb-1">NC-free (no grade cut-off)</label>
         <select

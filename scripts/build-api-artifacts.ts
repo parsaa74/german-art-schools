@@ -17,6 +17,18 @@ interface RawDeadlineWindow {
   end?: string | null;
 }
 
+interface ProgramFee {
+  kind: string;
+  euros: number | null;
+  period: string;
+  appliesTo: string;
+  notes?: string;
+  cycle?: string | null;
+  approximate?: boolean;
+}
+
+interface ApplicationRoute { method: string; notes: string; url?: string; scope?: string }
+
 interface RawProgram {
   name?: string;
   degree?: string;
@@ -31,6 +43,12 @@ interface RawProgram {
   jointProgramId?: string;
   jointProfile?: string;
   intakes?: string[];
+  applicationMethods?: Array<'direct' | 'uni-assist'>;
+  applicationRoute?: ApplicationRoute;
+  fees?: ProgramFee[];
+  requirements?: Array<{ label: string; text: string }>;
+  sources?: Record<string, string>;
+  researched?: string;
   status?: { status: string; notes?: string };
   program_id?: string;
   details?: {
@@ -58,7 +76,7 @@ interface RawSchool {
 }
 
 interface RawData {
-  statistics?: { last_updated?: string };
+  statistics?: { last_updated?: string; total_schools?: number; total_programs?: number };
   universities: Record<string, RawSchool>;
 }
 
@@ -106,6 +124,12 @@ interface OutProgram {
   joint_program_id?: string | null;
   joint_profile?: string | null;
   intakes?: string[];
+  application_methods?: Array<'direct' | 'uni-assist'>;
+  application_route?: ApplicationRoute | null;
+  fees?: ProgramFee[];
+  requirements?: Array<{ label: string; text: string }>;
+  sources?: Record<string, string>;
+  researched?: string | null;
   status?: { status: string; notes?: string } | null;
   portfolio_required: boolean | null;
   tuition_eur_per_semester: number | null;
@@ -185,6 +209,7 @@ function deriveDegreeLevel(degree: string): OutProgram['degree_level'] {
     .normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase();
+  if (/dffb.*non-state/.test(d)) return 'other'; // institutional qualification, not an academic Diplom
   if (/\bphd\b|dr\.\s*phil/.test(d)) return 'phd';
   const isBachelor = /\bbachelor\b/.test(d);
   const isMaster = /\bmaster\b/.test(d);
@@ -316,6 +341,12 @@ function main() {
         joint_program_id: prog.jointProgramId ?? null,
         joint_profile: prog.jointProfile ?? null,
         intakes: prog.intakes ?? [],
+        application_methods: prog.applicationMethods ?? [],
+        application_route: prog.applicationRoute ?? null,
+        fees: prog.fees ?? [],
+        requirements: prog.requirements ?? [],
+        sources: prog.sources ?? {},
+        researched: prog.researched ?? null,
         status: prog.status ?? null,
         portfolio_required: details?.portfolioRequired ?? null,
         tuition_eur_per_semester: details?.tuitionEuroPerSemester ?? null,
@@ -428,7 +459,8 @@ function main() {
   // ----- sanity assertions -----
   const schoolCount = Object.keys(schools).length;
   const programCount = Object.keys(programs).length;
-  if (schoolCount !== 93) fail(`expected 93 schools, got ${schoolCount}`);
+  if (schoolCount !== raw.statistics?.total_schools) fail(`school count ${schoolCount} does not match dataset statistics (${raw.statistics?.total_schools})`);
+  if (programCount !== raw.statistics?.total_programs) fail(`program count ${programCount} does not match dataset statistics (${raw.statistics?.total_programs})`);
   if (programCount < 700) fail(`expected >= 700 programs, got ${programCount}`);
   for (const p of Object.values(programs)) {
     if (!schools[p.school_id]) fail(`program ${p.program_id} references unknown school ${p.school_id}`);

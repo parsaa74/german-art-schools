@@ -44,12 +44,13 @@ const mdText = (s: string) => { const [a, b, c] = s.split('-').map(Number); retu
 function languageCheck(language: string | undefined, p: Profile, requirement?: string | null): Check {
   if (!language) return { level: 'info', text: `Teaching language not in our data — check the program page.${requirement ? ` Language-proof rules: ${requirement}` : ''}` };
   const german = language.includes('German'), english = language.includes('English');
-  // the user can follow it in either language a bilingual program offers
+  // Report the strongest stated level, not an eligibility verdict. Bilingual
+  // teaching does not establish that either language alone satisfies admission.
   const levels = [german ? p.german : null, english ? p.english : null].filter((l): l is Level => !!l);
   const best = levels.sort((x, y) => ['none', 'a', 'b1', 'b2', 'c1'].indexOf(y) - ['none', 'a', 'b1', 'b2', 'c1'].indexOf(x))[0];
   const req = requirement ? ` Required: ${requirement.replace(/\.+$/, '')}.` : ' Check the level this program requires.';
   if (!best) return { level: 'info', text: `Taught in ${language}.${req}` };
-  if (best === 'c1') return { level: 'ok', text: `Taught in ${language} — your level is C1 or more.` };
+  if (best === 'c1') return { level: requirement || (german && english) ? 'info' : 'ok', text: `Taught in ${language} — your reported level is C1 or more.${req}${german && english ? ' Check track-specific rules; bilingual teaching does not mean either language alone is sufficient.' : ''}` };
   if (best === 'none' || best === 'a') return { level: 'warn', text: `Taught in ${language} — check the required language level, proof and submission timing.${req}` };
   return { level: 'info', text: `Taught in ${language} — your level is ${LEVEL_LABELS[best]}.${req}` };
 }
@@ -124,9 +125,9 @@ export function checkProgram(program: Program, school: ProcessedUniversity, p: P
     checks.push({ level: 'info', text: 'With a non-German certificate you’ll likely apply via uni-assist — send it at least 8 weeks before the deadline.', source: UNI_ASSIST_TIMING });
     if (deadline) steps.push({ date: new Date(deadline.getTime() - UNI_ASSIST_LEAD_DAYS * 864e5), text: `Send to uni-assist — ${name}, ${school.name}` });
   } else if (p.certificate && school.applicationMethod === 'direct') {
-    checks.push({ level: 'ok', text: 'Apply directly to the school — no uni-assist fee.' });
+    checks.push({ level: 'info', text: 'The school uses direct applications — confirm your programme’s foreign-qualification validation and handling fees.' });
   } else if (p.certificate === 'german' && school.applicationMethod === 'uni-assist') {
-    checks.push({ level: 'ok', text: 'Apply directly — uni-assist only handles non-German certificates.' });
+    checks.push({ level: 'info', text: 'A German school certificate may allow direct application; master’s applicants must also confirm how their first degree is checked.' });
   }
 
   // tuition for non-EU citizens who come to Germany to study — the BW ministry and HfM Dresden's fee rules

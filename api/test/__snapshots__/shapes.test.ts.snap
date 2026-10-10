@@ -2,6 +2,8 @@
 
 exports[`response shape snapshots (additive-only contract) > /v1/programs/{id} shape 1`] = `
 [
+  "application_methods[]",
+  "application_route",
   "application_url",
   "deadlines[].end.day",
   "deadlines[].end.month",
@@ -18,6 +20,7 @@ exports[`response shape snapshots (additive-only contract) > /v1/programs/{id} s
   "description",
   "duration",
   "extracted_at",
+  "fees[]",
   "intakes[]",
   "joint_profile",
   "joint_program_id",
@@ -27,10 +30,15 @@ exports[`response shape snapshots (additive-only contract) > /v1/programs/{id} s
   "portfolio_required",
   "program_id",
   "program_url",
+  "requirements[]",
+  "researched",
   "school_id",
   "school_name",
   "search_aliases[]",
   "source_url",
+  "sources.applicationDeadlines.winter",
+  "sources.degree",
+  "sources.details.languageNotes",
   "specializations[]",
   "status",
   "teaching_areas[]",

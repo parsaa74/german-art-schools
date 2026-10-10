@@ -3,10 +3,10 @@
  * Run: npm run check:filters
  */
 import data from '../src/data/enhanced_german_art_schools.json';
-import { passesFilters, countMatches, Filters } from '../src/lib/glass/filter';
+import { passesFilters, countMatches, matchingPrograms, Filters } from '../src/lib/glass/filter';
 import { checkProgram, EMPTY_PROFILE, UNI_ASSIST_LEAD_DAYS } from '../src/lib/applicationCheck';
 import { parseDeadlineDate, getDeadlineStatus } from '../src/utils/deadlineUtils';
-import { normalizeSchoolType, degreeGroupOf, subjectGroupOf, fold, admissionOf, matchScore, programSearchMatch, uniAssistFee } from '../src/lib/taxonomy';
+import { normalizeSchoolType, degreeGroupOf, subjectGroupOf, fold, admissionOf, matchScore, programSearchMatch, uniAssistFee, feeLine } from '../src/lib/taxonomy';
 
 const unis = Object.entries((data as any).universities).map(([name, d]: [string, any]) => ({
   id: d.id, name, state: d.state, city: d.city, description: d.description || '',
@@ -40,7 +40,7 @@ const thi = unis.find((u) => u.name === 'Technische Hochschule Ingolstadt');
 check(!passesFilters(thi, { ...none, nc: true }), 'unconfirmed university programs are not claimed NC-free (THI)');
 const macro = unis.find((u) => u.name === 'Hochschule Macromedia');
 check(passesFilters(macro, { ...none, nc: true }), 'researched open admission counts as NC-free (Macromedia)');
-check(count({ method: 'uni-assist' }) + count({ method: 'direct' }) === unis.length, 'every school has an application route');
+check(unis.every((u) => u.applicationMethod === 'direct' || u.applicationMethod === 'uni-assist'), 'every school has an application-route fallback; a school may match multiple sourced programme routes');
 
 // search folds umlauts / ß
 check(count({ search: 'weissensee' }) === 1 && passesFilters(unis.find((u) => u.name.includes('Weißensee')), { ...none, search: 'weissensee' }), '"weissensee" finds Kunsthochschule Berlin-Weißensee');
@@ -119,5 +119,29 @@ check(!passesFilters(hda, { ...none, search: 'Digital Media', degree: 'Master', 
 check(passesFilters(hda, { ...none, search: 'Expanded Media', semester: 'summer', degree: 'Master' }), 'verified intake survives filters even without a universal application window');
 check(expanded.otherDeadlines.some((d: any) => d.semester === 'winter' && d.scope === 'international applicants' && d.end === '06-01') && Object.keys(expanded.applicationDeadlines).length === 0, 'h_da international/domestic deadlines remain scoped, not a universal annual window');
 check(fhp.programs.find((p: any) => p.name === 'Interface Design').duration === '8 semesters', 'FH Potsdam Interface Design is eight semesters');
+
+// DFFB/ifs additions: qualifications, cycles, scoped costs and the SAME programme's route.
+const dffb = school('Deutsche Film- und Fernsehakademie Berlin (DFFB)');
+const ifs = school('ifs Internationale Filmschule Köln');
+check(dffb.programs.length === 5 && ifs.programs.length === 5, 'DFFB and ifs have five actual programme records each');
+check(dffb.programs.every((p: any) => degreeGroupOf(p.degree) === 'Certificate / short course'), 'DFFB institutional diplomas are non-degree training, not academic Diplom/Bachelor/Master');
+check(!passesFilters(dffb, { ...none, degree: 'Diploma' }) && !passesFilters(dffb, { ...none, degree: 'Master' }), 'academic degree filters do not overstate the DFFB award');
+check(prog(dffb, /Screenwriting/).duration === '7 semesters' && prog(dffb, /Film Directing/).duration === '12 semesters', 'DFFB standard durations follow the official structure, not a guessed four-year degree');
+check(dffb.programs.every((p: any) => p.applicationDeadlines.winter.end === '24 November 2026' && p.otherDeadlines[0].end === '2026-12-08'), 'DFFB mandatory registration precedes its separate assignment deadline');
+const ifsFilm = prog(ifs, /^Film /);
+const ifs3D = prog(ifs, /3D Animation/);
+const ifsSerial = prog(ifs, /Serial Storytelling/);
+check(ifsFilm.specializations.length === 7 && ifsFilm.teachingAreas.every((a: any) => a.kind === 'specialisation'), 'ifs Film specialisations are nested in one BA, not seven invented degrees');
+check(subjectGroupOf(ifsSerial.name) === 'Film & Television', 'Serial Storytelling appears in the Film & Television subject filter');
+check(matchingPrograms(ifs, { ...none, method: 'uni-assist' }).map((p) => p.name).join() === '3D Animation for Film & Games', 'ifs foreign-degree uni-assist handling is programme-specific');
+check(!passesFilters(ifs, { ...none, method: 'direct', search: '3D Animation' }) && !passesFilters(ifs, { ...none, method: 'uni-assist', degree: 'Bachelor' }), 'route, degree and search cannot match different ifs programmes');
+check(matchingPrograms(ifs, { ...none, method: 'direct', degree: 'Master', language: 'English' }).length === 2, 'ifs direct English master routes exclude the foreign-degree uni-assist programme');
+check(ifsSerial.fees.filter((f: any) => f.kind === 'tuition').map((f: any) => f.euros).join() === '2750,3750' && ifs3D.fees.filter((f: any) => f.kind === 'tuition').map((f: any) => f.euros).join() === '1500,2500', 'ifs tuition keeps distinct EU/non-EU amounts and programme scopes');
+check(feeLine(ifsFilm.fees.find((f: any) => f.kind === 'semester-contribution')).includes('about €353'), 'approximate semester contributions remain visibly approximate');
+check(ifs.programs.filter((p: any) => ['Digital Narratives', '3D Animation for Film & Games', 'Entertainment Producing'].includes(p.name)).every((p: any) => Object.keys(p.applicationDeadlines).length === 0), 'unpublished ifs next-round dates remain gaps, not invented annual windows');
+check(ifsSerial.details.languageNotes[0].includes('English-taught') && ifsSerial.details.languageNotes[0].includes('only for the German-language track'), 'Serial Storytelling keeps English-proof alternatives and track-specific German rules');
+check(checkProgram(ifs3D, ifs, { ...EMPTY_PROFILE, certificate: 'foreign', firstDegree: true }).checks.some((c) => c.text.includes('uni-assist')) && !checkProgram(ifs3D, ifs, { ...EMPTY_PROFILE, certificate: 'foreign' }).checks.some((c) => c.text.includes('no uni-assist fee')), 'ifs application checks retain foreign-degree validation rather than promising zero handling fees');
+
+check(checkProgram(dffb.programs[0], dffb, { ...EMPTY_PROFILE, english: 'c1', german: 'none' }).checks.some((c) => c.text.includes('German B2') && c.level !== 'ok'), 'strong English does not hide DFFB’s mandatory German proof in application checks');
 
 if (failed) process.exit(1);

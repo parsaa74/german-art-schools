@@ -199,7 +199,7 @@ export default function InfoPanel({
               {school.applicationMethod === 'uni-assist' ? (
                 <p>International applicants may need to go through <a className="text-blue-400 hover:underline" href="https://www.uni-assist.de/en/" target="_blank" rel="noopener noreferrer">uni-assist</a> (€75 first program, €30 each extra) — check the program page.</p>
               ) : school.applicationMethod === 'direct' ? (
-                <p>Apply directly to the school — not a uni-assist member, so no uni-assist fee.</p>
+                <p>Direct application route — check programme-specific foreign-qualification validation and handling fees below.</p>
               ) : (
                 <p className="text-gray-400">Application route unknown.</p>
               )}

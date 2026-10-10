@@ -12,7 +12,7 @@ describe('GET /v1/schools', () => {
     const body = await res.json() as any;
     expect(Array.isArray(body)).toBe(true);
     expect(body).toHaveLength(schoolCount);
-    expect(schoolCount).toBe(93);
+    expect(schoolCount).toBe(95); // + DFFB Berlin and ifs Köln
   });
 
   it('filters by state (case-insensitive exact)', async () => {

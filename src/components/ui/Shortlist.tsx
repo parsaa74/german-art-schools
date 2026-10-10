@@ -14,7 +14,7 @@ import { useShortlist } from '@/stores/shortlistStore';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { getNextDeadline } from '@/utils/deadlineUtils';
 import { generateAllDeadlinesICalFile, downloadICalFile } from '@/utils/icalExport';
-import { admissionOf, degreeAbbrev, uniAssistFee } from '@/lib/taxonomy';
+import { admissionOf, degreeAbbrev, feeLine, uniAssistFee, type Fee } from '@/lib/taxonomy';
 import { checkProgram, Profile, Level, LEVEL_LABELS, Check } from '@/lib/applicationCheck';
 
 const URGENCY: Record<string, number> = { 'closing-soon': 0, open: 1, upcoming: 2, closed: 3 };
@@ -53,7 +53,15 @@ export function Shortlist() {
     (a.next?.status.daysRemaining ?? 999) - (b.next?.status.daysRemaining ?? 999)
   ), [ids, programById, universityById, profile]);
 
-  const viaUniAssist = profile.certificate === 'german' ? 0 : rows.filter((r) => r.school.applicationMethod === 'uni-assist').length;
+  // A German school certificate does not establish where a master's first degree was earned.
+  // Keep sourced foreign-degree handling routes visible as possible costs, not a fee verdict.
+  const viaUniAssist = rows.filter((r) => r.program.applicationMethods
+    ? r.program.applicationMethods.includes('uni-assist')
+    : profile.certificate !== 'german' && r.school.applicationMethod === 'uni-assist').length;
+  const rowFees = (r: typeof rows[number]): Fee[] => {
+    const all: Fee[] = [...(r.school.fees ?? []), ...(r.program.fees ?? [])];
+    return all.filter((f, i) => all.findIndex((other) => JSON.stringify(other) === JSON.stringify(f)) === i);
+  };
   const today = new Date();
   const steps = rows.flatMap((r) => r.steps).filter((st) => st.date >= today).sort((a, b) => +a.date - +b.date);
   const tuitionSchools = profile.citizenship === 'non-eu' && profile.certificate !== 'german'
@@ -147,6 +155,11 @@ export function Shortlist() {
                           )}
                         </span>
                         )}
+                        {rowFees(r).length > 0 && (
+                          <span className="block mt-1 text-[0.65rem] text-slate-300 space-y-0.5">
+                            {rowFees(r).map((f, i) => <span key={i} className="block">{feeLine(f)}</span>)}
+                          </span>
+                        )}
                       </button>
                       <button onClick={() => remove(r.id)} aria-label={`Remove ${r.program.name} from shortlist`} className="p-1 text-slate-500 hover:text-white">
                         <X size={14} />
@@ -170,13 +183,13 @@ export function Shortlist() {
                 )}
 
                 <p className="mt-4 text-xs text-slate-300 border-t border-white/10 pt-3">
-                  {profile.certificate === 'german'
-                    ? <>With a German school certificate you apply directly — no uni-assist fees.</>
-                    : viaUniAssist > 0
-                    ? <>{profile.certificate === 'foreign' ? 'With your non-German certificate' : 'With a non-German school certificate'}, {viaUniAssist === 1
+                  {profile.certificate === 'german' && <>A German school certificate may change your route; master’s applicants must also check the origin of their first degree. </>}
+                  {viaUniAssist > 0
+                    ? <>For non-German qualifications, {viaUniAssist === 1
                         ? <>1 of these may go through uni-assist: <b className="text-white">€75</b> handling fee (each further program in the same semester adds €30).</>
                         : <>{viaUniAssist} of these may go through uni-assist: about <b className="text-white">€{uniAssistFee(viaUniAssist)}</b> in handling fees if you apply to all of them in the same semester (€75 first, €30 each further).</>}</>
-                    : <>None of these schools use uni-assist — no uni-assist fees.</>}
+                    : <>No uni-assist handling step is identified for this selection; confirm programme-specific credential checks and fees.</>}
+                  <> Tuition, enrolment and semester contributions are separate; see the scoped fees above.</>
                   {tuitionSchools.length > 0 && <> Tuition for non-EU students applies at {tuitionSchools.join(', ')} (see each program).</>}
                   {profile.citizenship === 'non-eu' && profile.certificate !== 'german' && <> Other schools may charge too — Bavaria and Saxony let each school decide.</>}
                 </p>

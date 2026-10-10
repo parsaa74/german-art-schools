@@ -1,8 +1,8 @@
 {
   "statistics": {
-    "last_updated": "2026-10-10",
-    "total_schools": 93,
-    "total_programs": 780
+    "last_updated": "2026-10-11",
+    "total_schools": 95,
+    "total_programs": 790
   },
   "universities": {
     "Hochschule für bildende Künste Hamburg": {
@@ -20201,6 +20201,1186 @@
         "fees": "https://hhu.de/internationales/leben-in-duesseldorf"
       },
       "researched": "2026-10-10"
+    },
+    "Deutsche Film- und Fernsehakademie Berlin (DFFB)": {
+      "id": "deutsche-film-und-fernsehakademie-berlin",
+      "coordinates": {
+        "lat": 52.5167,
+        "lng": 13.3833
+      },
+      "coordinateScope": "Approximate Berlin city placement from existing dataset; not campus GPS.",
+      "city": "Berlin",
+      "state": "Berlin",
+      "type": "film_school",
+      "website": "https://www.dffb.de/",
+      "programs": [
+        {
+          "program_id": "deutsche-film-und-fernsehakademie-berlin--film-directing--dffb-diploma-non-state-qualification",
+          "fees": [
+            {
+              "kind": "enrolment-equipment",
+              "euros": 225,
+              "period": "year",
+              "appliesTo": "all enrolled students",
+              "notes": "Enrolment/re-registration and equipment insurance; current published amount, not tuition."
+            },
+            {
+              "kind": "semester-ticket",
+              "euros": null,
+              "period": "semester",
+              "appliesTo": "DFFB students — amount and charge period need confirmation",
+              "notes": "The English admissions page quotes €226.80/semester for the first six academic years; the German FAQ quotes €208.80/semester for the first four. These official figures conflict. Confirm the applicable amount and charging period with DFFB; neither is treated as a verified universal fee here."
+            }
+          ],
+          "applicationDeadlines": {
+            "winter": {
+              "start": "23 September 2026",
+              "end": "24 November 2026",
+              "cycle": "academic year 2027/28 — mandatory portal registration"
+            }
+          },
+          "researched": "2026-10-11",
+          "name": "Film Directing",
+          "sources": {
+            "fees": "https://www.dffb.de/en/studies/application/",
+            "name": "https://www.dffb.de/en/studies/",
+            "degree": "https://www.dffb.de/en/studies/",
+            "duration": "https://www.dffb.de/en/studies/study-structure/",
+            "language": "https://www.dffb.de/en/studies/application/",
+            "description": "https://www.dffb.de/en/studies/",
+            "searchAliases": "https://www.dffb.de/en/studies/",
+            "admission": "https://www.dffb.de/en/studies/application/",
+            "details.portfolioRequired": "https://www.dffb.de/en/studies/application/",
+            "intakes": "https://www.dffb.de/en/studies/study-structure/",
+            "details.languageNotes": "https://www.dffb.de/en/studies/application/",
+            "applicationRoute": "https://www.dffb.de/en/studies/application/",
+            "applicationMethods": "https://www.dffb.de/en/studies/application/",
+            "applicationDeadlines.winter": "https://www.dffb.de/en/studies/application/",
+            "otherDeadlines": "https://www.dffb.de/en/studies/application/",
+            "requirements": "https://www.dffb.de/studium/faq/"
+          },
+          "degree": "DFFB diploma (non-state qualification)",
+          "duration": "12 semesters",
+          "language": "German/English",
+          "description": "Full-time film directing training at DFFB. The award is DFFB’s own non-state diploma, not a university Bachelor, Master or academic Diplom. German is required; some seminars are taught in English. The 2027/28 application requires registration before the later assignment-submission deadline.",
+          "searchAliases": [
+            "Regie",
+            "Directing"
+          ],
+          "admission": "aptitude",
+          "admissionSource": "https://www.dffb.de/en/studies/application/",
+          "details": {
+            "portfolioRequired": true,
+            "programUrl": "https://www.dffb.de/en/studies/directing/",
+            "applicationUrl": "https://www.dffb.de/en/studies/application/",
+            "sourceUrl": "https://www.dffb.de/en/studies/application/",
+            "extractedAt": "2026-10-11",
+            "tuitionEuroPerSemester": null,
+            "languageNotes": [
+              "German B2 proof at the start in autumn for international applicants (German FAQ exempts Austria and Switzerland). English applications and oral/practical exams are possible if German is insufficient then. Good English is required for all candidates; English-only study is not an alternative to the German requirement."
+            ]
+          },
+          "intakes": [
+            "winter"
+          ],
+          "applicationRoute": {
+            "method": "direct",
+            "notes": "Apply through DFFB’s specialisation-specific online process. For 2027/28, portal registration is mandatory by 24 November 2026 at 18:00; completed assignments must follow by 8 December 2026 at 18:00. No academic degree or related practical experience is required to apply.",
+            "url": "https://www.dffb.de/en/studies/application/",
+            "scope": "all applicants, academic year 2027/28"
+          },
+          "applicationMethods": [
+            "direct"
+          ],
+          "otherDeadlines": [
+            {
+              "kind": "portfolio",
+              "semester": "winter",
+              "start": null,
+              "end": "2026-12-08",
+              "recurring": false,
+              "cycle": "2027/28",
+              "scope": "Complete application documents and assignments, by 18:00; only after mandatory registration by 24 November 2026, 18:00."
+            }
+          ],
+          "requirements": [
+            {
+              "label": "minimum-age",
+              "text": "At least 21 years old at the beginning of studies."
+            },
+            {
+              "label": "application-limit",
+              "text": "A maximum of two applications for admission to DFFB; related professional experience or degrees are not required."
+            },
+            {
+              "label": "award-status",
+              "text": "DFFB is not a university and does not offer state-recognised Bachelor or Master programmes. Do not assume its institutional diploma is equivalent to a university Diplom or meets a later master’s first-degree requirement."
+            }
+          ]
+        },
+        {
+          "program_id": "deutsche-film-und-fernsehakademie-berlin--screenwriting--dffb-diploma-non-state-qualification",
+          "fees": [
+            {
+              "kind": "enrolment-equipment",
+              "euros": 225,
+              "period": "year",
+              "appliesTo": "all enrolled students",
+              "notes": "Enrolment/re-registration and equipment insurance; current published amount, not tuition."
+            },
+            {
+              "kind": "semester-ticket",
+              "euros": null,
+              "period": "semester",
+              "appliesTo": "DFFB students — amount and charge period need confirmation",
+              "notes": "The English admissions page quotes €226.80/semester for the first six academic years; the German FAQ quotes €208.80/semester for the first four. These official figures conflict. Confirm the applicable amount and charging period with DFFB; neither is treated as a verified universal fee here."
+            }
+          ],
+          "applicationDeadlines": {
+            "winter": {
+              "start": "23 September 2026",
+              "end": "24 November 2026",
+              "cycle": "academic year 2027/28 — mandatory portal registration"
+            }
+          },
+          "researched": "2026-10-11",
+          "name": "Screenwriting",
+          "sources": {
+            "fees": "https://www.dffb.de/en/studies/application/",
+            "name": "https://www.dffb.de/en/studies/",
+            "degree": "https://www.dffb.de/en/studies/",
+            "duration": "https://www.dffb.de/en/studies/study-structure/",
+            "language": "https://www.dffb.de/en/studies/application/",
+            "description": "https://www.dffb.de/en/studies/",
+            "searchAliases": "https://www.dffb.de/en/studies/",
+            "admission": "https://www.dffb.de/en/studies/application/",
+            "details.portfolioRequired": "https://www.dffb.de/en/studies/application/",
+            "intakes": "https://www.dffb.de/en/studies/study-structure/",
+            "details.languageNotes": "https://www.dffb.de/en/studies/application/",
+            "applicationRoute": "https://www.dffb.de/en/studies/application/",
+            "applicationMethods": "https://www.dffb.de/en/studies/application/",
+            "applicationDeadlines.winter": "https://www.dffb.de/en/studies/application/",
+            "otherDeadlines": "https://www.dffb.de/en/studies/application/",
+            "requirements": "https://www.dffb.de/studium/faq/"
+          },
+          "degree": "DFFB diploma (non-state qualification)",
+          "duration": "7 semesters",
+          "language": "German/English",
+          "description": "Full-time screenwriting training at DFFB. The award is DFFB’s own non-state diploma, not a university Bachelor, Master or academic Diplom. German is required; some seminars are taught in English. The 2027/28 application requires registration before the later assignment-submission deadline.",
+          "searchAliases": [
+            "Drehbuch",
+            "Screenwriting"
+          ],
+          "admission": "aptitude",
+          "admissionSource": "https://www.dffb.de/en/studies/application/",
+          "details": {
+            "portfolioRequired": true,
+            "programUrl": "https://www.dffb.de/en/studies/screenwriting/",
+            "applicationUrl": "https://www.dffb.de/en/studies/application/",
+            "sourceUrl": "https://www.dffb.de/en/studies/application/",
+            "extractedAt": "2026-10-11",
+            "tuitionEuroPerSemester": null,
+            "languageNotes": [
+              "German B2 proof at the start in autumn for international applicants (German FAQ exempts Austria and Switzerland). English applications and oral/practical exams are possible if German is insufficient then. Good English is required for all candidates; English-only study is not an alternative to the German requirement."
+            ]
+          },
+          "intakes": [
+            "winter"
+          ],
+          "applicationRoute": {
+            "method": "direct",
+            "notes": "Apply through DFFB’s specialisation-specific online process. For 2027/28, portal registration is mandatory by 24 November 2026 at 18:00; completed assignments must follow by 8 December 2026 at 18:00. No academic degree or related practical experience is required to apply.",
+            "url": "https://www.dffb.de/en/studies/application/",
+            "scope": "all applicants, academic year 2027/28"
+          },
+          "applicationMethods": [
+            "direct"
+          ],
+          "otherDeadlines": [
+            {
+              "kind": "portfolio",
+              "semester": "winter",
+              "start": null,
+              "end": "2026-12-08",
+              "recurring": false,
+              "cycle": "2027/28",
+              "scope": "Complete application documents and assignments, by 18:00; only after mandatory registration by 24 November 2026, 18:00."
+            }
+          ],
+          "requirements": [
+            {
+              "label": "minimum-age",
+              "text": "At least 21 years old at the beginning of studies."
+            },
+            {
+              "label": "application-limit",
+              "text": "A maximum of two applications for admission to DFFB; related professional experience or degrees are not required."
+            },
+            {
+              "label": "award-status",
+              "text": "DFFB is not a university and does not offer state-recognised Bachelor or Master programmes. Do not assume its institutional diploma is equivalent to a university Diplom or meets a later master’s first-degree requirement."
+            }
+          ]
+        },
+        {
+          "program_id": "deutsche-film-und-fernsehakademie-berlin--cinematography--dffb-diploma-non-state-qualification",
+          "fees": [
+            {
+              "kind": "enrolment-equipment",
+              "euros": 225,
+              "period": "year",
+              "appliesTo": "all enrolled students",
+              "notes": "Enrolment/re-registration and equipment insurance; current published amount, not tuition."
+            },
+            {
+              "kind": "semester-ticket",
+              "euros": null,
+              "period": "semester",
+              "appliesTo": "DFFB students — amount and charge period need confirmation",
+              "notes": "The English admissions page quotes €226.80/semester for the first six academic years; the German FAQ quotes €208.80/semester for the first four. These official figures conflict. Confirm the applicable amount and charging period with DFFB; neither is treated as a verified universal fee here."
+            }
+          ],
+          "applicationDeadlines": {
+            "winter": {
+              "start": "23 September 2026",
+              "end": "24 November 2026",
+              "cycle": "academic year 2027/28 — mandatory portal registration"
+            }
+          },
+          "researched": "2026-10-11",
+          "name": "Cinematography",
+          "sources": {
+            "fees": "https://www.dffb.de/en/studies/application/",
+            "name": "https://www.dffb.de/en/studies/",
+            "degree": "https://www.dffb.de/en/studies/",
+            "duration": "https://www.dffb.de/en/studies/study-structure/",
+            "language": "https://www.dffb.de/en/studies/application/",
+            "description": "https://www.dffb.de/en/studies/",
+            "searchAliases": "https://www.dffb.de/en/studies/",
+            "admission": "https://www.dffb.de/en/studies/application/",
+            "details.portfolioRequired": "https://www.dffb.de/en/studies/application/",
+            "intakes": "https://www.dffb.de/en/studies/study-structure/",
+            "details.languageNotes": "https://www.dffb.de/en/studies/application/",
+            "applicationRoute": "https://www.dffb.de/en/studies/application/",
+            "applicationMethods": "https://www.dffb.de/en/studies/application/",
+            "applicationDeadlines.winter": "https://www.dffb.de/en/studies/application/",
+            "otherDeadlines": "https://www.dffb.de/en/studies/application/",
+            "requirements": "https://www.dffb.de/studium/faq/"
+          },
+          "degree": "DFFB diploma (non-state qualification)",
+          "duration": "12 semesters",
+          "language": "German/English",
+          "description": "Full-time cinematography training at DFFB. The award is DFFB’s own non-state diploma, not a university Bachelor, Master or academic Diplom. German is required; some seminars are taught in English. The 2027/28 application requires registration before the later assignment-submission deadline.",
+          "searchAliases": [
+            "Bildgestaltung/Kamera",
+            "Cinematography"
+          ],
+          "admission": "aptitude",
+          "admissionSource": "https://www.dffb.de/en/studies/application/",
+          "details": {
+            "portfolioRequired": true,
+            "programUrl": "https://www.dffb.de/en/studies/cinematography/",
+            "applicationUrl": "https://www.dffb.de/en/studies/application/",
+            "sourceUrl": "https://www.dffb.de/en/studies/application/",
+            "extractedAt": "2026-10-11",
+            "tuitionEuroPerSemester": null,
+            "languageNotes": [
+              "German B2 proof at the start in autumn for international applicants (German FAQ exempts Austria and Switzerland). English applications and oral/practical exams are possible if German is insufficient then. Good English is required for all candidates; English-only study is not an alternative to the German requirement."
+            ]
+          },
+          "intakes": [
+            "winter"
+          ],
+          "applicationRoute": {
+            "method": "direct",
+            "notes": "Apply through DFFB’s specialisation-specific online process. For 2027/28, portal registration is mandatory by 24 November 2026 at 18:00; completed assignments must follow by 8 December 2026 at 18:00. No academic degree or related practical experience is required to apply.",
+            "url": "https://www.dffb.de/en/studies/application/",
+            "scope": "all applicants, academic year 2027/28"
+          },
+          "applicationMethods": [
+            "direct"
+          ],
+          "otherDeadlines": [
+            {
+              "kind": "portfolio",
+              "semester": "winter",
+              "start": null,
+              "end": "2026-12-08",
+              "recurring": false,
+              "cycle": "2027/28",
+              "scope": "Complete application documents and assignments, by 18:00; only after mandatory registration by 24 November 2026, 18:00."
+            }
+          ],
+          "requirements": [
+            {
+              "label": "minimum-age",
+              "text": "At least 21 years old at the beginning of studies."
+            },
+            {
+              "label": "application-limit",
+              "text": "A maximum of two applications for admission to DFFB; related professional experience or degrees are not required."
+            },
+            {
+              "label": "award-status",
+              "text": "DFFB is not a university and does not offer state-recognised Bachelor or Master programmes. Do not assume its institutional diploma is equivalent to a university Diplom or meets a later master’s first-degree requirement."
+            }
+          ]
+        },
+        {
+          "program_id": "deutsche-film-und-fernsehakademie-berlin--producing--dffb-diploma-non-state-qualification",
+          "fees": [
+            {
+              "kind": "enrolment-equipment",
+              "euros": 225,
+              "period": "year",
+              "appliesTo": "all enrolled students",
+              "notes": "Enrolment/re-registration and equipment insurance; current published amount, not tuition."
+            },
+            {
+              "kind": "semester-ticket",
+              "euros": null,
+              "period": "semester",
+              "appliesTo": "DFFB students — amount and charge period need confirmation",
+              "notes": "The English admissions page quotes €226.80/semester for the first six academic years; the German FAQ quotes €208.80/semester for the first four. These official figures conflict. Confirm the applicable amount and charging period with DFFB; neither is treated as a verified universal fee here."
+            }
+          ],
+          "applicationDeadlines": {
+            "winter": {
+              "start": "23 September 2026",
+              "end": "24 November 2026",
+              "cycle": "academic year 2027/28 — mandatory portal registration"
+            }
+          },
+          "researched": "2026-10-11",
+          "name": "Producing",
+          "sources": {
+            "fees": "https://www.dffb.de/en/studies/application/",
+            "name": "https://www.dffb.de/en/studies/",
+            "degree": "https://www.dffb.de/en/studies/",
+            "duration": "https://www.dffb.de/en/studies/study-structure/",
+            "language": "https://www.dffb.de/en/studies/application/",
+            "description": "https://www.dffb.de/en/studies/",
+            "searchAliases": "https://www.dffb.de/en/studies/",
+            "admission": "https://www.dffb.de/en/studies/application/",
+            "details.portfolioRequired": "https://www.dffb.de/en/studies/application/",
+            "intakes": "https://www.dffb.de/en/studies/study-structure/",
+            "details.languageNotes": "https://www.dffb.de/en/studies/application/",
+            "applicationRoute": "https://www.dffb.de/en/studies/application/",
+            "applicationMethods": "https://www.dffb.de/en/studies/application/",
+            "applicationDeadlines.winter": "https://www.dffb.de/en/studies/application/",
+            "otherDeadlines": "https://www.dffb.de/en/studies/application/",
+            "requirements": "https://www.dffb.de/studium/faq/"
+          },
+          "degree": "DFFB diploma (non-state qualification)",
+          "duration": "12 semesters",
+          "language": "German/English",
+          "description": "Full-time producing training at DFFB. The award is DFFB’s own non-state diploma, not a university Bachelor, Master or academic Diplom. German is required; some seminars are taught in English. The 2027/28 application requires registration before the later assignment-submission deadline.",
+          "searchAliases": [
+            "Produktion",
+            "Producing"
+          ],
+          "admission": "aptitude",
+          "admissionSource": "https://www.dffb.de/en/studies/application/",
+          "details": {
+            "portfolioRequired": true,
+            "programUrl": "https://www.dffb.de/en/studies/producing/",
+            "applicationUrl": "https://www.dffb.de/en/studies/application/",
+            "sourceUrl": "https://www.dffb.de/en/studies/application/",
+            "extractedAt": "2026-10-11",
+            "tuitionEuroPerSemester": null,
+            "languageNotes": [
+              "German B2 proof at the start in autumn for international applicants (German FAQ exempts Austria and Switzerland). English applications and oral/practical exams are possible if German is insufficient then. Good English is required for all candidates; English-only study is not an alternative to the German requirement."
+            ]
+          },
+          "intakes": [
+            "winter"
+          ],
+          "applicationRoute": {
+            "method": "direct",
+            "notes": "Apply through DFFB’s specialisation-specific online process. For 2027/28, portal registration is mandatory by 24 November 2026 at 18:00; completed assignments must follow by 8 December 2026 at 18:00. No academic degree or related practical experience is required to apply.",
+            "url": "https://www.dffb.de/en/studies/application/",
+            "scope": "all applicants, academic year 2027/28"
+          },
+          "applicationMethods": [
+            "direct"
+          ],
+          "otherDeadlines": [
+            {
+              "kind": "portfolio",
+              "semester": "winter",
+              "start": null,
+              "end": "2026-12-08",
+              "recurring": false,
+              "cycle": "2027/28",
+              "scope": "Complete application documents and assignments, by 18:00; only after mandatory registration by 24 November 2026, 18:00."
+            }
+          ],
+          "requirements": [
+            {
+              "label": "minimum-age",
+              "text": "At least 21 years old at the beginning of studies."
+            },
+            {
+              "label": "application-limit",
+              "text": "A maximum of two applications for admission to DFFB; related professional experience or degrees are not required."
+            },
+            {
+              "label": "award-status",
+              "text": "DFFB is not a university and does not offer state-recognised Bachelor or Master programmes. Do not assume its institutional diploma is equivalent to a university Diplom or meets a later master’s first-degree requirement."
+            }
+          ]
+        },
+        {
+          "program_id": "deutsche-film-und-fernsehakademie-berlin--editing-sound--dffb-diploma-non-state-qualification",
+          "fees": [
+            {
+              "kind": "enrolment-equipment",
+              "euros": 225,
+              "period": "year",
+              "appliesTo": "all enrolled students",
+              "notes": "Enrolment/re-registration and equipment insurance; current published amount, not tuition."
+            },
+            {
+              "kind": "semester-ticket",
+              "euros": null,
+              "period": "semester",
+              "appliesTo": "DFFB students — amount and charge period need confirmation",
+              "notes": "The English admissions page quotes €226.80/semester for the first six academic years; the German FAQ quotes €208.80/semester for the first four. These official figures conflict. Confirm the applicable amount and charging period with DFFB; neither is treated as a verified universal fee here."
+            }
+          ],
+          "applicationDeadlines": {
+            "winter": {
+              "start": "23 September 2026",
+              "end": "24 November 2026",
+              "cycle": "academic year 2027/28 — mandatory portal registration"
+            }
+          },
+          "researched": "2026-10-11",
+          "name": "Editing & Sound",
+          "sources": {
+            "fees": "https://www.dffb.de/en/studies/application/",
+            "name": "https://www.dffb.de/en/studies/",
+            "degree": "https://www.dffb.de/en/studies/",
+            "duration": "https://www.dffb.de/en/studies/study-structure/",
+            "language": "https://www.dffb.de/en/studies/application/",
+            "description": "https://www.dffb.de/en/studies/",
+            "searchAliases": "https://www.dffb.de/en/studies/",
+            "admission": "https://www.dffb.de/en/studies/application/",
+            "details.portfolioRequired": "https://www.dffb.de/en/studies/application/",
+            "intakes": "https://www.dffb.de/en/studies/study-structure/",
+            "details.languageNotes": "https://www.dffb.de/en/studies/application/",
+            "applicationRoute": "https://www.dffb.de/en/studies/application/",
+            "applicationMethods": "https://www.dffb.de/en/studies/application/",
+            "applicationDeadlines.winter": "https://www.dffb.de/en/studies/application/",
+            "otherDeadlines": "https://www.dffb.de/en/studies/application/",
+            "requirements": "https://www.dffb.de/studium/faq/"
+          },
+          "degree": "DFFB diploma (non-state qualification)",
+          "duration": "12 semesters",
+          "language": "German/English",
+          "description": "Full-time editing & sound training at DFFB. The award is DFFB’s own non-state diploma, not a university Bachelor, Master or academic Diplom. German is required; some seminars are taught in English. The 2027/28 application requires registration before the later assignment-submission deadline.",
+          "searchAliases": [
+            "Montage Bild & Ton",
+            "Editing & Sound"
+          ],
+          "admission": "aptitude",
+          "admissionSource": "https://www.dffb.de/en/studies/application/",
+          "details": {
+            "portfolioRequired": true,
+            "programUrl": "https://www.dffb.de/en/studies/editing-and-sound/",
+            "applicationUrl": "https://www.dffb.de/en/studies/application/",
+            "sourceUrl": "https://www.dffb.de/en/studies/application/",
+            "extractedAt": "2026-10-11",
+            "tuitionEuroPerSemester": null,
+            "languageNotes": [
+              "German B2 proof at the start in autumn for international applicants (German FAQ exempts Austria and Switzerland). English applications and oral/practical exams are possible if German is insufficient then. Good English is required for all candidates; English-only study is not an alternative to the German requirement."
+            ]
+          },
+          "intakes": [
+            "winter"
+          ],
+          "applicationRoute": {
+            "method": "direct",
+            "notes": "Apply through DFFB’s specialisation-specific online process. For 2027/28, portal registration is mandatory by 24 November 2026 at 18:00; completed assignments must follow by 8 December 2026 at 18:00. No academic degree or related practical experience is required to apply.",
+            "url": "https://www.dffb.de/en/studies/application/",
+            "scope": "all applicants, academic year 2027/28"
+          },
+          "applicationMethods": [
+            "direct"
+          ],
+          "otherDeadlines": [
+            {
+              "kind": "portfolio",
+              "semester": "winter",
+              "start": null,
+              "end": "2026-12-08",
+              "recurring": false,
+              "cycle": "2027/28",
+              "scope": "Complete application documents and assignments, by 18:00; only after mandatory registration by 24 November 2026, 18:00."
+            }
+          ],
+          "requirements": [
+            {
+              "label": "minimum-age",
+              "text": "At least 21 years old at the beginning of studies."
+            },
+            {
+              "label": "application-limit",
+              "text": "A maximum of two applications for admission to DFFB; related professional experience or degrees are not required."
+            },
+            {
+              "label": "award-status",
+              "text": "DFFB is not a university and does not offer state-recognised Bachelor or Master programmes. Do not assume its institutional diploma is equivalent to a university Diplom or meets a later master’s first-degree requirement."
+            }
+          ]
+        }
+      ],
+      "researched": "2026-10-11",
+      "description": "Berlin’s film academy offers full-time study routes in directing, screenwriting, cinematography, producing, and editing & sound. Graduates receive an institutional DFFB diploma, not a state-recognised university Bachelor, Master or Diplom.",
+      "sources": {
+        "description": "https://www.dffb.de/en/studies/",
+        "stats.founded": "https://www.dffb.de/en/academy/",
+        "address": "https://www.dffb.de/en/imprint/",
+        "contact": "https://www.dffb.de/en/imprint/",
+        "applicationRoute": "https://www.dffb.de/en/studies/application/",
+        "fees": "https://www.dffb.de/en/studies/application/"
+      },
+      "stats": {
+        "founded": 1966
+      },
+      "address": {
+        "street": "Friedrich-Krause-Ufer 19",
+        "postalCode": "13353",
+        "city": "Berlin"
+      },
+      "contact": {
+        "phone": "+49 30 25759-0",
+        "email": "info@dffb.de"
+      },
+      "descriptionSource": {
+        "url": "https://www.dffb.de/en/studies/",
+        "checked": "2026-10-11"
+      },
+      "applicationMethod": "direct",
+      "applicationMethodSource": {
+        "url": "https://www.dffb.de/en/studies/application/",
+        "checked": "2026-10-11"
+      },
+      "applicationRoute": {
+        "method": "direct",
+        "notes": "Apply through DFFB’s specialisation-specific online process. For 2027/28, portal registration is mandatory by 24 November 2026 at 18:00; completed assignments must follow by 8 December 2026 at 18:00. No academic degree or related practical experience is required to apply.",
+        "url": "https://www.dffb.de/en/studies/application/",
+        "scope": "all applicants, academic year 2027/28"
+      },
+      "fees": [
+        {
+          "kind": "enrolment-equipment",
+          "euros": 225,
+          "period": "year",
+          "appliesTo": "all enrolled students",
+          "notes": "Enrolment/re-registration and equipment insurance; current published amount, not tuition."
+        },
+        {
+          "kind": "semester-ticket",
+          "euros": null,
+          "period": "semester",
+          "appliesTo": "DFFB students — amount and charge period need confirmation",
+          "notes": "The English admissions page quotes €226.80/semester for the first six academic years; the German FAQ quotes €208.80/semester for the first four. These official figures conflict. Confirm the applicable amount and charging period with DFFB; neither is treated as a verified universal fee here."
+        }
+      ]
+    },
+    "ifs Internationale Filmschule Köln": {
+      "id": "ifs-internationale-filmschule-koln",
+      "coordinates": {
+        "lat": 50.9375,
+        "lng": 6.9603
+      },
+      "coordinateScope": "Approximate Cologne city placement from existing dataset; not campus GPS.",
+      "city": "Cologne",
+      "state": "North Rhine-Westphalia",
+      "type": "film_school",
+      "website": "https://www.filmschule.de/en",
+      "programs": [
+        {
+          "program_id": "ifs-internationale-filmschule-koln--film--bachelor-of-arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "10 September 2026",
+              "end": "8 March 2027",
+              "cycle": "September 2027 intake (biennial)"
+            }
+          },
+          "details": {
+            "programUrl": "https://www.filmschule.de/en/studies/ba-film-overview",
+            "applicationUrl": "https://www.filmschule.de/en/studies/ba-film-overview",
+            "sourceUrl": "https://www.filmschule.de/en/studies/ba-film-overview",
+            "extractedAt": "2026-10-11",
+            "tuitionEuroPerSemester": 1750,
+            "languageNotes": [
+              "International applicants need German B2 at application and must pass DSH-2 if offered a place. Application tasks are in German. Good English is required, but formal English proof is not required; the entrance exam may assess it."
+            ]
+          },
+          "researched": "2026-10-11",
+          "name": "Film",
+          "sources": {
+            "name": "https://www.filmschule.de/en/studies/ba-film-overview",
+            "degree": "https://www.filmschule.de/en/studies/ba-film-overview",
+            "duration": "https://www.filmschule.de/en/studies/ba-film-overview",
+            "language": "https://www.filmschule.de/en/studies/ba-film-overview",
+            "intakes": "https://www.filmschule.de/en/studies/ba-film-directing",
+            "applicationMethods": "https://www.filmschule.de/en/studies/ba-film-directing",
+            "applicationRoute": "https://www.filmschule.de/en/studies/ba-film-directing",
+            "specializations": "https://www.filmschule.de/en/studies/ba-film-overview",
+            "teachingAreas": "https://www.filmschule.de/en/studies/ba-film-overview",
+            "description": "https://www.filmschule.de/en/studies/ba-film-overview",
+            "applicationDeadlines.winter": "https://www.filmschule.de/en/studies/ba-film-overview",
+            "admission": "https://www.filmschule.de/en/studies/ba-film-directing",
+            "requirements": "https://www.filmschule.de/en/studies/ba-film-directing",
+            "details.languageNotes": "https://www.filmschule.de/en/studies/ba-film-directing",
+            "fees": "https://www.filmschule.de/en/studies/ba-film-directing"
+          },
+          "degree": "Bachelor of Arts",
+          "duration": "7 semesters",
+          "language": "German",
+          "intakes": [
+            "winter"
+          ],
+          "applicationMethods": [
+            "direct"
+          ],
+          "applicationRoute": {
+            "method": "direct",
+            "notes": "Apply through the programme’s ifs procedure; specialisation-specific tasks and an entrance exam for Film B.A.",
+            "url": "https://www.filmschule.de/en/studies/ba-film-directing",
+            "scope": "programme-specific; confirm foreign-qualification requirements"
+          },
+          "specializations": [
+            "Creative Producing",
+            "Directing",
+            "Director of Photography",
+            "Editing Picture & Sound",
+            "Production Design",
+            "Screenwriting",
+            "VFX & Animation"
+          ],
+          "teachingAreas": [
+            {
+              "name": "Creative Producing",
+              "kind": "specialisation",
+              "source": "https://www.filmschule.de/en/studies/ba-film-creative-producing"
+            },
+            {
+              "name": "Directing",
+              "kind": "specialisation",
+              "source": "https://www.filmschule.de/en/studies/ba-film-directing"
+            },
+            {
+              "name": "Director of Photography",
+              "kind": "specialisation",
+              "source": "https://www.filmschule.de/en/studies/ba-film-director-photography"
+            },
+            {
+              "name": "Editing Picture & Sound",
+              "kind": "specialisation",
+              "source": "https://www.filmschule.de/en/studies/ba-film-editing-picture-sound"
+            },
+            {
+              "name": "Production Design",
+              "kind": "specialisation",
+              "source": "https://www.filmschule.de/en/studies/ba-film-production-design"
+            },
+            {
+              "name": "Screenwriting",
+              "kind": "specialisation",
+              "source": "https://www.filmschule.de/en/studies/ba-film-screenwriting"
+            },
+            {
+              "name": "VFX & Animation",
+              "kind": "specialisation",
+              "source": "https://www.filmschule.de/en/studies/ba-film-vfx-animation"
+            }
+          ],
+          "description": "Film B.A. with seven specialisations: creative producing, directing, cinematography, editing picture & sound, production design, screenwriting, and VFX & animation. These are areas within one degree, not seven separate B.A. programmes. German-taught, seven semesters, with a biennial intake. Tuition is €1,750 per semester, plus enrolment and TH Köln contributions.",
+          "admission": "aptitude",
+          "requirements": [
+            {
+              "label": "qualification",
+              "text": "University entrance qualification; exceptional artistic aptitude without it requires a separate eligibility evaluation."
+            },
+            {
+              "label": "cooperation",
+              "text": "ifs degree students also enrol at TH Köln and can use its services. Professional training is separate from the academic degree route."
+            }
+          ],
+          "admissionSource": "https://www.filmschule.de/en/studies/ba-film-directing",
+          "fees": [
+            {
+              "kind": "enrolment",
+              "euros": 400,
+              "period": "once",
+              "appliesTo": "all enrolled Film B.A. students",
+              "notes": "One-time enrolment/registration fee, not an application fee."
+            },
+            {
+              "kind": "tuition",
+              "euros": 1750,
+              "period": "semester",
+              "appliesTo": "all Film B.A. students",
+              "notes": "Separate from enrolment and TH Köln contribution; verified on all seven specialisation pages."
+            },
+            {
+              "kind": "semester-contribution",
+              "euros": 353,
+              "period": "semester",
+              "appliesTo": "all Film B.A. students",
+              "notes": "Approximate amount quoted on the programme page; check TH Köln for the current semester.",
+              "approximate": true
+            }
+          ]
+        },
+        {
+          "program_id": "ifs-internationale-filmschule-koln--serial-storytelling--master-of-arts",
+          "applicationDeadlines": {
+            "winter": {
+              "start": "24 September 2026",
+              "end": "13 January 2027",
+              "cycle": "September 2027 intake (biennial); submission portal opens early January 2027"
+            }
+          },
+          "details": {
+            "programUrl": "https://www.filmschule.de/en/studies/ma-serial-storytelling",
+            "applicationUrl": "https://www.filmschule.de/en/studies/ma-serial-storytelling/application",
+            "sourceUrl": "https://www.filmschule.de/en/studies/ma-serial-storytelling",
+            "extractedAt": "2026-10-11",
+            "tuitionEuroPerSemester": null,
+            "languageNotes": [
+              "English B2 or equivalent proof is required unless the applicant holds an English-taught academic degree or school higher-education qualification; all applicants must still demonstrate English during selection. German is required only for the German-language track, not the international track."
+            ]
+          },
+          "researched": "2026-10-11",
+          "name": "Serial Storytelling",
+          "sources": {
+            "name": "https://www.filmschule.de/en/studies/ma-serial-storytelling",
+            "degree": "https://www.filmschule.de/en/studies/ma-serial-storytelling",
+            "duration": "https://www.filmschule.de/en/studies/ma-serial-storytelling",
+            "language": "https://www.filmschule.de/en/studies/ma-serial-storytelling",
+            "intakes": "https://www.filmschule.de/en/studies/ma-serial-storytelling/application",
+            "applicationMethods": "https://www.filmschule.de/en/studies/ma-serial-storytelling/application",
+            "applicationRoute": "https://www.filmschule.de/en/studies/ma-serial-storytelling/application",
+            "description": "https://www.filmschule.de/en/studies/ma-serial-storytelling",
+            "teachingAreas": "https://www.filmschule.de/en/studies/ma-serial-storytelling",
+            "applicationDeadlines.winter": "https://www.filmschule.de/en/studies/ma-serial-storytelling",
+            "requirements": "https://www.filmschule.de/en/studies/ba-film-directing",
+            "details.languageNotes": "https://www.filmschule.de/en/studies/ma-serial-storytelling/application",
+            "admission": "https://www.filmschule.de/en/studies/ma-serial-storytelling/application",
+            "fees": "https://www.filmschule.de/en/studies/ma-serial-storytelling"
+          },
+          "degree": "Master of Arts",
+          "duration": "4 semesters",
+          "language": "German/English",
+          "intakes": [
+            "winter"
+          ],
+          "applicationMethods": [
+            "direct"
+          ],
+          "applicationRoute": {
+            "method": "direct",
+            "notes": "Apply through ifs. The advertised 2027 application phase starts on 24 September 2026, but the submission portal is announced for early January 2027; complete submissions are due by 13 January 2027.",
+            "url": "https://www.filmschule.de/en/studies/ma-serial-storytelling/application",
+            "scope": "programme-specific; confirm foreign-qualification requirements"
+          },
+          "description": "Four-semester M.A. in collaborative series writing and artistic research, with an English-language international track and an English/German track. Biennial intake. EU tuition is €2,750 per semester; non-EU tuition is €3,750, plus enrolment and TH Köln contributions.",
+          "teachingAreas": [
+            {
+              "name": "International track (English)",
+              "kind": "language-track",
+              "source": "https://www.filmschule.de/en/studies/ma-serial-storytelling"
+            },
+            {
+              "name": "German-language track (English and German)",
+              "kind": "language-track",
+              "source": "https://www.filmschule.de/en/studies/ma-serial-storytelling"
+            }
+          ],
+          "requirements": [
+            {
+              "label": "first-degree",
+              "text": "Accredited Bachelor/equivalent of at least 180 ECTS; all academic backgrounds welcome. At least one year of media-production work experience."
+            },
+            {
+              "label": "experience-timing",
+              "text": "At least one year of relevant media/writing experience by September 2027; applicants expecting to complete it before the programme starts should declare this in the application."
+            },
+            {
+              "label": "non-degree-exception",
+              "text": "Exceptional artistic applicants lacking formal prerequisites may request professional-training participation. This is not a separate M.A. degree route or a guaranteed academic-degree exemption."
+            },
+            {
+              "label": "cooperation",
+              "text": "ifs degree students also enrol at TH Köln and can use its services. Professional training is separate from the academic degree route."
+            }
+          ],
+          "admission": "aptitude",
+          "admissionSource": "https://www.filmschule.de/en/studies/ma-serial-storytelling/application",
+          "fees": [
+            {
+              "kind": "enrolment",
+              "euros": 400,
+              "period": "once",
+              "appliesTo": "all enrolled students",
+              "notes": "One-time enrolment/registration fee, not an application fee."
+            },
+            {
+              "kind": "tuition",
+              "euros": 2750,
+              "period": "semester",
+              "appliesTo": "EU citizens",
+              "notes": "Includes the €250 ifs support/study-fund contribution; do not add that contribution again."
+            },
+            {
+              "kind": "tuition",
+              "euros": 3750,
+              "period": "semester",
+              "appliesTo": "non-EU citizens",
+              "notes": "Includes the €250 ifs support/study-fund contribution; do not add that contribution again."
+            },
+            {
+              "kind": "semester-contribution",
+              "euros": 360,
+              "period": "semester",
+              "appliesTo": "all enrolled students",
+              "notes": "Approximate amount quoted on the programme page; check TH Köln for the current semester.",
+              "approximate": true
+            }
+          ]
+        },
+        {
+          "program_id": "ifs-internationale-filmschule-koln--digital-narratives--master-of-arts",
+          "applicationDeadlines": {},
+          "details": {
+            "programUrl": "https://www.filmschule.de/en/studies/ma-digital-narratives",
+            "applicationUrl": "https://www.filmschule.de/en/studies/ma-digital-narratives/application",
+            "sourceUrl": "https://www.filmschule.de/en/studies/ma-digital-narratives",
+            "extractedAt": "2026-10-11",
+            "tuitionEuroPerSemester": null,
+            "languageNotes": [
+              "English B2 or equivalent test results required; see the programme’s accepted proof rules."
+            ],
+            "portfolioRequired": true
+          },
+          "researched": "2026-10-11",
+          "name": "Digital Narratives",
+          "sources": {
+            "name": "https://www.filmschule.de/en/studies/ma-digital-narratives",
+            "degree": "https://www.filmschule.de/en/studies/ma-digital-narratives",
+            "duration": "https://www.filmschule.de/en/studies/ma-digital-narratives",
+            "language": "https://www.filmschule.de/en/studies/ma-digital-narratives",
+            "intakes": "https://www.filmschule.de/en/studies/ma-digital-narratives/application",
+            "applicationMethods": "https://www.filmschule.de/en/studies/ma-digital-narratives/application",
+            "applicationRoute": "https://www.filmschule.de/en/studies/ma-digital-narratives/application",
+            "description": "https://www.filmschule.de/en/studies/ma-digital-narratives",
+            "requirements": "https://www.filmschule.de/en/studies/ba-film-directing",
+            "details.languageNotes": "https://www.filmschule.de/en/studies/ma-digital-narratives/application",
+            "admission": "https://www.filmschule.de/en/studies/ma-digital-narratives/application",
+            "details.portfolioRequired": "https://www.filmschule.de/en/studies/ma-digital-narratives/application",
+            "fees": "https://www.filmschule.de/en/studies/ma-digital-narratives"
+          },
+          "degree": "Master of Arts",
+          "duration": "4 semesters",
+          "language": "English",
+          "intakes": [
+            "winter"
+          ],
+          "applicationMethods": [
+            "direct"
+          ],
+          "applicationRoute": {
+            "method": "direct",
+            "notes": "Apply through the programme’s ifs document review and selection interview. The next call is announced for autumn 2027; exact dates are not published.",
+            "url": "https://www.filmschule.de/en/studies/ma-digital-narratives/application",
+            "scope": "programme-specific; confirm foreign-qualification requirements"
+          },
+          "description": "English-taught, four-semester M.A. exploring digital storytelling through critical study, experimentation and project development. Biennial intake; the 2026 round is closed and the next application phase is announced for autumn 2027, without exact dates. EU tuition is €2,750 per semester; non-EU tuition is €3,750.",
+          "requirements": [
+            {
+              "label": "first-degree",
+              "text": "Bachelor/equivalent with at least 180 ECTS and at least one year of specialised professional practice or comparable project experience after the Bachelor."
+            },
+            {
+              "label": "next-call",
+              "text": "The 2026 application deadline has expired. Next application phase: autumn 2027; exact next-round dates are not published."
+            },
+            {
+              "label": "non-degree-exception",
+              "text": "Exceptional artistic applicants lacking formal prerequisites may request professional-training participation. This is not a separate M.A. degree route or a guaranteed academic-degree exemption."
+            },
+            {
+              "label": "cooperation",
+              "text": "ifs degree students also enrol at TH Köln and can use its services. Professional training is separate from the academic degree route."
+            }
+          ],
+          "admission": "aptitude",
+          "admissionSource": "https://www.filmschule.de/en/studies/ma-digital-narratives/application",
+          "fees": [
+            {
+              "kind": "enrolment",
+              "euros": 400,
+              "period": "once",
+              "appliesTo": "all enrolled students",
+              "notes": "One-time enrolment/registration fee, not an application fee."
+            },
+            {
+              "kind": "tuition",
+              "euros": 2750,
+              "period": "semester",
+              "appliesTo": "EU citizens",
+              "notes": "Includes the €250 ifs support/study-fund contribution; do not add that contribution again."
+            },
+            {
+              "kind": "tuition",
+              "euros": 3750,
+              "period": "semester",
+              "appliesTo": "non-EU citizens",
+              "notes": "Includes the €250 ifs support/study-fund contribution; do not add that contribution again."
+            },
+            {
+              "kind": "semester-contribution",
+              "euros": 360,
+              "period": "semester",
+              "appliesTo": "all enrolled students",
+              "notes": "Approximate amount quoted on the programme page; check TH Köln for the current semester.",
+              "approximate": true
+            }
+          ]
+        },
+        {
+          "program_id": "ifs-internationale-filmschule-koln--3d-animation-for-film-games--master-of-arts",
+          "applicationDeadlines": {},
+          "details": {
+            "programUrl": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games",
+            "applicationUrl": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application",
+            "sourceUrl": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games",
+            "extractedAt": "2026-10-11",
+            "tuitionEuroPerSemester": null
+          },
+          "researched": "2026-10-11",
+          "name": "3D Animation for Film & Games",
+          "sources": {
+            "name": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games",
+            "degree": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games",
+            "duration": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games",
+            "language": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games",
+            "intakes": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application",
+            "applicationMethods": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application",
+            "applicationRoute": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application",
+            "description": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games",
+            "requirements": "https://www.filmschule.de/en/studies/ba-film-directing",
+            "admission": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application",
+            "fees": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application"
+          },
+          "degree": "Master of Arts",
+          "duration": "4 semesters",
+          "language": "English",
+          "intakes": [
+            "winter"
+          ],
+          "applicationMethods": [
+            "uni-assist"
+          ],
+          "applicationRoute": {
+            "method": "mixed",
+            "notes": "Apply through Cologne Game Lab. International applicants with non-German degrees must also submit their degree documents to uni-assist for validation, in parallel. The uni-assist filter reflects this foreign-degree handling step; German-degree applicants should check their direct route. The 2026 round is closed; do not reuse its uni-assist dates for 2027.",
+            "url": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application",
+            "scope": "international applicants with non-German first degrees need uni-assist; all applicants also apply via CGL"
+          },
+          "description": "English-taught, four-semester M.A. in 3D animation at the intersection of film and games, in cooperation with Cologne Game Lab/TH Köln. Annual winter intake; the 2026 round is closed and next-round deadlines are unpublished. Foreign-degree applicants require uni-assist validation alongside CGL application. EU tuition is €1,500 per semester; non-EU tuition is €2,500.",
+          "requirements": [
+            {
+              "label": "first-degree",
+              "text": "Bachelor/equivalent in film, games, design, architecture or a comparable field. At least 12 months of relevant practice after the first degree, completed by programme start, acquired within the five years before application; experience can be cumulative."
+            },
+            {
+              "label": "next-call",
+              "text": "The 2026 application deadline has expired; no exact 2027 application or foreign-degree validation dates have been verified."
+            },
+            {
+              "label": "cooperation",
+              "text": "ifs degree students also enrol at TH Köln and can use its services. Professional training is separate from the academic degree route."
+            }
+          ],
+          "admission": "aptitude",
+          "admissionSource": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application",
+          "fees": [
+            {
+              "kind": "enrolment",
+              "euros": 200,
+              "period": "once",
+              "appliesTo": "all enrolled students",
+              "notes": "One-time enrolment/registration fee, not an application fee."
+            },
+            {
+              "kind": "tuition",
+              "euros": 1500,
+              "period": "semester",
+              "appliesTo": "EU citizens",
+              "notes": "Includes the €250 ifs support/study-fund contribution; do not add that contribution again."
+            },
+            {
+              "kind": "tuition",
+              "euros": 2500,
+              "period": "semester",
+              "appliesTo": "non-EU citizens",
+              "notes": "Includes the €250 ifs support/study-fund contribution; do not add that contribution again."
+            },
+            {
+              "kind": "semester-contribution",
+              "euros": 340,
+              "period": "semester",
+              "appliesTo": "all enrolled students",
+              "notes": "Approximate amount quoted on the programme page; check TH Köln for the current semester.",
+              "approximate": true
+            }
+          ]
+        },
+        {
+          "program_id": "ifs-internationale-filmschule-koln--entertainment-producing--master-of-arts",
+          "applicationDeadlines": {},
+          "details": {
+            "programUrl": "https://www.filmschule.de/en/studies/ma-entertainment-producing/information",
+            "applicationUrl": "https://www.filmschule.de/de/studium/ma-entertainment-producing/bewerbung",
+            "sourceUrl": "https://www.filmschule.de/en/studies/ma-entertainment-producing/information",
+            "extractedAt": "2026-10-11",
+            "tuitionEuroPerSemester": null,
+            "languageNotes": [
+              "International applicants need German B2 at application and DSH-2 if offered a place. Good English required; formal English proof is not required and may be assessed in the entrance examination. Selected teaching content is English; this is not an English-only degree."
+            ]
+          },
+          "researched": "2026-10-11",
+          "name": "Entertainment Producing",
+          "sources": {
+            "name": "https://www.filmschule.de/en/studies/ma-entertainment-producing/information",
+            "degree": "https://www.filmschule.de/en/studies/ma-entertainment-producing/information",
+            "duration": "https://www.filmschule.de/en/studies/ma-entertainment-producing/information",
+            "language": "https://www.filmschule.de/en/studies/ma-entertainment-producing/information",
+            "intakes": "https://www.filmschule.de/de/studium/ma-entertainment-producing/bewerbung",
+            "applicationMethods": "https://www.filmschule.de/de/studium/ma-entertainment-producing/bewerbung",
+            "applicationRoute": "https://www.filmschule.de/de/studium/ma-entertainment-producing/bewerbung",
+            "description": "https://www.filmschule.de/en/studies/ma-entertainment-producing/information",
+            "requirements": "https://www.filmschule.de/en/studies/ba-film-directing",
+            "details.languageNotes": "https://www.filmschule.de/de/studium/ma-entertainment-producing/bewerbung",
+            "admission": "https://www.filmschule.de/de/studium/ma-entertainment-producing/bewerbung",
+            "fees": "https://www.filmschule.de/de/studium/ma-entertainment-producing/information"
+          },
+          "degree": "Master of Arts",
+          "duration": "4 semesters",
+          "language": "German",
+          "intakes": [
+            "winter"
+          ],
+          "applicationMethods": [
+            "direct"
+          ],
+          "applicationRoute": {
+            "method": "direct",
+            "notes": "Apply through ifs with CV/motivation and an online Experience Assessment. The next application phase is announced for early 2027; exact dates are not published.",
+            "url": "https://www.filmschule.de/de/studium/ma-entertainment-producing/bewerbung",
+            "scope": "programme-specific; confirm foreign-qualification requirements"
+          },
+          "description": "Part-time, four-semester M.A. in developing and producing non-fiction entertainment formats. German-taught, with selected content in English. Biennial winter intake; applications are announced for early 2027 for an autumn 2027 start, but exact deadlines are unpublished. EU tuition is €2,750 per semester; non-EU tuition is €3,750.",
+          "requirements": [
+            {
+              "label": "first-degree",
+              "text": "Bachelor/equivalent of at least 180 ECTS from an accredited institution. At least one year of relevant entertainment-industry practice or a related practical field."
+            },
+            {
+              "label": "experience",
+              "text": "At least one year of entertainment production/editorial or creative practice; related event, theatre or trans-/multimedia production may qualify."
+            },
+            {
+              "label": "next-call",
+              "text": "Applications are announced for early 2027, with autumn 2027 study start. Exact next-round deadlines are not published."
+            },
+            {
+              "label": "non-degree-exception",
+              "text": "Exceptional artistic applicants lacking formal prerequisites may request professional-training participation. This is not a separate M.A. degree route or a guaranteed academic-degree exemption."
+            },
+            {
+              "label": "cooperation",
+              "text": "ifs degree students also enrol at TH Köln and can use its services. Professional training is separate from the academic degree route."
+            }
+          ],
+          "admission": "aptitude",
+          "admissionSource": "https://www.filmschule.de/de/studium/ma-entertainment-producing/bewerbung",
+          "fees": [
+            {
+              "kind": "enrolment",
+              "euros": 400,
+              "period": "once",
+              "appliesTo": "all enrolled students",
+              "notes": "One-time enrolment/registration fee, not an application fee."
+            },
+            {
+              "kind": "tuition",
+              "euros": 2750,
+              "period": "semester",
+              "appliesTo": "EU citizens",
+              "notes": "Includes the €250 ifs support/study-fund contribution; do not add that contribution again."
+            },
+            {
+              "kind": "tuition",
+              "euros": 3750,
+              "period": "semester",
+              "appliesTo": "non-EU citizens",
+              "notes": "Includes the €250 ifs support/study-fund contribution; do not add that contribution again."
+            },
+            {
+              "kind": "semester-contribution",
+              "euros": 360,
+              "period": "semester",
+              "appliesTo": "all enrolled students",
+              "notes": "Approximate amount quoted on the programme page; check TH Köln for the current semester.",
+              "approximate": true
+            }
+          ]
+        }
+      ],
+      "researched": "2026-10-11",
+      "description": "Cologne film school offering a Film B.A. with seven specialisation areas and four M.A. programmes. Degree students study in cooperation with TH Köln and enrol there. Tuition is programme-specific, with citizenship-dependent master’s fees. Its professional-training catalogue is separate from these degrees.",
+      "sources": {
+        "description": "https://www.filmschule.de/en/studies/",
+        "stats.founded": "https://www.filmschule.de/de/filmschule",
+        "address": "https://www.filmschule.de/en/imprint",
+        "contact": "https://www.filmschule.de/en/imprint",
+        "applicationRoute": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application"
+      },
+      "stats": {
+        "founded": 2000
+      },
+      "address": {
+        "street": "Schanzenstraße 28",
+        "postalCode": "51063",
+        "city": "Köln"
+      },
+      "contact": {
+        "phone": "+49 221 920188-0",
+        "email": "info@filmschule.de"
+      },
+      "descriptionSource": {
+        "url": "https://www.filmschule.de/en/studies/",
+        "checked": "2026-10-11"
+      },
+      "applicationMethod": "direct",
+      "applicationMethodSource": {
+        "url": "https://www.filmschule.de/en/studies/ba-film-directing",
+        "checked": "2026-10-11"
+      },
+      "applicationRoute": {
+        "method": "programme-specific",
+        "notes": "Use each programme’s own application process. Film B.A., Serial Storytelling, Digital Narratives and Entertainment Producing publish ifs selection procedures. 3D Animation for Film & Games uses the Cologne Game Lab portal and additionally requires uni-assist validation for international applicants with non-German degrees. Degree students enrol at TH Köln; a direct submission is not a universal fee or credential-validation waiver.",
+        "url": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application",
+        "scope": "programme and qualification-specific"
+      }
     }
   }
 }

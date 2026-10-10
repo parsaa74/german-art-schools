@@ -5,8 +5,8 @@
  * used by the GlassWall (which panes break), the 2D graph, the FilterWizard
  * and the filter panel (live counts).
  *
- * School-level filters (state, type, application route) test the school.
- * Program-level filters (subject, degree, language, semester, NC-free) must all hold
+ * School-level filters (state, type) test the school.
+ * Program-level filters (subject, degree, language, semester, NC-free, sourced route) must all hold
  * for the SAME program — "English + Master" means an English-taught master,
  * not an English bachelor next to a German master. Missing data never passes
  * an active filter.
@@ -30,8 +30,11 @@ export interface Filters {
 
 type Program = NonNullable<ProcessedUniversity['programs']>[number];
 
-function programPasses(p: Program, f: Filters, schoolType: string): boolean {
+function programPasses(p: Program, f: Filters, schoolType: string, schoolMethod?: 'direct' | 'uni-assist'): boolean {
   if (p.status?.status === 'not-matched' || p.status?.status === 'discontinued') return false;
+  // A verified programme handling route overrides broad institution membership.
+  // This filter concerns foreign qualifications; exemptions remain in route notes.
+  if (f.method && !(p.applicationMethods ?? (schoolMethod ? [schoolMethod] : [])).includes(f.method)) return false;
   if (f.program && subjectGroupOf(p.name) !== f.program) return false;
   if (f.nc && !admissionOf(p as any, schoolType)) return false;
   if (f.degree && degreeGroupOf(p.degree) !== f.degree) return false;
@@ -40,11 +43,11 @@ function programPasses(p: Program, f: Filters, schoolType: string): boolean {
   return true;
 }
 
-const hasProgramFilter = (f: Filters) => !!(f.program || f.degree || f.language || f.semester || f.nc);
+const hasProgramFilter = (f: Filters) => !!(f.program || f.degree || f.language || f.semester || f.nc || f.method);
 
 /** Programs of `uni` that satisfy every program-level filter. */
 export function matchingPrograms(uni: ProcessedUniversity, f: Filters): Program[] {
-  return (uni.programs ?? []).filter((p) => programPasses(p, f, uni.type));
+  return (uni.programs ?? []).filter((p) => programPasses(p, f, uni.type, uni.applicationMethod));
 }
 
 export function passesFilters(uni: ProcessedUniversity, f: Filters): boolean {
@@ -53,16 +56,15 @@ export function passesFilters(uni: ProcessedUniversity, f: Filters): boolean {
     // A generic school description must not satisfy a specific programme search
     // when degree/language/etc. filters are active (e.g. a nonexistent MSc).
     const hay = fold([uni.name, uni.state, uni.city || '', hasProgramFilter(f) ? '' : uni.description || ''].join(' '));
-    if (!hay.includes(q) && !(uni.programs ?? []).some((p) => programPasses(p, f, uni.type) && programSearchMatch(p, f.search).score > 0)) return false;
+    if (!hay.includes(q) && !(uni.programs ?? []).some((p) => programPasses(p, f, uni.type, uni.applicationMethod) && programSearchMatch(p, f.search).score > 0)) return false;
   }
   if (f.state && uni.state !== f.state) return false;
   if (f.type && uni.type !== f.type) return false;
-  if (f.method != null && uni.applicationMethod !== f.method) return false;
   if (f.timeline) {
     const y = uni.founded ? parseInt(uni.founded) : NaN;
     if (isNaN(y) || y < f.timeline[0] || y > f.timeline[1]) return false;
   }
-  if (hasProgramFilter(f) && !(uni.programs ?? []).some((p) => programPasses(p, f, uni.type))) return false;
+  if (hasProgramFilter(f) && !(uni.programs ?? []).some((p) => programPasses(p, f, uni.type, uni.applicationMethod))) return false;
   return true;
 }
 

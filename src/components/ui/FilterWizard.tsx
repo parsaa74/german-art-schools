@@ -63,8 +63,8 @@ export function FilterWizard() {
       options: LANGUAGES.map((v) => ({ value: v, label: LANGUAGE_LABELS[v] })),
     },
     {
-      key: 'method', eyebrow: 'Applying', prompt: 'Want to skip the uni-assist fee?',
-      hint: 'For applicants with non-German school certificates. uni-assist charges €75 for the first program and €30 for each extra one per semester.',
+      key: 'method', eyebrow: 'Applying', prompt: 'Do application handling fees matter?',
+      hint: 'For non-German qualifications. uni-assist charges €75 first and €30 for each extra application per semester. Sourced programme routes take priority; direct submission alone does not waive credential-validation fees.',
       value: s.activeApplicationMethodFilter, set: s.setActiveApplicationMethodFilter,
       options: ['direct', 'uni-assist'].map((v) => ({ value: v, label: METHOD_LABELS[v] })),
     },

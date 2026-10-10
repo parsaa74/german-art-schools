@@ -64,6 +64,12 @@ export interface Program {
   joint_program_id?: string | null;
   joint_profile?: string | null;
   intakes?: string[];
+  application_methods?: Array<'direct' | 'uni-assist'>; // sourced handling routes for foreign qualifications
+  application_route?: { method: string; notes: string; url?: string; scope?: string } | null;
+  fees?: Array<{ kind: string; euros: number | null; period: string; appliesTo: string; notes?: string; cycle?: string | null; approximate?: boolean }>;
+  requirements?: Array<{ label: string; text: string }>;
+  sources?: Record<string, string>;
+  researched?: string | null;
   status?: { status: string; notes?: string } | null;
   portfolio_required: boolean | null;
   tuition_eur_per_semester: number | null;

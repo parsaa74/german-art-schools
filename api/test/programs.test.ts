@@ -20,7 +20,7 @@ describe('GET /v1/programs', () => {
     const { res, body } = await fetchJson('/v1/programs');
     expect(res.status).toBe(200);
     expect(body.total).toBe(programCount);
-    expect(programCount).toBe(780); // + UdK D&C/VK MA and 13 verified h_da catalogue entries
+    expect(programCount).toBe(790); // + five DFFB routes and five ifs degrees
     expect(body.limit).toBe(50);
     expect(body.offset).toBe(0);
     expect(body.items).toHaveLength(50);
