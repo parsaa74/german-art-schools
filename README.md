@@ -20,6 +20,7 @@ School and program data lives in [`src/data/enhanced_german_art_schools.json`](s
 - Deadlines without a year repeat every year. Deadlines with a year (e.g. *5 March 2027*) are for one application round only and are never carried forward.
 - Membership of uni-assist comes from the [uni-assist member list](https://www.uni-assist.de/tools/uni-assist-hochschulen/).
 - DFFB’s own diploma is explicitly a **non-state qualification**, not a university Bachelor, Master or Diplom. ifs Film specialisations and Serial Storytelling language tracks stay inside their actual parent degrees.
+- HFBK’s Film focus is searchable within the actual Fine Arts BFA/MFA, with sourced film-department staff and application notes. The separately administered HMS cooperative master is not the same degree. Subject filtering includes officially sourced study focuses, not only the degree title.
 - Programme-specific application handling routes override broad school membership when sourced. Direct submission does not guarantee foreign-qualification validation is free; ifs 3D Animation requires uni-assist validation for international applicants with non-German degrees.
 - The API additionally exposes scoped fees, route notes, requirements, field sources and retrieval dates. Approximate fees retain that label; a single tuition number is left unknown when costs differ by applicant.
 - Not every program is fully researched yet. Missing information is shown as unknown rather than guessed. New programmes without genuine embeddings remain searchable but have no fabricated vector alternatives.

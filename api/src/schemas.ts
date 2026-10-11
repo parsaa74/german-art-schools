@@ -90,6 +90,7 @@ export const ProgramSchema = z
     specializations: z.array(z.string()),
     search_aliases: z.array(z.string()).optional(),
     teaching_areas: z.array(z.object({ name: z.string(), kind: z.string(), source: z.string() })).optional(),
+    faculty: z.array(z.object({ name: z.string(), title: z.string().optional(), profile_url: z.string().optional(), source: z.string() })).optional().openapi({ description: 'Only officially sourced faculty rosters. A department listing need not cover the full degree or guarantee future teaching assignments.' }),
     joint_with: z.array(z.string()).optional(),
     joint_program_id: z.string().nullable().optional(),
     joint_profile: z.string().nullable().optional(),

@@ -1681,110 +1681,6 @@
       "weight": 0.43
     }
   ],
-  "hochschule-fur-bildende-kunste-hamburg--film--unspecified": [
-    {
-      "id": "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified",
-      "weight": 0.47
-    },
-    {
-      "id": "robert-schumann-hochschule--musikfilmregie--master-of-music",
-      "weight": 0.47
-    },
-    {
-      "id": "fachhochschule-dortmund--film-sound--bachelor-of-arts",
-      "weight": 0.47
-    },
-    {
-      "id": "hochschule-darmstadt--motion-pictures--bachelor-of-arts",
-      "weight": 0.39
-    },
-    {
-      "id": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
-      "weight": 0.34
-    }
-  ],
-  "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified": [
-    {
-      "id": "kunsthochschule-mainz--fine-arts--unspecified",
-      "weight": 0.62
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
-      "weight": 0.6
-    },
-    {
-      "id": "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified",
-      "weight": 0.59
-    },
-    {
-      "id": "technische-hochschule-ingolstadt--user-experience-design--unspecified",
-      "weight": 0.58
-    },
-    {
-      "id": "hochschule-fur-fernsehen-und-film-munchen--film-production--unspecified",
-      "weight": 0.57
-    },
-    {
-      "id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
-      "weight": 0.57
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
-      "weight": 0.47
-    }
-  ],
-  "robert-schumann-hochschule--musikfilmregie--master-of-music": [
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
-      "weight": 0.47
-    },
-    {
-      "id": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
-      "weight": 0.42
-    },
-    {
-      "id": "hochschule-darmstadt--motion-pictures--bachelor-of-arts",
-      "weight": 0.37
-    },
-    {
-      "id": "hochschule-fur-musik-und-tanz-koln--production--master-of-music",
-      "weight": 0.37
-    }
-  ],
-  "fachhochschule-dortmund--film-sound--bachelor-of-arts": [
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
-      "weight": 0.47
-    },
-    {
-      "id": "hochschule-darmstadt--motion-pictures--bachelor-of-arts",
-      "weight": 0.41
-    }
-  ],
-  "hochschule-darmstadt--motion-pictures--bachelor-of-arts": [
-    {
-      "id": "fachhochschule-dortmund--film-sound--bachelor-of-arts",
-      "weight": 0.41
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
-      "weight": 0.39
-    },
-    {
-      "id": "robert-schumann-hochschule--musikfilmregie--master-of-music",
-      "weight": 0.37
-    }
-  ],
-  "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts": [
-    {
-      "id": "robert-schumann-hochschule--musikfilmregie--master-of-music",
-      "weight": 0.42
-    },
-    {
-      "id": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
-      "weight": 0.34
-    }
-  ],
   "hochschule-der-bildenden-kunste-saar--fine-arts--diploma": [
     {
       "id": "kunsthochschule-kassel--fine-arts--diploma",
@@ -12453,6 +12349,32 @@
       "weight": 0.36
     }
   ],
+  "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified": [
+    {
+      "id": "kunsthochschule-mainz--fine-arts--unspecified",
+      "weight": 0.62
+    },
+    {
+      "id": "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified",
+      "weight": 0.6
+    },
+    {
+      "id": "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified",
+      "weight": 0.59
+    },
+    {
+      "id": "technische-hochschule-ingolstadt--user-experience-design--unspecified",
+      "weight": 0.58
+    },
+    {
+      "id": "hochschule-fur-fernsehen-und-film-munchen--film-production--unspecified",
+      "weight": 0.57
+    },
+    {
+      "id": "technische-hochschule-augsburg--interactive-media-systems--unspecified",
+      "weight": 0.57
+    }
+  ],
   "filmakademie-baden-wurttemberg--produktion--diploma": [
     {
       "id": "filmuniversitat-babelsberg-konrad-wolf--film-and-television-production--diploma",
@@ -13117,6 +13039,36 @@
     {
       "id": "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
       "weight": 0.43
+    }
+  ],
+  "hochschule-darmstadt--motion-pictures--bachelor-of-arts": [
+    {
+      "id": "fachhochschule-dortmund--film-sound--bachelor-of-arts",
+      "weight": 0.41
+    },
+    {
+      "id": "robert-schumann-hochschule--musikfilmregie--master-of-music",
+      "weight": 0.37
+    }
+  ],
+  "fachhochschule-dortmund--film-sound--bachelor-of-arts": [
+    {
+      "id": "hochschule-darmstadt--motion-pictures--bachelor-of-arts",
+      "weight": 0.41
+    }
+  ],
+  "robert-schumann-hochschule--musikfilmregie--master-of-music": [
+    {
+      "id": "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
+      "weight": 0.42
+    },
+    {
+      "id": "hochschule-darmstadt--motion-pictures--bachelor-of-arts",
+      "weight": 0.37
+    },
+    {
+      "id": "hochschule-fur-musik-und-tanz-koln--production--master-of-music",
+      "weight": 0.37
     }
   ],
   "hochschule-darmstadt--communication-design--bachelor-of-arts": [
@@ -19101,6 +19053,12 @@
     {
       "id": "hochschule-fur-musik-saar--kunstlerisches-profil-kammermusik--master-of-music",
       "weight": 0.33
+    }
+  ],
+  "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts": [
+    {
+      "id": "robert-schumann-hochschule--musikfilmregie--master-of-music",
+      "weight": 0.42
     }
   ],
   "hochschule-fur-musik-und-tanz-koln--production--master-of-music": [

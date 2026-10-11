@@ -60,6 +60,7 @@ export interface Program {
   specializations: string[];
   search_aliases?: string[];
   teaching_areas?: Array<{ name: string; kind: string; source: string }>;
+  faculty?: Array<{ name: string; title?: string; profile_url?: string; source: string }>; // only officially sourced rosters
   joint_with?: string[];
   joint_program_id?: string | null;
   joint_profile?: string | null;

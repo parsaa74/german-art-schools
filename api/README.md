@@ -20,6 +20,8 @@ The 2026-10-11 snapshot contains **95 schools / 790 programme records**. Counts 
 
 DFFB has five full-time study routes ending in its own **non-state diploma**. These are classified as `degree_level: "other"`, not university Bachelor, Master or Diplom degrees. ifs has one Film B.A. with seven nested specialisations and four M.A. programmes. Language tracks and specialisations are not separate degrees.
 
+HFBK’s **Film** is nested in its existing **Fine Arts BFA/MFA** records. Search `q=Film` or `q=Autorenfilm`, optionally with `school=hochschule-fur-bildende-kunste-hamburg` and `degree_level=master`. Its separately administered HMS cooperative master is not the same programme and is not added by this focus update.
+
 ## Additive application metadata
 
 `/v1` retains its previous response keys and types. Programme records additionally expose optional fields:
@@ -28,6 +30,7 @@ DFFB has five full-time study routes ending in its own **non-state diploma**. Th
 - `application_route`: method, notes, official URL and applicant scope. ifs 3D Animation uses CGL submission plus uni-assist validation for international applicants with non-German degrees.
 - `fees`: individual amounts with `kind`, `euros`, `period`, `appliesTo`, optional `notes`, `cycle` and `approximate`. Preserve fee scopes and periods. Approximate contributions are not exact future prices. The €250 ifs study-fund contribution is already included in published MA tuition, not an extra charge.
 - `requirements`: labelled notes, including degree prerequisites and exceptional **non-degree** training participation.
+- `faculty`: only rosters with an official field source; names, role/title, optional profile URL and source. A Film department listing is not the whole Fine Arts faculty or a guarantee of future teaching assignments.
 - `sources`: field-to-official-URL map.
 - `researched`: retrieval date, not a guarantee that rules remain valid in a future cycle.
 

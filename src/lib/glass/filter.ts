@@ -35,7 +35,8 @@ function programPasses(p: Program, f: Filters, schoolType: string, schoolMethod?
   // A verified programme handling route overrides broad institution membership.
   // This filter concerns foreign qualifications; exemptions remain in route notes.
   if (f.method && !(p.applicationMethods ?? (schoolMethod ? [schoolMethod] : [])).includes(f.method)) return false;
-  if (f.program && subjectGroupOf(p.name) !== f.program) return false;
+  // Official study focuses can span subjects without becoming invented degree nodes.
+  if (f.program && subjectGroupOf(p.name) !== f.program && !p.teachingAreas?.some((a) => !!a.source && subjectGroupOf(a.name) === f.program)) return false;
   if (f.nc && !admissionOf(p as any, schoolType)) return false;
   if (f.degree && degreeGroupOf(p.degree) !== f.degree) return false;
   if (f.language && !taughtIn(p.language, f.language)) return false;

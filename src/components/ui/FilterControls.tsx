@@ -162,7 +162,8 @@ export function FilterControls() {
       </div>
 
       <FilterSelect id="subject-filter" label="Subject" anyLabel="All subjects" value={s.activeProgramFilter}
-        options={opts(SUBJECT_GROUPS)} counts={counts.program} onChange={s.setActiveProgramFilter} />
+        options={opts(SUBJECT_GROUPS)} counts={counts.program} onChange={s.setActiveProgramFilter}
+        note="Includes officially sourced study focuses within a degree; focuses are not separate degrees." />
       <FilterSelect id="degree-filter" label="Degree" anyLabel="All degrees" value={s.activeDegreeFilter}
         options={opts(DEGREE_GROUPS)} counts={counts.degree} onChange={s.setActiveDegreeFilter} />
       <FilterSelect id="language-filter" label="Language" anyLabel="Any language" value={s.activeCourseLanguageFilter}

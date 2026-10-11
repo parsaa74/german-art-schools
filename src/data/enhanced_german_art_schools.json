@@ -41,36 +41,166 @@
           },
           "language": "German",
           "duration": "8 semesters",
-          "description": "Comprehensive fine arts program with focus on individual artistic development and interdisciplinary approaches.",
+          "description": "Fine Arts bachelor’s degree with seven study focuses, including Film. The Film focus develops artistic authorship through independent and collective fiction and non-fiction projects, experimentation with analogue and digital techniques, film history and theory, workshops, and opportunities to present work in the university cinema and other settings.",
           "specializations": [
-            "Painting",
-            "Sculpture",
-            "Time-based Media",
-            "Photography",
-            "Digital Art"
+            "Stage Space (Bühnenraum)",
+            "Sculpture (Bildhauerei)",
+            "Design",
+            "Film",
+            "Graphics/Photography (Grafik/Fotografie)",
+            "Time-based Media (Zeitbezogene Medien)",
+            "Painting/Drawing (Malerei/Zeichnen)"
           ],
           "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--bachelor-of-fine-arts",
           "details": {
             "programUrl": null,
             "applicationUrl": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
-            "faculty": [],
-            "tuitionEuroPerSemester": null,
+            "faculty": [
+              {
+                "name": "Robert Bramkamp",
+                "title": "Film department — Professor for experimental film",
+                "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+              },
+              {
+                "name": "Omer Fast",
+                "title": "Film department — Professor for film",
+                "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+              },
+              {
+                "name": "Adina Pintilie",
+                "title": "Film department — Professor for documentary film",
+                "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+              },
+              {
+                "name": "Angela Schanelec",
+                "title": "Film department — Professor for narrative film",
+                "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+              },
+              {
+                "name": "Dane Komljen",
+                "title": "Film department — Professor for introduction to artistic work (Film)",
+                "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+              }
+            ],
+            "tuitionEuroPerSemester": 0,
             "capacity": null,
             "studentsEnrolled": null,
-            "languageRequirements": null,
+            "languageRequirements": "German-language proof is required for international BFA applicants: a German-taught school/university certificate, TestDaF TDN 4 in every section, DSH-2, or recognised A2 course-attendance evidence (about 360 hours). With the A2 course route, language study must be intensified by at least half a CEFR level during the first two semesters and successful course certificates submitted. If a course finishes after the application deadline, explain this in the portfolio.",
             "portfolioRequired": true,
             "extractedAt": "2026-04-19T15:43:06.282Z",
             "sourceUrl": "https://www.hfbk-hamburg.de/",
             "languageNotes": [
-              "Proof of German language skills required (e.g. TestDaF TDN 4 in all parts, DSH-2, or German-taught secondary school degree; conditional admission with A2 allows completing courses in first two semesters)."
+              "German-language proof is required for international BFA applicants: a German-taught school/university certificate, TestDaF TDN 4 in every section, DSH-2, or recognised A2 course-attendance evidence (about 360 hours). With the A2 course route, language study must be intensified by at least half a CEFR level during the first two semesters and successful course certificates submitted. If a course finishes after the application deadline, explain this in the portfolio.",
+              "HFBK classes are normally taught in German; some international teachers may teach in English. This does not establish an English-only pathway."
             ]
           },
           "sources": {
             "degree": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
             "details.languageNotes": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
-            "applicationDeadlines.winter": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste"
+            "applicationDeadlines.winter": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "description": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
+            "specializations": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "teachingAreas": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "searchAliases": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
+            "details.faculty": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
+            "language": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/faq-bewerbung",
+            "requirements": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "applicationRoute": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "applicationMethods": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "intakes": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "admission": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "fees": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/faq-bewerbung",
+            "details.tuitionEuroPerSemester": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/faq-bewerbung",
+            "details.languageRequirements": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste"
           },
-          "researched": "2026-10-10"
+          "researched": "2026-10-11",
+          "teachingAreas": [
+            {
+              "name": "Stage Space (Bühnenraum)",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste"
+            },
+            {
+              "name": "Sculpture (Bildhauerei)",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste"
+            },
+            {
+              "name": "Design",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste"
+            },
+            {
+              "name": "Film",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+            },
+            {
+              "name": "Graphics/Photography (Grafik/Fotografie)",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste"
+            },
+            {
+              "name": "Time-based Media (Zeitbezogene Medien)",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste"
+            },
+            {
+              "name": "Painting/Drawing (Malerei/Zeichnen)",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste"
+            }
+          ],
+          "searchAliases": [
+            "Bildende Künste",
+            "HFBK Film",
+            "Autorenfilm"
+          ],
+          "requirements": [
+            {
+              "label": "Digital portfolio",
+              "text": "Create an HISinOne applicant account, submit the application, then use its inbox upload link. Submit work from the last two years, preferably in one PDF; maximum file size 8 GB. External links, physical submissions, late/emailed material and subsequently supplied documents are not accepted."
+            },
+            {
+              "label": "Film focus — work samples",
+              "text": "Submit filmic work of any kind, ideally complete films rather than trailers. Screenplay drafts, storyboards, photographs, drawings, collages, sketchbooks and related examples are also welcome."
+            },
+            {
+              "label": "CV and education documents",
+              "text": "Upload a CV in German or English, school and any university records, and German-language proof. International certificates not originally issued in German or English require certified translations in one of those languages."
+            }
+          ],
+          "applicationRoute": {
+            "method": "direct",
+            "notes": "Apply through HFBK HISinOne, then upload the digital portfolio using the link in the applicant inbox. For WiSe 2027/28, the full application and uploaded material must be complete by 5 March 2027 at 16:00. External portfolio links and physical/emailed/late submissions are not accepted. Check the certificate-translation and APS instructions where applicable; direct submission is not a blanket exemption from document-validation costs.",
+            "url": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-bachelor-bildende-kuenste",
+            "scope": "Fine Arts BFA applicants, including the Film focus; WiSe 2027/28"
+          },
+          "applicationMethods": [
+            "direct"
+          ],
+          "intakes": [
+            "winter"
+          ],
+          "admission": "aptitude",
+          "fees": [
+            {
+              "kind": "tuition",
+              "euros": 0,
+              "period": "semester",
+              "appliesTo": "HFBK-run programmes; HMS cooperative master not covered by this fee statement",
+              "notes": "No tuition at HFBK, but mandatory semester contributions remain. Do not transfer this tuition statement to the separately administered HMS programme.",
+              "cycle": null
+            },
+            {
+              "kind": "semester-contribution",
+              "euros": null,
+              "period": "semester",
+              "appliesTo": "HFBK-run programmes; semester-specific amount",
+              "notes": "Administrative, AStA and Studierendenwerk contributions plus the semester transport ticket remain mandatory. The FAQ says amounts vary; confirm the fee for your enrolment semester.",
+              "cycle": null
+            }
+          ]
         },
         {
           "name": "Fine Arts",
@@ -84,34 +214,172 @@
           },
           "language": "German",
           "duration": "4 semesters",
-          "description": "Advanced program for deepening artistic practice and research.",
+          "description": "Fine Arts master’s degree with eight study focuses, including Film. The Film focus develops independent or collective artistic auteur-film projects, supported by film theory, individual supervision, international cooperation and opportunities to present work. The HMS cooperative film master described on the Film page is a separate programme, not this Fine Arts MFA.",
           "specializations": [
-            "Contemporary Art",
-            "Media Art",
-            "Artistic Research"
+            "Stage Space (Bühnenraum)",
+            "Sculpture (Bildhauerei)",
+            "Design",
+            "Film",
+            "Graphics/Photography (Grafik/Fotografie)",
+            "Time-based Media (Zeitbezogene Medien)",
+            "Painting/Drawing (Malerei/Zeichnen)",
+            "Theory & History (Theorie & Geschichte)"
           ],
           "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--master-of-fine-arts",
           "details": {
             "programUrl": null,
             "applicationUrl": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
-            "faculty": [],
-            "tuitionEuroPerSemester": null,
+            "faculty": [
+              {
+                "name": "Robert Bramkamp",
+                "title": "Film department — Professor for experimental film",
+                "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+              },
+              {
+                "name": "Omer Fast",
+                "title": "Film department — Professor for film",
+                "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+              },
+              {
+                "name": "Adina Pintilie",
+                "title": "Film department — Professor for documentary film",
+                "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+              },
+              {
+                "name": "Angela Schanelec",
+                "title": "Film department — Professor for narrative film",
+                "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+              },
+              {
+                "name": "Dane Komljen",
+                "title": "Film department — Professor for introduction to artistic work (Film)",
+                "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+              }
+            ],
+            "tuitionEuroPerSemester": 0,
             "capacity": null,
             "studentsEnrolled": null,
-            "languageRequirements": null,
+            "languageRequirements": "No formal German-language proof is required for the Fine Arts MFA. German is explicitly recommended to participate fully in seminars, lectures, consultations and workshops.",
             "portfolioRequired": true,
             "extractedAt": "2026-04-19T15:43:06.282Z",
             "sourceUrl": "https://www.hfbk-hamburg.de/",
             "languageNotes": [
-              "No formal German language certificate required for Master application."
+              "No formal German-language proof is required for the Fine Arts MFA. German is explicitly recommended to participate fully in seminars, lectures, consultations and workshops.",
+              "HFBK classes are normally taught in German; some international teachers may teach in English. This does not establish an English-only pathway."
             ]
           },
           "sources": {
             "degree": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
             "details.languageNotes": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
-            "applicationDeadlines.winter": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste"
+            "applicationDeadlines.winter": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
+            "description": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
+            "specializations": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
+            "teachingAreas": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
+            "searchAliases": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
+            "details.faculty": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
+            "language": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/faq-bewerbung",
+            "requirements": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
+            "applicationRoute": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
+            "applicationMethods": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
+            "intakes": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
+            "admission": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
+            "fees": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/faq-bewerbung",
+            "details.tuitionEuroPerSemester": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/faq-bewerbung",
+            "details.languageRequirements": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste"
           },
-          "researched": "2026-10-10"
+          "researched": "2026-10-11",
+          "teachingAreas": [
+            {
+              "name": "Stage Space (Bühnenraum)",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste"
+            },
+            {
+              "name": "Sculpture (Bildhauerei)",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste"
+            },
+            {
+              "name": "Design",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste"
+            },
+            {
+              "name": "Film",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+            },
+            {
+              "name": "Graphics/Photography (Grafik/Fotografie)",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste"
+            },
+            {
+              "name": "Time-based Media (Zeitbezogene Medien)",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste"
+            },
+            {
+              "name": "Painting/Drawing (Malerei/Zeichnen)",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste"
+            },
+            {
+              "name": "Theory & History (Theorie & Geschichte)",
+              "kind": "study focus (not a separate degree)",
+              "source": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste"
+            }
+          ],
+          "searchAliases": [
+            "Bildende Künste",
+            "HFBK Film",
+            "Autorenfilm"
+          ],
+          "requirements": [
+            {
+              "label": "Digital portfolio",
+              "text": "Create an HISinOne applicant account, submit the application, then use its inbox upload link. Submit work from the last two years, preferably in one PDF; maximum file size 8 GB. External links, physical submissions, late/emailed material and subsequently supplied documents are not accepted."
+            },
+            {
+              "label": "First degree and ECTS",
+              "text": "An independent artistic position is assessed through the submitted work; a higher-education degree normally worth 240 ECTS is required. Applicants finishing their degree within six months after the application date may apply, but must supply it before study starts. Applicants below 240 ECTS, such as a 180-ECTS bachelor, are expressly encouraged to apply with evidence of at least one year of artistic practice, work in cultural/artistic institutions, internships or previous study. Outstanding artistic achievements may be recognised for 60 ECTS by the admission committee; recognition is not automatic."
+            },
+            {
+              "label": "Film focus — project proposal",
+              "text": "For Film applicants: a three-to-five-page DIN-A4 proposal for the artistic project to pursue during the master. Also submit the CV in German or English and degree proof."
+            }
+          ],
+          "applicationRoute": {
+            "method": "direct",
+            "notes": "Apply through HFBK HISinOne, then upload the digital portfolio using the link in the applicant inbox. For WiSe 2027/28, the full application and uploaded material must be complete by 5 March 2027 at 16:00. External portfolio links and physical/emailed/late submissions are not accepted. Check the certificate-translation and APS instructions where applicable; direct submission is not a blanket exemption from document-validation costs.",
+            "url": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/bewerben/bewerbung-master-bildende-kuenste",
+            "scope": "Fine Arts MFA applicants, including the Film focus; WiSe 2027/28"
+          },
+          "applicationMethods": [
+            "direct"
+          ],
+          "intakes": [
+            "winter"
+          ],
+          "admission": "aptitude",
+          "fees": [
+            {
+              "kind": "tuition",
+              "euros": 0,
+              "period": "semester",
+              "appliesTo": "HFBK-run programmes; HMS cooperative master not covered by this fee statement",
+              "notes": "No tuition at HFBK, but mandatory semester contributions remain. Do not transfer this tuition statement to the separately administered HMS programme.",
+              "cycle": null
+            },
+            {
+              "kind": "semester-contribution",
+              "euros": null,
+              "period": "semester",
+              "appliesTo": "HFBK-run programmes; semester-specific amount",
+              "notes": "Administrative, AStA and Studierendenwerk contributions plus the semester transport ticket remain mandatory. The FAQ says amounts vary; confirm the fee for your enrolment semester.",
+              "cycle": null
+            }
+          ]
         },
         {
           "name": "Art Education",
@@ -240,7 +508,7 @@
           "duration": "",
           "program_id": "hochschule-fur-bildende-kunste-hamburg--film--unspecified",
           "details": {
-            "programUrl": null,
+            "programUrl": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
             "applicationUrl": null,
             "faculty": [],
             "tuitionEuroPerSemester": null,
@@ -250,15 +518,30 @@
             "portfolioRequired": null,
             "extractedAt": "2026-04-19T15:45:32.059Z",
             "sourceUrl": "https://www.hfbk-hamburg.de/"
-          }
+          },
+          "status": {
+            "status": "not-matched",
+            "notes": "This legacy generic Film entry is not an independently verified degree. HFBK offers Film as a study focus in its Fine Arts BFA and MFA; use those parent records. The separately administered HMS cooperative film master is distinct and is not established by this unspecified placeholder."
+          },
+          "description": "This legacy generic Film entry is not an independently verified degree. HFBK offers Film as a study focus in its Fine Arts BFA and MFA; use those parent records. The separately administered HMS cooperative film master is distinct and is not established by this unspecified placeholder.",
+          "sources": {
+            "status": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
+            "description": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
+            "details.programUrl": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film"
+          },
+          "researched": "2026-10-11"
         }
       ],
       "website": "https://www.hfbk-hamburg.de/",
-      "description": "The Hamburg University of Fine Arts (HFBK) is one of Germany's most prestigious art academies. Founded in 1767, it offers a wide range of programs in fine arts and art education, with a strong emphasis on contemporary artistic practices and interdisciplinary approaches.",
+      "description": "HFBK Hamburg offers interdisciplinary Fine Arts degrees, with Film as a study focus at BFA and MFA level. Its Film teaching centres on artistic authorship, experimental independent and collective projects, fiction and non-fiction, and analogue and digital practice. The Film page separately describes an HMS cooperative master: Hamburg Media School runs that programme while HFBK awards its degree and holds academic responsibility. Do not confuse it with the on-campus Fine Arts Film focus.",
+      "descriptionSource": {
+        "url": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
+        "checked": "2026-10-11"
+      },
       "address": {
-        "street": "Dürerstraße 10",
-        "postalCode": "60596",
-        "city": "Frankfurt am Main"
+        "street": "Lerchenfeld 2",
+        "postalCode": "22081",
+        "city": "Hamburg"
       },
       "hrkMember": true,
       "tragerschaft": "öffentlich-rechtlich",
@@ -273,15 +556,25 @@
           "kind": "tuition",
           "euros": 0,
           "period": "semester",
-          "appliesTo": "all students",
-          "notes": "Studiengebühren werden an staatlichen Hamburger Hochschulen nicht erhoben.",
+          "appliesTo": "HFBK-run programmes; HMS cooperative master not covered by this fee statement",
+          "notes": "No tuition at HFBK, but mandatory semester contributions remain. Do not transfer this tuition statement to the separately administered HMS programme.",
+          "cycle": null
+        },
+        {
+          "kind": "semester-contribution",
+          "euros": null,
+          "period": "semester",
+          "appliesTo": "HFBK-run programmes; semester-specific amount",
+          "notes": "Administrative, AStA and Studierendenwerk contributions plus the semester transport ticket remain mandatory. The FAQ says amounts vary; confirm the fee for your enrolment semester.",
           "cycle": null
         }
       ],
       "sources": {
-        "fees": "https://hfbk-hamburg.de/de/informationen/studierenden-service/semesterbeitraege-und-gebuehren"
+        "fees": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/faq-bewerbung",
+        "description": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
+        "address": "https://hfbk-hamburg.de/de/informationen/impressum/impressum"
       },
-      "researched": "2026-10-10"
+      "researched": "2026-10-11"
     },
     "Hochschule der Bildenden Künste Saar": {
       "id": "hochschule-der-bildenden-kunste-saar",

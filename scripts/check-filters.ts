@@ -144,4 +144,17 @@ check(checkProgram(ifs3D, ifs, { ...EMPTY_PROFILE, certificate: 'foreign', first
 
 check(checkProgram(dffb.programs[0], dffb, { ...EMPTY_PROFILE, english: 'c1', german: 'none' }).checks.some((c) => c.text.includes('German B2') && c.level !== 'ok'), 'strong English does not hide DFFB’s mandatory German proof in application checks');
 
+// Sourced study focuses remain inside their parent degrees, but must be discoverable.
+const hfbk = school('Hochschule für bildende Künste Hamburg');
+const hfbkBF = prog(hfbk, /Fine Arts Bachelor/), hfbkMF = prog(hfbk, /Fine Arts Master/);
+const hfbkFilmMatches = matchingPrograms(hfbk, { ...none, program: 'Film & Television' });
+check(hfbkFilmMatches.length === 2 && hfbkFilmMatches.every((p) => p.name === 'Fine Arts'), 'HFBK Film subject matches the two actual BFA/MFA degrees, not the legacy generic Film node');
+check(matchingPrograms(hfbk, { ...none, program: 'Film & Television', degree: 'Master' }).map((p: any) => p.program_id).join() === hfbkMF.program_id, 'Film focus + Master holds on the same HFBK programme');
+check(!passesFilters(hfbk, { ...none, program: 'Film & Television', degree: 'Master', language: 'English' }), 'occasional English classes do not turn HFBK’s normally German MFA into an English-only pathway');
+check(programSearchMatch(hfbkMF, 'Autorenfilm').score > 0 && programSearchMatch(hfbkBF, 'HFBK Film').score > 0, 'HFBK auteur-film aliases lead to actual parent degrees');
+check(hfbkBF.requirements.some((r: any) => r.label.startsWith('Film focus') && r.text.includes('complete films rather than trailers')) && hfbkMF.requirements.some((r: any) => r.text.includes('three-to-five-page')), 'film-specific bachelor work samples and master project proposal remain scoped');
+check(hfbkMF.requirements.some((r: any) => r.text.includes('180-ECTS') && r.text.includes('not automatic')), 'HFBK lower-ECTS master application possibilities are not guaranteed recognition');
+check(hfbkMF.details.faculty.length === 5 && hfbkMF.details.faculty.every((f: any) => f.name && f.title.startsWith('Film department')), 'film staff are a labelled department roster, not invented standalone classes or a full Fine Arts faculty list');
+check(!matchingPrograms({ ...hfbk, programs: [{ ...hfbkMF, teachingAreas: [{ name: 'Film', source: '' }] }] }, { ...none, program: 'Film & Television' }).length, 'unreferenced teaching areas do not satisfy a sourced subject-focus filter');
+
 if (failed) process.exit(1);

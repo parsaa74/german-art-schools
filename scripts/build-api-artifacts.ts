@@ -56,6 +56,7 @@ interface RawProgram {
     applicationUrl?: string | null;
     tuitionEuroPerSemester?: number | null;
     portfolioRequired?: boolean | null;
+    faculty?: Array<{ name?: string; title?: string; profileUrl?: string }>;
     extractedAt?: string | null;
     sourceUrl?: string | null;
   } | null;
@@ -120,6 +121,7 @@ interface OutProgram {
   specializations: string[];
   search_aliases?: string[];
   teaching_areas?: Array<{ name: string; kind: string; source: string }>;
+  faculty?: Array<{ name: string; title?: string; profile_url?: string; source: string }>;
   joint_with?: string[];
   joint_program_id?: string | null;
   joint_profile?: string | null;
@@ -337,6 +339,10 @@ function main() {
         specializations: prog.specializations ?? [],
         search_aliases: prog.searchAliases ?? [],
         teaching_areas: prog.teachingAreas ?? [],
+        // Do not expose unverified scraper rosters as sourced teaching assignments.
+        faculty: prog.sources?.['details.faculty'] ? (details?.faculty ?? [])
+          .filter((f) => typeof f.name === 'string' && f.name.trim())
+          .map((f) => ({ name: f.name!, ...(f.title ? { title: f.title } : {}), ...(f.profileUrl ? { profile_url: f.profileUrl } : {}), source: prog.sources!['details.faculty'] })) : [],
         joint_with: prog.jointWith ?? [],
         joint_program_id: prog.jointProgramId ?? null,
         joint_profile: prog.jointProfile ?? null,
