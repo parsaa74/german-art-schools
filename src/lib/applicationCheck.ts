@@ -5,7 +5,7 @@
  * supports; anything else says "check the program page".
  */
 
-import { ProcessedUniversity } from '@/stores/schoolStore';
+import type { ProcessedUniversity } from '@/types/school';
 import { admissionOf, degreeGroupOf } from '@/lib/taxonomy';
 import { isDated, parseDeadlineDate } from '@/utils/deadlineUtils';
 

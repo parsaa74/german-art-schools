@@ -1,14 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="/favicon.png" type="image/png" sizes="16x16" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>German Art Schools Visualization</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/index.tsx"></script> <!-- Updated path to entry file -->
-  </body>
-</html> 
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#121110"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><title>German Art Schools — follow a thread</title>
+<meta name="description" content="Explore 95 German art, design, film, music and media schools and their programs: deadlines, languages, admission routes and costs, from official sources.">
+<link rel="stylesheet" href="/src/focus/focus.css">
+</head>
+<body>
+<header id="header">
+  <div><span class="brand">Focus</span><p id="context">Explore a practice, not a verdict.</p></div>
+  <nav aria-label="Views and constraints"><button id="filters-open">Consider…</button><button id="kept-open" aria-haspopup="dialog">Kept</button><button id="view" aria-pressed="false">List</button><button id="font" aria-label="Change prototype typeface">Aa</button></nav>
+</header>
+<main id="mirror" aria-label="Exploratory program and school network">
+  <canvas id="field" aria-label="Interactive network. Select a point or use the accessible List view." tabindex="0"></canvas>
+  <div id="map-controls"><div role="group" aria-label="Explore schools or programs"><button id="program-mode" aria-pressed="true">Programs</button><button id="school-mode" aria-pressed="false">Schools</button></div><div><button id="zoom-out" aria-label="Zoom out">−</button><button id="reset-view">Reframe</button><button id="zoom-in" aria-label="Zoom in">+</button></div></div>
+  <p id="legend"><span class="sample solid"></span><span id="legend-meaning">Textual resemblance</span> <span class="sample dashed"></span>Same school<br><span id="legend-detail">Tentative textual connections, not personal compatibility.</span></p>
+  <div id="hover-label" hidden></div>
+</main>
+<section id="list" hidden aria-label="Static program list"><div class="list-controls"><label>Order <select id="list-order"><option value="name">Program name</option><option value="school">School</option><option value="deadline">Application window</option></select></label><label><input type="checkbox" id="outside-list"> Include outside constraints</label></div><div id="list-content"></div></section>
+<footer id="footer">
+  <p id="count" aria-live="polite"></p>
+  <section id="peek" hidden><p id="peek-kind"></p><h1 id="peek-title"></h1><p id="peek-school"></p><p id="peek-evidence"></p><div class="actions"><button id="details">Read details ↗</button><button id="keep" aria-pressed="false">Keep</button><button id="clear-selection">Release</button></div></section>
+  <p id="gesture">Tap a point to follow its threads. Drag a point to reshape; drag empty space to travel.</p>
+</footer>
+<dialog id="constraints" aria-labelledby="constraints-title"><div class="dialog-heading"><h2 id="constraints-title">What matters to you?</h2><button id="filters-close" aria-label="Close constraints">×</button></div><p>Constraints narrow what's documented, not what's possible. Unknown facts stay visible separately; bilingual does not mean English-only.</p><form id="filter-form"><div id="fields"></div><p class="note">Tuition caps only compare published per-semester amounts. Citizenship-specific fees and unknown costs aren't guessed. Direct application may still require paid credential validation.</p><div class="actions"><button type="button" id="reset-filters">Clear constraints</button><button type="submit">Explore</button></div></form></dialog>
+<dialog id="details-sheet" aria-labelledby="details-title"></dialog>
+<dialog id="kept-sheet" aria-labelledby="kept-title"><div class="dialog-heading"><h2 id="kept-title">Kept</h2><button id="kept-close" aria-label="Close kept choices">×</button></div><p id="kept-storage" class="note"></p><div id="kept-content"></div><div class="actions"><button id="calendar-open">Calendar…</button></div></dialog>
+<dialog id="calendar-sheet" aria-labelledby="calendar-title"><div class="dialog-heading"><h2 id="calendar-title">Dates to keep</h2><button id="calendar-close" aria-label="Close calendar preview">×</button></div><p id="calendar-summary" aria-live="polite"></p><p class="note">Only kept programs. One-off, all-day closing-date reminders; no added alarms or recurring rules. Applicant-specific dates keep their scope. A downloaded file does not update itself—check official instructions before applying.</p><label id="undated-label" class="calendar-option"><input type="checkbox" id="include-undated"> Include dates published without a year</label><label id="calendar-year-field" hidden>Assign a year <input type="number" id="calendar-year" min="1000" max="9998"><small>This year is your assumption, not a confirmed future round.</small></label><ul id="calendar-dates"></ul><details id="calendar-skipped"><summary>Not included</summary><div id="calendar-skipped-content"></div></details><div class="actions"><button id="calendar-download">Download .ics</button></div></dialog>
+<script type="module" src="/src/focus/focus-network.js"></script>
+</body></html>

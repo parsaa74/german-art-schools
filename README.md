@@ -6,11 +6,11 @@ An interactive guide to art, design, film, music and media programs at German un
 
 ## Features
 
-- **Glass wall map** — every pane is a school, placed roughly by geography and coloured by type. Related schools light up when you open one.
-- **Network view** — a 2D graph of the same schools and their cross-school program similarities.
-- **Filters and search** — subject, degree, teaching language, intake semester, NC-free admission and application route (direct or uni-assist). All filters apply to the same program, with live counts for each option.
-- **Shortlist** — keep programs without an account. The list is stored in your browser and can be shared as a link or exported to your calendar (`.ics`).
-- **Application check** — answer a few optional questions to get a timeline, language and admission notes, and expected fees for each kept program. Your answers never leave your device.
+- **Network** — every point is a program (or, in Schools mode, a school). Threads are computed text similarities between programs, shown with their recorded weight; they are not claims of shared curriculum or partnership. Drag, pinch or zoom to explore, and select a point to follow its threads.
+- **List view** — an accessible static list of the same programs, ordered by name, school or application window.
+- **Constraints** — subject, degree, teaching language, state, institution type, intake, NC-free admission, application route (direct or uni-assist), portfolio, a tuition cap and application timing. Each constraint applies to the same program. Programs with missing facts appear as *not confirmed*, separately from those outside your constraints.
+- **Details** — deadlines, application route, admission, requirements, scoped fees (including non-EU tuition), teaching areas, faculty, official links and the sources each fact came from.
+- **Kept** — keep programs and schools without an account. The list stays in your browser, and closing dates can be exported to your calendar (`.ics`).
 - **Public API** — REST endpoints and an MCP server for the dataset (see [`api/`](api)).
 
 ## Data and sources
@@ -45,10 +45,11 @@ npm run build      # production build in dist/
 | `npm run build:relations` | Rebuild school and program relationships. Needs the local embeddings file `data/program_embeddings.json` (`npm run build:program-embeddings`). |
 | `npm run build:api-artifacts` | Regenerate the API data in `api/data/`, then run `cd api && npm test`. |
 | `npm run check:filters` | Self-check filters, deadlines and the application check against the data. |
+| `npm run check:focus` | Self-check the network model: original similarity weights, unknown vs outside, scoped fees. |
 
 ## Tech stack
 
-React, Vite, Three.js / React Three Fiber, D3, Zustand and Tailwind CSS. The API runs on Cloudflare Workers.
+Plain JavaScript on a 2D canvas, d3-force, Zustand and Vite. The API runs on Cloudflare Workers.
 
 ## Acknowledgements
 

@@ -1,6 +1,0 @@
-node_modules/
-dist/
-out/
-.next/
-*.config.js
-next-env.d.ts 

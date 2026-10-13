@@ -12,7 +12,7 @@
  * an active filter.
  */
 
-import { ProcessedUniversity } from '@/stores/schoolStore';
+import type { ProcessedUniversity } from '@/types/school';
 import { fold, subjectGroupOf, degreeGroupOf, taughtIn, admissionOf, programSearchMatch } from '@/lib/taxonomy';
 
 export interface Filters {
