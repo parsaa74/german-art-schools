@@ -66,8 +66,6 @@ interface RawSchool {
   id?: string;
   coordinates?: { lat: number; lng: number };
   stats?: {
-    students?: number;
-    student_staff_ratio?: number;
     founded?: number;
   };
   city?: string;
@@ -151,8 +149,6 @@ interface OutSchool {
   type: string | null;
   coordinates: { lat: number; lng: number } | null;
   stats: {
-    students: number | null;
-    student_staff_ratio: number | null;
     founded: number | null;
   };
   program_ids: string[];
@@ -366,7 +362,7 @@ function main() {
       programIds.push(prog.program_id);
     }
 
-    // deliberately dropped: ranking, stats.acceptance_rate (shaky provenance)
+    // founding year only: student counts and rankings had no verifiable source
     schools[school.id] = {
       id: school.id,
       name: schoolName,
@@ -375,8 +371,6 @@ function main() {
       type: school.type ?? null,
       coordinates: school.coordinates ?? null,
       stats: {
-        students: school.stats?.students ?? null,
-        student_staff_ratio: school.stats?.student_staff_ratio ?? null,
         founded: school.stats?.founded ?? null,
       },
       program_ids: programIds,

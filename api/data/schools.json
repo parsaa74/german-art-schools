@@ -10,8 +10,6 @@
       "lng": 9.9665
     },
     "stats": {
-      "students": 850,
-      "student_staff_ratio": 9,
       "founded": 1767
     },
     "program_ids": [
@@ -35,8 +33,6 @@
       "lng": 6.9964
     },
     "stats": {
-      "students": 450,
-      "student_staff_ratio": 10,
       "founded": 1989
     },
     "program_ids": [
@@ -57,8 +53,6 @@
       "lng": 10.5283
     },
     "stats": {
-      "students": 600,
-      "student_staff_ratio": 8.5,
       "founded": 1963
     },
     "program_ids": [
@@ -79,8 +73,6 @@
       "lng": 12.0991
     },
     "stats": {
-      "students": 500,
-      "student_staff_ratio": 8,
       "founded": 1994
     },
     "program_ids": [
@@ -121,8 +113,6 @@
       "lng": 6.7735
     },
     "stats": {
-      "students": 650,
-      "student_staff_ratio": 7.5,
       "founded": 1773
     },
     "program_ids": [
@@ -145,8 +135,6 @@
       "lng": 13.3833
     },
     "stats": {
-      "students": 3500,
-      "student_staff_ratio": 9,
       "founded": 1696
     },
     "program_ids": [
@@ -177,8 +165,6 @@
       "lng": 8.4037
     },
     "stats": {
-      "students": 420,
-      "student_staff_ratio": 8.5,
       "founded": 1992
     },
     "program_ids": [
@@ -204,8 +190,6 @@
       "lng": 8.826
     },
     "stats": {
-      "students": 900,
-      "student_staff_ratio": 10,
       "founded": 1873
     },
     "program_ids": [
@@ -230,8 +214,6 @@
       "lng": 9.177
     },
     "stats": {
-      "students": 900,
-      "student_staff_ratio": 10,
       "founded": 1761
     },
     "program_ids": [
@@ -266,8 +248,6 @@
       "lng": 6.9603
     },
     "stats": {
-      "students": 400,
-      "student_staff_ratio": 6,
       "founded": 1990
     },
     "program_ids": [
@@ -290,8 +270,6 @@
       "lng": 8.7615
     },
     "stats": {
-      "students": 600,
-      "student_staff_ratio": 11,
       "founded": 1832
     },
     "program_ids": [
@@ -321,8 +299,6 @@
       "lng": 12.3731
     },
     "stats": {
-      "students": 600,
-      "student_staff_ratio": 9.5,
       "founded": 1764
     },
     "program_ids": [
@@ -352,8 +328,6 @@
       "lng": 10.1228
     },
     "stats": {
-      "students": 600,
-      "student_staff_ratio": 10.5,
       "founded": 1907
     },
     "program_ids": [
@@ -382,8 +356,6 @@
       "lng": 11.325
     },
     "stats": {
-      "students": 4000,
-      "student_staff_ratio": 12,
       "founded": 1860
     },
     "program_ids": [
@@ -415,8 +387,6 @@
       "lng": 7.022
     },
     "stats": {
-      "students": 1800,
-      "student_staff_ratio": 12,
       "founded": 1973
     },
     "program_ids": [
@@ -435,8 +405,6 @@
       "lng": 7.012
     },
     "stats": {
-      "students": 400,
-      "student_staff_ratio": 11,
       "founded": 2001
     },
     "program_ids": [
@@ -456,8 +424,6 @@
       "lng": 11.575
     },
     "stats": {
-      "students": 3500,
-      "student_staff_ratio": 15,
       "founded": 2006
     },
     "program_ids": [
@@ -475,8 +441,6 @@
       "lng": 9.215
     },
     "stats": {
-      "students": 350,
-      "student_staff_ratio": 10,
       "founded": 1918
     },
     "program_ids": [
@@ -494,8 +458,6 @@
       "lng": 11.567
     },
     "stats": {
-      "students": 350,
-      "student_staff_ratio": 8,
       "founded": 1966
     },
     "program_ids": [
@@ -516,8 +478,6 @@
       "lng": 13.11
     },
     "stats": {
-      "students": 800,
-      "student_staff_ratio": 7,
       "founded": 1954
     },
     "program_ids": [
@@ -547,8 +507,6 @@
       "lng": 9.8
     },
     "stats": {
-      "students": 700,
-      "student_staff_ratio": 10,
       "founded": 1971
     },
     "program_ids": [
@@ -573,8 +531,6 @@
       "lng": 13.33
     },
     "stats": {
-      "students": 350,
-      "student_staff_ratio": 8,
       "founded": 1999
     },
     "program_ids": [
@@ -593,8 +549,6 @@
       "lng": 8.68
     },
     "stats": {
-      "students": 200,
-      "student_staff_ratio": 10,
       "founded": 1990
     },
     "program_ids": [
@@ -615,8 +569,6 @@
       "lng": 13.06
     },
     "stats": {
-      "students": 4000,
-      "student_staff_ratio": 16,
       "founded": 1991
     },
     "program_ids": [
@@ -637,8 +589,6 @@
       "lng": 8.65
     },
     "stats": {
-      "students": 17000,
-      "student_staff_ratio": 15,
       "founded": 1971
     },
     "program_ids": [
@@ -676,8 +626,6 @@
       "lng": 6.14
     },
     "stats": {
-      "students": 7000,
-      "student_staff_ratio": 18,
       "founded": 2009
     },
     "program_ids": [
@@ -698,8 +646,6 @@
       "lng": 13.33
     },
     "stats": {
-      "students": 35500,
-      "student_staff_ratio": 20,
       "founded": 1879
     },
     "program_ids": [
@@ -720,8 +666,6 @@
       "lng": 12.24
     },
     "stats": {
-      "students": 8000,
-      "student_staff_ratio": 17,
       "founded": 1991
     },
     "program_ids": [
@@ -741,8 +685,6 @@
       "lng": 6.68
     },
     "stats": {
-      "students": 12000,
-      "student_staff_ratio": 23,
       "founded": 1473
     },
     "program_ids": [
@@ -762,8 +704,6 @@
       "lng": 8.02
     },
     "stats": {
-      "students": 19000,
-      "student_staff_ratio": 22,
       "founded": 1972
     },
     "program_ids": [
@@ -784,8 +724,6 @@
       "lng": 11.42
     },
     "stats": {
-      "students": 6000,
-      "student_staff_ratio": 20,
       "founded": 1994
     },
     "program_ids": [
@@ -807,8 +745,6 @@
       "lng": 10.89
     },
     "stats": {
-      "students": 6500,
-      "student_staff_ratio": 19,
       "founded": 1971
     },
     "program_ids": [
@@ -830,8 +766,6 @@
       "lng": 13.45
     },
     "stats": {
-      "students": 11000,
-      "student_staff_ratio": 22,
       "founded": 1978
     },
     "program_ids": [
@@ -853,8 +787,6 @@
       "lng": 9.97
     },
     "stats": {
-      "students": 28000,
-      "student_staff_ratio": 25,
       "founded": 1402
     },
     "program_ids": [
@@ -876,8 +808,6 @@
       "lng": 6.08
     },
     "stats": {
-      "students": 47000,
-      "student_staff_ratio": 20,
       "founded": 1870
     },
     "program_ids": [
@@ -899,8 +829,6 @@
       "lng": 11.57
     },
     "stats": {
-      "students": 48000,
-      "student_staff_ratio": 18,
       "founded": 1868
     },
     "program_ids": [
@@ -921,8 +849,6 @@
       "lng": 6.955
     },
     "stats": {
-      "students": 320,
-      "student_staff_ratio": 8,
       "founded": 1991
     },
     "program_ids": [
@@ -942,8 +868,6 @@
       "lng": 9.205
     },
     "stats": {
-      "students": 580,
-      "student_staff_ratio": 9,
       "founded": 1855
     },
     "program_ids": [
@@ -962,8 +886,6 @@
       "lng": 8.2473
     },
     "stats": {
-      "students": 450,
-      "student_staff_ratio": 7.5,
       "founded": 1975
     },
     "program_ids": [
@@ -983,8 +905,6 @@
       "lng": 9.4797
     },
     "stats": {
-      "students": 520,
-      "student_staff_ratio": 8,
       "founded": 1777
     },
     "program_ids": [
@@ -1004,8 +924,6 @@
       "lng": 8.695
     },
     "stats": {
-      "students": 680,
-      "student_staff_ratio": 8.5,
       "founded": 1877
     },
     "program_ids": [
@@ -1031,8 +949,6 @@
       "lng": 9.102
     },
     "stats": {
-      "students": 4900,
-      "student_staff_ratio": 10,
       "founded": 2001
     },
     "program_ids": [
@@ -1077,8 +993,6 @@
       "lng": 7.6281
     },
     "stats": {
-      "students": 360,
-      "student_staff_ratio": 6.5,
       "founded": 1971
     },
     "program_ids": [
@@ -1100,8 +1014,6 @@
       "lng": 11.5804
     },
     "stats": {
-      "students": 800,
-      "student_staff_ratio": 7,
       "founded": 1808
     },
     "program_ids": [
@@ -1122,8 +1034,6 @@
       "lng": 11.0767
     },
     "stats": {
-      "students": 280,
-      "student_staff_ratio": 6.5,
       "founded": 1662
     },
     "program_ids": [
@@ -1145,8 +1055,6 @@
       "lng": 11.9697
     },
     "stats": {
-      "students": 1400,
-      "student_staff_ratio": 9,
       "founded": 1879
     },
     "program_ids": [
@@ -1168,8 +1076,6 @@
       "lng": 7.0116
     },
     "stats": {
-      "students": 2200,
-      "student_staff_ratio": 10,
       "founded": 1927
     },
     "program_ids": [
@@ -1193,8 +1099,6 @@
       "lng": 9.9714
     },
     "stats": {
-      "students": 1800,
-      "student_staff_ratio": 14,
       "founded": 1970
     },
     "program_ids": [
@@ -1224,8 +1128,6 @@
       "lng": 13.7294
     },
     "stats": {
-      "students": 650,
-      "student_staff_ratio": 6,
       "founded": 1764
     },
     "program_ids": [
@@ -1249,8 +1151,6 @@
       "lng": 8.698
     },
     "stats": {
-      "students": 350,
-      "student_staff_ratio": 4,
       "founded": 1815
     },
     "program_ids": [
@@ -1270,8 +1170,6 @@
       "lng": 11.5836
     },
     "stats": {
-      "students": 550,
-      "student_staff_ratio": 7,
       "founded": 1946
     },
     "program_ids": [
@@ -1294,8 +1192,6 @@
       "lng": 12.9222
     },
     "stats": {
-      "students": null,
-      "student_staff_ratio": null,
       "founded": null
     },
     "program_ids": [
@@ -1314,8 +1210,6 @@
       "lng": 13.405
     },
     "stats": {
-      "students": 834,
-      "student_staff_ratio": null,
       "founded": 1946
     },
     "program_ids": [
@@ -1334,8 +1228,6 @@
       "lng": 12.3681
     },
     "stats": {
-      "students": 1166,
-      "student_staff_ratio": null,
       "founded": 1843
     },
     "program_ids": [
@@ -1355,8 +1247,6 @@
       "lng": 9.7385
     },
     "stats": {
-      "students": 1365,
-      "student_staff_ratio": null,
       "founded": 1897
     },
     "program_ids": [
@@ -1377,8 +1267,6 @@
       "lng": 11.5713
     },
     "stats": {
-      "students": 24,
-      "student_staff_ratio": null,
       "founded": 2000
     },
     "program_ids": [
@@ -1403,8 +1291,6 @@
       "lng": 13.405
     },
     "stats": {
-      "students": 554,
-      "student_staff_ratio": null,
       "founded": 1950
     },
     "program_ids": [
@@ -1437,8 +1323,6 @@
       "lng": 13.405
     },
     "stats": {
-      "students": 197,
-      "student_staff_ratio": null,
       "founded": 1905
     },
     "program_ids": [
@@ -1461,8 +1345,6 @@
       "lng": 8.8783
     },
     "stats": {
-      "students": 635,
-      "student_staff_ratio": null,
       "founded": 1946
     },
     "program_ids": [
@@ -1491,8 +1373,6 @@
       "lng": 13.7373
     },
     "stats": {
-      "students": 22,
-      "student_staff_ratio": null,
       "founded": 1949
     },
     "program_ids": [
@@ -1510,8 +1390,6 @@
       "lng": 13.7373
     },
     "stats": {
-      "students": 705,
-      "student_staff_ratio": null,
       "founded": 1856
     },
     "program_ids": [
@@ -1541,8 +1419,6 @@
       "lng": 13.7373
     },
     "stats": {
-      "students": 170,
-      "student_staff_ratio": null,
       "founded": 1925
     },
     "program_ids": [
@@ -1564,8 +1440,6 @@
       "lng": 6.7735
     },
     "stats": {
-      "students": 812,
-      "student_staff_ratio": null,
       "founded": 1935
     },
     "program_ids": [
@@ -1613,8 +1487,6 @@
       "lng": 8.6821
     },
     "stats": {
-      "students": 940,
-      "student_staff_ratio": null,
       "founded": 1878
     },
     "program_ids": [
@@ -1655,8 +1527,6 @@
       "lng": 7.8421
     },
     "stats": {
-      "students": 631,
-      "student_staff_ratio": null,
       "founded": 1946
     },
     "program_ids": [
@@ -1680,8 +1550,6 @@
       "lng": 11.9697
     },
     "stats": {
-      "students": 52,
-      "student_staff_ratio": null,
       "founded": 1926
     },
     "program_ids": [
@@ -1706,8 +1574,6 @@
       "lng": 8.6724
     },
     "stats": {
-      "students": 32,
-      "student_staff_ratio": null,
       "founded": 1931
     },
     "program_ids": [
@@ -1730,8 +1596,6 @@
       "lng": 8.4037
     },
     "stats": {
-      "students": 545,
-      "student_staff_ratio": null,
       "founded": 1812
     },
     "program_ids": [
@@ -1753,8 +1617,6 @@
       "lng": 6.9603
     },
     "stats": {
-      "students": 1388,
-      "student_staff_ratio": null,
       "founded": 1845
     },
     "program_ids": [
@@ -1827,8 +1689,6 @@
       "lng": 10.6866
     },
     "stats": {
-      "students": 440,
-      "student_staff_ratio": null,
       "founded": 1973
     },
     "program_ids": [
@@ -1880,8 +1740,6 @@
       "lng": 8.466
     },
     "stats": {
-      "students": 598,
-      "student_staff_ratio": null,
       "founded": 1971
     },
     "program_ids": [
@@ -1907,8 +1765,6 @@
       "lng": 11.0767
     },
     "stats": {
-      "students": 470,
-      "student_staff_ratio": null,
       "founded": 2008
     },
     "program_ids": [
@@ -1930,8 +1786,6 @@
       "lng": 12.1016
     },
     "stats": {
-      "students": 132,
-      "student_staff_ratio": null,
       "founded": 2001
     },
     "program_ids": [
@@ -1950,8 +1804,6 @@
       "lng": 8.9356
     },
     "stats": {
-      "students": 18,
-      "student_staff_ratio": null,
       "founded": 1949
     },
     "program_ids": [
@@ -1976,8 +1828,6 @@
       "lng": 6.9969
     },
     "stats": {
-      "students": 560,
-      "student_staff_ratio": null,
       "founded": 1947
     },
     "program_ids": [
@@ -2025,8 +1875,6 @@
       "lng": 9.1829
     },
     "stats": {
-      "students": 804,
-      "student_staff_ratio": null,
       "founded": 1857
     },
     "program_ids": [
@@ -2056,8 +1904,6 @@
       "lng": 8.6388
     },
     "stats": {
-      "students": 434,
-      "student_staff_ratio": null,
       "founded": 1944
     },
     "program_ids": [
@@ -2081,8 +1927,6 @@
       "lng": 9.0576
     },
     "stats": {
-      "students": 24,
-      "student_staff_ratio": null,
       "founded": 1945
     },
     "program_ids": [
@@ -2104,8 +1948,6 @@
       "lng": 11.3235
     },
     "stats": {
-      "students": 755,
-      "student_staff_ratio": null,
       "founded": 1872
     },
     "program_ids": [
@@ -2148,8 +1990,6 @@
       "lng": 7.3353
     },
     "stats": {
-      "students": 39,
-      "student_staff_ratio": null,
       "founded": 1948
     },
     "program_ids": [
@@ -2170,8 +2010,6 @@
       "lng": 9.9534
     },
     "stats": {
-      "students": 576,
-      "student_staff_ratio": null,
       "founded": 1804
     },
     "program_ids": [
@@ -2204,8 +2042,6 @@
       "lng": 9.188
     },
     "stats": {
-      "students": 500,
-      "student_staff_ratio": null,
       "founded": 1991
     },
     "program_ids": [
@@ -2246,8 +2082,6 @@
       "lng": 7.4496
     },
     "stats": {
-      "students": 14500,
-      "student_staff_ratio": null,
       "founded": 1971
     },
     "program_ids": [
@@ -2271,8 +2105,6 @@
       "lng": 10.4014
     },
     "stats": {
-      "students": 9500,
-      "student_staff_ratio": null,
       "founded": 1946
     },
     "program_ids": [
@@ -2290,8 +2122,6 @@
       "lng": 7.1495
     },
     "stats": {
-      "students": 21000,
-      "student_staff_ratio": null,
       "founded": 1972
     },
     "program_ids": [
@@ -2310,8 +2140,6 @@
       "lng": 7.6024
     },
     "stats": {
-      "students": 15000,
-      "student_staff_ratio": null,
       "founded": 1971
     },
     "program_ids": [
@@ -2329,8 +2157,6 @@
       "lng": 8.6682
     },
     "stats": {
-      "students": 42000,
-      "student_staff_ratio": null,
       "founded": 1914
     },
     "program_ids": [
@@ -2348,8 +2174,6 @@
       "lng": 7.943
     },
     "stats": {
-      "students": 4000,
-      "student_staff_ratio": null,
       "founded": 1964
     },
     "program_ids": [
@@ -2367,8 +2191,6 @@
       "lng": 8.1814
     },
     "stats": {
-      "students": 15500,
-      "student_staff_ratio": null,
       "founded": 1973
     },
     "program_ids": [
@@ -2386,8 +2208,6 @@
       "lng": 8.852
     },
     "stats": {
-      "students": 18000,
-      "student_staff_ratio": null,
       "founded": 1971
     },
     "program_ids": [
@@ -2407,8 +2227,6 @@
       "lng": 9.9846
     },
     "stats": {
-      "students": 42000,
-      "student_staff_ratio": null,
       "founded": 1919
     },
     "program_ids": [
@@ -2426,8 +2244,6 @@
       "lng": 9.4544
     },
     "stats": {
-      "students": 5800,
-      "student_staff_ratio": null,
       "founded": 1946
     },
     "program_ids": [
@@ -2445,8 +2261,6 @@
       "lng": 6.7938
     },
     "stats": {
-      "students": 29000,
-      "student_staff_ratio": null,
       "founded": 1965
     },
     "program_ids": [
@@ -2464,8 +2278,6 @@
       "lng": 13.3833
     },
     "stats": {
-      "students": null,
-      "student_staff_ratio": null,
       "founded": 1966
     },
     "program_ids": [
@@ -2487,8 +2299,6 @@
       "lng": 6.9603
     },
     "stats": {
-      "students": null,
-      "student_staff_ratio": null,
       "founded": 2000
     },
     "program_ids": [

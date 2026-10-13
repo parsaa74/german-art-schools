@@ -19,7 +19,6 @@
     "check:program-calendar": "tsx scripts/check-program-calendar.ts",
     "check:kept": "tsx scripts/check-kept-store.ts",
     "check:focus": "tsx scripts/check-focus-model.ts",
-    "audit:network": "tsx scripts/audit-program-network.ts",
     "build:api-artifacts": "tsx scripts/build-api-artifacts.ts",
     "scrape:program-details": "tsx --env-file=.env.local scripts/scrape-program-details.ts"
   },

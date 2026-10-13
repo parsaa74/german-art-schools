@@ -11,18 +11,7 @@
         "lat": 53.5584,
         "lng": 9.9665
       },
-      "ranking": {
-        "national": 15,
-        "specialization_rank": {
-          "fine_arts": 8,
-          "visual_arts": 7,
-          "art_education": 9
-        }
-      },
       "stats": {
-        "students": 850,
-        "acceptance_rate": 0.18,
-        "student_staff_ratio": 9,
         "founded": 1767
       },
       "city": "Hamburg",
@@ -445,17 +434,6 @@
             "Photography",
             "Film"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
-            "items": [
-              "15-25 original artworks",
-              "Sketchbook or work diary",
-              "Artistic CV",
-              "Letter of motivation"
-            ],
-            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          },
           "program_id": "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
           "details": {
             "programUrl": null,
@@ -630,18 +608,7 @@
         "lat": 49.2372,
         "lng": 6.9964
       },
-      "ranking": {
-        "national": 28,
-        "specialization_rank": {
-          "fine_arts": 15,
-          "design": 12,
-          "art_education": 14
-        }
-      },
       "stats": {
-        "students": 450,
-        "acceptance_rate": 0.22,
-        "student_staff_ratio": 10,
         "founded": 1989
       },
       "city": "Saarbrücken",
@@ -830,18 +797,7 @@
         "lat": 52.2735,
         "lng": 10.5283
       },
-      "ranking": {
-        "national": 16,
-        "specialization_rank": {
-          "fine_arts": 9,
-          "design": 11,
-          "art_education": 8
-        }
-      },
       "stats": {
-        "students": 600,
-        "acceptance_rate": 0.2,
-        "student_staff_ratio": 8.5,
         "founded": 1963
       },
       "city": "Braunschweig",
@@ -1049,17 +1005,7 @@
         "lat": 54.0924,
         "lng": 12.0991
       },
-      "ranking": {
-        "national": 45,
-        "specialization_rank": {
-          "music": 18,
-          "performing_arts": 15
-        }
-      },
       "stats": {
-        "students": 500,
-        "acceptance_rate": 0.25,
-        "student_staff_ratio": 8,
         "founded": 1994
       },
       "city": "Rostock",
@@ -1881,17 +1827,7 @@
         "lat": 51.2277,
         "lng": 6.7735
       },
-      "ranking": {
-        "national": 5,
-        "specialization_rank": {
-          "fine_arts": 3,
-          "art_education": 4
-        }
-      },
       "stats": {
-        "students": 650,
-        "acceptance_rate": 0.15,
-        "student_staff_ratio": 7.5,
         "founded": 1773
       },
       "city": "Düsseldorf",
@@ -2109,19 +2045,7 @@
         "lat": 52.5167,
         "lng": 13.3833
       },
-      "ranking": {
-        "national": 1,
-        "specialization_rank": {
-          "fine_arts": 1,
-          "performing_arts": 1,
-          "music": 2,
-          "design": 3
-        }
-      },
       "stats": {
-        "students": 3500,
-        "acceptance_rate": 0.12,
-        "student_staff_ratio": 9,
         "founded": 1696
       },
       "city": "Berlin",
@@ -2738,17 +2662,7 @@
         "lat": 49.0069,
         "lng": 8.4037
       },
-      "ranking": {
-        "national": 7,
-        "specialization_rank": {
-          "media_arts": 2,
-          "design": 5
-        }
-      },
       "stats": {
-        "students": 420,
-        "acceptance_rate": 0.18,
-        "student_staff_ratio": 8.5,
         "founded": 1992
       },
       "city": "Karlsruhe",
@@ -3063,18 +2977,7 @@
         "lat": 53.075,
         "lng": 8.826
       },
-      "ranking": {
-        "national": 12,
-        "specialization_rank": {
-          "digital_media": 6,
-          "fine_arts": 10,
-          "music": 8
-        }
-      },
       "stats": {
-        "students": 900,
-        "acceptance_rate": 0.25,
-        "student_staff_ratio": 10,
         "founded": 1873
       },
       "city": "Bremen",
@@ -3533,19 +3436,7 @@
         "lat": 48.7823,
         "lng": 9.177
       },
-      "ranking": {
-        "national": 9,
-        "specialization_rank": {
-          "fine_arts": 3,
-          "design": 5,
-          "architecture": 4,
-          "art_education": 2
-        }
-      },
       "stats": {
-        "students": 900,
-        "acceptance_rate": 0.18,
-        "student_staff_ratio": 10,
         "founded": 1761
       },
       "city": "Stuttgart",
@@ -3962,17 +3853,6 @@
             "Graphic Arts",
             "Media Art"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
-            "items": [
-              "15-25 original artworks",
-              "Sketchbook or work diary",
-              "Artistic CV",
-              "Letter of motivation"
-            ],
-            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          },
           "program_id": "staatliche-akademie-der-bildenden-kunste-stuttgart--fine-arts--diploma",
           "details": {
             "programUrl": "https://www.abk-stuttgart.de/studienangebot/bildende-kunst/",
@@ -4104,16 +3984,7 @@
         "lat": 50.9375,
         "lng": 6.9603
       },
-      "ranking": {
-        "national": 10,
-        "specialization_rank": {
-          "media_arts": 1
-        }
-      },
       "stats": {
-        "students": 400,
-        "acceptance_rate": 0.1,
-        "student_staff_ratio": 6,
         "founded": 1990
       },
       "city": "Cologne",
@@ -4286,17 +4157,6 @@
             "Film Theory",
             "Sound Studies"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
-            "items": [
-              "Short film or video work (max 15 min)",
-              "Treatment or concept paper",
-              "Director's statement or artistic statement",
-              "CV with relevant experience"
-            ],
-            "format": "Digital submission (video link or upload, max 500MB)"
-          },
           "program_id": "kunsthochschule-fur-medien-koln--media-arts--phd",
           "details": {
             "programUrl": "https://www.khm.de/khm_forschung/",
@@ -4434,17 +4294,7 @@
         "lat": 50.1089,
         "lng": 8.7615
       },
-      "ranking": {
-        "national": 18,
-        "specialization_rank": {
-          "design": 10,
-          "visual_communication": 8
-        }
-      },
       "stats": {
-        "students": 600,
-        "acceptance_rate": 0.2,
-        "student_staff_ratio": 11,
         "founded": 1832
       },
       "city": "Offenbach am Main",
@@ -4696,17 +4546,6 @@
             "Transportation Design",
             "Interaction Design"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
-            "items": [
-              "15-20 design works",
-              "Process documentation/sketches",
-              "Project descriptions",
-              "Letter of motivation"
-            ],
-            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          },
           "program_id": "hochschule-fur-gestaltung-offenbach--product-design--bachelor-of-arts",
           "details": {
             "studyOverviewUrl": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-design",
@@ -4739,17 +4578,6 @@
             "Transportation Design",
             "Interaction Design"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
-            "items": [
-              "15-20 design works",
-              "Process documentation/sketches",
-              "Project descriptions",
-              "Letter of motivation"
-            ],
-            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          },
           "program_id": "hochschule-fur-gestaltung-offenbach--product-design--master-of-arts",
           "details": {
             "studyOverviewUrl": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-design",
@@ -4779,17 +4607,6 @@
             "Design Management",
             "Social Design"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
-            "items": [
-              "15-20 design works",
-              "Process documentation/sketches",
-              "Project descriptions",
-              "Letter of motivation"
-            ],
-            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          },
           "program_id": "hochschule-fur-gestaltung-offenbach--integrative-design--master-of-arts",
           "details": {
             "studyOverviewUrl": "https://www.hfg-offenbach.de/de/pages/bachelor-und-masterstudium-design",
@@ -4890,18 +4707,7 @@
         "lat": 51.3397,
         "lng": 12.3731
       },
-      "ranking": {
-        "national": 11,
-        "specialization_rank": {
-          "graphic_design": 2,
-          "photography": 4,
-          "media_arts": 5
-        }
-      },
       "stats": {
-        "students": 600,
-        "acceptance_rate": 0.15,
-        "student_staff_ratio": 9.5,
         "founded": 1764
       },
       "city": "Leipzig",
@@ -5129,17 +4935,6 @@
             "Illustration",
             "Graphic Design"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
-            "items": [
-              "15-20 design works",
-              "Process documentation/sketches",
-              "Project descriptions",
-              "Letter of motivation"
-            ],
-            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          },
           "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--book-art-graphic-design--diploma",
           "details": {
             "programUrl": "https://www.hgb-leipzig.de/lehre/buchkunst_grafik-design/",
@@ -5183,17 +4978,6 @@
             "Drawing",
             "Printmaking"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
-            "items": [
-              "15-25 original artworks",
-              "Sketchbook or work diary",
-              "Artistic CV",
-              "Letter of motivation"
-            ],
-            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          },
           "program_id": "hochschule-fur-grafik-und-buchkunst-leipzig--painting-graphic-arts--diploma",
           "details": {
             "programUrl": "https://www.hgb-leipzig.de/lehre/malerei_grafik/",
@@ -5507,17 +5291,7 @@
         "lat": 54.3233,
         "lng": 10.1228
       },
-      "ranking": {
-        "national": 20,
-        "specialization_rank": {
-          "industrial_design": 7,
-          "communication_design": 9
-        }
-      },
       "stats": {
-        "students": 600,
-        "acceptance_rate": 0.22,
-        "student_staff_ratio": 10.5,
         "founded": 1907
       },
       "city": "Kiel",
@@ -5824,17 +5598,6 @@
             "Communication Design",
             "Interior Architecture"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
-            "items": [
-              "15-20 design works",
-              "Process documentation/sketches",
-              "Project descriptions",
-              "Letter of motivation"
-            ],
-            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          },
           "program_id": "muthesius-kunsthochschule-kiel--design--diploma"
         },
         {
@@ -5957,18 +5720,7 @@
         "lat": 50.975,
         "lng": 11.325
       },
-      "ranking": {
-        "national": 14,
-        "specialization_rank": {
-          "architecture": 3,
-          "media_arts": 6,
-          "design": 8
-        }
-      },
       "stats": {
-        "students": 4000,
-        "acceptance_rate": 0.25,
-        "student_staff_ratio": 12,
         "founded": 1860
       },
       "city": "Weimar",
@@ -6231,17 +5983,6 @@
             "Industrial Design",
             "Design Theory"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
-            "items": [
-              "15-20 design works",
-              "Process documentation/sketches",
-              "Project descriptions",
-              "Letter of motivation"
-            ],
-            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          },
           "program_id": "bauhaus-universitat-weimar--product-design--master",
           "admission": "aptitude",
           "admissionSource": "https://www.uni-weimar.de/de/kunst-und-gestaltung/service/downloads/ordnungen/",
@@ -6280,17 +6021,6 @@
             "Urban Design",
             "Building Renovation"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Portfolio showcasing spatial thinking, design sensitivity, and technical drawing skills.",
-            "items": [
-              "10-15 design works or drawings",
-              "Spatial/architectural sketches",
-              "Technical drawings (if available)",
-              "Letter of motivation"
-            ],
-            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          },
           "program_id": "bauhaus-universitat-weimar--architecture--master",
           "details": {
             "programUrl": "https://www.uni-weimar.de/en/architecture-and-urbanism/studies/master/architecture/",
@@ -6502,17 +6232,7 @@
         "lat": 50.732,
         "lng": 7.022
       },
-      "ranking": {
-        "national": 30,
-        "specialization_rank": {
-          "fine_arts": 18,
-          "art_education": 12
-        }
-      },
       "stats": {
-        "students": 1800,
-        "acceptance_rate": 0.35,
-        "student_staff_ratio": 12,
         "founded": 1973
       },
       "city": "Alfter",
@@ -6602,16 +6322,7 @@
         "lat": 51.456,
         "lng": 7.012
       },
-      "ranking": {
-        "national": 35,
-        "specialization_rank": {
-          "fine_arts": 20
-        }
-      },
       "stats": {
-        "students": 400,
-        "acceptance_rate": 0.28,
-        "student_staff_ratio": 11,
         "founded": 2001
       },
       "city": "Essen",
@@ -6734,17 +6445,7 @@
         "lat": 48.137,
         "lng": 11.575
       },
-      "ranking": {
-        "national": 40,
-        "specialization_rank": {
-          "media_design": 10,
-          "communication": 12
-        }
-      },
       "stats": {
-        "students": 3500,
-        "acceptance_rate": 0.45,
-        "student_staff_ratio": 15,
         "founded": 2006
       },
       "city": "Multiple Cities",
@@ -6821,17 +6522,7 @@
         "lat": 48.793,
         "lng": 9.215
       },
-      "ranking": {
-        "national": 38,
-        "specialization_rank": {
-          "design": 15,
-          "media": 14
-        }
-      },
       "stats": {
-        "students": 350,
-        "acceptance_rate": 0.32,
-        "student_staff_ratio": 10,
         "founded": 1918
       },
       "city": "Stuttgart",
@@ -6915,16 +6606,7 @@
         "lat": 48.148,
         "lng": 11.567
       },
-      "ranking": {
-        "national": 8,
-        "specialization_rank": {
-          "film": 2
-        }
-      },
       "stats": {
-        "students": 350,
-        "acceptance_rate": 0.18,
-        "student_staff_ratio": 8,
         "founded": 1966
       },
       "city": "Munich",
@@ -7112,18 +6794,7 @@
         "lat": 52.391,
         "lng": 13.11
       },
-      "ranking": {
-        "national": 3,
-        "specialization_rank": {
-          "film": 1,
-          "animation": 2,
-          "screenwriting": 1
-        }
-      },
       "stats": {
-        "students": 800,
-        "acceptance_rate": 0.18,
-        "student_staff_ratio": 7,
         "founded": 1954
       },
       "city": "Potsdam",
@@ -7446,17 +7117,6 @@
             "Documentary",
             "Experimental Film"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Portfolio of media/film work demonstrating creative and technical ability.",
-            "items": [
-              "Short film or video work (max 15 min)",
-              "Treatment or concept paper",
-              "Director's statement or artistic statement",
-              "CV with relevant experience"
-            ],
-            "format": "Digital submission (video link or upload, max 500MB)"
-          },
           "program_id": "filmuniversitat-babelsberg-konrad-wolf--film-directing--master",
           "details": {
             "programUrl": "https://www.filmuniversitaet.de/en/studies/study-programs/master-programs/directing",
@@ -7599,18 +7259,7 @@
         "lat": 48.8,
         "lng": 9.8
       },
-      "ranking": {
-        "national": 25,
-        "specialization_rank": {
-          "product_design": 8,
-          "interaction_design": 5,
-          "communication_design": 10
-        }
-      },
       "stats": {
-        "students": 700,
-        "acceptance_rate": 0.25,
-        "student_staff_ratio": 10,
         "founded": 1971
       },
       "city": "Schwäbisch Gmünd",
@@ -7973,17 +7622,7 @@
         "lat": 52.55,
         "lng": 13.33
       },
-      "ranking": {
-        "national": 65,
-        "specialization_rank": {
-          "liberal_arts": 10,
-          "humanities": 15
-        }
-      },
       "stats": {
-        "students": 350,
-        "acceptance_rate": 0.4,
-        "student_staff_ratio": 8,
         "founded": 1999
       },
       "city": "Berlin",
@@ -8110,17 +7749,7 @@
         "lat": 50.11,
         "lng": 8.68
       },
-      "ranking": {
-        "national": 70,
-        "specialization_rank": {
-          "visual_arts": 30,
-          "communication_design": 25
-        }
-      },
       "stats": {
-        "students": 200,
-        "acceptance_rate": 0.5,
-        "student_staff_ratio": 10,
         "founded": 1990
       },
       "city": "Frankfurt",
@@ -8291,18 +7920,7 @@
         "lat": 52.41,
         "lng": 13.06
       },
-      "ranking": {
-        "national": 53,
-        "specialization_rank": {
-          "design": 18,
-          "interface_design": 7,
-          "communication_design": 14
-        }
-      },
       "stats": {
-        "students": 4000,
-        "acceptance_rate": 0.6,
-        "student_staff_ratio": 16,
         "founded": 1991
       },
       "city": "Potsdam",
@@ -8536,19 +8154,7 @@
         "lat": 49.87,
         "lng": 8.65
       },
-      "ranking": {
-        "national": 22,
-        "specialization_rank": {
-          "media": 5,
-          "animation": 4,
-          "communication_design": 7,
-          "interactive_media": 6
-        }
-      },
       "stats": {
-        "students": 17000,
-        "acceptance_rate": 0.38,
-        "student_staff_ratio": 15,
         "founded": 1971
       },
       "city": "Darmstadt",
@@ -9493,18 +9099,7 @@
         "lat": 51.79,
         "lng": 6.14
       },
-      "ranking": {
-        "national": 56,
-        "specialization_rank": {
-          "design": 20,
-          "environmental_sciences": 15,
-          "engineering": 30
-        }
-      },
       "stats": {
-        "students": 7000,
-        "acceptance_rate": 0.6,
-        "student_staff_ratio": 18,
         "founded": 2009
       },
       "city": "Kleve/Kamp-Lintfort",
@@ -9690,18 +9285,7 @@
         "lat": 52.51,
         "lng": 13.33
       },
-      "ranking": {
-        "national": 6,
-        "specialization_rank": {
-          "media_technology": 5,
-          "human_computer_interaction": 4,
-          "design_computation": 3
-        }
-      },
       "stats": {
-        "students": 35500,
-        "acceptance_rate": 0.38,
-        "student_staff_ratio": 20,
         "founded": 1879
       },
       "city": "Berlin",
@@ -9885,18 +9469,7 @@
         "lat": 51.83,
         "lng": 12.24
       },
-      "ranking": {
-        "national": 48,
-        "specialization_rank": {
-          "design": 16,
-          "integrated_design": 10,
-          "architecture": 12
-        }
-      },
       "stats": {
-        "students": 8000,
-        "acceptance_rate": 0.55,
-        "student_staff_ratio": 17,
         "founded": 1991
       },
       "city": "Dessau/Köthen/Bernburg",
@@ -10079,17 +9652,7 @@
         "lat": 49.74,
         "lng": 6.68
       },
-      "ranking": {
-        "national": 62,
-        "specialization_rank": {
-          "media_studies": 22,
-          "digital_humanities": 15
-        }
-      },
       "stats": {
-        "students": 12000,
-        "acceptance_rate": 0.6,
-        "student_staff_ratio": 23,
         "founded": 1473,
         "re_established": 1970
       },
@@ -10245,17 +9808,7 @@
         "lat": 50.9,
         "lng": 8.02
       },
-      "ranking": {
-        "national": 63,
-        "specialization_rank": {
-          "media_studies": 23,
-          "human_computer_interaction": 18
-        }
-      },
       "stats": {
-        "students": 19000,
-        "acceptance_rate": 0.6,
-        "student_staff_ratio": 22,
         "founded": 1972
       },
       "city": "Siegen",
@@ -10437,18 +9990,7 @@
         "lat": 48.76,
         "lng": 11.42
       },
-      "ranking": {
-        "national": 50,
-        "specialization_rank": {
-          "applied_sciences": 22,
-          "user_experience": 10,
-          "mobility": 8
-        }
-      },
       "stats": {
-        "students": 6000,
-        "acceptance_rate": 0.55,
-        "student_staff_ratio": 20,
         "founded": 1994
       },
       "city": "Ingolstadt",
@@ -10642,18 +10184,7 @@
         "lat": 48.37,
         "lng": 10.89
       },
-      "ranking": {
-        "national": 52,
-        "specialization_rank": {
-          "applied_sciences": 25,
-          "interactive_media": 8,
-          "communication_design": 12
-        }
-      },
       "stats": {
-        "students": 6500,
-        "acceptance_rate": 0.5,
-        "student_staff_ratio": 19,
         "founded": 1971
       },
       "city": "Augsburg",
@@ -10845,18 +10376,7 @@
         "lat": 48.57,
         "lng": 13.45
       },
-      "ranking": {
-        "national": 55,
-        "specialization_rank": {
-          "media_studies": 18,
-          "computer_science": 20,
-          "law": 15
-        }
-      },
       "stats": {
-        "students": 11000,
-        "acceptance_rate": 0.6,
-        "student_staff_ratio": 22,
         "founded": 1978
       },
       "city": "Passau",
@@ -11039,17 +10559,7 @@
         "lat": 49.78,
         "lng": 9.97
       },
-      "ranking": {
-        "national": 60,
-        "specialization_rank": {
-          "media_communication": 20,
-          "human_computer_systems": 15
-        }
-      },
       "stats": {
-        "students": 28000,
-        "acceptance_rate": 0.65,
-        "student_staff_ratio": 25,
         "founded": 1402
       },
       "city": "Würzburg",
@@ -11226,18 +10736,7 @@
         "lat": 50.78,
         "lng": 6.08
       },
-      "ranking": {
-        "national": 10,
-        "specialization_rank": {
-          "applied_sciences": 5,
-          "media_informatics": 2,
-          "engineering": 1
-        }
-      },
       "stats": {
-        "students": 47000,
-        "acceptance_rate": 0.4,
-        "student_staff_ratio": 20,
         "founded": 1870
       },
       "city": "Aachen",
@@ -11394,18 +10893,7 @@
         "lat": 48.15,
         "lng": 11.57
       },
-      "ranking": {
-        "national": 2,
-        "specialization_rank": {
-          "media_engineering": 2,
-          "informatics_games_engineering": 1,
-          "computational_design": 1
-        }
-      },
       "stats": {
-        "students": 48000,
-        "acceptance_rate": 0.35,
-        "student_staff_ratio": 18,
         "founded": 1868
       },
       "city": "Munich",
@@ -11560,17 +11048,7 @@
         "lat": 50.935,
         "lng": 6.955
       },
-      "ranking": {
-        "national": 15,
-        "specialization_rank": {
-          "design": 8,
-          "communication_design": 6
-        }
-      },
       "stats": {
-        "students": 320,
-        "acceptance_rate": 0.2,
-        "student_staff_ratio": 8,
         "founded": 1991
       },
       "city": "Cologne",
@@ -11703,17 +11181,7 @@
         "lat": 48.495,
         "lng": 9.205
       },
-      "ranking": {
-        "national": 25,
-        "specialization_rank": {
-          "design": 12,
-          "textile_design": 3
-        }
-      },
       "stats": {
-        "students": 580,
-        "acceptance_rate": 0.25,
-        "student_staff_ratio": 9,
         "founded": 1855
       },
       "city": "Reutlingen",
@@ -11850,17 +11318,7 @@
         "lat": 49.9929,
         "lng": 8.2473
       },
-      "ranking": {
-        "national": 18,
-        "specialization_rank": {
-          "fine_arts": 8,
-          "visual_communication": 5
-        }
-      },
       "stats": {
-        "students": 450,
-        "acceptance_rate": 0.18,
-        "student_staff_ratio": 7.5,
         "founded": 1975
       },
       "city": "Mainz",
@@ -11968,17 +11426,7 @@
         "lat": 51.3127,
         "lng": 9.4797
       },
-      "ranking": {
-        "national": 14,
-        "specialization_rank": {
-          "fine_arts": 6,
-          "visual_communication": 4
-        }
-      },
       "stats": {
-        "students": 520,
-        "acceptance_rate": 0.16,
-        "student_staff_ratio": 8,
         "founded": 1777
       },
       "city": "Kassel",
@@ -12120,18 +11568,7 @@
         "lat": 48.895,
         "lng": 8.695
       },
-      "ranking": {
-        "national": 20,
-        "specialization_rank": {
-          "design": 10,
-          "industrial_design": 4,
-          "transportation_design": 2
-        }
-      },
       "stats": {
-        "students": 680,
-        "acceptance_rate": 0.22,
-        "student_staff_ratio": 8.5,
         "founded": 1877
       },
       "city": "Pforzheim",
@@ -12579,17 +12016,7 @@
         "lat": 48.714,
         "lng": 9.102
       },
-      "ranking": {
-        "national": 22,
-        "specialization_rank": {
-          "media": 8,
-          "communication": 6
-        }
-      },
       "stats": {
-        "students": 4900,
-        "acceptance_rate": 0.28,
-        "student_staff_ratio": 10,
         "founded": 2001
       },
       "city": "Stuttgart",
@@ -13615,16 +13042,7 @@
         "lat": 51.9607,
         "lng": 7.6281
       },
-      "ranking": {
-        "national": 16,
-        "specialization_rank": {
-          "fine_arts": 7
-        }
-      },
       "stats": {
-        "students": 360,
-        "acceptance_rate": 0.15,
-        "student_staff_ratio": 6.5,
         "founded": 1971
       },
       "city": "Münster",
@@ -13843,16 +13261,7 @@
         "lat": 48.1412,
         "lng": 11.5804
       },
-      "ranking": {
-        "national": 4,
-        "specialization_rank": {
-          "fine_arts": 2
-        }
-      },
       "stats": {
-        "students": 800,
-        "acceptance_rate": 0.12,
-        "student_staff_ratio": 7,
         "founded": 1808
       },
       "city": "Munich",
@@ -13877,17 +13286,6 @@
             "Graphic Arts",
             "Photography"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
-            "items": [
-              "15-25 original artworks",
-              "Sketchbook or work diary",
-              "Artistic CV",
-              "Letter of motivation"
-            ],
-            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          },
           "program_id": "akademie-munchen--fine-arts--diploma",
           "sources": {
             "duration": "https://www.adbk.de/de/studium/bewerbung/ueberblick.html",
@@ -14063,16 +13461,7 @@
         "lat": 49.4521,
         "lng": 11.0767
       },
-      "ranking": {
-        "national": 25,
-        "specialization_rank": {
-          "fine_arts": 12
-        }
-      },
       "stats": {
-        "students": 280,
-        "acceptance_rate": 0.18,
-        "student_staff_ratio": 6.5,
         "founded": 1662
       },
       "city": "Nuremberg",
@@ -14096,17 +13485,6 @@
             "Sculpture",
             "Graphic Arts"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
-            "items": [
-              "15-25 original artworks",
-              "Sketchbook or work diary",
-              "Artistic CV",
-              "Letter of motivation"
-            ],
-            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          },
           "program_id": "akademie-nurnberg--fine-arts--diploma",
           "details": {
             "programUrl": "https://adbk-nuernberg.de/bewerbung/studienangebot-und-beratung/freie-kunst/",
@@ -14384,17 +13762,7 @@
         "lat": 51.4729,
         "lng": 11.9697
       },
-      "ranking": {
-        "national": 15,
-        "specialization_rank": {
-          "design": 8,
-          "fine_arts": 6
-        }
-      },
       "stats": {
-        "students": 1400,
-        "acceptance_rate": 0.25,
-        "student_staff_ratio": 9,
         "founded": 1879
       },
       "city": "Halle",
@@ -14418,17 +13786,6 @@
             "Communication Design",
             "Textile Design"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Design portfolio showing creative process, problem-solving ability, and aesthetic sensibility.",
-            "items": [
-              "15-20 design works",
-              "Process documentation/sketches",
-              "Project descriptions",
-              "Letter of motivation"
-            ],
-            "format": "Digital upload (PDF, max 20MB) or physical portfolio"
-          },
           "program_id": "burg-giebichenstein--design--diploma",
           "details": {
             "studyOverviewUrl": "https://www.burg-halle.de/bewerben",
@@ -14660,18 +14017,7 @@
         "lat": 51.4556,
         "lng": 7.0116
       },
-      "ranking": {
-        "national": 5,
-        "specialization_rank": {
-          "music": 3,
-          "performing_arts": 2,
-          "design": 5
-        }
-      },
       "stats": {
-        "students": 2200,
-        "acceptance_rate": 0.2,
-        "student_staff_ratio": 10,
         "founded": 1927
       },
       "city": "Essen",
@@ -14695,17 +14041,6 @@
             "Composition",
             "Music Pedagogy"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Audition demonstrating musical ability and artistic potential.",
-            "items": [
-              "Audition recording (2-3 contrasting pieces)",
-              "Repertoire list",
-              "Brief artistic biography",
-              "Proof of prior musical education"
-            ],
-            "format": "Audio/video recording (digital submission) plus live audition"
-          },
           "program_id": "folkwang-essen--music--master",
           "details": {
             "applicationUrl": "https://www.folkwang-uni.de/home/musik/studiengaenge/instrumentale-spezialisierung-mmus/basisinfos-bewerbung",
@@ -14954,16 +14289,7 @@
         "lat": 53.5577,
         "lng": 9.9714
       },
-      "ranking": {
-        "national": 35,
-        "specialization_rank": {
-          "design": 15
-        }
-      },
       "stats": {
-        "students": 1800,
-        "acceptance_rate": 0.3,
-        "student_staff_ratio": 14,
         "founded": 1970
       },
       "city": "Hamburg",
@@ -15465,16 +14791,7 @@
         "lat": 51.0318,
         "lng": 13.7294
       },
-      "ranking": {
-        "national": 12,
-        "specialization_rank": {
-          "fine_arts": 5
-        }
-      },
       "stats": {
-        "students": 650,
-        "acceptance_rate": 0.15,
-        "student_staff_ratio": 6,
         "founded": 1764
       },
       "city": "Dresden",
@@ -15498,17 +14815,6 @@
             "Sculpture",
             "Media Art"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
-            "items": [
-              "15-25 original artworks",
-              "Sketchbook or work diary",
-              "Artistic CV",
-              "Letter of motivation"
-            ],
-            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          },
           "program_id": "hfbk-dresden--fine-arts--diploma",
           "details": {
             "programUrl": "https://www.hfbk-dresden.de/lehre-forschung/studiengaenge/bildende-kunst",
@@ -15817,16 +15123,7 @@
         "lat": 50.1086,
         "lng": 8.698
       },
-      "ranking": {
-        "national": 6,
-        "specialization_rank": {
-          "fine_arts": 3
-        }
-      },
       "stats": {
-        "students": 350,
-        "acceptance_rate": 0.08,
-        "student_staff_ratio": 4,
         "founded": 1815
       },
       "city": "Frankfurt",
@@ -15852,17 +15149,6 @@
             "Film",
             "Performance"
           ],
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Artistic portfolio demonstrating creative ability and individual artistic development.",
-            "items": [
-              "15-25 original artworks",
-              "Sketchbook or work diary",
-              "Artistic CV",
-              "Letter of motivation"
-            ],
-            "format": "Physical portfolio or digital upload (PDF/images, varies by school)"
-          },
           "program_id": "stadelschule-frankfurt--fine-arts--master",
           "details": {
             "studyOverviewUrl": "https://staedelschule.de/en/study/about_study/",
@@ -15976,16 +15262,7 @@
         "lat": 48.1625,
         "lng": 11.5836
       },
-      "ranking": {
-        "national": 18,
-        "specialization_rank": {
-          "fine_arts": 8
-        }
-      },
       "stats": {
-        "students": 550,
-        "acceptance_rate": 0.18,
-        "student_staff_ratio": 7,
         "founded": 1946
       },
       "city": "Munich",
@@ -15999,10 +15276,6 @@
           "language": "German",
           "duration": "",
           "description": "Development and testing of an independent artistic practice within a chosen artistic class, in close exchange with the professor and fellow students. Graduates receive the academic degree 'Diplom' in Freie Kunst. Applications are possible for the winter semester only.",
-          "portfolioRequirements": {
-            "required": true,
-            "description": "Artistic portfolio demonstrating creative ability and individual artistic development."
-          },
           "program_id": "khm-munchen--freie-kunst--diploma",
           "sources": {
             "degree": "https://www.adbk.de/de/studium/bewerbung.html",
@@ -16399,7 +15672,6 @@
       ],
       "website": "https://www.kh-berlin.de",
       "stats": {
-        "students": 834,
         "founded": 1946
       },
       "address": {
@@ -16526,8 +15798,7 @@
       ],
       "website": "https://www.hmt-leipzig.de/",
       "stats": {
-        "founded": 1843,
-        "students": 1166
+        "founded": 1843
       },
       "city": "Leipzig",
       "address": {
@@ -16671,8 +15942,7 @@
       ],
       "website": "https://www.hmtm-hannover.de/",
       "stats": {
-        "founded": 1897,
-        "students": 1365
+        "founded": 1897
       },
       "city": "Hannover",
       "address": {
@@ -16698,7 +15968,6 @@
         "lng": 11.5713
       },
       "stats": {
-        "students": 24,
         "founded": 2000
       },
       "city": "Bayreuth",
@@ -16980,7 +16249,6 @@
         "lng": 13.405
       },
       "stats": {
-        "students": 554,
         "founded": 1950
       },
       "city": "Berlin",
@@ -17531,7 +16799,6 @@
         "lng": 13.405
       },
       "stats": {
-        "students": 197,
         "founded": 1905
       },
       "city": "Berlin",
@@ -17746,7 +17013,6 @@
         "lng": 8.8783
       },
       "stats": {
-        "students": 635,
         "founded": 1946
       },
       "city": "Detmold",
@@ -18078,7 +17344,6 @@
         "lng": 13.7373
       },
       "stats": {
-        "students": 22,
         "founded": 1949
       },
       "city": "Dresden",
@@ -18169,7 +17434,6 @@
         "lng": 13.7373
       },
       "stats": {
-        "students": 705,
         "founded": 1856
       },
       "city": "Dresden",
@@ -18569,7 +17833,6 @@
         "lng": 13.7373
       },
       "stats": {
-        "students": 170,
         "founded": 1925
       },
       "city": "Dresden",
@@ -18739,7 +18002,6 @@
         "lng": 6.7735
       },
       "stats": {
-        "students": 812,
         "founded": 1935
       },
       "city": "Düsseldorf",
@@ -19874,7 +19136,6 @@
         "lng": 8.6821
       },
       "stats": {
-        "students": 940,
         "founded": 1878
       },
       "city": "Frankfurt am Main",
@@ -20508,7 +19769,6 @@
         "lng": 7.8421
       },
       "stats": {
-        "students": 631,
         "founded": 1946
       },
       "city": "Freiburg",
@@ -20761,7 +20021,6 @@
         "lng": 11.9697
       },
       "stats": {
-        "students": 52,
         "founded": 1926
       },
       "city": "Halle",
@@ -21070,7 +20329,6 @@
         "lng": 8.6724
       },
       "stats": {
-        "students": 32,
         "founded": 1931
       },
       "city": "Heidelberg",
@@ -21316,7 +20574,6 @@
         "lng": 8.4037
       },
       "stats": {
-        "students": 545,
         "founded": 1812
       },
       "city": "Karlsruhe",
@@ -21495,7 +20752,6 @@
         "lng": 6.9603
       },
       "stats": {
-        "students": 1388,
         "founded": 1845
       },
       "city": "Köln",
@@ -23472,7 +22728,6 @@
         "lng": 10.6866
       },
       "stats": {
-        "students": 440,
         "founded": 1973
       },
       "city": "Lübeck",
@@ -24376,7 +23631,6 @@
         "lng": 8.466
       },
       "stats": {
-        "students": 598,
         "founded": 1971
       },
       "city": "Mannheim",
@@ -24618,7 +23872,6 @@
         "lng": 11.0767
       },
       "stats": {
-        "students": 470,
         "founded": 2008
       },
       "city": "Nürnberg",
@@ -24783,7 +24036,6 @@
         "lng": 12.1016
       },
       "stats": {
-        "students": 132,
         "founded": 2001
       },
       "city": "Regensburg",
@@ -24891,7 +24143,6 @@
         "lng": 8.9356
       },
       "stats": {
-        "students": 18,
         "founded": 1949
       },
       "city": "Rottenburg",
@@ -25130,7 +24381,6 @@
         "lng": 6.9969
       },
       "stats": {
-        "students": 560,
         "founded": 1947
       },
       "city": "Saarbrücken",
@@ -26114,7 +25364,6 @@
         "lng": 9.1829
       },
       "stats": {
-        "students": 804,
         "founded": 1857
       },
       "city": "Stuttgart",
@@ -26421,7 +25670,6 @@
         "lng": 8.6388
       },
       "stats": {
-        "students": 434,
         "founded": 1944
       },
       "city": "Trossingen",
@@ -26676,7 +25924,6 @@
         "lng": 9.0576
       },
       "stats": {
-        "students": 24,
         "founded": 1945
       },
       "city": "Tübingen",
@@ -26898,7 +26145,6 @@
         "lng": 11.3235
       },
       "stats": {
-        "students": 755,
         "founded": 1872
       },
       "city": "Weimar",
@@ -27747,7 +26993,6 @@
         "lng": 7.3353
       },
       "stats": {
-        "students": 39,
         "founded": 1948
       },
       "city": "Witten",
@@ -27893,7 +27138,6 @@
         "lng": 9.9534
       },
       "stats": {
-        "students": 576,
         "founded": 1804
       },
       "city": "Würzburg",
@@ -28487,7 +27731,6 @@
         "lng": 9.188
       },
       "stats": {
-        "students": 500,
         "founded": 1991
       },
       "city": "Ludwigsburg",
@@ -29229,7 +28472,6 @@
         "lng": 7.4496
       },
       "stats": {
-        "students": 14500,
         "founded": 1971
       },
       "city": "Dortmund",
@@ -29574,7 +28816,6 @@
         "lng": 10.4014
       },
       "stats": {
-        "students": 9500,
         "founded": 1946
       },
       "city": "Lüneburg",
@@ -29649,7 +28890,6 @@
         "lng": 7.1495
       },
       "stats": {
-        "students": 21000,
         "founded": 1972
       },
       "city": "Wuppertal",
@@ -29772,7 +29012,6 @@
         "lng": 7.6024
       },
       "stats": {
-        "students": 15000,
         "founded": 1971
       },
       "city": "Münster",
@@ -29844,7 +29083,6 @@
         "lng": 8.6682
       },
       "stats": {
-        "students": 42000,
         "founded": 1914
       },
       "city": "Frankfurt am Main",
@@ -29914,7 +29152,6 @@
         "lng": 7.943
       },
       "stats": {
-        "students": 4000,
         "founded": 1964
       },
       "city": "Offenburg",
@@ -30007,7 +29244,6 @@
         "lng": 8.1814
       },
       "stats": {
-        "students": 15500,
         "founded": 1973
       },
       "city": "Oldenburg",
@@ -30086,7 +29322,6 @@
         "lng": 8.852
       },
       "stats": {
-        "students": 18000,
         "founded": 1971
       },
       "city": "Bremen",
@@ -30287,7 +29522,6 @@
         "lng": 9.9846
       },
       "stats": {
-        "students": 42000,
         "founded": 1919
       },
       "city": "Hamburg",
@@ -30352,7 +29586,6 @@
         "lng": 9.4544
       },
       "stats": {
-        "students": 5800,
         "founded": 1946
       },
       "city": "Flensburg",
@@ -30435,7 +29668,6 @@
         "lng": 6.7938
       },
       "stats": {
-        "students": 29000,
         "founded": 1965
       },
       "city": "Düsseldorf",

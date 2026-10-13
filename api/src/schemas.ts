@@ -43,8 +43,6 @@ export const SchoolSchema = z
     type: z.string().openapi({ example: 'kunsthochschule' }),
     coordinates: z.object({ lat: z.number(), lng: z.number() }),
     stats: z.object({
-      students: z.number().nullable(),
-      student_staff_ratio: z.number().nullable(),
       founded: z.number().nullable(),
     }),
     program_ids: z.array(z.string()),

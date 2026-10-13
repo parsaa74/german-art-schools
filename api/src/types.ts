@@ -17,8 +17,6 @@ export interface Coordinates {
 }
 
 export interface SchoolStats {
-  students: number | null;
-  student_staff_ratio: number | null;
   founded: number | null;
 }
 

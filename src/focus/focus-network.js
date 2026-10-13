@@ -10,7 +10,6 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const motion=matchMedia('(prefers-reduced-motion: reduce)');
 let filters=emptyFilters(),extras=emptyExtras(),states=classify(filters,extras),mode='program',selected=null,hovered=null,listOpen=false;
 let highlight=new Map(),drag=null,pointers=new Map(),pinch=null,labelTargets=[];
-const fonts=['Apfel','Redaction','Bagnard'];let font=0;
 const canvas=$('field'),ctx=canvas.getContext('2d');
 let W=innerWidth,H=innerHeight,top=190,bottom=H-100,last=0,needsDraw=true,initialFit=true;
 const camera={x:0,y:0,k:1},tilt={x:0,y:0,tx:0,ty:0};
@@ -148,7 +147,7 @@ function renderList(){const ordering=$('list-order').value;const comparator=(a,b
  $('list-content').innerHTML=groups.map(([state,title])=>{const ns=programs.filter(n=>states.get(n.id).state===state).sort(comparator);return `<h2>${title} · ${ns.length}</h2>${ns.map(n=>`<button data-program="${esc(n.id)}"><span class="name">${esc(n.name)}</span><span class="meta">${esc([degreeAbbrev(n.p.degree),n.u.name,n.u.city].filter(Boolean).join(' · '))}${keptNode(n)?' · kept':''}${states.get(n.id).gaps.length?' · Not confirmed: '+esc(states.get(n.id).gaps.join(', ')):''}</span></button>`).join('')||'<p>No programs in this group.</p>'}`;}).join('');}
 $('list-content').addEventListener('click',e=>{const b=e.target.closest('button[data-program]');if(b)openDetails(nodeById.get(b.dataset.program));});$('list-order').onchange=renderList;$('outside-list').onchange=renderList;
 function setView(list){listOpen=list;$('list').hidden=!list;$('mirror').hidden=list;$('view').textContent=list?'Mirror':'List';$('view').setAttribute('aria-pressed',list);document.body.classList.toggle('listing',list);if(list)renderList();else{last=performance.now();needsDraw=true;}layout();}
-$('view').onclick=()=>setView(!listOpen);$('font').onclick=()=>{font=(font+1)%fonts.length;document.body.style.setProperty('--font',fonts[font]);$('font').title=fonts[font];layout();};
+$('view').onclick=()=>setView(!listOpen);
 
 function link(url,label){if(!/^https?:\/\//i.test(url??''))return '';return `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`;}
 function section(title,body){return body?`<h3>${title}</h3>${body}`:'';}

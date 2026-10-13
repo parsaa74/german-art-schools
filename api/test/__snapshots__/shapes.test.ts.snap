@@ -85,8 +85,6 @@ exports[`response shape snapshots (additive-only contract) > /v1/schools/{id} sh
   "program_ids[]",
   "state",
   "stats.founded",
-  "stats.student_staff_ratio",
-  "stats.students",
   "type",
 ]
 `;

@@ -14,7 +14,6 @@ export interface ProcessedUniversity {
   city?: string;
   description?: string;
   founded?: string;
-  students?: string;
   coordinates?: { lat: number | null; lng: number | null };
   // Application method
   applicationMethod?: 'uni-assist' | 'direct';
@@ -56,20 +55,8 @@ export interface ProcessedUniversity {
     sources?: Record<string, string>;
     researched?: string;
   }>;
-  // Enhanced statistical data for visualizations
-  ranking?: {
-    national?: number;
-    specialization_rank?: { [key: string]: number };
-  };
   stats?: {
-    students?: number;
-    acceptance_rate?: number;
-    student_staff_ratio?: number;
     founded?: number;
   };
-  // Computed fields for clustering and connections
-  prestigeScore?: number; // Derived from ranking
-  popularityScore?: number; // Derived from student count and acceptance rate
-  specializationVector?: string[]; // Specializations for similarity calculations
 }
 

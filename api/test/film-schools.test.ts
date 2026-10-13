@@ -38,8 +38,6 @@ describe('official DFFB and ifs additions', () => {
       const school = await json(`/v1/schools/${id}`);
       expect(school.program_ids).toHaveLength(5);
       expect(school.stats.founded).toBe(founded);
-      expect(school.stats.students).toBeNull();
-      expect(school.stats.student_staff_ratio).toBeNull();
     }
   });
 
