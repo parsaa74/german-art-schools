@@ -11,7 +11,6 @@
     "preview": "vite preview",
     "validate-deadlines": "node scripts/validateDeadlines.js",
     "build:program-ids": "tsx scripts/build-program-ids.ts",
-    "build:program-embeddings": "tsx --env-file=.env.local scripts/build-program-embeddings.ts",
     "build:relations": "tsx scripts/build-relations.ts",
     "apply:uni-assist": "tsx scripts/apply-uni-assist.ts",
     "check:filters": "tsx scripts/check-filters.ts",
@@ -19,8 +18,7 @@
     "check:program-calendar": "tsx scripts/check-program-calendar.ts",
     "check:kept": "tsx scripts/check-kept-store.ts",
     "check:focus": "tsx scripts/check-focus-model.ts",
-    "build:api-artifacts": "tsx scripts/build-api-artifacts.ts",
-    "scrape:program-details": "tsx --env-file=.env.local scripts/scrape-program-details.ts"
+    "build:api-artifacts": "tsx scripts/build-api-artifacts.ts"
   },
   "dependencies": {
     "d3-force": "^3.0.0",

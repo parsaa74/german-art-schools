@@ -78,7 +78,7 @@ check(checkProgram(master[1], master[0], { ...EMPTY_PROFILE, firstDegree: false 
 const germanOnly = unis.flatMap((u) => u.programs.map((p: any) => [u, p])).find(([, p]: any) => p.language === 'German');
 check(checkProgram(germanOnly[1], germanOnly[0], { ...EMPTY_PROFILE, german: 'a' }).checks.some((c) => c.level === 'warn' && c.text.startsWith('Taught in German')), 'German-taught program with A-level German is flagged');
 
-// researched data (data/research/2026-10-10-accepted.json)
+// researched data
 check(parseDeadlineDate('5 March 2027').getFullYear() === 2027 && parseDeadlineDate('5 March 2020').getFullYear() === 2020, 'a dated deadline keeps its year');
 check(getDeadlineStatus({ start: '1 January 2020', end: '5 March 2020' })?.label.startsWith('Closed') === true && getDeadlineStatus({ end: '5 March 2020' })?.status === 'closed', 'a passed dated round is closed, not moved to next year');
 const tub = school('Technische Universität Berlin');

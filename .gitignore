@@ -49,6 +49,7 @@ temp*.html
 
 # Build-only embedding artifacts (large, not shipped to client)
 /data/program_embeddings.json
+/data/research/
 
 # Documentation lives in README.md and LICENSE only
 *.md

@@ -12,7 +12,7 @@
  *
  * How it works:
  * 1. The query is embedded with the SAME Gemini model/taskType/dim used to
- *    build api/data/vectors.bin (see scripts/build-program-embeddings.ts:
+ *    build api/data/vectors.bin (
  *    gemini-embedding-2-preview, SEMANTIC_SIMILARITY, 3072 dims), so query
  *    vectors live in the same space as the stored document vectors.
  *    Query embeddings are cached best-effort via the Workers Cache API.
@@ -66,7 +66,7 @@ export interface SearchEnv {
   GEMINI_API_KEY?: string;
 }
 
-// ---------- embedding (must mirror scripts/build-program-embeddings.ts) ----------
+// ---------- embedding (must mirror the stored document vectors) ----------
 
 const MODEL = 'gemini-embedding-2-preview';
 const DIM = 3072;

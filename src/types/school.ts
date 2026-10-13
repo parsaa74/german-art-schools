@@ -20,7 +20,7 @@ export interface ProcessedUniversity {
   applicationMethodSource?: { url: string; checked: string };
   // tuition for non-EU students where known (perSemester null = charged, amount not published by us)
   nonEuTuition?: { perSemester: string | null; source: string; checked: string };
-  // Researched on official pages (see data/research/): costs, route details, contact
+  // Researched on official pages: costs, route details, contact
   fees?: Fee[];
   applicationRoute?: { method: string; notes: string; url?: string; scope?: string };
   contact?: { email?: string; phone?: string; url?: string };
