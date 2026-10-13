@@ -57,6 +57,7 @@ exports[`response shape snapshots (additive-only contract) > /v1/programs/{id} s
   "sources.details.faculty",
   "sources.details.languageNotes",
   "sources.details.languageRequirements",
+  "sources.details.programUrl",
   "sources.details.tuitionEuroPerSemester",
   "sources.fees",
   "sources.intakes",

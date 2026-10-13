@@ -1,0 +1,4146 @@
+{
+  "checked": "2026-10-11",
+  "note": "Teaching language (language of instruction) for programs that had none. Found by small headless workers on official school pages only, then checked mechanically (on the school domain, quote present on the page, wording states the teaching language rather than a language requirement) and reviewed by hand. School-wide statements fill only programs without a program-specific answer and skip named exceptions and international/English-named tracks. \"Mostly German, partly English\" is recorded as German with a note.",
+  "facts": [
+    {
+      "batch": "teaching-language",
+      "factIndex": 0,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "academy-of-visual-arts-frankfurt",
+      "programIds": [
+        "academy-of-visual-arts-frankfurt--fine-arts--unspecified"
+      ],
+      "field": "language",
+      "value": "English",
+      "source": "https://academy-of-visual-arts.com/international-students/",
+      "quote": "Language of Instruction is English.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 1,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "burg-giebichenstein",
+      "programIds": [
+        "burg-giebichenstein--communication-design--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.burg-halle.de/en/university/studying/prospective-students",
+      "quote": "The entrance examination and all of our study programs are conducted in German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 2,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "burg-giebichenstein",
+      "programIds": [
+        "burg-giebichenstein--fine-arts--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.burg-halle.de/en/university/studying/prospective-students",
+      "quote": "The entrance examination and all of our study programs are conducted in German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 3,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "burg-giebichenstein",
+      "programIds": [
+        "burg-giebichenstein--industrial-design--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.burg-halle.de/en/university/studying/prospective-students",
+      "quote": "The entrance examination and all of our study programs are conducted in German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 4,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "programIds": [
+        "filmuniversitat-babelsberg-konrad-wolf--acting--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.filmuniversitaet.de/en/international/coming-from-abroad/exchange-study-incoming",
+      "quote": "With the exception of the Master's program in Creative Technologies, all programs are generally taught in German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 5,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "programIds": [
+        "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.filmuniversitaet.de/en/international/coming-from-abroad/exchange-study-incoming",
+      "quote": "With the exception of the Master's program in Creative Technologies, all programs are generally taught in German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 6,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "programIds": [
+        "filmuniversitat-babelsberg-konrad-wolf--film-production--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.filmuniversitaet.de/en/international/coming-from-abroad/exchange-study-incoming",
+      "quote": "With the exception of the Master's program in Creative Technologies, all programs are generally taught in German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 7,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "filmuniversitat-babelsberg-konrad-wolf",
+      "programIds": [
+        "filmuniversitat-babelsberg-konrad-wolf--screenwriting--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.filmuniversitaet.de/en/international/coming-from-abroad/exchange-study-incoming",
+      "quote": "With the exception of the Master's program in Creative Technologies, all programs are generally taught in German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 8,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "folkwang-essen",
+      "programIds": [
+        "folkwang-essen--dance--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.folkwang-uni.de/en/home/dance/courses-of-study/dance-ba/basic-info-application/",
+      "quote": "Language of instruction: German",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 9,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "folkwang-essen",
+      "programIds": [
+        "folkwang-essen--design--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.folkwang-uni.de/en/home/design/courses-of-studies/communication-design-ba/basic-info-application",
+      "quote": "Language of instruction: German",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 10,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "folkwang-essen",
+      "programIds": [
+        "folkwang-essen--fine-arts--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.folkwang-uni.de/en/home/hochschule/study/application/international-applicants",
+      "quote": "The official language of instruction in all study courses at the Folkwang University of the Arts is German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 11,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "folkwang-essen",
+      "programIds": [
+        "folkwang-essen--music--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.folkwang-uni.de/en/home/academic-studies/courses-of-studies/music-pedagogy/basic-info-application-ba",
+      "quote": "Language of instruction: German",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 12,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "folkwang-essen",
+      "programIds": [
+        "folkwang-essen--theatre--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.folkwang-uni.de/en/home/theater/courses-of-studies/directing/basic-info-application",
+      "quote": "Language of instruction: German",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 13,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-der-bildenden-kunste-essen",
+      "programIds": [
+        "hochschule-der-bildenden-kunste-essen--fine-arts--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hbk-essen.de/de/malerei-grafik",
+      "quote": "Unterrichtssprache: Deutsch (label/value pair on Malerei/Grafik Studium (Bachelor of Fine Arts) page; same label/value 'Unterrichtssprache Deutsch' on https://www.hbk-essen.de/de/skulptur-installation)",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 14,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-bildende-kunste-hamburg",
+      "programIds": [
+        "hochschule-fur-bildende-kunste-hamburg--design--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfbk-hamburg.de/en/information/prospective-students/faq-application",
+      "quote": "Lectures and classes at the HFBK Hamburg are usually conducted in German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 15,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-bildende-kunste-hamburg",
+      "programIds": [
+        "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfbk-hamburg.de/en/information/prospective-students/faq-application",
+      "quote": "Lectures and classes at the HFBK Hamburg are usually conducted in German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 16,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-fernsehen-und-film-munchen",
+      "programIds": [
+        "hochschule-fur-fernsehen-und-film-munchen--cinematography--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hff-muenchen.de/de_DE/bewerbung",
+      "quote": "Die Vorlesungen und Prüfungen finden ausschließich in deutscher Sprache statt.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 17,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-fernsehen-und-film-munchen",
+      "programIds": [
+        "hochschule-fur-fernsehen-und-film-munchen--film-production--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hff-muenchen.de/de_DE/bewerbung",
+      "quote": "Die Vorlesungen und Prüfungen finden ausschließich in deutscher Sprache statt.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 18,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-fernsehen-und-film-munchen",
+      "programIds": [
+        "hochschule-fur-fernsehen-und-film-munchen--screenwriting--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hff-muenchen.de/de_DE/bewerbung",
+      "quote": "Die Vorlesungen und Prüfungen finden ausschließich in deutscher Sprache statt.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 19,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--chordirigieren--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/chordirigieren/",
+      "quote": "Unterrichtssprache Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 20,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--chordirigieren--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/chordirigieren/",
+      "quote": "Unterrichtssprache Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 21,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--elektroakustische-musik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/elektroakustische-musik/",
+      "quote": "Unterrichtssprache Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 22,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--gesang--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/gesang/",
+      "quote": "Unterrichtssprache Deutsch Voraussetzung Bachelorabschluss mit 240 LP/ECTS oder gleichwertiger Absc",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 23,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--kammermusik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German/English",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/kammermusik/",
+      "quote": "Unterrichtssprache Deutsch, Englisch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 24,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--komposition--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/komposition/",
+      "quote": "Unterrichtssprache Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 25,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--komposition--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/komposition/",
+      "quote": "Unterrichtssprache Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 26,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--korrepetition--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/korrepetition/",
+      "quote": "Unterrichtssprache Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 27,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--kunstlerische-instrumentalausbildung--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/en/application/erasmus-incoming/",
+      "quote": "Language of Instruction: German, some of the courses are held in English",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 28,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--kunstlerische-instrumentalausbildung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/en/application/erasmus-incoming/",
+      "quote": "Language of Instruction: German, some of the courses are held in English",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 29,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--liedgestaltung-fur-pianist-innen--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/liedgestaltung-fuer-pianistinnen/",
+      "quote": "Unterrichtssprache Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 30,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--musiktheater-regie--bachelor"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/musiktheater-regie/",
+      "quote": "Unterrichtssprache Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 31,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--orchesterdirigieren--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/orchesterdirigieren/",
+      "quote": "Unterrichtssprache Deutsch Voraussetzung besondere künstlerische Begabung nachzuweisen durch Zugang",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 32,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--orchesterdirigieren--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/orchesterdirigieren/",
+      "quote": "Unterrichtssprache Deutsch Voraussetzung Bachelorabschluss (B. Mus.) mit 240 LP/ECTS oder gleichwer",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 33,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-berlin",
+      "programIds": [
+        "hochschule-fur-musik-berlin--produktionsdramaturgie-fur-musiktheater--master"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-berlin.de/bewerbung/studienangebot/produktionsdramaturgie-fuer-musiktheater/",
+      "quote": "Unterrichtssprache Deutsch Voraussetzung ein Bachelorabschluss oder gleichwertiger Hochschulabschlu",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 34,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-nurnberg",
+      "programIds": [
+        "hochschule-fur-musik-nurnberg--kunstlerisch-padagogischer-bachelor--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-nuernberg.de/studium/studiengaenge/ba-elementare-musikpaedagogik/vokalpaedagogik-jazz-kpa",
+      "quote": "Unterrichtssprache: deutsch (Abschluss: Bachelor of Music)",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 35,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-nurnberg",
+      "programIds": [
+        "hochschule-fur-musik-nurnberg--kunstlerischer-bachelor--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-nuernberg.de/studium/studiengaenge/ab-2026/27-instrument",
+      "quote": "Unterrichtssprache: deutsch (Abschluss: Bachelor of Music)",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 36,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-nurnberg",
+      "programIds": [
+        "hochschule-fur-musik-nurnberg--kunstlerischer-master--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-nuernberg.de/studium/studiengaenge/ma-blockfloete-ka",
+      "quote": "Unterrichtssprache: deutsch (Abschluss: Master of Music)",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 37,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-nurnberg",
+      "programIds": [
+        "hochschule-fur-musik-nurnberg--meisterklasse--meisterklassendiplom"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-nuernberg.de/studium/studiengaenge/meisterklasse",
+      "quote": "Unterrichtssprache Sprachzertifikate Meisterklassendiplom 4 Semester deutsch B 1 (GER)",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 38,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-nurnberg",
+      "programIds": [
+        "hochschule-fur-musik-nurnberg--musikwissenschaften--master-of-arts"
+      ],
+      "field": "language",
+      "value": "English",
+      "source": "https://www.hfm-nuernberg.de/studium/studienbereiche/musiktheorie-/-musikwissenschaften-und-schluesselqualifikationen/musikwissenschaften",
+      "quote": "Ein englischsprachiger Masterstudiengang für interdisziplinäre Musikforschung",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 39,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--advanced-education-in-music-pedagogy--master-of-education"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung/articles/faq",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 40,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--cultural-studies-und-management--bachelor-of-arts"
+      ],
+      "field": "language",
+      "value": "German/English",
+      "source": "https://www.hfmsaar.de/studiengang-detail/cultural-studies-und-management-b-a",
+      "quote": "Der doppelsprachige Studiengang (Deutsch und Englisch)",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 41,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--elementare-musikpadagogik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 42,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kirchenmusik-ev-kath--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 43,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kirchenmusik-kath-ev-a--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung/articles/faq",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 44,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kulturmanagement--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung/articles/faq",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 45,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisch-padagogisches-profil--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 46,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisch-padagogisches-profil-gehorbildung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung/articles/faq",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 47,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisch-padagogisches-profil-musiktheorie--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 48,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisch-padagogisches-profil-musiktheorie--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung/articles/faq",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 49,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-chorleitung--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 50,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-chorleitung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung/articles/faq",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 51,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-neue-musik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung/articles/faq",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 52,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-orchesterleitung--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 53,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-dirigieren-orchesterleitung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung/articles/faq",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 54,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-gesang--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 55,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-gesang--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 56,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-improvisation-fur-tasteninstrumente--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 57,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-instrument--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 58,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-instrument--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 59,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-instrumentalkorrepetition--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 60,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-jazz--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung/articles/faq",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 61,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-jazz-und-aktuelle-musik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 62,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-kammermusik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 63,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-komposition--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 64,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-komposition--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 65,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-liedgestaltung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 66,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-neue-musik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung/articles/faq",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 67,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-orchester-und-ensemblemusik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 68,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--kunstlerisches-profil-orchesterinstrument-orchesterakademie--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt, so stellen wir sicher, dass Sie in der Lage sind dem Unterricht auch folgen können.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 69,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-saar",
+      "programIds": [
+        "hochschule-fur-musik-saar--q-master-lehramt-musik--master-of-education"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung/articles/faq",
+      "quote": "Die Unterrichte finden in deutscher Sprache statt",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 70,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "programIds": [
+        "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--contemporary-dance-education--master-of-arts"
+      ],
+      "field": "language",
+      "value": "English",
+      "source": "https://www.hfmdk-frankfurt.de/studiengang/contemporary-dance-education-master",
+      "quote": "Das englischsprachige Vollzeitstudium zielt auf Kompetenzen zur Entwicklung und Kommunikation neuester Vermittlungsansätze im Tanz.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 71,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "programIds": [
+        "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--gesang--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmdk-frankfurt.de/studiengang/gesang-bachelor",
+      "quote": "Sprache: Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 72,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "programIds": [
+        "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--kirchenmusik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmdk-frankfurt.de/studiengang/kirchenmusik-bachelor",
+      "quote": "Sprache: Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 73,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "programIds": [
+        "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--komposition--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmdk-frankfurt.de/studiengang/komposition-bachelor",
+      "quote": "Sprache: Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 74,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "programIds": [
+        "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--komposition--master-of-music"
+      ],
+      "field": "language",
+      "value": "German/English",
+      "source": "https://www.hfmdk-frankfurt.de/studiengang/komposition-master",
+      "quote": "Sprache: Deutsch oder Englisch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 75,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "programIds": [
+        "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--konzertexamen--konzertexamen"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmdk-frankfurt.de/studiengang/konzertexamen",
+      "quote": "Sprache: Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 76,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "programIds": [
+        "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--musikpadagogik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmdk-frankfurt.de/studiengang/musikpaedagogik-master",
+      "quote": "Sprache: Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 77,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "programIds": [
+        "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--regie--bachelor-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmdk-frankfurt.de/studiengang/regie-bachelor",
+      "quote": "Die Lehrveranstaltungen finden in deutscher Sprache statt.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 78,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "programIds": [
+        "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--tanz--bachelor-of-arts"
+      ],
+      "field": "language",
+      "value": "German/English",
+      "source": "https://www.hfmdk-frankfurt.de/studiengang/tanz-bachelor",
+      "quote": "Sprache: Deutsch / Englisch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 79,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
+      "programIds": [
+        "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--theater-und-orchestermanagement--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmdk-frankfurt.de/studiengang/theater-und-orchestermanagement-master",
+      "quote": "Sprache: Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 80,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
+      "programIds": [
+        "hochschule-fur-musik-und-darstellende-kunst-stuttgart--schauspiel--bachelor-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hmdk-stuttgart.de/studiengang/bachelor-schauspielschauspielschule",
+      "quote": "Derzeit finden alle Unterrichte in deutscher Lautsprache statt.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 81,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--blasinstrumente--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 82,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--blechblaser--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 83,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--chordirigieren--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 84,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--dirigieren-chor--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 85,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--dirigieren-musiktheater--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 86,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--dirigieren-orchester--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 87,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--elektronische-komposition--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 88,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--elektronische-komposition--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 89,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--elementare-musikpadagogik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 90,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--evangelische-kirchenmusik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 91,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--evangelische-kirchenmusik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 92,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--gender-queer-studies--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 93,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--gesang--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 94,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--gesang-lied-konzert--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 95,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--gesang-musiktheater--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 96,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--gitarre--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 97,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--gitarre--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 98,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--harfe--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 99,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--harfe--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 100,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--historische-instrumente--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 101,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--historische-instrumente-und-barockgesang--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 102,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--holzblaser--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 103,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--instrumental-gesangspadagogik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 104,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--instrumentale-komposition--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 105,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--instrumentale-komposition--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 106,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--interpretation-neue-musik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 107,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--jazz-komposition-arrangement--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 108,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--jazz-pop--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 109,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--jazz-pop-instrumental-vokal--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 110,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--kammermusik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 111,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--katholische-kirchenmusik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 112,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--katholische-kirchenmusik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 113,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--klavier--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 114,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--klavier--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 115,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--konzertexamen--konzertexamen"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 116,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--lehramt-musik--lehramt"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 117,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--liedgestaltung-klavier--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 118,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--mandoline--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 119,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--mandoline--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 120,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--musikpadagogik--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 121,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--musikpadagogik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 122,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--musikwissenschaft--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 123,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--neue-klaviermusik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 124,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--opernkorrepetition--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 125,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--orchesterdirigieren--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 126,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--orchesterspiel--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 127,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--orgel--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 128,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--orgel--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 129,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--production--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 130,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--schlagzeug--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 131,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--schlagzeug--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 132,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--streichinstrumente--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 133,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--streichinstrumente--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://ticket.hfmt-koeln.de/help/de-de/95-wissensdatenbank-der-hfmt-koln/350-deutschkurse",
+      "quote": "Die Unterrichtsprache an der Hochschule ist deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 134,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--tanz--bachelor-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/en/information-for/students/events-offers-in-the-study/",
+      "quote": "Since the language of instruction at HfMT Cologne is German, a good knowledge of German is important for successful study.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 135,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--tanzvermittlung--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German/English",
+      "source": "https://www.hfmt-koeln.de/tanz/studiengaenge/master-of-arts/tanzvermittlung-master-of-arts/",
+      "quote": "Das Studium im Studiengang Master of Arts Tanzvermittlung wird in deutscher und englischer Sprache durchgeführt.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 136,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-tanz-koln",
+      "programIds": [
+        "hochschule-fur-musik-und-tanz-koln--tanzwissenschaft--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfmt-koeln.de/tanz/studiengaenge/master-of-arts/tanzwissenschaft-master-of-arts/",
+      "quote": "Die Lehrveranstaltungen werden vorrangig auf Deutsch unterrichtet, englischsprachige Literatur wird aber miteinbezogen.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 137,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-und-theater-rostock",
+      "programIds": [
+        "hochschule-fur-musik-und-theater-rostock--popularmusik-mit-klassik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hmt-rostock.de/studium/studienangebot/musik/popularmusik-mit-klassik/",
+      "quote": "Sprache: Deutsch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 138,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--alte-musik-historische-instrumente--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 139,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--alte-musik-historische-instrumente--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 140,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--chordirigieren--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 141,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--chordirigieren--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 142,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--elementare-musikpadagogik-rhythmik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 143,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--gesang-musiktheater--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 144,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--gesang-musiktheater--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 145,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--jazz--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 146,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--jazz--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 147,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--kammermusik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 148,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--kirchenmusik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 149,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--kirchenmusik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 150,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--komposition--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 151,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--komposition--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 152,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--kulturmanagement--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 153,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--kunstlerische-instrumentalausbildung--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 154,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--kunstlerische-instrumentalausbildung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 155,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--liedgestaltung-fur-pianisten--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 156,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--musiktheorie--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 157,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--musiktheorie--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 158,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--musikwissenschaft--bachelor-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 159,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--musikwissenschaft--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 160,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--opernkorrepetition--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 161,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--orchesterdirigieren--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 162,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--orchesterdirigieren--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 163,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-weimar",
+      "programIds": [
+        "hochschule-fur-musik-weimar--schulmusik-lehramt-an-gymnasien--staatsexamen"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfm-weimar.de/en/applying/international-applicants/short-term-student-associates",
+      "quote": "The language of instruction is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 164,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--blasorchesterleitung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 165,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--chorleitung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 166,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--elementare-musikpadagogik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 167,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--gesang-konzert-operngesang--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 168,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--jazz--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 169,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--jazz--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 170,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--kammermusik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 171,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--kirchenmusik-ev-kath--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 172,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--komposition--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 173,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--komposition-auch-mit-neuen-medien--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 174,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--kunstlerisch-padagogische-masterstudiengange--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 175,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--kunstlerische-ausbildung--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 176,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--kunstlerische-ausbildung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 177,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--lehramt-musik--lehramt"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 178,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--meisterklasse--meisterklassendiplom"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 179,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-musik-wurzburg",
+      "programIds": [
+        "hochschule-fur-musik-wurzburg--musiktheorie--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfm-wuerzburg.de/international/erasmus/studierende-incoming",
+      "quote": "Die Unterrichtssprache an der HfM Würzburg ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 180,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "programIds": [
+        "hochschule-fur-schauspielkunst-berlin--choreographie--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfs-berlin.de/studium/choreographie/mac-studieren/",
+      "quote": "Unterrichtssprache: überwiegend Deutsch, teilweise Englisch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 181,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "programIds": [
+        "hochschule-fur-schauspielkunst-berlin--dramaturgie--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfs-berlin.de/studium/studieren-und-bewerben/fragen-zur-bewerbung/",
+      "quote": "Nein, die Unterrichtssprache in allen Studiengängen unserer Hochschule ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 182,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "programIds": [
+        "hochschule-fur-schauspielkunst-berlin--schauspiel--diplom"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfs-berlin.de/studium/studieren-und-bewerben/fragen-zur-bewerbung/",
+      "quote": "Da die Unterrichtssprache in unserem Diplomstudiengang Schauspiel Deutsch ist",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 183,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "programIds": [
+        "hochschule-fur-schauspielkunst-berlin--schauspielregie--diplom"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfs-berlin.de/studium/studieren-und-bewerben/fragen-zur-bewerbung/",
+      "quote": "Nein, die Unterrichtssprache in allen Studiengängen unserer Hochschule ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 184,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "programIds": [
+        "hochschule-fur-schauspielkunst-berlin--spiel-und-objekt--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfs-berlin.de/studium/studieren-und-bewerben/fragen-zur-bewerbung/",
+      "quote": "Nein, die Unterrichtssprache in allen Studiengängen unserer Hochschule ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 185,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "hochschule-fur-schauspielkunst-berlin",
+      "programIds": [
+        "hochschule-fur-schauspielkunst-berlin--zeitgenossische-puppenspielkunst--diplom"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.hfs-berlin.de/studium/studieren-und-bewerben/fragen-zur-bewerbung/",
+      "quote": "Nein, die Unterrichtssprache in allen Studiengängen unserer Hochschule ist Deutsch.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 186,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "kunsthochschule-berlin-weissensee",
+      "programIds": [
+        "kunsthochschule-berlin-weissensee--fine-arts--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://kh-berlin.de/studium/studienbewerbung/internationale-bewerber-innen",
+      "quote": "An der weißensee kunsthochschule berlin werden alle Kurse und Vorlesungen nur auf deutsch angeboten.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 187,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "kunsthochschule-fur-medien-koln",
+      "programIds": [
+        "kunsthochschule-fur-medien-koln--media-arts--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.khm.de/Studium/",
+      "quote": "Der Unterricht erfolgt primär in deutscher Sprache, gelegentlich in englischer Sprache.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 188,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "programIds": [
+        "muthesius-kunsthochschule-kiel--communication-design--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://muthesius-kunsthochschule.de/faq-bewerberinnen/",
+      "quote": "An der Muthesius Kunsthochschule finden die Veranstaltungen in deutscher Sprache statt.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 189,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "programIds": [
+        "muthesius-kunsthochschule-kiel--fine-arts--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://muthesius-kunsthochschule.de/faq-bewerberinnen/",
+      "quote": "An der Muthesius Kunsthochschule finden die Veranstaltungen in deutscher Sprache statt.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 190,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "muthesius-kunsthochschule-kiel",
+      "programIds": [
+        "muthesius-kunsthochschule-kiel--industrial-design--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://muthesius-kunsthochschule.de/faq-bewerberinnen/",
+      "quote": "An der Muthesius Kunsthochschule finden die Veranstaltungen in deutscher Sprache statt.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 191,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "palucca-hochschule-fur-tanz",
+      "programIds": [
+        "palucca-hochschule-fur-tanz--choreografie--master-of-arts"
+      ],
+      "field": "language",
+      "value": "English",
+      "source": "https://palucca.eu/bewerbung/master-studiengang-choreografie",
+      "quote": "Der Unterricht findet in englischer Sprache statt.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 192,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "palucca-hochschule-fur-tanz",
+      "programIds": [
+        "palucca-hochschule-fur-tanz--dance-teacher-berufsbegleitend--master-of-arts"
+      ],
+      "field": "language",
+      "value": "English",
+      "source": "https://palucca.eu/studienangebot/master-studiengang-tanzpaedagogik",
+      "quote": "Das MA Dance Teacher-Programm wird auf Englisch unterrichtet.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 193,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--chorleitung--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 194,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--chorleitung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 195,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--gesang--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 196,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--gesang--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 197,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--gitarre--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 198,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--gitarre--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 199,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--kammermusik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 200,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--kirchenmusik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 201,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--kirchenmusik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 202,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--klang-und-realitat--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 203,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--klavier--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 204,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--klavier--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 205,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--komposition--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 206,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--komposition--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 207,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--kunstlerische-musikproduktion--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 208,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--liedgestaltung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 209,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--musik-und-medien--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 210,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--musikfilmregie--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 211,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--musikpadagogik--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 212,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--musikpadagogik--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 213,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--musiktheorie-und-horerziehung--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 214,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--musikwissenschaft--bachelor-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 215,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--musikwissenschaft--master-of-arts"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 216,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--orchesterinstrumente--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 217,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--orchesterinstrumente--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 218,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--orchesterleitung--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 219,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--orchesterleitung--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 220,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--orchesterpraxis--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 221,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--orgel--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 222,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--orgel--master-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 223,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "robert-schumann-hochschule",
+      "programIds": [
+        "robert-schumann-hochschule--ton-und-bild--bachelor-of-music"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://www.rsh-duesseldorf.de/en/application/application-process/questions-about-applying",
+      "quote": "German. Foreign applicants must demonstrate adequate mastery of German.",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 224,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "rwth-aachen-university",
+      "programIds": [
+        "rwth-aachen-university--human-technology-interaction-and-communication--unspecified"
+      ],
+      "field": "language",
+      "value": "German/English",
+      "source": "https://www.rwth-aachen.de/cms/root/studium/vor-dem-studium/studiengaenge/liste-aktuelle-studiengaenge/studiengangbeschreibung/~biik/technik-kommunikation-m-sc/?lidx=1",
+      "quote": "Language German and English",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 225,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "programIds": [
+        "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfg-karlsruhe.de/en/international/incomings/informationen-fuer-internationale-bewerberinnen/",
+      "quote": "The regular teaching language is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 226,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "programIds": [
+        "staatliche-hochschule-fur-gestaltung-karlsruhe--fine-arts--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfg-karlsruhe.de/en/international/incomings/informationen-fuer-internationale-bewerberinnen/",
+      "quote": "The regular teaching language is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 227,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "programIds": [
+        "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfg-karlsruhe.de/en/international/incomings/informationen-fuer-internationale-bewerberinnen/",
+      "quote": "The regular teaching language is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 228,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "staatliche-hochschule-fur-gestaltung-karlsruhe",
+      "programIds": [
+        "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--unspecified"
+      ],
+      "field": "language",
+      "value": "German",
+      "source": "https://hfg-karlsruhe.de/en/international/incomings/informationen-fuer-internationale-bewerberinnen/",
+      "quote": "The regular teaching language is German.",
+      "scope": "school-wide",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    },
+    {
+      "batch": "teaching-language",
+      "factIndex": 229,
+      "reviewer": "haiku-worker+mechanical+parent",
+      "schoolId": "technische-hochschule-augsburg",
+      "programIds": [
+        "technische-hochschule-augsburg--interactive-media-systems--unspecified"
+      ],
+      "field": "language",
+      "value": "German/English",
+      "source": "https://www.tha.de/Gestaltung/Interaktive-Medien/IMS.html",
+      "quote": "Sprachen: Deutsch, Englisch",
+      "scope": "program",
+      "freshness": "ongoing",
+      "cycle": null,
+      "applicantScope": "all applicants",
+      "checked": "2026-10-11"
+    }
+  ]
+}
