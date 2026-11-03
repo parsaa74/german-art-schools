@@ -44,6 +44,7 @@ router.openapi(
         degree_level: q.degree_level,
         language: q.language,
         school: q.school,
+        subject: q.subject,
         portfolio_required:
           q.portfolio_required === undefined ? undefined : q.portfolio_required === 'true',
         state: q.state,

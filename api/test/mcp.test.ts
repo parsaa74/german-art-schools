@@ -2,14 +2,15 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import app from '../src/index';
 import graphJson from '../data/graph.json';
 import metaJson from '../data/meta.json';
-import { SearchUnavailableError, semanticSearch } from '../src/services/search';
+import { SearchUnavailableError, searchPrograms } from '../src/services/search';
 
 vi.mock('../src/services/search', async (importOriginal) => {
   const actual = await importOriginal<typeof import('../src/services/search')>();
-  return { ...actual, semanticSearch: vi.fn(actual.semanticSearch) };
+  return { ...actual, searchPrograms: vi.fn(actual.searchPrograms) };
 });
 
-const mockedSearch = vi.mocked(semanticSearch);
+const mockedSearch = vi.mocked(searchPrograms);
+const AI = { run: async () => ({ data: [] }) };
 
 const HFBK = 'hochschule-fur-bildende-kunste-hamburg';
 const HFBK_BFA =
@@ -191,7 +192,7 @@ describe('tools/call — get_program', () => {
 });
 
 describe('tools/call — list_open_deadlines', () => {
-  it('finds the 16 english master programs open on 2026-06-10', async () => {
+  it('finds the 13 english master programs open on 2026-06-10', async () => {
     const payload = payloadOf(
       await callTool('list_open_deadlines', {
         on_date: '2026-06-10',
@@ -203,9 +204,11 @@ describe('tools/call — list_open_deadlines', () => {
     // 19 after the initial research; this catalogue check removes three false matches:
     // D&C is German-taught with a dated 2026 window, and h_da's standalone Digital Media
     // MSc / Expanded Realities MA were not matched to current degrees (no invented windows).
-    expect(payload.total_open).toBe(16);
-    expect(payload.returned).toBe(16); // fits inside the default limit of 25
-    expect(payload.programs).toHaveLength(16);
+    // 16 before warned records left listings: Rhein-Waal's non-existent Sustainable Design MA and the
+    // wrong-degree THI / TH Augsburg duplicates are still fetchable by id, but never offered as open.
+    expect(payload.total_open).toBe(13);
+    expect(payload.returned).toBe(13); // fits inside the default limit of 25
+    expect(payload.programs).toHaveLength(13);
     for (const p of payload.programs) {
       expect(p.degree_level).toBe('master');
       expect(p.language.toLowerCase()).toContain('english');
@@ -234,6 +237,8 @@ describe('tools/call — list_open_deadlines', () => {
   it('rejects a malformed on_date with an isError result', async () => {
     const result = await callTool('list_open_deadlines', { on_date: '2026-13-01' });
     expect(result.isError).toBe(true);
+    // impossible day for the month, same rule as REST open_on
+    expect((await callTool('list_open_deadlines', { on_date: '2026-02-31' })).isError).toBe(true);
   });
 });
 
@@ -281,23 +286,24 @@ describe('tools/call — search_programs', () => {
     score: 0.91,
   };
 
-  it('returns scored hits and forwards args + env to semanticSearch', async () => {
-    mockedSearch.mockResolvedValueOnce([HIT as any]);
+  it('returns scored hits and forwards args + the AI binding to searchPrograms', async () => {
+    mockedSearch.mockResolvedValueOnce({ mode: 'semantic', hits: [HIT as any] });
     const result = await callTool(
       'search_programs',
       { query: 'experimental sound art', degree_level: 'bachelor', limit: 5 },
-      { GEMINI_API_KEY: 'test-key' },
+      { AI },
     );
     expect(result.isError).toBeFalsy();
     const payload = payloadOf(result);
     expect(payload.query).toBe('experimental sound art');
+    expect(payload.mode).toBe('semantic');
     expect(payload.results).toHaveLength(1);
     expect(payload.results[0].program_id).toBe(HFBK_BFA);
     expect(payload.results[0].score).toBe(0.91);
     expect(mockedSearch).toHaveBeenCalledExactlyOnceWith(
       'experimental sound art',
       { limit: 5, degreeLevel: 'bachelor', language: undefined },
-      { GEMINI_API_KEY: 'test-key' },
+      { AI },
     );
   });
 

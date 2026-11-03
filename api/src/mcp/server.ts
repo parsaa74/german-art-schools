@@ -4,7 +4,7 @@
  * imports here; the transport lives in ./index.ts.
  *
  * Stateless usage: ./index.ts builds a fresh server per POST request and
- * closes over the Worker env (GEMINI_API_KEY for search_programs).
+ * closes over the Worker env (the Workers AI binding for search_programs).
  */
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { z } from 'zod';
@@ -18,10 +18,11 @@ import {
 } from '../services';
 import {
   SearchUnavailableError,
-  semanticSearch,
+  searchPrograms,
   type SearchEnv,
 } from '../services/search';
-import type { DeadlineWindow, DegreeLevel } from '../types';
+import { SUBJECTS, type DeadlineWindow, type DegreeLevel } from '../types';
+import { IsoDateSchema } from '../schemas';
 
 // ---------- result helpers ----------
 
@@ -80,14 +81,8 @@ const languageSchema = z
     'Case-insensitive substring match on the language of instruction, e.g. "english" matches "German/English".',
   );
 
-const isoDateSchema = z
-  .string()
-  .regex(/^\d{4}-\d{2}-\d{2}$/, 'expected an ISO date (YYYY-MM-DD)')
-  .refine((s) => {
-    const month = Number(s.slice(5, 7));
-    const day = Number(s.slice(8, 10));
-    return month >= 1 && month <= 12 && day >= 1 && day <= 31;
-  }, 'impossible calendar date');
+// Same validation as REST open_on, so 2026-02-31 is rejected by both.
+const isoDateSchema = IsoDateSchema;
 
 const SOURCE_NOTE =
   'Always relay application_url and note extracted_at so the user can verify deadlines at the source.';
@@ -102,7 +97,7 @@ export function buildMcpServer(env: SearchEnv): McpServer {
     {
       instructions:
         `Read-only data on German art schools: ${meta.counts.schools} schools and ` +
-        `${meta.counts.programs} study programs (fine art, design, film, music, media, architecture) ` +
+        `${meta.counts.listed_programs} study programs (fine art, design, film, music, media, architecture) ` +
         `with degree level, language, tuition, application deadline windows, and a ` +
         `program-similarity graph. Data snapshot: ${meta.snapshot_date}. ` +
         `Deadline data is scraped from school websites and may be incomplete or stale: ` +
@@ -203,16 +198,17 @@ export function buildMcpServer(env: SearchEnv): McpServer {
         'Find programs whose application window contains a given date (default: today) — ' +
         'the go-to tool for "what can I still apply to?". Deadline windows are year-agnostic ' +
         'month/day ranges; windows with unknown bounds never match. ' +
-        'Optional filters: degree_level, language, state. ' + SOURCE_NOTE,
+        'Optional filters: degree_level, language, state, subject. ' + SOURCE_NOTE,
       inputSchema: {
         on_date: isoDateSchema.optional().describe('ISO date (YYYY-MM-DD). Defaults to today.'),
         degree_level: degreeLevelSchema.optional(),
         language: languageSchema.optional(),
         state: z.string().min(1).optional().describe('Case-insensitive German state of the school, e.g. "Berlin".'),
+        subject: z.enum(SUBJECTS).optional().describe('Subject group slug, e.g. "film-television". Matches official study focuses too.'),
         limit: z.number().int().min(1).max(200).optional().describe('Max programs to return (default 25).'),
       },
     },
-    async ({ on_date, degree_level, language, state, limit }) => {
+    async ({ on_date, degree_level, language, state, subject, limit }) => {
       const date = on_date ?? new Date().toISOString().slice(0, 10);
       const open_on = {
         month: Number(date.slice(5, 7)),
@@ -224,6 +220,7 @@ export function buildMcpServer(env: SearchEnv): McpServer {
           degree_level: degree_level as DegreeLevel | undefined,
           language,
           state,
+          subject,
           open_on,
         },
         { limit: limit ?? 25, offset: 0 },
@@ -294,13 +291,14 @@ export function buildMcpServer(env: SearchEnv): McpServer {
     },
     async ({ query, degree_level, language, limit }) => {
       try {
-        const hits = await semanticSearch(
+        const { mode, hits } = await searchPrograms(
           query,
           { limit: limit ?? 10, degreeLevel: degree_level, language },
           env,
         );
         return jsonResult({
           query,
+          mode, // 'keyword' = embedding model unavailable, ranked by word overlap
           results: hits.map((h) => ({ ...h.program, score: h.score })),
         });
       } catch (err) {

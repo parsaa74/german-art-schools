@@ -79,14 +79,14 @@ app.get('/', (c) =>
 <body>
   <h1>German Art Schools API</h1>
   <p>Read-only REST API over a snapshot of German art school and program data.</p>
-  <p>Data snapshot: <code>${meta.snapshot_date}</code> &middot; ${meta.counts.schools} schools &middot; ${meta.counts.programs} programs</p>
+  <p>Data snapshot: <code>${meta.snapshot_date}</code> &middot; ${meta.counts.schools} schools &middot; ${meta.counts.listed_programs} programs</p>
   <p>OpenAPI spec: <a href="/openapi.json">/openapi.json</a></p>
   <h2>Endpoints</h2>
   <ul>
     <li><code>GET /v1/meta</code> — snapshot metadata</li>
     <li><code>GET /v1/schools</code> — list schools (<code>state</code>, <code>city</code>, <code>type</code>)</li>
     <li><code>GET /v1/schools/{id}</code> — one school</li>
-    <li><code>GET /v1/programs</code> — list programs (<code>degree_level</code>, <code>language</code>, <code>school</code>, <code>portfolio_required</code>, <code>state</code>, <code>q</code>, <code>open_on</code>, <code>limit</code>, <code>offset</code>)</li>
+    <li><code>GET /v1/programs</code> — list programs (<code>degree_level</code>, <code>language</code>, <code>school</code>, <code>subject</code>, <code>portfolio_required</code>, <code>state</code>, <code>q</code>, <code>open_on</code>, <code>limit</code>, <code>offset</code>)</li>
     <li><code>GET /v1/programs/{id}</code> — one program</li>
     <li><code>GET /v1/programs/{id}/similar</code> — similar programs at other schools (<code>limit</code>, <code>min_weight</code>)</li>
     <li><code>GET /v1/graph</code> — full similarity graph</li>

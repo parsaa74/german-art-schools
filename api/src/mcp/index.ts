@@ -12,13 +12,14 @@ import { Hono } from 'hono';
 import { HTTPException } from 'hono/http-exception';
 import { StreamableHTTPTransport } from '@hono/mcp';
 import { buildMcpServer } from './server';
+import type { SearchEnv } from '../services/search';
 
-type Bindings = { GEMINI_API_KEY?: string };
+type Bindings = SearchEnv;
 
 const mcp = new Hono<{ Bindings: Bindings }>();
 
 mcp.post('/', async (c) => {
-  const server = buildMcpServer({ GEMINI_API_KEY: c.env?.GEMINI_API_KEY });
+  const server = buildMcpServer({ AI: c.env?.AI });
   const transport = new StreamableHTTPTransport({
     sessionIdGenerator: undefined, // stateless: no sessions to negotiate
     enableJsonResponse: true, // plain application/json bodies, no SSE

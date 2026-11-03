@@ -18,9 +18,47 @@
       "hochschule-fur-bildende-kunste-hamburg--art-education--master-of-education",
       "hochschule-fur-bildende-kunste-hamburg--fine-arts--diploma",
       "hochschule-fur-bildende-kunste-hamburg--fine-arts--unspecified",
-      "hochschule-fur-bildende-kunste-hamburg--design--unspecified",
-      "hochschule-fur-bildende-kunste-hamburg--film--unspecified"
-    ]
+      "hochschule-fur-bildende-kunste-hamburg--design--unspecified"
+    ],
+    "website": "https://www.hfbk-hamburg.de/",
+    "description": "HFBK Hamburg offers interdisciplinary Fine Arts degrees, with Film as a study focus at BFA and MFA level. Its Film teaching centres on artistic authorship, experimental independent and collective projects, fiction and non-fiction, and analogue and digital practice. The Film page separately describes an HMS cooperative master: Hamburg Media School runs that programme while HFBK awards its degree and holds academic responsibility. Do not confuse it with the on-campus Fine Arts Film focus.",
+    "address": {
+      "street": "Lerchenfeld 2",
+      "postal_code": "22081",
+      "city": "Hamburg"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 0,
+        "period": "semester",
+        "appliesTo": "HFBK-run programmes; HMS cooperative master not covered by this fee statement",
+        "notes": "No tuition at HFBK, but mandatory semester contributions remain. Do not transfer this tuition statement to the separately administered HMS programme.",
+        "cycle": null
+      },
+      {
+        "kind": "semester-contribution",
+        "euros": null,
+        "period": "semester",
+        "appliesTo": "HFBK-run programmes; semester-specific amount",
+        "notes": "Administrative, AStA and Studierendenwerk contributions plus the semester transport ticket remain mandatory. The FAQ says amounts vary; confirm the fee for your enrolment semester.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://hfbk-hamburg.de/de/informationen/studieninteressierte/faq-bewerbung",
+      "description": "https://hfbk-hamburg.de/de/studium/studienschwerpunkte/film",
+      "address": "https://hfbk-hamburg.de/de/informationen/impressum/impressum"
+    },
+    "researched": "2026-10-11"
   },
   "hochschule-der-bildenden-kunste-saar": {
     "id": "hochschule-der-bildenden-kunste-saar",
@@ -40,7 +78,36 @@
       "hochschule-der-bildenden-kunste-saar--communication-design--diploma",
       "hochschule-der-bildenden-kunste-saar--art-education--master-of-education",
       "hochschule-der-bildenden-kunste-saar--fine-arts--unspecified"
-    ]
+    ],
+    "website": "https://www.hbks.uni-saarland.de/",
+    "description": "The Saar College of Fine Arts (HBK Saar) is a public art school in Saarbrücken, Saarland. It offers programs in fine arts, design, and art education, with a focus on practical, conceptual, and theoretical aspects of contemporary art and design practices.",
+    "address": {
+      "street": "Keplerstraße 3-5",
+      "postal_code": "66117",
+      "city": "Saarbrücken"
+    },
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 0,
+        "period": "semester",
+        "appliesTo": "HBKsaar students",
+        "notes": "Tuition only; separate semester contribution.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.hbksaar.de/bewerbung-informationen"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-bildende-kunste-braunschweig": {
     "id": "hochschule-fur-bildende-kunste-braunschweig",
@@ -60,7 +127,35 @@
       "hochschule-fur-bildende-kunste-braunschweig--industrial-design--diploma",
       "hochschule-fur-bildende-kunste-braunschweig--art-education--master-of-education",
       "hochschule-fur-bildende-kunste-braunschweig--fine-arts--unspecified"
-    ]
+    ],
+    "website": "https://www.hbk-bs.de/",
+    "description": "The Braunschweig University of Art (HBK Braunschweig) is a public art school in Lower Saxony with a strong focus on interdisciplinary art education. It offers programs in fine arts, design, and art education, emphasizing both practical skills and theoretical knowledge in contemporary art and design practices.",
+    "address": {
+      "street": "Johannes-Selenka-Platz 1",
+      "postal_code": "38118",
+      "city": "Braunschweig"
+    },
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 469,
+        "period": "semester",
+        "appliesTo": "students enrolled at HBK Braunschweig",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://studium.hbk-bs.de/studienorganisation/rueckmeldung/"
+    },
+    "researched": null
   },
   "hochschule-fur-musik-und-theater-rostock": {
     "id": "hochschule-fur-musik-und-theater-rostock",
@@ -100,7 +195,36 @@
       "hochschule-fur-musik-und-theater-rostock--quereinstieg-musik-unterrichten--master-of-arts",
       "hochschule-fur-musik-und-theater-rostock--quereinstieg-theater-unterrichten--master-of-arts",
       "hochschule-fur-musik-und-theater-rostock--elementare-musikpadagogik-emp--zertifikat"
-    ]
+    ],
+    "website": "https://www.hmt-rostock.de/",
+    "description": "The Rostock University of Music and Theatre (HMT Rostock) is a public university for music and performing arts in Mecklenburg-Vorpommern, Germany. It offers a wide range of programs in music performance, education, and theater.",
+    "address": {
+      "street": "Beim St.-Katharinenstift 8",
+      "postal_code": "18055",
+      "city": "Rostock"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "application",
+        "euros": 50,
+        "period": "once",
+        "appliesTo": "all applicants",
+        "notes": "Processing fee for application/admission.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.hmt-rostock.de/studium/bewerbung/"
+    },
+    "researched": "2026-10-10"
   },
   "kunstakademie-dusseldorf": {
     "id": "kunstakademie-dusseldorf",
@@ -122,7 +246,42 @@
       "kunstakademie-dusseldorf--fine-arts--unspecified",
       "kunstakademie-dusseldorf--sculpture--unspecified",
       "kunstakademie-dusseldorf--painting--unspecified"
-    ]
+    ],
+    "website": "https://www.kunstakademie-duesseldorf.de/en/",
+    "description": "Founded in 1773, the Kunstakademie Düsseldorf is one of Germany's most prestigious art schools. It has produced numerous influential artists including Joseph Beuys, Gerhard Richter, and Anselm Kiefer. The academy emphasizes independent artistic development within a class-based system led by internationally renowned professors.",
+    "address": {
+      "street": "Eiskellerstraße 1",
+      "postal_code": "40213",
+      "city": "Düsseldorf"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Direct application via online portal.",
+      "url": "https://kunstakademie-duesseldorf.de/studienangebot-und-bewerbung/studienbewerbung/",
+      "scope": "all applicants"
+    },
+    "fees": [
+      {
+        "kind": "application",
+        "euros": 30,
+        "period": "once",
+        "appliesTo": "all applicants",
+        "notes": "Bewerbungsgebühr in Höhe von 30 €.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://kunstakademie-duesseldorf.de/studienangebot-und-bewerbung/studienbewerbung/",
+      "applicationRoute": "https://kunstakademie-duesseldorf.de/studienangebot-und-bewerbung/studienbewerbung/"
+    },
+    "researched": "2026-10-10"
   },
   "universitat-der-kunste-berlin": {
     "id": "universitat-der-kunste-berlin",
@@ -152,7 +311,35 @@
       "universitat-der-kunste-berlin--visual-communication--master-of-arts",
       "universitat-der-kunste-berlin--design-and-computation--master-of-arts",
       "universitat-der-kunste-berlin--design--unspecified"
-    ]
+    ],
+    "website": "https://www.udk-berlin.de/en/",
+    "description": "The Berlin University of the Arts (UdK Berlin) is one of the largest, most diverse and renowned art colleges in the world. The teaching offered at the four colleges of Fine Art, Design, Music and Performing Arts, as well as at the Central Institute of Further Education, encompasses the full spectrum of the arts and related academic studies in more than 70 courses.",
+    "address": {
+      "street": "Einsteinufer 43",
+      "postal_code": "10587",
+      "city": "Berlin"
+    },
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 377,
+        "period": "semester",
+        "appliesTo": "all students",
+        "cycle": "WiSe 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.udk-berlin.de/en/courses/all-about-the-study-process/translate-to-english-rueckmeldung/"
+    },
+    "researched": null
   },
   "staatliche-hochschule-fur-gestaltung-karlsruhe": {
     "id": "staatliche-hochschule-fur-gestaltung-karlsruhe",
@@ -177,7 +364,35 @@
       "staatliche-hochschule-fur-gestaltung-karlsruhe--communication-design--unspecified",
       "staatliche-hochschule-fur-gestaltung-karlsruhe--product-design--unspecified",
       "staatliche-hochschule-fur-gestaltung-karlsruhe--media-art--unspecified"
-    ]
+    ],
+    "website": "https://www.hfg-karlsruhe.de/en/",
+    "description": "Karlsruhe University of Arts and Design was first established as a progressive school on April 15, 1992. It was founded by Heinrich Klotz between the years 1989 and 1992, together with the ZKM | Center for Art and Media Karlsruhe. The combination of teaching, research, and exhibition institutions addresses the given artistic and pedagogic task of relating traditional arts to media technology and electronic production processes.",
+    "address": {
+      "street": "Lorenzstr. 15",
+      "postal_code": "76135",
+      "city": "Karlsruhe"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Online application only through the university portal.",
+      "scope": "Regular degree applicants, not exchange students"
+    },
+    "fees": [],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {
+      "applicationRoute": "https://hfg-karlsruhe.de/studium/bewerbung/bewerbungsverfahren/"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-kunste-bremen": {
     "id": "hochschule-fur-kunste-bremen",
@@ -201,7 +416,50 @@
       "hochschule-fur-kunste-bremen--musik--bachelor-of-music",
       "hochschule-fur-kunste-bremen--musik--master-of-music",
       "hochschule-fur-kunste-bremen--promotionsprogramm-phd--phd"
-    ]
+    ],
+    "website": "https://www.hfk-bremen.de/",
+    "description": "The University of the Arts Bremen (HfK) is a public art college in Bremen, Germany. It was founded in 1873 and offers programs in fine arts, design, digital media, and music. The university is known for its interdisciplinary approach and international orientation.",
+    "address": {
+      "street": "Am Speicher XI 8",
+      "postal_code": "28217",
+      "city": "Bremen"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 431.4,
+        "period": "semester",
+        "appliesTo": "students",
+        "cycle": null
+      },
+      {
+        "kind": "tuition",
+        "euros": 250,
+        "period": "semester",
+        "appliesTo": "Jungstudium participants",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "email": "dezernat1@hfk-bremen.de",
+      "phone": "+49 421 9595-1113",
+      "url": "https://www.hfk-bremen.de/de/studium"
+    },
+    "sources": {
+      "address": "https://asta.hfk-bremen.de/impressum/",
+      "contact.email": "https://www.hfk-bremen.de/de/studium",
+      "contact.phone": "https://www.hfk-bremen.de/de/studium",
+      "contact.url": "https://www.hfk-bremen.de/de/studium",
+      "fees": "https://www.hfk-bremen.de/de/studium/kunst-und-design/digitale-medien-b-a/4"
+    },
+    "researched": "2026-10-10"
   },
   "staatliche-akademie-der-bildenden-kunste-stuttgart": {
     "id": "staatliche-akademie-der-bildenden-kunste-stuttgart",
@@ -235,7 +493,35 @@
       "staatliche-akademie-der-bildenden-kunste-stuttgart--architecture--unspecified",
       "staatliche-akademie-der-bildenden-kunste-stuttgart--design--unspecified",
       "staatliche-akademie-der-bildenden-kunste-stuttgart--art-education--unspecified"
-    ]
+    ],
+    "website": "https://www.abk-stuttgart.de/en/",
+    "description": "The State Academy of Fine Arts Stuttgart (ABK Stuttgart) is one of the oldest and largest art schools in Germany. Founded in 1761, it offers a wide range of programs in fine arts, architecture, design, art education, and conservation.",
+    "address": {
+      "street": "Am Weißenhof 1",
+      "postal_code": "70191",
+      "city": "Stuttgart"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Online-Antrag in HISinOne, Bewerbungsunterlagen per Post, digitale Arbeitsprobe hochladen",
+      "scope": "all applicants"
+    },
+    "fees": [],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {
+      "applicationRoute": "https://www.abk-stuttgart.de/bewerbung/aufnahmeverfahren/"
+    },
+    "researched": "2026-10-10"
   },
   "kunsthochschule-fur-medien-koln": {
     "id": "kunsthochschule-fur-medien-koln",
@@ -254,10 +540,28 @@
       "kunsthochschule-fur-medien-koln--media-arts--diploma",
       "kunsthochschule-fur-medien-koln--media-arts-postgraduate--diploma",
       "kunsthochschule-fur-medien-koln--media-arts--phd",
-      "kunsthochschule-fur-medien-koln--media-arts--unspecified",
-      "kunsthochschule-fur-medien-koln--film--unspecified",
-      "kunsthochschule-fur-medien-koln--animation--unspecified"
-    ]
+      "kunsthochschule-fur-medien-koln--media-arts--unspecified"
+    ],
+    "website": "https://www.khm.de/en/",
+    "description": "The Academy of Media Arts Cologne (KHM) is unique in Germany, offering a project-based 'Media Arts' diploma program that brings together practices from art, film, and theory. It provides resources for independent artistic work across various media forms.",
+    "address": {
+      "street": "Heumarkt 14",
+      "postal_code": "50667",
+      "city": "Köln"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "address": "https://www.khm.de/impressum/"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-gestaltung-offenbach": {
     "id": "hochschule-fur-gestaltung-offenbach",
@@ -273,8 +577,6 @@
       "founded": 1832
     },
     "program_ids": [
-      "hochschule-fur-gestaltung-offenbach--visual-communication--diploma",
-      "hochschule-fur-gestaltung-offenbach--product-design--diploma",
       "hochschule-fur-gestaltung-offenbach--art-education-secondary-schools--state-examination",
       "hochschule-fur-gestaltung-offenbach--postgraduate-studies-meisterschuler--meisterschuler",
       "hochschule-fur-gestaltung-offenbach--doctoral-studies-phd--dr-phil",
@@ -283,10 +585,38 @@
       "hochschule-fur-gestaltung-offenbach--product-design--bachelor-of-arts",
       "hochschule-fur-gestaltung-offenbach--product-design--master-of-arts",
       "hochschule-fur-gestaltung-offenbach--integrative-design--master-of-arts",
-      "hochschule-fur-gestaltung-offenbach--visual-communication--unspecified",
-      "hochschule-fur-gestaltung-offenbach--product-design--unspecified",
-      "hochschule-fur-gestaltung-offenbach--media--unspecified"
-    ]
+      "hochschule-fur-gestaltung-offenbach--product-design--unspecified"
+    ],
+    "website": "https://www.hfg-offenbach.de/en/",
+    "description": "HfG Offenbach offers bachelor’s and master’s programmes in Art (Kunst) and Design. New entrants moved to these programmes in winter 2022/23; existing diploma students can continue in the phased-out diploma programmes.",
+    "address": {
+      "street": "Schloßstraße 31",
+      "postal_code": "63065",
+      "city": "Offenbach"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 396.48,
+        "period": "semester",
+        "appliesTo": "Studierende und Programmstudierende",
+        "cycle": "WiSe 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "stats.students": "https://www.hfg-offenbach.de/de/pages/promotion",
+      "description": "https://www.hfg-offenbach.de/de/pages/diplom-laeuft-aus",
+      "fees": "https://www.hfg-offenbach.de/de/pages/studieninformationszentrum"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-grafik-und-buchkunst-leipzig": {
     "id": "hochschule-fur-grafik-und-buchkunst-leipzig",
@@ -315,7 +645,49 @@
       "hochschule-fur-grafik-und-buchkunst-leipzig--photography--unspecified",
       "hochschule-fur-grafik-und-buchkunst-leipzig--media-art--unspecified",
       "hochschule-fur-grafik-und-buchkunst-leipzig--book-design-graphic-design--unspecified"
-    ]
+    ],
+    "website": "https://www.hgb-leipzig.de/en/",
+    "description": "The Academy of Fine Arts Leipzig (HGB) is one of the oldest art schools in Germany. It offers diploma programs in Painting/Graphics, Book Design/Graphic Design, Photography, and Media Art, as well as a Master's program in Cultures of the Curatorial.",
+    "address": {
+      "street": "Wächterstraße 11",
+      "postal_code": "04107",
+      "city": "Leipzig"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 325.8,
+        "period": "semester",
+        "appliesTo": "enrolled students (Rückmeldung)",
+        "cycle": "WiSe 2026/27"
+      },
+      {
+        "kind": "tuition",
+        "euros": 100,
+        "period": "semester",
+        "appliesTo": "students already holding a degree, if study exceeds prior Regelstudienzeit by six semesters",
+        "cycle": null
+      },
+      {
+        "kind": "tuition",
+        "euros": 500,
+        "period": "semester",
+        "appliesTo": "students enrolled above the 14th semester",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.hgb-leipzig.de/studium/fuerstudierende/"
+    },
+    "researched": null
   },
   "muthesius-kunsthochschule-kiel": {
     "id": "muthesius-kunsthochschule-kiel",
@@ -343,7 +715,37 @@
       "muthesius-kunsthochschule-kiel--fine-arts--unspecified",
       "muthesius-kunsthochschule-kiel--communication-design--unspecified",
       "muthesius-kunsthochschule-kiel--industrial-design--unspecified"
-    ]
+    ],
+    "website": "https://muthesius-kunsthochschule.de/en/",
+    "description": "The Muthesius University of Fine Arts and Design in Kiel is the only art university in Schleswig-Holstein. It offers Bachelor's and Master's programs in Fine Arts, Communication Design, Industrial Design, and Spatial Strategies.",
+    "address": {
+      "street": "Legienstr. 35",
+      "postal_code": "24103",
+      "city": "Kiel"
+    },
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 0,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "No tuition fees in Schleswig-Holstein.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "address": "https://muthesius-kunsthochschule.de/impressum/",
+      "fees": "https://muthesius-kunsthochschule.de/faq-zum-studium/"
+    },
+    "researched": "2026-10-10"
   },
   "bauhaus-universitat-weimar": {
     "id": "bauhaus-universitat-weimar",
@@ -359,8 +761,6 @@
       "founded": 1860
     },
     "program_ids": [
-      "bauhaus-universitat-weimar--fine-art--bachelor-of-fine-arts",
-      "bauhaus-universitat-weimar--fine-art--master-of-fine-arts",
       "bauhaus-universitat-weimar--product-design--bachelor-of-arts",
       "bauhaus-universitat-weimar--product-design--master-of-arts",
       "bauhaus-universitat-weimar--visual-communication--bachelor-of-arts",
@@ -374,7 +774,21 @@
       "bauhaus-universitat-weimar--media--unspecified",
       "bauhaus-universitat-weimar--media-ecologies--master-of-arts",
       "bauhaus-universitat-weimar--media-art-and-design--master-of-fine-arts"
-    ]
+    ],
+    "website": "https://www.uni-weimar.de/en/",
+    "description": "The Bauhaus-Universität Weimar is a university located in Weimar, Germany, specializing in the artistic and technical fields. Established in 1860 as the Great Ducal Saxon Art School, it gained collegiate status on 3 June 1910. In 1919 the school was renamed Bauhaus by its new director Walter Gropius and it received its present name in 1996.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "alanus-hochschule-fur-kunst-und-gesellschaft": {
     "id": "alanus-hochschule-fur-kunst-und-gesellschaft",
@@ -392,7 +806,25 @@
     "program_ids": [
       "alanus-hochschule-fur-kunst-und-gesellschaft--fine-arts--bachelor-of-fine-arts",
       "alanus-hochschule-fur-kunst-und-gesellschaft--art-education--master-of-education"
-    ]
+    ],
+    "website": "https://www.alanus.edu/en/",
+    "description": "Alanus University of Arts and Social Sciences is a private university in Alfter, near Bonn. It offers programs in fine arts, art education, and social sciences, with a focus on interdisciplinary and practice-oriented learning.",
+    "address": {
+      "street": "Villestraße 3",
+      "postal_code": "53347",
+      "city": "Alfter"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hochschule-der-bildenden-kunste-essen": {
     "id": "hochschule-der-bildenden-kunste-essen",
@@ -411,7 +843,38 @@
       "hochschule-der-bildenden-kunste-essen--fine-arts--bachelor-of-fine-arts",
       "hochschule-der-bildenden-kunste-essen--fine-arts--diploma",
       "hochschule-der-bildenden-kunste-essen--fine-arts--unspecified"
-    ]
+    ],
+    "website": "https://www.hbk-essen.de/",
+    "description": "The Hochschule der bildenden Künste Essen is a young art academy in the Ruhr area, offering programs in fine arts with a focus on contemporary artistic practice.",
+    "address": {
+      "street": "Pferdemarkt 3",
+      "postal_code": "45127",
+      "city": "Essen"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Mit der Einreichung deiner formalen Bewerbungsunterlagen über unser Onlineformular erledigst Du den ersten Schritt des Bewerbungsverfahrens.",
+      "url": "https://www.hbk-essen.de/de/form/onlinebewerben",
+      "scope": "all applicants"
+    },
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": {
+      "email": "studienberatung@hbk-essen.de",
+      "phone": "+49 201 95 98 98 31"
+    },
+    "sources": {
+      "address": "https://www.hbk-essen.de/de/kontakt",
+      "contact.email": "https://www.hbk-essen.de/de/bewerbungsportal",
+      "contact.phone": "https://www.hbk-essen.de/de/bewerbungsportal",
+      "applicationRoute": "https://www.hbk-essen.de/de/bewerbungsportal"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-macromedia": {
     "id": "hochschule-macromedia",
@@ -428,7 +891,21 @@
     },
     "program_ids": [
       "hochschule-macromedia--media-design--bachelor-of-arts"
-    ]
+    ],
+    "website": "https://www.macromedia-fachhochschule.de/en/",
+    "description": "Hochschule Macromedia is a private university of applied sciences with campuses in several German cities, offering programs in media, design, and communication.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "merz-akademie": {
     "id": "merz-akademie",
@@ -445,7 +922,21 @@
     },
     "program_ids": [
       "merz-akademie--design-art-and-media--bachelor-of-arts"
-    ]
+    ],
+    "website": "https://www.merz-akademie.de/en/",
+    "description": "Merz Akademie is a university of applied sciences for design, art, and media in Stuttgart, offering interdisciplinary programs with a focus on creative and critical thinking.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hochschule-fur-fernsehen-und-film-munchen": {
     "id": "hochschule-fur-fernsehen-und-film-munchen",
@@ -465,7 +956,42 @@
       "hochschule-fur-fernsehen-und-film-munchen--film-production--unspecified",
       "hochschule-fur-fernsehen-und-film-munchen--screenwriting--unspecified",
       "hochschule-fur-fernsehen-und-film-munchen--cinematography--unspecified"
-    ]
+    ],
+    "website": "https://www.hff-muenchen.de/en/",
+    "description": "The University of Television and Film Munich (HFF München) is one of the most renowned film schools in Germany, offering programs in film and television production, directing, and screenwriting.",
+    "address": {
+      "street": "Bernd-Eichinger-Platz 1",
+      "postal_code": "80333",
+      "city": "München"
+    },
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 97,
+        "period": "semester",
+        "appliesTo": "national and international students",
+        "cycle": null,
+        "approximate": true
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "phone": "+49 89 68957-0",
+      "email": "info@hff-muc.de"
+    },
+    "sources": {
+      "address": "https://hff-muenchen.de/de_DE/contact",
+      "contact.phone": "https://hff-muenchen.de/de_DE/contact",
+      "contact.email": "https://hff-muenchen.de/de_DE/contact",
+      "fees": "https://www.hff-muenchen.de/en_EN/bewerbung"
+    },
+    "researched": "2026-10-10"
   },
   "filmuniversitat-babelsberg-konrad-wolf": {
     "id": "filmuniversitat-babelsberg-konrad-wolf",
@@ -494,7 +1020,25 @@
       "filmuniversitat-babelsberg-konrad-wolf--animation--unspecified",
       "filmuniversitat-babelsberg-konrad-wolf--screenwriting--unspecified",
       "filmuniversitat-babelsberg-konrad-wolf--acting--unspecified"
-    ]
+    ],
+    "website": "https://www.filmuniversitaet.de/en/",
+    "description": "Filmuniversität Babelsberg KONRAD WOLF is Germany's oldest and largest film university, located in Potsdam-Babelsberg. It offers a wide range of programs in film, television, animation, production, and media studies, combining artistic practice with academic research. The university is renowned for its close ties to the film industry and its international collaborations.",
+    "address": {
+      "street": "Marlene-Dietrich-Allee 11",
+      "postal_code": "14482",
+      "city": "Potsdam"
+    },
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hochschule-fur-gestaltung-schwabisch-gmund": {
     "id": "hochschule-fur-gestaltung-schwabisch-gmund",
@@ -518,7 +1062,35 @@
       "hochschule-fur-gestaltung-schwabisch-gmund--communication-design--unspecified",
       "hochschule-fur-gestaltung-schwabisch-gmund--interaction-design--unspecified",
       "hochschule-fur-gestaltung-schwabisch-gmund--product-design--unspecified"
-    ]
+    ],
+    "website": "https://www.hfg-gmuend.de/en/",
+    "description": "The Hochschule für Gestaltung Schwäbisch Gmünd (HfG Schwäbisch Gmünd) is a renowned university of design in Baden-Württemberg, Germany. It offers bachelor's and master's programs in interaction design, communication design, product design, and strategic design, with a strong focus on practical, interdisciplinary, and innovative approaches to design education. The university is known for its close ties to industry and its international orientation.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 178,
+        "period": "semester",
+        "appliesTo": "all students",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {
+      "fees": "https://www.hfg-gmuend.de/bewerben/faq-ba"
+    },
+    "researched": null
   },
   "bard-college-berlin": {
     "id": "bard-college-berlin",
@@ -536,7 +1108,40 @@
     "program_ids": [
       "bard-college-berlin--humanities-the-arts-and-social-thought--bachelor-of-arts",
       "bard-college-berlin--economics-politics-and-social-thought--bachelor-of-arts"
-    ]
+    ],
+    "website": "https://berlin.bard.edu/",
+    "description": "Bard College Berlin is a private, non-profit liberal arts college in Berlin, Germany, offering intensive, English-taught Bachelor of Arts degrees in Humanities, the Arts, and Social Thought, and in Economics, Politics, and Social Thought. It emphasizes small seminar-style classes, critical thinking, and close engagement with core texts and ideas. It is part of the Bard College network.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 27500,
+        "period": "year",
+        "appliesTo": "off-campus students",
+        "notes": "Off-campus comprehensive fee of €27,500 per year for the 2026–27 academic year, covering tuition, mental health service, and sport/fitness facility access.",
+        "cycle": "2026/2027"
+      },
+      {
+        "kind": "tuition",
+        "euros": 38250,
+        "period": "year",
+        "appliesTo": "on-campus students",
+        "notes": "On-campus comprehensive fee of €38,250 per year for the 2026–27 academic year, covering tuition, housing, meal plan, mental health service, and sport/fitness facility access.",
+        "cycle": "2026/2027"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://berlin.bard.edu/admissions/finances/tuition-and-fees/"
+    },
+    "researched": "2026-10-10"
   },
   "academy-of-visual-arts-frankfurt": {
     "id": "academy-of-visual-arts-frankfurt",
@@ -556,7 +1161,30 @@
       "academy-of-visual-arts-frankfurt--communication-design--bachelor-of-arts",
       "academy-of-visual-arts-frankfurt--fine-arts--diploma",
       "academy-of-visual-arts-frankfurt--fine-arts--unspecified"
-    ]
+    ],
+    "website": "https://academy-of-visual-arts.com/",
+    "description": "The Academy of Visual Arts Frankfurt is a private, state-recognized academy in Hesse, Germany. It offers Bachelor of Arts programs in Visual Arts and Communication Design, emphasizing both classical techniques and contemporary practices. The academy provides a practice-oriented education with individual support in small classes.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Direct online application via school website",
+      "url": "https://academy-of-visual-arts.com/study-at-ava/study-at-ava-ba-interdisciplinary-communication-design/how-to-apply/",
+      "scope": "all applicants"
+    },
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "website": "https://academy-of-visual-arts.com/study-at-ava/study-at-ava-ba-interdisciplinary-communication-design/",
+      "status": "https://academy-of-visual-arts.com/study-at-ava/study-at-ava-ba-interdisciplinary-communication-design/",
+      "applicationRoute": "https://academy-of-visual-arts.com/study-at-ava/study-at-ava-ba-interdisciplinary-communication-design/how-to-apply/"
+    },
+    "researched": "2026-10-10"
   },
   "fachhochschule-potsdam": {
     "id": "fachhochschule-potsdam",
@@ -576,7 +1204,31 @@
       "fachhochschule-potsdam--communication-design--bachelor-of-arts",
       "fachhochschule-potsdam--product-design--bachelor-of-arts",
       "fachhochschule-potsdam--european-media-studies-with-university-of-potsdam--master-of-arts"
-    ]
+    ],
+    "website": "https://www.fh-potsdam.de/",
+    "description": "Fachhochschule Potsdam (FHP) is a university of applied sciences in Brandenburg, known for its strong design department and practice-oriented education. It offers a variety of programs in interface design, communication design, product design, and European media studies, emphasizing interdisciplinary projects, innovation, and social responsibility. The university has close ties to cultural institutions and the media industry in the Berlin-Brandenburg metropolitan region.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 379.68,
+        "period": "semester",
+        "appliesTo": "all students",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.fh-potsdam.de/en/study-further-education/application/contributions-fees"
+    },
+    "researched": null
   },
   "hochschule-darmstadt": {
     "id": "hochschule-darmstadt",
@@ -592,14 +1244,10 @@
       "founded": 1971
     },
     "program_ids": [
-      "hochschule-darmstadt--media-and-communication--bachelor-of-arts",
       "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
       "hochschule-darmstadt--motion-pictures--bachelor-of-arts",
       "hochschule-darmstadt--communication-design--bachelor-of-arts",
-      "hochschule-darmstadt--expanded-realities--master-of-arts",
       "hochschule-darmstadt--interactive-media-design--bachelor-of-arts",
-      "hochschule-darmstadt--digital-media--master-of-science",
-      "hochschule-darmstadt--digital-media--unspecified",
       "hochschule-darmstadt--animation-and-game--master-of-arts",
       "hochschule-darmstadt--augmented-and-virtual-reality-design--bachelor-of-arts",
       "hochschule-darmstadt--expanded-media--master-of-arts",
@@ -613,7 +1261,32 @@
       "hochschule-darmstadt--architecture--master-of-engineering",
       "hochschule-darmstadt--interior-architecture--bachelor-of-engineering",
       "hochschule-darmstadt--interior-architecture--master-of-engineering"
-    ]
+    ],
+    "website": "https://www.h-da.de/",
+    "description": "Hochschule Darmstadt offers programmes in architecture, media and design. Its current catalogue includes Animation and Game, Expanded Media, Motion Pictures, User Experience Design, Sound, Music and Production, Communication Design and Industrial Design, alongside architecture and interior architecture programmes.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 401,
+        "period": "semester",
+        "appliesTo": "students (exchange students exempt from Verwaltungskostenbeitrag)",
+        "cycle": "WiSe 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "description": "https://h-da.de/studium/studienangebot/studiengaenge/architektur-medien-und-design",
+      "fees": "https://h-da.de/studium/studienorganisation/semesterbeitrag"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-rhein-waal": {
     "id": "hochschule-rhein-waal",
@@ -631,9 +1304,43 @@
     "program_ids": [
       "hochschule-rhein-waal--design-and-communication--bachelor-of-arts",
       "hochschule-rhein-waal--media-communication-and-computer-science--bachelor-of-science",
-      "hochschule-rhein-waal--international-relations--bachelor-of-arts",
-      "hochschule-rhein-waal--sustainable-design--master-of-arts"
-    ]
+      "hochschule-rhein-waal--international-relations--bachelor-of-arts"
+    ],
+    "website": "https://www.hochschule-rhein-waal.de/",
+    "description": "Hochschule Rhein-Waal is a young, innovative university of applied sciences with a strong international orientation. It offers a wide range of English-taught programs in design, communication, media, computer science, and environmental sciences. The university is known for its interdisciplinary approach, modern campus, and focus on sustainability and global collaboration.",
+    "address": {
+      "street": "Marie-Curie-Straße 1",
+      "postal_code": "47533",
+      "city": "Kleve"
+    },
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 365.1,
+        "period": "semester",
+        "appliesTo": "all enrolled students",
+        "notes": "Semesterbeitrag für das Wintersemester 2026/27 (enthält Deutschlandticket 226,80 €).",
+        "cycle": "2026/2027"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "email": "info@hochschule-rhein-waal.de",
+      "phone": "+49 2821 806 73-0"
+    },
+    "sources": {
+      "fees": "https://www.hochschule-rhein-waal.de/studieren/rund-ums-studium/kosten-und-finanzierung/semesterbeitrag",
+      "address": "https://www.hochschule-rhein-waal.de/datenschutz",
+      "contact.email": "https://www.hochschule-rhein-waal.de/datenschutz",
+      "contact.phone": "https://www.hochschule-rhein-waal.de/datenschutz"
+    },
+    "researched": "2026-10-10"
   },
   "technische-universitat-berlin": {
     "id": "technische-universitat-berlin",
@@ -653,7 +1360,21 @@
       "technische-universitat-berlin--human-computer-interaction--master-of-science",
       "technische-universitat-berlin--design-and-computation--master-of-science",
       "technische-universitat-berlin--audiovisual-media-culture-and-communication--master-of-arts"
-    ]
+    ],
+    "website": "https://www.tu.berlin/",
+    "description": "Technische Universität Berlin (TU Berlin) is one of Germany's largest and most internationally renowned technical universities. It offers a wide range of programs with a strong emphasis on research and innovation, particularly in engineering, computer science, and technology-driven arts and media. Its media-related programs are known for their interdisciplinary approach and focus on cutting-edge research in areas like human-computer interaction and design computation.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hochschule-anhalt": {
     "id": "hochschule-anhalt",
@@ -672,7 +1393,31 @@
       "hochschule-anhalt--design-integrated-design--bachelor-of-arts",
       "hochschule-anhalt--design-master--master-of-arts",
       "hochschule-anhalt--architecture-dessau-international-architecture-graduate-school-dia--master-of-arts"
-    ]
+    ],
+    "website": "https://www.hs-anhalt.de/",
+    "description": "Hochschule Anhalt is a university of applied sciences located in Saxony-Anhalt, with a significant design department in Dessau, the heart of the Bauhaus movement. It offers a range of programs in design, visual communication, and architecture, emphasizing practical education, interdisciplinary projects, and the rich heritage of Bauhaus design principles. The Dessau International Architecture Graduate School (DIA) is a notable part of its offerings.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 322.8,
+        "period": "semester",
+        "appliesTo": "students",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.hs-anhalt.de/en/degree-programs/des.html"
+    },
+    "researched": null
   },
   "universitat-trier": {
     "id": "universitat-trier",
@@ -691,7 +1436,32 @@
       "universitat-trier--media-studies--bachelor-of-arts",
       "universitat-trier--media-studies--master-of-arts",
       "universitat-trier--digital-humanities--master-of-arts"
-    ]
+    ],
+    "website": "https://www.uni-trier.de/",
+    "description": "The University of Trier, one of Germany's oldest universities, re-established in 1970, is a public research university in Rhineland-Palatinate. It offers a strong profile in humanities, social sciences, and law, with notable programs in media studies, communication, and digital humanities. The university is situated in a city with a rich Roman history, influencing its cultural and historical research focus.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 393.8,
+        "period": "semester",
+        "appliesTo": "first-time and newly enrolled students",
+        "notes": "Semester contribution for new enrollees in Winter Semester 2026/27.",
+        "cycle": "WS 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.uni-trier.de/studium/beratung-service/service/beitraege-gebuehren/semesterbeitrag/erst-/neueinschreibung"
+    },
+    "researched": "2026-10-10"
   },
   "universitat-siegen": {
     "id": "universitat-siegen",
@@ -711,7 +1481,31 @@
       "universitat-siegen--media-studies--master-of-arts",
       "universitat-siegen--human-computer-interaction--master-of-science",
       "universitat-siegen--human-computer-interaction--master-of-science--2"
-    ]
+    ],
+    "website": "https://www.uni-siegen.de/",
+    "description": "The University of Siegen is a public research university in North Rhine-Westphalia, known for its interdisciplinary approach and strong focus on media studies, human-computer interaction, and social sciences. It offers a range of programs in these fields, often combining theoretical knowledge with practical application and research.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 393.8,
+        "period": "semester",
+        "appliesTo": "students enrolling or re-enrolling",
+        "cycle": "WiSe 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.uni-siegen.de/en/semester-fee"
+    },
+    "researched": null
   },
   "technische-hochschule-ingolstadt": {
     "id": "technische-hochschule-ingolstadt",
@@ -727,12 +1521,41 @@
       "founded": 1994
     },
     "program_ids": [
-      "technische-hochschule-ingolstadt--design-and-user-experience--bachelor-of-arts",
-      "technische-hochschule-ingolstadt--user-experience-design--master-of-arts",
       "technische-hochschule-ingolstadt--mobility-and-transportation-design--bachelor-of-arts",
       "technische-hochschule-ingolstadt--user-experience-design--master-of-science",
       "technische-hochschule-ingolstadt--user-experience-design--unspecified"
-    ]
+    ],
+    "website": "https://www.thi.de/",
+    "description": "Technische Hochschule Ingolstadt (THI) is a leading university of applied sciences in Bavaria, known for its innovative programs in design, user experience, mobility, and engineering. The university emphasizes practical training, research, and strong industry partnerships, preparing students for careers in digital product design, mobility, and user experience.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 82,
+        "period": "semester",
+        "appliesTo": "all students",
+        "cycle": "WiSe 2026/27"
+      },
+      {
+        "kind": "non-eu-tuition",
+        "euros": 800,
+        "period": "semester",
+        "appliesTo": "Bachelor students from third countries (non-EU, non-EEA)",
+        "cycle": "SoSe 2026"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.thi.de/studium/studienfinanzierung/"
+    },
+    "researched": null
   },
   "technische-hochschule-augsburg": {
     "id": "technische-hochschule-augsburg",
@@ -750,10 +1573,33 @@
     "program_ids": [
       "technische-hochschule-augsburg--interactive-media--bachelor-of-arts",
       "technische-hochschule-augsburg--communication-design--bachelor-of-arts",
-      "technische-hochschule-augsburg--interactive-media-systems--master-of-science",
       "technische-hochschule-augsburg--interactive-media-systems--master-of-arts",
       "technische-hochschule-augsburg--interactive-media-systems--unspecified"
-    ]
+    ],
+    "website": "https://www.tha.de/",
+    "description": "Technische Hochschule Augsburg (THA) is a dynamic university of applied sciences in Bavaria, offering innovative programs in interactive media, communication design, and digital systems. The university is known for its interdisciplinary approach, strong industry links, and focus on digital transformation and creative industries.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 181.95,
+        "period": "semester",
+        "appliesTo": "students re-enrolling at THA (Rückmeldung)",
+        "cycle": "WiSe 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.tha.de/Rueckmeldung.html"
+    },
+    "researched": null
   },
   "universitat-passau": {
     "id": "universitat-passau",
@@ -774,7 +1620,31 @@
       "universitat-passau--digital-humanities--bachelor-of-arts",
       "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
       "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--unspecified"
-    ]
+    ],
+    "website": "https://www.uni-passau.de/",
+    "description": "The University of Passau is a public research university in Bavaria, known for its strong international focus and interdisciplinary programs in law, business, humanities, and computer science. Its media and communication programs integrate theoretical knowledge with practical skills, often exploring the impact of digitalization on society and culture.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 126.9,
+        "period": "semester",
+        "appliesTo": "all students",
+        "cycle": "WiSe 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.uni-passau.de/en/costs-funding/enrolment-fee"
+    },
+    "researched": null
   },
   "universitat-wurzburg": {
     "id": "universitat-wurzburg",
@@ -795,7 +1665,31 @@
       "universitat-wurzburg--human-computer-systems--master-of-science",
       "universitat-wurzburg--human-computer-interaction--master-of-science",
       "universitat-wurzburg--human-computer-interaction--unspecified"
-    ]
+    ],
+    "website": "https://www.uni-wuerzburg.de/",
+    "description": "The Julius-Maximilians-Universität Würzburg, founded in 1402, is one of Germany's oldest and most traditional universities. It offers a broad range of disciplines, including humanities, medicine, natural sciences, and technology. Its programs in media communication and human-computer systems combine strong theoretical foundations with research-oriented and applied projects.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 182.1,
+        "period": "semester",
+        "appliesTo": "all students",
+        "cycle": "WiSe 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.uni-wuerzburg.de/en/studying-at-jmu/studienangelegenheiten/beitraegeundgebuehren/"
+    },
+    "researched": null
   },
   "rwth-aachen-university": {
     "id": "rwth-aachen-university",
@@ -812,11 +1706,24 @@
     },
     "program_ids": [
       "rwth-aachen-university--media-informatics--bachelor-of-science",
-      "rwth-aachen-university--media-informatics--master-of-science",
       "rwth-aachen-university--communication-engineering--master-of-science",
       "rwth-aachen-university--human-technology-interaction-and-communication--master-of-science",
       "rwth-aachen-university--human-technology-interaction-and-communication--unspecified"
-    ]
+    ],
+    "website": "https://www.rwth-aachen.de/",
+    "description": "RWTH Aachen University is one of Europe's leading technical universities, renowned for its research and teaching in engineering, media informatics, and digital media. The university offers a wide range of bachelor's and master's programs, with a strong focus on innovation, internationalization, and industry collaboration.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "technische-universitat-munchen": {
     "id": "technische-universitat-munchen",
@@ -833,10 +1740,37 @@
     },
     "program_ids": [
       "technische-universitat-munchen--media-engineering--bachelor-of-science",
-      "technische-universitat-munchen--informatics-games-engineering--bachelor-of-science",
       "technische-universitat-munchen--computational-science-and-engineering--master-of-science",
       "technische-universitat-munchen--management-and-technology-with-focus-on-digital-technologies--master-of-science"
-    ]
+    ],
+    "website": "https://www.tum.de/",
+    "description": "The Technical University of Munich (TUM) is one of Europe's leading research universities, consistently ranked among the top universities globally. It excels in engineering, natural sciences, life sciences, medicine, and management. TUM offers innovative programs at the intersection of technology and creative fields, such as Games Engineering and Computational Science, fostering a strong entrepreneurial spirit and close ties with industry.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 97,
+        "period": "semester",
+        "appliesTo": "students",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": {
+      "per_semester": "€2,000–3,000 (bachelor) or €4,000–6,000 (master)",
+      "source": "https://www.tum.de/en/studies/fees/tuition/",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {
+      "fees": "https://www.tum.de/en/studies/fees-and-financial-aid/campus-munich-garching-wzw-and-tum-asia"
+    },
+    "researched": null
   },
   "koln-international-school-of-design": {
     "id": "koln-international-school-of-design",
@@ -855,7 +1789,21 @@
       "koln-international-school-of-design--integrated-design--bachelor-of-arts",
       "koln-international-school-of-design--integrated-design-research--master-of-arts",
       "koln-international-school-of-design--communication-design--bachelor-of-arts"
-    ]
+    ],
+    "website": "https://kisd.de/en/",
+    "description": "The Köln International School of Design (KISD) is a public design university founded in 1991 in Cologne, Germany. It offers interdisciplinary programs in integrated design, communication design, and product design. KISD is known for its international orientation and focus on sustainable and social design practices.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hochschule-reutlingen": {
     "id": "hochschule-reutlingen",
@@ -873,7 +1821,47 @@
     "program_ids": [
       "hochschule-reutlingen--integrated-design--bachelor-of-arts",
       "hochschule-reutlingen--textile-design--master-of-arts"
-    ]
+    ],
+    "website": "https://www.reutlingen-university.de/",
+    "description": "Hochschule Reutlingen (Reutlingen University) is a public university of applied sciences founded in 1855. It offers programs in design, engineering, and business. The Faculty of Design is known for its focus on textile design, product design, and communication design.",
+    "address": {
+      "street": "Alteburgstraße 150",
+      "postal_code": "72762",
+      "city": "Reutlingen"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 199.3,
+        "period": "semester",
+        "appliesTo": "all students",
+        "cycle": null
+      },
+      {
+        "kind": "tuition",
+        "euros": 650,
+        "period": "semester",
+        "appliesTo": "students in a second degree (Zweitstudium) in Baden-Württemberg",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {
+      "address": "https://www.reutlingen-university.de/impressum",
+      "fees": "https://www.reutlingen-university.de/im-studium/studium-finanzieren/semesterbeitrag/"
+    },
+    "researched": "2026-10-10"
   },
   "kunsthochschule-mainz": {
     "id": "kunsthochschule-mainz",
@@ -892,7 +1880,21 @@
       "kunsthochschule-mainz--fine-arts--diploma",
       "kunsthochschule-mainz--visual-communication--diploma",
       "kunsthochschule-mainz--fine-arts--unspecified"
-    ]
+    ],
+    "website": "https://kunsthochschule-mainz.de/",
+    "description": "Kunsthochschule Mainz (Mainz University of Fine Arts) is a public art school founded in 1975. It offers programs in fine arts and visual communication, with a focus on interdisciplinary art practice and experimental approaches.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "kunsthochschule-kassel": {
     "id": "kunsthochschule-kassel",
@@ -911,7 +1913,21 @@
       "kunsthochschule-kassel--fine-arts--diploma",
       "kunsthochschule-kassel--visual-communication--diploma",
       "kunsthochschule-kassel--fine-arts--unspecified"
-    ]
+    ],
+    "website": "https://kunsthochschulekassel.de/",
+    "description": "Kunsthochschule Kassel (Kassel University of Fine Arts) is one of Germany's oldest art schools, founded in 1777. It offers programs in fine arts and visual communication, and is known for its experimental approach and strong focus on contemporary art practices.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hochschule-pforzheim": {
     "id": "hochschule-pforzheim",
@@ -936,7 +1952,25 @@
       "hochschule-pforzheim--creative-communication-and-brand-management--master-of-arts",
       "hochschule-pforzheim--creative-direction--master-of-arts",
       "hochschule-pforzheim--design-future-making--master-of-arts"
-    ]
+    ],
+    "website": "https://www.hs-pforzheim.de",
+    "description": "Hochschule Pforzheim (Pforzheim University) is a public university of applied sciences founded in 1877. It is one of Germany's leading design schools, known for its programs in industrial design, transportation design, jewelry design, fashion, and visual communication.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hdm-stuttgart": {
     "id": "hdm-stuttgart",
@@ -980,7 +2014,36 @@
       "hdm-stuttgart--packaging-development-management--master-of-science",
       "hdm-stuttgart--unternehmenskommunikation--master-of-arts",
       "hdm-stuttgart--wirtschaftsinformatik--master-of-science"
-    ]
+    ],
+    "website": "https://hdm-stuttgart.de/",
+    "description": "The Stuttgart Media University (Hochschule für Medien Stuttgart, HdM) is a state university of media studies in Stuttgart, Germany, offering nearly 30 accredited bachelor's and master's degree programs within three faculties. Founded in 2001, it is located at Nobelstraße 10 in the University of Stuttgart Campus Vaihingen.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 191.5,
+        "period": "semester",
+        "appliesTo": "all enrolled students",
+        "notes": "Valid from WS 2024/25, composed of €80 administration fee (from 01.01.2025), €15 student body fee, and €96.50 student services fee.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {
+      "fees": "https://hdm-stuttgart.de/vor-dem-studium/voraussetzungen/kosten/"
+    },
+    "researched": "2026-10-10"
   },
   "kunstakademie-munster": {
     "id": "kunstakademie-munster",
@@ -997,11 +2060,39 @@
     },
     "program_ids": [
       "kunstakademie-munster--freie-kunst--akademiebrief-diplom",
-      "kunstakademie-munster--fine-arts--bachelor-of-fine-arts",
       "kunstakademie-munster--art-education--master-of-education",
       "kunstakademie-munster--fine-arts--unspecified",
       "kunstakademie-munster--art-education--unspecified"
-    ]
+    ],
+    "website": "https://www.kunstakademie-muenster.de/",
+    "description": "Kunstakademie Münster (Academy of Fine Arts Münster) is a public art school founded in 1971 and located at Leonardo-Campus 2 in Münster. It offers programs in Fine Arts with an emphasis on artistic freedom and self-determination. The academy provides studio-based learning in artistic classes complemented by technical workshops and art-related sciences.",
+    "address": {
+      "street": "Leonardo-Campus 2",
+      "postal_code": "48149",
+      "city": "Münster"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 0,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "Die Kunstakademie Münster erhebt keine Studiengebühren.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.kunstakademie-muenster.de/infos-fuer-studieninteressierte/studienberatung-und-information"
+    },
+    "researched": "2026-10-10"
   },
   "akademie-munchen": {
     "id": "akademie-munchen",
@@ -1021,7 +2112,40 @@
       "akademie-munchen--fine-arts--unspecified",
       "akademie-munchen--architecture--unspecified",
       "akademie-munchen--art-education--unspecified"
-    ]
+    ],
+    "website": "https://www.abk-muenchen.de/",
+    "description": "The Academy of Fine Arts Munich is one of Germany's oldest and most prestigious art academies, founded in 1808. It offers programs in fine arts, design, and media art.",
+    "address": {
+      "street": "Akademiestraße 2-4",
+      "postal_code": "80799",
+      "city": "München"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 97,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "Semesterbeitrag Grundbeitrag Studentenwerk 97 Euro for WS 2026/27",
+        "cycle": "2026/2027"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "address": "Akademiestraße 2–4, 80799 Munich",
+      "phone": "+49 89 3852-0",
+      "email": "info@adbk.mhn.de"
+    },
+    "sources": {
+      "fees": "https://www.adbk.de/de/studium/organisatorisches.html"
+    },
+    "researched": "2026-10-10"
   },
   "akademie-nurnberg": {
     "id": "akademie-nurnberg",
@@ -1042,7 +2166,39 @@
       "akademie-nurnberg--fine-arts--unspecified",
       "akademie-nurnberg--graphic-design--unspecified",
       "akademie-nurnberg--art-education--unspecified"
-    ]
+    ],
+    "website": "https://www.abk-nuernberg.de/",
+    "description": "The Academy of Fine Arts Nuremberg is one of Germany's oldest art schools, founded in 1662. It offers programs in fine arts with a focus on classical and contemporary art practices.",
+    "address": {
+      "street": "Bingstraße 60",
+      "postal_code": "90480",
+      "city": "Nürnberg"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 72,
+        "period": "semester",
+        "appliesTo": "all students",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "address": "Bingstraße 60, 90480 Nuremberg",
+      "phone": "+49 911 9404-0",
+      "email": "akademie@adbk-nuernberg.de"
+    },
+    "sources": {
+      "fees": "https://adbk-nuernberg.de/studium/international-office/vor-studienbeginn-nach-der-zulassung-an-der-adbk/"
+    },
+    "researched": null
   },
   "burg-giebichenstein": {
     "id": "burg-giebichenstein",
@@ -1063,7 +2219,45 @@
       "burg-giebichenstein--fine-arts--unspecified",
       "burg-giebichenstein--industrial-design--unspecified",
       "burg-giebichenstein--communication-design--unspecified"
-    ]
+    ],
+    "website": "https://www.burg-halle.de/",
+    "description": "Burg Giebichenstein Kunsthochschule Halle is one of Germany's oldest art schools, founded in 1879. It offers programs in fine arts and design with a strong emphasis on craft traditions and contemporary practices.",
+    "address": {
+      "street": "Neuwerk 7",
+      "postal_code": "06108",
+      "city": "Halle"
+    },
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "vpd",
+      "notes": "International undergraduate applicants without a German higher education entrance qualification must obtain a VPD from uni-assist before submitting through the Burg portal.",
+      "scope": "international undergraduate applicants"
+    },
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 0,
+        "period": "semester",
+        "appliesTo": "all primary degree students",
+        "notes": "No tuition fees are charged for primary Bachelor, consecutive Master, or Diplom programs.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "address": "Neuwerk 7, 06108 Halle (Saale)",
+      "phone": "+49 345 7751-0",
+      "email": "info@burg-halle.de"
+    },
+    "sources": {
+      "fees": "https://www.burg-halle.de/bewerben",
+      "applicationRoute": "https://www.burg-halle.de/bewerben"
+    },
+    "researched": "2026-10-10"
   },
   "folkwang-essen": {
     "id": "folkwang-essen",
@@ -1086,7 +2280,29 @@
       "folkwang-essen--dance--unspecified",
       "folkwang-essen--design--unspecified",
       "folkwang-essen--theatre--unspecified"
-    ]
+    ],
+    "website": "https://www.folkwang-uni.de/",
+    "description": "Folkwang Universität der Künste is one of Germany's leading arts universities, founded in 1927. It offers programs in music, theater, dance, and design with a holistic approach to arts education.",
+    "address": {
+      "street": "Klemensborn 39",
+      "postal_code": "45239",
+      "city": "Essen"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": {
+      "address": "Klemensborn 39, 45239 Essen",
+      "phone": "+49 201 4903-0",
+      "email": "info@folkwang-uni.de"
+    },
+    "sources": {},
+    "researched": null
   },
   "haw-hamburg": {
     "id": "haw-hamburg",
@@ -1115,7 +2331,44 @@
       "haw-hamburg--digitale-transformation-der-informations-und-medienwirtschaft--master-of-arts",
       "haw-hamburg--games--master-of-arts",
       "haw-hamburg--zeitabhangige-medien-sound-vision--master-of-arts"
-    ]
+    ],
+    "website": "https://www.haw-hamburg.de/",
+    "description": "Hochschule für Angewandte Wissenschaften Hamburg (HAW Hamburg) is one of Germany's largest universities of applied sciences, offering design programs with a practical focus.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 397,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "For Wintersemester 2026/27, includes Studierendenwerk (€101), Studierendenschaft (€19.10), Semesterticket (€226.80), Härtefonds (€0.10), and Verwaltungskostenbeitrag (€50).",
+        "cycle": "2026/2027"
+      },
+      {
+        "kind": "tuition",
+        "euros": 0,
+        "period": "semester",
+        "appliesTo": "most degree programs",
+        "notes": "No tuition fees are charged for most degree programs at HAW Hamburg, only the semester contribution.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "address": "Finkenau 35, 22081 Hamburg",
+      "phone": "+49 40 428 75-0",
+      "email": "info@haw-hamburg.de"
+    },
+    "sources": {
+      "fees": "https://www.haw-hamburg.de/studium/kosten-und-finanzierung/"
+    },
+    "researched": "2026-10-10"
   },
   "hfbk-dresden": {
     "id": "hfbk-dresden",
@@ -1138,7 +2391,53 @@
       "hfbk-dresden--art-technology-preservation-and-restoration-of-artistic-and-cultural-assets--diploma",
       "hfbk-dresden--art-therapy-postgraduate--postgraduate-diploma",
       "hfbk-dresden--meisterschuler-master-class--meisterschuler"
-    ]
+    ],
+    "website": "https://www.hfbk-dresden.de/",
+    "description": "Hochschule für Bildende Künste Dresden (HfBK Dresden) is one of Germany's oldest art academies, founded in 1764. It offers programs in fine arts with a strong emphasis on classical and contemporary artistic practices.",
+    "address": {
+      "street": "Güntzstraße 34",
+      "postal_code": "01307",
+      "city": "Dresden"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 354.91,
+        "period": "semester",
+        "appliesTo": "enrolled students",
+        "cycle": null
+      },
+      {
+        "kind": "tuition",
+        "euros": 350,
+        "period": "semester",
+        "appliesTo": "second-degree students (Zweitstudierende)",
+        "cycle": null
+      },
+      {
+        "kind": "tuition",
+        "euros": 500,
+        "period": "semester",
+        "appliesTo": "long-term students (Langzeitstudierende)",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "address": "Güntzstraße 34, 01307 Dresden",
+      "phone": "+49 351 4402-0",
+      "email": "rektor@hfbk-dresden.de"
+    },
+    "sources": {
+      "fees": "https://www.hfbk-dresden.de/studium/studienorganisation/formulare-informationen"
+    },
+    "researched": null
   },
   "stadelschule-frankfurt": {
     "id": "stadelschule-frankfurt",
@@ -1157,7 +2456,25 @@
       "stadelschule-frankfurt--fine-arts--master",
       "stadelschule-frankfurt--fine-arts--diploma",
       "stadelschule-frankfurt--fine-arts--unspecified"
-    ]
+    ],
+    "website": "https://www.staedelschule.de/",
+    "description": "Städelschule Frankfurt is one of Germany's most prestigious art schools, founded in 1815. It offers a unique program combining fine arts with art theory and history.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": {
+      "address": "Dürerstraße 10, 60596 Frankfurt am Main",
+      "phone": "+49 69 605008-0",
+      "email": "info@staedelschule.de"
+    },
+    "sources": {},
+    "researched": null
   },
   "khm-munchen": {
     "id": "khm-munchen",
@@ -1179,7 +2496,42 @@
       "khm-munchen--innenarchitektur--master-of-arts",
       "khm-munchen--architektur-und-kunst--master-of-arts",
       "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts"
-    ]
+    ],
+    "website": "https://www.adbk.de",
+    "description": "Kunsthochschule München is a public art school in Munich, founded in 1946. It offers programs in fine arts and design with a focus on contemporary artistic practices.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Bewerbung über das Online-Bewerbungsportal der AdBK München",
+      "url": "https://bewerbung.adbk.de/",
+      "scope": "all applicants"
+    },
+    "fees": [
+      {
+        "appliesTo": "all students",
+        "euros": 97,
+        "kind": "semester-contribution",
+        "notes": "Grundbeitrag für das Studentenwerk",
+        "period": "semester",
+        "cycle": "2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "address": "Kaulbachstraße 40, 80539 Munich",
+      "phone": "+49 89 38610-0",
+      "email": "info@kunsthochschule-muenchen.de"
+    },
+    "sources": {
+      "fees": "https://www.adbk.de/de/studium/studienorganisation/rueckmeldung.html?highlight=WzIwMjVd",
+      "applicationRoute": "https://www.adbk.de/de/studium/bewerbung/bewerbungscheckliste/internationale-bewerbungen.html"
+    },
+    "researched": "2026-10-10"
   },
   "technische-universitat-chemnitz": {
     "id": "technische-universitat-chemnitz",
@@ -1197,7 +2549,45 @@
     "program_ids": [
       "technische-universitat-chemnitz--human-computer-interaction--master-of-science",
       "technische-universitat-chemnitz--human-computer-interaction--unspecified"
-    ]
+    ],
+    "website": "https://www.tu-chemnitz.de/",
+    "description": "Chemnitz University of Technology (TU Chemnitz) is a public university in Chemnitz, Saxony. It appears here for its Human-Computer Interaction programs.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 500,
+        "period": "semester",
+        "appliesTo": "students exceeding the Regelstudienzeit by more than 4 semesters (Langzeitstudiengebühr)",
+        "cycle": null
+      },
+      {
+        "kind": "tuition",
+        "euros": 350,
+        "period": "semester",
+        "appliesTo": "second-degree students whose total study duration exceeds the first degree's Regelstudienzeit by 6 semesters (Zweitstudiengebühr)",
+        "cycle": null
+      },
+      {
+        "kind": "tuition",
+        "euros": 980,
+        "period": "semester",
+        "appliesTo": "Fernstudium students of Bachelor Management and Bachelor Public Sector Management under the study regulations effective from WiSe 2026/27",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.tu-chemnitz.de/studentenservice/stusek/gebuehr.php"
+    },
+    "researched": null
   },
   "kunsthochschule-berlin-weissensee": {
     "id": "kunsthochschule-berlin-weissensee",
@@ -1215,7 +2605,35 @@
     "program_ids": [
       "kunsthochschule-berlin-weissensee--fine-arts--diploma",
       "kunsthochschule-berlin-weissensee--fine-arts--unspecified"
-    ]
+    ],
+    "website": "https://www.kh-berlin.de",
+    "description": "Weißensee Kunsthochschule Berlin trains artists and designers across several disciplines. It was founded in 1946 in Berlin-Weißensee; a distinctive feature is the foundation course in art and design that every student takes first.",
+    "address": {
+      "street": "Bühringstraße 20",
+      "postal_code": "13086",
+      "city": "Berlin"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 376.8,
+        "period": "semester",
+        "appliesTo": "students re-registering",
+        "cycle": "WiSe 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://kh-berlin.de/studium/studienorganisation/rueckmeldung"
+    },
+    "researched": null
   },
   "hmt-leipzig": {
     "id": "hmt-leipzig",
@@ -1230,11 +2648,31 @@
     "stats": {
       "founded": 1843
     },
-    "program_ids": [
-      "hmt-leipzig--music--unspecified",
-      "hmt-leipzig--drama--unspecified",
-      "hmt-leipzig--music-education--unspecified"
-    ]
+    "program_ids": [],
+    "website": "https://www.hmt-leipzig.de/",
+    "description": "The University of Music and Theatre \"Felix Mendelssohn Bartholdy\" Leipzig (HMT) is a public school and Germany's oldest music conservatory, founded by Felix Mendelssohn Bartholdy in 1843. It is also home to the Church Music Institute founded in 1919 and, since merging with the city's theatre academy, trains actors as well as musicians.",
+    "address": {
+      "street": "Grassistraße 8",
+      "postal_code": "04107",
+      "city": "Leipzig"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": {
+      "per_semester": "€1,800",
+      "source": "https://www.hmt-leipzig.de/studium/studiengebuehren/studiengebuehren",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {
+      "address": "https://www.hmt-leipzig.de/impressum"
+    },
+    "researched": "2026-10-10"
   },
   "hmtm-hannover": {
     "id": "hmtm-hannover",
@@ -1254,7 +2692,25 @@
       "hmtm-hannover--acting--unspecified",
       "hmtm-hannover--media-management--unspecified",
       "hmtm-hannover--medien-und-musik--master-of-arts"
-    ]
+    ],
+    "website": "https://www.hmtm-hannover.de/",
+    "description": "The Hannover University of Music, Drama and Media (HMTMH) is an artistic and academic university with doctoral rights. Students in some 33 programs train as musicians, actors, music teachers, and music and media scholars.",
+    "address": {
+      "street": "Neues Haus 1",
+      "postal_code": "30175",
+      "city": "Hannover"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hochschule-fur-evangelische-kirchenmusik": {
     "id": "hochschule-fur-evangelische-kirchenmusik",
@@ -1278,7 +2734,27 @@
       "hochschule-fur-evangelische-kirchenmusik--instrumental-vokalpadagogik--master-of-music",
       "hochschule-fur-evangelische-kirchenmusik--musikleitung-instrumental-vokal--master-of-music",
       "hochschule-fur-evangelische-kirchenmusik--kunstlerisches-orgelspiel--master-of-music"
-    ]
+    ],
+    "website": "http://www.hfk-bayreuth.de",
+    "description": "The University of Protestant Church Music of the Evangelical Lutheran Church in Bavaria is a state-recognised church university in Bayreuth. Its programs centre on church music, organ, choral and instrumental conducting, and instrumental and vocal teaching.",
+    "address": {
+      "street": "Wilhelminenstr. 9",
+      "postal_code": "95444",
+      "city": "Bayreuth"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "address": "https://www.hfk-bayreuth.de/impressum/"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-berlin": {
     "id": "hochschule-fur-musik-berlin",
@@ -1310,7 +2786,36 @@
       "hochschule-fur-musik-berlin--kammermusik--master-of-music",
       "hochschule-fur-musik-berlin--korrepetition--master-of-music",
       "hochschule-fur-musik-berlin--elektroakustische-musik--master-of-music"
-    ]
+    ],
+    "website": "http://www.hfm-berlin.de",
+    "description": "The Hanns Eisler School of Music Berlin (HfM) is a public music university founded in 1950 and named after the composer Hanns Eisler. Since 1987 it has been based opposite the Konzerthaus on the Gendarmenmarkt, with the Neuer Marstall as a second site; it runs a symphony and a chamber orchestra, a choir and a wind ensemble.",
+    "address": {
+      "street": "Charlottenstraße 55",
+      "postal_code": "10117",
+      "city": "Berlin"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 0,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "No tuition fees charged for any student regardless of nationality.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.hfm-berlin.de/bewerbung/haeufig-gestellte-fragen/"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-schauspielkunst-berlin": {
     "id": "hochschule-fur-schauspielkunst-berlin",
@@ -1332,7 +2837,25 @@
       "hochschule-fur-schauspielkunst-berlin--dramaturgie--master-of-arts",
       "hochschule-fur-schauspielkunst-berlin--spiel-und-objekt--master-of-arts",
       "hochschule-fur-schauspielkunst-berlin--choreographie--master-of-arts"
-    ]
+    ],
+    "website": "http://www.hfs-berlin.de",
+    "description": "The Ernst Busch Academy of Dramatic Arts (HfS) took its current form in 1951 as Berlin's state drama school, growing out of the Deutsches Theater's acting school founded in 1905. It became a university in 1981 and moved into a new building in Berlin-Mitte in 2018; it teaches acting, directing, dramaturgy, puppetry and choreography.",
+    "address": {
+      "street": "Zinnowitzer Straße 11",
+      "postal_code": "10115",
+      "city": "Berlin"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hochschule-fur-musik-detmold": {
     "id": "hochschule-fur-musik-detmold",
@@ -1360,7 +2883,25 @@
       "hochschule-fur-musik-detmold--musiktheorie-und-gehorbildung--bachelor-of-music",
       "hochschule-fur-musik-detmold--musikubertragung-tonmeister--bachelor-of-music",
       "hochschule-fur-musik-detmold--musikubertragung-tonmeister--master-of-music"
-    ]
+    ],
+    "website": "http://www.hfm-detmold.de/",
+    "description": "The Detmold University of Music was founded in 1946 as the Nordwestdeutsche Musikakademie and is housed in the Neues Palais in Detmold, North Rhine-Westphalia. Students and teachers give around 450 concerts a year, and its programs include a Tonmeister (sound engineering) degree.",
+    "address": {
+      "street": "Neustadt 22",
+      "postal_code": "32756",
+      "city": "Detmold"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hochschule-fur-kirchenmusik-dresden": {
     "id": "hochschule-fur-kirchenmusik-dresden",
@@ -1377,7 +2918,36 @@
     },
     "program_ids": [
       "hochschule-fur-kirchenmusik-dresden--kirchenmusik-b--diplom"
-    ]
+    ],
+    "website": "http://www.kirchenmusik-dresden.de",
+    "description": "The Dresden University of Church Music is a small, state-recognised institution of the Evangelical Lutheran Church of Saxony that trains church musicians.",
+    "address": {
+      "street": "Käthe Kollwitz Ufer 97",
+      "postal_code": "01309",
+      "city": "Dresden"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "appliesTo": "all direct students",
+        "euros": 289.18,
+        "kind": "semester-contribution",
+        "notes": "234,18 € Deutschland-Semesterticket inkl. MOBIbike + 55 € Verwaltungsgebühr",
+        "period": "semester",
+        "cycle": "2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.kirchenmusik-dresden.de/studium/studiengebuehren/"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-dresden": {
     "id": "hochschule-fur-musik-dresden",
@@ -1406,7 +2976,39 @@
       "hochschule-fur-musik-dresden--musiktheorie--master-of-music",
       "hochschule-fur-musik-dresden--lehramt-musik--staatsexamen",
       "hochschule-fur-musik-dresden--meisterklasse--meisterklassenexamen"
-    ]
+    ],
+    "website": "http://www.hfmdd.de",
+    "description": "The Carl Maria von Weber University of Music Dresden is a public university-level music school. Founded as a private conservatory in 1856, it became a university after the Second World War; its programs run from classical performance and composition to jazz, rock and pop.",
+    "address": {
+      "street": "Wettiner Platz 13",
+      "postal_code": "01067",
+      "city": "Dresden"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 359.91,
+        "period": "semester",
+        "appliesTo": "all students",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": {
+      "per_semester": null,
+      "source": "https://www.hfmdd.de/studienbeginn",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {
+      "fees": "https://www.hfmdd.de/en/new-students"
+    },
+    "researched": null
   },
   "palucca-hochschule-fur-tanz": {
     "id": "palucca-hochschule-fur-tanz",
@@ -1427,7 +3029,36 @@
       "palucca-hochschule-fur-tanz--tanzpadagogik--master-of-arts",
       "palucca-hochschule-fur-tanz--dance-teacher-berufsbegleitend--master-of-arts",
       "palucca-hochschule-fur-tanz--kunstlerische-meisterklasse--meisterklassenexamen"
-    ]
+    ],
+    "website": "http://www.palucca.eu",
+    "description": "The Palucca University of Dance Dresden is a public art university focused on dance, dance teaching and choreography. Admission depends on artistic and physical criteria rather than the Abitur, and it runs its own secondary school with intensive dance training.",
+    "address": {
+      "street": "Basteiplatz 4",
+      "postal_code": "01277",
+      "city": "Dresden"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "application",
+        "euros": 50,
+        "period": "once",
+        "appliesTo": "all applicants",
+        "notes": "Für jede Studienbewerbung wird eine Bewerbungsgebühr von 50,00 EUR erhoben.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://palucca.eu/audition/bewerbungsgebuehren"
+    },
+    "researched": "2026-10-10"
   },
   "robert-schumann-hochschule": {
     "id": "robert-schumann-hochschule",
@@ -1474,7 +3105,32 @@
       "robert-schumann-hochschule--orchesterpraxis--master-of-music",
       "robert-schumann-hochschule--liedgestaltung--master-of-music",
       "robert-schumann-hochschule--kammermusik--master-of-music"
-    ]
+    ],
+    "website": "http://www.rsh-duesseldorf.de",
+    "description": "The Robert Schumann Hochschule Düsseldorf (RSH) is a music university named after Robert Schumann. Its programs range from music and music education to \"Musik und Medien\" and \"Ton und Bild\", which combines a music degree with technical training at Hochschule Düsseldorf.",
+    "address": {
+      "street": "Fischerstraße 110",
+      "postal_code": "40476",
+      "city": "Düsseldorf"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Online-Bewerbung über das Bewerberportal Muvac",
+      "scope": "all applicants"
+    },
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "address": "https://www.rsh-duesseldorf.de/campus/beratung-und-service/studienstart/studieren-von-a-bis-z",
+      "applicationRoute": "https://www.rsh-duesseldorf.de/studienbewerbung/bewerbungsverfahren/online-bewerbung"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main": {
     "id": "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main",
@@ -1514,7 +3170,49 @@
       "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--contemporary-dance-education--master-of-arts",
       "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--theater-und-orchestermanagement--master-of-arts",
       "hochschule-fur-musik-und-darstellende-kunst-frankfurt-am-main--konzertexamen--konzertexamen"
-    ]
+    ],
+    "website": "https://www.hfmdk-frankfurt.de",
+    "description": "The Frankfurt University of Music and Performing Arts (HfMDK) is Hesse's only public school for music, theatre and dance. It covers instrumental and vocal performance, music education, composition, conducting and church music as well as music theatre, acting and dance, and can award doctorates in musicology and music education.",
+    "address": {
+      "street": "Eschersheimer Landstraße 29-39",
+      "postal_code": "60322",
+      "city": "Frankfurt am Main"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Online application portal",
+      "scope": "all applicants"
+    },
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 399.78,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "For Wintersemester 2026/27",
+        "cycle": "2026/2027"
+      },
+      {
+        "kind": "tuition",
+        "euros": 0,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "No tuition fees charged",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.hfmdk-frankfurt.de/thema/semesterbeitrag-und-gebuehren",
+      "applicationRoute": "https://www.hfmdk-frankfurt.de/thema/bewerben"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-freiburg": {
     "id": "hochschule-fur-musik-freiburg",
@@ -1537,7 +3235,49 @@
       "hochschule-fur-musik-freiburg--lehramt-musik--lehramt",
       "hochschule-fur-musik-freiburg--elementare-musikpadagogik--bachelor-of-music",
       "hochschule-fur-musik-freiburg--konzertexamen-meisterklasse--konzertexamen"
-    ]
+    ],
+    "website": "https://www.mh-freiburg.de",
+    "description": "The Freiburg University of Music is a state school of Baden-Württemberg for artistic, teaching and research training in music, including church music, music education and teacher training.",
+    "address": {
+      "street": "Mendelssohn-Bartholdy-Platz 1",
+      "postal_code": "79102",
+      "city": "Freiburg"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 203,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "Semesterbeitrag Studierende: 203,00 €",
+        "cycle": null
+      },
+      {
+        "kind": "non-eu-tuition",
+        "euros": 1500,
+        "period": "semester",
+        "appliesTo": "non-EU students",
+        "notes": "Studiengebühren für internationale Studierende: 1.500,00 €",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {
+      "address": "https://www.mh-freiburg.de/impressum",
+      "fees": "https://www.mh-freiburg.de/studium/im-studium/rund-um-rueckmeldung-und-gebuehren"
+    },
+    "researched": "2026-10-10"
   },
   "evangelische-hochschule-fur-kirchenmusik-halle": {
     "id": "evangelische-hochschule-fur-kirchenmusik-halle",
@@ -1561,7 +3301,25 @@
       "evangelische-hochschule-fur-kirchenmusik-halle--konzert-und-oratoriengesang--master-of-music",
       "evangelische-hochschule-fur-kirchenmusik-halle--kunstlerisches-orgelspiel--master-of-music",
       "evangelische-hochschule-fur-kirchenmusik-halle--lehramt-musik--master-of-education"
-    ]
+    ],
+    "website": "http://www.ehk-halle.de",
+    "description": "The Protestant University of Church Music Halle was founded in 1926 in Aschersleben and moved to Halle in 1939; in the 1950s it was Germany's largest church music school. It became a university in 1993 and is now based in the Händelkarree next to the university's musicology institute.",
+    "address": {
+      "street": "Kleine Ulrichstraße 35",
+      "postal_code": "06108",
+      "city": "Halle"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hochschule-fur-kirchenmusik-heidelberg": {
     "id": "hochschule-fur-kirchenmusik-heidelberg",
@@ -1583,7 +3341,47 @@
       "hochschule-fur-kirchenmusik-heidelberg--popularkirchenmusik--master-of-music",
       "hochschule-fur-kirchenmusik-heidelberg--posaunenwart--bachelor-of-music",
       "hochschule-fur-kirchenmusik-heidelberg--erganzungsstudiengang-fur-schulmusiker-innen--zertifikat"
-    ]
+    ],
+    "website": "http://www.hfk-heidelberg.de",
+    "description": "The Heidelberg University of Church Music (HfK), run by the Protestant Church in Baden since 1931, focuses on church music, especially choral conducting and organ. It is one of six Protestant music universities in Germany and offers degrees up to the Konzertexamen.",
+    "address": {
+      "street": "Hildastr. 8",
+      "postal_code": "69115",
+      "city": "Heidelberg"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Application documents submitted by post or email to the secretariat",
+      "scope": "all applicants"
+    },
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 1500,
+        "period": "semester",
+        "appliesTo": "KA-Orgel, Orgelimprovisation, Chorleitung, KE-Orgel",
+        "cycle": null
+      },
+      {
+        "kind": "tuition",
+        "euros": 2000,
+        "period": "semester",
+        "appliesTo": "KA-Gesang, Klavier",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "applicationRoute": "https://www.hfk-heidelberg.de/studium/bewerbung/",
+      "fees": "https://www.hfk-heidelberg.de/studium/studiengaenge/"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-karlsruhe": {
     "id": "hochschule-fur-musik-karlsruhe",
@@ -1604,7 +3402,47 @@
       "hochschule-fur-musik-karlsruhe--kunstlerisches-lehramt-an-gymnasien-schulmusik--lehramt",
       "hochschule-fur-musik-karlsruhe--solistenexamen-konzertexamen--konzertexamen",
       "hochschule-fur-musik-karlsruhe--certificate-of-advanced-studies--certificate-of-advanced-studies"
-    ]
+    ],
+    "website": "http://www.hfm-karlsruhe.de",
+    "description": "The University of Music Karlsruhe is a Baden-Württemberg state school training musicians, composers, musicologists and music journalists, and offering music and computer technology.",
+    "address": {
+      "street": "Am Schloss Gottesaue 7",
+      "postal_code": "76131",
+      "city": "Karlsruhe"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 650,
+        "period": "semester",
+        "appliesTo": "students of a second degree programme",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": {
+      "email": "studierendensekretariat@hfm.eu",
+      "phone": "+49 721 662 90",
+      "url": "https://hfm-karlsruhe.de/studieren/bewerbung"
+    },
+    "sources": {
+      "address": "http://www.hfm-karlsruhe.de",
+      "contact.email": "http://www.hfm-karlsruhe.de",
+      "contact.phone": "http://www.hfm-karlsruhe.de",
+      "contact.url": "http://www.hfm-karlsruhe.de",
+      "fees": "https://hfm-karlsruhe.de/en/studying/academic-organization/tuition-fees"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-und-tanz-koln": {
     "id": "hochschule-fur-musik-und-tanz-koln",
@@ -1676,7 +3514,61 @@
       "hochschule-fur-musik-und-tanz-koln--tanz--bachelor-of-arts",
       "hochschule-fur-musik-und-tanz-koln--tanzvermittlung--master-of-arts",
       "hochschule-fur-musik-und-tanz-koln--tanzwissenschaft--master-of-arts"
-    ]
+    ],
+    "website": "https://www.hfmt-koeln.de/",
+    "description": "The Cologne University of Music and Dance is one of Europe's largest music universities, located in Cologne's old town. Until 2009 it was called Hochschule für Musik Köln; its programs span orchestral instruments, voice, conducting, composition, church music, music education and dance.",
+    "address": {
+      "street": "Unter Krahnenbäumen 87",
+      "postal_code": "50668",
+      "city": "Köln"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "application",
+        "euros": 50,
+        "period": "once",
+        "appliesTo": "all applicants",
+        "notes": "Teilnahmeentgelt für das Auswahlverfahren",
+        "cycle": null
+      },
+      {
+        "kind": "semester-contribution",
+        "euros": 354.3,
+        "period": "semester",
+        "appliesTo": "students at Köln campus",
+        "notes": "Wintersemester 2026/27",
+        "cycle": "Winter 2026/27"
+      },
+      {
+        "kind": "semester-contribution",
+        "euros": 370.3,
+        "period": "semester",
+        "appliesTo": "students at Aachen campus",
+        "notes": "Wintersemester 2026/27",
+        "cycle": "Winter 2026/27"
+      },
+      {
+        "kind": "semester-contribution",
+        "euros": 351.3,
+        "period": "semester",
+        "appliesTo": "students at Wuppertal campus",
+        "notes": "Wintersemester 2026/27",
+        "cycle": "Winter 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "address": "https://www.hfmt-koeln.de/musik/studiengaenge/master-of-arts/musikwissenschaft-master-of-arts/",
+      "fees": "https://www.hfmt-koeln.de/informationen-fuer/studieninteressierte/bewerbung/"
+    },
+    "researched": "2026-10-10"
   },
   "musikhochschule-lubeck": {
     "id": "musikhochschule-lubeck",
@@ -1727,7 +3619,36 @@
       "musikhochschule-lubeck--sound-arts-and-creative-music-technology--master-of-music",
       "musikhochschule-lubeck--konzertexamen--konzertexamen",
       "musikhochschule-lubeck--weiterbildung-darstellendes-spiel--certificate-of-advanced-studies"
-    ]
+    ],
+    "website": "https://www.mh-luebeck.de",
+    "description": "The Lübeck Academy of Music (MHL) is the only music university in Schleswig-Holstein. It is housed in 22 listed historic townhouses that are part of the UNESCO World Heritage old town, and in the Holstentorhalle across the Trave.",
+    "address": {
+      "street": "Große Petersgrube 21",
+      "postal_code": "23552",
+      "city": "Lübeck"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "aptitude-test",
+        "euros": 60,
+        "period": "once",
+        "appliesTo": "all applicants",
+        "notes": "Fee for participation in the aptitude test procedure.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.mh-luebeck.de/bewerben"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-und-darstellende-kunst-mannheim": {
     "id": "hochschule-fur-musik-und-darstellende-kunst-mannheim",
@@ -1752,7 +3673,45 @@
       "hochschule-fur-musik-und-darstellende-kunst-mannheim--lehramt-musik-an-gymnasien--bachelor",
       "hochschule-fur-musik-und-darstellende-kunst-mannheim--lehramt-musik-an-gymnasien--master",
       "hochschule-fur-musik-und-darstellende-kunst-mannheim--solistische-ausbildung--konzertexamen"
-    ]
+    ],
+    "website": "http://www.muho-mannheim.de",
+    "description": "The State University of Music and Performing Arts Mannheim offers classical music, jazz and popular music, teacher training, and dance and dance teaching.",
+    "address": {
+      "street": "N 7, 18",
+      "postal_code": "68161",
+      "city": "Mannheim"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "University study-place application is exclusively online.",
+      "scope": "University study-place applicants"
+    },
+    "fees": [
+      {
+        "kind": "application",
+        "euros": 75,
+        "period": "once",
+        "appliesTo": "Applicants to all study programs",
+        "notes": "Proof of administrative-charge payment by bank statement required.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {
+      "applicationRoute": "https://www.muho-mannheim.de/bewerbung/anmeldung/",
+      "fees": "https://www.muho-mannheim.de/bewerbung/anmeldung/"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-nurnberg": {
     "id": "hochschule-fur-musik-nurnberg",
@@ -1773,7 +3732,35 @@
       "hochschule-fur-musik-nurnberg--kunstlerischer-master--master-of-music",
       "hochschule-fur-musik-nurnberg--musikwissenschaften--master-of-arts",
       "hochschule-fur-musik-nurnberg--meisterklasse--meisterklassendiplom"
-    ]
+    ],
+    "website": "https://www.hfm-nuernberg.de/hochschule",
+    "description": "The Nuremberg University of Music (formerly Hochschule für Musik Nürnberg-Augsburg) was formed in 1998 by merging the Meistersinger Conservatory in Nuremberg and the Leopold Mozart Conservatory in Augsburg. It offers artistic and artistic-teaching degrees, master classes and musicology.",
+    "address": {
+      "street": "Veilhofstraße 34",
+      "postal_code": "90489",
+      "city": "Nürnberg"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 82,
+        "period": "semester",
+        "appliesTo": "all students",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.hfm-nuernberg.de/en/study/application"
+    },
+    "researched": null
   },
   "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik": {
     "id": "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik",
@@ -1791,7 +3778,32 @@
     "program_ids": [
       "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik--katholische-kirchenmusik--bachelor-of-music",
       "hochschule-fur-katholische-kirchenmusik-und-musikpadagogik--katholische-kirchenmusik--master-of-music"
-    ]
+    ],
+    "website": "http://www.hfkm-regensburg.de",
+    "description": "The University of Catholic Church Music and Music Education Regensburg (HfKM) is a state-recognised church university. Besides church music it offers voice and instrumental teaching and choral conducting, and with the University of Regensburg a teacher-training route for music at Gymnasien.",
+    "address": {
+      "street": "Andreasstraße 9",
+      "postal_code": "93059",
+      "city": "Regensburg"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Direct postal application for entrance examination.",
+      "scope": "all applicants"
+    },
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "address": "https://www.hfkm-regensburg.de/impressum/",
+      "applicationRoute": "https://www.hfkm-regensburg.de/bewerbung/eignungspruefungen-termine/eignungspruefungen-ba-ma-studiengaenge-studienbeginn-ws-2027-28/"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-kirchenmusik-rottenburg": {
     "id": "hochschule-fur-kirchenmusik-rottenburg",
@@ -1815,7 +3827,42 @@
       "hochschule-fur-kirchenmusik-rottenburg--orgelimprovisation-liturgisches-orgelspiel--master-of-music",
       "hochschule-fur-kirchenmusik-rottenburg--orgelliteraturspiel--master-of-music",
       "hochschule-fur-kirchenmusik-rottenburg--zertifikat-c--zertifikat"
-    ]
+    ],
+    "website": "https://www.kirchenmusik-hochschule.org",
+    "description": "The Catholic University of Church Music Rottenburg (officially Hochschule für Kirchenmusik der Diözese Rottenburg-Stuttgart) is a church-run art university in Rottenburg am Neckar. Its programs cover Catholic church music, organ, choral conducting, voice and Gregorian chant.",
+    "address": {
+      "street": "St.-Meinrad-Weg 6",
+      "postal_code": "72108",
+      "city": "Rottenburg"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Direct application to the university using official application forms",
+      "url": "https://www.kirchenmusik-hochschule.org/termine-anmeldung/",
+      "scope": "all applicants"
+    },
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 62.8,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "Studierendenwerk contribution 62.80€; Naldo ticket contribution is 0€ (covered by school)",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.kirchenmusik-hochschule.org/rueckmeldung/",
+      "applicationRoute": "https://www.kirchenmusik-hochschule.org/termine-anmeldung/"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-saar": {
     "id": "hochschule-fur-musik-saar",
@@ -1862,7 +3909,42 @@
       "hochschule-fur-musik-saar--advanced-education-in-music-pedagogy--master-of-education",
       "hochschule-fur-musik-saar--q-master-lehramt-musik--master-of-education",
       "hochschule-fur-musik-saar--kulturmanagement--master-of-arts"
-    ]
+    ],
+    "website": "https://www.hfmsaar.de",
+    "description": "The Saar University of Music in Saarbrücken is the only university-level music school in the Saar-Lor-Lux region. Alongside performance and teaching profiles it offers conducting, church music, and cultural management.",
+    "address": {
+      "street": "Trierer Straße 2-4",
+      "postal_code": "66111",
+      "city": "Saarbrücken"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 360.9,
+        "period": "semester",
+        "appliesTo": "enrolled students",
+        "cycle": "SoSe 2025"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "phone": "0681 967310",
+      "email": "info@hfm.saarland.de"
+    },
+    "sources": {
+      "address": "https://www.hfmsaar.de/Standorte",
+      "contact.phone": "https://www.hfmsaar.de/Standorte",
+      "contact.email": "https://www.hfmsaar.de/Standorte",
+      "stats.students": "https://www.hfmsaar.de/profil",
+      "fees": "https://www.hfmsaar.de/faqs-bewerbung-eignungspruefung"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-und-darstellende-kunst-stuttgart": {
     "id": "hochschule-fur-musik-und-darstellende-kunst-stuttgart",
@@ -1891,7 +3973,29 @@
       "hochschule-fur-musik-und-darstellende-kunst-stuttgart--lehramt-gymnasium-mit-dem-fach-musik--master",
       "hochschule-fur-musik-und-darstellende-kunst-stuttgart--konzertexamen--konzertexamen",
       "hochschule-fur-musik-und-darstellende-kunst-stuttgart--weiterbildungs-master-berufsbegleitend--master-of-music"
-    ]
+    ],
+    "website": "http://www.hmdk-stuttgart.de",
+    "description": "The State University of Music and Performing Arts Stuttgart (HMDK), founded in 1857, is one of Germany's oldest music universities and also a drama school. Its programs include music, opera, church music, teacher training, acting, puppetry and speech arts.",
+    "address": {
+      "street": "Urbanstraße 25",
+      "postal_code": "70182",
+      "city": "Stuttgart"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "staatliche-hochschule-fur-musik-trossingen": {
     "id": "staatliche-hochschule-fur-musik-trossingen",
@@ -1914,7 +4018,54 @@
       "staatliche-hochschule-fur-musik-trossingen--creative-arts-practice--master-of-music",
       "staatliche-hochschule-fur-musik-trossingen--rhythmik-mit-elementarer-musikpadagogik--bachelor-of-music",
       "staatliche-hochschule-fur-musik-trossingen--musik-und-bewegung--bachelor-of-music"
-    ]
+    ],
+    "website": "https://www.hfm-trossingen.de",
+    "description": "The Trossingen State University of Music is a state music university in Baden-Württemberg and part of the International Lake Constance University network. Besides music and rhythmics it offers music design and audio experience design.",
+    "address": {
+      "street": "Schultheiß-Koch-Platz 3",
+      "postal_code": "78647",
+      "city": "Trossingen"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Online-Bewerbung im Bewerberportal der Hochschule",
+      "scope": "all applicants"
+    },
+    "fees": [
+      {
+        "kind": "non-eu-tuition",
+        "euros": 1500,
+        "period": "semester",
+        "appliesTo": "non-EU/EEA students",
+        "notes": "für Studierende aus Ländern außerhalb der EU / des EWR",
+        "cycle": null
+      },
+      {
+        "kind": "application",
+        "euros": 50,
+        "period": "once",
+        "appliesTo": "all applicants",
+        "notes": "Anmeldegebühr für die Teilnahme am Zulassungsverfahren",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {
+      "address": "https://www.hfm-trossingen.de/bewerbung/to-do",
+      "fees": "https://www.hfm-trossingen.de/infothek/studiengebuehren",
+      "applicationRoute": "https://www.hfm-trossingen.de/bewerbung/to-do"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-kirchenmusik-tubingen": {
     "id": "hochschule-fur-kirchenmusik-tubingen",
@@ -1935,7 +4086,45 @@
       "hochschule-fur-kirchenmusik-tubingen--evangelische-kirchenmusik-a--master-of-music",
       "hochschule-fur-kirchenmusik-tubingen--kirchliche-popularmusik--master-of-music",
       "hochschule-fur-kirchenmusik-tubingen--ka-aufbaustudiengang-orgel--kunstlerische-ausbildung"
-    ]
+    ],
+    "website": "http://www.kirchenmusikhochschule.de",
+    "description": "The Protestant University of Church Music Tübingen is a state-recognised music university of the Protestant Church in Württemberg, training church musicians in classical and popular church music.",
+    "address": {
+      "street": "Gartenstraße 12",
+      "postal_code": "72074",
+      "city": "Tübingen"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Direct application sent to the Hochschule für Kirchenmusik Tübingen.",
+      "scope": "all applicants"
+    },
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 107.8,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "Semester contribution for Studierendenwerk Tübingen-Hohenheim effective Summer Semester 2025.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "email": "info@kirchenmusikhochschule.de"
+    },
+    "sources": {
+      "address": "https://www.kirchenmusikhochschule.de/studieren/",
+      "contact.email": "https://www.kirchenmusikhochschule.de/studieren/",
+      "fees": "https://www.kirchenmusikhochschule.de/studieren/",
+      "applicationRoute": "https://www.kirchenmusikhochschule.de/studieren-aufnahmepruefung/"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-weimar": {
     "id": "hochschule-fur-musik-weimar",
@@ -1977,7 +4166,50 @@
       "hochschule-fur-musik-weimar--liedgestaltung-fur-pianisten--master-of-music",
       "hochschule-fur-musik-weimar--kammermusik--master-of-music",
       "hochschule-fur-musik-weimar--opernkorrepetition--master-of-music"
-    ]
+    ],
+    "website": "http://www.hfm-weimar.de",
+    "description": "The Franz Liszt University of Music Weimar is a music university with doctoral and habilitation rights in musicology. Its programs range from early music, jazz and composition to conducting, music theory, cultural management and teacher training.",
+    "address": {
+      "street": "Platz der Demokratie 2/3",
+      "postal_code": "99423",
+      "city": "Weimar"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Die Bewerbungsunterlagen werden im Bewerbungsportal hochgeladen.",
+      "url": "https://his-1.hfm-weimar.de/qisserver/rds?state=user&type=0",
+      "scope": "all applicants"
+    },
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 341.3,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "Der Semesterbeitrag für das Wintersemester 2026/2027 beträgt an der HfM Weimar insgesamt 341,30 Euro",
+        "cycle": "2026/2027"
+      },
+      {
+        "kind": "aptitude-test",
+        "euros": 50,
+        "period": "once",
+        "appliesTo": "applicants for programs with aptitude test",
+        "notes": "Für Eignungsprüfungen wird eine Gebühr in Höhe von 50 Euro erhoben.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.hfm-weimar.de/studieren/studienorganisation/gebuehren-und-beitraege",
+      "applicationRoute": "https://www.hfm-weimar.de/bewerben/wie-bewerbe-ich-mich"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen": {
     "id": "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen",
@@ -1997,7 +4229,36 @@
       "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen--evangelische-kirchenmusik-popular--bachelor-of-music",
       "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen--evangelische-kirchenmusik-klassisch--master-of-music",
       "hochschule-fur-kirchenmusik-der-evangelischen-kirche-von-westfalen--evangelische-kirchenmusik-popular--master-of-music"
-    ]
+    ],
+    "website": "https://www.hochschule-kirchenmusik.de",
+    "description": "The University of Church Music of the Protestant Church of Westphalia in Witten is the only Protestant church music university in north-western Germany and the second largest of six in the country. It offers bachelor's and master's degrees in classical and popular (rock, pop, jazz, gospel) church music.",
+    "address": {
+      "street": "Ruhrstraße 48",
+      "postal_code": "58452",
+      "city": "Witten"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "aptitude-test",
+        "euros": 35,
+        "period": "once",
+        "appliesTo": "all applicants to audition",
+        "notes": "Application fee for participation in aptitude test",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.hochschule-kirchenmusik.de/studium/zulassung-bewerbung"
+    },
+    "researched": "2026-10-10"
   },
   "hochschule-fur-musik-wurzburg": {
     "id": "hochschule-fur-musik-wurzburg",
@@ -2029,7 +4290,37 @@
       "hochschule-fur-musik-wurzburg--kunstlerisch-padagogische-masterstudiengange--master-of-music",
       "hochschule-fur-musik-wurzburg--lehramt-musik--lehramt",
       "hochschule-fur-musik-wurzburg--meisterklasse--meisterklassendiplom"
-    ]
+    ],
+    "website": "http://www.hfm-wuerzburg.de",
+    "description": "The Würzburg University of Music is a state music university in Bavaria. It grew out of a Collegium musicum academicum founded in 1797, became a university in 1973 and today uses four buildings around the Residenz.",
+    "address": {
+      "street": "Hofstallstraße 6-8",
+      "postal_code": "97070",
+      "city": "Würzburg"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 0,
+        "period": "semester",
+        "appliesTo": "all regular students",
+        "notes": "Keine Studiengebühren für reguläre Studierende.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://hfm-wuerzburg.de/international/faq-auslaendische-studierende",
+      "address": "https://hfm-wuerzburg.de/standorte/hofstallstrasse"
+    },
+    "researched": "2026-10-10"
   },
   "filmakademie-baden-wurttemberg": {
     "id": "filmakademie-baden-wurttemberg",
@@ -2069,7 +4360,42 @@
       "filmakademie-baden-wurttemberg--filmschauspielworkshop--workshop",
       "filmakademie-baden-wurttemberg--international-screen-acting-workshop--workshop",
       "filmakademie-baden-wurttemberg--international-class--workshop"
-    ]
+    ],
+    "website": "https://www.filmakademie.de",
+    "description": "Filmakademie Baden-Württemberg in Ludwigsburg is one of Europe's leading film schools. Around 500 students train in project-based Diplom programs covering directing, screenwriting, cinematography, production, animation, VFX and interactive media; its Animationsinstitut is internationally renowned (multiple Student Academy Awards). Studies start with a four-semester Grundstudium followed by a four-semester Projektstudium.",
+    "address": {
+      "street": "Akademiehof 10",
+      "postal_code": "71638",
+      "city": "Ludwigsburg"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "tuition",
+        "euros": 650,
+        "period": "semester",
+        "appliesTo": "Zweitstudium (applicants with a completed German first degree)",
+        "cycle": null
+      },
+      {
+        "kind": "non-eu-tuition",
+        "euros": 1500,
+        "period": "semester",
+        "appliesTo": "Nicht-EU-Bürger",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.filmakademie.de/de/studium/bewerbung"
+    },
+    "researched": null
   },
   "fachhochschule-dortmund": {
     "id": "fachhochschule-dortmund",
@@ -2092,7 +4418,36 @@
       "fachhochschule-dortmund--film-hybrid-non-fiction--master-of-arts",
       "fachhochschule-dortmund--objekt-und-raumdesign--bachelor-of-arts",
       "fachhochschule-dortmund--editorial-design--master-of-arts"
-    ]
+    ],
+    "website": "https://www.fh-dortmund.de/",
+    "description": "Fachhochschule Dortmund (University of Applied Sciences and Arts) is a public university of applied sciences founded in 1971. Its design faculty offers project-based programs in film, sound, photography, visual communication, and object and spatial design; together with its consecutive film master it holds film school status in the international CILECT association.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 346.8,
+        "period": "semester",
+        "appliesTo": "all students",
+        "notes": "Wintersemester 2026/27 semester contribution includes Deutschland-Semesterticket (226.80 €), AStA contribution (23.00 €), and Studierendenwerk contribution (97.00 €).",
+        "cycle": "Wintersemester 2026/2027"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "address": "Sonnenstraße 96–100, 44139 Dortmund",
+      "phone": "+49 231 9112-0",
+      "email": "info@fh-dortmund.de"
+    },
+    "sources": {
+      "fees": "https://www1.fh-dortmund.de/studieren/vorbereiten/semesterbeitrag.php?loc=de"
+    },
+    "researched": "2026-10-10"
   },
   "leuphana-universitat-luneburg": {
     "id": "leuphana-universitat-luneburg",
@@ -2109,7 +4464,21 @@
     },
     "program_ids": [
       "leuphana-universitat-luneburg--cultural-studies-media-and-digital-cultures--master-of-arts"
-    ]
+    ],
+    "website": "https://www.leuphana.de/",
+    "description": "Leuphana University of Lüneburg is a public university in Lower Saxony known for its humanities and social sciences profile and its college/graduate-school model. Its cultural studies faculty has a strong focus on media theory, digital cultures, and the arts.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "bergische-universitat-wuppertal": {
     "id": "bergische-universitat-wuppertal",
@@ -2127,7 +4496,31 @@
     "program_ids": [
       "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-bachelor--bachelor-of-arts",
       "bergische-universitat-wuppertal--mediendesign-und-designtechnik-kombi-master--master-of-education"
-    ]
+    ],
+    "website": "https://www.uni-wuppertal.de/",
+    "description": "The University of Wuppertal (Bergische Universität Wuppertal) is a public university in North Rhine-Westphalia with a strong design faculty and combined teacher-training programmes linking design disciplines with vocational education.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 358.05,
+        "period": "semester",
+        "appliesTo": "Haupthörer*innen",
+        "cycle": "WiSe 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://studierendensekretariat.uni-wuppertal.de/de/beitragszahlung/haupthoerer/"
+    },
+    "researched": null
   },
   "fachhochschule-munster": {
     "id": "fachhochschule-munster",
@@ -2144,7 +4537,21 @@
     },
     "program_ids": [
       "fachhochschule-munster--mediendesign-und-designtechnik-lehramt-an-berufskollegs--bachelor-of-arts"
-    ]
+    ],
+    "website": "https://www.fh-muenster.de/",
+    "description": "FH Münster is one of Germany's largest universities of applied sciences. Its Münster School of Design (MSD) on the Leonardo-Campus offers design programmes including cooperative teacher-training tracks with the University of Münster.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "goethe-universitat-frankfurt-am-main": {
     "id": "goethe-universitat-frankfurt-am-main",
@@ -2161,7 +4568,21 @@
     },
     "program_ids": [
       "goethe-universitat-frankfurt-am-main--theater-film-und-medienwissenschaft--master-of-arts"
-    ]
+    ],
+    "website": "https://www.uni-frankfurt.de/",
+    "description": "Goethe University Frankfurt is one of Germany's largest public research universities. Its Institute for Theater, Film and Media Studies (TFM) is a long-established center for performance and media scholarship.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "hochschule-offenburg": {
     "id": "hochschule-offenburg",
@@ -2178,7 +4599,25 @@
     },
     "program_ids": [
       "hochschule-offenburg--communication-and-media-engineering--master-of-science"
-    ]
+    ],
+    "website": "https://www.hs-offenburg.de/",
+    "description": "Offenburg University of Applied Sciences is a public university of applied sciences in Baden-Württemberg known for its English-taught international graduate programmes in engineering and media.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": {
+      "per_semester": "€1,500",
+      "source": "https://mwk.baden-wuerttemberg.de/de/hochschulen-studium/studieren-in-bw/studienfinanzierung/gebuehren-fuer-internationale-studierende-und-zweitstudium",
+      "checked": "2026-10-10"
+    },
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "carl-von-ossietzky-universitat-oldenburg": {
     "id": "carl-von-ossietzky-universitat-oldenburg",
@@ -2195,7 +4634,21 @@
     },
     "program_ids": [
       "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts"
-    ]
+    ],
+    "website": "https://uol.de/",
+    "description": "The Carl von Ossietzky University of Oldenburg is a public university in Lower Saxony. Its Institute of Art and Visual Culture combines art history, visual culture studies, and artistic media practice, with strong teacher-training tracks.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "universitat-bremen": {
     "id": "universitat-bremen",
@@ -2214,7 +4667,32 @@
       "universitat-bremen--digital-media-and-society--master-of-arts",
       "universitat-bremen--digitale-medien--master-of-arts",
       "universitat-bremen--digitale-medien--bachelor-of-arts"
-    ]
+    ],
+    "website": "https://www.uni-bremen.de/",
+    "description": "The University of Bremen is a public research university and a center for media and communication research in northern Germany, home to the ZeMKI (Centre for Media, Communication and Information Research).",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 425,
+        "period": "semester",
+        "appliesTo": "students",
+        "cycle": null,
+        "approximate": true
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.uni-bremen.de/studium/orientieren-bewerben/studienangebot/dbs/study/digitale-medien-bachelor"
+    },
+    "researched": null
   },
   "universitat-hamburg": {
     "id": "universitat-hamburg",
@@ -2231,7 +4709,31 @@
     },
     "program_ids": [
       "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts"
-    ]
+    ],
+    "website": "https://www.uni-hamburg.de/",
+    "description": "The University of Hamburg is one of Germany's largest universities, with a broad humanities faculty offering interdisciplinary programmes alongside media and cultural studies.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "semester-contribution",
+        "euros": 402,
+        "period": "semester",
+        "appliesTo": "enrolment or re-enrolment (all students)",
+        "cycle": "WiSe 2026/27"
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://www.uni-hamburg.de/en/campuscenter/studienorganisation/studienverlauf/beitraege-gebuehren/semesterbeitrag.html"
+    },
+    "researched": null
   },
   "europa-universitat-flensburg": {
     "id": "europa-universitat-flensburg",
@@ -2248,7 +4750,21 @@
     },
     "program_ids": [
       "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts"
-    ]
+    ],
+    "website": "https://www.uni-flensburg.de/",
+    "description": "Europa-Universität Flensburg is a public university in Germany's far north with a European and intercultural profile, focusing on education, culture, language, and media studies.",
+    "address": null,
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {},
+    "researched": null
   },
   "heinrich-heine-universitat-dusseldorf": {
     "id": "heinrich-heine-universitat-dusseldorf",
@@ -2265,7 +4781,32 @@
     },
     "program_ids": [
       "heinrich-heine-universitat-dusseldorf--kunstvermittlung-und-kulturmanagement--master-of-arts"
-    ]
+    ],
+    "website": "https://www.hhu.de/",
+    "description": "Heinrich Heine University Düsseldorf is a public university whose art history department runs a well-known practice-oriented master in art mediation and cultural management, benefiting from Düsseldorf's dense museum and gallery landscape.",
+    "address": null,
+    "application_method": "uni-assist",
+    "application_method_source": {
+      "url": "https://www.uni-assist.de/tools/uni-assist-hochschulen/",
+      "checked": "2026-10-09"
+    },
+    "application_route": null,
+    "fees": [
+      {
+        "kind": "non-eu-tuition",
+        "euros": 0,
+        "period": "semester",
+        "appliesTo": "all students including international students",
+        "notes": "No tuition fees charged at Heinrich-Heine-Universität Düsseldorf.",
+        "cycle": null
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": null,
+    "sources": {
+      "fees": "https://hhu.de/internationales/leben-in-duesseldorf"
+    },
+    "researched": "2026-10-10"
   },
   "deutsche-film-und-fernsehakademie-berlin": {
     "id": "deutsche-film-und-fernsehakademie-berlin",
@@ -2286,7 +4827,55 @@
       "deutsche-film-und-fernsehakademie-berlin--cinematography--dffb-diploma-non-state-qualification",
       "deutsche-film-und-fernsehakademie-berlin--producing--dffb-diploma-non-state-qualification",
       "deutsche-film-und-fernsehakademie-berlin--editing-sound--dffb-diploma-non-state-qualification"
-    ]
+    ],
+    "website": "https://www.dffb.de/",
+    "description": "Berlin’s film academy offers full-time study routes in directing, screenwriting, cinematography, producing, and editing & sound. Graduates receive an institutional DFFB diploma, not a state-recognised university Bachelor, Master or Diplom.",
+    "address": {
+      "street": "Friedrich-Krause-Ufer 19",
+      "postal_code": "13353",
+      "city": "Berlin"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.dffb.de/en/studies/application/",
+      "checked": "2026-10-11"
+    },
+    "application_route": {
+      "method": "direct",
+      "notes": "Apply through DFFB’s specialisation-specific online process. For 2027/28, portal registration is mandatory by 24 November 2026 at 18:00; completed assignments must follow by 8 December 2026 at 18:00. No academic degree or related practical experience is required to apply.",
+      "url": "https://www.dffb.de/en/studies/application/",
+      "scope": "all applicants, academic year 2027/28"
+    },
+    "fees": [
+      {
+        "kind": "enrolment-equipment",
+        "euros": 225,
+        "period": "year",
+        "appliesTo": "all enrolled students",
+        "notes": "Enrolment/re-registration and equipment insurance; current published amount, not tuition."
+      },
+      {
+        "kind": "semester-ticket",
+        "euros": null,
+        "period": "semester",
+        "appliesTo": "DFFB students — amount and charge period need confirmation",
+        "notes": "The English admissions page quotes €226.80/semester for the first six academic years; the German FAQ quotes €208.80/semester for the first four. These official figures conflict. Confirm the applicable amount and charging period with DFFB; neither is treated as a verified universal fee here."
+      }
+    ],
+    "non_eu_tuition": null,
+    "contact": {
+      "phone": "+49 30 25759-0",
+      "email": "info@dffb.de"
+    },
+    "sources": {
+      "description": "https://www.dffb.de/en/studies/",
+      "stats.founded": "https://www.dffb.de/en/academy/",
+      "address": "https://www.dffb.de/en/imprint/",
+      "contact": "https://www.dffb.de/en/imprint/",
+      "applicationRoute": "https://www.dffb.de/en/studies/application/",
+      "fees": "https://www.dffb.de/en/studies/application/"
+    },
+    "researched": "2026-10-11"
   },
   "ifs-internationale-filmschule-koln": {
     "id": "ifs-internationale-filmschule-koln",
@@ -2307,6 +4896,38 @@
       "ifs-internationale-filmschule-koln--digital-narratives--master-of-arts",
       "ifs-internationale-filmschule-koln--3d-animation-for-film-games--master-of-arts",
       "ifs-internationale-filmschule-koln--entertainment-producing--master-of-arts"
-    ]
+    ],
+    "website": "https://www.filmschule.de/en",
+    "description": "Cologne film school offering a Film B.A. with seven specialisation areas and four M.A. programmes. Degree students study in cooperation with TH Köln and enrol there. Tuition is programme-specific, with citizenship-dependent master’s fees. Its professional-training catalogue is separate from these degrees.",
+    "address": {
+      "street": "Schanzenstraße 28",
+      "postal_code": "51063",
+      "city": "Köln"
+    },
+    "application_method": "direct",
+    "application_method_source": {
+      "url": "https://www.filmschule.de/en/studies/ba-film-directing",
+      "checked": "2026-10-11"
+    },
+    "application_route": {
+      "method": "programme-specific",
+      "notes": "Use each programme’s own application process. Film B.A., Serial Storytelling, Digital Narratives and Entertainment Producing publish ifs selection procedures. 3D Animation for Film & Games uses the Cologne Game Lab portal and additionally requires uni-assist validation for international applicants with non-German degrees. Degree students enrol at TH Köln; a direct submission is not a universal fee or credential-validation waiver.",
+      "url": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application",
+      "scope": "programme and qualification-specific"
+    },
+    "fees": [],
+    "non_eu_tuition": null,
+    "contact": {
+      "phone": "+49 221 920188-0",
+      "email": "info@filmschule.de"
+    },
+    "sources": {
+      "description": "https://www.filmschule.de/en/studies/",
+      "stats.founded": "https://www.filmschule.de/de/filmschule",
+      "address": "https://www.filmschule.de/en/imprint",
+      "contact": "https://www.filmschule.de/en/imprint",
+      "applicationRoute": "https://www.filmschule.de/en/studies/ma-3d-animation-film-games/application"
+    },
+    "researched": "2026-10-11"
   }
 }

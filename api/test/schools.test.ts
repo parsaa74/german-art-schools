@@ -73,3 +73,23 @@ describe('GET /v1/schools/{id}', () => {
     });
   });
 });
+
+describe('school applicant fields', () => {
+  const KARLSRUHE = 'staatliche-hochschule-fur-gestaltung-karlsruhe';
+
+  it('exposes non-EU tuition with its source instead of leaving it to program nulls', async () => {
+    const res = await app.request(`/v1/schools/${KARLSRUHE}`);
+    expect(res.status).toBe(200);
+    const s = await res.json() as any;
+    expect(s.non_eu_tuition).toMatchObject({ per_semester: '€1,500', source: expect.stringMatching(/^https:/), checked: expect.any(String) });
+    expect(s.application_method).toBe('direct');
+    expect(s.application_method_source.url).toMatch(/^https:/);
+    expect(s.website).toMatch(/^https?:/);
+  });
+
+  it('keeps every school schema-valid, with sourced fields null rather than guessed', async () => {
+    const { SchoolSchema } = await import('../src/schemas');
+    for (const s of Object.values(schoolsJson)) expect(SchoolSchema.safeParse(s).success, (s as any).id).toBe(true);
+    expect(Object.values(schoolsJson).filter((s: any) => s.non_eu_tuition).length).toBe(15);
+  });
+});

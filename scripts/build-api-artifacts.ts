@@ -1,11 +1,14 @@
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { SUBJECT_GROUPS, subjectGroupOf } from '../src/lib/taxonomy.ts';
 
 const SCHOOLS_PATH = resolve(process.cwd(), 'src/data/enhanced_german_art_schools.json');
 // cross-school similarity (scripts/build-relations.ts), not raw cosine — see that script's header
 const RELATIONS_PATH = resolve(process.cwd(), 'src/data/relations.json');
 const EMB_PATH = resolve(process.cwd(), 'data/program_embeddings.json');
+// /v1/search vectors: bge-m3 on Workers AI, built locally by scratch/build-search-embeddings.ts. The graph stays on EMB_PATH.
+const SEARCH_EMB_PATH = resolve(process.cwd(), 'data/search_embeddings.json');
 const OUT_DIR = resolve(process.cwd(), 'api/data');
 
 const SCALE = 127;
@@ -50,8 +53,13 @@ interface RawProgram {
   sources?: Record<string, string>;
   researched?: string;
   status?: { status: string; notes?: string };
+  admission?: string;
+  admissionSource?: string;
+  otherDeadlines?: RawOtherDeadline[];
   program_id?: string;
   details?: {
+    languageRequirements?: string | null;
+    languageNotes?: string[] | null;
     programUrl?: string | null;
     applicationUrl?: string | null;
     tuitionEuroPerSemester?: number | null;
@@ -62,7 +70,30 @@ interface RawProgram {
   } | null;
 }
 
+// "MM-DD" recurs every year; "YYYY-MM-DD" is a date published for one round.
+interface RawOtherDeadline {
+  kind: string;
+  semester: string | null;
+  start: string | null;
+  end: string | null;
+  recurring: boolean;
+  cycle: string | null;
+  scope: string | null;
+  source?: string;
+}
+
 interface RawSchool {
+  website?: string;
+  description?: string;
+  address?: { street: string; postalCode: string; city: string };
+  applicationMethod?: 'direct' | 'uni-assist';
+  applicationMethodSource?: { url: string; checked: string };
+  applicationRoute?: ApplicationRoute;
+  fees?: ProgramFee[];
+  nonEuTuition?: { perSemester: string | null; source: string; checked: string };
+  contact?: Record<string, string>;
+  sources?: Record<string, string>;
+  researched?: string;
   id?: string;
   coordinates?: { lat: number; lng: number };
   stats?: {
@@ -139,6 +170,22 @@ interface OutProgram {
   extracted_at: string | null;
   deadlines: Deadline[];
   deadlines_raw: Record<string, RawDeadlineWindow | string | null> | null;
+  subjects: string[];
+  admission: string | null;
+  admission_source: string | null;
+  other_deadlines: OtherDeadline[];
+  language_requirements: string | null;
+  language_notes: string[];
+}
+
+interface OtherDeadline {
+  kind: string;
+  semester: string | null;
+  start: MonthDay | null;
+  end: MonthDay | null;
+  scope: string | null;
+  cycle: string | null;
+  source: string | null;
 }
 
 interface OutSchool {
@@ -152,6 +199,30 @@ interface OutSchool {
     founded: number | null;
   };
   program_ids: string[];
+  website: string | null;
+  description: string | null;
+  address: { street: string; postal_code: string; city: string } | null;
+  application_method: 'direct' | 'uni-assist' | null;
+  application_method_source: { url: string; checked: string } | null;
+  application_route: ApplicationRoute | null;
+  fees: ProgramFee[];
+  non_eu_tuition: { per_semester: string | null; source: string; checked: string } | null;
+  contact: Record<string, string> | null;
+  sources: Record<string, string>;
+  researched: string | null;
+}
+
+// Same rule as the website (src/lib/glass/filter.ts): these stay fetchable by id with their warning,
+// but are not a school's programs and never appear in listings.
+const UNLISTED = new Set(['not-matched', 'discontinued']);
+
+const subjectId = (label: string) => label.toLowerCase().replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '');
+for (const g of [...SUBJECT_GROUPS, 'Other']) if (!/^[a-z-]+$/.test(subjectId(g))) throw new Error(`bad subject id for ${g}`);
+
+function parseIsoMonthDay(s: string | null): MonthDay | null {
+  const m = s?.match(/^(?:(\d{4})-)?(\d{2})-(\d{2})$/);
+  if (!m) return null;
+  return { month: Number(m[2]), day: Number(m[3]), ...(m[1] ? { year: Number(m[1]) } : {}) };
 }
 
 // ---------- deadline parsing ----------
@@ -266,6 +337,7 @@ function main() {
   const relations = JSON.parse(readFileSync(RELATIONS_PATH, 'utf8')) as RelationsFile;
   console.log('loading embeddings (29MB)...');
   const embFile = JSON.parse(readFileSync(EMB_PATH, 'utf8')) as EmbeddingsFile;
+  const searchFile = JSON.parse(readFileSync(SEARCH_EMB_PATH, 'utf8')) as EmbeddingsFile;
 
   // ----- schools.json + programs.json -----
   const schools: Record<string, OutSchool> = {};
@@ -321,6 +393,14 @@ function main() {
         }
       }
 
+      const other = (prog.otherDeadlines ?? []).map((d) => {
+        const out = { kind: d.kind, semester: d.semester ?? null, start: parseIsoMonthDay(d.start), end: parseIsoMonthDay(d.end), scope: d.scope ?? null, cycle: d.cycle ?? null, source: d.source ?? null };
+        if ((d.start && !out.start) || (d.end && !out.end)) fail(`unparseable other deadline in ${prog.program_id}: ${JSON.stringify(d)}`);
+        if (!d.recurring && !(out.start?.year || out.end?.year)) fail(`one-round deadline without a year in ${prog.program_id}`);
+        return out;
+      });
+      // Primary subject from the name first, then subjects of officially sourced study focuses (as the website filters).
+      const subjects = [...new Set([prog.name ?? '', ...(prog.teachingAreas ?? []).filter((a) => a.source).map((a) => a.name)].map((n) => subjectId(subjectGroupOf(n))))];
       const details = prog.details ?? null;
       programs[prog.program_id] = {
         program_id: prog.program_id,
@@ -329,7 +409,7 @@ function main() {
         name: prog.name ?? '',
         degree: prog.degree ?? '',
         degree_level: deriveDegreeLevel(prog.degree ?? ''),
-        language: prog.language ?? null,
+        language: prog.language || null, // "" and missing both mean unknown
         duration: prog.duration ?? null,
         description: prog.description ?? null,
         specializations: prog.specializations ?? [],
@@ -358,8 +438,14 @@ function main() {
         extracted_at: details?.extractedAt ?? null,
         deadlines,
         deadlines_raw: rawDeadlines,
+        subjects,
+        admission: prog.admission ?? null,
+        admission_source: prog.admissionSource ?? null,
+        other_deadlines: other,
+        language_requirements: details?.languageRequirements ?? null,
+        language_notes: details?.languageNotes ?? [],
       };
-      programIds.push(prog.program_id);
+      if (!UNLISTED.has(prog.status?.status ?? '')) programIds.push(prog.program_id);
     }
 
     // founding year only: student counts and rankings had no verifiable source
@@ -374,6 +460,17 @@ function main() {
         founded: school.stats?.founded ?? null,
       },
       program_ids: programIds,
+      website: school.website ?? null,
+      description: school.description ?? null,
+      address: school.address ? { street: school.address.street, postal_code: school.address.postalCode, city: school.address.city } : null,
+      application_method: school.applicationMethod ?? null,
+      application_method_source: school.applicationMethodSource ?? null,
+      application_route: school.applicationRoute ?? null,
+      fees: school.fees ?? [],
+      non_eu_tuition: school.nonEuTuition ? { per_semester: school.nonEuTuition.perSemester, source: school.nonEuTuition.source, checked: school.nonEuTuition.checked } : null,
+      contact: school.contact ?? null,
+      sources: school.sources ?? {},
+      researched: school.researched ?? null,
     };
   }
 
@@ -406,18 +503,18 @@ function main() {
   }
 
   // ----- vectors.bin + vectors.meta.json -----
-  const vectorIds = Object.keys(embFile.embeddings)
+  const vectorIds = Object.keys(searchFile.embeddings)
     .filter(id => {
       if (programs[id]) return true;
       console.warn(`warning: dropping embedding for "${id}" (no matching program)`);
       return false;
     })
     .sort();
-  const dim = embFile.dim;
+  const dim = searchFile.dim;
   const bin = new Int8Array(vectorIds.length * dim);
   const quantized = new Map<string, Int8Array>();
   for (let row = 0; row < vectorIds.length; row++) {
-    const vec = embFile.embeddings[vectorIds[row]];
+    const vec = searchFile.embeddings[vectorIds[row]];
     if (vec.length !== dim) fail(`embedding ${vectorIds[row]} has dim ${vec.length}, expected ${dim}`);
     let norm = 0;
     for (const v of vec) norm += v * v;
@@ -428,7 +525,7 @@ function main() {
     }
     quantized.set(vectorIds[row], out);
   }
-  const programsWithoutVectors = Object.keys(programs).filter(id => !embFile.embeddings[id]);
+  const programsWithoutVectors = Object.keys(programs).filter(id => !searchFile.embeddings[id]);
   if (programsWithoutVectors.length > 0) {
     console.warn(`warning: ${programsWithoutVectors.length} programs have no embedding (kept in programs.json, absent from vectors)`);
   }
@@ -448,7 +545,7 @@ function main() {
     const b = quantized.get(dst);
     if (!a || !b) continue;
     const cos = int8Cosine(a, b);
-    const exact = floatCosine(embFile.embeddings[src], embFile.embeddings[dst]);
+    const exact = floatCosine(searchFile.embeddings[src], searchFile.embeddings[dst]);
     const diff = Math.abs(cos - exact);
     console.log(`  ${src} <-> ${dst}: float=${exact.toFixed(4)} int8=${cos.toFixed(4)} diff=${diff.toFixed(4)}`);
     if (diff > 0.02) fail(`int8 cosine deviates from float cosine by ${diff.toFixed(4)} (> 0.02)`);
@@ -482,14 +579,11 @@ function main() {
   writeJson(resolve(OUT_DIR, 'deadline-report.json'), deadlineReport);
   writeFileSync(resolve(OUT_DIR, 'vectors.bin'), Buffer.from(bin.buffer, bin.byteOffset, bin.byteLength));
   writeJson(resolve(OUT_DIR, 'vectors.meta.json'), {
-    model: embFile.model,
+    model: searchFile.model,
     dim,
     count: vectorIds.length,
     scale: SCALE,
     ids: vectorIds,
-    // Only exact joint-programme counterparts may reuse an existing vector.
-    // New unrelated programmes stay unembedded rather than borrowing misleading vectors.
-    reused_embeddings: embFile.reusedEmbeddings ?? {},
   });
 
   const edgeCount = seenPairs.size;
@@ -497,6 +591,7 @@ function main() {
     .update(schoolsJson)
     .update(programsJson)
     .update(graphJson)
+    .update(bin) // search results depend on the vectors, and ETags derive from this hash
     .digest('hex')
     .slice(0, 12);
   writeJson(resolve(OUT_DIR, 'meta.json'), {
@@ -505,11 +600,13 @@ function main() {
     counts: {
       schools: schoolCount,
       programs: programCount,
+      listed_programs: Object.values(schools).reduce((n, s) => n + s.program_ids.length, 0),
       edges: edgeCount,
       vectors: vectorIds.length,
     },
     data_hash: dataHash,
-    embedding_model: embFile.model,
+    embedding_model: searchFile.model, // /v1/search vectors
+    similarity_embedding_model: embFile.model, // the similarity graph
     similarity_method: relations.method,
     license: 'TBD',
   });

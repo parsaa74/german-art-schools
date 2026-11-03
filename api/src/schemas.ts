@@ -6,6 +6,7 @@
  * in a response schema; only add optional/new fields.
  */
 import { z } from '@hono/zod-openapi';
+import { SUBJECTS } from './types';
 
 // ---------- error ----------
 
@@ -32,6 +33,14 @@ export const MetaSchema = z
   })
   .openapi('Meta');
 
+// ---------- shared ----------
+
+const FeeSchema = z.object({ kind: z.string(), euros: z.number().nullable(), period: z.string(), appliesTo: z.string(), notes: z.string().optional(), cycle: z.string().nullable().optional(), approximate: z.boolean().optional() });
+const RouteSchema = z.object({ method: z.string(), notes: z.string(), url: z.string().optional(), scope: z.string().optional() });
+const MonthDaySchema = z.object({ month: z.number(), day: z.number(), year: z.number().optional() });
+
+export const SubjectSchema = z.enum(SUBJECTS).openapi({ description: "Slug of the website's subject group.", example: 'film-television' });
+
 // ---------- schools ----------
 
 export const SchoolSchema = z
@@ -45,7 +54,18 @@ export const SchoolSchema = z
     stats: z.object({
       founded: z.number().nullable(),
     }),
-    program_ids: z.array(z.string()),
+    program_ids: z.array(z.string()).openapi({ description: 'Listed programs only; warned (not-matched / discontinued) records stay fetchable by id.' }),
+    website: z.string().nullable(),
+    description: z.string().nullable(),
+    address: z.object({ street: z.string(), postal_code: z.string(), city: z.string() }).nullable(),
+    application_method: z.enum(['direct', 'uni-assist']).nullable().openapi({ description: "Institution-wide handling route for foreign qualifications; a program's application_methods overrides it." }),
+    application_method_source: z.object({ url: z.string(), checked: z.string() }).nullable(),
+    application_route: RouteSchema.nullable(),
+    fees: z.array(FeeSchema),
+    non_eu_tuition: z.object({ per_semester: z.string().nullable(), source: z.string(), checked: z.string() }).nullable().openapi({ description: 'Published non-EU tuition text (may be a range). null means none recorded, not that study is free.' }),
+    contact: z.record(z.string(), z.string()).nullable(),
+    sources: z.record(z.string(), z.string()),
+    researched: z.string().nullable(),
   })
   .openapi('School');
 
@@ -69,8 +89,8 @@ export const DeadlineWindowSchema = z
   .object({
     semester: z.string(),
     // year is set only for dates published for a single round (never annual)
-    start: z.object({ month: z.number(), day: z.number(), year: z.number().optional() }).nullable(),
-    end: z.object({ month: z.number(), day: z.number(), year: z.number().optional() }).nullable(),
+    start: MonthDaySchema.nullable(),
+    end: MonthDaySchema.nullable(),
   })
   .openapi('DeadlineWindow');
 
@@ -94,8 +114,8 @@ export const ProgramSchema = z
     joint_profile: z.string().nullable().optional(),
     intakes: z.array(z.string()).optional(),
     application_methods: z.array(z.enum(['direct', 'uni-assist'])).optional().openapi({ description: 'Sourced handling routes for applicants with non-German qualifications. Empty means unresearched. Check application_route.scope for exceptions; direct submission does not guarantee validation is free.' }),
-    application_route: z.object({ method: z.string(), notes: z.string(), url: z.string().optional(), scope: z.string().optional() }).nullable().optional(),
-    fees: z.array(z.object({ kind: z.string(), euros: z.number().nullable(), period: z.string(), appliesTo: z.string(), notes: z.string().optional(), cycle: z.string().nullable().optional(), approximate: z.boolean().optional() })).optional(),
+    application_route: RouteSchema.nullable().optional(),
+    fees: z.array(FeeSchema).optional(),
     requirements: z.array(z.object({ label: z.string(), text: z.string() })).optional(),
     sources: z.record(z.string(), z.string()).optional(),
     researched: z.string().nullable().optional().openapi({ description: 'Official-source retrieval date, not a guarantee of future validity.' }),
@@ -108,6 +128,12 @@ export const ProgramSchema = z
     extracted_at: z.string().nullable(),
     deadlines: z.array(DeadlineWindowSchema),
     deadlines_raw: z.unknown(),
+    subjects: z.array(SubjectSchema).openapi({ description: 'Primary subject first, then subjects of officially sourced study focuses.' }),
+    admission: z.string().nullable().openapi({ description: "Sourced admission route: 'aptitude', 'aptitude-and-restricted', 'restricted' or 'open'. null means unresearched; it is never derived." }),
+    admission_source: z.string().nullable(),
+    other_deadlines: z.array(z.object({ kind: z.string().openapi({ example: 'portfolio' }), semester: z.string().nullable(), start: MonthDaySchema.nullable(), end: MonthDaySchema.nullable(), scope: z.string().nullable(), cycle: z.string().nullable(), source: z.string().nullable() })).openapi({ description: 'Scoped dates beyond the general window (portfolio, aptitude-test registration, guest/transfer rounds). Not used by open_on.' }),
+    language_requirements: z.string().nullable(),
+    language_notes: z.array(z.string()),
   })
   .openapi('Program');
 
@@ -140,6 +166,7 @@ export const ProgramsQuerySchema = z.object({
     example: 'english',
   }),
   school: z.string().optional().openapi({ description: 'Exact school_id.' }),
+  subject: SubjectSchema.optional().openapi({ description: "Matches any of the program's subjects, so a Fine Arts degree with an official Film focus is found under film-television." }),
   portfolio_required: z
     .enum(['true', 'false'])
     .optional()

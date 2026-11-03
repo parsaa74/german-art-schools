@@ -74,9 +74,12 @@ describe('official catalogue follow-up', () => {
     expect(body.items.some((p: any) => p.school_id === 'hochschule-darmstadt' && p.name === 'User Experience Design')).toBe(true);
   });
 
-  it('documents the one exact vector reuse and leaves unrelated new programmes unembedded', () => {
-    expect(vectorsMeta.reused_embeddings[UDK_DC].sourceProgramId).toBe(TU_DC);
-    expect(vectorsMeta.ids).not.toContain(HDA_EXPANDED);
+  it('gives every program its own search vector, while graph alternatives stay limited to graph-embedded programs', () => {
+    // search vectors are per program (no borrowing, so the joint UdK record no longer reuses TU's)
+    for (const id of [UDK_DC, TU_DC, HDA_EXPANDED]) expect(vectorsMeta.ids).toContain(id);
+    expect(vectorsMeta.ids).toHaveLength(Object.keys(programsJson).length);
+    // Expanded Media was never embedded for the similarity graph, so it gets no invented alternatives
+    expect(similarPrograms(HDA_EXPANDED)!.similar).toEqual([]);
   });
 
   it('every exported program satisfies the additive response schema', () => {

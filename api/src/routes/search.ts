@@ -7,13 +7,15 @@
  *
  * Error mapping:
  * - missing/invalid query params  → 400 validation_error (router defaultHook)
- * - GEMINI_API_KEY not configured → 503 search_unavailable
- * - Gemini upstream failure       → 502 upstream_error
+ * - AI binding not configured     → 503 search_unavailable
+ * - Workers AI failure            → 200 with mode "keyword" (word-overlap fallback)
+ * - anything else                 → 502 upstream_error
  *
  * Caching note: search responses get `Cache-Control: public, max-age=300`
  * (set both here and via the /v1/search carve-out in the shared
  * src/middleware/cache.ts) — shorter than the 3600s on the static-data
- * endpoints because search involves a live query-embedding call.
+ * endpoints because search involves a live query-embedding call, and a
+ * keyword-fallback answer should not outlive a brief Workers AI outage.
  */
 import { createRoute, z } from '@hono/zod-openapi';
 import {
@@ -23,7 +25,7 @@ import {
 } from '../schemas';
 import { createRouter, errorBody } from '../router';
 import {
-  semanticSearch,
+  searchPrograms,
   SearchUnavailableError,
   type SearchEnv,
 } from '../services/search';
@@ -54,12 +56,13 @@ export const SearchQuerySchema = z.object({
 export const SearchResponseSchema = z
   .object({
     query: z.string(),
+    mode: z.enum(['semantic', 'keyword']).openapi({ description: 'keyword when the embedding model was unavailable and word overlap ranked the hits.' }),
     count: z.number(),
     hits: z.array(
       z.object({
         program: ProgramSummarySchema,
         score: z.number().openapi({
-          description: 'Approximate cosine similarity (int8 quantization deflates it ~0.01).',
+          description: 'semantic: approximate cosine similarity (int8 quantization deflates it ~0.01). keyword: fraction of query words found.',
         }),
       }),
     ),
@@ -73,7 +76,7 @@ router.openapi(
     method: 'get',
     path: '/',
     tags: ['search'],
-    summary: 'Semantic search over programs (Gemini query embedding + bundled vectors)',
+    summary: 'Semantic search over programs (Workers AI bge-m3 query embedding + bundled vectors)',
     request: { query: SearchQuerySchema },
     responses: {
       200: {
@@ -85,11 +88,11 @@ router.openapi(
         content: { 'application/json': { schema: ErrorSchema } },
       },
       502: {
-        description: 'Embedding provider (Gemini) failed',
+        description: 'Unexpected search failure',
         content: { 'application/json': { schema: ErrorSchema } },
       },
       503: {
-        description: 'Search unavailable (GEMINI_API_KEY not configured)',
+        description: 'Search unavailable (Workers AI binding not configured)',
         content: { 'application/json': { schema: ErrorSchema } },
       },
     },
@@ -97,13 +100,13 @@ router.openapi(
   async (c) => {
     const { q, limit, min_score, degree_level, language } = c.req.valid('query');
     try {
-      const hits = await semanticSearch(
+      const { mode, hits } = await searchPrograms(
         q,
         { limit, minScore: min_score, degreeLevel: degree_level, language },
         (c.env ?? {}) as SearchEnv,
       );
       c.header('Cache-Control', 'public, max-age=300');
-      return c.json({ query: q, count: hits.length, hits }, 200);
+      return c.json({ query: q, mode, count: hits.length, hits }, 200);
     } catch (err) {
       if (err instanceof SearchUnavailableError) {
         return c.json(errorBody('search_unavailable', err.message), 503);

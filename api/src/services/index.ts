@@ -8,6 +8,8 @@ export {
   listPrograms,
   getProgram,
   similarPrograms,
+  isListed,
+  programText,
   toProgramSummary,
   windowContains,
   type ProgramFilters,

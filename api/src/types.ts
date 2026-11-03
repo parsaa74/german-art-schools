@@ -28,7 +28,43 @@ export interface School {
   type: string;
   coordinates: Coordinates;
   stats: SchoolStats;
+  /** Listed programs only; warned (not-matched / discontinued) records stay fetchable by id. */
   program_ids: string[];
+  website: string | null;
+  description: string | null;
+  address: { street: string; postal_code: string; city: string } | null;
+  /** Institution-wide handling route for foreign qualifications; a program's application_methods overrides it. */
+  application_method: 'direct' | 'uni-assist' | null;
+  application_method_source: { url: string; checked: string } | null;
+  application_route: { method: string; notes: string; url?: string; scope?: string } | null;
+  fees: Fee[];
+  /** Published non-EU tuition text (may be a range); null means none recorded, not "free". */
+  non_eu_tuition: { per_semester: string | null; source: string; checked: string } | null;
+  contact: Record<string, string> | null;
+  sources: Record<string, string>;
+  researched: string | null;
+}
+
+export interface Fee { kind: string; euros: number | null; period: string; appliesTo: string; notes?: string; cycle?: string | null; approximate?: boolean }
+
+/** Slugs of the website's subject groups (src/lib/taxonomy.ts SUBJECT_GROUPS + other). */
+export const SUBJECTS = [
+  'fine-art', 'communication-graphic-design', 'interaction-digital-media', 'product-industrial-design',
+  'fashion-textile-jewellery', 'architecture-interior-stage-design', 'film-television', 'animation-games-vfx',
+  'photography', 'media-art-sound', 'theatre-acting-dance', 'music-performance', 'composition-conducting-theory',
+  'church-music', 'art-music-education', 'theory-curating-management', 'other',
+] as const;
+export type Subject = (typeof SUBJECTS)[number];
+
+/** A scoped date that is not the general application window: portfolio, aptitude-test registration, guest/transfer rounds. */
+export interface OtherDeadline {
+  kind: string;
+  semester: string | null;
+  start: DeadlineMonthDay | null;
+  end: DeadlineMonthDay | null;
+  scope: string | null;
+  cycle: string | null;
+  source: string | null;
 }
 
 export type DegreeLevel = 'bachelor' | 'master' | 'diploma' | 'phd' | 'other';
@@ -65,7 +101,7 @@ export interface Program {
   intakes?: string[];
   application_methods?: Array<'direct' | 'uni-assist'>; // sourced handling routes for foreign qualifications
   application_route?: { method: string; notes: string; url?: string; scope?: string } | null;
-  fees?: Array<{ kind: string; euros: number | null; period: string; appliesTo: string; notes?: string; cycle?: string | null; approximate?: boolean }>;
+  fees?: Fee[];
   requirements?: Array<{ label: string; text: string }>;
   sources?: Record<string, string>;
   researched?: string | null;
@@ -78,6 +114,14 @@ export interface Program {
   extracted_at: string | null;
   deadlines: DeadlineWindow[];
   deadlines_raw: unknown;
+  /** Primary subject first, then subjects of officially sourced study focuses. */
+  subjects: Subject[];
+  /** Sourced admission route ('aptitude', 'restricted', 'open', …); null means unresearched, never derived. */
+  admission: string | null;
+  admission_source: string | null;
+  other_deadlines: OtherDeadline[];
+  language_requirements: string | null;
+  language_notes: string[];
 }
 
 /** Compact program representation used in /similar responses. */

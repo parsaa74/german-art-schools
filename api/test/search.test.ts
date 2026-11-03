@@ -1,7 +1,7 @@
 /**
  * Semantic search — service + route tests.
  *
- * Gemini is NEVER called for real: global fetch is mocked. The correctness
+ * Workers AI is NEVER called for real: the AI binding is a stub. The correctness
  * anchor: feeding semanticSearch the EXACT stored embedding of a known
  * program (its int8 row dequantized back to floats) must rank that program
  * first with score ≈ 1.
@@ -10,8 +10,10 @@ import { afterEach, describe, expect, it, vi } from 'vitest';
 import app from '../src/index';
 import searchRouter from '../src/routes/search';
 import {
+  searchPrograms,
   semanticSearch,
   SearchUnavailableError,
+  type SearchEnv,
 } from '../src/services/search';
 import vectorsBin from '../data/vectors.bin';
 import vectorsMeta from '../data/vectors.meta.json';
@@ -24,9 +26,10 @@ const programs = programsJson as Record<
   { degree_level: string; language: string | null }
 >;
 
-const ENV = { GEMINI_API_KEY: 'test-key' };
+// Workers AI is NEVER called for real: tests install a stub AI binding on ENV.
+const ENV: SearchEnv = {};
 
-/** Dequantize a stored int8 row back to the floats Gemini "would" return. */
+/** Dequantize a stored int8 row back to the floats bge-m3 "would" return. */
 function dequantizedRow(programId: string): number[] {
   const i = ids.indexOf(programId);
   expect(i).toBeGreaterThanOrEqual(0);
@@ -34,25 +37,20 @@ function dequantizedRow(programId: string): number[] {
   return Array.from(row, (v) => v / vectorsMeta.scale);
 }
 
-function mockGemini(values: number[]) {
-  const fn = vi.fn(
-    async () =>
-      new Response(JSON.stringify({ embedding: { values } }), {
-        status: 200,
-        headers: { 'Content-Type': 'application/json' },
-      }),
-  );
-  vi.stubGlobal('fetch', fn);
+function mockModel(values: number[]) {
+  const fn = vi.fn(async (_model: string, _input: { text: string[] }) => ({ shape: [1, values.length], data: [values] }));
+  ENV.AI = { run: fn };
   return fn;
 }
 
-function mockGeminiFailure(status: number) {
-  const fn = vi.fn(async () => new Response('boom', { status }));
-  vi.stubGlobal('fetch', fn);
+function mockModelFailure(message: string) {
+  const fn = vi.fn(async () => { throw new Error(message); });
+  ENV.AI = { run: fn };
   return fn;
 }
 
 afterEach(() => {
+  delete ENV.AI;
   vi.unstubAllGlobals();
 });
 
@@ -67,7 +65,7 @@ const BACHELOR = ids.find((id) => programs[id]?.degree_level === 'bachelor')!;
 
 describe('semanticSearch (service)', () => {
   it('ranks the program whose exact stored embedding the query returns as the top hit', async () => {
-    mockGemini(dequantizedRow(MASTER_ENGLISH));
+    mockModel(dequantizedRow(MASTER_ENGLISH));
     const hits = await semanticSearch('human computer interaction', {}, ENV);
     expect(hits[0].program.program_id).toBe(MASTER_ENGLISH);
     expect(hits[0].score).toBeGreaterThanOrEqual(0.95);
@@ -81,21 +79,16 @@ describe('semanticSearch (service)', () => {
     }
   });
 
-  it('calls Gemini with the same model, taskType and dimensionality as the build script', async () => {
-    const fn = mockGemini(dequantizedRow(MASTER_ENGLISH));
+  it('embeds the query with the same model and dimensionality as the stored vectors', async () => {
+    const fn = mockModel(dequantizedRow(MASTER_ENGLISH));
     await semanticSearch('test query', {}, ENV);
-    expect(fn).toHaveBeenCalledTimes(1);
-    const [url, init] = fn.mock.calls[0] as unknown as [string, RequestInit];
-    expect(url).toContain('models/gemini-embedding-2-preview:embedContent');
-    expect((init.headers as Record<string, string>)['x-goog-api-key']).toBe('test-key');
-    const body = JSON.parse(init.body as string);
-    expect(body.taskType).toBe('SEMANTIC_SIMILARITY');
-    expect(body.outputDimensionality).toBe(3072);
-    expect(body.content.parts[0].text).toBe('test query');
+    expect(fn).toHaveBeenCalledExactlyOnceWith('@cf/baai/bge-m3', { text: ['test query'] });
+    expect(vectorsMeta.model).toBe('@cf/baai/bge-m3');
+    expect(DIM).toBe(1024);
   });
 
   it('degreeLevel filter constrains hits (and excludes the otherwise-top hit)', async () => {
-    mockGemini(dequantizedRow(MASTER_ENGLISH)); // a master program
+    mockModel(dequantizedRow(MASTER_ENGLISH)); // a master program
     const hits = await semanticSearch('x', { degreeLevel: 'bachelor', limit: 50 }, ENV);
     expect(hits.length).toBeGreaterThan(0);
     for (const h of hits) expect(h.program.degree_level).toBe('bachelor');
@@ -103,7 +96,7 @@ describe('semanticSearch (service)', () => {
   });
 
   it('language filter is a case-insensitive substring match', async () => {
-    mockGemini(dequantizedRow(MASTER_ENGLISH));
+    mockModel(dequantizedRow(MASTER_ENGLISH));
     const hits = await semanticSearch('x', { language: 'ENGLISH', limit: 50 }, ENV);
     expect(hits.length).toBeGreaterThan(0);
     for (const h of hits) {
@@ -114,13 +107,13 @@ describe('semanticSearch (service)', () => {
   });
 
   it('respects limit and caps it at 50', async () => {
-    mockGemini(dequantizedRow(BACHELOR));
+    mockModel(dequantizedRow(BACHELOR));
     expect(await semanticSearch('x', { limit: 3 }, ENV)).toHaveLength(3);
     expect(await semanticSearch('x', { limit: 999 }, ENV)).toHaveLength(50);
   });
 
   it('minScore drops low-similarity hits but keeps the exact match', async () => {
-    mockGemini(dequantizedRow(BACHELOR));
+    mockModel(dequantizedRow(BACHELOR));
     const all = await semanticSearch('x', { limit: 50 }, ENV);
     const filtered = await semanticSearch('x', { minScore: 0.95, limit: 50 }, ENV);
     expect(filtered.length).toBeGreaterThan(0);
@@ -129,26 +122,26 @@ describe('semanticSearch (service)', () => {
     expect(filtered.map((h) => h.program.program_id)).toContain(BACHELOR);
   });
 
-  it('throws SearchUnavailableError without GEMINI_API_KEY (and never calls fetch)', async () => {
-    const fn = mockGemini(dequantizedRow(BACHELOR));
+  it('throws SearchUnavailableError without the AI binding (and never calls the model)', async () => {
+    const fn = mockModel(dequantizedRow(BACHELOR));
     await expect(semanticSearch('x', {}, {})).rejects.toBeInstanceOf(SearchUnavailableError);
     expect(fn).not.toHaveBeenCalled();
   });
 
-  it('propagates a plain Error on Gemini HTTP failure', async () => {
-    mockGeminiFailure(500);
+  it('propagates a plain Error when Workers AI fails', async () => {
+    mockModelFailure('3036: daily free allocation exceeded');
     const err = await semanticSearch('x', {}, ENV).catch((e) => e);
     expect(err).toBeInstanceOf(Error);
     expect(err).not.toBeInstanceOf(SearchUnavailableError);
-    expect((err as Error).message).toContain('500');
+    expect((err as Error).message).toContain('3036');
   });
 
-  it('rejects an unexpected Gemini response shape', async () => {
-    mockGemini([0.1, 0.2]); // wrong dimensionality
+  it('rejects an unexpected model response shape', async () => {
+    mockModel([0.1, 0.2]); // wrong dimensionality
     await expect(semanticSearch('x', {}, ENV)).rejects.toThrow(/unexpected shape/);
   });
 
-  it('caches query embeddings: an identical (normalized) query does not re-hit Gemini', async () => {
+  it('caches query embeddings: an identical (normalized) query does not re-run the model', async () => {
     // vitest/node has no Workers `caches`; stub one backed by a Map so the
     // real cache wrapper code path runs end-to-end.
     const store = new Map<string, string>();
@@ -165,7 +158,7 @@ describe('semanticSearch (service)', () => {
         },
       },
     });
-    const fn = mockGemini(dequantizedRow(MASTER_ENGLISH));
+    const fn = mockModel(dequantizedRow(MASTER_ENGLISH));
     const first = await semanticSearch('Sound Art', {}, ENV);
     // different casing/whitespace must normalize to the same cache key
     const second = await semanticSearch('  sound   ART ', {}, ENV);
@@ -175,13 +168,52 @@ describe('semanticSearch (service)', () => {
   });
 });
 
+describe('searchPrograms (keyword fallback)', () => {
+  it('is semantic when the model answers', async () => {
+    mockModel(dequantizedRow(MASTER_ENGLISH));
+    const { mode, hits } = await searchPrograms('x', {}, ENV);
+    expect(mode).toBe('semantic');
+    expect(hits[0].program.program_id).toBe(MASTER_ENGLISH);
+  });
+
+  it('falls back to word overlap when Workers AI fails, keeping filters and listed programs only', async () => {
+    mockModelFailure('3036: daily free allocation exceeded');
+    const { mode, hits } = await searchPrograms('documentary film', { degreeLevel: 'master', limit: 50 }, ENV);
+    expect(mode).toBe('keyword');
+    expect(hits.length).toBeGreaterThan(0);
+    for (const h of hits) {
+      expect(h.program.degree_level).toBe('master');
+      expect(h.score).toBeGreaterThan(0);
+      expect(h.score).toBeLessThanOrEqual(1);
+      expect((programsJson as any)[h.program.program_id].status?.status ?? '').not.toMatch(/not-matched|discontinued/);
+    }
+    for (let i = 1; i < hits.length; i++) expect(hits[i].score).toBeLessThanOrEqual(hits[i - 1].score);
+    expect(hits[0].score).toBe(1); // a program mentioning both words outranks one with only "film"
+  });
+
+  it('still reports a missing binding instead of silently degrading', async () => {
+    await expect(searchPrograms('x', {}, {})).rejects.toBeInstanceOf(SearchUnavailableError);
+  });
+});
+
+describe('semanticSearch (warned records)', () => {
+  it('never returns a not-matched record, even for its own exact embedding', async () => {
+    const warned = ids.find((id) => (programsJson as any)[id]?.status?.status === 'not-matched')!;
+    mockModel(dequantizedRow(warned));
+    const hits = await semanticSearch('anything', { limit: 50 }, ENV);
+    expect(hits.length).toBeGreaterThan(0);
+    expect(hits.map((h) => h.program.program_id)).not.toContain(warned);
+  });
+});
+
 describe('GET /v1/search (route)', () => {
-  it('returns { query, count, hits } with ProgramSummary hits', async () => {
-    mockGemini(dequantizedRow(MASTER_ENGLISH));
+  it('returns { query, mode, count, hits } with ProgramSummary hits', async () => {
+    mockModel(dequantizedRow(MASTER_ENGLISH));
     const res = await app.request('/v1/search?q=human+computer+interaction', {}, ENV);
     expect(res.status).toBe(200);
     const body = (await res.json()) as any;
     expect(body.query).toBe('human computer interaction');
+    expect(body.mode).toBe('semantic');
     expect(body.count).toBe(body.hits.length);
     expect(body.hits).toHaveLength(10);
     expect(body.hits[0].program.program_id).toBe(MASTER_ENGLISH);
@@ -197,7 +229,7 @@ describe('GET /v1/search (route)', () => {
   });
 
   it('passes limit / degree_level / language / min_score through', async () => {
-    mockGemini(dequantizedRow(MASTER_ENGLISH));
+    mockModel(dequantizedRow(MASTER_ENGLISH));
     const res = await app.request(
       '/v1/search?q=x&limit=5&degree_level=master&language=english&min_score=-1',
       {},
@@ -226,23 +258,24 @@ describe('GET /v1/search (route)', () => {
     }
   });
 
-  it('503s with search_unavailable when GEMINI_API_KEY is missing', async () => {
+  it('503s with search_unavailable when the AI binding is missing', async () => {
     const res = await app.request('/v1/search?q=test', {}, {});
     expect(res.status).toBe(503);
     const body = (await res.json()) as any;
     expect(body.error.code).toBe('search_unavailable');
   });
 
-  it('502s with upstream_error when Gemini fails', async () => {
-    mockGeminiFailure(500);
-    const res = await app.request('/v1/search?q=test', {}, ENV);
-    expect(res.status).toBe(502);
+  it('answers with keyword hits (200, mode keyword) when Workers AI fails', async () => {
+    mockModelFailure('3036: daily free allocation exceeded');
+    const res = await app.request('/v1/search?q=documentary+film', {}, ENV);
+    expect(res.status).toBe(200);
     const body = (await res.json()) as any;
-    expect(body.error.code).toBe('upstream_error');
+    expect(body.mode).toBe('keyword');
+    expect(body.count).toBeGreaterThan(0);
   });
 
   it('sets Cache-Control max-age=300 (route and assembled app agree)', async () => {
-    mockGemini(dequantizedRow(BACHELOR));
+    mockModel(dequantizedRow(BACHELOR));
     const direct = await searchRouter.request('/?q=test', {}, ENV);
     expect(direct.status).toBe(200);
     expect(direct.headers.get('Cache-Control')).toBe('public, max-age=300');

@@ -127,10 +127,11 @@ describe('official DFFB and ifs additions', () => {
     }
   });
 
-  it('leaves every new programme unembedded rather than fabricating alternatives', () => {
+  it('makes new programmes searchable by their own text without fabricating alternatives', () => {
     expect(newPrograms).toHaveLength(10);
     for (const p of newPrograms) {
-      expect(vectorsMeta.ids).not.toContain(p.program_id);
+      expect(vectorsMeta.ids).toContain(p.program_id); // bge-m3 search vector from its own text
+      // no similarity-graph embedding yet, so no alternatives
       expect(similarPrograms(p.program_id)!.similar).toEqual([]);
       expect(p.researched).toBe('2026-10-11');
     }

@@ -2,6 +2,8 @@
 
 exports[`response shape snapshots (additive-only contract) > /v1/programs/{id} shape 1`] = `
 [
+  "admission",
+  "admission_source",
   "application_methods[]",
   "application_route.method",
   "application_route.notes",
@@ -37,7 +39,10 @@ exports[`response shape snapshots (additive-only contract) > /v1/programs/{id} s
   "joint_program_id",
   "joint_with[]",
   "language",
+  "language_notes[]",
+  "language_requirements",
   "name",
+  "other_deadlines[]",
   "portfolio_required",
   "program_id",
   "program_url",
@@ -68,6 +73,7 @@ exports[`response shape snapshots (additive-only contract) > /v1/programs/{id} s
   "sources.teachingAreas",
   "specializations[]",
   "status",
+  "subjects[]",
   "teaching_areas[].kind",
   "teaching_areas[].name",
   "teaching_areas[].source",
@@ -77,14 +83,35 @@ exports[`response shape snapshots (additive-only contract) > /v1/programs/{id} s
 
 exports[`response shape snapshots (additive-only contract) > /v1/schools/{id} shape 1`] = `
 [
+  "address.city",
+  "address.postal_code",
+  "address.street",
+  "application_method",
+  "application_method_source.checked",
+  "application_method_source.url",
+  "application_route",
   "city",
+  "contact",
   "coordinates.lat",
   "coordinates.lng",
+  "description",
+  "fees[].appliesTo",
+  "fees[].cycle",
+  "fees[].euros",
+  "fees[].kind",
+  "fees[].notes",
+  "fees[].period",
   "id",
   "name",
+  "non_eu_tuition",
   "program_ids[]",
+  "researched",
+  "sources.address",
+  "sources.description",
+  "sources.fees",
   "state",
   "stats.founded",
   "type",
+  "website",
 ]
 `;

@@ -1,7 +1,7 @@
 {
-  "model": "gemini-embedding-2-preview",
-  "dim": 3072,
-  "count": 766,
+  "model": "@cf/baai/bge-m3",
+  "dim": 1024,
+  "count": 790,
   "scale": 127,
   "ids": [
     "academy-of-visual-arts-frankfurt--communication-design--bachelor-of-arts",
@@ -44,6 +44,11 @@
     "burg-giebichenstein--fine-arts--unspecified",
     "burg-giebichenstein--industrial-design--unspecified",
     "carl-von-ossietzky-universitat-oldenburg--art-and-media-zwei-facher-bachelor--bachelor-of-arts",
+    "deutsche-film-und-fernsehakademie-berlin--cinematography--dffb-diploma-non-state-qualification",
+    "deutsche-film-und-fernsehakademie-berlin--editing-sound--dffb-diploma-non-state-qualification",
+    "deutsche-film-und-fernsehakademie-berlin--film-directing--dffb-diploma-non-state-qualification",
+    "deutsche-film-und-fernsehakademie-berlin--producing--dffb-diploma-non-state-qualification",
+    "deutsche-film-und-fernsehakademie-berlin--screenwriting--dffb-diploma-non-state-qualification",
     "europa-universitat-flensburg--kultur-sprache-medien--master-of-arts",
     "evangelische-hochschule-fur-kirchenmusik-halle--chor-und-orchesterleitung--master-of-music",
     "evangelische-hochschule-fur-kirchenmusik-halle--kirchenmusik--bachelor-of-music",
@@ -170,13 +175,26 @@
     "hochschule-anhalt--design-integrated-design--bachelor-of-arts",
     "hochschule-anhalt--design-master--master-of-arts",
     "hochschule-darmstadt--animation-and-game--bachelor-of-arts",
+    "hochschule-darmstadt--animation-and-game--master-of-arts",
+    "hochschule-darmstadt--architecture--bachelor-of-engineering",
+    "hochschule-darmstadt--architecture--master-of-engineering",
+    "hochschule-darmstadt--augmented-and-virtual-reality-design--bachelor-of-arts",
     "hochschule-darmstadt--communication-design--bachelor-of-arts",
     "hochschule-darmstadt--digital-media--master-of-science",
     "hochschule-darmstadt--digital-media--unspecified",
+    "hochschule-darmstadt--expanded-media--master-of-arts",
     "hochschule-darmstadt--expanded-realities--master-of-arts",
+    "hochschule-darmstadt--industrial-design--diploma-fh",
     "hochschule-darmstadt--interactive-media-design--bachelor-of-arts",
+    "hochschule-darmstadt--interior-architecture--bachelor-of-engineering",
+    "hochschule-darmstadt--interior-architecture--master-of-engineering",
+    "hochschule-darmstadt--international-media-cultural-work--master-of-arts",
     "hochschule-darmstadt--media-and-communication--bachelor-of-arts",
+    "hochschule-darmstadt--media-technology-and-society--master-of-science",
     "hochschule-darmstadt--motion-pictures--bachelor-of-arts",
+    "hochschule-darmstadt--onlinejournalismus--bachelor-of-arts",
+    "hochschule-darmstadt--onlinekommunikation--bachelor-of-science",
+    "hochschule-darmstadt--sound-music-and-production--bachelor-of-arts",
     "hochschule-der-bildenden-kunste-essen--fine-arts--bachelor-of-fine-arts",
     "hochschule-der-bildenden-kunste-essen--fine-arts--diploma",
     "hochschule-der-bildenden-kunste-essen--fine-arts--unspecified",
@@ -555,6 +573,11 @@
     "hochschule-rhein-waal--international-relations--bachelor-of-arts",
     "hochschule-rhein-waal--media-communication-and-computer-science--bachelor-of-science",
     "hochschule-rhein-waal--sustainable-design--master-of-arts",
+    "ifs-internationale-filmschule-koln--3d-animation-for-film-games--master-of-arts",
+    "ifs-internationale-filmschule-koln--digital-narratives--master-of-arts",
+    "ifs-internationale-filmschule-koln--entertainment-producing--master-of-arts",
+    "ifs-internationale-filmschule-koln--film--bachelor-of-arts",
+    "ifs-internationale-filmschule-koln--serial-storytelling--master-of-arts",
     "khm-munchen--architektur-und-kunst--master-of-arts",
     "khm-munchen--bildnerisches-gestalten-und-therapie--master-of-arts",
     "khm-munchen--freie-kunst--diploma",
@@ -751,6 +774,7 @@
     "universitat-der-kunste-berlin--fine-arts--unspecified",
     "universitat-der-kunste-berlin--music--bachelor-of-music",
     "universitat-der-kunste-berlin--performing-arts--bachelor-of-arts",
+    "universitat-der-kunste-berlin--visual-communication--master-of-arts",
     "universitat-der-kunste-berlin--visual-communication--unspecified",
     "universitat-hamburg--liberal-arts-and-sciences--bachelor-of-arts",
     "universitat-passau--computer-science-with-specialization-in-human-computer-interaction--master-of-science",
@@ -770,11 +794,5 @@
     "universitat-wurzburg--human-computer-systems--master-of-science",
     "universitat-wurzburg--media-communication--bachelor-of-arts",
     "universitat-wurzburg--media-communication--master-of-arts"
-  ],
-  "reused_embeddings": {
-    "universitat-der-kunste-berlin--design-and-computation--master-of-arts": {
-      "sourceProgramId": "technische-universitat-berlin--design-and-computation--master-of-science",
-      "reason": "The identical joint UdK Berlin / TU Berlin Design & Computation M.A., not an unrelated programme or a different degree profile."
-    }
-  }
+  ]
 }

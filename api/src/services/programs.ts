@@ -8,6 +8,7 @@ import type {
   Paginated,
   Program,
   ProgramSummary,
+  Subject,
 } from '../types';
 
 export interface MonthDay {
@@ -27,6 +28,8 @@ export interface ProgramFilters {
   language?: string;
   /** Exact school_id match. */
   school?: string;
+  /** Matches any of the program's subjects. */
+  subject?: Subject;
   portfolio_required?: boolean;
   /** Case-insensitive exact match on the school's state (resolved via school_id). */
   state?: string;
@@ -46,6 +49,10 @@ export interface ProgramFilters {
    */
   open_on?: MonthDay;
 }
+
+/** Warned records (not-matched / discontinued) stay fetchable by id but never appear in listings or search. */
+const UNLISTED = new Set(['not-matched', 'discontinued']);
+export const isListed = (p: Program): boolean => !UNLISTED.has(p.status?.status ?? '');
 
 export interface Pagination {
   limit: number;
@@ -68,7 +75,8 @@ export function windowContains(w: DeadlineWindow, d: MonthDay): boolean {
   return s <= e ? x >= s && x <= e : x >= s || x <= e;
 }
 
-function programText(p: Program): string {
+/** Lowercased text searched by ?q= and the keyword search fallback. */
+export function programText(p: Program): string {
   return [p.name, p.description ?? '', ...p.specializations, ...(p.search_aliases ?? []), ...(p.teaching_areas ?? []).map((a) => a.name)].join(' ').toLowerCase();
 }
 
@@ -76,7 +84,7 @@ export function listPrograms(
   filters: ProgramFilters = {},
   pagination: Pagination = { limit: 50, offset: 0 },
 ): Paginated<Program> {
-  let result = Object.values(programs);
+  let result = Object.values(programs).filter(isListed);
 
   if (filters.degree_level !== undefined) {
     result = result.filter((p) => p.degree_level === filters.degree_level);
@@ -87,6 +95,9 @@ export function listPrograms(
   }
   if (filters.school !== undefined) {
     result = result.filter((p) => p.school_id === filters.school);
+  }
+  if (filters.subject !== undefined) {
+    result = result.filter((p) => p.subjects.includes(filters.subject!));
   }
   if (filters.portfolio_required !== undefined) {
     result = result.filter((p) => p.portfolio_required === filters.portfolio_required);
