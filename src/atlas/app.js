@@ -7,6 +7,7 @@ import { programLinks } from '../lib/programLinks.ts';
 import geo from './germany.json';
 import { kinshipView, cross } from './kinship.js';
 import { distributionView, chronologyView } from './plates.js';
+import { strataView } from './strata.js';
 
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -245,6 +246,7 @@ const PLATES = [
   ['kin', 'III', 'Kinship', 'related programs', 'schools connected by related programs'],
   ['spread', 'IV', 'Distribution', 'fields on the map', 'where each field is taught'],
   ['chron', 'V', 'Chronology', 'founding years', 'founding years, 1402 to today'],
+  ['strata', 'VI', 'Strata', 'time beneath the map', 'founding years beneath the map, in three dimensions'],
 ];
 $('toc').innerHTML = PLATES.map(([id, num, name, desc]) => `<button type="button" data-plate="${id}" aria-pressed="${id === 'index'}"><b>${num}</b><span class="t">${name}</span><span class="d">${desc}</span></button>`).join('');
 function renderLedger() {
@@ -265,6 +267,7 @@ function drawLedger() {
   const anyCity = programs.filter((n) => matches(n, { ignoreCity: true }));
   if (view === 'kin') { $('body').innerHTML = kinshipView(anyCity, { W, famOf, order: kinOrder, pin: kinPin, city }); return; }
   if (view === 'chron') { $('body').innerHTML = chronologyView({ base: anyCity, famOf, city, W }); return; }
+  if (view === 'strata') { $('body').innerHTML = strataView({ base: anyCity, famOf, city, W }); return; }
   if (view === 'spread') {
     const st = filters.program ? classify({ ...filters, program: null }, emptyExtras()) : states;
     $('body').innerHTML = distributionView({ base: programs.filter((n) => matches(n, { ignoreCity: true, st })), groups: FIELDS, famVar, cities, geo, city, filterable: SUBJECT_GROUPS });
